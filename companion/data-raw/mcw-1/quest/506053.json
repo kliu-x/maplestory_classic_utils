@@ -1,0 +1,65 @@
+{
+ "id": 506053,
+ "name": "A Price to Pay",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#i4000036:# #t4000036:# #c4000036# / 50",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506054,
+   "levelMinimum": 47,
+   "quests": [
+    {
+     "id": 506053,
+     "state": 2
+    }
+   ],
+   "npcId": 602,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506053,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506053,
+  "exp": 11400,
+  "items": [
+   {
+    "id": 4000036,
+    "count": -50
+   },
+   {
+    "id": 2000003,
+    "count": 20
+   }
+  ],
+  "meso": 1477,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506053,
+  "levelMinimum": 47,
+  "quests": [
+   {
+    "id": 506052,
+    "state": 2
+   }
+  ],
+  "npcId": 602,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506053,
+  "levelMinimum": 47,
+  "items": [
+   {
+    "count": 50,
+    "id": 4000036
+   }
+  ],
+  "npcId": 602,
+  "state": 1
+ }
+}

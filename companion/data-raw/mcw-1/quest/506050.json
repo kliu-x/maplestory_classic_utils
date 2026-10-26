@@ -1,0 +1,58 @@
+{
+ "id": 506050,
+ "name": "A Promise Between Three Friends",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "Talk to #p204#",
+ "rewardOnStart": {
+  "id": 506050,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506050,
+  "exp": 7310,
+  "fame": 1,
+  "items": [
+   {
+    "id": 2040501,
+    "count": 1
+   },
+   {
+    "id": 2040505,
+    "count": 1
+   },
+   {
+    "id": 2040509,
+    "count": 1
+   },
+   {
+    "id": 2040513,
+    "count": 1
+   },
+   {
+    "id": 2040517,
+    "count": 1
+   }
+  ],
+  "meso": 1170,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506050,
+  "levelMinimum": 37,
+  "quests": [
+   {
+    "id": 506049,
+    "state": 2
+   }
+  ],
+  "npcId": 218,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506050,
+  "levelMinimum": 37,
+  "npcId": 204,
+  "state": 1
+ }
+}

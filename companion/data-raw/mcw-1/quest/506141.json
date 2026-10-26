@@ -1,0 +1,69 @@
+{
+ "id": 506141,
+ "name": "It's All in the Mind",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#i4031114:# #t4031114:# #c4031114# / 1",
+ "rewardOnStart": {
+  "id": 506141,
+  "items": [
+   {
+    "id": 4031114,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506141,
+  "exp": 982,
+  "items": [
+   {
+    "id": 4031114,
+    "count": -1
+   },
+   {
+    "id": 2048001,
+    "count": 1
+   },
+   {
+    "id": 2048002,
+    "count": 1
+   },
+   {
+    "id": 2048005,
+    "count": 1
+   },
+   {
+    "id": 2048006,
+    "count": 1
+   }
+  ],
+  "meso": 555,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506141,
+  "levelMinimum": 17,
+  "quests": [
+   {
+    "id": 506140,
+    "state": 2
+   }
+  ],
+  "npcId": 404,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506141,
+  "levelMinimum": 17,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031114
+   }
+  ],
+  "npcId": 417,
+  "state": 1
+ }
+}

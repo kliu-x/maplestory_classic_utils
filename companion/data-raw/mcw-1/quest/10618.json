@@ -1,0 +1,66 @@
+{
+ "id": 10618,
+ "name": "A Memory of Iron",
+ "area": 17,
+ "areaName": "Forgotten Hollow",
+ "demandSummary": "#o58# #a106181#",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10619,
+   "startTime": "2026-12-09T00:00:00",
+   "levelMinimum": 50,
+   "quests": [
+    {
+     "id": 10618,
+     "state": 2
+    }
+   ],
+   "npcId": 712,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10618,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10618,
+  "exp": 10400,
+  "items": [
+   {
+    "id": 2010006,
+    "count": 15
+   },
+   {
+    "id": 2010005,
+    "count": 10
+   }
+  ],
+  "meso": 1418,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10618,
+  "startTime": "2026-12-09T00:00:00",
+  "levelMinimum": 45,
+  "quests": [
+   {
+    "id": 10617,
+    "state": 2
+   }
+  ],
+  "npcId": 711,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10618,
+  "mobs": [
+   {
+    "count": 50,
+    "id": 58
+   }
+  ],
+  "npcId": 711,
+  "state": 1
+ }
+}

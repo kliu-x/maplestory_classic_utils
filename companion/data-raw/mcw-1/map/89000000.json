@@ -1,0 +1,20 @@
+{
+ "id": 89000000,
+ "name": "Truth Booth",
+ "streetName": "Truth Booth",
+ "mapMark": "None",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 89000000,
+ "vrBounds": {
+  "width": 508,
+  "height": 850
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 800016
+  }
+ ],
+ "portals": []
+}

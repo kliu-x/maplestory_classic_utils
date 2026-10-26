@@ -1,0 +1,52 @@
+{
+ "id": 600007,
+ "name": "[Event] The Third Mark",
+ "area": 99,
+ "areaName": "Event",
+ "demandSummary": "Search the high branches deep in the ancient woods.",
+ "rewardSummary": "#i2430050# #t2430050# x1",
+ "disableAtNPC": true,
+ "disableAtStartTab": true,
+ "questsAvailableOnComplete": [
+  {
+   "id": 600008,
+   "startTime": "2026-10-21T00:00:00",
+   "endTime": "2026-11-19T00:00:00",
+   "levelMinimum": 25,
+   "quests": [
+    {
+     "id": 600007,
+     "state": 2
+    }
+   ],
+   "npcId": 205,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 600007,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 600007,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 600007,
+  "startTime": "2026-10-21T00:00:00",
+  "endTime": "2026-11-19T00:00:00",
+  "levelMinimum": 25,
+  "quests": [
+   {
+    "id": 600006,
+    "state": 2
+   }
+  ],
+  "npcId": 205,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 600007,
+  "state": 1
+ }
+}

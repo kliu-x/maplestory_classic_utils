@@ -1,0 +1,1128 @@
+{
+ "id": 410,
+ "description": {
+  "id": 410,
+  "desc": "",
+  "name": "",
+  "shortDesc": "",
+  "bookName": "Assassin Skills",
+  "names": {
+   "en": "Assassin Skills",
+   "es": "Habilidades de Assassin",
+   "ko": "Assassin 기술"
+  }
+ },
+ "skills": [
+  {
+   "id": 4100000,
+   "masterLevel": 20,
+   "weapons": [
+    47
+   ],
+   "description": {
+    "name": "Claw Mastery",
+    "desc": "[Master Level: 20]\\nIncreases Claw Mastery and Attack Power, and gives a chance to recover used throwing stars when using throwing star attacks. Only applies when a claw is equipped."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mastery": "1",
+     "x": "1",
+     "prop": "5"
+    },
+    {
+     "hs": "h2",
+     "mastery": "1",
+     "x": "2",
+     "prop": "6"
+    },
+    {
+     "hs": "h3",
+     "mastery": "1",
+     "x": "3",
+     "prop": "7"
+    },
+    {
+     "hs": "h4",
+     "mastery": "2",
+     "x": "4",
+     "prop": "8"
+    },
+    {
+     "hs": "h5",
+     "mastery": "2",
+     "x": "5",
+     "prop": "9"
+    },
+    {
+     "hs": "h6",
+     "mastery": "3",
+     "x": "6",
+     "prop": "10"
+    },
+    {
+     "hs": "h7",
+     "mastery": "3",
+     "x": "7",
+     "prop": "11"
+    },
+    {
+     "hs": "h8",
+     "mastery": "4",
+     "x": "8",
+     "prop": "12"
+    },
+    {
+     "hs": "h9",
+     "mastery": "4",
+     "x": "9",
+     "prop": "13"
+    },
+    {
+     "hs": "h10",
+     "mastery": "5",
+     "x": "10",
+     "prop": "14"
+    },
+    {
+     "hs": "h11",
+     "mastery": "5",
+     "x": "11",
+     "prop": "15"
+    },
+    {
+     "hs": "h12",
+     "mastery": "6",
+     "x": "12",
+     "prop": "16"
+    },
+    {
+     "hs": "h13",
+     "mastery": "6",
+     "x": "13",
+     "prop": "17"
+    },
+    {
+     "hs": "h14",
+     "mastery": "7",
+     "x": "14",
+     "prop": "18"
+    },
+    {
+     "hs": "h15",
+     "mastery": "7",
+     "x": "15",
+     "prop": "19"
+    },
+    {
+     "hs": "h16",
+     "mastery": "8",
+     "x": "16",
+     "prop": "20"
+    },
+    {
+     "hs": "h17",
+     "mastery": "8",
+     "x": "17",
+     "prop": "21"
+    },
+    {
+     "hs": "h18",
+     "mastery": "9",
+     "x": "18",
+     "prop": "22"
+    },
+    {
+     "hs": "h19",
+     "mastery": "9",
+     "x": "19",
+     "prop": "23"
+    },
+    {
+     "hs": "h20",
+     "mastery": "10",
+     "x": "20",
+     "prop": "25"
+    }
+   ]
+  },
+  {
+   "id": 4100001,
+   "masterLevel": 30,
+   "requiredSkillLevels": {
+    "4100000": 3
+   },
+   "weapons": [],
+   "description": {
+    "name": "Critical Throw",
+    "desc": "[Master Level: 30]\\nIncreases Critical Rate and Critical Damage.\\nRequired Skill: #cAt least Level 3 Claw Mastery#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "crtX": "1",
+     "crdX": "5"
+    },
+    {
+     "hs": "h2",
+     "crtX": "1",
+     "crdX": "6"
+    },
+    {
+     "hs": "h3",
+     "crtX": "1",
+     "crdX": "7"
+    },
+    {
+     "hs": "h4",
+     "crtX": "2",
+     "crdX": "8"
+    },
+    {
+     "hs": "h5",
+     "crtX": "2",
+     "crdX": "9"
+    },
+    {
+     "hs": "h6",
+     "crtX": "3",
+     "crdX": "10"
+    },
+    {
+     "hs": "h7",
+     "crtX": "3",
+     "crdX": "11"
+    },
+    {
+     "hs": "h8",
+     "crtX": "4",
+     "crdX": "12"
+    },
+    {
+     "hs": "h9",
+     "crtX": "4",
+     "crdX": "13"
+    },
+    {
+     "hs": "h10",
+     "crtX": "5",
+     "crdX": "14"
+    },
+    {
+     "hs": "h11",
+     "crtX": "5",
+     "crdX": "15"
+    },
+    {
+     "hs": "h12",
+     "crtX": "6",
+     "crdX": "16"
+    },
+    {
+     "hs": "h13",
+     "crtX": "6",
+     "crdX": "17"
+    },
+    {
+     "hs": "h14",
+     "crtX": "7",
+     "crdX": "18"
+    },
+    {
+     "hs": "h15",
+     "crtX": "7",
+     "crdX": "19"
+    },
+    {
+     "hs": "h16",
+     "crtX": "8",
+     "crdX": "20"
+    },
+    {
+     "hs": "h17",
+     "crtX": "8",
+     "crdX": "21"
+    },
+    {
+     "hs": "h18",
+     "crtX": "9",
+     "crdX": "22"
+    },
+    {
+     "hs": "h19",
+     "crtX": "9",
+     "crdX": "23"
+    },
+    {
+     "hs": "h20",
+     "crtX": "10",
+     "crdX": "24"
+    },
+    {
+     "hs": "h21",
+     "crtX": "10",
+     "crdX": "25"
+    },
+    {
+     "hs": "h22",
+     "crtX": "11",
+     "crdX": "26"
+    },
+    {
+     "hs": "h23",
+     "crtX": "11",
+     "crdX": "27"
+    },
+    {
+     "hs": "h24",
+     "crtX": "12",
+     "crdX": "28"
+    },
+    {
+     "hs": "h25",
+     "crtX": "12",
+     "crdX": "29"
+    },
+    {
+     "hs": "h26",
+     "crtX": "13",
+     "crdX": "30"
+    },
+    {
+     "hs": "h27",
+     "crtX": "13",
+     "crdX": "31"
+    },
+    {
+     "hs": "h28",
+     "crtX": "14",
+     "crdX": "32"
+    },
+    {
+     "hs": "h29",
+     "crtX": "14",
+     "crdX": "33"
+    },
+    {
+     "hs": "h30",
+     "crtX": "15",
+     "crdX": "35"
+    }
+   ]
+  },
+  {
+   "id": 4100002,
+   "masterLevel": 20,
+   "weapons": [],
+   "description": {
+    "name": "Critical Recovery",
+    "desc": "[Master Level: 20]\\nRecovers additional HP and MP with a certain chance when landing a critical hit. Cannot recover again within 30 seconds after a recovery."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "x": "1",
+     "y": "1",
+     "prop": "20",
+     "cooltime": "30"
+    },
+    {
+     "hs": "h2",
+     "x": "1",
+     "y": "1",
+     "prop": "24",
+     "cooltime": "30"
+    },
+    {
+     "hs": "h3",
+     "x": "1",
+     "y": "1",
+     "prop": "28",
+     "cooltime": "30"
+    },
+    {
+     "hs": "h4",
+     "x": "2",
+     "y": "2",
+     "prop": "32",
+     "cooltime": "30"
+    },
+    {
+     "hs": "h5",
+     "x": "2",
+     "y": "2",
+     "prop": "36",
+     "cooltime": "30"
+    },
+    {
+     "hs": "h6",
+     "x": "3",
+     "y": "3",
+     "prop": "40",
+     "cooltime": "30"
+    },
+    {
+     "hs": "h7",
+     "x": "3",
+     "y": "3",
+     "prop": "44",
+     "cooltime": "30"
+    },
+    {
+     "hs": "h8",
+     "x": "4",
+     "y": "4",
+     "prop": "48",
+     "cooltime": "30"
+    },
+    {
+     "hs": "h9",
+     "x": "4",
+     "y": "4",
+     "prop": "52",
+     "cooltime": "30"
+    },
+    {
+     "hs": "h10",
+     "x": "5",
+     "y": "5",
+     "prop": "56",
+     "cooltime": "30"
+    },
+    {
+     "hs": "h11",
+     "x": "5",
+     "y": "5",
+     "prop": "60",
+     "cooltime": "30"
+    },
+    {
+     "hs": "h12",
+     "x": "6",
+     "y": "6",
+     "prop": "64",
+     "cooltime": "30"
+    },
+    {
+     "hs": "h13",
+     "x": "6",
+     "y": "6",
+     "prop": "68",
+     "cooltime": "30"
+    },
+    {
+     "hs": "h14",
+     "x": "7",
+     "y": "7",
+     "prop": "72",
+     "cooltime": "30"
+    },
+    {
+     "hs": "h15",
+     "x": "7",
+     "y": "7",
+     "prop": "76",
+     "cooltime": "30"
+    },
+    {
+     "hs": "h16",
+     "x": "8",
+     "y": "8",
+     "prop": "80",
+     "cooltime": "30"
+    },
+    {
+     "hs": "h17",
+     "x": "8",
+     "y": "8",
+     "prop": "84",
+     "cooltime": "30"
+    },
+    {
+     "hs": "h18",
+     "x": "9",
+     "y": "9",
+     "prop": "88",
+     "cooltime": "30"
+    },
+    {
+     "hs": "h19",
+     "x": "9",
+     "y": "9",
+     "prop": "92",
+     "cooltime": "30"
+    },
+    {
+     "hs": "h20",
+     "x": "10",
+     "y": "10",
+     "prop": "100",
+     "cooltime": "30"
+    }
+   ]
+  },
+  {
+   "id": 4101000,
+   "masterLevel": 20,
+   "requiredSkillLevels": {
+    "4100000": 5
+   },
+   "weapons": [
+    47
+   ],
+   "description": {
+    "name": "Claw Booster",
+    "desc": "[Master Level: 20]\\nConsumes HP and MP to temporarily increase the Attack Speed of the equipped claw. Only applies when equipped with a claw.\\nRequired Skill: #cAt least Level 5 Claw Mastery#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "hpCon": "30",
+     "mpCon": "30",
+     "time": "100",
+     "x": "-2"
+    },
+    {
+     "hs": "h2",
+     "hpCon": "29",
+     "mpCon": "29",
+     "time": "110",
+     "x": "-2"
+    },
+    {
+     "hs": "h3",
+     "hpCon": "28",
+     "mpCon": "28",
+     "time": "120",
+     "x": "-2"
+    },
+    {
+     "hs": "h4",
+     "hpCon": "27",
+     "mpCon": "27",
+     "time": "130",
+     "x": "-2"
+    },
+    {
+     "hs": "h5",
+     "hpCon": "26",
+     "mpCon": "26",
+     "time": "140",
+     "x": "-2"
+    },
+    {
+     "hs": "h6",
+     "hpCon": "25",
+     "mpCon": "25",
+     "time": "150",
+     "x": "-2"
+    },
+    {
+     "hs": "h7",
+     "hpCon": "24",
+     "mpCon": "24",
+     "time": "160",
+     "x": "-2"
+    },
+    {
+     "hs": "h8",
+     "hpCon": "23",
+     "mpCon": "23",
+     "time": "170",
+     "x": "-2"
+    },
+    {
+     "hs": "h9",
+     "hpCon": "22",
+     "mpCon": "22",
+     "time": "180",
+     "x": "-2"
+    },
+    {
+     "hs": "h10",
+     "hpCon": "21",
+     "mpCon": "21",
+     "time": "190",
+     "x": "-2"
+    },
+    {
+     "hs": "h11",
+     "hpCon": "20",
+     "mpCon": "20",
+     "time": "200",
+     "x": "-2"
+    },
+    {
+     "hs": "h12",
+     "hpCon": "19",
+     "mpCon": "19",
+     "time": "210",
+     "x": "-2"
+    },
+    {
+     "hs": "h13",
+     "hpCon": "18",
+     "mpCon": "18",
+     "time": "220",
+     "x": "-2"
+    },
+    {
+     "hs": "h14",
+     "hpCon": "17",
+     "mpCon": "17",
+     "time": "230",
+     "x": "-2"
+    },
+    {
+     "hs": "h15",
+     "hpCon": "16",
+     "mpCon": "16",
+     "time": "240",
+     "x": "-2"
+    },
+    {
+     "hs": "h16",
+     "hpCon": "15",
+     "mpCon": "15",
+     "time": "250",
+     "x": "-2"
+    },
+    {
+     "hs": "h17",
+     "hpCon": "14",
+     "mpCon": "14",
+     "time": "260",
+     "x": "-2"
+    },
+    {
+     "hs": "h18",
+     "hpCon": "13",
+     "mpCon": "13",
+     "time": "270",
+     "x": "-2"
+    },
+    {
+     "hs": "h19",
+     "hpCon": "12",
+     "mpCon": "12",
+     "time": "280",
+     "x": "-2"
+    },
+    {
+     "hs": "h20",
+     "hpCon": "10",
+     "mpCon": "10",
+     "time": "300",
+     "x": "-2"
+    }
+   ]
+  },
+  {
+   "id": 4101001,
+   "masterLevel": 20,
+   "weapons": [],
+   "description": {
+    "name": "Haste",
+    "desc": "[Master Level: 20]\\nTemporarily increases the speed and jump of all party members around the area."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "15",
+     "indieSpeed": "10",
+     "indieJump": "1",
+     "time": "100",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "16",
+     "indieSpeed": "11",
+     "indieJump": "1",
+     "time": "110",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "17",
+     "indieSpeed": "12",
+     "indieJump": "1",
+     "time": "120",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "18",
+     "indieSpeed": "13",
+     "indieJump": "2",
+     "time": "130",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "19",
+     "indieSpeed": "14",
+     "indieJump": "2",
+     "time": "140",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "20",
+     "indieSpeed": "15",
+     "indieJump": "3",
+     "time": "150",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "21",
+     "indieSpeed": "16",
+     "indieJump": "3",
+     "time": "160",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "22",
+     "indieSpeed": "17",
+     "indieJump": "4",
+     "time": "170",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "23",
+     "indieSpeed": "18",
+     "indieJump": "4",
+     "time": "180",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "24",
+     "indieSpeed": "19",
+     "indieJump": "5",
+     "time": "190",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "25",
+     "indieSpeed": "20",
+     "indieJump": "5",
+     "time": "200",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "26",
+     "indieSpeed": "21",
+     "indieJump": "6",
+     "time": "210",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "27",
+     "indieSpeed": "22",
+     "indieJump": "6",
+     "time": "220",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "28",
+     "indieSpeed": "23",
+     "indieJump": "7",
+     "time": "230",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "29",
+     "indieSpeed": "24",
+     "indieJump": "7",
+     "time": "240",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "30",
+     "indieSpeed": "25",
+     "indieJump": "8",
+     "time": "250",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "31",
+     "indieSpeed": "26",
+     "indieJump": "8",
+     "time": "260",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "32",
+     "indieSpeed": "27",
+     "indieJump": "9",
+     "time": "270",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "33",
+     "indieSpeed": "28",
+     "indieJump": "9",
+     "time": "280",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "35",
+     "indieSpeed": "30",
+     "indieJump": "10",
+     "time": "300",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    }
+   ]
+  },
+  {
+   "id": 4101002,
+   "masterLevel": 30,
+   "requiredSkillLevels": {
+    "4100002": 3
+   },
+   "weapons": [
+    47
+   ],
+   "description": {
+    "name": "Drain",
+    "desc": "[Master Level: 30]\\nAbsorbs some of the damage dealt to the enemy as HP. The most one can absorb at once is 25% of the character's Max HP, and can't absorb more than the Max HP of the enemy.\\nRequired Skill : #cAt least Level 3 Critical Recovery#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "14",
+     "x": "5",
+     "damage": "180",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "2"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "14",
+     "x": "5",
+     "damage": "182",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "2"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "14",
+     "x": "6",
+     "damage": "184",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "3"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "15",
+     "x": "6",
+     "damage": "186",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "3"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "15",
+     "x": "6",
+     "damage": "188",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "3"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "16",
+     "x": "7",
+     "damage": "190",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "4"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "16",
+     "x": "7",
+     "damage": "192",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "4"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "17",
+     "x": "7",
+     "damage": "194",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "4"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "17",
+     "x": "8",
+     "damage": "196",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "5"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "18",
+     "x": "8",
+     "damage": "198",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "5"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "18",
+     "x": "8",
+     "damage": "200",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "5"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "19",
+     "x": "9",
+     "damage": "202",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "6"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "19",
+     "x": "9",
+     "damage": "204",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "6"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "20",
+     "x": "9",
+     "damage": "206",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "6"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "20",
+     "x": "10",
+     "damage": "208",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "7"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "21",
+     "x": "10",
+     "damage": "210",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "7"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "21",
+     "x": "10",
+     "damage": "212",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "7"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "22",
+     "x": "11",
+     "damage": "214",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "8"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "22",
+     "x": "11",
+     "damage": "216",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "8"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "23",
+     "x": "11",
+     "damage": "218",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "8"
+    },
+    {
+     "hs": "h21",
+     "mpCon": "23",
+     "x": "12",
+     "damage": "220",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "9"
+    },
+    {
+     "hs": "h22",
+     "mpCon": "24",
+     "x": "12",
+     "damage": "222",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "9"
+    },
+    {
+     "hs": "h23",
+     "mpCon": "24",
+     "x": "12",
+     "damage": "224",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "9"
+    },
+    {
+     "hs": "h24",
+     "mpCon": "25",
+     "x": "13",
+     "damage": "226",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "10"
+    },
+    {
+     "hs": "h25",
+     "mpCon": "25",
+     "x": "13",
+     "damage": "228",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "10"
+    },
+    {
+     "hs": "h26",
+     "mpCon": "26",
+     "x": "13",
+     "damage": "230",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "10"
+    },
+    {
+     "hs": "h27",
+     "mpCon": "26",
+     "x": "14",
+     "damage": "232",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "11"
+    },
+    {
+     "hs": "h28",
+     "mpCon": "27",
+     "x": "14",
+     "damage": "234",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "11"
+    },
+    {
+     "hs": "h29",
+     "mpCon": "27",
+     "x": "14",
+     "damage": "236",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "11"
+    },
+    {
+     "hs": "h30",
+     "mpCon": "28",
+     "x": "15",
+     "damage": "240",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "prop": "12"
+    }
+   ]
+  }
+ ]
+}

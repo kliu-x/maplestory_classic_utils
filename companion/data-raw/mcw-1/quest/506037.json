@@ -1,0 +1,67 @@
+{
+ "id": 506037,
+ "name": "Mrs. Ming Ming's Advice",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#i4031111:# #t4031111:# #c4031111# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506038,
+   "levelMinimum": 17,
+   "quests": [
+    {
+     "id": 506037,
+     "state": 2
+    }
+   ],
+   "npcId": 206,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506037,
+  "items": [
+   {
+    "id": 4031111,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506037,
+  "exp": 687,
+  "items": [
+   {
+    "id": 4031111,
+    "count": -1
+   }
+  ],
+  "meso": 388,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506037,
+  "levelMinimum": 17,
+  "quests": [
+   {
+    "id": 506036,
+    "state": 2
+   }
+  ],
+  "npcId": 203,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506037,
+  "levelMinimum": 17,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031111
+   }
+  ],
+  "npcId": 206,
+  "state": 1
+ }
+}

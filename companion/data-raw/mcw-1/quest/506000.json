@@ -1,0 +1,51 @@
+{
+ "id": 506000,
+ "name": "To Henesys, the Prairie Town",
+ "area": 20,
+ "areaName": "Citizenship",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506100,
+   "levelMinimum": 12,
+   "quests": [
+    {
+     "id": 506000,
+     "state": 2
+    }
+   ],
+   "npcId": 229,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506000,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506000,
+  "exp": 334,
+  "items": [
+   {
+    "id": 2000000,
+    "count": 5
+   },
+   {
+    "id": 2000003,
+    "count": 8
+   }
+  ],
+  "meso": 409,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506000,
+  "levelMinimum": 12,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506000,
+  "levelMinimum": 12,
+  "npcId": 229,
+  "state": 1
+ }
+}

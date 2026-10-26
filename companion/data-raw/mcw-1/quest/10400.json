@@ -1,0 +1,82 @@
+{
+ "id": 10400,
+ "name": "Fixing Blackbull's House",
+ "area": 15,
+ "areaName": "Perion",
+ "demandSummary": "#o6# #a104001#\\n#o11# #a104002#\\n#i4000005:# #t4000005:# #c4000005# / 10\\n#i4000011:# #t4000011:# #c4000011# / 10",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10401,
+   "levelMinimum": 48,
+   "quests": [
+    {
+     "id": 10400,
+     "state": 2
+    }
+   ],
+   "npcId": 501,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10400,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10400,
+  "exp": 252,
+  "items": [
+   {
+    "id": 1092001,
+    "count": 1
+   },
+   {
+    "id": 1092003,
+    "count": 1
+   },
+   {
+    "id": 4000005,
+    "count": -10,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4000011,
+    "count": -10,
+    "potentialGrade": "normal"
+   }
+  ],
+  "meso": 380,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10400,
+  "levelMinimum": 11,
+  "npcId": 501,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10400,
+  "mobs": [
+   {
+    "count": 20,
+    "id": 6
+   },
+   {
+    "count": 20,
+    "id": 11
+   }
+  ],
+  "items": [
+   {
+    "count": 10,
+    "id": 4000005
+   },
+   {
+    "count": 10,
+    "id": 4000011
+   }
+  ],
+  "npcId": 501,
+  "state": 1
+ }
+}

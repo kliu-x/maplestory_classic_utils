@@ -1,0 +1,23 @@
+{
+ "id": 10004001,
+ "name": "Perion Weapon Store",
+ "streetName": "Victoria Road",
+ "mapMark": "Perion",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10004000,
+ "vrBounds": {
+  "width": 800,
+  "height": 600
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 507
+  },
+  {
+   "id": 508
+  }
+ ],
+ "portals": []
+}

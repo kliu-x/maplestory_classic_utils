@@ -1,0 +1,58 @@
+{
+ "id": 20002,
+ "name": "Test of Qualification",
+ "area": 100,
+ "areaName": "Warrior",
+ "demandSummary": "#i4031017:# #t4031017:# #c4031017# / 30#k",
+ "questsAvailableOnComplete": [
+  {
+   "id": 20003,
+   "jobs": [
+    100
+   ],
+   "levelMinimum": 30,
+   "quests": [
+    {
+     "id": 20002,
+     "state": 2
+    }
+   ],
+   "npcId": 514,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 20002,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 20002,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 20002,
+  "jobs": [
+   100
+  ],
+  "levelMinimum": 30,
+  "quests": [
+   {
+    "id": 20001,
+    "state": 2
+   }
+  ],
+  "npcId": 514,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 20002,
+  "items": [
+   {
+    "count": 30,
+    "id": 4031017
+   }
+  ],
+  "npcId": 514,
+  "state": 1
+ }
+}

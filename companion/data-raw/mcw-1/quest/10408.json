@@ -1,0 +1,53 @@
+{
+ "id": 10408,
+ "name": "Research on Animal Fossils",
+ "area": 15,
+ "areaName": "Perion",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10409,
+   "levelMinimum": 17,
+   "quests": [
+    {
+     "id": 10408,
+     "state": 2
+    }
+   ],
+   "npcId": 224,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10408,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10408,
+  "exp": 982,
+  "items": [
+   {
+    "id": 2010004,
+    "count": 15
+   }
+  ],
+  "meso": 555,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10408,
+  "levelMinimum": 17,
+  "quests": [
+   {
+    "id": 10407,
+    "state": 2
+   }
+  ],
+  "npcId": 308,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10408,
+  "npcId": 224,
+  "state": 1
+ }
+}

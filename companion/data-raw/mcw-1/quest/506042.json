@@ -1,0 +1,49 @@
+{
+ "id": 506042,
+ "name": "Chief Stan's Past",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "Talk to #p203#",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506043,
+   "levelMinimum": 27,
+   "quests": [
+    {
+     "id": 506042,
+     "state": 2
+    }
+   ],
+   "npcId": 203,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506042,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506042,
+  "exp": 2625,
+  "meso": 603,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506042,
+  "levelMinimum": 27,
+  "quests": [
+   {
+    "id": 506041,
+    "state": 2
+   }
+  ],
+  "npcId": 205,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506042,
+  "levelMinimum": 27,
+  "npcId": 203,
+  "state": 1
+ }
+}

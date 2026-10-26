@@ -1,0 +1,65 @@
+{
+ "id": 506043,
+ "name": "Chief Stan's Hammer",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#i4031116:# #t4031116:# #c4031116# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506044,
+   "levelMinimum": 27,
+   "quests": [
+    {
+     "id": 506043,
+     "state": 2
+    }
+   ],
+   "npcId": 203,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506043,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506043,
+  "exp": 3750,
+  "items": [
+   {
+    "id": 4031116,
+    "count": -1
+   },
+   {
+    "id": 2000003,
+    "count": 15
+   }
+  ],
+  "meso": 862,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506043,
+  "levelMinimum": 27,
+  "quests": [
+   {
+    "id": 506042,
+    "state": 2
+   }
+  ],
+  "npcId": 203,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506043,
+  "levelMinimum": 27,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031116
+   }
+  ],
+  "npcId": 203,
+  "state": 1
+ }
+}

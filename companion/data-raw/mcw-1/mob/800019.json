@@ -1,0 +1,21 @@
+{
+ "id": 800019,
+ "name": "Moon Bunny",
+ "meta": {
+  "level": 30,
+  "maxHP": 5000,
+  "maxMP": 200,
+  "speed": 5,
+  "physicalDamage": 0,
+  "physicalDefense": 0,
+  "magicDamage": 0,
+  "magicDefense": 0,
+  "accuracy": 0,
+  "evasion": 0,
+  "exp": 0,
+  "isUndead": false,
+  "minimumPushDamage": 0,
+  "summonType": 1,
+  "revivesMonsterId": []
+ }
+}

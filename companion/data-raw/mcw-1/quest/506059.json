@@ -1,0 +1,73 @@
+{
+ "id": 506059,
+ "name": "A Craftsman's Touch",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#i4000050:# #t4000050:# #c4000050# / 10\\n#i4000063:# #t4000063:# #c4000063# / 10",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506060,
+   "levelMinimum": 57,
+   "quests": [
+    {
+     "id": 506059,
+     "state": 2
+    }
+   ],
+   "npcId": 208,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506059,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506059,
+  "exp": 17800,
+  "items": [
+   {
+    "id": 4000050,
+    "count": -10
+   },
+   {
+    "id": 4000063,
+    "count": -10
+   },
+   {
+    "id": 2000003,
+    "count": 20
+   }
+  ],
+  "meso": 1784,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506059,
+  "levelMinimum": 57,
+  "quests": [
+   {
+    "id": 506058,
+    "state": 2
+   }
+  ],
+  "npcId": 208,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506059,
+  "levelMinimum": 57,
+  "items": [
+   {
+    "count": 10,
+    "id": 4000050
+   },
+   {
+    "count": 10,
+    "id": 4000063
+   }
+  ],
+  "npcId": 208,
+  "state": 1
+ }
+}

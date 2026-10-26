@@ -1,0 +1,60 @@
+{
+ "id": 80026,
+ "name": "Welcome to the Free Market!",
+ "area": 10,
+ "areaName": "Victoria Island",
+ "demandSummary": "#i4031091:# #t4031091:# #c4031091# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 80027,
+   "levelMinimum": 13,
+   "quests": [
+    {
+     "id": 80026,
+     "state": 2
+    }
+   ],
+   "npcId": 202,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 80026,
+  "items": [
+   {
+    "id": 4031091,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80026,
+  "exp": 424,
+  "items": [
+   {
+    "id": 4031091,
+    "count": -1
+   }
+  ],
+  "meso": 306,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80026,
+  "levelMinimum": 13,
+  "npcId": 800018,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80026,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031091
+   }
+  ],
+  "npcId": 202,
+  "state": 1
+ }
+}

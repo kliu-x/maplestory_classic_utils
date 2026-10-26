@@ -1,0 +1,26 @@
+{
+ "id": 10004133,
+ "name": "Excavation Site <Camp>",
+ "streetName": "Victoria Road",
+ "mapMark": "Perion",
+ "isTown": false,
+ "mobRate": 0.8999999761581421,
+ "returnMap": 10004000,
+ "vrBounds": {
+  "width": 2456,
+  "height": 1367
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 515
+  },
+  {
+   "id": 516
+  },
+  {
+   "id": 517
+  }
+ ],
+ "portals": []
+}

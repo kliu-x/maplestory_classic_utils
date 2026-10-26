@@ -1,0 +1,61 @@
+{
+ "id": 506152,
+ "name": "A Quiet Line of Work",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#o43# #a5061521#",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506153,
+   "levelMinimum": 47,
+   "quests": [
+    {
+     "id": 506152,
+     "state": 2
+    }
+   ],
+   "npcId": 900014,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506152,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506152,
+  "exp": 11400,
+  "items": [
+   {
+    "id": 2000003,
+    "count": 20
+   }
+  ],
+  "meso": 1477,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506152,
+  "levelMinimum": 47,
+  "quests": [
+   {
+    "id": 506115,
+    "state": 2
+   }
+  ],
+  "npcId": 900014,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506152,
+  "levelMinimum": 47,
+  "mobs": [
+   {
+    "count": 50,
+    "id": 43
+   }
+  ],
+  "npcId": 900014,
+  "state": 1
+ }
+}

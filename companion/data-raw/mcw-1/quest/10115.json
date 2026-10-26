@@ -1,0 +1,93 @@
+{
+ "id": 10115,
+ "name": "Maya's First Collection",
+ "area": 12,
+ "areaName": "Henesys",
+ "demandSummary": "#i4000009:# #t4000009:# #c4000009# / 20\\n#i4000013:# #t4000013:# #c4000013# / 20\\n#i4000016:# #t4000016:# #c4000016# / 20\\n#i4000019:# #t4000019:# #c4000019# / 20",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10116,
+   "levelMinimum": 30,
+   "quests": [
+    {
+     "id": 10115,
+     "state": 2
+    }
+   ],
+   "npcId": 207,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10115,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10115,
+  "exp": 4780,
+  "items": [
+   {
+    "id": 4000009,
+    "count": -20,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4000013,
+    "count": -20,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4000016,
+    "count": -20,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4000019,
+    "count": -20,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 2000001,
+    "count": 30,
+    "potentialGrade": "normal"
+   }
+  ],
+  "meso": 965,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10115,
+  "levelMinimum": 30,
+  "quests": [
+   {
+    "id": 10112,
+    "state": 2
+   }
+  ],
+  "npcId": 207,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10115,
+  "items": [
+   {
+    "count": 20,
+    "id": 4000009
+   },
+   {
+    "count": 20,
+    "id": 4000013
+   },
+   {
+    "count": 20,
+    "id": 4000016
+   },
+   {
+    "count": 20,
+    "id": 4000019
+   }
+  ],
+  "npcId": 207,
+  "state": 1
+ }
+}

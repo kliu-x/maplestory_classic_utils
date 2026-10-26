@@ -1,0 +1,21 @@
+{
+ "id": 22,
+ "name": "Wild Boar",
+ "meta": {
+  "isBodyAttack": true,
+  "level": 25,
+  "maxHP": 510,
+  "maxMP": 0,
+  "speed": 0,
+  "physicalDamage": 131,
+  "physicalDefense": 15,
+  "magicDamage": 0,
+  "magicDefense": 15,
+  "accuracy": 101,
+  "evasion": 15,
+  "exp": 46,
+  "minimumPushDamage": 50,
+  "summonType": 1,
+  "revivesMonsterId": []
+ }
+}

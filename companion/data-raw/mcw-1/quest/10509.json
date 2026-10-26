@@ -1,0 +1,65 @@
+{
+ "id": 10509,
+ "name": "[Forest of Patience] Sabitrama and the Diet Medicine",
+ "area": 16,
+ "areaName": "Sleepywood",
+ "demandSummary": "#i4031025:# #t4031025:# #c4031025# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10510,
+   "levelMinimum": 50,
+   "quests": [
+    {
+     "id": 10509,
+     "state": 2
+    }
+   ],
+   "npcId": 603,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10509,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10509,
+  "exp": 3060,
+  "fame": 1,
+  "items": [
+   {
+    "id": 4031025,
+    "count": -1
+   },
+   {
+    "id": 2040501,
+    "count": 1,
+    "gender": true
+   },
+   {
+    "id": 2040502,
+    "count": 1,
+    "gender": true
+   }
+  ],
+  "meso": 804,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10509,
+  "levelMinimum": 25,
+  "npcId": 603,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10509,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031025
+   }
+  ],
+  "npcId": 603,
+  "state": 1
+ }
+}

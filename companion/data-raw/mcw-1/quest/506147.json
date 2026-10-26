@@ -1,0 +1,69 @@
+{
+ "id": 506147,
+ "name": "Worn Bandages",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#i4000028:# #t4000028:# #c4000028# / 35",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506148,
+   "levelMinimum": 37,
+   "quests": [
+    {
+     "id": 506147,
+     "state": 2
+    }
+   ],
+   "npcId": 412,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506147,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506147,
+  "exp": 7310,
+  "items": [
+   {
+    "id": 4000028,
+    "count": -35
+   },
+   {
+    "id": 2000003,
+    "count": 20
+   }
+  ],
+  "meso": 1170,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506147,
+  "levelMinimum": 37,
+  "quests": [
+   {
+    "id": 10310,
+    "state": 2
+   },
+   {
+    "id": 506109,
+    "state": 2
+   }
+  ],
+  "npcId": 412,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506147,
+  "levelMinimum": 37,
+  "items": [
+   {
+    "count": 35,
+    "id": 4000028
+   }
+  ],
+  "npcId": 412,
+  "state": 1
+ }
+}

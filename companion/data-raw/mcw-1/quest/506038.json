@@ -1,0 +1,89 @@
+{
+ "id": 506038,
+ "name": "Bruce's Cooking Ingredients",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#i4000015:# #t4000015:# #c4000015# / 15\\n#i2010002:# #t2010002:# #c2010002# / 3\\n#i2010001:# #t2010001:# #c2010001# / 3\\n#i2010004:# #t2010004:# #c2010004# / 3",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506039,
+   "levelMinimum": 17,
+   "quests": [
+    {
+     "id": 506038,
+     "state": 2
+    }
+   ],
+   "npcId": 206,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506038,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506038,
+  "exp": 982,
+  "items": [
+   {
+    "id": 4000015,
+    "count": -15
+   },
+   {
+    "id": 2010002,
+    "count": -3
+   },
+   {
+    "id": 2010001,
+    "count": -3
+   },
+   {
+    "id": 2010004,
+    "count": -3
+   },
+   {
+    "id": 2000003,
+    "count": 10
+   }
+  ],
+  "meso": 555,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506038,
+  "levelMinimum": 17,
+  "quests": [
+   {
+    "id": 506037,
+    "state": 2
+   }
+  ],
+  "npcId": 206,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506038,
+  "levelMinimum": 17,
+  "items": [
+   {
+    "count": 15,
+    "id": 4000015
+   },
+   {
+    "count": 3,
+    "id": 2010002
+   },
+   {
+    "count": 3,
+    "id": 2010001
+   },
+   {
+    "count": 3,
+    "id": 2010004
+   }
+  ],
+  "npcId": 206,
+  "state": 1
+ }
+}

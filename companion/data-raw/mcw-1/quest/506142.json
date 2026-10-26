@@ -1,0 +1,69 @@
+{
+ "id": 506142,
+ "name": "A Lost Thank-You",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#i4031126:# #t4031126:# #c4031126# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506143,
+   "levelMinimum": 27,
+   "quests": [
+    {
+     "id": 506142,
+     "state": 2
+    }
+   ],
+   "npcId": 402,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506142,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506142,
+  "exp": 3750,
+  "items": [
+   {
+    "id": 4031126,
+    "count": -1
+   },
+   {
+    "id": 2000003,
+    "count": 15
+   }
+  ],
+  "meso": 862,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506142,
+  "levelMinimum": 27,
+  "quests": [
+   {
+    "id": 10302,
+    "state": 2
+   },
+   {
+    "id": 506101,
+    "state": 2
+   }
+  ],
+  "npcId": 402,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506142,
+  "levelMinimum": 27,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031126
+   }
+  ],
+  "npcId": 402,
+  "state": 1
+ }
+}

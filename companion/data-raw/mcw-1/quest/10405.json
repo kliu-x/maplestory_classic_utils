@@ -1,0 +1,78 @@
+{
+ "id": 10405,
+ "name": "Searching for Fossils",
+ "area": 15,
+ "areaName": "Perion",
+ "demandSummary": "#o13# #a104051#\\n#o15# #a104052#\\n#i4031068:# #t4031068# #c4031068# / 12\\n#i4031069:# #t4031069# #c4031069# / 12",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10406,
+   "levelMinimum": 17,
+   "quests": [
+    {
+     "id": 10405,
+     "state": 2
+    }
+   ],
+   "npcId": 512,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10405,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10405,
+  "exp": 982,
+  "items": [
+   {
+    "id": 4031069,
+    "count": -12,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4031068,
+    "count": -12,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 2000003,
+    "count": 15
+   }
+  ],
+  "meso": 555,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10405,
+  "levelMinimum": 17,
+  "npcId": 512,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10405,
+  "mobs": [
+   {
+    "count": 25,
+    "id": 13
+   },
+   {
+    "count": 25,
+    "id": 15
+   }
+  ],
+  "items": [
+   {
+    "count": 12,
+    "id": 4031069
+   },
+   {
+    "count": 12,
+    "id": 4031068
+   }
+  ],
+  "npcId": 512,
+  "state": 1
+ }
+}

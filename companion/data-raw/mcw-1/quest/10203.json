@@ -1,0 +1,75 @@
+{
+ "id": 10203,
+ "name": "Collecting 100 Cursed Dolls",
+ "area": 13,
+ "areaName": "Ellinia",
+ "demandSummary": "#o38# #a102031#\\n#i4000033:# #t4000033:# #c4000033# / 100",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10204,
+   "levelMinimum": 36,
+   "quests": [
+    {
+     "id": 10203,
+     "state": 2
+    }
+   ],
+   "npcId": 305,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10203,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10203,
+  "exp": 7020,
+  "fame": 2,
+  "items": [
+   {
+    "id": 4000033,
+    "count": -100
+   },
+   {
+    "id": 4010006,
+    "count": 5
+   },
+   {
+    "id": 4020007,
+    "count": 5
+   }
+  ],
+  "meso": 1140,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10203,
+  "levelMinimum": 36,
+  "quests": [
+   {
+    "id": 10202,
+    "state": 2
+   }
+  ],
+  "npcId": 305,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10203,
+  "mobs": [
+   {
+    "count": 100,
+    "id": 38
+   }
+  ],
+  "items": [
+   {
+    "count": 100,
+    "id": 4000033
+   }
+  ],
+  "npcId": 305,
+  "state": 1
+ }
+}

@@ -1,0 +1,88 @@
+{
+ "id": 10403,
+ "name": "Reawakening the Gladius",
+ "area": 15,
+ "areaName": "Perion",
+ "demandSummary": "#i4020109:# #t4020109:# #c4020109# / 1\\n#i4003004:# #t4003004:# #c4003004# / 1\\n#i4001007:# #t4001007:# #c4001007# / 1\\n#i4001008:# #t4001008:# #c4001008# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10404,
+   "levelMinimum": 50,
+   "quests": [
+    {
+     "id": 10403,
+     "state": 2
+    }
+   ],
+   "npcId": 602,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10403,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10403,
+  "exp": 12900,
+  "items": [
+   {
+    "id": 4020109,
+    "count": -1
+   },
+   {
+    "id": 4003004,
+    "count": -1
+   },
+   {
+    "id": 4001007,
+    "count": -1
+   },
+   {
+    "id": 4001008,
+    "count": -1
+   },
+   {
+    "id": 2000003,
+    "count": 30
+   }
+  ],
+  "meso": 1579,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10403,
+  "levelMinimum": 50,
+  "quests": [
+   {
+    "id": 10402,
+    "state": 2
+   }
+  ],
+  "npcId": 602,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10403,
+  "items": [
+   {
+    "count": 1,
+    "id": 4020109
+   },
+   {
+    "count": 1,
+    "id": 4003004
+   },
+   {
+    "count": 1,
+    "id": 4001007
+   },
+   {
+    "count": 1,
+    "id": 4001008
+   }
+  ],
+  "npcId": 602,
+  "state": 1
+ }
+}

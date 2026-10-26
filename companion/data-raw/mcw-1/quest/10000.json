@@ -1,0 +1,63 @@
+{
+ "id": 10000,
+ "name": "Olaf's First Training",
+ "area": 11,
+ "areaName": "Lith Harbor",
+ "demandSummary": "#o6# #a100001#\\n#o7# #a100002#",
+ "hasSelectedMob": true,
+ "questsAvailableOnComplete": [
+  {
+   "id": 10009,
+   "levelMinimum": 8,
+   "quests": [
+    {
+     "id": 10000,
+     "state": 2
+    }
+   ],
+   "npcId": 107,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10000,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10000,
+  "exp": 124,
+  "items": [
+   {
+    "id": 2000000,
+    "count": 8
+   },
+   {
+    "id": 2000003,
+    "count": 8
+   }
+  ],
+  "meso": 277,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10000,
+  "levelMinimum": 8,
+  "npcId": 107,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10000,
+  "mobs": [
+   {
+    "count": 8,
+    "id": 6
+   },
+   {
+    "count": 8,
+    "id": 7
+   }
+  ],
+  "npcId": 107,
+  "state": 1
+ }
+}

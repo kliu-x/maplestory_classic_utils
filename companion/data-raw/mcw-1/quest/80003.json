@@ -1,0 +1,80 @@
+{
+ "id": 80003,
+ "name": "Make a Slime & Pig Omok Set",
+ "area": 12,
+ "areaName": "Henesys",
+ "demandSummary": "#i4031049:# #t4031049:# #c4031049# / 1\\n#i4031050:# #t4031050:# #c4031050# / 1\\n#i4031051:# #t4031051:# #c4031051# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 80004,
+   "levelMinimum": 12,
+   "quests": [
+    {
+     "id": 80003,
+     "state": 2
+    }
+   ],
+   "npcId": 228,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 80003,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80003,
+  "exp": 334,
+  "items": [
+   {
+    "id": 4031049,
+    "count": -1
+   },
+   {
+    "id": 4031050,
+    "count": -1
+   },
+   {
+    "id": 4031051,
+    "count": -1
+   },
+   {
+    "id": 4080001,
+    "count": 1
+   }
+  ],
+  "meso": 409,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80003,
+  "levelMinimum": 12,
+  "quests": [
+   {
+    "id": 80002,
+    "state": 2
+   }
+  ],
+  "npcId": 228,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80003,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031049
+   },
+   {
+    "count": 1,
+    "id": 4031050
+   },
+   {
+    "count": 1,
+    "id": 4031051
+   }
+  ],
+  "npcId": 228,
+  "state": 1
+ }
+}

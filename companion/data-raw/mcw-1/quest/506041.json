@@ -1,0 +1,53 @@
+{
+ "id": 506041,
+ "name": "Mrs. Ming Ming's Concern",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "Talk to #p205#",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506042,
+   "levelMinimum": 27,
+   "quests": [
+    {
+     "id": 506041,
+     "state": 2
+    }
+   ],
+   "npcId": 205,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506041,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506041,
+  "exp": 2625,
+  "meso": 603,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506041,
+  "levelMinimum": 27,
+  "quests": [
+   {
+    "id": 10103,
+    "state": 2
+   },
+   {
+    "id": 506003,
+    "state": 2
+   }
+  ],
+  "npcId": 203,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506041,
+  "levelMinimum": 27,
+  "npcId": 205,
+  "state": 1
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "id": 10216,
+ "name": "The Faded Ink",
+ "area": 13,
+ "areaName": "Ellinia",
+ "demandSummary": "#i4031120# #t4031120# #c4031120# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10217,
+   "levelMinimum": 28,
+   "quests": [
+    {
+     "id": 10216,
+     "state": 2
+    }
+   ],
+   "npcId": 411,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10216,
+  "items": [
+   {
+    "id": 4031120,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10216,
+  "exp": 4090,
+  "items": [
+   {
+    "id": 2000006,
+    "count": 10
+   },
+   {
+    "id": 4031120,
+    "count": -1
+   }
+  ],
+  "meso": 892,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10216,
+  "levelMinimum": 28,
+  "quests": [
+   {
+    "id": 10215,
+    "state": 2
+   }
+  ],
+  "npcId": 602,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10216,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031120
+   }
+  ],
+  "npcId": 606,
+  "state": 1
+ }
+}

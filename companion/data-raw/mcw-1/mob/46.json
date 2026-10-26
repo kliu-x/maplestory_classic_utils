@@ -1,0 +1,22 @@
+{
+ "id": 46,
+ "name": "Croco",
+ "meta": {
+  "isBodyAttack": true,
+  "level": 52,
+  "maxHP": 3136,
+  "maxMP": 75,
+  "speed": -30,
+  "physicalDamage": 270,
+  "physicalDefense": 10,
+  "magicDamage": 0,
+  "magicDefense": 0,
+  "accuracy": 131,
+  "evasion": 31,
+  "exp": 146,
+  "minimumPushDamage": 275,
+  "elementalAttributes": "I2F3",
+  "summonType": 1,
+  "revivesMonsterId": []
+ }
+}

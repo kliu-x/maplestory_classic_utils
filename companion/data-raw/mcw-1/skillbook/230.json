@@ -1,0 +1,1149 @@
+{
+ "id": 230,
+ "description": {
+  "id": 230,
+  "desc": "",
+  "name": "",
+  "shortDesc": "",
+  "bookName": "Holy Magic Basics",
+  "names": {
+   "en": "Holy Magic Basics",
+   "es": "Fundamentos de magia sagrada",
+   "ko": "성마법의 기초"
+  }
+ },
+ "skills": [
+  {
+   "id": 2300000,
+   "masterLevel": 20,
+   "weapons": [],
+   "description": {
+    "name": "MP Eater",
+    "desc": "[Master Level: 20]\\nAbsorbs the enemy's MP when attacking with Magic skills, but only once every 5 seconds. Cannot absorb if the enemy's MP is 0."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "x": "30",
+     "prop": "30"
+    },
+    {
+     "hs": "h2",
+     "x": "31",
+     "prop": "31"
+    },
+    {
+     "hs": "h3",
+     "x": "32",
+     "prop": "32"
+    },
+    {
+     "hs": "h4",
+     "x": "33",
+     "prop": "33"
+    },
+    {
+     "hs": "h5",
+     "x": "34",
+     "prop": "34"
+    },
+    {
+     "hs": "h6",
+     "x": "35",
+     "prop": "35"
+    },
+    {
+     "hs": "h7",
+     "x": "36",
+     "prop": "36"
+    },
+    {
+     "hs": "h8",
+     "x": "37",
+     "prop": "37"
+    },
+    {
+     "hs": "h9",
+     "x": "38",
+     "prop": "38"
+    },
+    {
+     "hs": "h10",
+     "x": "39",
+     "prop": "39"
+    },
+    {
+     "hs": "h11",
+     "x": "40",
+     "prop": "40"
+    },
+    {
+     "hs": "h12",
+     "x": "41",
+     "prop": "41"
+    },
+    {
+     "hs": "h13",
+     "x": "42",
+     "prop": "42"
+    },
+    {
+     "hs": "h14",
+     "x": "43",
+     "prop": "43"
+    },
+    {
+     "hs": "h15",
+     "x": "44",
+     "prop": "44"
+    },
+    {
+     "hs": "h16",
+     "x": "45",
+     "prop": "45"
+    },
+    {
+     "hs": "h17",
+     "x": "46",
+     "prop": "46"
+    },
+    {
+     "hs": "h18",
+     "x": "47",
+     "prop": "47"
+    },
+    {
+     "hs": "h19",
+     "x": "48",
+     "prop": "48"
+    },
+    {
+     "hs": "h20",
+     "x": "50",
+     "prop": "50"
+    }
+   ]
+  },
+  {
+   "id": 2301000,
+   "masterLevel": 20,
+   "weapons": [],
+   "description": {
+    "name": "Teleport",
+    "desc": "[Master Level: 20]\\nUse the arrow keys to teleport a set distance within the same map."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "55",
+     "range": "110"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "53",
+     "range": "112"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "51",
+     "range": "114"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "49",
+     "range": "116"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "47",
+     "range": "118"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "45",
+     "range": "120"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "43",
+     "range": "122"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "41",
+     "range": "124"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "39",
+     "range": "126"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "37",
+     "range": "128"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "35",
+     "range": "130"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "33",
+     "range": "132"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "31",
+     "range": "134"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "29",
+     "range": "136"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "27",
+     "range": "138"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "25",
+     "range": "140"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "23",
+     "range": "142"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "21",
+     "range": "144"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "19",
+     "range": "146"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "15",
+     "range": "150"
+    }
+   ]
+  },
+  {
+   "id": 2301001,
+   "masterLevel": 30,
+   "weapons": [],
+   "description": {
+    "name": "Heal",
+    "desc": "[Master Level: 30]\\nRecovers the HP of all party members around the area. The amount of healing depends on the number of people being healed, and undead monsters around the area will receive damage."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "12",
+     "x": "40",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "12",
+     "x": "42",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "12",
+     "x": "44",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "13",
+     "x": "46",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "13",
+     "x": "48",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "14",
+     "x": "50",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "14",
+     "x": "52",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "15",
+     "x": "54",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "15",
+     "x": "56",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "16",
+     "x": "58",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "16",
+     "x": "60",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "17",
+     "x": "62",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "17",
+     "x": "64",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "18",
+     "x": "66",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "18",
+     "x": "68",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "19",
+     "x": "70",
+     "lt": "Point [ X=-300, Y=-90 ]",
+     "rb": "Point [ X=300, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "19",
+     "x": "72",
+     "lt": "Point [ X=-300, Y=-90 ]",
+     "rb": "Point [ X=300, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "20",
+     "x": "74",
+     "lt": "Point [ X=-300, Y=-90 ]",
+     "rb": "Point [ X=300, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "20",
+     "x": "76",
+     "lt": "Point [ X=-300, Y=-90 ]",
+     "rb": "Point [ X=300, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "21",
+     "x": "78",
+     "lt": "Point [ X=-300, Y=-90 ]",
+     "rb": "Point [ X=300, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h21",
+     "mpCon": "21",
+     "x": "80",
+     "lt": "Point [ X=-300, Y=-90 ]",
+     "rb": "Point [ X=300, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h22",
+     "mpCon": "22",
+     "x": "82",
+     "lt": "Point [ X=-300, Y=-90 ]",
+     "rb": "Point [ X=300, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h23",
+     "mpCon": "22",
+     "x": "84",
+     "lt": "Point [ X=-300, Y=-90 ]",
+     "rb": "Point [ X=300, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h24",
+     "mpCon": "23",
+     "x": "86",
+     "lt": "Point [ X=-300, Y=-90 ]",
+     "rb": "Point [ X=300, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h25",
+     "mpCon": "23",
+     "x": "88",
+     "lt": "Point [ X=-300, Y=-90 ]",
+     "rb": "Point [ X=300, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h26",
+     "mpCon": "24",
+     "x": "90",
+     "lt": "Point [ X=-300, Y=-90 ]",
+     "rb": "Point [ X=300, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h27",
+     "mpCon": "24",
+     "x": "92",
+     "lt": "Point [ X=-300, Y=-90 ]",
+     "rb": "Point [ X=300, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h28",
+     "mpCon": "25",
+     "x": "94",
+     "lt": "Point [ X=-300, Y=-90 ]",
+     "rb": "Point [ X=300, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h29",
+     "mpCon": "25",
+     "x": "96",
+     "lt": "Point [ X=-300, Y=-90 ]",
+     "rb": "Point [ X=300, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h30",
+     "mpCon": "27",
+     "x": "100",
+     "lt": "Point [ X=-300, Y=-90 ]",
+     "rb": "Point [ X=300, Y=90 ]",
+     "mobCount": "6",
+     "attackCount": "1"
+    }
+   ]
+  },
+  {
+   "id": 2301002,
+   "masterLevel": 20,
+   "requiredSkillLevels": {
+    "2301001": 5
+   },
+   "weapons": [],
+   "description": {
+    "name": "Invincible",
+    "desc": "[Master Level: 20]\\nReduces physical damage taken for a certain duration, and deals non-elemental magic damage to any monster that takes contact damage from the caster.\\nRequired Skill : #cAt least Level 5 Heal#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "16",
+     "x": "1",
+     "dot": "10",
+     "time": "100"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "17",
+     "x": "2",
+     "dot": "11",
+     "time": "110"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "18",
+     "x": "3",
+     "dot": "12",
+     "time": "120"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "19",
+     "x": "4",
+     "dot": "13",
+     "time": "130"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "20",
+     "x": "5",
+     "dot": "14",
+     "time": "140"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "21",
+     "x": "6",
+     "dot": "15",
+     "time": "150"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "22",
+     "x": "7",
+     "dot": "16",
+     "time": "160"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "23",
+     "x": "8",
+     "dot": "17",
+     "time": "170"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "24",
+     "x": "9",
+     "dot": "18",
+     "time": "180"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "25",
+     "x": "10",
+     "dot": "19",
+     "time": "190"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "26",
+     "x": "11",
+     "dot": "20",
+     "time": "200"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "27",
+     "x": "12",
+     "dot": "21",
+     "time": "210"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "28",
+     "x": "13",
+     "dot": "22",
+     "time": "220"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "29",
+     "x": "14",
+     "dot": "23",
+     "time": "230"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "30",
+     "x": "15",
+     "dot": "24",
+     "time": "240"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "31",
+     "x": "16",
+     "dot": "25",
+     "time": "250"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "32",
+     "x": "17",
+     "dot": "26",
+     "time": "260"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "33",
+     "x": "18",
+     "dot": "27",
+     "time": "270"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "34",
+     "x": "19",
+     "dot": "28",
+     "time": "280"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "36",
+     "x": "20",
+     "dot": "30",
+     "time": "300"
+    }
+   ]
+  },
+  {
+   "id": 2301003,
+   "masterLevel": 20,
+   "requiredSkillLevels": {
+    "2301002": 5
+   },
+   "weapons": [],
+   "description": {
+    "name": "Bless",
+    "desc": "[Master Level: 20]\\nTemporarily reduces all Damage taken and increases the HP recovery from the Heal skill for all nearby party members.\\nRequired Skill : #cAt least Level 5 Invincible#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "20",
+     "x": "1",
+     "y": "5",
+     "time": "100",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "20",
+     "x": "1",
+     "y": "6",
+     "time": "110",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "20",
+     "x": "2",
+     "y": "6",
+     "time": "120",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "21",
+     "x": "2",
+     "y": "7",
+     "time": "130",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "21",
+     "x": "3",
+     "y": "7",
+     "time": "140",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "22",
+     "x": "3",
+     "y": "8",
+     "time": "150",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "22",
+     "x": "4",
+     "y": "8",
+     "time": "160",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "23",
+     "x": "4",
+     "y": "9",
+     "time": "170",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "23",
+     "x": "5",
+     "y": "9",
+     "time": "180",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "24",
+     "x": "5",
+     "y": "10",
+     "time": "190",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "24",
+     "x": "6",
+     "y": "10",
+     "time": "200",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "25",
+     "x": "6",
+     "y": "11",
+     "time": "210",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "25",
+     "x": "7",
+     "y": "11",
+     "time": "220",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "26",
+     "x": "7",
+     "y": "12",
+     "time": "230",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "26",
+     "x": "8",
+     "y": "12",
+     "time": "240",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "27",
+     "x": "8",
+     "y": "13",
+     "time": "250",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "27",
+     "x": "9",
+     "y": "13",
+     "time": "260",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "28",
+     "x": "9",
+     "y": "14",
+     "time": "270",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "28",
+     "x": "10",
+     "y": "14",
+     "time": "280",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "30",
+     "x": "10",
+     "y": "15",
+     "time": "300",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    }
+   ]
+  },
+  {
+   "id": 2301004,
+   "masterLevel": 30,
+   "weapons": [],
+   "description": {
+    "name": "Holy Arrow",
+    "desc": "[Master Level: 30]\\nAttacks a monster by firing a holy arrow. Very effective against the undead or devil-based monsters."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "14",
+     "mad": "100",
+     "mastery": "1",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "14",
+     "mad": "102",
+     "mastery": "1",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "14",
+     "mad": "104",
+     "mastery": "1",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "15",
+     "mad": "106",
+     "mastery": "1",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "15",
+     "mad": "108",
+     "mastery": "2",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "15",
+     "mad": "110",
+     "mastery": "2",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "16",
+     "mad": "112",
+     "mastery": "2",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "16",
+     "mad": "114",
+     "mastery": "2",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "16",
+     "mad": "116",
+     "mastery": "3",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "17",
+     "mad": "118",
+     "mastery": "3",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "17",
+     "mad": "120",
+     "mastery": "3",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "18",
+     "mad": "122",
+     "mastery": "4",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "18",
+     "mad": "124",
+     "mastery": "4",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "19",
+     "mad": "126",
+     "mastery": "4",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "19",
+     "mad": "128",
+     "mastery": "5",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "20",
+     "mad": "130",
+     "mastery": "5",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "20",
+     "mad": "132",
+     "mastery": "5",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "21",
+     "mad": "134",
+     "mastery": "6",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "21",
+     "mad": "136",
+     "mastery": "6",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "22",
+     "mad": "138",
+     "mastery": "6",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h21",
+     "mpCon": "22",
+     "mad": "140",
+     "mastery": "7",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h22",
+     "mpCon": "23",
+     "mad": "142",
+     "mastery": "7",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h23",
+     "mpCon": "23",
+     "mad": "144",
+     "mastery": "7",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h24",
+     "mpCon": "24",
+     "mad": "146",
+     "mastery": "8",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h25",
+     "mpCon": "24",
+     "mad": "148",
+     "mastery": "8",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h26",
+     "mpCon": "25",
+     "mad": "150",
+     "mastery": "8",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h27",
+     "mpCon": "25",
+     "mad": "152",
+     "mastery": "9",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h28",
+     "mpCon": "26",
+     "mad": "154",
+     "mastery": "9",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h29",
+     "mpCon": "26",
+     "mad": "156",
+     "mastery": "9",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h30",
+     "mpCon": "28",
+     "mad": "160",
+     "mastery": "10",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    }
+   ]
+  }
+ ]
+}

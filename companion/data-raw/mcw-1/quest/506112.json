@@ -1,0 +1,40 @@
+{
+ "id": 506112,
+ "name": "Asking After Jake, the Town Resident",
+ "area": 20,
+ "areaName": "Citizenship",
+ "rewardOnStart": {
+  "id": 506112,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506112,
+  "exp": 233,
+  "items": [
+   {
+    "id": 2010005,
+    "count": 8
+   }
+  ],
+  "meso": 286,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506112,
+  "levelMinimum": 12,
+  "quests": [
+   {
+    "id": 506111,
+    "state": 2
+   }
+  ],
+  "npcId": 431,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506112,
+  "levelMinimum": 12,
+  "npcId": 417,
+  "state": 1
+ }
+}

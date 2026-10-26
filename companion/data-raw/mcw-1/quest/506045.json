@@ -1,0 +1,54 @@
+{
+ "id": 506045,
+ "name": "Regained Vitality",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "Talk to #p203#",
+ "rewardOnStart": {
+  "id": 506045,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506045,
+  "exp": 3750,
+  "fame": 1,
+  "items": [
+   {
+    "id": 2040301,
+    "count": 1
+   },
+   {
+    "id": 2040305,
+    "count": 1
+   },
+   {
+    "id": 2040309,
+    "count": 1
+   },
+   {
+    "id": 2040313,
+    "count": 1
+   }
+  ],
+  "meso": 862,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506045,
+  "levelMinimum": 27,
+  "quests": [
+   {
+    "id": 506044,
+    "state": 2
+   }
+  ],
+  "npcId": 202,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506045,
+  "levelMinimum": 27,
+  "npcId": 203,
+  "state": 1
+ }
+}

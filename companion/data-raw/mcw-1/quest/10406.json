@@ -1,0 +1,82 @@
+{
+ "id": 10406,
+ "name": "Delivering a Box of Fossils",
+ "area": 15,
+ "areaName": "Perion",
+ "demandSummary": "#i4031070:# #t4031070# #c4031070# / 1\\n#i4031071:# #t4031071# #c4031071# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10407,
+   "levelMinimum": 17,
+   "quests": [
+    {
+     "id": 10406,
+     "state": 2
+    }
+   ],
+   "npcId": 308,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10406,
+  "items": [
+   {
+    "id": 4031070,
+    "count": 1
+   },
+   {
+    "id": 4031071,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10406,
+  "exp": 982,
+  "items": [
+   {
+    "id": 4031070,
+    "count": -1
+   },
+   {
+    "id": 4031071,
+    "count": -1
+   },
+   {
+    "id": 2010002,
+    "count": 15
+   }
+  ],
+  "meso": 555,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10406,
+  "levelMinimum": 17,
+  "quests": [
+   {
+    "id": 10405,
+    "state": 2
+   }
+  ],
+  "npcId": 512,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10406,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031070
+   },
+   {
+    "count": 1,
+    "id": 4031071
+   }
+  ],
+  "npcId": 308,
+  "state": 1
+ }
+}

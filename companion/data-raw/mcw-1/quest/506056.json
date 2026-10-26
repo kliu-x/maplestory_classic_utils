@@ -1,0 +1,42 @@
+{
+ "id": 506056,
+ "name": "Becoming a Citizen of Honor",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "Talk to #p221#",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506057,
+   "levelMinimum": 57,
+   "quests": [
+    {
+     "id": 506056,
+     "state": 2
+    }
+   ],
+   "npcId": 221,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506056,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506056,
+  "exp": 12460,
+  "meso": 1248,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506056,
+  "levelMinimum": 57,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506056,
+  "levelMinimum": 57,
+  "npcId": 221,
+  "state": 1
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "id": 10623,
+ "name": "Boughs for the Lanterns",
+ "area": 17,
+ "areaName": "Forgotten Hollow",
+ "demandSummary": "#i4000058# #t4000058# #b#c4000058##k / 30",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10624,
+   "startTime": "2026-11-18T00:00:00",
+   "levelMinimum": 55,
+   "quests": [
+    {
+     "id": 10623,
+     "state": 2
+    }
+   ],
+   "npcId": 711,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10623,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10623,
+  "exp": 12900,
+  "items": [
+   {
+    "id": 4000058,
+    "count": -30
+   },
+   {
+    "id": 2040302,
+    "count": 1
+   },
+   {
+    "id": 2040306,
+    "count": 1
+   },
+   {
+    "id": 2040310,
+    "count": 1
+   },
+   {
+    "id": 2040314,
+    "count": 1
+   }
+  ],
+  "meso": 1579,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10623,
+  "startTime": "2026-11-18T00:00:00",
+  "levelMinimum": 50,
+  "quests": [
+   {
+    "id": 10622,
+    "state": 2
+   }
+  ],
+  "npcId": 712,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10623,
+  "items": [
+   {
+    "count": 30,
+    "id": 4000058
+   }
+  ],
+  "npcId": 711,
+  "state": 1
+ }
+}

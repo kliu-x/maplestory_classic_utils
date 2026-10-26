@@ -1,0 +1,67 @@
+{
+ "id": 506140,
+ "name": "Grandfather's Vitamin Gummy",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#i4031113:# #t4031113:# #c4031113# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506141,
+   "levelMinimum": 17,
+   "quests": [
+    {
+     "id": 506140,
+     "state": 2
+    }
+   ],
+   "npcId": 404,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506140,
+  "items": [
+   {
+    "id": 4031113,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506140,
+  "exp": 982,
+  "items": [
+   {
+    "id": 4031113,
+    "count": -1
+   }
+  ],
+  "meso": 555,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506140,
+  "levelMinimum": 17,
+  "quests": [
+   {
+    "id": 506139,
+    "state": 2
+   }
+  ],
+  "npcId": 111,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506140,
+  "levelMinimum": 17,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031113
+   }
+  ],
+  "npcId": 404,
+  "state": 1
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "id": 20201,
+ "name": "Finding the Instructor",
+ "area": 102,
+ "areaName": "Bowman",
+ "demandSummary": "#i4031015:# #t4031015:# #c4031015# / 1#k",
+ "questsAvailableOnComplete": [
+  {
+   "id": 20202,
+   "jobs": [
+    300
+   ],
+   "levelMinimum": 30,
+   "quests": [
+    {
+     "id": 20201,
+     "state": 2
+    }
+   ],
+   "npcId": 227,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 20201,
+  "items": [
+   {
+    "id": 4031015,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 20201,
+  "exp": 4780,
+  "items": [
+   {
+    "id": 4031015,
+    "count": -1
+   }
+  ],
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 20201,
+  "jobs": [
+   300
+  ],
+  "levelMinimum": 30,
+  "quests": [
+   {
+    "id": 20200,
+    "state": 2
+   }
+  ],
+  "npcId": 221,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 20201,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031015
+   }
+  ],
+  "npcId": 227,
+  "state": 1
+ }
+}

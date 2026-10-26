@@ -1,0 +1,57 @@
+{
+ "id": 10218,
+ "name": "We Hold Your Place",
+ "area": 13,
+ "areaName": "Ellinia",
+ "demandSummary": "#i4031136# #t4031136# #c4031136# / 1",
+ "rewardOnStart": {
+  "id": 10218,
+  "items": [
+   {
+    "id": 4031136,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10218,
+  "exp": 4090,
+  "fame": 2,
+  "items": [
+   {
+    "id": 1032023,
+    "count": 1
+   },
+   {
+    "id": 4031136,
+    "count": -1
+   }
+  ],
+  "meso": 892,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10218,
+  "levelMinimum": 28,
+  "quests": [
+   {
+    "id": 10217,
+    "state": 2
+   }
+  ],
+  "npcId": 313,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10218,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031136
+   }
+  ],
+  "npcId": 326,
+  "state": 1
+ }
+}

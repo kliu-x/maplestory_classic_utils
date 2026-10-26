@@ -1,0 +1,62 @@
+{
+ "id": 10002000,
+ "name": "Ellinia",
+ "streetName": "Victoria Road",
+ "mapMark": "Ellinia",
+ "isTown": true,
+ "mobRate": 0,
+ "returnMap": 10002000,
+ "vrBounds": {
+  "width": 2744,
+  "height": 5101
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 301
+  },
+  {
+   "id": 303
+  },
+  {
+   "id": 304
+  },
+  {
+   "id": 305
+  },
+  {
+   "id": 306
+  },
+  {
+   "id": 307
+  },
+  {
+   "id": 302
+  },
+  {
+   "id": 308
+  },
+  {
+   "id": 309
+  },
+  {
+   "id": 800015
+  },
+  {
+   "id": 800013
+  },
+  {
+   "id": 800012
+  }
+ ],
+ "portals": [
+  {
+   "toMap": 10002000,
+   "portalName": "h_under00"
+  },
+  {
+   "toMap": 10002000,
+   "portalName": "h_top00"
+  }
+ ]
+}

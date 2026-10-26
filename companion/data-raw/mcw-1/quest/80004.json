@@ -1,0 +1,80 @@
+{
+ "id": 80004,
+ "name": "Make a Slime & Octopus�Omok Set",
+ "area": 12,
+ "areaName": "Henesys",
+ "demandSummary": "#i4031052:# #t4031052:# #c4031052# / 1\\n#i4031053:# #t4031053:# #c4031053# / 1\\n#i4031054:# #t4031054:# #c4031054# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 80005,
+   "levelMinimum": 12,
+   "quests": [
+    {
+     "id": 80004,
+     "state": 2
+    }
+   ],
+   "npcId": 228,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 80004,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80004,
+  "exp": 334,
+  "items": [
+   {
+    "id": 4031052,
+    "count": -1
+   },
+   {
+    "id": 4031053,
+    "count": -1
+   },
+   {
+    "id": 4031054,
+    "count": -1
+   },
+   {
+    "id": 4080002,
+    "count": 1
+   }
+  ],
+  "meso": 409,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80004,
+  "levelMinimum": 12,
+  "quests": [
+   {
+    "id": 80003,
+    "state": 2
+   }
+  ],
+  "npcId": 228,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80004,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031052
+   },
+   {
+    "count": 1,
+    "id": 4031053
+   },
+   {
+    "count": 1,
+    "id": 4031054
+   }
+  ],
+  "npcId": 228,
+  "state": 1
+ }
+}

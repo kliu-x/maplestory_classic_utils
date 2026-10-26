@@ -1,0 +1,80 @@
+{
+ "id": 10307,
+ "name": "Chris's Request",
+ "area": 14,
+ "areaName": "Kerning City",
+ "demandSummary": "#i4003002# #t4003002# #b#c4003002##k / 20\\n#i4000049# #t4000049# #b#c4000049##k / 20",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10308,
+   "levelMinimum": 22,
+   "quests": [
+    {
+     "id": 10307,
+     "state": 2
+    }
+   ],
+   "npcId": 406,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10307,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10307,
+  "exp": 2140,
+  "items": [
+   {
+    "id": 4003002,
+    "count": -20,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4000049,
+    "count": -20,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4010100,
+    "count": 1,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4010101,
+    "count": 1,
+    "potentialGrade": "normal"
+   }
+  ],
+  "meso": 716,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10307,
+  "levelMinimum": 22,
+  "quests": [
+   {
+    "id": 10306,
+    "state": 2
+   }
+  ],
+  "npcId": 406,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10307,
+  "items": [
+   {
+    "count": 20,
+    "id": 4003002
+   },
+   {
+    "count": 20,
+    "id": 4000049
+   }
+  ],
+  "npcId": 406,
+  "state": 1
+ }
+}

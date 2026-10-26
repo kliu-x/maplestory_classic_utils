@@ -1,0 +1,20 @@
+{
+ "id": 10003098,
+ "name": "The Hermit's Cabin",
+ "streetName": "Hidden Street",
+ "mapMark": "KerningCity",
+ "isTown": false,
+ "mobRate": 1,
+ "returnMap": 10003000,
+ "vrBounds": {
+  "width": 780,
+  "height": 749
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 436
+  }
+ ],
+ "portals": []
+}

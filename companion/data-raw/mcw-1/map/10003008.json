@@ -1,0 +1,16 @@
+{
+ "id": 10003008,
+ "name": "Backalley Semi-Basement",
+ "streetName": "Victoria Road",
+ "mapMark": "KerningCity",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10003000,
+ "vrBounds": {
+  "width": 1400,
+  "height": 1061
+ },
+ "mobs": [],
+ "npcs": [],
+ "portals": []
+}

@@ -1,0 +1,91 @@
+{
+ "id": 10007,
+ "name": "[Deep Forest of Patience] John's Present",
+ "area": 11,
+ "areaName": "Lith Harbor",
+ "demandSummary": "#i4031043# #t4031043# #b#c4031043# / 20",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10008,
+   "levelMinimum": 65,
+   "quests": [
+    {
+     "id": 10007,
+     "state": 2
+    }
+   ],
+   "npcId": 100,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10007,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10007,
+  "exp": 25900,
+  "fame": 1,
+  "items": [
+   {
+    "id": 4031043,
+    "count": -20
+   },
+   {
+    "id": 1082000,
+    "count": 1,
+    "gender": true,
+    "job": 1
+   },
+   {
+    "id": 1082078,
+    "count": 1,
+    "gender": true,
+    "job": 2
+   },
+   {
+    "id": 1082081,
+    "count": 1,
+    "gender": true,
+    "job": 4
+   },
+   {
+    "id": 1082084,
+    "count": 1,
+    "gender": true,
+    "job": 8
+   },
+   {
+    "id": 1082086,
+    "count": 1,
+    "gender": true,
+    "job": 16
+   }
+  ],
+  "meso": 2032,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10007,
+  "levelMinimum": 65,
+  "quests": [
+   {
+    "id": 10006,
+    "state": 2
+   }
+  ],
+  "npcId": 100,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10007,
+  "items": [
+   {
+    "count": 20,
+    "id": 4031043
+   }
+  ],
+  "npcId": 100,
+  "state": 1
+ }
+}

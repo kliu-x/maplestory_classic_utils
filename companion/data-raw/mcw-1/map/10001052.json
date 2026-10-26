@@ -1,0 +1,43 @@
+{
+ "id": 10001052,
+ "name": "Pet-Walking Road",
+ "streetName": "Victoria Road",
+ "mapMark": "Henesys",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10001000,
+ "vrBounds": {
+  "width": 3746,
+  "height": 2489
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 222
+  },
+  {
+   "id": 209
+  },
+  {
+   "id": 223
+  }
+ ],
+ "portals": [
+  {
+   "toMap": 10001052,
+   "portalName": "h001"
+  },
+  {
+   "toMap": 10001052,
+   "portalName": "h002"
+  },
+  {
+   "toMap": 10001052,
+   "portalName": "h003"
+  },
+  {
+   "toMap": 10001052,
+   "portalName": "h005"
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "id": 506154,
+ "name": "A Name She Couldn't Say",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "Talk to #p412#",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506155,
+   "levelMinimum": 47,
+   "quests": [
+    {
+     "id": 506154,
+     "state": 2
+    }
+   ],
+   "npcId": 412,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506154,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506154,
+  "exp": 7980,
+  "meso": 1033,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506154,
+  "levelMinimum": 47,
+  "quests": [
+   {
+    "id": 506153,
+    "state": 2
+   }
+  ],
+  "npcId": 425,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506154,
+  "levelMinimum": 47,
+  "npcId": 412,
+  "state": 1
+ }
+}

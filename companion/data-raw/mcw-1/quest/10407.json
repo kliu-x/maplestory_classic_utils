@@ -1,0 +1,64 @@
+{
+ "id": 10407,
+ "name": "Research on Plant Fossils",
+ "area": 15,
+ "areaName": "Perion",
+ "demandSummary": "#i4031072:# #t4031072# #c4031072# / 8",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10408,
+   "levelMinimum": 17,
+   "quests": [
+    {
+     "id": 10407,
+     "state": 2
+    }
+   ],
+   "npcId": 308,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10407,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10407,
+  "exp": 982,
+  "items": [
+   {
+    "id": 4031072,
+    "count": -8
+   },
+   {
+    "id": 2000003,
+    "count": 15
+   }
+  ],
+  "meso": 555,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10407,
+  "levelMinimum": 17,
+  "quests": [
+   {
+    "id": 10406,
+    "state": 2
+   }
+  ],
+  "npcId": 308,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10407,
+  "items": [
+   {
+    "count": 8,
+    "id": 4031072
+   }
+  ],
+  "npcId": 308,
+  "state": 1
+ }
+}

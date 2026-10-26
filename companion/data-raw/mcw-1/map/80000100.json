@@ -1,0 +1,23 @@
+{
+ "id": 80000100,
+ "name": "1st Accompaniment <2nd Stage>",
+ "streetName": "Hidden Street",
+ "mapMark": "KerningCity",
+ "isTown": false,
+ "mobRate": 0.7999999523162842,
+ "returnMap": 80000000,
+ "vrBounds": {
+  "width": 1498,
+  "height": 910
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 800002
+  },
+  {
+   "id": 800001
+  }
+ ],
+ "portals": []
+}

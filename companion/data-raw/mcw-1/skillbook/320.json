@@ -1,0 +1,1125 @@
+{
+ "id": 320,
+ "description": {
+  "id": 320,
+  "desc": "",
+  "name": "",
+  "shortDesc": "",
+  "bookName": "Crossbowman Guide",
+  "names": {
+   "en": "Crossbowman Guide",
+   "es": "Guía de Crossbowman",
+   "ko": "Crossbowman 지침"
+  }
+ },
+ "skills": [
+  {
+   "id": 3200000,
+   "masterLevel": 20,
+   "weapons": [
+    46
+   ],
+   "description": {
+    "name": "Crossbow Mastery",
+    "desc": "[Master Level: 20]\\nIncreases Crossbow Mastery and Critical Damage. It only applies when a crossbow is equipped."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mastery": "1",
+     "x": "1"
+    },
+    {
+     "hs": "h2",
+     "mastery": "1",
+     "x": "2"
+    },
+    {
+     "hs": "h3",
+     "mastery": "1",
+     "x": "3"
+    },
+    {
+     "hs": "h4",
+     "mastery": "2",
+     "x": "4"
+    },
+    {
+     "hs": "h5",
+     "mastery": "2",
+     "x": "5"
+    },
+    {
+     "hs": "h6",
+     "mastery": "3",
+     "x": "6"
+    },
+    {
+     "hs": "h7",
+     "mastery": "3",
+     "x": "7"
+    },
+    {
+     "hs": "h8",
+     "mastery": "4",
+     "x": "8"
+    },
+    {
+     "hs": "h9",
+     "mastery": "4",
+     "x": "9"
+    },
+    {
+     "hs": "h10",
+     "mastery": "5",
+     "x": "10"
+    },
+    {
+     "hs": "h11",
+     "mastery": "5",
+     "x": "11"
+    },
+    {
+     "hs": "h12",
+     "mastery": "6",
+     "x": "12"
+    },
+    {
+     "hs": "h13",
+     "mastery": "6",
+     "x": "13"
+    },
+    {
+     "hs": "h14",
+     "mastery": "7",
+     "x": "14"
+    },
+    {
+     "hs": "h15",
+     "mastery": "7",
+     "x": "15"
+    },
+    {
+     "hs": "h16",
+     "mastery": "8",
+     "x": "16"
+    },
+    {
+     "hs": "h17",
+     "mastery": "8",
+     "x": "17"
+    },
+    {
+     "hs": "h18",
+     "mastery": "9",
+     "x": "18"
+    },
+    {
+     "hs": "h19",
+     "mastery": "9",
+     "x": "19"
+    },
+    {
+     "hs": "h20",
+     "mastery": "10",
+     "x": "20"
+    }
+   ]
+  },
+  {
+   "id": 3200001,
+   "masterLevel": 20,
+   "requiredSkillLevels": {
+    "3200000": 5
+   },
+   "weapons": [],
+   "description": {
+    "name": "Amazon's Judgement",
+    "desc": "[Master Level: 20]\\nCritical hits sever the enemy's tendons, slowing them down.\\nRequired Skill : #cAt least Level 5 Crossbow Mastery#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "prop": "60",
+     "speed": "15",
+     "time": "3"
+    },
+    {
+     "hs": "h2",
+     "prop": "62",
+     "speed": "16",
+     "time": "3"
+    },
+    {
+     "hs": "h3",
+     "prop": "64",
+     "speed": "17",
+     "time": "3"
+    },
+    {
+     "hs": "h4",
+     "prop": "66",
+     "speed": "18",
+     "time": "3"
+    },
+    {
+     "hs": "h5",
+     "prop": "68",
+     "speed": "19",
+     "time": "3"
+    },
+    {
+     "hs": "h6",
+     "prop": "70",
+     "speed": "20",
+     "time": "3"
+    },
+    {
+     "hs": "h7",
+     "prop": "72",
+     "speed": "21",
+     "time": "3"
+    },
+    {
+     "hs": "h8",
+     "prop": "74",
+     "speed": "22",
+     "time": "3"
+    },
+    {
+     "hs": "h9",
+     "prop": "76",
+     "speed": "23",
+     "time": "3"
+    },
+    {
+     "hs": "h10",
+     "prop": "78",
+     "speed": "24",
+     "time": "4"
+    },
+    {
+     "hs": "h11",
+     "prop": "80",
+     "speed": "25",
+     "time": "4"
+    },
+    {
+     "hs": "h12",
+     "prop": "82",
+     "speed": "26",
+     "time": "4"
+    },
+    {
+     "hs": "h13",
+     "prop": "84",
+     "speed": "27",
+     "time": "4"
+    },
+    {
+     "hs": "h14",
+     "prop": "86",
+     "speed": "28",
+     "time": "4"
+    },
+    {
+     "hs": "h15",
+     "prop": "88",
+     "speed": "29",
+     "time": "4"
+    },
+    {
+     "hs": "h16",
+     "prop": "90",
+     "speed": "30",
+     "time": "4"
+    },
+    {
+     "hs": "h17",
+     "prop": "92",
+     "speed": "31",
+     "time": "4"
+    },
+    {
+     "hs": "h18",
+     "prop": "94",
+     "speed": "32",
+     "time": "4"
+    },
+    {
+     "hs": "h19",
+     "prop": "96",
+     "speed": "33",
+     "time": "4"
+    },
+    {
+     "hs": "h20",
+     "prop": "100",
+     "speed": "35",
+     "time": "5"
+    }
+   ]
+  },
+  {
+   "id": 3201000,
+   "masterLevel": 30,
+   "requiredSkillLevels": {
+    "3200000": 3
+   },
+   "weapons": [
+    46
+   ],
+   "description": {
+    "name": "Final Attack: Crossbow",
+    "desc": "[Master Level: 30]\\nUsing attack skills has a chance to enable the Final Attack skill for 60 sec. While enabled, the skill can be used, dealing heavy damage to a single enemy. Only applies when equipped with a crossbow.\\nRequired Skill: #cAt least Level 3 Crossbow Mastery#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "prop": "25",
+     "mpCon": "12",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "270"
+    },
+    {
+     "hs": "h2",
+     "prop": "25",
+     "mpCon": "13",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "273"
+    },
+    {
+     "hs": "h3",
+     "prop": "25",
+     "mpCon": "13",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "276"
+    },
+    {
+     "hs": "h4",
+     "prop": "25",
+     "mpCon": "13",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "279"
+    },
+    {
+     "hs": "h5",
+     "prop": "25",
+     "mpCon": "13",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "282"
+    },
+    {
+     "hs": "h6",
+     "prop": "25",
+     "mpCon": "14",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "285"
+    },
+    {
+     "hs": "h7",
+     "prop": "25",
+     "mpCon": "14",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "288"
+    },
+    {
+     "hs": "h8",
+     "prop": "25",
+     "mpCon": "14",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "291"
+    },
+    {
+     "hs": "h9",
+     "prop": "25",
+     "mpCon": "14",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "294"
+    },
+    {
+     "hs": "h10",
+     "prop": "25",
+     "mpCon": "15",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "297"
+    },
+    {
+     "hs": "h11",
+     "prop": "25",
+     "mpCon": "15",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "300"
+    },
+    {
+     "hs": "h12",
+     "prop": "25",
+     "mpCon": "15",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "303"
+    },
+    {
+     "hs": "h13",
+     "prop": "25",
+     "mpCon": "15",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "306"
+    },
+    {
+     "hs": "h14",
+     "prop": "25",
+     "mpCon": "16",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "309"
+    },
+    {
+     "hs": "h15",
+     "prop": "25",
+     "mpCon": "16",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "312"
+    },
+    {
+     "hs": "h16",
+     "prop": "25",
+     "mpCon": "16",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "315"
+    },
+    {
+     "hs": "h17",
+     "prop": "25",
+     "mpCon": "16",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "318"
+    },
+    {
+     "hs": "h18",
+     "prop": "25",
+     "mpCon": "17",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "321"
+    },
+    {
+     "hs": "h19",
+     "prop": "25",
+     "mpCon": "17",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "324"
+    },
+    {
+     "hs": "h20",
+     "prop": "25",
+     "mpCon": "17",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "327"
+    },
+    {
+     "hs": "h21",
+     "prop": "25",
+     "mpCon": "17",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "330"
+    },
+    {
+     "hs": "h22",
+     "prop": "25",
+     "mpCon": "18",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "333"
+    },
+    {
+     "hs": "h23",
+     "prop": "25",
+     "mpCon": "18",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "336"
+    },
+    {
+     "hs": "h24",
+     "prop": "25",
+     "mpCon": "18",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "339"
+    },
+    {
+     "hs": "h25",
+     "prop": "25",
+     "mpCon": "18",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "342"
+    },
+    {
+     "hs": "h26",
+     "prop": "25",
+     "mpCon": "19",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "345"
+    },
+    {
+     "hs": "h27",
+     "prop": "25",
+     "mpCon": "19",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "348"
+    },
+    {
+     "hs": "h28",
+     "prop": "25",
+     "mpCon": "19",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "351"
+    },
+    {
+     "hs": "h29",
+     "prop": "25",
+     "mpCon": "19",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "354"
+    },
+    {
+     "hs": "h30",
+     "prop": "25",
+     "mpCon": "20",
+     "time": "60",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1",
+     "damage": "360"
+    }
+   ]
+  },
+  {
+   "id": 3201001,
+   "masterLevel": 20,
+   "requiredSkillLevels": {
+    "3200000": 5
+   },
+   "weapons": [
+    46
+   ],
+   "description": {
+    "name": "Crossbow Booster",
+    "desc": "[Master Level: 20]\\nConsumes HP and MP to temporarily increase the Attack Speed of the equipped crossbow. Only applies when equipped with a crossbow.\\nRequired Skill: #cAt least Level 5 Crossbow Mastery#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "hpCon": "30",
+     "mpCon": "30",
+     "time": "100",
+     "x": "-2"
+    },
+    {
+     "hs": "h2",
+     "hpCon": "29",
+     "mpCon": "29",
+     "time": "110",
+     "x": "-2"
+    },
+    {
+     "hs": "h3",
+     "hpCon": "28",
+     "mpCon": "28",
+     "time": "120",
+     "x": "-2"
+    },
+    {
+     "hs": "h4",
+     "hpCon": "27",
+     "mpCon": "27",
+     "time": "130",
+     "x": "-2"
+    },
+    {
+     "hs": "h5",
+     "hpCon": "26",
+     "mpCon": "26",
+     "time": "140",
+     "x": "-2"
+    },
+    {
+     "hs": "h6",
+     "hpCon": "25",
+     "mpCon": "25",
+     "time": "150",
+     "x": "-2"
+    },
+    {
+     "hs": "h7",
+     "hpCon": "24",
+     "mpCon": "24",
+     "time": "160",
+     "x": "-2"
+    },
+    {
+     "hs": "h8",
+     "hpCon": "23",
+     "mpCon": "23",
+     "time": "170",
+     "x": "-2"
+    },
+    {
+     "hs": "h9",
+     "hpCon": "22",
+     "mpCon": "22",
+     "time": "180",
+     "x": "-2"
+    },
+    {
+     "hs": "h10",
+     "hpCon": "21",
+     "mpCon": "21",
+     "time": "190",
+     "x": "-2"
+    },
+    {
+     "hs": "h11",
+     "hpCon": "20",
+     "mpCon": "20",
+     "time": "200",
+     "x": "-2"
+    },
+    {
+     "hs": "h12",
+     "hpCon": "19",
+     "mpCon": "19",
+     "time": "210",
+     "x": "-2"
+    },
+    {
+     "hs": "h13",
+     "hpCon": "18",
+     "mpCon": "18",
+     "time": "220",
+     "x": "-2"
+    },
+    {
+     "hs": "h14",
+     "hpCon": "17",
+     "mpCon": "17",
+     "time": "230",
+     "x": "-2"
+    },
+    {
+     "hs": "h15",
+     "hpCon": "16",
+     "mpCon": "16",
+     "time": "240",
+     "x": "-2"
+    },
+    {
+     "hs": "h16",
+     "hpCon": "15",
+     "mpCon": "15",
+     "time": "250",
+     "x": "-2"
+    },
+    {
+     "hs": "h17",
+     "hpCon": "14",
+     "mpCon": "14",
+     "time": "260",
+     "x": "-2"
+    },
+    {
+     "hs": "h18",
+     "hpCon": "13",
+     "mpCon": "13",
+     "time": "270",
+     "x": "-2"
+    },
+    {
+     "hs": "h19",
+     "hpCon": "12",
+     "mpCon": "12",
+     "time": "280",
+     "x": "-2"
+    },
+    {
+     "hs": "h20",
+     "hpCon": "10",
+     "mpCon": "10",
+     "time": "300",
+     "x": "-2"
+    }
+   ]
+  },
+  {
+   "id": 3201003,
+   "masterLevel": 20,
+   "requiredSkillLevels": {
+    "3201001": 5
+   },
+   "weapons": [
+    46
+   ],
+   "description": {
+    "name": "Soul Arrow: Crossbow",
+    "desc": "[Master Level: 20]\\nTemporarily allows the character to fire crossbow arrows without using up arrows. Only works with a crossbow equipped.\\nRequired Skill: #cAt least Level 5 Crossbow Booster#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "25",
+     "prop": "100",
+     "time": "60"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "24",
+     "prop": "100",
+     "time": "72"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "23",
+     "prop": "100",
+     "time": "84"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "22",
+     "prop": "100",
+     "time": "96"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "21",
+     "prop": "100",
+     "time": "108"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "20",
+     "prop": "100",
+     "time": "120"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "19",
+     "prop": "100",
+     "time": "132"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "18",
+     "prop": "100",
+     "time": "144"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "17",
+     "prop": "100",
+     "time": "156"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "16",
+     "prop": "100",
+     "time": "168"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "15",
+     "prop": "100",
+     "time": "180"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "14",
+     "prop": "100",
+     "time": "192"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "13",
+     "prop": "100",
+     "time": "204"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "12",
+     "prop": "100",
+     "time": "216"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "11",
+     "prop": "100",
+     "time": "228"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "10",
+     "prop": "100",
+     "time": "240"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "9",
+     "prop": "100",
+     "time": "252"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "8",
+     "prop": "100",
+     "time": "264"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "7",
+     "prop": "100",
+     "time": "276"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "5",
+     "prop": "100",
+     "time": "300"
+    }
+   ]
+  },
+  {
+   "id": 3201004,
+   "masterLevel": 30,
+   "weapons": [
+    46
+   ],
+   "description": {
+    "name": "Iron Arrow",
+    "desc": "[Master Level: 30]\\nAttacks up to 6 monsters at once with a powerful arrow, which penetrates through them. Damage decreases as the arrow flies through each monster."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "14",
+     "damage": "120",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "14",
+     "damage": "122",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "14",
+     "damage": "124",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "15",
+     "damage": "126",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "15",
+     "damage": "128",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "16",
+     "damage": "130",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "16",
+     "damage": "132",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "17",
+     "damage": "134",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "17",
+     "damage": "136",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "18",
+     "damage": "138",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "18",
+     "damage": "140",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "19",
+     "damage": "142",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "19",
+     "damage": "144",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "20",
+     "damage": "146",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "20",
+     "damage": "148",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "21",
+     "damage": "150",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "21",
+     "damage": "152",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "22",
+     "damage": "154",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "22",
+     "damage": "156",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "23",
+     "damage": "158",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h21",
+     "mpCon": "23",
+     "damage": "160",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h22",
+     "mpCon": "24",
+     "damage": "162",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h23",
+     "mpCon": "24",
+     "damage": "164",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h24",
+     "mpCon": "25",
+     "damage": "166",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h25",
+     "mpCon": "25",
+     "damage": "168",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h26",
+     "mpCon": "26",
+     "damage": "170",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h27",
+     "mpCon": "26",
+     "damage": "172",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h28",
+     "mpCon": "27",
+     "damage": "174",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h29",
+     "mpCon": "27",
+     "damage": "176",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h30",
+     "mpCon": "28",
+     "damage": "180",
+     "mobCount": "6",
+     "bulletCount": "1",
+     "attackCount": "1"
+    }
+   ]
+  }
+ ]
+}

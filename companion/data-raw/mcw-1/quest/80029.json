@@ -1,0 +1,56 @@
+{
+ "id": 80029,
+ "name": "Dances with Balrog's Reply",
+ "area": 10,
+ "areaName": "Victoria Island",
+ "demandSummary": "#i4031090:# #t4031090:# #c4031090# / 1",
+ "rewardOnStart": {
+  "id": 80029,
+  "items": [
+   {
+    "id": 4031090,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80029,
+  "exp": 424,
+  "items": [
+   {
+    "id": 4031090,
+    "count": -1
+   },
+   {
+    "id": 2000003,
+    "count": 10
+   }
+  ],
+  "meso": 306,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80029,
+  "levelMinimum": 13,
+  "quests": [
+   {
+    "id": 80028,
+    "state": 2
+   }
+  ],
+  "npcId": 511,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80029,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031090
+   }
+  ],
+  "npcId": 800018,
+  "state": 1
+ }
+}

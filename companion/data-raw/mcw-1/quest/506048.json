@@ -1,0 +1,65 @@
+{
+ "id": 506048,
+ "name": "Materials for a Special Marble",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#i4000029# #t4000029# #c4000029# / 10",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506049,
+   "levelMinimum": 37,
+   "quests": [
+    {
+     "id": 506048,
+     "state": 2
+    }
+   ],
+   "npcId": 204,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506048,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506048,
+  "exp": 7310,
+  "items": [
+   {
+    "id": 4000029,
+    "count": -10
+   },
+   {
+    "id": 2000003,
+    "count": 20
+   }
+  ],
+  "meso": 1170,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506048,
+  "levelMinimum": 37,
+  "quests": [
+   {
+    "id": 506047,
+    "state": 2
+   }
+  ],
+  "npcId": 204,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506048,
+  "levelMinimum": 37,
+  "items": [
+   {
+    "count": 10,
+    "id": 4000029
+   }
+  ],
+  "npcId": 204,
+  "state": 1
+ }
+}

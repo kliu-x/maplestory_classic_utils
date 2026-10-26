@@ -1,0 +1,51 @@
+{
+ "id": 10314,
+ "name": "[Construction Site B3] Shumi's Lost Sack of Cash",
+ "area": 14,
+ "areaName": "Kerning City",
+ "demandSummary": "#i4031041# #t4031041# #b#c4031041# / 1",
+ "rewardOnStart": {
+  "id": 10314,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10314,
+  "exp": 6720,
+  "fame": 3,
+  "items": [
+   {
+    "id": 4031041,
+    "count": -1
+   },
+   {
+    "id": 2000006,
+    "count": 30
+   }
+  ],
+  "meso": 10000,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10314,
+  "levelMinimum": 35,
+  "quests": [
+   {
+    "id": 10313,
+    "state": 2
+   }
+  ],
+  "npcId": 403,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10314,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031041
+   }
+  ],
+  "npcId": 403,
+  "state": 1
+ }
+}

@@ -1,0 +1,72 @@
+{
+ "id": 10111,
+ "name": "Making Sparkling Rock",
+ "area": 12,
+ "areaName": "Henesys",
+ "demandSummary": "#i4031011:# #t4031011:# #c4031011# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10112,
+   "levelMinimum": 21,
+   "quests": [
+    {
+     "id": 10111,
+     "state": 2
+    }
+   ],
+   "npcId": 102,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10111,
+  "items": [
+   {
+    "id": 4031011,
+    "count": 1,
+    "potentialGrade": "normal"
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10111,
+  "exp": 1870,
+  "items": [
+   {
+    "id": 4031011,
+    "count": -1,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 2010003,
+    "count": 5
+   }
+  ],
+  "meso": 687,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10111,
+  "levelMinimum": 21,
+  "quests": [
+   {
+    "id": 10110,
+    "state": 2
+   }
+  ],
+  "npcId": 510,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10111,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031011
+   }
+  ],
+  "npcId": 102,
+  "state": 1
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "id": 20302,
+ "name": "Test of Qualification",
+ "area": 103,
+ "areaName": "Thief",
+ "demandSummary": "#i4031023:# #t4031023:# #c4031023# / 30#k",
+ "questsAvailableOnComplete": [
+  {
+   "id": 20303,
+   "jobs": [
+    400
+   ],
+   "levelMinimum": 30,
+   "quests": [
+    {
+     "id": 20302,
+     "state": 2
+    }
+   ],
+   "npcId": 424,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 20302,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 20302,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 20302,
+  "jobs": [
+   400
+  ],
+  "levelMinimum": 30,
+  "quests": [
+   {
+    "id": 20301,
+    "state": 2
+   }
+  ],
+  "npcId": 424,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 20302,
+  "items": [
+   {
+    "count": 30,
+    "id": 4031023
+   }
+  ],
+  "npcId": 424,
+  "state": 1
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "id": 10215,
+ "name": "Repairing the Book",
+ "area": 13,
+ "areaName": "Ellinia",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10216,
+   "levelMinimum": 28,
+   "quests": [
+    {
+     "id": 10215,
+     "state": 2
+    }
+   ],
+   "npcId": 602,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10215,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10215,
+  "exp": 4090,
+  "items": [
+   {
+    "id": 2000003,
+    "count": 20
+   }
+  ],
+  "meso": 892,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10215,
+  "levelMinimum": 28,
+  "quests": [
+   {
+    "id": 10214,
+    "state": 2
+   }
+  ],
+  "npcId": 502,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10215,
+  "npcId": 602,
+  "state": 1
+ }
+}

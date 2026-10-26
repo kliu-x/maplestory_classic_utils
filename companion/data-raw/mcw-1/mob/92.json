@@ -1,0 +1,24 @@
+{
+ "id": 92,
+ "name": "Super Ribbon Pig",
+ "meta": {
+  "isBodyAttack": true,
+  "level": 200,
+  "maxHP": 9999,
+  "maxMP": 0,
+  "speed": 5,
+  "physicalDamage": 64,
+  "physicalDefense": 999,
+  "magicDamage": 0,
+  "magicDefense": 999,
+  "accuracy": 999,
+  "evasion": 999,
+  "exp": 0,
+  "isUndead": false,
+  "minimumPushDamage": 9999,
+  "summonType": 1,
+  "revivesMonsterId": [],
+  "linksToOtherMob": 10,
+  "isInvincible": true
+ }
+}

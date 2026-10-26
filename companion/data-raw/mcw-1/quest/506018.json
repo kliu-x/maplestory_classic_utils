@@ -1,0 +1,40 @@
+{
+ "id": 506018,
+ "name": "Asking After Athena Pierce",
+ "area": 20,
+ "areaName": "Citizenship",
+ "rewardOnStart": {
+  "id": 506018,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506018,
+  "exp": 4095,
+  "items": [
+   {
+    "id": 2000003,
+    "count": 8
+   }
+  ],
+  "meso": 716,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506018,
+  "levelMinimum": 12,
+  "quests": [
+   {
+    "id": 80117,
+    "state": 2
+   }
+  ],
+  "npcId": 235,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506018,
+  "levelMinimum": 32,
+  "npcId": 221,
+  "state": 1
+ }
+}

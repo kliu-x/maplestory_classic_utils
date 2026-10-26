@@ -1,0 +1,80 @@
+{
+ "id": 10317,
+ "name": "Icarus's Hang Glider",
+ "area": 14,
+ "areaName": "Kerning City",
+ "demandSummary": "#i4003001# #t4003001# #c4003001# / 10\\n#i4000017# #t4000017# #c4000017# / 30\\n#i4003002# #t4003002# #b#c4003002##k / 15",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10318,
+   "levelMinimum": 31,
+   "quests": [
+    {
+     "id": 10317,
+     "state": 2
+    }
+   ],
+   "npcId": 407,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10317,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10317,
+  "exp": 5530,
+  "items": [
+   {
+    "id": 4003001,
+    "count": -10
+   },
+   {
+    "id": 4000017,
+    "count": -30
+   },
+   {
+    "id": 4003002,
+    "count": -15
+   },
+   {
+    "id": 2000003,
+    "count": 20
+   }
+  ],
+  "meso": 994,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10317,
+  "levelMinimum": 31,
+  "quests": [
+   {
+    "id": 10316,
+    "state": 2
+   }
+  ],
+  "npcId": 407,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10317,
+  "items": [
+   {
+    "count": 10,
+    "id": 4003001
+   },
+   {
+    "count": 30,
+    "id": 4000017
+   },
+   {
+    "count": 15,
+    "id": 4003002
+   }
+  ],
+  "npcId": 407,
+  "state": 1
+ }
+}

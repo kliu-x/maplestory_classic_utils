@@ -1,0 +1,52 @@
+{
+ "id": 10008,
+ "name": "[Deep Forest of Patience] John's Last Present",
+ "area": 11,
+ "areaName": "Lith Harbor",
+ "demandSummary": "#i4031044# #t4031044# #b#c4031044# / 30",
+ "rewardOnStart": {
+  "id": 10008,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10008,
+  "exp": 25900,
+  "fame": 3,
+  "items": [
+   {
+    "id": 4031044,
+    "count": -30
+   },
+   {
+    "id": 1032018,
+    "count": 1,
+    "gender": true
+   }
+  ],
+  "meso": 2032,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10008,
+  "levelMinimum": 65,
+  "quests": [
+   {
+    "id": 10007,
+    "state": 2
+   }
+  ],
+  "npcId": 100,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10008,
+  "items": [
+   {
+    "count": 30,
+    "id": 4031044
+   }
+  ],
+  "npcId": 100,
+  "state": 1
+ }
+}

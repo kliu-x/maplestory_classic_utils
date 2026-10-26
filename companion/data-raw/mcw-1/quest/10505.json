@@ -1,0 +1,47 @@
+{
+ "id": 10505,
+ "name": "Thirsty Ronnie",
+ "area": 16,
+ "areaName": "Sleepywood",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10506,
+   "levelMinimum": 32,
+   "quests": [
+    {
+     "id": 10505,
+     "state": 2
+    }
+   ],
+   "npcId": 305,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10505,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10505,
+  "exp": 4095,
+  "meso": 716,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10505,
+  "levelMinimum": 32,
+  "quests": [
+   {
+    "id": 10504,
+    "state": 2
+   }
+  ],
+  "npcId": 320,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10505,
+  "npcId": 305,
+  "state": 1
+ }
+}

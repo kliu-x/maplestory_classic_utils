@@ -1,0 +1,89 @@
+{
+ "id": 80008,
+ "name": "Silas Irons in Need of an Apprentice",
+ "area": 19,
+ "areaName": "Crafting",
+ "demandSummary": "#o6# #a800081#\\n#o11# #a800082#\\n#i4010000:# #t4010000:# #c4010000# / 5",
+ "questsAvailableOnComplete": [
+  {
+   "id": 80009,
+   "levelMinimum": 25,
+   "quests": [
+    {
+     "id": 80008,
+     "state": 2
+    }
+   ],
+   "npcId": 504,
+   "state": 0
+  },
+  {
+   "id": 80010,
+   "levelMinimum": 15,
+   "quests": [
+    {
+     "id": 80008,
+     "state": 2
+    }
+   ],
+   "npcId": 504,
+   "state": 0
+  },
+  {
+   "id": 80011,
+   "levelMinimum": 10,
+   "quests": [
+    {
+     "id": 80008,
+     "state": 2
+    }
+   ],
+   "npcId": 503,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 80008,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80008,
+  "exp": 188,
+  "skills": [
+   {
+    "id": 92000000,
+    "masterLevel": -1,
+    "skillLevel": -1
+   }
+  ],
+  "meso": 351,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80008,
+  "levelMinimum": 10,
+  "npcId": 504,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80008,
+  "mobs": [
+   {
+    "count": 20,
+    "id": 6
+   },
+   {
+    "count": 20,
+    "id": 11
+   }
+  ],
+  "items": [
+   {
+    "count": 5,
+    "id": 4010000
+   }
+  ],
+  "npcId": 504,
+  "state": 1
+ }
+}

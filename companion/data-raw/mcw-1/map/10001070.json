@@ -1,0 +1,62 @@
+{
+ "id": 10001070,
+ "name": "The Rain-Forest East of Henesys",
+ "streetName": "Victoria Road",
+ "mapMark": "Henesys",
+ "isTown": false,
+ "mobRate": 1,
+ "returnMap": 10001000,
+ "vrBounds": {
+  "width": 2308,
+  "height": 820
+ },
+ "mobs": [
+  {
+   "id": 10,
+   "x": 995,
+   "y": 275
+  },
+  {
+   "id": 10,
+   "x": 481,
+   "y": 215
+  },
+  {
+   "id": 8,
+   "x": 634,
+   "y": 215
+  },
+  {
+   "id": 8,
+   "x": -213,
+   "y": 215
+  },
+  {
+   "id": 8,
+   "x": -35,
+   "y": 215
+  },
+  {
+   "id": 10,
+   "x": -328,
+   "y": 215
+  },
+  {
+   "id": 8,
+   "x": 1215,
+   "y": 215
+  },
+  {
+   "id": 8,
+   "x": 1088,
+   "y": 215
+  },
+  {
+   "id": 10,
+   "x": 347,
+   "y": 215
+  }
+ ],
+ "npcs": [],
+ "portals": []
+}

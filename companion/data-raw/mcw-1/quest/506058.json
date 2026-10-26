@@ -1,0 +1,67 @@
+{
+ "id": 506058,
+ "name": "A Worn-Out Bow",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#i4031124:# #t4031124:# #c4031124# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506059,
+   "levelMinimum": 57,
+   "quests": [
+    {
+     "id": 506058,
+     "state": 2
+    }
+   ],
+   "npcId": 208,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506058,
+  "items": [
+   {
+    "id": 4031124,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506058,
+  "exp": 12460,
+  "items": [
+   {
+    "id": 4031124,
+    "count": -1
+   }
+  ],
+  "meso": 1248,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506058,
+  "levelMinimum": 57,
+  "quests": [
+   {
+    "id": 506057,
+    "state": 2
+   }
+  ],
+  "npcId": 221,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506058,
+  "levelMinimum": 57,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031124
+   }
+  ],
+  "npcId": 208,
+  "state": 1
+ }
+}

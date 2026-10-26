@@ -1,0 +1,46 @@
+{
+ "id": 20300,
+ "name": "The Thief's Next Journey",
+ "area": 103,
+ "areaName": "Thief",
+ "questsAvailableOnComplete": [
+  {
+   "id": 20301,
+   "jobs": [
+    400
+   ],
+   "levelMinimum": 30,
+   "quests": [
+    {
+     "id": 20300,
+     "state": 2
+    }
+   ],
+   "npcId": 411,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 20300,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 20300,
+  "exp": 4780,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 20300,
+  "jobs": [
+   400
+  ],
+  "levelMinimum": 30,
+  "npcId": 411,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 20300,
+  "npcId": 411,
+  "state": 1
+ }
+}

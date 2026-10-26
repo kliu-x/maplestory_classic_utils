@@ -1,0 +1,45 @@
+{
+ "id": 506022,
+ "name": "Donating to Henesys",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#i4000006:# #t4000006:# #c4000006# / 30",
+ "rewardOnStart": {
+  "id": 506022,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506022,
+  "exp": 334,
+  "items": [
+   {
+    "id": 4000006,
+    "count": -30
+   },
+   {
+    "id": 2000003,
+    "count": 20
+   }
+  ],
+  "meso": 409,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506022,
+  "levelMinimum": 12,
+  "npcId": 235,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506022,
+  "levelMinimum": 12,
+  "items": [
+   {
+    "count": 30,
+    "id": 4000006
+   }
+  ],
+  "npcId": 229,
+  "state": 1
+ }
+}

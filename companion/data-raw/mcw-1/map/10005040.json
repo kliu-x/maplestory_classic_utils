@@ -1,0 +1,20 @@
+{
+ "id": 10005040,
+ "name": "The Deep Forest of Patience <Step 1>",
+ "streetName": "Hidden Street",
+ "mapMark": "Dungeon",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10005000,
+ "vrBounds": {
+  "width": 1396,
+  "height": 3670
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 610
+  }
+ ],
+ "portals": []
+}

@@ -1,0 +1,66 @@
+{
+ "id": 10001000,
+ "name": "Henesys",
+ "streetName": "Victoria Road",
+ "mapMark": "Henesys",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10001000,
+ "vrBounds": {
+  "width": 6896,
+  "height": 1189
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 200
+  },
+  {
+   "id": 201
+  },
+  {
+   "id": 202
+  },
+  {
+   "id": 203
+  },
+  {
+   "id": 204
+  },
+  {
+   "id": 205
+  },
+  {
+   "id": 206
+  },
+  {
+   "id": 235
+  },
+  {
+   "id": 231
+  },
+  {
+   "id": 9010000
+  },
+  {
+   "id": 236
+  },
+  {
+   "id": 900026
+  }
+ ],
+ "portals": [
+  {
+   "toMap": 10001000,
+   "portalName": "h_east"
+  },
+  {
+   "toMap": 10001000,
+   "portalName": "h_west"
+  },
+  {
+   "toMap": 10001000,
+   "portalName": "up00"
+  }
+ ]
+}

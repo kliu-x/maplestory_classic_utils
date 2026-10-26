@@ -1,0 +1,79 @@
+{
+ "id": 10104,
+ "name": "Pia and the Blue Mushroom",
+ "area": 12,
+ "areaName": "Henesys",
+ "demandSummary": "#i4000013:# #t4000013:# #c4000013# / 20\\r\\n#i4000016:# #t4000016:# #c4000016# / 20",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10119,
+   "levelMinimum": 42,
+   "quests": [
+    {
+     "id": 10104,
+     "state": 2
+    }
+   ],
+   "npcId": 218,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10104,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10104,
+  "exp": 813,
+  "items": [
+   {
+    "id": 2040000,
+    "count": 1,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 2040001,
+    "count": 1,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 2040002,
+    "count": 1,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4000013,
+    "count": -20,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4000016,
+    "count": -20,
+    "potentialGrade": "normal"
+   }
+  ],
+  "meso": 497,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10104,
+  "levelMinimum": 16,
+  "npcId": 218,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10104,
+  "items": [
+   {
+    "count": 20,
+    "id": 4000013
+   },
+   {
+    "count": 20,
+    "id": 4000016
+   }
+  ],
+  "npcId": 218,
+  "state": 1
+ }
+}

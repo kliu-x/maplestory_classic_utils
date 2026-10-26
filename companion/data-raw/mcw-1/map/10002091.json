@@ -1,0 +1,29 @@
+{
+ "id": 10002091,
+ "name": "Before Takeoff <To Orbis>",
+ "streetName": "Victoria Road",
+ "mapMark": "Ellinia",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10002090,
+ "vrBounds": {
+  "width": 1600,
+  "height": 1450
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 324
+  }
+ ],
+ "portals": [
+  {
+   "toMap": 10002091,
+   "portalName": "h002"
+  },
+  {
+   "toMap": 10002091,
+   "portalName": "h002_1"
+  }
+ ]
+}

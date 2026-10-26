@@ -1,0 +1,40 @@
+{
+ "id": 506118,
+ "name": "Asking After Dark Lord",
+ "area": 20,
+ "areaName": "Citizenship",
+ "rewardOnStart": {
+  "id": 506118,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506118,
+  "exp": 4095,
+  "items": [
+   {
+    "id": 2000003,
+    "count": 8
+   }
+  ],
+  "meso": 716,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506118,
+  "levelMinimum": 12,
+  "quests": [
+   {
+    "id": 506117,
+    "state": 2
+   }
+  ],
+  "npcId": 431,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506118,
+  "levelMinimum": 32,
+  "npcId": 411,
+  "state": 1
+ }
+}

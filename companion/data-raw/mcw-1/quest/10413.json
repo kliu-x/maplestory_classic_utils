@@ -1,0 +1,68 @@
+{
+ "id": 10413,
+ "name": "Taking Out the Alligators 2",
+ "area": 15,
+ "areaName": "Perion",
+ "demandSummary": "#o46# #a104131#\\n#i4000041# #t4000041# #b#c4000041##k / 50",
+ "rewardOnStart": {
+  "id": 10413,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10413,
+  "exp": 11800,
+  "items": [
+   {
+    "id": 4000041,
+    "count": -50
+   },
+   {
+    "id": 2041009,
+    "count": 1
+   },
+   {
+    "id": 2041013,
+    "count": 1
+   },
+   {
+    "id": 2041017,
+    "count": 1
+   },
+   {
+    "id": 2041021,
+    "count": 1
+   }
+  ],
+  "meso": 1506,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10413,
+  "levelMinimum": 48,
+  "quests": [
+   {
+    "id": 10412,
+    "state": 2
+   }
+  ],
+  "npcId": 506,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10413,
+  "mobs": [
+   {
+    "count": 120,
+    "id": 46
+   }
+  ],
+  "items": [
+   {
+    "count": 50,
+    "id": 4000041
+   }
+  ],
+  "npcId": 506,
+  "state": 1
+ }
+}

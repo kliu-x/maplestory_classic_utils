@@ -1,0 +1,59 @@
+{
+ "id": 10000000,
+ "name": "Lith Harbor",
+ "streetName": "Victoria Road",
+ "mapMark": "Rith",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10000000,
+ "vrBounds": {
+  "width": 6254,
+  "height": 2028
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 100
+  },
+  {
+   "id": 101
+  },
+  {
+   "id": 102
+  },
+  {
+   "id": 103
+  },
+  {
+   "id": 104
+  },
+  {
+   "id": 105
+  },
+  {
+   "id": 106
+  },
+  {
+   "id": 107
+  },
+  {
+   "id": 111
+  },
+  {
+   "id": 112
+  },
+  {
+   "id": 900010
+  }
+ ],
+ "portals": [
+  {
+   "toMap": 10000000,
+   "portalName": "h_east00"
+  },
+  {
+   "toMap": 10000000,
+   "portalName": "h_west00"
+  }
+ ]
+}

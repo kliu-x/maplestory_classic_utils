@@ -1,0 +1,63 @@
+{
+ "id": 80016,
+ "name": "Francois in Need of Help",
+ "area": 19,
+ "areaName": "Crafting",
+ "demandSummary": "#o13# #a800161#\\n#i4003007:# #t4003007:# #c4003007# / 10",
+ "rewardOnStart": {
+  "id": 80016,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80016,
+  "exp": 669,
+  "items": [
+   {
+    "id": 4003007,
+    "count": -10
+   },
+   {
+    "id": 2002009,
+    "count": 1
+   }
+  ],
+  "skills": [
+   {
+    "id": 92020000,
+    "masterLevel": -1,
+    "skillLevel": -1
+   }
+  ],
+  "meso": 497,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80016,
+  "levelMinimum": 15,
+  "quests": [
+   {
+    "id": 80014,
+    "state": 2
+   }
+  ],
+  "npcId": 303,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80016,
+  "mobs": [
+   {
+    "count": 25,
+    "id": 13
+   }
+  ],
+  "items": [
+   {
+    "count": 10,
+    "id": 4003007
+   }
+  ],
+  "npcId": 303,
+  "state": 1
+ }
+}

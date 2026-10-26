@@ -1,0 +1,55 @@
+{
+ "id": 1012,
+ "name": "Pio's Collecting Recycled Goods",
+ "area": 1,
+ "areaName": "Maple Island",
+ "demandSummary": "#i4031003:# #t4031003:# #c4031003# / 2\\r\\n#i4031004:# #t4031004:# #c4031004# / 2\\r\\n",
+ "rewardOnStart": {
+  "id": 1012,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 1012,
+  "exp": 100,
+  "items": [
+   {
+    "id": 4031003,
+    "count": -2
+   },
+   {
+    "id": 4031004,
+    "count": -2
+   },
+   {
+    "id": 3010000,
+    "count": 1
+   }
+  ],
+  "meso": 150,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 1012,
+  "jobs": [
+   0
+  ],
+  "levelMinimum": 5,
+  "npcId": 18,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 1012,
+  "items": [
+   {
+    "count": 2,
+    "id": 4031003
+   },
+   {
+    "count": 2,
+    "id": 4031004
+   }
+  ],
+  "npcId": 18,
+  "state": 1
+ }
+}

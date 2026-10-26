@@ -1,0 +1,81 @@
+{
+ "id": 10305,
+ "name": "Andre's Request",
+ "area": 14,
+ "areaName": "Kerning City",
+ "demandSummary": "#o12# #a103051#\\n#i4000012# #t4000012# #b#c4000012##k / 20\\n#i2022000# #t2022000# #b#c2022000##k / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10306,
+   "levelMinimum": 22,
+   "quests": [
+    {
+     "id": 10305,
+     "state": 2
+    }
+   ],
+   "npcId": 406,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10305,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10305,
+  "exp": 188,
+  "items": [
+   {
+    "id": 4000012,
+    "count": -20,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 2022000,
+    "count": -1,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 1082000,
+    "count": 1,
+    "potentialGrade": "normal"
+   }
+  ],
+  "meso": 351,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10305,
+  "levelMinimum": 10,
+  "quests": [
+   {
+    "id": 10304,
+    "state": 2
+   }
+  ],
+  "npcId": 406,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10305,
+  "mobs": [
+   {
+    "count": 30,
+    "id": 12
+   }
+  ],
+  "items": [
+   {
+    "count": 20,
+    "id": 4000012
+   },
+   {
+    "count": 1,
+    "id": 2022000
+   }
+  ],
+  "npcId": 406,
+  "state": 1
+ }
+}

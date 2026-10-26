@@ -1,0 +1,46 @@
+{
+ "id": 20100,
+ "name": "The Magician's Next Journey",
+ "area": 101,
+ "areaName": "Magician",
+ "questsAvailableOnComplete": [
+  {
+   "id": 20101,
+   "jobs": [
+    200
+   ],
+   "levelMinimum": 30,
+   "quests": [
+    {
+     "id": 20100,
+     "state": 2
+    }
+   ],
+   "npcId": 313,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 20100,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 20100,
+  "exp": 4780,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 20100,
+  "jobs": [
+   200
+  ],
+  "levelMinimum": 30,
+  "npcId": 313,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 20100,
+  "npcId": 313,
+  "state": 1
+ }
+}

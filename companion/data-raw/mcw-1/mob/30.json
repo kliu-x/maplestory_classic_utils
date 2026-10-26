@@ -1,0 +1,22 @@
+{
+ "id": 30,
+ "name": "Fire Boar",
+ "meta": {
+  "isBodyAttack": true,
+  "level": 32,
+  "maxHP": 842,
+  "maxMP": 0,
+  "speed": 0,
+  "physicalDamage": 180,
+  "physicalDefense": 10,
+  "magicDamage": 0,
+  "magicDefense": 0,
+  "accuracy": 110,
+  "evasion": 21,
+  "exp": 60,
+  "minimumPushDamage": 75,
+  "elementalAttributes": "F2I3",
+  "summonType": 1,
+  "revivesMonsterId": []
+ }
+}

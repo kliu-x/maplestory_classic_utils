@@ -1,0 +1,88 @@
+{
+ "id": 10508,
+ "name": "Returned Secret Book",
+ "area": 16,
+ "areaName": "Sleepywood",
+ "demandSummary": "#i4031032:# #t4031032:# #c4031032# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10201,
+   "levelMinimum": 36,
+   "quests": [
+    {
+     "id": 10508,
+     "state": 2
+    }
+   ],
+   "npcId": 305,
+   "state": 0
+  },
+  {
+   "id": 10206,
+   "levelMinimum": 41,
+   "quests": [
+    {
+     "id": 10508,
+     "state": 2
+    }
+   ],
+   "npcId": 320,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10508,
+  "items": [
+   {
+    "id": 4031032,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10508,
+  "exp": 5850,
+  "items": [
+   {
+    "id": 4031032,
+    "count": -1
+   },
+   {
+    "id": 1050010,
+    "count": 1,
+    "gender": false
+   },
+   {
+    "id": 1051004,
+    "count": 1,
+    "gender": true
+   }
+  ],
+  "meso": 1023,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10508,
+  "levelMinimum": 32,
+  "quests": [
+   {
+    "id": 10507,
+    "state": 2
+   }
+  ],
+  "npcId": 320,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10508,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031032
+   }
+  ],
+  "npcId": 608,
+  "state": 1
+ }
+}

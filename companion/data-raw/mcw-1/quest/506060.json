@@ -1,0 +1,58 @@
+{
+ "id": 506060,
+ "name": "A Memory Restored",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#i4031125:# #t4031125:# #c4031125# / 1",
+ "rewardOnStart": {
+  "id": 506060,
+  "items": [
+   {
+    "id": 4031125,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506060,
+  "exp": 17800,
+  "fame": 3,
+  "items": [
+   {
+    "id": 4031125,
+    "count": -1
+   },
+   {
+    "id": 1032021,
+    "count": 1
+   }
+  ],
+  "meso": 1784,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506060,
+  "levelMinimum": 57,
+  "quests": [
+   {
+    "id": 506059,
+    "state": 2
+   }
+  ],
+  "npcId": 208,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506060,
+  "levelMinimum": 57,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031125
+   }
+  ],
+  "npcId": 221,
+  "state": 1
+ }
+}

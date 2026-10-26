@@ -1,0 +1,32 @@
+{
+ "id": 10003104,
+ "name": "B2 <Area 2>",
+ "streetName": "Line 3 Construction Site",
+ "mapMark": "KerningCity",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10003000,
+ "vrBounds": {
+  "width": 1990,
+  "height": 3000
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 419
+  },
+  {
+   "id": 419
+  }
+ ],
+ "portals": [
+  {
+   "toMap": 10003104,
+   "portalName": "cross00"
+  },
+  {
+   "toMap": 10003104,
+   "portalName": "cross01"
+  }
+ ]
+}

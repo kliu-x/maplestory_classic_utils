@@ -1,0 +1,52 @@
+{
+ "id": 1014,
+ "name": "Rain's Maple Quiz 2",
+ "area": 1,
+ "areaName": "Maple Island",
+ "questsAvailableOnComplete": [
+  {
+   "id": 1015,
+   "jobs": [
+    0
+   ],
+   "levelMinimum": 5,
+   "quests": [
+    {
+     "id": 1014,
+     "state": 2
+    }
+   ],
+   "npcId": 19,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 1014,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 1014,
+  "exp": 50,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 1014,
+  "jobs": [
+   0
+  ],
+  "levelMinimum": 5,
+  "quests": [
+   {
+    "id": 1013,
+    "state": 2
+   }
+  ],
+  "npcId": 19,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 1014,
+  "npcId": 19,
+  "state": 1
+ }
+}

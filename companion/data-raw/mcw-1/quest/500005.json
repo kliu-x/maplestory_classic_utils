@@ -1,0 +1,71 @@
+{
+ "id": 500005,
+ "name": "[Event] Gathering Leaves ",
+ "area": 99,
+ "areaName": "Event",
+ "demandSummary": "#questorder1##i3994000:# #t3994000:# #c3994000# / 1\r\n#questorder1##i3994001:# #t3994001:# #c3994000# / 1\r\n#questorder1##i3994002:# #t3994002:# #c3994002# / 1\r\n#questorder1##i3994003:# #t3994003:# #c3994003# / 1\r\n#questorder1##i3994004:# #t3994004:# #c3994004# / 1\r\n#questorder1##i3994005:# #t3994005:# #c3994005# / 1\r\n#questorder1##i3994006:# #t3994006:# #c3994006# / 1\r\n#questorder1##i3994007:# #t3994007:# #c3994007# / 1\r\n#questorder1##i3994008:# #t3994008:# #c3994008# / 1\r\n#questorder1##i3994009:# #t3994009:# #c3994009# / 1",
+ "rewardOnStart": {
+  "id": 500005,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 500005,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 500005,
+  "startTime": "2026-04-14T00:00:00",
+  "endTime": "2026-04-23T23:59:00",
+  "levelMinimum": 10,
+  "npcId": 9010000,
+  "dayByDay": true,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 500005,
+  "items": [
+   {
+    "count": 1,
+    "id": 3994000
+   },
+   {
+    "count": 1,
+    "id": 3994001
+   },
+   {
+    "count": 1,
+    "id": 3994002
+   },
+   {
+    "count": 1,
+    "id": 3994003
+   },
+   {
+    "count": 1,
+    "id": 3994004
+   },
+   {
+    "count": 1,
+    "id": 3994005
+   },
+   {
+    "count": 1,
+    "id": 3994006
+   },
+   {
+    "count": 1,
+    "id": 3994007
+   },
+   {
+    "count": 1,
+    "id": 3994008
+   },
+   {
+    "count": 1,
+    "id": 3994009
+   }
+  ],
+  "npcId": 9010000,
+  "state": 1
+ }
+}

@@ -1,0 +1,77 @@
+{
+ "id": 80011,
+ "name": "Mr. Thunder�in Need of an Apprentice",
+ "area": 19,
+ "areaName": "Crafting",
+ "demandSummary": "#i4010100:# #t4010100:# #c4010100# / 1\\n#i4010101:# #t4010101:# #c4010101# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 80012,
+   "levelMinimum": 25,
+   "quests": [
+    {
+     "id": 80011,
+     "state": 2
+    }
+   ],
+   "npcId": 503,
+   "state": 0
+  },
+  {
+   "id": 80013,
+   "levelMinimum": 15,
+   "quests": [
+    {
+     "id": 80011,
+     "state": 2
+    }
+   ],
+   "npcId": 503,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 80011,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80011,
+  "exp": 188,
+  "skills": [
+   {
+    "id": 92010000,
+    "masterLevel": -1,
+    "skillLevel": -1
+   }
+  ],
+  "meso": 351,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80011,
+  "levelMinimum": 10,
+  "quests": [
+   {
+    "id": 80008,
+    "state": 2
+   }
+  ],
+  "npcId": 503,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80011,
+  "items": [
+   {
+    "count": 1,
+    "id": 4010100
+   },
+   {
+    "count": 1,
+    "id": 4010101
+   }
+  ],
+  "npcId": 503,
+  "state": 1
+ }
+}

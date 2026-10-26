@@ -1,0 +1,49 @@
+{
+ "id": 506137,
+ "name": "Stirge Phobia",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "Talk to #p404#",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506138,
+   "levelMinimum": 17,
+   "quests": [
+    {
+     "id": 506137,
+     "state": 2
+    }
+   ],
+   "npcId": 404,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506137,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506137,
+  "exp": 687,
+  "meso": 388,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506137,
+  "levelMinimum": 17,
+  "quests": [
+   {
+    "id": 506111,
+    "state": 2
+   }
+  ],
+  "npcId": 417,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506137,
+  "levelMinimum": 17,
+  "npcId": 404,
+  "state": 1
+ }
+}

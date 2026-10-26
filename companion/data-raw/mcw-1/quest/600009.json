@@ -1,0 +1,52 @@
+{
+ "id": 600009,
+ "name": "[Event] The Fifth Mark",
+ "area": 99,
+ "areaName": "Event",
+ "demandSummary": "Track down the wild beasts in the rocky lands.",
+ "rewardSummary": "#i2430052# #t2430052# x1",
+ "disableAtNPC": true,
+ "disableAtStartTab": true,
+ "questsAvailableOnComplete": [
+  {
+   "id": 600010,
+   "startTime": "2026-10-21T00:00:00",
+   "endTime": "2026-11-19T00:00:00",
+   "levelMinimum": 25,
+   "quests": [
+    {
+     "id": 600009,
+     "state": 2
+    }
+   ],
+   "npcId": 205,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 600009,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 600009,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 600009,
+  "startTime": "2026-10-21T00:00:00",
+  "endTime": "2026-11-19T00:00:00",
+  "levelMinimum": 25,
+  "quests": [
+   {
+    "id": 600008,
+    "state": 2
+   }
+  ],
+  "npcId": 205,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 600009,
+  "state": 1
+ }
+}

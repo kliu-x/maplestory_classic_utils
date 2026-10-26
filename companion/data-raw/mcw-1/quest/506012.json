@@ -1,0 +1,40 @@
+{
+ "id": 506012,
+ "name": "Asking After Pia, the Town Resident",
+ "area": 20,
+ "areaName": "Citizenship",
+ "rewardOnStart": {
+  "id": 506012,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506012,
+  "exp": 233,
+  "items": [
+   {
+    "id": 2010005,
+    "count": 8
+   }
+  ],
+  "meso": 286,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506012,
+  "levelMinimum": 12,
+  "quests": [
+   {
+    "id": 506011,
+    "state": 2
+   }
+  ],
+  "npcId": 235,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506012,
+  "levelMinimum": 12,
+  "npcId": 218,
+  "state": 1
+ }
+}

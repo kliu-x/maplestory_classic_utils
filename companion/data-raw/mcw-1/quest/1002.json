@@ -1,0 +1,33 @@
+{
+ "id": 1002,
+ "name": "Roger's Apple",
+ "area": 1,
+ "areaName": "Maple Island",
+ "rewardOnStart": {
+  "id": 1002,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 1002,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 1002,
+  "jobs": [
+   0
+  ],
+  "levelMinimum": 1,
+  "npcId": 3,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 1002,
+  "items": [
+   {
+    "id": 2010000
+   }
+  ],
+  "npcId": 3,
+  "state": 1
+ }
+}

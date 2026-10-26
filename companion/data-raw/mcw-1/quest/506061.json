@@ -1,0 +1,42 @@
+{
+ "id": 506061,
+ "name": "The Right to Own a Home",
+ "area": 20,
+ "areaName": "Citizenship",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506062,
+   "levelMinimum": 17,
+   "quests": [
+    {
+     "id": 506061,
+     "state": 2
+    }
+   ],
+   "npcId": 230,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506061,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506061,
+  "exp": 772,
+  "meso": 388,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506061,
+  "levelMinimum": 17,
+  "npcId": 229,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506061,
+  "levelMinimum": 17,
+  "npcId": 230,
+  "state": 1
+ }
+}

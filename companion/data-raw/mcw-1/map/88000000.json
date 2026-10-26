@@ -1,0 +1,20 @@
+{
+ "id": 88000000,
+ "name": "Yellow Mushroom House",
+ "streetName": "Victoria Road",
+ "mapMark": "Henesys",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10001000,
+ "vrBounds": {
+  "width": 1408,
+  "height": 942
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 237
+  }
+ ],
+ "portals": []
+}

@@ -1,0 +1,45 @@
+{
+ "id": 500000,
+ "name": "[Event] A Strange and Familiar Wood",
+ "area": 99,
+ "areaName": "Event",
+ "demandSummary": "#questorder1#Talk to #r#p313##k.",
+ "rewardSummary": "#i1112108# #t1112108# x1\\n  (Account Reward)",
+ "questsAvailableOnComplete": [
+  {
+   "id": 500001,
+   "startTime": "2026-08-04T00:00:00",
+   "endTime": "2026-08-12T23:59:00",
+   "levelMinimum": 15,
+   "quests": [
+    {
+     "id": 500000,
+     "state": 2
+    }
+   ],
+   "npcId": 304,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 500000,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 500000,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 500000,
+  "startTime": "2026-08-04T00:00:00",
+  "endTime": "2026-08-12T23:59:00",
+  "levelMinimum": 10,
+  "npcId": 304,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 500000,
+  "npcId": 304,
+  "state": 1
+ }
+}

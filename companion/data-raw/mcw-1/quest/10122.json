@@ -1,0 +1,73 @@
+{
+ "id": 10122,
+ "name": "Pia's Gift",
+ "area": 12,
+ "areaName": "Henesys",
+ "demandSummary": "#i4031064:# #t4031064:# #c4031064# / 1",
+ "rewardOnStart": {
+  "id": 10122,
+  "items": [
+   {
+    "id": 4031064,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10122,
+  "exp": 9060,
+  "items": [
+   {
+    "id": 4031064,
+    "count": -1,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 2041010,
+    "count": 1,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 2041014,
+    "count": 1,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 2041018,
+    "count": 1,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 2041022,
+    "count": 1,
+    "potentialGrade": "normal"
+   }
+  ],
+  "meso": 1330,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10122,
+  "levelMinimum": 42,
+  "quests": [
+   {
+    "id": 10121,
+    "state": 2
+   }
+  ],
+  "npcId": 201,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10122,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031064
+   }
+  ],
+  "npcId": 218,
+  "state": 1
+ }
+}

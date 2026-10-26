@@ -1,0 +1,84 @@
+{
+ "id": 10301,
+ "name": "Talking to Stan",
+ "area": 14,
+ "areaName": "Kerning City",
+ "demandSummary": "#o13# #a103011#\\n#o16# #a103012#\\n#i4000013:# #t4000013:# #c4000013# / 15\\n#i4000016:# #t4000016:# #c4000016# / 15",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10302,
+   "levelMinimum": 18,
+   "quests": [
+    {
+     "id": 10301,
+     "state": 2
+    }
+   ],
+   "npcId": 202,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10301,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10301,
+  "exp": 1170,
+  "items": [
+   {
+    "id": 4000013,
+    "count": -15,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4000016,
+    "count": -15,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 2000003,
+    "count": 15
+   }
+  ],
+  "meso": 585,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10301,
+  "levelMinimum": 18,
+  "quests": [
+   {
+    "id": 10300,
+    "state": 2
+   }
+  ],
+  "npcId": 202,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10301,
+  "mobs": [
+   {
+    "count": 25,
+    "id": 13
+   },
+   {
+    "count": 25,
+    "id": 16
+   }
+  ],
+  "items": [
+   {
+    "count": 15,
+    "id": 4000013
+   },
+   {
+    "count": 15,
+    "id": 4000016
+   }
+  ],
+  "npcId": 202,
+  "state": 1
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "id": 10102,
+ "name": "Estelle's Request",
+ "area": 12,
+ "areaName": "Henesys",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10103,
+   "levelMinimum": 15,
+   "quests": [
+    {
+     "id": 10102,
+     "state": 2
+    }
+   ],
+   "npcId": 300,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10102,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10102,
+  "exp": 669,
+  "items": [
+   {
+    "id": 4020100,
+    "count": -1
+   },
+   {
+    "id": 2000000,
+    "count": 10
+   }
+  ],
+  "meso": 497,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10102,
+  "levelMinimum": 15,
+  "quests": [
+   {
+    "id": 10101,
+    "state": 2
+   }
+  ],
+  "npcId": 300,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10102,
+  "items": [
+   {
+    "count": 1,
+    "id": 4020100
+   }
+  ],
+  "npcId": 300,
+  "state": 1
+ }
+}

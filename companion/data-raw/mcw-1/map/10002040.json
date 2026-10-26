@@ -1,0 +1,20 @@
+{
+ "id": 10002040,
+ "name": "The Forest of Patience <Step 1>",
+ "streetName": "Hidden Street",
+ "mapMark": "Ellinia",
+ "isTown": true,
+ "mobRate": 1.2000000476837158,
+ "returnMap": 10002000,
+ "vrBounds": {
+  "width": 1476,
+  "height": 4573
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 314
+  }
+ ],
+ "portals": []
+}

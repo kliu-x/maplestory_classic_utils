@@ -1,0 +1,23 @@
+{
+ "id": 90050000,
+ "name": "Leaving the Event",
+ "streetName": "Hidden Street",
+ "mapMark": "Event",
+ "isTown": false,
+ "mobRate": 1,
+ "returnMap": 90050000,
+ "vrBounds": {
+  "width": 1406,
+  "height": 790
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 900013
+  },
+  {
+   "id": 900011
+  }
+ ],
+ "portals": []
+}

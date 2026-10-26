@@ -1,0 +1,66 @@
+{
+ "id": 80007,
+ "name": "Make a Pig�& Octopus�Omok Set",
+ "area": 12,
+ "areaName": "Henesys",
+ "demandSummary": "#i4031061:# #t4031061:# #c4031061# / 1\\n#i4031062:# #t4031062:# #c4031062# / 1\\n#i4031063:# #t4031063:# #c4031063# / 1",
+ "rewardOnStart": {
+  "id": 80007,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80007,
+  "exp": 334,
+  "items": [
+   {
+    "id": 4031061,
+    "count": -1
+   },
+   {
+    "id": 4031062,
+    "count": -1
+   },
+   {
+    "id": 4031063,
+    "count": -1
+   },
+   {
+    "id": 4080005,
+    "count": 1
+   }
+  ],
+  "meso": 409,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80007,
+  "levelMinimum": 12,
+  "quests": [
+   {
+    "id": 80006,
+    "state": 2
+   }
+  ],
+  "npcId": 228,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80007,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031061
+   },
+   {
+    "count": 1,
+    "id": 4031062
+   },
+   {
+    "count": 1,
+    "id": 4031063
+   }
+  ],
+  "npcId": 228,
+  "state": 1
+ }
+}

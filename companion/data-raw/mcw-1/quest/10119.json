@@ -1,0 +1,83 @@
+{
+ "id": 10119,
+ "name": "Pia's Present For a Friend",
+ "area": 12,
+ "areaName": "Henesys",
+ "demandSummary": "#i4010104:# #t4010104:# #c4010104# / 15\\n#i4000050:# #t4000050:# #c4000050# / 30\\n#i4003000:# #t4003000:# #c4003000# / 30",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10120,
+   "levelMinimum": 42,
+   "quests": [
+    {
+     "id": 10119,
+     "state": 2
+    }
+   ],
+   "npcId": 218,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10119,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10119,
+  "exp": 9060,
+  "items": [
+   {
+    "id": 4010104,
+    "count": -15,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4000050,
+    "count": -30,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4003000,
+    "count": -30,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 2000003,
+    "count": 25
+   }
+  ],
+  "meso": 1330,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10119,
+  "levelMinimum": 42,
+  "quests": [
+   {
+    "id": 10104,
+    "state": 2
+   }
+  ],
+  "npcId": 218,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10119,
+  "items": [
+   {
+    "count": 15,
+    "id": 4010104
+   },
+   {
+    "count": 30,
+    "id": 4000050
+   },
+   {
+    "count": 30,
+    "id": 4003000
+   }
+  ],
+  "npcId": 218,
+  "state": 1
+ }
+}

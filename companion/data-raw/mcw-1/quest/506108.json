@@ -1,0 +1,40 @@
+{
+ "id": 506108,
+ "name": "Asking After�Icarus, the Town Resident",
+ "area": 20,
+ "areaName": "Citizenship",
+ "rewardOnStart": {
+  "id": 506108,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506108,
+  "exp": 233,
+  "items": [
+   {
+    "id": 2010005,
+    "count": 8
+   }
+  ],
+  "meso": 286,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506108,
+  "levelMinimum": 12,
+  "quests": [
+   {
+    "id": 506107,
+    "state": 2
+   }
+  ],
+  "npcId": 431,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506108,
+  "levelMinimum": 12,
+  "npcId": 407,
+  "state": 1
+ }
+}

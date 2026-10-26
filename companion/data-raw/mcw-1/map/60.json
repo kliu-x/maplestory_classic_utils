@@ -1,0 +1,29 @@
+{
+ "id": 60,
+ "name": "Southperry",
+ "streetName": "Maple Road",
+ "mapMark": "SouthPerry",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 60,
+ "vrBounds": {
+  "width": 4724,
+  "height": 2222
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 13
+  },
+  {
+   "id": 14
+  },
+  {
+   "id": 15
+  },
+  {
+   "id": 12
+  }
+ ],
+ "portals": []
+}

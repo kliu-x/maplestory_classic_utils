@@ -1,0 +1,64 @@
+{
+ "id": 506003,
+ "name": "First Greeting with Mrs. Ming Ming, the Town Resident",
+ "area": 20,
+ "areaName": "Citizenship",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506004,
+   "levelMinimum": 12,
+   "quests": [
+    {
+     "id": 506003,
+     "state": 2
+    }
+   ],
+   "npcId": 235,
+   "state": 0
+  },
+  {
+   "id": 506041,
+   "levelMinimum": 27,
+   "quests": [
+    {
+     "id": 10103,
+     "state": 2
+    },
+    {
+     "id": 506003,
+     "state": 2
+    }
+   ],
+   "npcId": 203,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506003,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506003,
+  "exp": 334,
+  "items": [
+   {
+    "id": 2010004,
+    "count": 8
+   }
+  ],
+  "meso": 409,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506003,
+  "levelMinimum": 12,
+  "npcId": 235,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506003,
+  "levelMinimum": 12,
+  "npcId": 203,
+  "state": 1
+ }
+}

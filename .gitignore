@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.log
+__pycache__/
+*.pyc
+# name checker: local cache and raw API responses (regenerated on each run)
+pokemon_name_checker/cache/
+*.tsbuildinfo

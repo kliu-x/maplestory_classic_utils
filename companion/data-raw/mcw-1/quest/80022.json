@@ -1,0 +1,63 @@
+{
+ "id": 80022,
+ "name": "JM From tha Streetz in Need of Help",
+ "area": 19,
+ "areaName": "Crafting",
+ "demandSummary": "#o18# #a800221#\\n#i4000018:# #t4000018:# #c4000018# / 10",
+ "rewardOnStart": {
+  "id": 80022,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80022,
+  "exp": 669,
+  "items": [
+   {
+    "id": 4000018,
+    "count": -10
+   },
+   {
+    "id": 2002008,
+    "count": 1
+   }
+  ],
+  "skills": [
+   {
+    "id": 92040000,
+    "masterLevel": -1,
+    "skillLevel": -1
+   }
+  ],
+  "meso": 497,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80022,
+  "levelMinimum": 15,
+  "quests": [
+   {
+    "id": 80020,
+    "state": 2
+   }
+  ],
+  "npcId": 401,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80022,
+  "mobs": [
+   {
+    "count": 25,
+    "id": 18
+   }
+  ],
+  "items": [
+   {
+    "count": 10,
+    "id": 4000018
+   }
+  ],
+  "npcId": 401,
+  "state": 1
+ }
+}

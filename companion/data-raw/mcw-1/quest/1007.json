@@ -1,0 +1,62 @@
+{
+ "id": 1007,
+ "name": "Letter for Lucas",
+ "area": 1,
+ "areaName": "Maple Island",
+ "questsAvailableOnComplete": [
+  {
+   "id": 1008,
+   "jobs": [
+    0
+   ],
+   "quests": [
+    {
+     "id": 1007,
+     "state": 2
+    }
+   ],
+   "npcId": 17,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 1007,
+  "items": [
+   {
+    "id": 4031001,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 1007,
+  "items": [
+   {
+    "id": 4031001,
+    "count": -1
+   }
+  ],
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 1007,
+  "jobs": [
+   0
+  ],
+  "levelMinimum": 2,
+  "npcId": 10,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 1007,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031001
+   }
+  ],
+  "npcId": 17,
+  "state": 1
+ }
+}

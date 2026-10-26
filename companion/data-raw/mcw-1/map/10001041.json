@@ -1,0 +1,23 @@
+{
+ "id": 10001041,
+ "name": "Henesys Weapon Store",
+ "streetName": "Victoria Road",
+ "mapMark": "Henesys",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10001000,
+ "vrBounds": {
+  "width": 800,
+  "height": 915
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 210
+  },
+  {
+   "id": 211
+  }
+ ],
+ "portals": []
+}

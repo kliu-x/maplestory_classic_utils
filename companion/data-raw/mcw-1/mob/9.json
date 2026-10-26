@@ -1,0 +1,22 @@
+{
+ "id": 9,
+ "name": "Orange Mushroom",
+ "meta": {
+  "isBodyAttack": true,
+  "level": 8,
+  "maxHP": 142,
+  "maxMP": 30,
+  "speed": 0,
+  "physicalDamage": 17,
+  "physicalDefense": 0,
+  "magicDamage": 0,
+  "magicDefense": 0,
+  "accuracy": 62,
+  "evasion": 0,
+  "exp": 15,
+  "isUndead": false,
+  "minimumPushDamage": 1,
+  "summonType": 1,
+  "revivesMonsterId": []
+ }
+}

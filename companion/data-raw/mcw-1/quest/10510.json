@@ -1,0 +1,52 @@
+{
+ "id": 10510,
+ "name": "[Forest of Patience] Sabitrama's Anti-Aging Medicine",
+ "area": 16,
+ "areaName": "Sleepywood",
+ "demandSummary": "#i4031026:# #t4031026:# #c4031026# / 1",
+ "rewardOnStart": {
+  "id": 10510,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10510,
+  "exp": 12900,
+  "fame": 2,
+  "items": [
+   {
+    "id": 4031026,
+    "count": -1
+   },
+   {
+    "id": 4020109,
+    "count": 1,
+    "gender": true
+   }
+  ],
+  "meso": 1579,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10510,
+  "levelMinimum": 50,
+  "quests": [
+   {
+    "id": 10509,
+    "state": 2
+   }
+  ],
+  "npcId": 603,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10510,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031026
+   }
+  ],
+  "npcId": 603,
+  "state": 1
+ }
+}

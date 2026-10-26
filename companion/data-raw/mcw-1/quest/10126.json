@@ -1,0 +1,60 @@
+{
+ "id": 10126,
+ "name": "The Old Snail",
+ "area": 12,
+ "areaName": "Henesys",
+ "demandSummary": "#i4160001##t4160001# #b#c4160001##k / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10127,
+   "levelMinimum": 20,
+   "quests": [
+    {
+     "id": 10126,
+     "state": 2
+    }
+   ],
+   "npcId": 203,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10126,
+  "items": [
+   {
+    "id": 4160001,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10126,
+  "exp": 1414,
+  "items": [
+   {
+    "id": 4160001,
+    "count": -1
+   }
+  ],
+  "meso": 460,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10126,
+  "levelMinimum": 20,
+  "npcId": 218,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10126,
+  "items": [
+   {
+    "count": 1,
+    "id": 4160001
+   }
+  ],
+  "npcId": 205,
+  "state": 1
+ }
+}

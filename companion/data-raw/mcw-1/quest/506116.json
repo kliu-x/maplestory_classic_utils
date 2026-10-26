@@ -1,0 +1,40 @@
+{
+ "id": 506116,
+ "name": "Asking After Chun Ji ",
+ "area": 20,
+ "areaName": "Citizenship",
+ "rewardOnStart": {
+  "id": 506116,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506116,
+  "exp": 4095,
+  "items": [
+   {
+    "id": 2000003,
+    "count": 8
+   }
+  ],
+  "meso": 716,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506116,
+  "levelMinimum": 12,
+  "quests": [
+   {
+    "id": 506115,
+    "state": 2
+   }
+  ],
+  "npcId": 431,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506116,
+  "levelMinimum": 32,
+  "npcId": 900014,
+  "state": 1
+ }
+}

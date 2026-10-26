@@ -1,0 +1,73 @@
+{
+ "id": 80023,
+ "name": "Chrishrama in Need of an Apprentice",
+ "area": 19,
+ "areaName": "Crafting",
+ "demandSummary": "#o11# #a800231#\\n#i4020000:# #t4020000:# #c4020000# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 80024,
+   "levelMinimum": 25,
+   "quests": [
+    {
+     "id": 80023,
+     "state": 2
+    }
+   ],
+   "npcId": 602,
+   "state": 0
+  },
+  {
+   "id": 80025,
+   "levelMinimum": 15,
+   "quests": [
+    {
+     "id": 80023,
+     "state": 2
+    }
+   ],
+   "npcId": 602,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 80023,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80023,
+  "exp": 188,
+  "skills": [
+   {
+    "id": 92050000,
+    "masterLevel": -1,
+    "skillLevel": -1
+   }
+  ],
+  "meso": 351,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80023,
+  "levelMinimum": 10,
+  "npcId": 602,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80023,
+  "mobs": [
+   {
+    "count": 30,
+    "id": 11
+   }
+  ],
+  "items": [
+   {
+    "count": 1,
+    "id": 4020000
+   }
+  ],
+  "npcId": 602,
+  "state": 1
+ }
+}

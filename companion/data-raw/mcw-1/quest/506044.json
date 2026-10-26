@@ -1,0 +1,71 @@
+{
+ "id": 506044,
+ "name": "Memories of Youth",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#i4031117:# #t4031117:# #c4031117# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506045,
+   "levelMinimum": 27,
+   "quests": [
+    {
+     "id": 506044,
+     "state": 2
+    }
+   ],
+   "npcId": 202,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506044,
+  "items": [
+   {
+    "id": 4031117,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506044,
+  "exp": 2625,
+  "items": [
+   {
+    "id": 4031117,
+    "count": -1
+   },
+   {
+    "id": 2000003,
+    "count": 15
+   }
+  ],
+  "meso": 603,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506044,
+  "levelMinimum": 27,
+  "quests": [
+   {
+    "id": 506043,
+    "state": 2
+   }
+  ],
+  "npcId": 203,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506044,
+  "levelMinimum": 27,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031117
+   }
+  ],
+  "npcId": 202,
+  "state": 1
+ }
+}

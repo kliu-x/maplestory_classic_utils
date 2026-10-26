@@ -1,0 +1,99 @@
+{
+ "id": 10110,
+ "name": "Getting Arcon's Blood",
+ "area": 12,
+ "areaName": "Henesys",
+ "demandSummary": "#i4000006:# #t4000006:# #c4000006# / 30\\n\r\n#i4000011:# #t4000011:# #c4000011# / 30\r\n\\n#i4000012:# #t4000012:# #c4000012# / 30\r\n\\n#i4031010:# #t4031010:# #c4031010# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10111,
+   "levelMinimum": 21,
+   "quests": [
+    {
+     "id": 10110,
+     "state": 2
+    }
+   ],
+   "npcId": 510,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10110,
+  "items": [
+   {
+    "id": 4031010,
+    "count": 1,
+    "potentialGrade": "normal"
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10110,
+  "exp": 1870,
+  "items": [
+   {
+    "id": 4031010,
+    "count": -1,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4000006,
+    "count": -30,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4000011,
+    "count": -30,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4000012,
+    "count": -30,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 2000003,
+    "count": 20
+   }
+  ],
+  "meso": 687,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10110,
+  "levelMinimum": 21,
+  "quests": [
+   {
+    "id": 10109,
+    "state": 2
+   }
+  ],
+  "npcId": 502,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10110,
+  "items": [
+   {
+    "count": 30,
+    "id": 4000006
+   },
+   {
+    "count": 1,
+    "id": 4031010
+   },
+   {
+    "count": 30,
+    "id": 4000011
+   },
+   {
+    "count": 30,
+    "id": 4000012
+   }
+  ],
+  "npcId": 510,
+  "state": 1
+ }
+}

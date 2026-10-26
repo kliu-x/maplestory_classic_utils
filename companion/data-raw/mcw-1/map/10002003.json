@@ -1,0 +1,25 @@
+{
+ "id": 10002003,
+ "name": "Magic Library",
+ "streetName": "Victoria Road",
+ "mapMark": "Ellinia",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10002000,
+ "vrBounds": {
+  "width": 800,
+  "height": 820
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 313
+  }
+ ],
+ "portals": [
+  {
+   "toMap": 10002000,
+   "portalName": "jobout00"
+  }
+ ]
+}

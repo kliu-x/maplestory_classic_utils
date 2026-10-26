@@ -1,0 +1,40 @@
+{
+ "id": 506008,
+ "name": "Asking After Bruce, the Town Resident",
+ "area": 20,
+ "areaName": "Citizenship",
+ "rewardOnStart": {
+  "id": 506008,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506008,
+  "exp": 233,
+  "items": [
+   {
+    "id": 2010005,
+    "count": 8
+   }
+  ],
+  "meso": 286,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506008,
+  "levelMinimum": 12,
+  "quests": [
+   {
+    "id": 506007,
+    "state": 2
+   }
+  ],
+  "npcId": 235,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506008,
+  "levelMinimum": 12,
+  "npcId": 206,
+  "state": 1
+ }
+}

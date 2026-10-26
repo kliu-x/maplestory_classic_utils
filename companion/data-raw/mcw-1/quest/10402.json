@@ -1,0 +1,66 @@
+{
+ "id": 10402,
+ "name": "Old Gladius",
+ "area": 15,
+ "areaName": "Perion",
+ "demandSummary": "#i1302009:# #t1302009:# #c1302009# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10403,
+   "levelMinimum": 50,
+   "quests": [
+    {
+     "id": 10402,
+     "state": 2
+    }
+   ],
+   "npcId": 602,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10402,
+  "items": [
+   {
+    "id": 1302009,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10402,
+  "exp": 12900,
+  "items": [
+   {
+    "id": 1302009,
+    "count": -1
+   }
+  ],
+  "meso": 1579,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10402,
+  "levelMinimum": 50,
+  "quests": [
+   {
+    "id": 10112,
+    "state": 2
+   }
+  ],
+  "npcId": 502,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10402,
+  "items": [
+   {
+    "count": 1,
+    "id": 1302009
+   }
+  ],
+  "npcId": 602,
+  "state": 1
+ }
+}

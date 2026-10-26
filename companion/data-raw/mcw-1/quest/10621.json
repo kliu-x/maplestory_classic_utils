@@ -1,0 +1,66 @@
+{
+ "id": 10621,
+ "name": "Embers in the Garden",
+ "area": 17,
+ "areaName": "Forgotten Hollow",
+ "demandSummary": "#o60# #a106211#",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10622,
+   "startTime": "2026-11-18T00:00:00",
+   "levelMinimum": 50,
+   "quests": [
+    {
+     "id": 10621,
+     "state": 2
+    }
+   ],
+   "npcId": 715,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10621,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10621,
+  "exp": 12900,
+  "items": [
+   {
+    "id": 2000002,
+    "count": 30
+   },
+   {
+    "id": 2030007,
+    "count": 2
+   }
+  ],
+  "meso": 1579,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10621,
+  "startTime": "2026-11-18T00:00:00",
+  "levelMinimum": 50,
+  "quests": [
+   {
+    "id": 10611,
+    "state": 2
+   }
+  ],
+  "npcId": 715,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10621,
+  "mobs": [
+   {
+    "count": 60,
+    "id": 60
+   }
+  ],
+  "npcId": 715,
+  "state": 1
+ }
+}

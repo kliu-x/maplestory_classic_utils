@@ -1,0 +1,69 @@
+{
+ "id": 506051,
+ "name": "An Unknown Savior",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#i4031122:# #t4031122:# #c4031122# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506052,
+   "levelMinimum": 47,
+   "quests": [
+    {
+     "id": 506051,
+     "state": 2
+    }
+   ],
+   "npcId": 207,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506051,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506051,
+  "exp": 11400,
+  "items": [
+   {
+    "id": 4031122,
+    "count": -1
+   },
+   {
+    "id": 2000004,
+    "count": 10
+   }
+  ],
+  "meso": 1477,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506051,
+  "levelMinimum": 47,
+  "quests": [
+   {
+    "id": 10112,
+    "state": 2
+   },
+   {
+    "id": 506009,
+    "state": 2
+   }
+  ],
+  "npcId": 207,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506051,
+  "levelMinimum": 47,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031122
+   }
+  ],
+  "npcId": 207,
+  "state": 1
+ }
+}

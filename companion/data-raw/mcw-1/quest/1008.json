@@ -1,0 +1,80 @@
+{
+ "id": 1008,
+ "name": "Lucas's Reply",
+ "area": 1,
+ "areaName": "Maple Island",
+ "rewardOnStart": {
+  "id": 1008,
+  "items": [
+   {
+    "id": 4031002,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 1008,
+  "exp": 120,
+  "items": [
+   {
+    "id": 4031002,
+    "count": -1
+   },
+   {
+    "id": 1002000,
+    "count": 1
+   },
+   {
+    "id": 1002001,
+    "count": 1
+   },
+   {
+    "id": 1002003,
+    "count": 1
+   },
+   {
+    "id": 1002004,
+    "count": 1
+   },
+   {
+    "id": 1002005,
+    "count": 1
+   },
+   {
+    "id": 1002006,
+    "count": 1
+   },
+   {
+    "id": 1002007,
+    "count": 1
+   }
+  ],
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 1008,
+  "jobs": [
+   0
+  ],
+  "quests": [
+   {
+    "id": 1007,
+    "state": 2
+   }
+  ],
+  "npcId": 17,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 1008,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031002
+   }
+  ],
+  "npcId": 10,
+  "state": 1
+ }
+}

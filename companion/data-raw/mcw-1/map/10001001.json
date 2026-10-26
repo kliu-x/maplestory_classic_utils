@@ -1,0 +1,20 @@
+{
+ "id": 10001001,
+ "name": "Henesys Townstreet",
+ "streetName": "Victoria Road",
+ "mapMark": "Henesys",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10001001,
+ "vrBounds": {
+  "width": 1406,
+  "height": 950
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 207
+  }
+ ],
+ "portals": []
+}

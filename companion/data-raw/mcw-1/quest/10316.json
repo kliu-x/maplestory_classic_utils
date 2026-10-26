@@ -1,0 +1,76 @@
+{
+ "id": 10316,
+ "name": "I'm Bored 2",
+ "area": 14,
+ "areaName": "Kerning City",
+ "demandSummary": "#i4000005# #t4000005# #c4000005# / 12\\n#i4000006# #t4000006# #c4000006# / 12",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10317,
+   "levelMinimum": 31,
+   "quests": [
+    {
+     "id": 10316,
+     "state": 2
+    }
+   ],
+   "npcId": 407,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10316,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10316,
+  "exp": 252,
+  "items": [
+   {
+    "id": 4000005,
+    "count": -12
+   },
+   {
+    "id": 4000006,
+    "count": -12
+   },
+   {
+    "id": 2000000,
+    "count": 10
+   },
+   {
+    "id": 2000003,
+    "count": 10
+   }
+  ],
+  "meso": 380,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10316,
+  "levelMinimum": 11,
+  "quests": [
+   {
+    "id": 10315,
+    "state": 2
+   }
+  ],
+  "npcId": 407,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10316,
+  "items": [
+   {
+    "count": 12,
+    "id": 4000005
+   },
+   {
+    "count": 12,
+    "id": 4000006
+   }
+  ],
+  "npcId": 407,
+  "state": 1
+ }
+}

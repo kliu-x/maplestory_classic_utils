@@ -1,0 +1,64 @@
+{
+ "id": 506005,
+ "name": "First Greeting with Camila, the Town Resident",
+ "area": 20,
+ "areaName": "Citizenship",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506006,
+   "levelMinimum": 12,
+   "quests": [
+    {
+     "id": 506005,
+     "state": 2
+    }
+   ],
+   "npcId": 235,
+   "state": 0
+  },
+  {
+   "id": 506046,
+   "levelMinimum": 37,
+   "quests": [
+    {
+     "id": 506005,
+     "state": 2
+    },
+    {
+     "id": 10105,
+     "state": 2
+    }
+   ],
+   "npcId": 204,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506005,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506005,
+  "exp": 334,
+  "items": [
+   {
+    "id": 2010004,
+    "count": 8
+   }
+  ],
+  "meso": 409,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506005,
+  "levelMinimum": 12,
+  "npcId": 235,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506005,
+  "levelMinimum": 12,
+  "npcId": 204,
+  "state": 1
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "id": 10120,
+ "name": "Looking for the Red Cape",
+ "area": 12,
+ "areaName": "Henesys",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10121,
+   "levelMinimum": 42,
+   "quests": [
+    {
+     "id": 10120,
+     "state": 2
+    }
+   ],
+   "npcId": 201,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10120,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10120,
+  "exp": 6342,
+  "meso": 931,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10120,
+  "levelMinimum": 42,
+  "quests": [
+   {
+    "id": 10119,
+    "state": 2
+   }
+  ],
+  "npcId": 218,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10120,
+  "npcId": 201,
+  "state": 1
+ }
+}

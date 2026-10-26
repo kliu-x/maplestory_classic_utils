@@ -1,0 +1,49 @@
+{
+ "id": 506149,
+ "name": "Once a Renowned Doctor",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "Talk to #p406#",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506150,
+   "levelMinimum": 37,
+   "quests": [
+    {
+     "id": 506149,
+     "state": 2
+    }
+   ],
+   "npcId": 406,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506149,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506149,
+  "exp": 5117,
+  "meso": 819,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506149,
+  "levelMinimum": 37,
+  "quests": [
+   {
+    "id": 506148,
+    "state": 2
+   }
+  ],
+  "npcId": 425,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506149,
+  "levelMinimum": 37,
+  "npcId": 406,
+  "state": 1
+ }
+}

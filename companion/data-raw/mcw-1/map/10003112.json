@@ -1,0 +1,22 @@
+{
+ "id": 10003112,
+ "name": "Cabin of the Forsaken",
+ "streetName": "Hidden Street",
+ "mapMark": "KerningCity",
+ "isTown": false,
+ "mobRate": 1,
+ "returnMap": 10003000,
+ "vrBounds": {
+  "width": 780,
+  "height": 749
+ },
+ "mobs": [
+  {
+   "id": 700006,
+   "x": 4,
+   "y": 189
+  }
+ ],
+ "npcs": [],
+ "portals": []
+}

@@ -1,0 +1,53 @@
+{
+ "id": 600008,
+ "name": "[Event] The Fourth Mark",
+ "area": 99,
+ "areaName": "Event",
+ "demandSummary": "Search the alleyways for the next trail.",
+ "rewardSummary": "#i2430051# #t2430051# x1",
+ "disableAtStartTab": true,
+ "questsAvailableOnComplete": [
+  {
+   "id": 600009,
+   "startTime": "2026-10-21T00:00:00",
+   "endTime": "2026-11-19T00:00:00",
+   "levelMinimum": 25,
+   "quests": [
+    {
+     "id": 600008,
+     "state": 2
+    }
+   ],
+   "npcId": 205,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 600008,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 600008,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 600008,
+  "startTime": "2026-10-21T00:00:00",
+  "endTime": "2026-11-19T00:00:00",
+  "levelMinimum": 25,
+  "quests": [
+   {
+    "id": 600007,
+    "state": 2
+   }
+  ],
+  "npcId": 205,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 600008,
+  "levelMinimum": 10,
+  "npcId": 404,
+  "state": 1
+ }
+}

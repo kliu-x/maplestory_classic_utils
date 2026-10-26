@@ -1,0 +1,41 @@
+{
+ "id": 10500,
+ "name": "A Clue to the Secret Book",
+ "area": 16,
+ "areaName": "Sleepywood",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10501,
+   "levelMinimum": 32,
+   "quests": [
+    {
+     "id": 10500,
+     "state": 2
+    }
+   ],
+   "npcId": 320,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10500,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10500,
+  "exp": 5850,
+  "meso": 1023,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10500,
+  "levelMinimum": 32,
+  "npcId": 608,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10500,
+  "npcId": 320,
+  "state": 1
+ }
+}

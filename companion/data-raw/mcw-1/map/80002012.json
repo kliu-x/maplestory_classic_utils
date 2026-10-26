@@ -1,0 +1,33 @@
+{
+ "id": 80002012,
+ "name": "Free Market <12>",
+ "streetName": "Hidden Street",
+ "mapMark": "Perion",
+ "isTown": true,
+ "mobRate": 0.9999982118606567,
+ "returnMap": 80002000,
+ "vrBounds": {
+  "width": 1466,
+  "height": 1090
+ },
+ "mobs": [],
+ "npcs": [],
+ "portals": [
+  {
+   "toMap": 80002012,
+   "portalName": "up00"
+  },
+  {
+   "toMap": 80002012,
+   "portalName": "up01"
+  },
+  {
+   "toMap": 80002012,
+   "portalName": "dn00"
+  },
+  {
+   "toMap": 80002012,
+   "portalName": "dn01"
+  }
+ ]
+}

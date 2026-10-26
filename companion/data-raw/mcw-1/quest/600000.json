@@ -1,0 +1,28 @@
+{
+ "id": 600000,
+ "autoStart": true,
+ "name": "[Event] Founder's First Step",
+ "area": 99,
+ "areaName": "Event",
+ "rewardOnStart": {
+  "id": 600000,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 600000,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 600000,
+  "startTime": "2026-10-06T00:00:00",
+  "endTime": "2026-10-20T23:59:00",
+  "levelMinimum": 10,
+  "npcId": 9010000,
+  "dayByDay": true,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 600000,
+  "state": 1
+ }
+}

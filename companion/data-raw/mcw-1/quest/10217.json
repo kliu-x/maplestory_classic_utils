@@ -1,0 +1,70 @@
+{
+ "id": 10217,
+ "name": "The Dark Lord's Signature",
+ "area": 13,
+ "areaName": "Ellinia",
+ "demandSummary": "Talk to the #b#p411##k",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10218,
+   "levelMinimum": 28,
+   "quests": [
+    {
+     "id": 10217,
+     "state": 2
+    }
+   ],
+   "npcId": 313,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10217,
+  "items": [
+   {
+    "id": 4031130,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10217,
+  "exp": 4090,
+  "items": [
+   {
+    "id": 2000003,
+    "count": 20
+   },
+   {
+    "id": 4031130,
+    "count": -1
+   }
+  ],
+  "meso": 892,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10217,
+  "levelMinimum": 28,
+  "quests": [
+   {
+    "id": 10216,
+    "state": 2
+   }
+  ],
+  "npcId": 411,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10217,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031130
+   }
+  ],
+  "npcId": 402,
+  "state": 1
+ }
+}

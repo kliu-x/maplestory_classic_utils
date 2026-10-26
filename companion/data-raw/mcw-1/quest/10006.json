@@ -1,0 +1,59 @@
+{
+ "id": 10006,
+ "name": "[Deep Forest of Patience] John's Pink Flower Basket",
+ "area": 11,
+ "areaName": "Lith Harbor",
+ "demandSummary": "#i4031042# #t4031042# #b#c4031042# / 10",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10007,
+   "levelMinimum": 65,
+   "quests": [
+    {
+     "id": 10006,
+     "state": 2
+    }
+   ],
+   "npcId": 100,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10006,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10006,
+  "exp": 25900,
+  "fame": 1,
+  "items": [
+   {
+    "id": 4031042,
+    "count": -10
+   },
+   {
+    "id": 4003000,
+    "count": 30
+   }
+  ],
+  "meso": 2032,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10006,
+  "levelMinimum": 65,
+  "npcId": 100,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10006,
+  "items": [
+   {
+    "count": 10,
+    "id": 4031042
+   }
+  ],
+  "npcId": 100,
+  "state": 1
+ }
+}

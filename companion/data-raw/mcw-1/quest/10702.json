@@ -1,0 +1,88 @@
+{
+ "id": 10702,
+ "name": "Special Taste of Florina Beach III",
+ "area": 18,
+ "areaName": "Florina Beach",
+ "demandSummary": "#i4000061#�#t4000061# #c4000061# / 30\\n#i4000031# #t4000031# #c4000031# / 30\\n#i4000032#�#t4000032# #c4000032# / 60\\n#i4000040# #t4000040# #c4000040# /�60",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10703,
+   "levelMinimum": 37,
+   "quests": [
+    {
+     "id": 10702,
+     "state": 2
+    }
+   ],
+   "npcId": 802,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10702,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10702,
+  "exp": 7310,
+  "items": [
+   {
+    "id": 4000061,
+    "count": -30
+   },
+   {
+    "id": 4000031,
+    "count": -30
+   },
+   {
+    "id": 4000032,
+    "count": -60
+   },
+   {
+    "id": 4000040,
+    "count": -60
+   },
+   {
+    "id": 2000003,
+    "count": 30
+   }
+  ],
+  "meso": 7020,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10702,
+  "levelMinimum": 37,
+  "quests": [
+   {
+    "id": 10701,
+    "state": 2
+   }
+  ],
+  "npcId": 802,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10702,
+  "items": [
+   {
+    "count": 30,
+    "id": 4000061
+   },
+   {
+    "count": 30,
+    "id": 4000031
+   },
+   {
+    "count": 60,
+    "id": 4000032
+   },
+   {
+    "count": 60,
+    "id": 4000040
+   }
+  ],
+  "npcId": 802,
+  "state": 1
+ }
+}

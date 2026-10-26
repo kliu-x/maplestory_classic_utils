@@ -1,0 +1,54 @@
+{
+ "id": 10419,
+ "name": "A Report for the Doctor",
+ "area": 15,
+ "areaName": "Perion",
+ "demandSummary": "Talk to #p512#",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10420,
+   "levelMinimum": 34,
+   "quests": [
+    {
+     "id": 10419,
+     "state": 2
+    }
+   ],
+   "npcId": 512,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10419,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10419,
+  "exp": 3937,
+  "items": [
+   {
+    "id": 2000001,
+    "count": 20
+   }
+  ],
+  "meso": 1082,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10419,
+  "levelMinimum": 34,
+  "quests": [
+   {
+    "id": 10418,
+    "state": 2
+   }
+  ],
+  "npcId": 308,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10419,
+  "npcId": 512,
+  "state": 1
+ }
+}

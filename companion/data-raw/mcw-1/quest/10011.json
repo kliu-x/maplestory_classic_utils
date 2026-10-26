@@ -1,0 +1,60 @@
+{
+ "id": 10011,
+ "name": "Teo's Even Weirder Hobby",
+ "area": 11,
+ "areaName": "Lith Harbor",
+ "demandSummary": "#o8# #a100111#\\n#i4000008# #t4000008# #b#c4000008# / 1",
+ "rewardOnStart": {
+  "id": 10011,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10011,
+  "exp": 124,
+  "items": [
+   {
+    "id": 4000008,
+    "count": -1
+   },
+   {
+    "id": 2002002,
+    "count": 1
+   },
+   {
+    "id": 2010005,
+    "count": 10
+   }
+  ],
+  "meso": 277,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10011,
+  "levelMinimum": 8,
+  "quests": [
+   {
+    "id": 10010,
+    "state": 2
+   }
+  ],
+  "npcId": 102,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10011,
+  "mobs": [
+   {
+    "count": 10,
+    "id": 8
+   }
+  ],
+  "items": [
+   {
+    "count": 1,
+    "id": 4000008
+   }
+  ],
+  "npcId": 102,
+  "state": 1
+ }
+}

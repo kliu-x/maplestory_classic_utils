@@ -1,0 +1,35 @@
+{
+ "id": 500002,
+ "name": "[Event] The One Who Sealed the Darkness",
+ "area": 99,
+ "areaName": "Event",
+ "demandSummary": "#questorder1#Talk to #r#p502##k.",
+ "rewardSummary": "#i2430004# #t2430004# x3\\n#i2010005# #t2010005# x50 \\r\\n (Account Reward)",
+ "rewardOnStart": {
+  "id": 500002,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 500002,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 500002,
+  "startTime": "2026-04-21T15:00:00",
+  "endTime": "2026-04-23T23:59:00",
+  "levelMinimum": 15,
+  "quests": [
+   {
+    "id": 500001,
+    "state": 2
+   }
+  ],
+  "npcId": 313,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 500002,
+  "npcId": 502,
+  "state": 1
+ }
+}

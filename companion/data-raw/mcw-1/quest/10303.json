@@ -1,0 +1,81 @@
+{
+ "id": 10303,
+ "name": "Don Hwang's Request",
+ "area": 14,
+ "areaName": "Kerning City",
+ "demandSummary": "#o9# #a103031#\\n#o10# #a103032#\\n#i4000009:# #t4000009:# #c4000009# / 10\\n#i4000010:# #t4000010:# #c4000010# / 10\\n",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10304,
+   "levelMinimum": 10,
+   "quests": [
+    {
+     "id": 10303,
+     "state": 2
+    }
+   ],
+   "npcId": 406,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10303,
+  "meso": -1000,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10303,
+  "exp": 188,
+  "items": [
+   {
+    "id": 4000009,
+    "count": -10
+   },
+   {
+    "id": 4000010,
+    "count": -10
+   },
+   {
+    "id": 2010005,
+    "count": 15
+   },
+   {
+    "id": 2030005,
+    "count": 2
+   }
+  ],
+  "meso": 351,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10303,
+  "levelMinimum": 10,
+  "npcId": 406,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10303,
+  "mobs": [
+   {
+    "count": 20,
+    "id": 9
+   },
+   {
+    "count": 20,
+    "id": 10
+   }
+  ],
+  "items": [
+   {
+    "count": 10,
+    "id": 4000009
+   },
+   {
+    "count": 10,
+    "id": 4000010
+   }
+  ],
+  "npcId": 406,
+  "state": 1
+ }
+}

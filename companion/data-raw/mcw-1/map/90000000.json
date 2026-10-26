@@ -1,0 +1,16 @@
+{
+ "id": 90000000,
+ "name": "Maple Hill",
+ "streetName": "Hidden Street",
+ "mapMark": "Event",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 90000000,
+ "vrBounds": {
+  "width": 4286,
+  "height": 1418
+ },
+ "mobs": [],
+ "npcs": [],
+ "portals": []
+}

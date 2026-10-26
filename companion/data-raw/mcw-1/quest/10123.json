@@ -1,0 +1,84 @@
+{
+ "id": 10123,
+ "name": "The Reason Behind the Mushroom Studies",
+ "area": 12,
+ "areaName": "Henesys",
+ "demandSummary": "#o4# #a101231#\\n#o9# #a101232#\\n#i4000003# #t4000003# #c4000003# / 10\\n#i4000009# #t4000009# #c4000009# / 10",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10124,
+   "levelMinimum": 11,
+   "quests": [
+    {
+     "id": 10411,
+     "state": 2
+    },
+    {
+     "id": 10123,
+     "state": 2
+    }
+   ],
+   "npcId": 206,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10123,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10123,
+  "exp": 188,
+  "items": [
+   {
+    "id": 4000003,
+    "count": -10
+   },
+   {
+    "id": 4000009,
+    "count": -10
+   },
+   {
+    "id": 2000000,
+    "count": 10
+   },
+   {
+    "id": 2030004,
+    "count": 2
+   }
+  ],
+  "meso": 351,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10123,
+  "levelMinimum": 10,
+  "npcId": 206,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10123,
+  "mobs": [
+   {
+    "count": 20,
+    "id": 4
+   },
+   {
+    "count": 20,
+    "id": 9
+   }
+  ],
+  "items": [
+   {
+    "count": 10,
+    "id": 4000003
+   },
+   {
+    "count": 10,
+    "id": 4000009
+   }
+  ],
+  "npcId": 206,
+  "state": 1
+ }
+}

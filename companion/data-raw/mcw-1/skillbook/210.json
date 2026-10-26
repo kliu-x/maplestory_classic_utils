@@ -1,0 +1,1706 @@
+{
+ "id": 210,
+ "description": {
+  "id": 210,
+  "desc": "",
+  "name": "",
+  "shortDesc": "",
+  "bookName": "Fire & Poison Basics",
+  "names": {
+   "en": "Fire & Poison Basics",
+   "es": "Fundamentos de fuego y veneno",
+   "ko": "Fire & Poison 기본기"
+  }
+ },
+ "skills": [
+  {
+   "id": 2100000,
+   "masterLevel": 20,
+   "weapons": [],
+   "description": {
+    "name": "MP Eater",
+    "desc": "[Master Level: 20]\\nAbsorbs the enemy's MP when attacking with Magic skills, but only once every 5 seconds. Cannot absorb if the enemy's MP is 0."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "x": "30",
+     "prop": "30"
+    },
+    {
+     "hs": "h2",
+     "x": "31",
+     "prop": "31"
+    },
+    {
+     "hs": "h3",
+     "x": "32",
+     "prop": "32"
+    },
+    {
+     "hs": "h4",
+     "x": "33",
+     "prop": "33"
+    },
+    {
+     "hs": "h5",
+     "x": "34",
+     "prop": "34"
+    },
+    {
+     "hs": "h6",
+     "x": "35",
+     "prop": "35"
+    },
+    {
+     "hs": "h7",
+     "x": "36",
+     "prop": "36"
+    },
+    {
+     "hs": "h8",
+     "x": "37",
+     "prop": "37"
+    },
+    {
+     "hs": "h9",
+     "x": "38",
+     "prop": "38"
+    },
+    {
+     "hs": "h10",
+     "x": "39",
+     "prop": "39"
+    },
+    {
+     "hs": "h11",
+     "x": "40",
+     "prop": "40"
+    },
+    {
+     "hs": "h12",
+     "x": "41",
+     "prop": "41"
+    },
+    {
+     "hs": "h13",
+     "x": "42",
+     "prop": "42"
+    },
+    {
+     "hs": "h14",
+     "x": "43",
+     "prop": "43"
+    },
+    {
+     "hs": "h15",
+     "x": "44",
+     "prop": "44"
+    },
+    {
+     "hs": "h16",
+     "x": "45",
+     "prop": "45"
+    },
+    {
+     "hs": "h17",
+     "x": "46",
+     "prop": "46"
+    },
+    {
+     "hs": "h18",
+     "x": "47",
+     "prop": "47"
+    },
+    {
+     "hs": "h19",
+     "x": "48",
+     "prop": "48"
+    },
+    {
+     "hs": "h20",
+     "x": "50",
+     "prop": "50"
+    }
+   ]
+  },
+  {
+   "id": 2101000,
+   "masterLevel": 20,
+   "requiredSkillLevels": {
+    "2100000": 3
+   },
+   "weapons": [],
+   "description": {
+    "name": "Meditation",
+    "desc": "[Master Level: 20]\\nMeditate for a bit to temporarily increase the Magic Attack of party members around the area.\\nRequired Skill: #cAt least Level 3 MP Eater#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "15",
+     "time": "100",
+     "indieMad": "5",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "15",
+     "time": "110",
+     "indieMad": "6",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "15",
+     "time": "120",
+     "indieMad": "7",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "16",
+     "time": "130",
+     "indieMad": "8",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "16",
+     "time": "140",
+     "indieMad": "9",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "17",
+     "time": "150",
+     "indieMad": "10",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "17",
+     "time": "160",
+     "indieMad": "11",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "18",
+     "time": "170",
+     "indieMad": "12",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "18",
+     "time": "180",
+     "indieMad": "13",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "19",
+     "time": "190",
+     "indieMad": "14",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "19",
+     "time": "200",
+     "indieMad": "15",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "20",
+     "time": "210",
+     "indieMad": "16",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "20",
+     "time": "220",
+     "indieMad": "17",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "21",
+     "time": "230",
+     "indieMad": "18",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "21",
+     "time": "240",
+     "indieMad": "19",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "22",
+     "time": "250",
+     "indieMad": "20",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "22",
+     "time": "260",
+     "indieMad": "21",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "23",
+     "time": "270",
+     "indieMad": "22",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "23",
+     "time": "280",
+     "indieMad": "23",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "25",
+     "time": "300",
+     "indieMad": "25",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    }
+   ]
+  },
+  {
+   "id": 2101001,
+   "masterLevel": 20,
+   "weapons": [],
+   "description": {
+    "name": "Teleport",
+    "desc": "[Master Level: 20]\\nUse the arrow keys to teleport a set distance within the same map."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "55",
+     "range": "110"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "53",
+     "range": "112"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "51",
+     "range": "114"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "49",
+     "range": "116"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "47",
+     "range": "118"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "45",
+     "range": "120"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "43",
+     "range": "122"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "41",
+     "range": "124"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "39",
+     "range": "126"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "37",
+     "range": "128"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "35",
+     "range": "130"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "33",
+     "range": "132"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "31",
+     "range": "134"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "29",
+     "range": "136"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "27",
+     "range": "138"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "25",
+     "range": "140"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "23",
+     "range": "142"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "21",
+     "range": "144"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "19",
+     "range": "146"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "15",
+     "range": "150"
+    }
+   ]
+  },
+  {
+   "id": 2101002,
+   "masterLevel": 20,
+   "requiredSkillLevels": {
+    "2101001": 5
+   },
+   "weapons": [],
+   "description": {
+    "name": "Slow",
+    "desc": "[Master Level: 20]\\nTemporarily slows down the movement speed and evasion of up to 6 monsters. Cannot be used on monsters that are already affected.\\nRequired Skill: #cAt least Level 5 Teleport#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "15",
+     "speed": "10",
+     "x": "1",
+     "time": "10",
+     "mobCount": "6",
+     "lt": "Point [ X=-200, Y=-90 ]",
+     "rb": "Point [ X=200, Y=10 ]"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "14",
+     "speed": "11",
+     "x": "1",
+     "time": "11",
+     "mobCount": "6",
+     "lt": "Point [ X=-200, Y=-90 ]",
+     "rb": "Point [ X=200, Y=10 ]"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "14",
+     "speed": "12",
+     "x": "1",
+     "time": "11",
+     "mobCount": "6",
+     "lt": "Point [ X=-200, Y=-90 ]",
+     "rb": "Point [ X=200, Y=10 ]"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "14",
+     "speed": "13",
+     "x": "1",
+     "time": "12",
+     "mobCount": "6",
+     "lt": "Point [ X=-200, Y=-90 ]",
+     "rb": "Point [ X=200, Y=10 ]"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "13",
+     "speed": "14",
+     "x": "2",
+     "time": "12",
+     "mobCount": "6",
+     "lt": "Point [ X=-200, Y=-90 ]",
+     "rb": "Point [ X=200, Y=10 ]"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "13",
+     "speed": "15",
+     "x": "2",
+     "time": "13",
+     "mobCount": "6",
+     "lt": "Point [ X=-200, Y=-90 ]",
+     "rb": "Point [ X=200, Y=10 ]"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "13",
+     "speed": "16",
+     "x": "2",
+     "time": "13",
+     "mobCount": "6",
+     "lt": "Point [ X=-200, Y=-90 ]",
+     "rb": "Point [ X=200, Y=10 ]"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "12",
+     "speed": "17",
+     "x": "2",
+     "time": "14",
+     "mobCount": "6",
+     "lt": "Point [ X=-200, Y=-90 ]",
+     "rb": "Point [ X=200, Y=10 ]"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "12",
+     "speed": "18",
+     "x": "2",
+     "time": "14",
+     "mobCount": "6",
+     "lt": "Point [ X=-200, Y=-90 ]",
+     "rb": "Point [ X=200, Y=10 ]"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "12",
+     "speed": "19",
+     "x": "3",
+     "time": "15",
+     "mobCount": "6",
+     "lt": "Point [ X=-200, Y=-90 ]",
+     "rb": "Point [ X=200, Y=10 ]"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "11",
+     "speed": "20",
+     "x": "3",
+     "time": "15",
+     "mobCount": "6",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=10 ]"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "11",
+     "speed": "21",
+     "x": "3",
+     "time": "16",
+     "mobCount": "6",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=10 ]"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "11",
+     "speed": "22",
+     "x": "3",
+     "time": "16",
+     "mobCount": "6",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=10 ]"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "10",
+     "speed": "23",
+     "x": "3",
+     "time": "17",
+     "mobCount": "6",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=10 ]"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "10",
+     "speed": "24",
+     "x": "4",
+     "time": "17",
+     "mobCount": "6",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=10 ]"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "10",
+     "speed": "25",
+     "x": "4",
+     "time": "18",
+     "mobCount": "6",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=10 ]"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "9",
+     "speed": "26",
+     "x": "4",
+     "time": "18",
+     "mobCount": "6",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=10 ]"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "9",
+     "speed": "27",
+     "x": "4",
+     "time": "19",
+     "mobCount": "6",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=10 ]"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "9",
+     "speed": "28",
+     "x": "4",
+     "time": "19",
+     "mobCount": "6",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=10 ]"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "8",
+     "speed": "30",
+     "x": "5",
+     "time": "20",
+     "mobCount": "6",
+     "lt": "Point [ X=-250, Y=-90 ]",
+     "rb": "Point [ X=250, Y=10 ]"
+    }
+   ]
+  },
+  {
+   "id": 2101003,
+   "masterLevel": 30,
+   "weapons": [],
+   "description": {
+    "name": "Fire Arrow",
+    "desc": "[Master Level: 30]\\nFires a fire arrow created with magic power at a single enemy, dealing fire-elemental damage and burning them to inflict continuous damage every second for 3 seconds. Deals increased damage to fire-weak enemies, but deals reduced damage to fire-resistant enemies and cannot burn them."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "14",
+     "mad": "120",
+     "mastery": "1",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "dot": "20",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "14",
+     "mad": "122",
+     "mastery": "1",
+     "mobCount": "1",
+     "dot": "21",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "14",
+     "mad": "124",
+     "mastery": "1",
+     "mobCount": "1",
+     "dot": "22",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "15",
+     "mad": "126",
+     "mastery": "1",
+     "mobCount": "1",
+     "dot": "23",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "15",
+     "mad": "128",
+     "mastery": "1",
+     "mobCount": "1",
+     "dot": "24",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "15",
+     "mad": "130",
+     "mastery": "2",
+     "mobCount": "1",
+     "dot": "25",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "16",
+     "mad": "132",
+     "mastery": "2",
+     "mobCount": "1",
+     "dot": "26",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "16",
+     "mad": "134",
+     "mastery": "2",
+     "mobCount": "1",
+     "dot": "27",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "16",
+     "mad": "136",
+     "mastery": "3",
+     "mobCount": "1",
+     "dot": "28",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "17",
+     "mad": "138",
+     "mastery": "3",
+     "mobCount": "1",
+     "dot": "29",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "17",
+     "mad": "140",
+     "mastery": "3",
+     "mobCount": "1",
+     "dot": "30",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "18",
+     "mad": "142",
+     "mastery": "4",
+     "mobCount": "1",
+     "dot": "31",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "18",
+     "mad": "144",
+     "mastery": "4",
+     "mobCount": "1",
+     "dot": "32",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "19",
+     "mad": "146",
+     "mastery": "4",
+     "mobCount": "1",
+     "dot": "33",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "19",
+     "mad": "148",
+     "mastery": "5",
+     "mobCount": "1",
+     "dot": "34",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "20",
+     "mad": "150",
+     "mastery": "5",
+     "mobCount": "1",
+     "dot": "35",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "20",
+     "mad": "152",
+     "mastery": "5",
+     "mobCount": "1",
+     "dot": "36",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "21",
+     "mad": "154",
+     "mastery": "6",
+     "mobCount": "1",
+     "dot": "37",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "21",
+     "mad": "156",
+     "mastery": "6",
+     "mobCount": "1",
+     "dot": "38",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "22",
+     "mad": "158",
+     "mastery": "6",
+     "mobCount": "1",
+     "dot": "39",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h21",
+     "mpCon": "22",
+     "mad": "160",
+     "mastery": "7",
+     "mobCount": "1",
+     "dot": "40",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h22",
+     "mpCon": "23",
+     "mad": "162",
+     "mastery": "7",
+     "mobCount": "1",
+     "dot": "41",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h23",
+     "mpCon": "23",
+     "mad": "164",
+     "mastery": "7",
+     "mobCount": "1",
+     "dot": "42",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h24",
+     "mpCon": "24",
+     "mad": "166",
+     "mastery": "8",
+     "mobCount": "1",
+     "dot": "43",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h25",
+     "mpCon": "24",
+     "mad": "168",
+     "mastery": "8",
+     "mobCount": "1",
+     "dot": "44",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h26",
+     "mpCon": "25",
+     "mad": "170",
+     "mastery": "8",
+     "mobCount": "1",
+     "dot": "45",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h27",
+     "mpCon": "25",
+     "mad": "172",
+     "mastery": "9",
+     "mobCount": "1",
+     "dot": "46",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h28",
+     "mpCon": "26",
+     "mad": "174",
+     "mastery": "9",
+     "mobCount": "1",
+     "dot": "47",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h29",
+     "mpCon": "26",
+     "mad": "176",
+     "mastery": "9",
+     "mobCount": "1",
+     "dot": "48",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h30",
+     "mpCon": "28",
+     "mad": "180",
+     "mastery": "10",
+     "mobCount": "1",
+     "dot": "50",
+     "bulletCount": "1",
+     "attackCount": "1",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "prop": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    }
+   ]
+  },
+  {
+   "id": 2101004,
+   "masterLevel": 30,
+   "weapons": [],
+   "description": {
+    "name": "Poison Breath",
+    "desc": "[Master Level: 30]\\nFires a poison droplet at a single enemy. The droplet explodes on contact, dealing poison-elemental damage to up to 6 nearby enemies and granting a chance to poison them. Deals increased damage to poison-weak enemies, but deals reduced damage to poison-resistant enemies and cannot poison them."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "20",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "20",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "22",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "22",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "22",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "24",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "24",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "24",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "26",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "26",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "26",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "28",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "28",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "28",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "30",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "30",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "30",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "32",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "32",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "32",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h21",
+     "mpCon": "34",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h22",
+     "mpCon": "34",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h23",
+     "mpCon": "34",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h24",
+     "mpCon": "36",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h25",
+     "mpCon": "36",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h26",
+     "mpCon": "36",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h27",
+     "mpCon": "38",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h28",
+     "mpCon": "38",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h29",
+     "mpCon": "38",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    },
+    {
+     "hs": "h30",
+     "mpCon": "40",
+     "mobCount": "1",
+     "attackCount": "1",
+     "bulletCount": "1"
+    }
+   ]
+  },
+  {
+   "id": 2101005,
+   "masterLevel": 30,
+   "weapons": [],
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mad": "50",
+     "mastery": "1",
+     "prop": "45",
+     "dot": "10",
+     "lt": "Point [ X=-130, Y=-50 ]",
+     "rb": "Point [ X=130, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h2",
+     "mad": "51",
+     "mastery": "1",
+     "prop": "46",
+     "dot": "11",
+     "lt": "Point [ X=-130, Y=-50 ]",
+     "rb": "Point [ X=130, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h3",
+     "mad": "52",
+     "mastery": "1",
+     "prop": "47",
+     "dot": "12",
+     "lt": "Point [ X=-130, Y=-50 ]",
+     "rb": "Point [ X=130, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h4",
+     "mad": "53",
+     "mastery": "1",
+     "prop": "48",
+     "dot": "13",
+     "lt": "Point [ X=-130, Y=-50 ]",
+     "rb": "Point [ X=130, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h5",
+     "mad": "54",
+     "mastery": "1",
+     "prop": "49",
+     "dot": "14",
+     "lt": "Point [ X=-130, Y=-50 ]",
+     "rb": "Point [ X=130, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h6",
+     "mad": "55",
+     "mastery": "2",
+     "prop": "50",
+     "dot": "15",
+     "lt": "Point [ X=-130, Y=-50 ]",
+     "rb": "Point [ X=130, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h7",
+     "mad": "56",
+     "mastery": "2",
+     "prop": "51",
+     "dot": "16",
+     "lt": "Point [ X=-130, Y=-50 ]",
+     "rb": "Point [ X=130, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h8",
+     "mad": "57",
+     "mastery": "2",
+     "prop": "52",
+     "dot": "17",
+     "lt": "Point [ X=-130, Y=-50 ]",
+     "rb": "Point [ X=130, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h9",
+     "mad": "58",
+     "mastery": "3",
+     "prop": "53",
+     "dot": "18",
+     "lt": "Point [ X=-130, Y=-50 ]",
+     "rb": "Point [ X=130, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h10",
+     "mad": "59",
+     "mastery": "3",
+     "prop": "54",
+     "dot": "19",
+     "lt": "Point [ X=-130, Y=-50 ]",
+     "rb": "Point [ X=130, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h11",
+     "mad": "60",
+     "mastery": "3",
+     "prop": "55",
+     "dot": "20",
+     "lt": "Point [ X=-130, Y=-50 ]",
+     "rb": "Point [ X=130, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h12",
+     "mad": "61",
+     "mastery": "4",
+     "prop": "56",
+     "dot": "21",
+     "lt": "Point [ X=-130, Y=-50 ]",
+     "rb": "Point [ X=130, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h13",
+     "mad": "62",
+     "mastery": "4",
+     "prop": "57",
+     "dot": "22",
+     "lt": "Point [ X=-130, Y=-50 ]",
+     "rb": "Point [ X=130, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h14",
+     "mad": "63",
+     "mastery": "4",
+     "prop": "58",
+     "dot": "23",
+     "lt": "Point [ X=-130, Y=-50 ]",
+     "rb": "Point [ X=130, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h15",
+     "mad": "64",
+     "mastery": "5",
+     "prop": "59",
+     "dot": "24",
+     "lt": "Point [ X=-130, Y=-50 ]",
+     "rb": "Point [ X=130, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h16",
+     "mad": "65",
+     "mastery": "5",
+     "prop": "60",
+     "dot": "25",
+     "lt": "Point [ X=-150, Y=-50 ]",
+     "rb": "Point [ X=150, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h17",
+     "mad": "66",
+     "mastery": "5",
+     "prop": "61",
+     "dot": "26",
+     "lt": "Point [ X=-150, Y=-50 ]",
+     "rb": "Point [ X=150, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h18",
+     "mad": "67",
+     "mastery": "6",
+     "prop": "62",
+     "dot": "27",
+     "lt": "Point [ X=-150, Y=-50 ]",
+     "rb": "Point [ X=150, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h19",
+     "mad": "68",
+     "mastery": "6",
+     "prop": "63",
+     "dot": "28",
+     "lt": "Point [ X=-150, Y=-50 ]",
+     "rb": "Point [ X=150, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h20",
+     "mad": "69",
+     "mastery": "6",
+     "prop": "64",
+     "dot": "29",
+     "lt": "Point [ X=-150, Y=-50 ]",
+     "rb": "Point [ X=150, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h21",
+     "mad": "70",
+     "mastery": "7",
+     "prop": "65",
+     "dot": "30",
+     "lt": "Point [ X=-150, Y=-50 ]",
+     "rb": "Point [ X=150, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h22",
+     "mad": "71",
+     "mastery": "7",
+     "prop": "66",
+     "dot": "31",
+     "lt": "Point [ X=-150, Y=-50 ]",
+     "rb": "Point [ X=150, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h23",
+     "mad": "72",
+     "mastery": "7",
+     "prop": "67",
+     "dot": "32",
+     "lt": "Point [ X=-150, Y=-50 ]",
+     "rb": "Point [ X=150, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h24",
+     "mad": "73",
+     "mastery": "8",
+     "prop": "68",
+     "dot": "33",
+     "lt": "Point [ X=-150, Y=-50 ]",
+     "rb": "Point [ X=150, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h25",
+     "mad": "74",
+     "mastery": "8",
+     "prop": "69",
+     "dot": "34",
+     "lt": "Point [ X=-150, Y=-50 ]",
+     "rb": "Point [ X=150, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h26",
+     "mad": "75",
+     "mastery": "8",
+     "prop": "70",
+     "dot": "35",
+     "lt": "Point [ X=-150, Y=-50 ]",
+     "rb": "Point [ X=150, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h27",
+     "mad": "76",
+     "mastery": "9",
+     "prop": "71",
+     "dot": "36",
+     "lt": "Point [ X=-150, Y=-50 ]",
+     "rb": "Point [ X=150, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h28",
+     "mad": "77",
+     "mastery": "9",
+     "prop": "72",
+     "dot": "37",
+     "lt": "Point [ X=-150, Y=-50 ]",
+     "rb": "Point [ X=150, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h29",
+     "mad": "78",
+     "mastery": "9",
+     "prop": "73",
+     "dot": "38",
+     "lt": "Point [ X=-150, Y=-50 ]",
+     "rb": "Point [ X=150, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h30",
+     "mad": "80",
+     "mastery": "10",
+     "prop": "75",
+     "dot": "40",
+     "lt": "Point [ X=-150, Y=-50 ]",
+     "rb": "Point [ X=150, Y=50 ]",
+     "mobCount": "6",
+     "attackCount": "1",
+     "dotTime": "5",
+     "dotInterval": "1"
+    }
+   ]
+  }
+ ]
+}

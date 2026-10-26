@@ -1,0 +1,66 @@
+{
+ "id": 80028,
+ "name": "Asking Perion for Help",
+ "area": 10,
+ "areaName": "Victoria Island",
+ "demandSummary": "#i4031089:# #t4031089:# #c4031089# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 80029,
+   "levelMinimum": 13,
+   "quests": [
+    {
+     "id": 80028,
+     "state": 2
+    }
+   ],
+   "npcId": 511,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 80028,
+  "items": [
+   {
+    "id": 4031089,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80028,
+  "exp": 424,
+  "items": [
+   {
+    "id": 4031089,
+    "count": -1
+   }
+  ],
+  "meso": 306,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80028,
+  "levelMinimum": 13,
+  "quests": [
+   {
+    "id": 80027,
+    "state": 2
+   }
+  ],
+  "npcId": 800018,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80028,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031089
+   }
+  ],
+  "npcId": 511,
+  "state": 1
+ }
+}

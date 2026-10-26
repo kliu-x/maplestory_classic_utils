@@ -1,0 +1,64 @@
+{
+ "id": 506109,
+ "name": "First Greeting with Jane Doe, the Town Resident",
+ "area": 20,
+ "areaName": "Citizenship",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506110,
+   "levelMinimum": 12,
+   "quests": [
+    {
+     "id": 506109,
+     "state": 2
+    }
+   ],
+   "npcId": 431,
+   "state": 0
+  },
+  {
+   "id": 506147,
+   "levelMinimum": 37,
+   "quests": [
+    {
+     "id": 10310,
+     "state": 2
+    },
+    {
+     "id": 506109,
+     "state": 2
+    }
+   ],
+   "npcId": 412,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506109,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506109,
+  "exp": 334,
+  "items": [
+   {
+    "id": 2010004,
+    "count": 8
+   }
+  ],
+  "meso": 409,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506109,
+  "levelMinimum": 12,
+  "npcId": 431,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506109,
+  "levelMinimum": 12,
+  "npcId": 412,
+  "state": 1
+ }
+}

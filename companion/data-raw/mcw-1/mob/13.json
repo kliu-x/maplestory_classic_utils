@@ -1,0 +1,22 @@
+{
+ "id": 13,
+ "name": "Green Mushroom",
+ "meta": {
+  "isBodyAttack": true,
+  "level": 14,
+  "maxHP": 233,
+  "maxMP": 30,
+  "speed": -20,
+  "physicalDamage": 54,
+  "physicalDefense": 0,
+  "magicDamage": 0,
+  "magicDefense": 30,
+  "accuracy": 79,
+  "evasion": 8,
+  "exp": 26,
+  "minimumPushDamage": 25,
+  "elementalAttributes": "S1",
+  "summonType": 1,
+  "revivesMonsterId": []
+ }
+}

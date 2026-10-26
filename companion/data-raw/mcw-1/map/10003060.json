@@ -1,0 +1,28 @@
+{
+ "id": 10003060,
+ "name": "Subway Ticketing Booth",
+ "streetName": "Victoria Road",
+ "mapMark": "KerningCity",
+ "isTown": false,
+ "mobRate": 1,
+ "returnMap": 10003000,
+ "vrBounds": {
+  "width": 800,
+  "height": 600
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 417
+  },
+  {
+   "id": 418
+  }
+ ],
+ "portals": [
+  {
+   "toMap": 10003000,
+   "portalName": "out00"
+  }
+ ]
+}

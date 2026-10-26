@@ -1,0 +1,54 @@
+{
+ "id": 30,
+ "name": "East Entrance to Mushroom Town",
+ "streetName": "Maple Road",
+ "mapMark": "MushroomVillage",
+ "isTown": true,
+ "mobRate": 0.6999999284744263,
+ "returnMap": 30,
+ "vrBounds": {
+  "width": 1858,
+  "height": 1690
+ },
+ "mobs": [
+  {
+   "id": 1,
+   "x": 192,
+   "y": -445
+  },
+  {
+   "id": 1,
+   "x": 690,
+   "y": 95
+  },
+  {
+   "id": 1,
+   "x": 425,
+   "y": -445
+  },
+  {
+   "id": 1,
+   "x": 763,
+   "y": -385
+  },
+  {
+   "id": 1,
+   "x": 475,
+   "y": 95
+  },
+  {
+   "id": 1,
+   "x": 1360,
+   "y": 215
+  }
+ ],
+ "npcs": [
+  {
+   "id": 7
+  },
+  {
+   "id": 6
+  }
+ ],
+ "portals": []
+}

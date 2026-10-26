@@ -1,0 +1,23 @@
+{
+ "id": 800015,
+ "name": "Blue Mushroom",
+ "meta": {
+  "isBodyAttack": true,
+  "level": 30,
+  "maxHP": 789,
+  "maxMP": 30,
+  "speed": 5,
+  "physicalDamage": 204,
+  "physicalDefense": 10,
+  "magicDamage": 0,
+  "magicDefense": 20,
+  "accuracy": 118,
+  "evasion": 18,
+  "exp": 56,
+  "isUndead": false,
+  "minimumPushDamage": 225,
+  "summonType": 1,
+  "revivesMonsterId": [],
+  "linksToOtherMob": 16
+ }
+}

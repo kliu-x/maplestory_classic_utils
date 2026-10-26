@@ -1,0 +1,63 @@
+{
+ "id": 80018,
+ "name": "A Carpenter in My Own Right!",
+ "area": 19,
+ "areaName": "Crafting",
+ "demandSummary": "#o20# #a800181#\\n#i3010002:# #t3010002:# #c3010002# / 1",
+ "rewardOnStart": {
+  "id": 80018,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80018,
+  "exp": 3060,
+  "items": [
+   {
+    "id": 3010002,
+    "count": -1
+   },
+   {
+    "id": 4130001,
+    "count": 1
+   }
+  ],
+  "skills": [
+   {
+    "id": 92030000,
+    "masterLevel": -1,
+    "skillLevel": -1
+   }
+  ],
+  "meso": 804,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80018,
+  "levelMinimum": 25,
+  "quests": [
+   {
+    "id": 80017,
+    "state": 2
+   }
+  ],
+  "npcId": 208,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80018,
+  "mobs": [
+   {
+    "count": 30,
+    "id": 20
+   }
+  ],
+  "items": [
+   {
+    "count": 1,
+    "id": 3010002
+   }
+  ],
+  "npcId": 208,
+  "state": 1
+ }
+}

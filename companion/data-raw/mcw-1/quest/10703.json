@@ -1,0 +1,75 @@
+{
+ "id": 10703,
+ "name": "Special Taste of Florina Beach IV",
+ "area": 18,
+ "areaName": "Florina Beach",
+ "demandSummary": "#i4000061#�#t4000061# #c4000061# / 10\\n#i4000031# #t4000031# #c4000031# / 10\\n#i4000032#�#t4000032# #c4000032# / 10\\n#i4000040# #t4000040# #c4000040# / 10",
+ "rewardOnStart": {
+  "id": 10703,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10703,
+  "exp": 7310,
+  "fame": 2,
+  "items": [
+   {
+    "id": 4000061,
+    "count": -10
+   },
+   {
+    "id": 4000031,
+    "count": -10
+   },
+   {
+    "id": 4000032,
+    "count": -10
+   },
+   {
+    "id": 4000040,
+    "count": -10
+   },
+   {
+    "id": 2000003,
+    "count": 30
+   }
+  ],
+  "meso": 3510,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10703,
+  "levelMinimum": 37,
+  "quests": [
+   {
+    "id": 10702,
+    "state": 2
+   }
+  ],
+  "npcId": 802,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10703,
+  "items": [
+   {
+    "count": 10,
+    "id": 4000061
+   },
+   {
+    "count": 10,
+    "id": 4000031
+   },
+   {
+    "count": 10,
+    "id": 4000032
+   },
+   {
+    "count": 10,
+    "id": 4000040
+   }
+  ],
+  "npcId": 802,
+  "state": 1
+ }
+}

@@ -1,0 +1,128 @@
+{
+ "id": 10002,
+ "name": "Jane and the Mushroom",
+ "area": 11,
+ "areaName": "Lith Harbor",
+ "demandSummary": "#o16# #a100021#\\n#o19# #a100022#\\n#i4000016:# #t4000016:# #c4000016# / 15\\n#i4000019:# #t4000019:# #c4000019# / 15",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10003,
+   "levelMinimum": 44,
+   "quests": [
+    {
+     "id": 10002,
+     "state": 2
+    }
+   ],
+   "npcId": 103,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10002,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10002,
+  "exp": 1610,
+  "items": [
+   {
+    "id": 2043001,
+    "count": 1
+   },
+   {
+    "id": 2043101,
+    "count": 1
+   },
+   {
+    "id": 2043201,
+    "count": 1
+   },
+   {
+    "id": 2043301,
+    "count": 1
+   },
+   {
+    "id": 2043701,
+    "count": 1
+   },
+   {
+    "id": 2043801,
+    "count": 1
+   },
+   {
+    "id": 2044001,
+    "count": 1
+   },
+   {
+    "id": 2044101,
+    "count": 1
+   },
+   {
+    "id": 2044201,
+    "count": 1
+   },
+   {
+    "id": 2044301,
+    "count": 1
+   },
+   {
+    "id": 2044401,
+    "count": 1
+   },
+   {
+    "id": 2044501,
+    "count": 1
+   },
+   {
+    "id": 2044601,
+    "count": 1
+   },
+   {
+    "id": 2044701,
+    "count": 1
+   },
+   {
+    "id": 4000016,
+    "count": -15
+   },
+   {
+    "id": 4000019,
+    "count": -15
+   }
+  ],
+  "meso": 658,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10002,
+  "levelMinimum": 20,
+  "npcId": 103,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10002,
+  "mobs": [
+   {
+    "count": 30,
+    "id": 16
+   },
+   {
+    "count": 30,
+    "id": 19
+   }
+  ],
+  "items": [
+   {
+    "count": 15,
+    "id": 4000016
+   },
+   {
+    "count": 15,
+    "id": 4000019
+   }
+  ],
+  "npcId": 103,
+  "state": 1
+ }
+}

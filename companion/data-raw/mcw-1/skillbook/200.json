@@ -1,0 +1,762 @@
+{
+ "id": 200,
+ "description": {
+  "id": 200,
+  "desc": "",
+  "name": "",
+  "shortDesc": "",
+  "bookName": "Introduction to Magic",
+  "names": {
+   "en": "Introduction to Magic",
+   "es": "Introducción a la magia",
+   "ko": "마법 입문"
+  }
+ },
+ "skills": [
+  {
+   "id": 2000000,
+   "masterLevel": 15,
+   "weapons": [],
+   "description": {
+    "name": "Improved MP Recovery",
+    "desc": "[Master Level: 15]\\nThe amount of MP that naturally regenerates over time increases. Also, MP recovery from items is boosted."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "x": "1",
+     "y": "10"
+    },
+    {
+     "hs": "h2",
+     "x": "1",
+     "y": "11"
+    },
+    {
+     "hs": "h3",
+     "x": "1",
+     "y": "12"
+    },
+    {
+     "hs": "h4",
+     "x": "1",
+     "y": "13"
+    },
+    {
+     "hs": "h5",
+     "x": "1",
+     "y": "14"
+    },
+    {
+     "hs": "h6",
+     "x": "1",
+     "y": "15"
+    },
+    {
+     "hs": "h7",
+     "x": "1",
+     "y": "16"
+    },
+    {
+     "hs": "h8",
+     "x": "1",
+     "y": "17"
+    },
+    {
+     "hs": "h9",
+     "x": "1",
+     "y": "18"
+    },
+    {
+     "hs": "h10",
+     "x": "1",
+     "y": "19"
+    },
+    {
+     "hs": "h11",
+     "x": "1",
+     "y": "20"
+    },
+    {
+     "hs": "h12",
+     "x": "1",
+     "y": "21"
+    },
+    {
+     "hs": "h13",
+     "x": "1",
+     "y": "22"
+    },
+    {
+     "hs": "h14",
+     "x": "1",
+     "y": "23"
+    },
+    {
+     "hs": "h15",
+     "x": "1",
+     "y": "25"
+    }
+   ]
+  },
+  {
+   "id": 2000001,
+   "masterLevel": 15,
+   "requiredSkillLevels": {
+    "2000000": 3
+   },
+   "weapons": [],
+   "description": {
+    "name": "Max MP Increase",
+    "desc": "[Master Level: 15]\\nMax MP increases.\\nRequired Skill: #cAt least Level 3 Improved MP Recovery#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mmpR": "10"
+    },
+    {
+     "hs": "h2",
+     "mmpR": "11"
+    },
+    {
+     "hs": "h3",
+     "mmpR": "12"
+    },
+    {
+     "hs": "h4",
+     "mmpR": "13"
+    },
+    {
+     "hs": "h5",
+     "mmpR": "14"
+    },
+    {
+     "hs": "h6",
+     "mmpR": "15"
+    },
+    {
+     "hs": "h7",
+     "mmpR": "16"
+    },
+    {
+     "hs": "h8",
+     "mmpR": "17"
+    },
+    {
+     "hs": "h9",
+     "mmpR": "18"
+    },
+    {
+     "hs": "h10",
+     "mmpR": "19"
+    },
+    {
+     "hs": "h11",
+     "mmpR": "20"
+    },
+    {
+     "hs": "h12",
+     "mmpR": "21"
+    },
+    {
+     "hs": "h13",
+     "mmpR": "22"
+    },
+    {
+     "hs": "h14",
+     "mmpR": "23"
+    },
+    {
+     "hs": "h15",
+     "mmpR": "25"
+    }
+   ]
+  },
+  {
+   "id": 2001000,
+   "masterLevel": 15,
+   "weapons": [],
+   "description": {
+    "name": "Magic Guard",
+    "desc": "[Master Level: 15]\\nReplaces a portion of damage taken with MP instead of HP. If MP reaches 0, all damage is taken as HP. Press the key again to deactivate the effect."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "8",
+     "x": "30"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "8",
+     "x": "33"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "8",
+     "x": "36"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "8",
+     "x": "39"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "8",
+     "x": "42"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "10",
+     "x": "49"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "10",
+     "x": "52"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "10",
+     "x": "55"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "10",
+     "x": "58"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "10",
+     "x": "61"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "12",
+     "x": "68"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "12",
+     "x": "71"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "12",
+     "x": "74"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "12",
+     "x": "77"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "12",
+     "x": "80"
+    }
+   ]
+  },
+  {
+   "id": 2001001,
+   "masterLevel": 20,
+   "requiredSkillLevels": {
+    "2001000": 3
+   },
+   "weapons": [],
+   "description": {
+    "name": "Magic Armor",
+    "desc": "[Master Level: 20]\\nTemporarily increases Weapon Def. and Magic Def. by concentrating magic into your armor.\\nRequired Skill: #cAt least Level 3 Magic Guard#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "time": "300",
+     "mpCon": "8",
+     "indiePdd": "40",
+     "indieMdd": "40"
+    },
+    {
+     "hs": "h2",
+     "time": "315",
+     "mpCon": "8",
+     "indiePdd": "44",
+     "indieMdd": "44"
+    },
+    {
+     "hs": "h3",
+     "time": "330",
+     "mpCon": "8",
+     "indiePdd": "48",
+     "indieMdd": "48"
+    },
+    {
+     "hs": "h4",
+     "time": "345",
+     "mpCon": "8",
+     "indiePdd": "52",
+     "indieMdd": "52"
+    },
+    {
+     "hs": "h5",
+     "time": "360",
+     "mpCon": "8",
+     "indiePdd": "56",
+     "indieMdd": "56"
+    },
+    {
+     "hs": "h6",
+     "time": "375",
+     "mpCon": "10",
+     "indiePdd": "60",
+     "indieMdd": "60"
+    },
+    {
+     "hs": "h7",
+     "time": "390",
+     "mpCon": "10",
+     "indiePdd": "64",
+     "indieMdd": "64"
+    },
+    {
+     "hs": "h8",
+     "time": "405",
+     "mpCon": "10",
+     "indiePdd": "68",
+     "indieMdd": "68"
+    },
+    {
+     "hs": "h9",
+     "time": "420",
+     "mpCon": "10",
+     "indiePdd": "72",
+     "indieMdd": "72"
+    },
+    {
+     "hs": "h10",
+     "time": "435",
+     "mpCon": "10",
+     "indiePdd": "76",
+     "indieMdd": "76"
+    },
+    {
+     "hs": "h11",
+     "time": "450",
+     "mpCon": "13",
+     "indiePdd": "80",
+     "indieMdd": "80"
+    },
+    {
+     "hs": "h12",
+     "time": "465",
+     "mpCon": "13",
+     "indiePdd": "84",
+     "indieMdd": "84"
+    },
+    {
+     "hs": "h13",
+     "time": "480",
+     "mpCon": "13",
+     "indiePdd": "88",
+     "indieMdd": "88"
+    },
+    {
+     "hs": "h14",
+     "time": "495",
+     "mpCon": "13",
+     "indiePdd": "92",
+     "indieMdd": "92"
+    },
+    {
+     "hs": "h15",
+     "time": "510",
+     "mpCon": "13",
+     "indiePdd": "96",
+     "indieMdd": "96"
+    },
+    {
+     "hs": "h16",
+     "time": "525",
+     "mpCon": "16",
+     "indiePdd": "100",
+     "indieMdd": "100"
+    },
+    {
+     "hs": "h17",
+     "time": "540",
+     "mpCon": "16",
+     "indiePdd": "104",
+     "indieMdd": "104"
+    },
+    {
+     "hs": "h18",
+     "time": "555",
+     "mpCon": "16",
+     "indiePdd": "108",
+     "indieMdd": "108"
+    },
+    {
+     "hs": "h19",
+     "time": "570",
+     "mpCon": "16",
+     "indiePdd": "112",
+     "indieMdd": "112"
+    },
+    {
+     "hs": "h20",
+     "time": "600",
+     "mpCon": "16",
+     "indiePdd": "120",
+     "indieMdd": "120"
+    }
+   ]
+  },
+  {
+   "id": 2001002,
+   "masterLevel": 20,
+   "weapons": [],
+   "description": {
+    "name": "Energy Bolt",
+    "desc": "[Master Level: 20]\\nConsumes MP to attack a single enemy within 350 range in front. The higher the Mastery, the lower the damage variation."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "8",
+     "mad": "90",
+     "mastery": "1",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "8",
+     "mad": "92",
+     "mastery": "1",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "8",
+     "mad": "94",
+     "mastery": "1",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "8",
+     "mad": "96",
+     "mastery": "2",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "9",
+     "mad": "98",
+     "mastery": "2",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "9",
+     "mad": "100",
+     "mastery": "3",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "9",
+     "mad": "102",
+     "mastery": "3",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "10",
+     "mad": "104",
+     "mastery": "4",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "10",
+     "mad": "106",
+     "mastery": "4",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "11",
+     "mad": "108",
+     "mastery": "5",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "11",
+     "mad": "110",
+     "mastery": "5",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "12",
+     "mad": "112",
+     "mastery": "6",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "12",
+     "mad": "114",
+     "mastery": "6",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "13",
+     "mad": "116",
+     "mastery": "7",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "13",
+     "mad": "118",
+     "mastery": "7",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "14",
+     "mad": "120",
+     "mastery": "8",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "14",
+     "mad": "122",
+     "mastery": "8",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "15",
+     "mad": "124",
+     "mastery": "9",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "15",
+     "mad": "126",
+     "mastery": "9",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "16",
+     "mad": "130",
+     "mastery": "10",
+     "mobCount": "1",
+     "attackCount": "1"
+    }
+   ]
+  },
+  {
+   "id": 2001003,
+   "masterLevel": 20,
+   "requiredSkillLevels": {
+    "2001002": 1
+   },
+   "weapons": [],
+   "description": {
+    "name": "Magic Claw",
+    "desc": "[Master Level: 20]\\nConsumes MP to attack a single enemy within 300 range in front twice. The higher the Mastery, the lower the damage variation.\\nRequired Skill: #cAt least Level 1 Energy Bolt#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "10",
+     "mad": "45",
+     "mastery": "1",
+     "mobCount": "1",
+     "attackCount": "2"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "10",
+     "mad": "46",
+     "mastery": "1",
+     "mobCount": "1",
+     "attackCount": "2"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "10",
+     "mad": "47",
+     "mastery": "1",
+     "mobCount": "1",
+     "attackCount": "2"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "10",
+     "mad": "48",
+     "mastery": "2",
+     "mobCount": "1",
+     "attackCount": "2"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "11",
+     "mad": "49",
+     "mastery": "2",
+     "mobCount": "1",
+     "attackCount": "2"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "11",
+     "mad": "50",
+     "mastery": "3",
+     "mobCount": "1",
+     "attackCount": "2"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "11",
+     "mad": "51",
+     "mastery": "3",
+     "mobCount": "1",
+     "attackCount": "2"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "12",
+     "mad": "52",
+     "mastery": "4",
+     "mobCount": "1",
+     "attackCount": "2"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "12",
+     "mad": "53",
+     "mastery": "4",
+     "mobCount": "1",
+     "attackCount": "2"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "13",
+     "mad": "54",
+     "mastery": "5",
+     "mobCount": "1",
+     "attackCount": "2"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "13",
+     "mad": "55",
+     "mastery": "5",
+     "mobCount": "1",
+     "attackCount": "2"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "14",
+     "mad": "56",
+     "mastery": "6",
+     "mobCount": "1",
+     "attackCount": "2"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "14",
+     "mad": "57",
+     "mastery": "6",
+     "mobCount": "1",
+     "attackCount": "2"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "15",
+     "mad": "58",
+     "mastery": "7",
+     "mobCount": "1",
+     "attackCount": "2"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "15",
+     "mad": "59",
+     "mastery": "7",
+     "mobCount": "1",
+     "attackCount": "2"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "16",
+     "mad": "60",
+     "mastery": "8",
+     "mobCount": "1",
+     "attackCount": "2"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "17",
+     "mad": "61",
+     "mastery": "8",
+     "mobCount": "1",
+     "attackCount": "2"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "18",
+     "mad": "62",
+     "mastery": "9",
+     "mobCount": "1",
+     "attackCount": "2"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "19",
+     "mad": "63",
+     "mastery": "9",
+     "mobCount": "1",
+     "attackCount": "2"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "20",
+     "mad": "65",
+     "mastery": "10",
+     "mobCount": "1",
+     "attackCount": "2"
+    }
+   ]
+  }
+ ]
+}

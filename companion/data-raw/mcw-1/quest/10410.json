@@ -1,0 +1,88 @@
+{
+ "id": 10410,
+ "name": "Progress on Fossil Research",
+ "area": 15,
+ "areaName": "Perion",
+ "demandSummary": "#i4000011# #t4000011# #c4000011# / 20\\n#i4000015# #t4000015# #c4000015# / 15\\n#i4031075# #t4031075# #c4031075# / 1\\n#i1032002# #t1032002# #c1032002# / 1",
+ "rewardOnStart": {
+  "id": 10410,
+  "items": [
+   {
+    "id": 4031074,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10410,
+  "exp": 982,
+  "items": [
+   {
+    "id": 4000011,
+    "count": -20
+   },
+   {
+    "id": 4000015,
+    "count": -15
+   },
+   {
+    "id": 4031074,
+    "count": -1
+   },
+   {
+    "id": 4031075,
+    "count": -1
+   },
+   {
+    "id": 1032002,
+    "count": -1
+   },
+   {
+    "id": 1032015,
+    "count": 1
+   }
+  ],
+  "meso": 555,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10410,
+  "levelMinimum": 17,
+  "quests": [
+   {
+    "id": 10409,
+    "state": 2
+   }
+  ],
+  "npcId": 308,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10410,
+  "items": [
+   {
+    "count": 20,
+    "id": 4000011
+   },
+   {
+    "count": 15,
+    "id": 4000015
+   },
+   {
+    "count": 1,
+    "id": 4031074
+   },
+   {
+    "count": 1,
+    "id": 4031075
+   },
+   {
+    "count": 1,
+    "id": 1032002
+   }
+  ],
+  "npcId": 512,
+  "state": 1
+ }
+}

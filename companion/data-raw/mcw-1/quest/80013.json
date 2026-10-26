@@ -1,0 +1,63 @@
+{
+ "id": 80013,
+ "name": "Mr. Thunder in Need of Help",
+ "area": 19,
+ "areaName": "Crafting",
+ "demandSummary": "#o15# #a800131#\\n#i4003000:# #t4003000:# #c4003000# / 10",
+ "rewardOnStart": {
+  "id": 80013,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80013,
+  "exp": 669,
+  "items": [
+   {
+    "id": 4003000,
+    "count": -10
+   },
+   {
+    "id": 2002005,
+    "count": 1
+   }
+  ],
+  "skills": [
+   {
+    "id": 92010000,
+    "masterLevel": -1,
+    "skillLevel": -1
+   }
+  ],
+  "meso": 497,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80013,
+  "levelMinimum": 15,
+  "quests": [
+   {
+    "id": 80011,
+    "state": 2
+   }
+  ],
+  "npcId": 503,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80013,
+  "mobs": [
+   {
+    "count": 25,
+    "id": 15
+   }
+  ],
+  "items": [
+   {
+    "count": 10,
+    "id": 4003000
+   }
+  ],
+  "npcId": 503,
+  "state": 1
+ }
+}

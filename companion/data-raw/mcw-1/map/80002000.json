@@ -1,0 +1,58 @@
+{
+ "id": 80002000,
+ "name": "Free Market Entrance",
+ "streetName": "Hidden Street",
+ "mapMark": "Henesys",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 80002000,
+ "vrBounds": {
+  "width": 2126,
+  "height": 1300
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 800008
+  },
+  {
+   "id": 800009
+  },
+  {
+   "id": 800007
+  },
+  {
+   "id": 800018
+  }
+ ],
+ "portals": [
+  {
+   "toMap": 80002003,
+   "portalName": "in03"
+  },
+  {
+   "toMap": 80002000,
+   "portalName": "dn02"
+  },
+  {
+   "toMap": 80002000,
+   "portalName": "up02"
+  },
+  {
+   "toMap": 80002000,
+   "portalName": "dn00"
+  },
+  {
+   "toMap": 80002000,
+   "portalName": "dn01"
+  },
+  {
+   "toMap": 80002000,
+   "portalName": "up01"
+  },
+  {
+   "toMap": 80002000,
+   "portalName": "up00"
+  }
+ ]
+}

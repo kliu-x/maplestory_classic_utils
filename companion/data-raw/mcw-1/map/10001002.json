@@ -1,0 +1,52 @@
+{
+ "id": 10001002,
+ "name": "An Empty House",
+ "streetName": "Hidden Street",
+ "mapMark": "Henesys",
+ "isTown": false,
+ "mobRate": 1,
+ "returnMap": 10001001,
+ "vrBounds": {
+  "width": 1768,
+  "height": 1240
+ },
+ "mobs": [
+  {
+   "id": 9,
+   "x": -1080,
+   "y": 215
+  },
+  {
+   "id": 9,
+   "x": -919,
+   "y": 215
+  },
+  {
+   "id": 9,
+   "x": -761,
+   "y": 215
+  },
+  {
+   "id": 9,
+   "x": -598,
+   "y": 215
+  },
+  {
+   "id": 9,
+   "x": -877,
+   "y": -115
+  },
+  {
+   "id": 9,
+   "x": -696,
+   "y": -115
+  }
+ ],
+ "npcs": [],
+ "portals": [
+  {
+   "toMap": 10001002,
+   "portalName": "up00"
+  }
+ ]
+}

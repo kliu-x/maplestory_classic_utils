@@ -1,0 +1,101 @@
+{
+ "id": 10003000,
+ "name": "Kerning City",
+ "streetName": "Victoria Road",
+ "mapMark": "KerningCity",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10003000,
+ "vrBounds": {
+  "width": 5180,
+  "height": 2119
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 401
+  },
+  {
+   "id": 402
+  },
+  {
+   "id": 403
+  },
+  {
+   "id": 404
+  },
+  {
+   "id": 400
+  },
+  {
+   "id": 405
+  },
+  {
+   "id": 800000
+  },
+  {
+   "id": 406
+  },
+  {
+   "id": 407
+  },
+  {
+   "id": 900015
+  },
+  {
+   "id": 800011
+  },
+  {
+   "id": 800014
+  },
+  {
+   "id": 431
+  },
+  {
+   "id": 427
+  },
+  {
+   "id": 432
+  },
+  {
+   "id": 900026
+  },
+  {
+   "id": 9010000
+  }
+ ],
+ "portals": [
+  {
+   "toMap": 10003000,
+   "portalName": "hide01"
+  },
+  {
+   "toMap": 10003000,
+   "portalName": "hide01_1"
+  },
+  {
+   "toMap": 10003000,
+   "portalName": "hide02"
+  },
+  {
+   "toMap": 10003000,
+   "portalName": "hide02_1"
+  },
+  {
+   "toMap": 10003000,
+   "portalName": "hide03"
+  },
+  {
+   "toMap": 10003000,
+   "portalName": "hide03_1"
+  },
+  {
+   "toMap": 10003070,
+   "portalName": "east00"
+  },
+  {
+   "toMap": 10003010,
+   "portalName": "west00"
+  }
+ ]
+}

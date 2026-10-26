@@ -1,0 +1,47 @@
+{
+ "id": 20203,
+ "name": "Proof of Qualification",
+ "area": 102,
+ "areaName": "Bowman",
+ "demandSummary": "#i4031022:# #t4031022:# #c4031022# / 1#k",
+ "rewardOnStart": {
+  "id": 20203,
+  "items": [
+   {
+    "id": 4031022,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 20203,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 20203,
+  "jobs": [
+   300
+  ],
+  "levelMinimum": 30,
+  "quests": [
+   {
+    "id": 20202,
+    "state": 2
+   }
+  ],
+  "npcId": 227,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 20203,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031022
+   }
+  ],
+  "npcId": 221,
+  "state": 1
+ }
+}

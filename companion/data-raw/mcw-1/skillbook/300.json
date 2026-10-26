@@ -1,0 +1,943 @@
+{
+ "id": 300,
+ "description": {
+  "id": 300,
+  "desc": "",
+  "name": "",
+  "shortDesc": "",
+  "bookName": "Bowman Basics",
+  "names": {
+   "en": "Bowman Basics",
+   "es": "Fundamentos de Bowman",
+   "ko": "Bowman 기본기"
+  }
+ },
+ "skills": [
+  {
+   "id": 3000000,
+   "masterLevel": 15,
+   "weapons": [],
+   "description": {
+    "name": "Critical Shot",
+    "desc": "[Master Level: 15]\\nIncreases Critical Rate and Critical Damage."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "crtX": "5",
+     "crdX": "1"
+    },
+    {
+     "hs": "h2",
+     "crtX": "6",
+     "crdX": "2"
+    },
+    {
+     "hs": "h3",
+     "crtX": "7",
+     "crdX": "3"
+    },
+    {
+     "hs": "h4",
+     "crtX": "8",
+     "crdX": "4"
+    },
+    {
+     "hs": "h5",
+     "crtX": "9",
+     "crdX": "5"
+    },
+    {
+     "hs": "h6",
+     "crtX": "10",
+     "crdX": "6"
+    },
+    {
+     "hs": "h7",
+     "crtX": "11",
+     "crdX": "7"
+    },
+    {
+     "hs": "h8",
+     "crtX": "12",
+     "crdX": "8"
+    },
+    {
+     "hs": "h9",
+     "crtX": "13",
+     "crdX": "9"
+    },
+    {
+     "hs": "h10",
+     "crtX": "14",
+     "crdX": "10"
+    },
+    {
+     "hs": "h11",
+     "crtX": "15",
+     "crdX": "11"
+    },
+    {
+     "hs": "h12",
+     "crtX": "16",
+     "crdX": "12"
+    },
+    {
+     "hs": "h13",
+     "crtX": "17",
+     "crdX": "13"
+    },
+    {
+     "hs": "h14",
+     "crtX": "18",
+     "crdX": "14"
+    },
+    {
+     "hs": "h15",
+     "crtX": "20",
+     "crdX": "15"
+    }
+   ]
+  },
+  {
+   "id": 3000001,
+   "masterLevel": 15,
+   "weapons": [],
+   "description": {
+    "name": "The Eye of Amazon",
+    "desc": "[Master Level: 15]\\nIncreases attack range for bows and crossbows."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "range": "50"
+    },
+    {
+     "hs": "h2",
+     "range": "55"
+    },
+    {
+     "hs": "h3",
+     "range": "60"
+    },
+    {
+     "hs": "h4",
+     "range": "65"
+    },
+    {
+     "hs": "h5",
+     "range": "70"
+    },
+    {
+     "hs": "h6",
+     "range": "75"
+    },
+    {
+     "hs": "h7",
+     "range": "80"
+    },
+    {
+     "hs": "h8",
+     "range": "85"
+    },
+    {
+     "hs": "h9",
+     "range": "90"
+    },
+    {
+     "hs": "h10",
+     "range": "95"
+    },
+    {
+     "hs": "h11",
+     "range": "100"
+    },
+    {
+     "hs": "h12",
+     "range": "105"
+    },
+    {
+     "hs": "h13",
+     "range": "110"
+    },
+    {
+     "hs": "h14",
+     "range": "115"
+    },
+    {
+     "hs": "h15",
+     "range": "120"
+    }
+   ]
+  },
+  {
+   "id": 3001000,
+   "masterLevel": 20,
+   "requiredSkillLevels": {
+    "3000001": 3
+   },
+   "weapons": [],
+   "description": {
+    "name": "Focus",
+    "desc": "[Master Level: 20]\\nFocus to temporarily increase Accuracy and Evasion.\\nRequired Skill: #cAt least Level 3 The Eye of Amazon#c"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "time": "70",
+     "mpCon": "8",
+     "indieAcc": "1",
+     "indieEva": "5"
+    },
+    {
+     "hs": "h2",
+     "time": "80",
+     "mpCon": "8",
+     "indieAcc": "2",
+     "indieEva": "6"
+    },
+    {
+     "hs": "h3",
+     "time": "90",
+     "mpCon": "8",
+     "indieAcc": "3",
+     "indieEva": "7"
+    },
+    {
+     "hs": "h4",
+     "time": "100",
+     "mpCon": "8",
+     "indieAcc": "4",
+     "indieEva": "8"
+    },
+    {
+     "hs": "h5",
+     "time": "110",
+     "mpCon": "8",
+     "indieAcc": "5",
+     "indieEva": "9"
+    },
+    {
+     "hs": "h6",
+     "time": "130",
+     "mpCon": "10",
+     "indieAcc": "6",
+     "indieEva": "10"
+    },
+    {
+     "hs": "h7",
+     "time": "140",
+     "mpCon": "10",
+     "indieAcc": "7",
+     "indieEva": "11"
+    },
+    {
+     "hs": "h8",
+     "time": "150",
+     "mpCon": "10",
+     "indieAcc": "8",
+     "indieEva": "12"
+    },
+    {
+     "hs": "h9",
+     "time": "160",
+     "mpCon": "10",
+     "indieAcc": "9",
+     "indieEva": "13"
+    },
+    {
+     "hs": "h10",
+     "time": "170",
+     "mpCon": "10",
+     "indieAcc": "10",
+     "indieEva": "14"
+    },
+    {
+     "hs": "h11",
+     "time": "195",
+     "mpCon": "13",
+     "indieAcc": "11",
+     "indieEva": "15"
+    },
+    {
+     "hs": "h12",
+     "time": "205",
+     "mpCon": "13",
+     "indieAcc": "12",
+     "indieEva": "16"
+    },
+    {
+     "hs": "h13",
+     "time": "215",
+     "mpCon": "13",
+     "indieAcc": "13",
+     "indieEva": "17"
+    },
+    {
+     "hs": "h14",
+     "time": "225",
+     "mpCon": "13",
+     "indieAcc": "14",
+     "indieEva": "18"
+    },
+    {
+     "hs": "h15",
+     "time": "235",
+     "mpCon": "13",
+     "indieAcc": "15",
+     "indieEva": "19"
+    },
+    {
+     "hs": "h16",
+     "time": "260",
+     "mpCon": "16",
+     "indieAcc": "16",
+     "indieEva": "20"
+    },
+    {
+     "hs": "h17",
+     "time": "270",
+     "mpCon": "16",
+     "indieAcc": "17",
+     "indieEva": "21"
+    },
+    {
+     "hs": "h18",
+     "time": "280",
+     "mpCon": "16",
+     "indieAcc": "18",
+     "indieEva": "22"
+    },
+    {
+     "hs": "h19",
+     "time": "290",
+     "mpCon": "16",
+     "indieAcc": "19",
+     "indieEva": "23"
+    },
+    {
+     "hs": "h20",
+     "time": "300",
+     "mpCon": "16",
+     "indieAcc": "20",
+     "indieEva": "25"
+    }
+   ]
+  },
+  {
+   "id": 3001003,
+   "masterLevel": 15,
+   "weapons": [
+    45,
+    46
+   ],
+   "description": {
+    "name": "Power Knockback",
+    "desc": "[Master Level: 15]\\nSwings the bow widely to push multiple enemies far back. This attack always hits as a critical, and as the level rises, the number of monsters that one can push back with one swing increases."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "12",
+     "damage": "105",
+     "prop": "100",
+     "mobCount": "2",
+     "x": "140",
+     "attackCount": "1",
+     "range": "30"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "12",
+     "damage": "110",
+     "prop": "100",
+     "mobCount": "2",
+     "x": "140",
+     "attackCount": "1",
+     "range": "30"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "11",
+     "damage": "115",
+     "prop": "100",
+     "mobCount": "2",
+     "x": "140",
+     "attackCount": "1",
+     "range": "30"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "11",
+     "damage": "120",
+     "prop": "100",
+     "mobCount": "2",
+     "x": "140",
+     "attackCount": "1",
+     "range": "30"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "11",
+     "damage": "125",
+     "prop": "100",
+     "mobCount": "2",
+     "x": "140",
+     "attackCount": "1",
+     "range": "30"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "11",
+     "damage": "130",
+     "prop": "100",
+     "mobCount": "2",
+     "x": "140",
+     "attackCount": "1",
+     "range": "30"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "10",
+     "damage": "135",
+     "prop": "100",
+     "mobCount": "2",
+     "x": "140",
+     "attackCount": "1",
+     "range": "30"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "10",
+     "damage": "170",
+     "prop": "100",
+     "mobCount": "3",
+     "x": "170",
+     "attackCount": "1",
+     "range": "60"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "10",
+     "damage": "145",
+     "prop": "100",
+     "mobCount": "3",
+     "x": "170",
+     "attackCount": "1",
+     "range": "60"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "10",
+     "damage": "150",
+     "prop": "100",
+     "mobCount": "3",
+     "x": "170",
+     "attackCount": "1",
+     "range": "60"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "9",
+     "damage": "155",
+     "prop": "100",
+     "mobCount": "3",
+     "x": "170",
+     "attackCount": "1",
+     "range": "60"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "9",
+     "damage": "160",
+     "prop": "100",
+     "mobCount": "3",
+     "x": "170",
+     "attackCount": "1",
+     "range": "60"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "9",
+     "damage": "165",
+     "prop": "100",
+     "mobCount": "3",
+     "x": "170",
+     "attackCount": "1",
+     "range": "60"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "9",
+     "damage": "170",
+     "prop": "100",
+     "mobCount": "3",
+     "x": "170",
+     "attackCount": "1",
+     "range": "60"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "8",
+     "damage": "180",
+     "prop": "100",
+     "mobCount": "4",
+     "x": "200",
+     "attackCount": "1",
+     "range": "90"
+    }
+   ]
+  },
+  {
+   "id": 3001001,
+   "masterLevel": 20,
+   "weapons": [
+    45,
+    46
+   ],
+   "description": {
+    "name": "Arrow Blow",
+    "desc": "[Master Level: 20]\\nFires an arrow with power at a single enemy within 350 range in front. Deals more damage than usual."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "6",
+     "damage": "160",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "bulletConsume": "1",
+     "attackCount": "1",
+     "range": "350"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "6",
+     "damage": "164",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "bulletConsume": "1",
+     "attackCount": "1",
+     "range": "350"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "6",
+     "damage": "168",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "bulletConsume": "1",
+     "attackCount": "1",
+     "range": "350"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "6",
+     "damage": "172",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "bulletConsume": "1",
+     "attackCount": "1",
+     "range": "350"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "7",
+     "damage": "176",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "bulletConsume": "1",
+     "attackCount": "1",
+     "range": "350"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "7",
+     "damage": "180",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "bulletConsume": "1",
+     "attackCount": "1",
+     "range": "350"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "7",
+     "damage": "184",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "bulletConsume": "1",
+     "attackCount": "1",
+     "range": "350"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "8",
+     "damage": "188",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "bulletConsume": "1",
+     "attackCount": "1",
+     "range": "350"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "8",
+     "damage": "192",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "bulletConsume": "1",
+     "attackCount": "1",
+     "range": "350"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "9",
+     "damage": "196",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "bulletConsume": "1",
+     "attackCount": "1",
+     "range": "350"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "9",
+     "damage": "200",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "bulletConsume": "1",
+     "attackCount": "1",
+     "range": "350"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "10",
+     "damage": "204",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "bulletConsume": "1",
+     "attackCount": "1",
+     "range": "350"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "10",
+     "damage": "208",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "bulletConsume": "1",
+     "attackCount": "1",
+     "range": "350"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "11",
+     "damage": "212",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "bulletConsume": "1",
+     "attackCount": "1",
+     "range": "350"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "11",
+     "damage": "216",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "bulletConsume": "1",
+     "attackCount": "1",
+     "range": "350"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "12",
+     "damage": "220",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "bulletConsume": "1",
+     "attackCount": "1",
+     "range": "350"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "12",
+     "damage": "224",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "bulletConsume": "1",
+     "attackCount": "1",
+     "range": "350"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "13",
+     "damage": "228",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "bulletConsume": "1",
+     "attackCount": "1",
+     "range": "350"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "13",
+     "damage": "232",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "bulletConsume": "1",
+     "attackCount": "1",
+     "range": "350"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "14",
+     "damage": "240",
+     "mobCount": "1",
+     "bulletCount": "1",
+     "bulletConsume": "1",
+     "attackCount": "1",
+     "range": "350"
+    }
+   ]
+  },
+  {
+   "id": 3001002,
+   "masterLevel": 20,
+   "requiredSkillLevels": {
+    "3001001": 1
+   },
+   "weapons": [
+    45,
+    46
+   ],
+   "description": {
+    "name": "Double Shot",
+    "desc": "[Master Level: 20]\\nConsumes 2 arrows to attack up to 2 enemies within 300 range in front.\\nRequired Skill: #cAt least Level 1 Arrow Blow#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "8",
+     "damage": "80",
+     "bulletCount": "2",
+     "x": "40",
+     "y": "5",
+     "mobCount": "2",
+     "bulletConsume": "2",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "8",
+     "damage": "82",
+     "bulletCount": "2",
+     "x": "40",
+     "y": "5",
+     "mobCount": "2",
+     "bulletConsume": "2",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "8",
+     "damage": "84",
+     "bulletCount": "2",
+     "x": "40",
+     "y": "5",
+     "mobCount": "2",
+     "bulletConsume": "2",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "8",
+     "damage": "86",
+     "bulletCount": "2",
+     "x": "40",
+     "y": "5",
+     "mobCount": "2",
+     "bulletConsume": "2",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "9",
+     "damage": "88",
+     "bulletCount": "2",
+     "x": "40",
+     "y": "5",
+     "mobCount": "2",
+     "bulletConsume": "2",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "9",
+     "damage": "90",
+     "bulletCount": "2",
+     "x": "40",
+     "y": "5",
+     "mobCount": "2",
+     "bulletConsume": "2",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "9",
+     "damage": "92",
+     "bulletCount": "2",
+     "x": "40",
+     "y": "5",
+     "mobCount": "2",
+     "bulletConsume": "2",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "10",
+     "damage": "94",
+     "bulletCount": "2",
+     "x": "40",
+     "y": "5",
+     "mobCount": "2",
+     "bulletConsume": "2",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "10",
+     "damage": "96",
+     "bulletCount": "2",
+     "x": "40",
+     "y": "5",
+     "mobCount": "2",
+     "bulletConsume": "2",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "11",
+     "damage": "98",
+     "bulletCount": "2",
+     "x": "40",
+     "y": "5",
+     "mobCount": "2",
+     "bulletConsume": "2",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "11",
+     "damage": "100",
+     "bulletCount": "2",
+     "x": "40",
+     "y": "5",
+     "mobCount": "2",
+     "bulletConsume": "2",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "12",
+     "damage": "102",
+     "bulletCount": "2",
+     "x": "40",
+     "y": "5",
+     "mobCount": "2",
+     "bulletConsume": "2",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "12",
+     "damage": "104",
+     "bulletCount": "2",
+     "x": "40",
+     "y": "5",
+     "mobCount": "2",
+     "bulletConsume": "2",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "13",
+     "damage": "106",
+     "bulletCount": "2",
+     "x": "40",
+     "y": "5",
+     "mobCount": "2",
+     "bulletConsume": "2",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "13",
+     "damage": "108",
+     "bulletCount": "2",
+     "x": "40",
+     "y": "5",
+     "mobCount": "2",
+     "bulletConsume": "2",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "14",
+     "damage": "110",
+     "bulletCount": "2",
+     "x": "40",
+     "y": "5",
+     "mobCount": "2",
+     "bulletConsume": "2",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "14",
+     "damage": "112",
+     "bulletCount": "2",
+     "x": "40",
+     "y": "5",
+     "mobCount": "2",
+     "bulletConsume": "2",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "15",
+     "damage": "114",
+     "bulletCount": "2",
+     "x": "40",
+     "y": "5",
+     "mobCount": "2",
+     "bulletConsume": "2",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "15",
+     "damage": "116",
+     "bulletCount": "2",
+     "x": "40",
+     "y": "5",
+     "mobCount": "2",
+     "bulletConsume": "2",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "16",
+     "damage": "120",
+     "bulletCount": "2",
+     "x": "40",
+     "y": "5",
+     "mobCount": "2",
+     "bulletConsume": "2",
+     "attackCount": "1"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+{
+ "id": 506150,
+ "name": "The Price of Information",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#i4000024:# #t4000024:# #c4000024# / 10",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506151,
+   "levelMinimum": 37,
+   "quests": [
+    {
+     "id": 506150,
+     "state": 2
+    }
+   ],
+   "npcId": 406,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506150,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506150,
+  "exp": 7310,
+  "items": [
+   {
+    "id": 4000024,
+    "count": -10
+   },
+   {
+    "id": 2002012,
+    "count": 3
+   }
+  ],
+  "meso": 1170,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506150,
+  "levelMinimum": 37,
+  "quests": [
+   {
+    "id": 506149,
+    "state": 2
+   }
+  ],
+  "npcId": 406,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506150,
+  "levelMinimum": 37,
+  "items": [
+   {
+    "count": 10,
+    "id": 4000024
+   }
+  ],
+  "npcId": 406,
+  "state": 1
+ }
+}

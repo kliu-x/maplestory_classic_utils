@@ -1,0 +1,37 @@
+{
+ "id": 10002071,
+ "name": "The Tree Tunnel At the Forest Up North",
+ "streetName": "Victoria Road",
+ "mapMark": "Ellinia",
+ "isTown": false,
+ "mobRate": 0.9999982118606567,
+ "returnMap": 10002000,
+ "vrBounds": {
+  "width": 1070,
+  "height": 4140
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 320
+  }
+ ],
+ "portals": [
+  {
+   "toMap": 10002070,
+   "portalName": "out00"
+  },
+  {
+   "toMap": 10002070,
+   "portalName": "out01"
+  },
+  {
+   "toMap": 10002070,
+   "portalName": "out02"
+  },
+  {
+   "toMap": 10002070,
+   "portalName": "out03"
+  }
+ ]
+}

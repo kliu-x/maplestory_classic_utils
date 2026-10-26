@@ -1,0 +1,89 @@
+{
+ "id": 10208,
+ "name": "Third Material Delivery for Building a New House",
+ "area": 13,
+ "areaName": "Ellinia",
+ "demandSummary": "#o30# #a102081#\\n#o40# #a102082#\\n#i4000026:# #t4000026:# #c4000026# / 30\\n#i4000036:# #t4000036:# #c4000036# / 30",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10209,
+   "levelMinimum": 41,
+   "quests": [
+    {
+     "id": 10208,
+     "state": 2
+    }
+   ],
+   "npcId": 320,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10208,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10208,
+  "exp": 8670,
+  "items": [
+   {
+    "id": 4000026,
+    "count": -30,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4000036,
+    "count": -30,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 2002000,
+    "count": 5,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 2000003,
+    "count": 30
+   }
+  ],
+  "meso": 1301,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10208,
+  "levelMinimum": 41,
+  "quests": [
+   {
+    "id": 10207,
+    "state": 2
+   }
+  ],
+  "npcId": 320,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10208,
+  "mobs": [
+   {
+    "count": 50,
+    "id": 30
+   },
+   {
+    "count": 50,
+    "id": 40
+   }
+  ],
+  "items": [
+   {
+    "count": 30,
+    "id": 4000026
+   },
+   {
+    "count": 30,
+    "id": 4000036
+   }
+  ],
+  "npcId": 320,
+  "state": 1
+ }
+}

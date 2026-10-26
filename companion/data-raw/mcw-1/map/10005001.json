@@ -1,0 +1,20 @@
+{
+ "id": 10005001,
+ "name": "Sleepywood Hotel",
+ "streetName": "Dungeon",
+ "mapMark": "Dungeon",
+ "isTown": false,
+ "mobRate": 1,
+ "returnMap": 10005000,
+ "vrBounds": {
+  "width": 800,
+  "height": 741
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 606
+  }
+ ],
+ "portals": []
+}

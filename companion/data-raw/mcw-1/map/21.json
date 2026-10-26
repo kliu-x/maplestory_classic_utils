@@ -1,0 +1,20 @@
+{
+ "id": 21,
+ "name": "Mushroom Town Townstreet",
+ "streetName": "Maple Road",
+ "mapMark": "MushroomVillage",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 21,
+ "vrBounds": {
+  "width": 1408,
+  "height": 942
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 5
+  }
+ ],
+ "portals": []
+}

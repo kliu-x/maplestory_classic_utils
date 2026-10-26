@@ -1,0 +1,54 @@
+{
+ "id": 506146,
+ "name": "Not Ready to Go Home Yet",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "Talk to #p402#",
+ "rewardOnStart": {
+  "id": 506146,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506146,
+  "exp": 3750,
+  "fame": 1,
+  "items": [
+   {
+    "id": 2040301,
+    "count": 1
+   },
+   {
+    "id": 2040305,
+    "count": 1
+   },
+   {
+    "id": 2040309,
+    "count": 1
+   },
+   {
+    "id": 2040313,
+    "count": 1
+   }
+  ],
+  "meso": 862,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506146,
+  "levelMinimum": 27,
+  "quests": [
+   {
+    "id": 506145,
+    "state": 2
+   }
+  ],
+  "npcId": 401,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506146,
+  "levelMinimum": 27,
+  "npcId": 402,
+  "state": 1
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "id": 500008,
+ "name": "[Event] A New Adventure Awaits",
+ "area": 99,
+ "areaName": "Event",
+ "demandSummary": "#questorder1#Talk to #r#p323##k.",
+ "rewardSummary": "#i2430005# #t2430005# x1\\n#i2000003# #t2000003# x30 \\r\\n (Account Reward)",
+ "rewardOnStart": {
+  "id": 500008,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 500008,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 500008,
+  "startTime": "2026-08-08T00:00:00",
+  "endTime": "2026-08-12T23:59:00",
+  "levelMinimum": 20,
+  "quests": [
+   {
+    "id": 500001,
+    "state": 2
+   }
+  ],
+  "npcId": 308,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 500008,
+  "npcId": 323,
+  "state": 1
+ }
+}

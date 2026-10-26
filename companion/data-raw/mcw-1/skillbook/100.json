@@ -1,0 +1,687 @@
+{
+ "id": 100,
+ "description": {
+  "id": 100,
+  "desc": "",
+  "name": "",
+  "shortDesc": "",
+  "bookName": "Warrior Basics",
+  "names": {
+   "en": "Warrior Basics",
+   "es": "Fundamentos de Warrior",
+   "ko": "Warrior 기본기"
+  }
+ },
+ "skills": [
+  {
+   "id": 1000000,
+   "masterLevel": 15,
+   "weapons": [],
+   "description": {
+    "name": "Improved HP Recovery",
+    "desc": "[Master Level: 15]\\nHP naturally regenerates over time, not just when standing still. Also, HP recovery from items is boosted."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "y": "20"
+    },
+    {
+     "hs": "h2",
+     "y": "22"
+    },
+    {
+     "hs": "h3",
+     "y": "24"
+    },
+    {
+     "hs": "h4",
+     "y": "26"
+    },
+    {
+     "hs": "h5",
+     "y": "28"
+    },
+    {
+     "hs": "h6",
+     "y": "30"
+    },
+    {
+     "hs": "h7",
+     "y": "32"
+    },
+    {
+     "hs": "h8",
+     "y": "34"
+    },
+    {
+     "hs": "h9",
+     "y": "36"
+    },
+    {
+     "hs": "h10",
+     "y": "38"
+    },
+    {
+     "hs": "h11",
+     "y": "40"
+    },
+    {
+     "hs": "h12",
+     "y": "42"
+    },
+    {
+     "hs": "h13",
+     "y": "44"
+    },
+    {
+     "hs": "h14",
+     "y": "46"
+    },
+    {
+     "hs": "h15",
+     "y": "50"
+    }
+   ]
+  },
+  {
+   "id": 1000001,
+   "masterLevel": 15,
+   "requiredSkillLevels": {
+    "1000000": 3
+   },
+   "weapons": [],
+   "description": {
+    "name": "Max HP Increase",
+    "desc": "[Master Level: 15]\\nMax HP increases.\\nRequired Skill: #cAt least Level 3 Improved HP Recovery#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mhpR": "10"
+    },
+    {
+     "hs": "h2",
+     "mhpR": "11"
+    },
+    {
+     "hs": "h3",
+     "mhpR": "12"
+    },
+    {
+     "hs": "h4",
+     "mhpR": "13"
+    },
+    {
+     "hs": "h5",
+     "mhpR": "14"
+    },
+    {
+     "hs": "h6",
+     "mhpR": "15"
+    },
+    {
+     "hs": "h7",
+     "mhpR": "16"
+    },
+    {
+     "hs": "h8",
+     "mhpR": "17"
+    },
+    {
+     "hs": "h9",
+     "mhpR": "18"
+    },
+    {
+     "hs": "h10",
+     "mhpR": "19"
+    },
+    {
+     "hs": "h11",
+     "mhpR": "20"
+    },
+    {
+     "hs": "h12",
+     "mhpR": "21"
+    },
+    {
+     "hs": "h13",
+     "mhpR": "22"
+    },
+    {
+     "hs": "h14",
+     "mhpR": "23"
+    },
+    {
+     "hs": "h15",
+     "mhpR": "25"
+    }
+   ]
+  },
+  {
+   "id": 1000002,
+   "masterLevel": 15,
+   "weapons": [],
+   "description": {
+    "name": "Precise Strikes",
+    "desc": "[Master Level: 15]\\nRepeated practice with your weapon has increased your Accuracy and Critical Rate."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "accX": "5",
+     "crtX": "1"
+    },
+    {
+     "hs": "h2",
+     "accX": "6",
+     "crtX": "1"
+    },
+    {
+     "hs": "h3",
+     "accX": "7",
+     "crtX": "1"
+    },
+    {
+     "hs": "h4",
+     "accX": "8",
+     "crtX": "2"
+    },
+    {
+     "hs": "h5",
+     "accX": "9",
+     "crtX": "2"
+    },
+    {
+     "hs": "h6",
+     "accX": "10",
+     "crtX": "2"
+    },
+    {
+     "hs": "h7",
+     "accX": "11",
+     "crtX": "3"
+    },
+    {
+     "hs": "h8",
+     "accX": "12",
+     "crtX": "3"
+    },
+    {
+     "hs": "h9",
+     "accX": "13",
+     "crtX": "3"
+    },
+    {
+     "hs": "h10",
+     "accX": "14",
+     "crtX": "3"
+    },
+    {
+     "hs": "h11",
+     "accX": "15",
+     "crtX": "4"
+    },
+    {
+     "hs": "h12",
+     "accX": "16",
+     "crtX": "4"
+    },
+    {
+     "hs": "h13",
+     "accX": "17",
+     "crtX": "4"
+    },
+    {
+     "hs": "h14",
+     "accX": "18",
+     "crtX": "4"
+    },
+    {
+     "hs": "h15",
+     "accX": "20",
+     "crtX": "5"
+    }
+   ]
+  },
+  {
+   "id": 1001000,
+   "masterLevel": 20,
+   "requiredSkillLevels": {
+    "1000001": 3
+   },
+   "weapons": [],
+   "description": {
+    "name": "Iron Body",
+    "desc": "[Master Level: 20]\\nTemporarily increases your Weapon Defense.\\nRequired Skill: #cAt least Level 3 Max HP Increase#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "time": "300",
+     "mpCon": "15",
+     "indiePddR": "20"
+    },
+    {
+     "hs": "h2",
+     "time": "315",
+     "mpCon": "15",
+     "indiePddR": "21"
+    },
+    {
+     "hs": "h3",
+     "time": "330",
+     "mpCon": "15",
+     "indiePddR": "22"
+    },
+    {
+     "hs": "h4",
+     "time": "345",
+     "mpCon": "15",
+     "indiePddR": "23"
+    },
+    {
+     "hs": "h5",
+     "time": "360",
+     "mpCon": "15",
+     "indiePddR": "24"
+    },
+    {
+     "hs": "h6",
+     "time": "375",
+     "mpCon": "15",
+     "indiePddR": "25"
+    },
+    {
+     "hs": "h7",
+     "time": "390",
+     "mpCon": "15",
+     "indiePddR": "26"
+    },
+    {
+     "hs": "h8",
+     "time": "405",
+     "mpCon": "15",
+     "indiePddR": "27"
+    },
+    {
+     "hs": "h9",
+     "time": "420",
+     "mpCon": "15",
+     "indiePddR": "28"
+    },
+    {
+     "hs": "h10",
+     "time": "435",
+     "mpCon": "15",
+     "indiePddR": "29"
+    },
+    {
+     "hs": "h11",
+     "time": "450",
+     "mpCon": "15",
+     "indiePddR": "30"
+    },
+    {
+     "hs": "h12",
+     "time": "465",
+     "mpCon": "15",
+     "indiePddR": "31"
+    },
+    {
+     "hs": "h13",
+     "time": "480",
+     "mpCon": "15",
+     "indiePddR": "32"
+    },
+    {
+     "hs": "h14",
+     "time": "495",
+     "mpCon": "15",
+     "indiePddR": "33"
+    },
+    {
+     "hs": "h15",
+     "time": "510",
+     "mpCon": "15",
+     "indiePddR": "34"
+    },
+    {
+     "hs": "h16",
+     "time": "525",
+     "mpCon": "15",
+     "indiePddR": "35"
+    },
+    {
+     "hs": "h17",
+     "time": "540",
+     "mpCon": "15",
+     "indiePddR": "36"
+    },
+    {
+     "hs": "h18",
+     "time": "555",
+     "mpCon": "15",
+     "indiePddR": "37"
+    },
+    {
+     "hs": "h19",
+     "time": "570",
+     "mpCon": "15",
+     "indiePddR": "38"
+    },
+    {
+     "hs": "h20",
+     "time": "600",
+     "mpCon": "15",
+     "indiePddR": "40"
+    }
+   ]
+  },
+  {
+   "id": 1001001,
+   "masterLevel": 20,
+   "weapons": [],
+   "description": {
+    "name": "Power Strike",
+    "desc": "[Master Level: 20]\\nConsumes MP to deliver a lethal blow to a single enemy with your weapon."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "4",
+     "damage": "160",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "4",
+     "damage": "165",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "4",
+     "damage": "170",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "4",
+     "damage": "175",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "5",
+     "damage": "180",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "5",
+     "damage": "185",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "5",
+     "damage": "190",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "6",
+     "damage": "195",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "6",
+     "damage": "200",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "7",
+     "damage": "205",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "7",
+     "damage": "210",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "8",
+     "damage": "215",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "8",
+     "damage": "220",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "9",
+     "damage": "225",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "9",
+     "damage": "230",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "10",
+     "damage": "235",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "10",
+     "damage": "240",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "11",
+     "damage": "245",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "11",
+     "damage": "250",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "12",
+     "damage": "260",
+     "mobCount": "1",
+     "attackCount": "1"
+    }
+   ]
+  },
+  {
+   "id": 1001002,
+   "masterLevel": 20,
+   "requiredSkillLevels": {
+    "1001001": 1
+   },
+   "weapons": [],
+   "description": {
+    "name": "Slash Blast",
+    "desc": "[Master Level: 20]\\nConsumes HP and MP to attack up to 6 enemies around you with your weapon.\\nRequired Skill: #cAt least Level 1 Power Strike#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "hpCon": "8",
+     "mpCon": "6",
+     "damage": "70",
+     "range": "130"
+    },
+    {
+     "hs": "h2",
+     "hpCon": "8",
+     "mpCon": "6",
+     "damage": "73",
+     "range": "130"
+    },
+    {
+     "hs": "h3",
+     "hpCon": "8",
+     "mpCon": "6",
+     "damage": "76",
+     "range": "130"
+    },
+    {
+     "hs": "h4",
+     "hpCon": "9",
+     "mpCon": "7",
+     "damage": "79",
+     "range": "130"
+    },
+    {
+     "hs": "h5",
+     "hpCon": "9",
+     "mpCon": "7",
+     "damage": "82",
+     "range": "130"
+    },
+    {
+     "hs": "h6",
+     "hpCon": "9",
+     "mpCon": "7",
+     "damage": "85",
+     "range": "130"
+    },
+    {
+     "hs": "h7",
+     "hpCon": "9",
+     "mpCon": "7",
+     "damage": "88",
+     "range": "130"
+    },
+    {
+     "hs": "h8",
+     "hpCon": "10",
+     "mpCon": "8",
+     "damage": "91",
+     "range": "130"
+    },
+    {
+     "hs": "h9",
+     "hpCon": "10",
+     "mpCon": "8",
+     "damage": "94",
+     "range": "130"
+    },
+    {
+     "hs": "h10",
+     "hpCon": "11",
+     "mpCon": "9",
+     "damage": "97",
+     "range": "130"
+    },
+    {
+     "hs": "h11",
+     "hpCon": "11",
+     "mpCon": "9",
+     "damage": "100",
+     "range": "150"
+    },
+    {
+     "hs": "h12",
+     "hpCon": "12",
+     "mpCon": "10",
+     "damage": "103",
+     "range": "150"
+    },
+    {
+     "hs": "h13",
+     "hpCon": "12",
+     "mpCon": "10",
+     "damage": "106",
+     "range": "150"
+    },
+    {
+     "hs": "h14",
+     "hpCon": "13",
+     "mpCon": "11",
+     "damage": "109",
+     "range": "150"
+    },
+    {
+     "hs": "h15",
+     "hpCon": "13",
+     "mpCon": "11",
+     "damage": "112",
+     "range": "150"
+    },
+    {
+     "hs": "h16",
+     "hpCon": "14",
+     "mpCon": "12",
+     "damage": "115",
+     "range": "150"
+    },
+    {
+     "hs": "h17",
+     "hpCon": "14",
+     "mpCon": "12",
+     "damage": "118",
+     "range": "150"
+    },
+    {
+     "hs": "h18",
+     "hpCon": "15",
+     "mpCon": "13",
+     "damage": "121",
+     "range": "150"
+    },
+    {
+     "hs": "h19",
+     "hpCon": "15",
+     "mpCon": "13",
+     "damage": "124",
+     "range": "150"
+    },
+    {
+     "hs": "h20",
+     "hpCon": "16",
+     "mpCon": "14",
+     "damage": "130",
+     "range": "150"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "id": 10002001,
+ "name": "Ellinia Weapon Store",
+ "streetName": "Victoria Road",
+ "mapMark": "Ellinia",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10002000,
+ "vrBounds": {
+  "width": 800,
+  "height": 600
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 310
+  },
+  {
+   "id": 311
+  }
+ ],
+ "portals": []
+}

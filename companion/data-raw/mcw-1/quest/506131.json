@@ -1,0 +1,45 @@
+{
+ "id": 506131,
+ "name": "Donating to Kerning City",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#i4000026:# #t4000026:# #c4000026# / 30",
+ "rewardOnStart": {
+  "id": 506131,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506131,
+  "exp": 5850,
+  "items": [
+   {
+    "id": 4000026,
+    "count": -30
+   },
+   {
+    "id": 2000003,
+    "count": 20
+   }
+  ],
+  "meso": 1023,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506131,
+  "levelMinimum": 12,
+  "npcId": 431,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506131,
+  "levelMinimum": 32,
+  "items": [
+   {
+    "count": 30,
+    "id": 4000026
+   }
+  ],
+  "npcId": 425,
+  "state": 1
+ }
+}

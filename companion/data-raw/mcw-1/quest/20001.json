@@ -1,0 +1,71 @@
+{
+ "id": 20001,
+ "name": "Finding the Instructor",
+ "area": 100,
+ "areaName": "Warrior",
+ "demandSummary": "#i4031013:# #t4031013:# #c4031013# / 1#k",
+ "questsAvailableOnComplete": [
+  {
+   "id": 20002,
+   "jobs": [
+    100
+   ],
+   "levelMinimum": 30,
+   "quests": [
+    {
+     "id": 20001,
+     "state": 2
+    }
+   ],
+   "npcId": 514,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 20001,
+  "items": [
+   {
+    "id": 4031013,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 20001,
+  "exp": 4780,
+  "items": [
+   {
+    "id": 4031013,
+    "count": -1
+   }
+  ],
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 20001,
+  "jobs": [
+   100
+  ],
+  "levelMinimum": 30,
+  "quests": [
+   {
+    "id": 20000,
+    "state": 2
+   }
+  ],
+  "npcId": 511,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 20001,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031013
+   }
+  ],
+  "npcId": 514,
+  "state": 1
+ }
+}

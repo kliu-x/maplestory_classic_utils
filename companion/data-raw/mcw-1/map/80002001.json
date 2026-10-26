@@ -1,0 +1,33 @@
+{
+ "id": 80002001,
+ "name": "Free Market <1>",
+ "streetName": "Hidden Street",
+ "mapMark": "Henesys",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 80002000,
+ "vrBounds": {
+  "width": 1496,
+  "height": 1029
+ },
+ "mobs": [],
+ "npcs": [],
+ "portals": [
+  {
+   "toMap": 80002001,
+   "portalName": "up00"
+  },
+  {
+   "toMap": 80002001,
+   "portalName": "up01"
+  },
+  {
+   "toMap": 80002001,
+   "portalName": "dn00"
+  },
+  {
+   "toMap": 80002001,
+   "portalName": "dn01"
+  }
+ ]
+}

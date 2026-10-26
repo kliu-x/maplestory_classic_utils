@@ -1,0 +1,23 @@
+{
+ "id": 80003100,
+ "name": "Shortcut",
+ "streetName": "Hidden Street",
+ "mapMark": "None",
+ "isTown": false,
+ "mobRate": 1,
+ "returnMap": 80003300,
+ "vrBounds": {
+  "width": 1408,
+  "height": 850
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 800019
+  },
+  {
+   "id": 800020
+  }
+ ],
+ "portals": []
+}

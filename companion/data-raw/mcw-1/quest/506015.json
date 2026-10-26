@@ -1,0 +1,48 @@
+{
+ "id": 506015,
+ "name": "First Greeting with Chief Stan",
+ "area": 20,
+ "areaName": "Citizenship",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506016,
+   "levelMinimum": 12,
+   "quests": [
+    {
+     "id": 506015,
+     "state": 2
+    }
+   ],
+   "npcId": 235,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506015,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506015,
+  "exp": 5850,
+  "items": [
+   {
+    "id": 2000003,
+    "count": 15
+   }
+  ],
+  "meso": 1023,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506015,
+  "levelMinimum": 12,
+  "npcId": 235,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506015,
+  "levelMinimum": 32,
+  "npcId": 202,
+  "state": 1
+ }
+}

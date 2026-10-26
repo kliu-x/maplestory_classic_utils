@@ -1,0 +1,46 @@
+{
+ "id": 506055,
+ "name": "A Name Never Given",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "Talk to #p207#",
+ "rewardOnStart": {
+  "id": 506055,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506055,
+  "exp": 11400,
+  "fame": 1,
+  "items": [
+   {
+    "id": 2040813,
+    "count": 1
+   },
+   {
+    "id": 2040814,
+    "count": 1
+   }
+  ],
+  "meso": 1477,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506055,
+  "levelMinimum": 47,
+  "quests": [
+   {
+    "id": 506054,
+    "state": 2
+   }
+  ],
+  "npcId": 502,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506055,
+  "levelMinimum": 47,
+  "npcId": 207,
+  "state": 1
+ }
+}

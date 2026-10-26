@@ -1,0 +1,20 @@
+{
+ "id": 10003003,
+ "name": "Thieves' Hideout",
+ "streetName": "Victoria Road",
+ "mapMark": "KerningCity",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10003000,
+ "vrBounds": {
+  "width": 800,
+  "height": 960
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 411
+  }
+ ],
+ "portals": []
+}

@@ -1,0 +1,140 @@
+{
+ "id": 10412,
+ "name": "Taking Out the Alligators 1",
+ "area": 15,
+ "areaName": "Perion",
+ "demandSummary": "#o18# #a104121#\\n#o29# #a104122#\\n#i4000018# #t4000018# #c4000018# / 20",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10413,
+   "levelMinimum": 48,
+   "quests": [
+    {
+     "id": 10412,
+     "state": 2
+    }
+   ],
+   "npcId": 506,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10412,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10412,
+  "exp": 11800,
+  "items": [
+   {
+    "id": 4000018,
+    "count": -20
+   },
+   {
+    "id": 2043002,
+    "count": 1,
+    "job": 2
+   },
+   {
+    "id": 2043102,
+    "count": 1,
+    "job": 2
+   },
+   {
+    "id": 2043202,
+    "count": 1,
+    "job": 2
+   },
+   {
+    "id": 2044002,
+    "count": 1,
+    "job": 2
+   },
+   {
+    "id": 2044102,
+    "count": 1,
+    "job": 2
+   },
+   {
+    "id": 2044202,
+    "count": 1,
+    "job": 2
+   },
+   {
+    "id": 2044302,
+    "count": 1,
+    "job": 2
+   },
+   {
+    "id": 2044402,
+    "count": 1,
+    "job": 2
+   },
+   {
+    "id": 2043702,
+    "count": 1,
+    "job": 4
+   },
+   {
+    "id": 2043802,
+    "count": 1,
+    "job": 4
+   },
+   {
+    "id": 2044502,
+    "count": 1,
+    "job": 8
+   },
+   {
+    "id": 2044602,
+    "count": 1,
+    "job": 8
+   },
+   {
+    "id": 2043302,
+    "count": 1,
+    "job": 16
+   },
+   {
+    "id": 2044702,
+    "count": 1,
+    "job": 16
+   }
+  ],
+  "meso": 1506,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10412,
+  "levelMinimum": 48,
+  "quests": [
+   {
+    "id": 10125,
+    "state": 2
+   }
+  ],
+  "npcId": 506,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10412,
+  "mobs": [
+   {
+    "count": 40,
+    "id": 18
+   },
+   {
+    "count": 100,
+    "id": 29
+   }
+  ],
+  "items": [
+   {
+    "count": 20,
+    "id": 4000018
+   }
+  ],
+  "npcId": 506,
+  "state": 1
+ }
+}

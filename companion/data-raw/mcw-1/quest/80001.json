@@ -1,0 +1,44 @@
+{
+ "id": 80001,
+ "name": "Make a Match Cards Set",
+ "area": 12,
+ "areaName": "Henesys",
+ "demandSummary": "#i4031045:# #t4031045:# #c4031045# / 15",
+ "rewardOnStart": {
+  "id": 80001,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80001,
+  "exp": 334,
+  "items": [
+   {
+    "id": 4031045,
+    "count": -15
+   },
+   {
+    "id": 4080100,
+    "count": 1
+   }
+  ],
+  "meso": 409,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80001,
+  "levelMinimum": 12,
+  "npcId": 228,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80001,
+  "items": [
+   {
+    "count": 15,
+    "id": 4031045
+   }
+  ],
+  "npcId": 228,
+  "state": 1
+ }
+}

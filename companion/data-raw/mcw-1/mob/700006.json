@@ -1,0 +1,27 @@
+{
+ "id": 700006,
+ "name": "Shade",
+ "meta": {
+  "isBodyAttack": true,
+  "level": 48,
+  "maxHP": 47000,
+  "maxMP": 250,
+  "speed": 5,
+  "physicalDamage": 620,
+  "physicalDefense": 30,
+  "magicDamage": 682,
+  "magicDefense": 10,
+  "accuracy": 138,
+  "evasion": 35,
+  "exp": 488,
+  "isUndead": true,
+  "minimumPushDamage": 3250,
+  "hpRecovery": 470,
+  "mpRecovery": 25,
+  "elementalAttributes": "S2H3",
+  "summonType": 0,
+  "revivesMonsterId": [],
+  "isBoss": true,
+  "isAutoAggro": true
+ }
+}

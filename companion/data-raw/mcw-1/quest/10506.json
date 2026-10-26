@@ -1,0 +1,60 @@
+{
+ "id": 10506,
+ "name": "Cold Milk",
+ "area": 16,
+ "areaName": "Sleepywood",
+ "demandSummary": "#i4020107:# #t4020107:# #c4020107# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10507,
+   "levelMinimum": 32,
+   "quests": [
+    {
+     "id": 10506,
+     "state": 2
+    }
+   ],
+   "npcId": 305,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10506,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10506,
+  "exp": 5850,
+  "items": [
+   {
+    "id": 4020107,
+    "count": -1
+   }
+  ],
+  "meso": 1023,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10506,
+  "levelMinimum": 32,
+  "quests": [
+   {
+    "id": 10505,
+    "state": 2
+   }
+  ],
+  "npcId": 305,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10506,
+  "items": [
+   {
+    "count": 1,
+    "id": 4020107
+   }
+  ],
+  "npcId": 305,
+  "state": 1
+ }
+}

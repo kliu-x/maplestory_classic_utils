@@ -1,0 +1,40 @@
+{
+ "id": 506002,
+ "name": "Asking After Rina, the Town Resident",
+ "area": 20,
+ "areaName": "Citizenship",
+ "rewardOnStart": {
+  "id": 506002,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506002,
+  "exp": 233,
+  "items": [
+   {
+    "id": 2010005,
+    "count": 8
+   }
+  ],
+  "meso": 286,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506002,
+  "levelMinimum": 12,
+  "quests": [
+   {
+    "id": 506001,
+    "state": 2
+   }
+  ],
+  "npcId": 235,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506002,
+  "levelMinimum": 12,
+  "npcId": 201,
+  "state": 1
+ }
+}

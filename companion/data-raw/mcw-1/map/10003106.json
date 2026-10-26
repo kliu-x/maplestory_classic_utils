@@ -1,0 +1,46 @@
+{
+ "id": 10003106,
+ "name": "B3 <Area 1>",
+ "streetName": "Line 3 Construction Site",
+ "mapMark": "KerningCity",
+ "isTown": false,
+ "mobRate": 1,
+ "returnMap": 10003000,
+ "vrBounds": {
+  "width": 1380,
+  "height": 3730
+ },
+ "mobs": [
+  {
+   "id": 93,
+   "x": 50,
+   "y": 923
+  },
+  {
+   "id": 93,
+   "x": -623,
+   "y": -887
+  },
+  {
+   "id": 93,
+   "x": -512,
+   "y": 133
+  },
+  {
+   "id": 93,
+   "x": -683,
+   "y": -347
+  }
+ ],
+ "npcs": [
+  {
+   "id": 419
+  }
+ ],
+ "portals": [
+  {
+   "toMap": 10003106,
+   "portalName": "stage1"
+  }
+ ]
+}

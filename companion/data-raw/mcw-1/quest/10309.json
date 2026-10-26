@@ -1,0 +1,64 @@
+{
+ "id": 10309,
+ "name": "Stranger's Request",
+ "area": 14,
+ "areaName": "Kerning City",
+ "demandSummary": "#o17# #a103091#\\n#i4031007##t4031007# �#c4031007# / 20",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10310,
+   "levelMinimum": 23,
+   "quests": [
+    {
+     "id": 10309,
+     "state": 2
+    }
+   ],
+   "npcId": 412,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10309,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10309,
+  "exp": 2430,
+  "items": [
+   {
+    "id": 4031007,
+    "count": -20,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 2000003,
+    "count": 20
+   }
+  ],
+  "meso": 745,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10309,
+  "levelMinimum": 23,
+  "npcId": 412,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10309,
+  "mobs": [
+   {
+    "count": 40,
+    "id": 17
+   }
+  ],
+  "items": [
+   {
+    "count": 20,
+    "id": 4031007
+   }
+  ],
+  "state": 1
+ }
+}

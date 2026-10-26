@@ -1,0 +1,65 @@
+{
+ "id": 10507,
+ "name": "Satisfied Ronnie",
+ "area": 16,
+ "areaName": "Sleepywood",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10508,
+   "levelMinimum": 32,
+   "quests": [
+    {
+     "id": 10507,
+     "state": 2
+    }
+   ],
+   "npcId": 320,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10507,
+  "items": [
+   {
+    "id": 4031031,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10507,
+  "exp": 5850,
+  "items": [
+   {
+    "id": 4031031,
+    "count": -1
+   }
+  ],
+  "meso": 1023,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10507,
+  "levelMinimum": 32,
+  "quests": [
+   {
+    "id": 10506,
+    "state": 2
+   }
+  ],
+  "npcId": 305,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10507,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031031
+   }
+  ],
+  "npcId": 320,
+  "state": 1
+ }
+}

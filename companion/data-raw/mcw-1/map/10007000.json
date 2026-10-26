@@ -1,0 +1,32 @@
+{
+ "id": 10007000,
+ "name": "Florina Beach",
+ "streetName": "Florina Road",
+ "mapMark": "Rith",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10007000,
+ "vrBounds": {
+  "width": 3180,
+  "height": 1190
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 802
+  },
+  {
+   "id": 800
+  },
+  {
+   "id": 801
+  },
+  {
+   "id": 803
+  },
+  {
+   "id": 804
+  }
+ ],
+ "portals": []
+}

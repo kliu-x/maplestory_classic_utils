@@ -1,0 +1,38 @@
+{
+ "id": 10001040,
+ "name": "Henesys Market",
+ "streetName": "Victoria Road",
+ "mapMark": "Henesys",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10001000,
+ "vrBounds": {
+  "width": 5726,
+  "height": 940
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 208
+  },
+  {
+   "id": 209
+  },
+  {
+   "id": 800013
+  },
+  {
+   "id": 800014
+  }
+ ],
+ "portals": [
+  {
+   "toMap": 10001040,
+   "portalName": "h_east"
+  },
+  {
+   "toMap": 10001040,
+   "portalName": "h_west"
+  }
+ ]
+}

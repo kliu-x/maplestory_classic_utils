@@ -1,0 +1,78 @@
+{
+ "id": 10619,
+ "name": "A Heart of Stillness and Wood",
+ "area": 17,
+ "areaName": "Forgotten Hollow",
+ "demandSummary": "#i4000033# #t4000033# #b#c4000033##k / 30\\n#i4000057# #t4000057# #b#c4000057##k / 20",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10620,
+   "startTime": "2026-12-09T00:00:00",
+   "levelMinimum": 50,
+   "quests": [
+    {
+     "id": 10619,
+     "state": 2
+    }
+   ],
+   "npcId": 712,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10619,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10619,
+  "exp": 12900,
+  "items": [
+   {
+    "id": 4000033,
+    "count": -30
+   },
+   {
+    "id": 4000057,
+    "count": -20
+   },
+   {
+    "id": 2000000,
+    "count": 15
+   },
+   {
+    "id": 2040606,
+    "count": 1
+   }
+  ],
+  "meso": 1579,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10619,
+  "startTime": "2026-12-09T00:00:00",
+  "levelMinimum": 50,
+  "quests": [
+   {
+    "id": 10618,
+    "state": 2
+   }
+  ],
+  "npcId": 712,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10619,
+  "items": [
+   {
+    "count": 30,
+    "id": 4000033
+   },
+   {
+    "count": 20,
+    "id": 4000057
+   }
+  ],
+  "npcId": 712,
+  "state": 1
+ }
+}

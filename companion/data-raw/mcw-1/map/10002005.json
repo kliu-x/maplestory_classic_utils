@@ -1,0 +1,26 @@
+{
+ "id": 10002005,
+ "name": "The Circulation Desk",
+ "streetName": "Hidden Street",
+ "mapMark": "Ellinia",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10002000,
+ "vrBounds": {
+  "width": 678,
+  "height": 952
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 326
+  },
+  {
+   "id": 327
+  },
+  {
+   "id": 328
+  }
+ ],
+ "portals": []
+}

@@ -1,0 +1,20 @@
+{
+ "id": 10001042,
+ "name": "Henesys Department Store",
+ "streetName": "Victoria Road",
+ "mapMark": "Henesys",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10001000,
+ "vrBounds": {
+  "width": 800,
+  "height": 600
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 212
+  }
+ ],
+ "portals": []
+}

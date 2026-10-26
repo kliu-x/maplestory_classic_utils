@@ -1,0 +1,20 @@
+{
+ "id": 10003006,
+ "name": "Kerning City Repair Shop",
+ "streetName": "Victoria Road",
+ "mapMark": "KerningCity",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10003000,
+ "vrBounds": {
+  "width": 800,
+  "height": 790
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 415
+  }
+ ],
+ "portals": []
+}

@@ -1,0 +1,60 @@
+{
+ "id": 506111,
+ "name": "First Greeting with Jake, the Town Resident",
+ "area": 20,
+ "areaName": "Citizenship",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506112,
+   "levelMinimum": 12,
+   "quests": [
+    {
+     "id": 506111,
+     "state": 2
+    }
+   ],
+   "npcId": 431,
+   "state": 0
+  },
+  {
+   "id": 506137,
+   "levelMinimum": 17,
+   "quests": [
+    {
+     "id": 506111,
+     "state": 2
+    }
+   ],
+   "npcId": 417,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506111,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506111,
+  "exp": 334,
+  "items": [
+   {
+    "id": 2010004,
+    "count": 8
+   }
+  ],
+  "meso": 409,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506111,
+  "levelMinimum": 12,
+  "npcId": 431,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506111,
+  "levelMinimum": 12,
+  "npcId": 417,
+  "state": 1
+ }
+}

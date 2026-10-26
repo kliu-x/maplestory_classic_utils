@@ -1,0 +1,62 @@
+{
+ "id": 10213,
+ "name": "The Filing Error",
+ "area": 13,
+ "areaName": "Ellinia",
+ "demandSummary": "#i4031118# #t4031118# #b#c4031118# / 25#k",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10214,
+   "levelMinimum": 28,
+   "quests": [
+    {
+     "id": 10213,
+     "state": 2
+    }
+   ],
+   "npcId": 202,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10213,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10213,
+  "exp": 4090,
+  "items": [
+   {
+    "id": 2000003,
+    "count": 10
+   },
+   {
+    "id": 2000001,
+    "count": 10
+   },
+   {
+    "id": 4031118,
+    "count": -25
+   }
+  ],
+  "meso": 892,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10213,
+  "levelMinimum": 28,
+  "npcId": 326,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10213,
+  "items": [
+   {
+    "count": 25,
+    "id": 4031118
+   }
+  ],
+  "npcId": 202,
+  "state": 1
+ }
+}

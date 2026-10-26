@@ -1,0 +1,65 @@
+{
+ "id": 10626,
+ "name": "The Last Lantern",
+ "area": 17,
+ "areaName": "Forgotten Hollow",
+ "demandSummary": "#i4031142# #t4031142# #b#c4031142##k / 1",
+ "rewardOnStart": {
+  "id": 10626,
+  "items": [
+   {
+    "id": 4031142,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10626,
+  "exp": 16200,
+  "items": [
+   {
+    "id": 4031142,
+    "count": -1
+   },
+   {
+    "id": 2040606,
+    "count": 1
+   },
+   {
+    "id": 2041026,
+    "count": 1
+   },
+   {
+    "id": 2000004,
+    "count": 20
+   }
+  ],
+  "meso": 1725,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10626,
+  "startTime": "2026-11-18T00:00:00",
+  "levelMinimum": 55,
+  "quests": [
+   {
+    "id": 10625,
+    "state": 2
+   }
+  ],
+  "npcId": 712,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10626,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031142
+   }
+  ],
+  "npcId": 715,
+  "state": 1
+ }
+}

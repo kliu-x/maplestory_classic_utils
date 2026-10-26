@@ -1,0 +1,20 @@
+{
+ "id": 80003300,
+ "name": "Back to Town",
+ "streetName": "Hidden Street",
+ "mapMark": "None",
+ "isTown": false,
+ "mobRate": 1,
+ "returnMap": 80003300,
+ "vrBounds": {
+  "width": 1408,
+  "height": 550
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 800020
+  }
+ ],
+ "portals": []
+}

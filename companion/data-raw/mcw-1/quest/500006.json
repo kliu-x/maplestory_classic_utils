@@ -1,0 +1,27 @@
+{
+ "id": 500006,
+ "name": "[Event] Gift for the New Journey",
+ "area": 99,
+ "areaName": "Event",
+ "rewardOnStart": {
+  "id": 500006,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 500006,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 500006,
+  "startTime": "2026-08-04T00:00:00",
+  "endTime": "2026-08-12T23:59:00",
+  "levelMinimum": 8,
+  "npcId": 9010000,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 500006,
+  "npcId": 9010000,
+  "state": 1
+ }
+}

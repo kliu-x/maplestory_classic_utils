@@ -1,0 +1,40 @@
+{
+ "id": 506102,
+ "name": "Asking After Alex, the Town Resident",
+ "area": 20,
+ "areaName": "Citizenship",
+ "rewardOnStart": {
+  "id": 506102,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506102,
+  "exp": 233,
+  "items": [
+   {
+    "id": 2010005,
+    "count": 8
+   }
+  ],
+  "meso": 286,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506102,
+  "levelMinimum": 12,
+  "quests": [
+   {
+    "id": 506101,
+    "state": 2
+   }
+  ],
+  "npcId": 431,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506102,
+  "levelMinimum": 12,
+  "npcId": 402,
+  "state": 1
+ }
+}

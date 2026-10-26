@@ -1,0 +1,34 @@
+{
+ "id": 506017,
+ "name": "First Greeting with Athena Pierce",
+ "area": 20,
+ "areaName": "Citizenship",
+ "rewardOnStart": {
+  "id": 506017,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506017,
+  "exp": 5850,
+  "items": [
+   {
+    "id": 2000003,
+    "count": 15
+   }
+  ],
+  "meso": 1023,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506017,
+  "levelMinimum": 12,
+  "npcId": 235,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506017,
+  "levelMinimum": 32,
+  "npcId": 221,
+  "state": 1
+ }
+}

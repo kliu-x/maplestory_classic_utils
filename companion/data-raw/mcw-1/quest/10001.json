@@ -1,0 +1,42 @@
+{
+ "id": 10001,
+ "name": "Phil's Call",
+ "area": 11,
+ "areaName": "Lith Harbor",
+ "demandSummary": "Reaching Level 10",
+ "rewardOnStart": {
+  "id": 10001,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10001,
+  "exp": 188,
+  "items": [
+   {
+    "id": 2000000,
+    "count": 8
+   },
+   {
+    "id": 2000003,
+    "count": 8
+   }
+  ],
+  "meso": 245,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10001,
+  "jobs": [
+   0
+  ],
+  "levelMinimum": 8,
+  "npcId": 101,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10001,
+  "levelMinimum": 10,
+  "npcId": 101,
+  "state": 1
+ }
+}

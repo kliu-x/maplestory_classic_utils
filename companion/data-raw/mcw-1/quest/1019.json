@@ -1,0 +1,41 @@
+{
+ "id": 1019,
+ "name": "Rain's Maple Quiz 7",
+ "area": 1,
+ "areaName": "Maple Island",
+ "rewardOnStart": {
+  "id": 1019,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 1019,
+  "exp": 100,
+  "items": [
+   {
+    "id": 2010004,
+    "count": 10
+   }
+  ],
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 1019,
+  "jobs": [
+   0
+  ],
+  "levelMinimum": 5,
+  "quests": [
+   {
+    "id": 1018,
+    "state": 2
+   }
+  ],
+  "npcId": 19,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 1019,
+  "npcId": 19,
+  "state": 1
+ }
+}

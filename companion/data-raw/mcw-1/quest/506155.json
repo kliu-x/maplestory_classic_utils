@@ -1,0 +1,61 @@
+{
+ "id": 506155,
+ "name": "An Old Grudge",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#o700006# #a5061551#",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506156,
+   "levelMinimum": 47,
+   "quests": [
+    {
+     "id": 506155,
+     "state": 2
+    }
+   ],
+   "npcId": 425,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506155,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506155,
+  "exp": 11400,
+  "items": [
+   {
+    "id": 2000004,
+    "count": 10
+   }
+  ],
+  "meso": 1477,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506155,
+  "levelMinimum": 47,
+  "quests": [
+   {
+    "id": 506154,
+    "state": 2
+   }
+  ],
+  "npcId": 412,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506155,
+  "levelMinimum": 47,
+  "mobs": [
+   {
+    "count": 1,
+    "id": 700006
+   }
+  ],
+  "npcId": 425,
+  "state": 1
+ }
+}

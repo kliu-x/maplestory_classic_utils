@@ -1,0 +1,89 @@
+{
+ "id": 10003100,
+ "name": "B1 <Area 1>",
+ "streetName": "Line 3 Construction Site",
+ "mapMark": "KerningCity",
+ "isTown": false,
+ "mobRate": 1,
+ "returnMap": 10003000,
+ "vrBounds": {
+  "width": 4530,
+  "height": 2800
+ },
+ "mobs": [
+  {
+   "id": 90,
+   "x": 872,
+   "y": -947
+  },
+  {
+   "id": 90,
+   "x": 1003,
+   "y": -1007
+  },
+  {
+   "id": 90,
+   "x": 477,
+   "y": -947
+  }
+ ],
+ "npcs": [
+  {
+   "id": 419
+  },
+  {
+   "id": 419
+  },
+  {
+   "id": 419
+  },
+  {
+   "id": 419
+  },
+  {
+   "id": 419
+  }
+ ],
+ "portals": [
+  {
+   "toMap": 10003100,
+   "portalName": "in00"
+  },
+  {
+   "toMap": 10003100,
+   "portalName": "out00"
+  },
+  {
+   "toMap": 10003100,
+   "portalName": "in02"
+  },
+  {
+   "toMap": 10003100,
+   "portalName": "in04"
+  },
+  {
+   "toMap": 10003100,
+   "portalName": "in01"
+  },
+  {
+   "toMap": 10003100,
+   "portalName": "out01"
+  },
+  {
+   "toMap": 10003100,
+   "portalName": "in03"
+  },
+  {
+   "toMap": 10003100,
+   "portalName": "in05"
+  },
+  {
+   "toMap": 10003100,
+   "portalName": "cross00"
+  },
+  {
+   "toMap": 10003100,
+   "portalName": "cross01"
+  }
+ ]
+}

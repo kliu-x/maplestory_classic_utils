@@ -1,0 +1,71 @@
+{
+ "id": 10109,
+ "name": "Arcon's Blood?",
+ "area": 12,
+ "areaName": "Henesys",
+ "demandSummary": "#o21# #a101091#\\n#i4000020:# #t4000020:# #c4000020# / 40",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10110,
+   "levelMinimum": 21,
+   "quests": [
+    {
+     "id": 10109,
+     "state": 2
+    }
+   ],
+   "npcId": 502,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10109,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10109,
+  "exp": 1870,
+  "items": [
+   {
+    "id": 4000020,
+    "count": -40,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 2000003,
+    "count": 20
+   }
+  ],
+  "meso": 687,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10109,
+  "levelMinimum": 21,
+  "quests": [
+   {
+    "id": 10108,
+    "state": 2
+   }
+  ],
+  "npcId": 502,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10109,
+  "mobs": [
+   {
+    "count": 75,
+    "id": 21
+   }
+  ],
+  "items": [
+   {
+    "count": 40,
+    "id": 4000020
+   }
+  ],
+  "npcId": 502,
+  "state": 1
+ }
+}

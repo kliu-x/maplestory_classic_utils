@@ -1,0 +1,37 @@
+{
+ "id": 600002,
+ "autoStart": true,
+ "name": "[Event] The Journey Begins",
+ "area": 99,
+ "areaName": "Event",
+ "demandSummary": "#questorder1##i4031134:# #t4031134:# #c4031134# / 30",
+ "rewardOnStart": {
+  "id": 600002,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 600002,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 600002,
+  "startTime": "2026-10-21T16:00:00",
+  "endTime": "2026-11-18T23:59:00",
+  "levelMinimum": 10,
+  "npcId": 9010000,
+  "dayByDay": true,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 600002,
+  "levelMinimum": 10,
+  "items": [
+   {
+    "count": 30,
+    "id": 4031134
+   }
+  ],
+  "npcId": 9010000,
+  "state": 1
+ }
+}

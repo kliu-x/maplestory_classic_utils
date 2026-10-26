@@ -1,0 +1,16 @@
+{
+ "id": 900000003,
+ "name": "White Room",
+ "streetName": "Hidden Street",
+ "mapMark": "None",
+ "isTown": false,
+ "mobRate": 1,
+ "returnMap": 10001000,
+ "vrBounds": {
+  "width": 1498,
+  "height": 460
+ },
+ "mobs": [],
+ "npcs": [],
+ "portals": []
+}

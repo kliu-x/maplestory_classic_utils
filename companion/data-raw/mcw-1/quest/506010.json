@@ -1,0 +1,40 @@
+{
+ "id": 506010,
+ "name": "Asking After Maya, the Town Resident",
+ "area": 20,
+ "areaName": "Citizenship",
+ "rewardOnStart": {
+  "id": 506010,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506010,
+  "exp": 233,
+  "items": [
+   {
+    "id": 2010005,
+    "count": 8
+   }
+  ],
+  "meso": 286,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506010,
+  "levelMinimum": 12,
+  "quests": [
+   {
+    "id": 506009,
+    "state": 2
+   }
+  ],
+  "npcId": 235,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506010,
+  "levelMinimum": 12,
+  "npcId": 207,
+  "state": 1
+ }
+}

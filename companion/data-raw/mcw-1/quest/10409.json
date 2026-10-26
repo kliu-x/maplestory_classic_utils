@@ -1,0 +1,70 @@
+{
+ "id": 10409,
+ "name": "Transporting Drake's Skull",
+ "area": 15,
+ "areaName": "Perion",
+ "demandSummary": "#i4031073#�#t4031073# #c4031073# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10410,
+   "levelMinimum": 17,
+   "quests": [
+    {
+     "id": 10409,
+     "state": 2
+    }
+   ],
+   "npcId": 308,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10409,
+  "items": [
+   {
+    "id": 4031073,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10409,
+  "exp": 982,
+  "items": [
+   {
+    "id": 4031073,
+    "count": -1
+   },
+   {
+    "id": 2010003,
+    "count": 5
+   }
+  ],
+  "meso": 555,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10409,
+  "levelMinimum": 17,
+  "quests": [
+   {
+    "id": 10408,
+    "state": 2
+   }
+  ],
+  "npcId": 224,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10409,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031073
+   }
+  ],
+  "npcId": 308,
+  "state": 1
+ }
+}

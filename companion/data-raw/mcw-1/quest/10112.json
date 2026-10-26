@@ -1,0 +1,100 @@
+{
+ "id": 10112,
+ "name": "Delivering the Weird Medicine",
+ "area": 12,
+ "areaName": "Henesys",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10115,
+   "levelMinimum": 30,
+   "quests": [
+    {
+     "id": 10112,
+     "state": 2
+    }
+   ],
+   "npcId": 207,
+   "state": 0
+  },
+  {
+   "id": 10402,
+   "levelMinimum": 50,
+   "quests": [
+    {
+     "id": 10112,
+     "state": 2
+    }
+   ],
+   "npcId": 502,
+   "state": 0
+  },
+  {
+   "id": 506051,
+   "levelMinimum": 47,
+   "quests": [
+    {
+     "id": 10112,
+     "state": 2
+    },
+    {
+     "id": 506009,
+     "state": 2
+    }
+   ],
+   "npcId": 207,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10112,
+  "items": [
+   {
+    "id": 4031009,
+    "count": 1,
+    "potentialGrade": "normal"
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10112,
+  "exp": 1870,
+  "items": [
+   {
+    "id": 4031009,
+    "count": -1,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 1002081,
+    "count": 1,
+    "potentialGrade": "normal"
+   }
+  ],
+  "meso": 687,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10112,
+  "levelMinimum": 21,
+  "quests": [
+   {
+    "id": 10111,
+    "state": 2
+   }
+  ],
+  "npcId": 102,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10112,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031009
+   }
+  ],
+  "npcId": 207,
+  "state": 1
+ }
+}

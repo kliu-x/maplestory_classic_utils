@@ -1,0 +1,64 @@
+{
+ "id": 506009,
+ "name": "First Greeting with Maya, the Town Resident",
+ "area": 20,
+ "areaName": "Citizenship",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506010,
+   "levelMinimum": 12,
+   "quests": [
+    {
+     "id": 506009,
+     "state": 2
+    }
+   ],
+   "npcId": 235,
+   "state": 0
+  },
+  {
+   "id": 506051,
+   "levelMinimum": 47,
+   "quests": [
+    {
+     "id": 10112,
+     "state": 2
+    },
+    {
+     "id": 506009,
+     "state": 2
+    }
+   ],
+   "npcId": 207,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506009,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506009,
+  "exp": 334,
+  "items": [
+   {
+    "id": 2010004,
+    "count": 8
+   }
+  ],
+  "meso": 409,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506009,
+  "levelMinimum": 12,
+  "npcId": 235,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506009,
+  "levelMinimum": 12,
+  "npcId": 207,
+  "state": 1
+ }
+}

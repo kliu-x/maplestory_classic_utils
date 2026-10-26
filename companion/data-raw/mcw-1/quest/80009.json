@@ -1,0 +1,75 @@
+{
+ "id": 80009,
+ "name": "A Blacksmith in My Own Right!",
+ "area": 19,
+ "areaName": "Crafting",
+ "demandSummary": "#o20# #a800091#\\n#o21# #a800092#\\n#i4010105:# #t4010105:# #c4010105# / 1\\n#i4010106:# #t4010106:# #c4010106# / 1",
+ "rewardOnStart": {
+  "id": 80009,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80009,
+  "exp": 3060,
+  "items": [
+   {
+    "id": 4010105,
+    "count": -1
+   },
+   {
+    "id": 4010106,
+    "count": -1
+   },
+   {
+    "id": 4130002,
+    "count": 1
+   }
+  ],
+  "skills": [
+   {
+    "id": 92000000,
+    "masterLevel": -1,
+    "skillLevel": -1
+   }
+  ],
+  "meso": 804,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80009,
+  "levelMinimum": 25,
+  "quests": [
+   {
+    "id": 80008,
+    "state": 2
+   }
+  ],
+  "npcId": 504,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80009,
+  "mobs": [
+   {
+    "count": 30,
+    "id": 20
+   },
+   {
+    "count": 30,
+    "id": 21
+   }
+  ],
+  "items": [
+   {
+    "count": 1,
+    "id": 4010105
+   },
+   {
+    "count": 1,
+    "id": 4010106
+   }
+  ],
+  "npcId": 504,
+  "state": 1
+ }
+}

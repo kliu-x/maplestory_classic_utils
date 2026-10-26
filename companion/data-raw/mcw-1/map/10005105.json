@@ -1,0 +1,22 @@
+{
+ "id": 10005105,
+ "name": "The Cursed Sanctuary",
+ "streetName": "Dungeon",
+ "mapMark": "Dungeon",
+ "isTown": false,
+ "mobRate": 0.7999999523162842,
+ "returnMap": 10005000,
+ "vrBounds": {
+  "width": 1566,
+  "height": 1378
+ },
+ "mobs": [
+  {
+   "id": 700001,
+   "x": 113,
+   "y": 130
+  }
+ ],
+ "npcs": [],
+ "portals": []
+}

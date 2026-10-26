@@ -1,0 +1,70 @@
+{
+ "id": 10313,
+ "name": "[Construction Site B2] Shumi's Lost Roll of Cash",
+ "area": 14,
+ "areaName": "Kerning City",
+ "demandSummary": "#i4031040# #t4031040# #b#c4031040# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10314,
+   "levelMinimum": 35,
+   "quests": [
+    {
+     "id": 10313,
+     "state": 2
+    }
+   ],
+   "npcId": 403,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10313,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10313,
+  "exp": 6720,
+  "fame": 2,
+  "items": [
+   {
+    "id": 4031040,
+    "count": -1
+   },
+   {
+    "id": 2000003,
+    "count": 30
+   }
+  ],
+  "meso": 1111,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10313,
+  "levelMinimum": 35,
+  "quests": [
+   {
+    "id": 10312,
+    "state": 2
+   }
+  ],
+  "npcId": 403,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10313,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031040
+   }
+  ],
+  "npcId": 403,
+  "state": 1
+ },
+ "names": {
+  "en": "[Construction Site B2] Shumi's Lost Roll of Cash",
+  "es": "[Sitio de construcción B2] El rollo de dinero perdido de Shumi",
+  "ko": "[공사장 B2] 슈미가 잃어버린 돈뭉치"
+ }
+}

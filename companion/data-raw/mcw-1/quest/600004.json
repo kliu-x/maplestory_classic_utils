@@ -1,0 +1,44 @@
+{
+ "id": 600004,
+ "name": "[Event] The Marks We Leave Behind",
+ "area": 99,
+ "areaName": "Event",
+ "demandSummary": "#questorder1#Talk to #b#p205##k in #m10001000#",
+ "rewardSummary": "#i2430047# #t2430047# x1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 600005,
+   "startTime": "2026-10-21T00:00:00",
+   "endTime": "2026-11-19T00:00:00",
+   "levelMinimum": 25,
+   "quests": [
+    {
+     "id": 600004,
+     "state": 2
+    }
+   ],
+   "npcId": 205,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 600004,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 600004,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 600004,
+  "startTime": "2026-10-21T00:00:00",
+  "endTime": "2026-11-19T00:00:00",
+  "levelMinimum": 25,
+  "npcId": 205,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 600004,
+  "state": 1
+ }
+}

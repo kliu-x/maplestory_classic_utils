@@ -1,0 +1,60 @@
+{
+ "id": 10404,
+ "name": "Hero's Gladius",
+ "area": 15,
+ "areaName": "Perion",
+ "demandSummary": "�#i4031027:# #t4031027:# #c4031027# / 1",
+ "rewardOnStart": {
+  "id": 10404,
+  "items": [
+   {
+    "id": 4031027,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10404,
+  "exp": 12900,
+  "items": [
+   {
+    "id": 1302014,
+    "count": 1
+   },
+   {
+    "id": 1032013,
+    "count": 1
+   },
+   {
+    "id": 4031027,
+    "count": -1
+   }
+  ],
+  "meso": 1579,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10404,
+  "levelMinimum": 50,
+  "quests": [
+   {
+    "id": 10403,
+    "state": 2
+   }
+  ],
+  "npcId": 602,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10404,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031027
+   }
+  ],
+  "npcId": 502,
+  "state": 1
+ }
+}

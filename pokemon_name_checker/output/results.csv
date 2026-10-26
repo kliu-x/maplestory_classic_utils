@@ -1,0 +1,252 @@
+pokemon_name,lookup_name,generation,popularity_rank,world,lookup_status,matched_character_name,matched_level,matched_job,source,checked_at_utc,notes
+Pikachu,Pikachu,1,1,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Eevee,Eevee,1,2,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Charizard,Charizard,1,3,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Mewtwo,Mewtwo,1,4,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Gengar,Gengar,1,5,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Mew,Mew,1,6,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"3 letters: ClassicRank's ingest API documents 4-12 character names, so a 'Mew' character may be impossible or untracked; treat 'not found' as uninformative. | ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Snorlax,Snorlax,1,7,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Dragonite,Dragonite,1,8,windia,found,Dragonite,38,Spearman,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T15:36:10Z.
+Charmander,Charmander,1,9,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Squirtle,Squirtle,1,10,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Bulbasaur,Bulbasaur,1,11,windia,found,Bulbasaur,37,Wizard (Fire/Poison),classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T16:53:26Z.
+Ditto,Ditto,1,12,windia,found,Ditto,33,Hunter,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-24T04:01:22Z.
+Gyarados,Gyarados,1,13,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Umbreon,Umbreon,2,14,windia,found,Umbreon,26,Thief,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T15:11:34Z.
+Blastoise,Blastoise,1,15,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Venusaur,Venusaur,1,16,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Jigglypuff,Jigglypuff,1,17,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Psyduck,Psyduck,1,18,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Vulpix,Vulpix,1,19,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Lapras,Lapras,1,20,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Arcanine,Arcanine,1,21,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Growlithe,Growlithe,1,22,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Magikarp,Magikarp,1,23,windia,found,Magikarp,58,Spearman,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T16:02:15Z.
+Raichu,Raichu,1,24,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Espeon,Espeon,2,25,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Scizor,Scizor,2,26,windia,found,Scizor,41,Assassin,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-24T10:02:13Z.
+Tyranitar,Tyranitar,2,27,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Lugia,Lugia,2,28,windia,found,Lugia,45,Assassin,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T16:58:35Z.
+Ho-Oh,HoOh,2,29,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"Naming-rule test case: hyphen removed for lookup; source rejects punctuation. Game rules unverified. | ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Suicune,Suicune,2,30,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Celebi,Celebi,2,31,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Totodile,Totodile,2,32,windia,found,Totodile,50,Bandit,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T15:42:43Z.
+Cyndaquil,Cyndaquil,2,33,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Chikorita,Chikorita,2,34,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Ampharos,Ampharos,2,35,windia,found,Ampharos,27,Magician,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-23T04:49:22Z.
+Steelix,Steelix,2,36,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Togepi,Togepi,2,37,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Porygon2,Porygon2,2,38,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"Naming-rule test case: contains a digit, which the source accepts. | ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Ninetales,Ninetales,1,39,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Ivysaur,Ivysaur,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Charmeleon,Charmeleon,1,,windia,found,Charmeleon,40,Assassin,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-21T10:53:23Z.
+Wartortle,Wartortle,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Caterpie,Caterpie,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Metapod,Metapod,1,,windia,found,Metapod,45,Assassin,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T17:43:34Z.
+Butterfree,Butterfree,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Weedle,Weedle,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Kakuna,Kakuna,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Beedrill,Beedrill,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Pidgey,Pidgey,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Pidgeotto,Pidgeotto,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Pidgeot,Pidgeot,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Rattata,Rattata,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Raticate,Raticate,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Spearow,Spearow,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Fearow,Fearow,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Ekans,Ekans,1,,windia,found,Ekans,51,Fighter,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T16:09:19Z.
+Arbok,Arbok,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Sandshrew,Sandshrew,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Sandslash,Sandslash,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Nidoran♀,NidoranF,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"Pokedex name has ♀; queried candidate 'NidoranF' (game naming rules unverified; 'Nidoran' is another candidate). | ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Nidorina,Nidorina,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Nidoqueen,Nidoqueen,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Nidoran♂,NidoranM,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"Pokedex name has ♂; queried candidate 'NidoranM' (game naming rules unverified; 'Nidoran' is another candidate). | ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Nidorino,Nidorino,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Nidoking,Nidoking,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Clefairy,Clefairy,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Clefable,Clefable,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Wigglytuff,Wigglytuff,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Zubat,Zubat,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Golbat,Golbat,1,,windia,found,Golbat,42,Assassin,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T19:20:50Z.
+Oddish,Oddish,1,,windia,found,Oddish,17,Archer,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-25T17:49:40Z.
+Gloom,Gloom,1,,windia,found,Gloom,49,Bandit,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T20:55:07Z.
+Vileplume,Vileplume,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Paras,Paras,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Parasect,Parasect,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Venonat,Venonat,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Venomoth,Venomoth,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Diglett,Diglett,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Dugtrio,Dugtrio,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Meowth,Meowth,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Persian,Persian,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Golduck,Golduck,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Mankey,Mankey,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Primeape,Primeape,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Poliwag,Poliwag,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Poliwhirl,Poliwhirl,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Poliwrath,Poliwrath,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Abra,Abra,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Kadabra,Kadabra,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Alakazam,Alakazam,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Machop,Machop,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Machoke,Machoke,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Machamp,Machamp,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Bellsprout,Bellsprout,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Weepinbell,Weepinbell,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Victreebel,Victreebel,1,,windia,found,Victreebel,27,Archer,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T07:39:51Z.
+Tentacool,Tentacool,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Tentacruel,Tentacruel,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Geodude,Geodude,1,,windia,found,Geodude,36,Fighter,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T17:58:56Z.
+Graveler,Graveler,1,,windia,found,Graveler,37,Assassin,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-25T18:46:59Z.
+Golem,Golem,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Ponyta,Ponyta,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Rapidash,Rapidash,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Slowpoke,Slowpoke,1,,windia,found,Slowpoke,40,Assassin,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T16:49:56Z.
+Slowbro,Slowbro,1,,windia,found,Slowbro,33,Cleric,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-25T11:14:40Z.
+Magnemite,Magnemite,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Magneton,Magneton,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Farfetch'd,Farfetchd,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"Naming-rule test case: apostrophe removed for lookup; source rejects punctuation. Whether the game allows the apostrophe is unverified. | ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Doduo,Doduo,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Dodrio,Dodrio,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Seel,Seel,1,,windia,found,Seel,39,Assassin,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T16:42:09Z.
+Dewgong,Dewgong,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Grimer,Grimer,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Muk,Muk,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Shellder,Shellder,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Cloyster,Cloyster,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Gastly,Gastly,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Haunter,Haunter,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Onix,Onix,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Drowzee,Drowzee,1,,windia,found,Drowzee,47,Hunter,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-25T03:25:52Z.
+Hypno,Hypno,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Krabby,Krabby,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Kingler,Kingler,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Voltorb,Voltorb,1,,windia,found,Voltorb,32,Wizard (Ice/Lightning),classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-21T07:24:33Z.
+Electrode,Electrode,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Exeggcute,Exeggcute,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Exeggutor,Exeggutor,1,,windia,found,Exeggutor,36,Bandit,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T16:19:17Z.
+Cubone,Cubone,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Marowak,Marowak,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Hitmonlee,Hitmonlee,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Hitmonchan,Hitmonchan,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Lickitung,Lickitung,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Koffing,Koffing,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Weezing,Weezing,1,,windia,found,weezing,17,Swordsman,classicrank,2026-10-26T20:56:10Z,Source matched case-insensitively ('weezing'); whether the game treats different capitalisation as the same name is unverified. | Source last_checked 2026-10-26T08:40:02Z.
+Rhyhorn,Rhyhorn,1,,windia,found,rhyhorn,27,Swordsman,classicrank,2026-10-26T20:56:10Z,Source matched case-insensitively ('rhyhorn'); whether the game treats different capitalisation as the same name is unverified. | Source last_checked 2026-10-24T07:54:01Z.
+Rhydon,Rhydon,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Chansey,Chansey,1,,windia,found,Chansey,60,Cleric,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T16:58:31Z.
+Tangela,Tangela,1,,windia,found,Tangela,48,Cleric,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T18:25:15Z.
+Kangaskhan,Kangaskhan,1,,windia,found,Kangaskhan,38,Crossbowman,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T20:15:15Z.
+Horsea,Horsea,1,,windia,found,Horsea,30,Crossbowman,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-25T12:32:08Z.
+Seadra,Seadra,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Goldeen,Goldeen,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Seaking,Seaking,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Staryu,Staryu,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Starmie,Starmie,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Mr. Mime,MrMime,1,,windia,found,MrMime,37,Wizard (Fire/Poison),classicrank,2026-10-26T20:56:10Z,Naming-rule test case: '. ' removed for lookup; source rejects punctuation/spaces. Game rules unverified. | Source last_checked 2026-10-26T17:49:31Z.
+Scyther,Scyther,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Jynx,Jynx,1,,windia,found,Jynx,39,Bandit,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T19:25:30Z.
+Electabuzz,Electabuzz,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Magmar,Magmar,1,,windia,found,Magmar,57,Wizard (Fire/Poison),classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T19:35:28Z.
+Pinsir,Pinsir,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Tauros,Tauros,1,,windia,found,Tauros,50,Spearman,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T16:55:23Z.
+Vaporeon,Vaporeon,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Jolteon,Jolteon,1,,windia,found,Jolteon,38,Wizard (Ice/Lightning),classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-23T22:55:08Z.
+Flareon,Flareon,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Porygon,Porygon,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Omanyte,Omanyte,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Omastar,Omastar,1,,windia,found,Omastar,20,Thief,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T06:02:01Z.
+Kabuto,Kabuto,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Kabutops,Kabutops,1,,windia,found,Kabutops,22,Thief,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-20T19:55:26Z.
+Aerodactyl,Aerodactyl,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Articuno,Articuno,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Zapdos,Zapdos,1,,windia,found,Zapdos,36,Wizard (Ice/Lightning),classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T13:27:28Z.
+Moltres,Moltres,1,,windia,found,Moltres,37,Wizard (Fire/Poison),classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T12:05:37Z.
+Dratini,Dratini,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Dragonair,Dragonair,1,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Bayleef,Bayleef,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Meganium,Meganium,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Quilava,Quilava,2,,windia,found,Quilava,23,Swordsman,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T17:55:00Z.
+Typhlosion,Typhlosion,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Croconaw,Croconaw,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Feraligatr,Feraligatr,2,,windia,found,Feraligatr,50,Bandit,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T15:20:22Z.
+Sentret,Sentret,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Furret,Furret,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Hoothoot,Hoothoot,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Noctowl,Noctowl,2,,windia,found,Noctowl,38,Crossbowman,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T14:08:57Z.
+Ledyba,Ledyba,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Ledian,Ledian,2,,windia,found,ledian,19,Swordsman,classicrank,2026-10-26T20:56:10Z,Source matched case-insensitively ('ledian'); whether the game treats different capitalisation as the same name is unverified. | Source last_checked 2026-10-26T16:49:51Z.
+Spinarak,Spinarak,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Ariados,Ariados,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Crobat,Crobat,2,,windia,found,Crobat,36,Cleric,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-20T22:57:00Z.
+Chinchou,Chinchou,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Lanturn,Lanturn,2,,windia,found,Lanturn,30,Crossbowman,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T00:29:52Z.
+Pichu,Pichu,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Cleffa,Cleffa,2,,windia,found,Cleffa,45,Spearman,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-23T01:34:20Z.
+Igglybuff,Igglybuff,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Togetic,Togetic,2,,windia,found,Togetic,49,Assassin,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T19:11:45Z.
+Natu,Natu,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Xatu,Xatu,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Mareep,Mareep,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Flaaffy,Flaaffy,2,,windia,found,Flaaffy,32,Cleric,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T16:21:03Z.
+Bellossom,Bellossom,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Marill,Marill,2,,windia,found,Marill,34,Wizard (Ice/Lightning),classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T19:42:37Z.
+Azumarill,Azumarill,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Sudowoodo,Sudowoodo,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Politoed,Politoed,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Hoppip,Hoppip,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Skiploom,Skiploom,2,,windia,found,Skiploom,41,Crossbowman,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T16:45:55Z.
+Jumpluff,Jumpluff,2,,windia,found,Jumpluff,37,Page,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T18:51:09Z.
+Aipom,Aipom,2,,windia,found,Aipom,40,Bandit,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T08:49:32Z.
+Sunkern,Sunkern,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Sunflora,Sunflora,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Yanma,Yanma,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Wooper,Wooper,2,,windia,found,Wooper,21,Magician,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T19:51:03Z.
+Quagsire,Quagsire,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Murkrow,Murkrow,2,,windia,found,Murkrow,41,Bandit,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T15:24:43Z.
+Slowking,Slowking,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Misdreavus,Misdreavus,2,,windia,found,Misdreavus,37,Wizard (Fire/Poison),classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-23T13:31:55Z.
+Unown,Unown,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Wobbuffet,Wobbuffet,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Girafarig,Girafarig,2,,windia,found,Girafarig,22,Thief,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T19:45:43Z.
+Pineco,Pineco,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Forretress,Forretress,2,,windia,found,Forretress,20,Swordsman,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T14:28:09Z.
+Dunsparce,Dunsparce,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Gligar,Gligar,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Snubbull,Snubbull,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Granbull,Granbull,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Qwilfish,Qwilfish,2,,windia,found,Qwilfish,13,Archer,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-23T02:52:08Z.
+Shuckle,Shuckle,2,,windia,found,Shuckle,43,Hunter,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T20:40:07Z.
+Heracross,Heracross,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Sneasel,Sneasel,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Teddiursa,Teddiursa,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Ursaring,Ursaring,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Slugma,Slugma,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Magcargo,Magcargo,2,,windia,found,Magcargo,27,Magician,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-20T22:55:10Z.
+Swinub,Swinub,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Piloswine,Piloswine,2,,windia,found,Piloswine,25,Swordsman,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T19:12:46Z.
+Corsola,Corsola,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Remoraid,Remoraid,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Octillery,Octillery,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Delibird,Delibird,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Mantine,Mantine,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Skarmory,Skarmory,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Houndour,Houndour,2,,windia,found,Houndour,22,Thief,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-22T19:37:13Z.
+Houndoom,Houndoom,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Kingdra,Kingdra,2,,windia,found,Kingdra,43,Cleric,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T16:40:04Z.
+Phanpy,Phanpy,2,,windia,found,Phanpy,46,Bandit,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T17:36:53Z.
+Donphan,Donphan,2,,windia,found,Donphan,15,Swordsman,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T19:17:23Z.
+Stantler,Stantler,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Smeargle,Smeargle,2,,windia,found,Smeargle,34,Bandit,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-24T03:50:45Z.
+Tyrogue,Tyrogue,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Hitmontop,Hitmontop,2,,windia,found,Hitmontop,16,Archer,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T11:57:35Z.
+Smoochum,Smoochum,2,,windia,found,Smoochum,25,Magician,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T15:58:09Z.
+Elekid,Elekid,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Magby,Magby,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Miltank,Miltank,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Blissey,Blissey,2,,windia,found,Blissey,48,Cleric,classicrank,2026-10-26T20:56:10Z,Source last_checked 2026-10-26T08:13:19Z.
+Raikou,Raikou,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Entei,Entei,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Larvitar,Larvitar,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."
+Pupitar,Pupitar,2,,windia,not_found_in_source,,,,classicrank,2026-10-26T20:56:10Z,"ClassicRank only lists characters its Scanner/uploads have seen; hidden, removed and never-scanned characters are absent."

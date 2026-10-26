@@ -1,0 +1,93 @@
+{
+ "id": 10116,
+ "name": "Maya's Second Collection",
+ "area": 12,
+ "areaName": "Henesys",
+ "demandSummary": "#i4000010##t4000010# #b#c4000010##k / 20\\n#i4000014##t4000014# #b#c4000014##k / 20\\n#i4000026##t4000026# #b#c4000026##k / 20\\n#i4000028##t4000028# #b#c4000028##k / 20",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10117,
+   "levelMinimum": 47,
+   "quests": [
+    {
+     "id": 10116,
+     "state": 2
+    }
+   ],
+   "npcId": 207,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10116,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10116,
+  "exp": 4780,
+  "items": [
+   {
+    "id": 4000010,
+    "count": -20,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4000014,
+    "count": -20,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4000026,
+    "count": -20,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4000028,
+    "count": -20,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 2000003,
+    "count": 30,
+    "potentialGrade": "normal"
+   }
+  ],
+  "meso": 965,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10116,
+  "levelMinimum": 30,
+  "quests": [
+   {
+    "id": 10115,
+    "state": 2
+   }
+  ],
+  "npcId": 207,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10116,
+  "items": [
+   {
+    "count": 20,
+    "id": 4000010
+   },
+   {
+    "count": 20,
+    "id": 4000014
+   },
+   {
+    "count": 20,
+    "id": 4000026
+   },
+   {
+    "count": 20,
+    "id": 4000028
+   }
+  ],
+  "npcId": 207,
+  "state": 1
+ }
+}

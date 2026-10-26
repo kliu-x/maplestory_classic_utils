@@ -1,0 +1,55 @@
+{
+ "id": 506144,
+ "name": "Nella's Old Memory",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "Talk to #p402#",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506145,
+   "levelMinimum": 27,
+   "quests": [
+    {
+     "id": 506144,
+     "state": 2
+    }
+   ],
+   "npcId": 402,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506144,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506144,
+  "exp": 3750,
+  "items": [
+   {
+    "id": 2010005,
+    "count": 15
+   }
+  ],
+  "meso": 862,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506144,
+  "levelMinimum": 27,
+  "quests": [
+   {
+    "id": 506143,
+    "state": 2
+   }
+  ],
+  "npcId": 406,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506144,
+  "levelMinimum": 27,
+  "npcId": 402,
+  "state": 1
+ }
+}

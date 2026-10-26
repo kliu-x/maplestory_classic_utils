@@ -1,0 +1,20 @@
+{
+ "id": 10000002,
+ "name": "Lith Harbor Department Store",
+ "streetName": "Victoria Road",
+ "mapMark": "Rith",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10000000,
+ "vrBounds": {
+  "width": 800,
+  "height": 600
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 109
+  }
+ ],
+ "portals": []
+}

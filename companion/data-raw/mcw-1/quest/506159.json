@@ -1,0 +1,67 @@
+{
+ "id": 506159,
+ "name": "An Unbreakable Code",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#i4031132:# #t4031132:# #c4031132# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506160,
+   "levelMinimum": 57,
+   "quests": [
+    {
+     "id": 506159,
+     "state": 2
+    }
+   ],
+   "npcId": 436,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506159,
+  "items": [
+   {
+    "id": 4031132,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506159,
+  "exp": 17800,
+  "items": [
+   {
+    "id": 4031132,
+    "count": -1
+   }
+  ],
+  "meso": 1784,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506159,
+  "levelMinimum": 57,
+  "quests": [
+   {
+    "id": 506158,
+    "state": 2
+   }
+  ],
+  "npcId": 411,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506159,
+  "levelMinimum": 57,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031132
+   }
+  ],
+  "npcId": 436,
+  "state": 1
+ }
+}

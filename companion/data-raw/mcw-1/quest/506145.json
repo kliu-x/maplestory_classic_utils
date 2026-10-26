@@ -1,0 +1,67 @@
+{
+ "id": 506145,
+ "name": "One More Debt to Repay",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#i4031128:# #t4031128:# #c4031128# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506146,
+   "levelMinimum": 27,
+   "quests": [
+    {
+     "id": 506145,
+     "state": 2
+    }
+   ],
+   "npcId": 401,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506145,
+  "items": [
+   {
+    "id": 4031128,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506145,
+  "exp": 2625,
+  "items": [
+   {
+    "id": 4031128,
+    "count": -1
+   }
+  ],
+  "meso": 603,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506145,
+  "levelMinimum": 27,
+  "quests": [
+   {
+    "id": 506144,
+    "state": 2
+   }
+  ],
+  "npcId": 402,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506145,
+  "levelMinimum": 27,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031128
+   }
+  ],
+  "npcId": 401,
+  "state": 1
+ }
+}

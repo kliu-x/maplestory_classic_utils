@@ -1,0 +1,47 @@
+{
+ "id": 10106,
+ "name": "Maya of Henesys",
+ "area": 12,
+ "areaName": "Henesys",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10107,
+   "levelMinimum": 21,
+   "quests": [
+    {
+     "id": 10106,
+     "state": 2
+    }
+   ],
+   "npcId": 102,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10106,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10106,
+  "exp": 1309,
+  "items": [
+   {
+    "id": 2010003,
+    "count": 5
+   }
+  ],
+  "meso": 480,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10106,
+  "levelMinimum": 21,
+  "npcId": 207,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10106,
+  "npcId": 102,
+  "state": 1
+ }
+}

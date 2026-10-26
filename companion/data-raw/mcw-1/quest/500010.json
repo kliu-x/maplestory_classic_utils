@@ -1,0 +1,51 @@
+{
+ "id": 500010,
+ "name": "[Event] Halloween Candies",
+ "area": 99,
+ "areaName": "Event",
+ "demandSummary": "#questorder1##i4031129:# #t4031129:# #c4031129# / 100",
+ "questsAvailableOnComplete": [
+  {
+   "id": 500011,
+   "startTime": "2026-10-28T00:00:00",
+   "endTime": "2026-11-19T00:00:00",
+   "levelMinimum": 10,
+   "quests": [
+    {
+     "id": 500010,
+     "state": 2
+    }
+   ],
+   "npcId": 900026,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 500010,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 500010,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 500010,
+  "startTime": "2026-10-28T00:00:00",
+  "endTime": "2026-11-19T00:00:00",
+  "levelMinimum": 10,
+  "npcId": 900026,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 500010,
+  "levelMinimum": 10,
+  "items": [
+   {
+    "count": 100,
+    "id": 4031129
+   }
+  ],
+  "npcId": 900026,
+  "state": 1
+ }
+}

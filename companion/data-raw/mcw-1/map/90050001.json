@@ -1,0 +1,21 @@
+{
+ "id": 90050001,
+ "name": "Receiving the Reward For the Event",
+ "streetName": "Hidden Street",
+ "mapMark": "Event",
+ "isTown": false,
+ "mobRate": 1,
+ "returnMap": 90050000,
+ "vrBounds": {
+  "width": 1406,
+  "height": 679
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 900012,
+   "name": "Pietro"
+  }
+ ],
+ "portals": []
+}

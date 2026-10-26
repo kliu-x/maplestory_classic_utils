@@ -1,0 +1,47 @@
+{
+ "id": 10319,
+ "name": "In search of Wing the Fairy",
+ "area": 14,
+ "areaName": "Kerning City",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10320,
+   "levelMinimum": 46,
+   "quests": [
+    {
+     "id": 10319,
+     "state": 2
+    }
+   ],
+   "npcId": 309,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10319,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10319,
+  "exp": 7560,
+  "meso": 1012,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10319,
+  "levelMinimum": 46,
+  "quests": [
+   {
+    "id": 10318,
+    "state": 2
+   }
+  ],
+  "npcId": 407,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10319,
+  "npcId": 309,
+  "state": 1
+ }
+}

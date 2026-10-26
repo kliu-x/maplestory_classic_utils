@@ -1,0 +1,85 @@
+{
+ "id": 10306,
+ "name": "Dr. Faymus's Request",
+ "area": 14,
+ "areaName": "Kerning City",
+ "demandSummary": "#o18# #a103061#\\n#o19# #a103062#\\n#i4000018# #t4000018# #b#c4000018##k / 20\\n#i4000019# #t4000019# #b#c4000019##k / 20",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10307,
+   "levelMinimum": 22,
+   "quests": [
+    {
+     "id": 10306,
+     "state": 2
+    }
+   ],
+   "npcId": 406,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10306,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10306,
+  "exp": 2140,
+  "items": [
+   {
+    "id": 4000018,
+    "count": -20,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4000019,
+    "count": -20,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 2000002,
+    "count": 30,
+    "potentialGrade": "normal"
+   }
+  ],
+  "meso": 716,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10306,
+  "levelMinimum": 22,
+  "quests": [
+   {
+    "id": 10305,
+    "state": 2
+   }
+  ],
+  "npcId": 406,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10306,
+  "mobs": [
+   {
+    "count": 40,
+    "id": 18
+   },
+   {
+    "count": 40,
+    "id": 19
+   }
+  ],
+  "items": [
+   {
+    "count": 20,
+    "id": 4000018
+   },
+   {
+    "count": 20,
+    "id": 4000019
+   }
+  ],
+  "npcId": 406,
+  "state": 1
+ }
+}

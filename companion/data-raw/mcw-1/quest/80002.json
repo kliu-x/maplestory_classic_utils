@@ -1,0 +1,74 @@
+{
+ "id": 80002,
+ "name": "Make a Slime & Mushroom Omok Set",
+ "area": 12,
+ "areaName": "Henesys",
+ "demandSummary": "#i4031046:# #t4031046:# #c4031046# / 1\\n#i4031047:# #t4031047:# #c4031047# / 1\\n#i4031048:# #t4031048:# #c4031048# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 80003,
+   "levelMinimum": 12,
+   "quests": [
+    {
+     "id": 80002,
+     "state": 2
+    }
+   ],
+   "npcId": 228,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 80002,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80002,
+  "exp": 334,
+  "items": [
+   {
+    "id": 4031046,
+    "count": -1
+   },
+   {
+    "id": 4031047,
+    "count": -1
+   },
+   {
+    "id": 4031048,
+    "count": -1
+   },
+   {
+    "id": 4080000,
+    "count": 1
+   }
+  ],
+  "meso": 409,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80002,
+  "levelMinimum": 12,
+  "npcId": 228,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80002,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031046
+   },
+   {
+    "count": 1,
+    "id": 4031047
+   },
+   {
+    "count": 1,
+    "id": 4031048
+   }
+  ],
+  "npcId": 228,
+  "state": 1
+ }
+}

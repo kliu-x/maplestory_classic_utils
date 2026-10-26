@@ -1,0 +1,71 @@
+{
+ "id": 10105,
+ "name": "Camila's Gem",
+ "area": 12,
+ "areaName": "Henesys",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506046,
+   "levelMinimum": 37,
+   "quests": [
+    {
+     "id": 506005,
+     "state": 2
+    },
+    {
+     "id": 10105,
+     "state": 2
+    }
+   ],
+   "npcId": 204,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10105,
+  "items": [
+   {
+    "id": 4031008,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10105,
+  "exp": 2750,
+  "items": [
+   {
+    "id": 4031008,
+    "count": -1
+   },
+   {
+    "id": 2020002,
+    "count": 30
+   },
+   {
+    "id": 1322014,
+    "count": 1
+   }
+  ],
+  "meso": 775,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10105,
+  "levelMinimum": 24,
+  "npcId": 204,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10105,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031008
+   }
+  ],
+  "npcId": 225,
+  "state": 1
+ }
+}

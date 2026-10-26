@@ -1,0 +1,63 @@
+{
+ "id": 80010,
+ "name": "Silas Irons in Need of Help",
+ "area": 19,
+ "areaName": "Crafting",
+ "demandSummary": "#o14# #a800101#\\n#i4010102:# #t4010102:# #c4010102# / 1",
+ "rewardOnStart": {
+  "id": 80010,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80010,
+  "exp": 669,
+  "items": [
+   {
+    "id": 4010102,
+    "count": -1
+   },
+   {
+    "id": 2002007,
+    "count": 1
+   }
+  ],
+  "skills": [
+   {
+    "id": 92000000,
+    "masterLevel": -1,
+    "skillLevel": -1
+   }
+  ],
+  "meso": 497,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80010,
+  "levelMinimum": 15,
+  "quests": [
+   {
+    "id": 80008,
+    "state": 2
+   }
+  ],
+  "npcId": 504,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80010,
+  "mobs": [
+   {
+    "count": 25,
+    "id": 14
+   }
+  ],
+  "items": [
+   {
+    "count": 1,
+    "id": 4010102
+   }
+  ],
+  "npcId": 504,
+  "state": 1
+ }
+}

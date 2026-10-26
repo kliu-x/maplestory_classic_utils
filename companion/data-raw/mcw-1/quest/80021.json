@@ -1,0 +1,63 @@
+{
+ "id": 80021,
+ "name": "A Leatherworker in My Own Right!",
+ "area": 19,
+ "areaName": "Crafting",
+ "demandSummary": "#o22# #a800211#\\n#i3010005:# #t3010005:# #c3010005# / 1",
+ "rewardOnStart": {
+  "id": 80021,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80021,
+  "exp": 3060,
+  "items": [
+   {
+    "id": 3010005,
+    "count": -1
+   },
+   {
+    "id": 4130002,
+    "count": 1
+   }
+  ],
+  "skills": [
+   {
+    "id": 92040000,
+    "masterLevel": -1,
+    "skillLevel": -1
+   }
+  ],
+  "meso": 804,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80021,
+  "levelMinimum": 25,
+  "quests": [
+   {
+    "id": 80020,
+    "state": 2
+   }
+  ],
+  "npcId": 401,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80021,
+  "mobs": [
+   {
+    "count": 30,
+    "id": 22
+   }
+  ],
+  "items": [
+   {
+    "count": 1,
+    "id": 3010005
+   }
+  ],
+  "npcId": 401,
+  "state": 1
+ }
+}

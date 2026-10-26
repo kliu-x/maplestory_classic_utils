@@ -1,0 +1,48 @@
+{
+ "id": 506113,
+ "name": "First Greeting with Mr. Pickall, the Town Resident",
+ "area": 20,
+ "areaName": "Citizenship",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506114,
+   "levelMinimum": 12,
+   "quests": [
+    {
+     "id": 506113,
+     "state": 2
+    }
+   ],
+   "npcId": 431,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506113,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506113,
+  "exp": 334,
+  "items": [
+   {
+    "id": 2010004,
+    "count": 8
+   }
+  ],
+  "meso": 409,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506113,
+  "levelMinimum": 12,
+  "npcId": 431,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506113,
+  "levelMinimum": 12,
+  "npcId": 900015,
+  "state": 1
+ }
+}

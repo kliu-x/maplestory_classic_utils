@@ -1,0 +1,71 @@
+{
+ "id": 506049,
+ "name": "A Marble Made With Care",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#i4031121# #t4031121# #c4031121# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506050,
+   "levelMinimum": 37,
+   "quests": [
+    {
+     "id": 506049,
+     "state": 2
+    }
+   ],
+   "npcId": 218,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506049,
+  "items": [
+   {
+    "id": 4031121,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506049,
+  "exp": 7310,
+  "items": [
+   {
+    "id": 4031121,
+    "count": -1
+   },
+   {
+    "id": 2000003,
+    "count": 20
+   }
+  ],
+  "meso": 1170,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506049,
+  "levelMinimum": 37,
+  "quests": [
+   {
+    "id": 506048,
+    "state": 2
+   }
+  ],
+  "npcId": 204,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506049,
+  "levelMinimum": 37,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031121
+   }
+  ],
+  "npcId": 218,
+  "state": 1
+ }
+}

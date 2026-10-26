@@ -1,0 +1,50 @@
+{
+ "id": 10009,
+ "name": "Olaf's Second Training",
+ "area": 11,
+ "areaName": "Lith Harbor",
+ "demandSummary": "#o8# #a100091#\\n#o9# #a100092#",
+ "rewardOnStart": {
+  "id": 10009,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10009,
+  "exp": 124,
+  "items": [
+   {
+    "id": 2030000,
+    "count": 3
+   }
+  ],
+  "meso": 277,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10009,
+  "levelMinimum": 8,
+  "quests": [
+   {
+    "id": 10000,
+    "state": 2
+   }
+  ],
+  "npcId": 107,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10009,
+  "mobs": [
+   {
+    "count": 8,
+    "id": 8
+   },
+   {
+    "count": 8,
+    "id": 9
+   }
+  ],
+  "npcId": 107,
+  "state": 1
+ }
+}

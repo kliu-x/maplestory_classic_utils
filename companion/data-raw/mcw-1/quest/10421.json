@@ -1,0 +1,47 @@
+{
+ "id": 10421,
+ "name": "Monstrous Tree Stumpy",
+ "area": 15,
+ "areaName": "Perion",
+ "demandSummary": "#o700007# #r#a104211##k",
+ "rewardOnStart": {
+  "id": 10421,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10421,
+  "exp": 3937,
+  "fame": 5,
+  "items": [
+   {
+    "id": 2040815,
+    "count": 1
+   }
+  ],
+  "meso": 1082,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10421,
+  "levelMinimum": 34,
+  "quests": [
+   {
+    "id": 10420,
+    "state": 2
+   }
+  ],
+  "npcId": 512,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10421,
+  "mobs": [
+   {
+    "count": 1,
+    "id": 700007
+   }
+  ],
+  "npcId": 512,
+  "state": 1
+ }
+}

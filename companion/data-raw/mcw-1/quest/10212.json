@@ -1,0 +1,64 @@
+{
+ "id": 10212,
+ "name": "How to Enjoy Mushrooms Even More",
+ "area": 13,
+ "areaName": "Ellinia",
+ "demandSummary": "#o13# #a102121#\\n#i4000013:# #t4000013:# #c4000013# / 15\\n#i2010005:# #t2010005:# #c2010005# / 1",
+ "rewardOnStart": {
+  "id": 10212,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10212,
+  "exp": 535,
+  "items": [
+   {
+    "id": 4000013,
+    "count": -15
+   },
+   {
+    "id": 2010005,
+    "count": -1
+   },
+   {
+    "id": 4010001,
+    "count": 5
+   }
+  ],
+  "meso": 468,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10212,
+  "levelMinimum": 14,
+  "quests": [
+   {
+    "id": 10211,
+    "state": 2
+   }
+  ],
+  "npcId": 306,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10212,
+  "mobs": [
+   {
+    "count": 30,
+    "id": 13
+   }
+  ],
+  "items": [
+   {
+    "count": 15,
+    "id": 4000013
+   },
+   {
+    "count": 1,
+    "id": 2010005
+   }
+  ],
+  "npcId": 306,
+  "state": 1
+ }
+}

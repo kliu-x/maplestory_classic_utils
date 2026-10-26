@@ -1,0 +1,25 @@
+{
+ "id": 90040102,
+ "name": "Up and Up <Level 2>",
+ "streetName": "Hidden Street",
+ "mapMark": "Event",
+ "isTown": false,
+ "mobRate": 0,
+ "returnMap": 90050000,
+ "vrBounds": {
+  "width": 0,
+  "height": 0
+ },
+ "mobs": [],
+ "npcs": [],
+ "portals": [
+  {
+   "toMap": 90040102,
+   "portalName": "np01"
+  },
+  {
+   "toMap": 90040102,
+   "portalName": "np02"
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "id": 10302,
+ "name": "Mother's Gold Watch",
+ "area": 14,
+ "areaName": "Kerning City",
+ "demandSummary": "#i4031006:# #t4031006:# #c4031006# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506142,
+   "levelMinimum": 27,
+   "quests": [
+    {
+     "id": 10302,
+     "state": 2
+    },
+    {
+     "id": 506101,
+     "state": 2
+    }
+   ],
+   "npcId": 402,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10302,
+  "items": [
+   {
+    "id": 4031006,
+    "count": 1,
+    "potentialGrade": "normal"
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10302,
+  "exp": 1170,
+  "items": [
+   {
+    "id": 4031006,
+    "count": -1,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 1032002,
+    "count": 1,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 1032003,
+    "count": 1,
+    "potentialGrade": "normal"
+   }
+  ],
+  "meso": 585,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10302,
+  "levelMinimum": 18,
+  "quests": [
+   {
+    "id": 10301,
+    "state": 2
+   }
+  ],
+  "npcId": 202,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10302,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031006
+   }
+  ],
+  "npcId": 402,
+  "state": 1
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "id": 10304,
+ "name": "Shumi's Request",
+ "area": 14,
+ "areaName": "Kerning City",
+ "demandSummary": "#o11# #a103041#\\n#i4000011:# #t4000011:# #c4000011# / 15",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10305,
+   "levelMinimum": 10,
+   "quests": [
+    {
+     "id": 10304,
+     "state": 2
+    }
+   ],
+   "npcId": 406,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10304,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10304,
+  "exp": 188,
+  "items": [
+   {
+    "id": 4000011,
+    "count": -15
+   },
+   {
+    "id": 2020002,
+    "count": 20
+   }
+  ],
+  "meso": 351,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10304,
+  "levelMinimum": 10,
+  "quests": [
+   {
+    "id": 10303,
+    "state": 2
+   }
+  ],
+  "npcId": 406,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10304,
+  "mobs": [
+   {
+    "count": 25,
+    "id": 11
+   }
+  ],
+  "items": [
+   {
+    "count": 15,
+    "id": 4000011
+   }
+  ],
+  "npcId": 406,
+  "state": 1
+ }
+}

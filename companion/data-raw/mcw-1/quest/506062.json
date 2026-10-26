@@ -1,0 +1,48 @@
+{
+ "id": 506062,
+ "name": "Looking for a House",
+ "area": 20,
+ "areaName": "Citizenship",
+ "rewardOnStart": {
+  "id": 506062,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506062,
+  "exp": 772,
+  "items": [
+   {
+    "id": 3000000,
+    "count": 1
+   },
+   {
+    "id": 3000013,
+    "count": 1
+   },
+   {
+    "id": 3000015,
+    "count": 1
+   }
+  ],
+  "meso": 388,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506062,
+  "levelMinimum": 17,
+  "quests": [
+   {
+    "id": 506061,
+    "state": 2
+   }
+  ],
+  "npcId": 230,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506062,
+  "levelMinimum": 17,
+  "npcId": 231,
+  "state": 1
+ }
+}

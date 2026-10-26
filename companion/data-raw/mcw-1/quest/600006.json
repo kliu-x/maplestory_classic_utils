@@ -1,0 +1,52 @@
+{
+ "id": 600006,
+ "name": "[Event] The Second Mark",
+ "area": 99,
+ "areaName": "Event",
+ "demandSummary": "Search for an unfamiliar dwelling and investigate the area around it.",
+ "rewardSummary": "#i2430049# #t2430049# x1",
+ "disableAtNPC": true,
+ "disableAtStartTab": true,
+ "questsAvailableOnComplete": [
+  {
+   "id": 600007,
+   "startTime": "2026-10-21T00:00:00",
+   "endTime": "2026-11-19T00:00:00",
+   "levelMinimum": 25,
+   "quests": [
+    {
+     "id": 600006,
+     "state": 2
+    }
+   ],
+   "npcId": 205,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 600006,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 600006,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 600006,
+  "startTime": "2026-10-21T00:00:00",
+  "endTime": "2026-11-19T00:00:00",
+  "levelMinimum": 25,
+  "quests": [
+   {
+    "id": 600005,
+    "state": 2
+   }
+  ],
+  "npcId": 205,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 600006,
+  "state": 1
+ }
+}

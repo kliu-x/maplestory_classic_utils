@@ -1,0 +1,23 @@
+{
+ "id": 21,
+ "name": "Zombie Mushroom",
+ "meta": {
+  "isBodyAttack": true,
+  "level": 24,
+  "maxHP": 436,
+  "maxMP": 30,
+  "speed": 0,
+  "physicalDamage": 124,
+  "physicalDefense": 15,
+  "magicDamage": 0,
+  "magicDefense": 15,
+  "accuracy": 99,
+  "evasion": 14,
+  "exp": 45,
+  "isUndead": true,
+  "minimumPushDamage": 40,
+  "elementalAttributes": "H3",
+  "summonType": 1,
+  "revivesMonsterId": []
+ }
+}

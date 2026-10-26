@@ -1,0 +1,53 @@
+{
+ "id": 10107,
+ "name": "Finding Sophia",
+ "area": 12,
+ "areaName": "Henesys",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10108,
+   "levelMinimum": 21,
+   "quests": [
+    {
+     "id": 10107,
+     "state": 2
+    }
+   ],
+   "npcId": 510,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10107,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10107,
+  "exp": 1870,
+  "items": [
+   {
+    "id": 2010003,
+    "count": 5
+   }
+  ],
+  "meso": 687,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10107,
+  "levelMinimum": 21,
+  "quests": [
+   {
+    "id": 10106,
+    "state": 2
+   }
+  ],
+  "npcId": 102,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10107,
+  "npcId": 510,
+  "state": 1
+ }
+}

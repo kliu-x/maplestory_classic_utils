@@ -1,0 +1,76 @@
+{
+ "id": 10617,
+ "name": "Matters of the Heart",
+ "area": 17,
+ "areaName": "Forgotten Hollow",
+ "demandSummary": "#i4031115# #t4031115# #b#c4031115##k / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10618,
+   "startTime": "2026-12-09T00:00:00",
+   "levelMinimum": 45,
+   "quests": [
+    {
+     "id": 10617,
+     "state": 2
+    }
+   ],
+   "npcId": 711,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10617,
+  "items": [
+   {
+    "id": 4031115,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10617,
+  "exp": 10400,
+  "items": [
+   {
+    "id": 4031115,
+    "count": -1
+   },
+   {
+    "id": 2041025,
+    "count": 1
+   },
+   {
+    "id": 2041026,
+    "count": 1
+   }
+  ],
+  "meso": 1418,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10617,
+  "startTime": "2026-12-09T00:00:00",
+  "levelMinimum": 45,
+  "quests": [
+   {
+    "id": 10616,
+    "state": 2
+   }
+  ],
+  "npcId": 707,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10617,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031115
+   }
+  ],
+  "npcId": 711,
+  "state": 1
+ }
+}

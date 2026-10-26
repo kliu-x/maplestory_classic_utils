@@ -1,0 +1,73 @@
+{
+ "id": 80020,
+ "name": "JM From tha Streetz Looking for a Partner",
+ "area": 19,
+ "areaName": "Crafting",
+ "demandSummary": "#o8# #a800201#\\n#i4000049:# #t4000049:# #c4000049# / 5",
+ "questsAvailableOnComplete": [
+  {
+   "id": 80021,
+   "levelMinimum": 25,
+   "quests": [
+    {
+     "id": 80020,
+     "state": 2
+    }
+   ],
+   "npcId": 401,
+   "state": 0
+  },
+  {
+   "id": 80022,
+   "levelMinimum": 15,
+   "quests": [
+    {
+     "id": 80020,
+     "state": 2
+    }
+   ],
+   "npcId": 401,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 80020,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80020,
+  "exp": 188,
+  "skills": [
+   {
+    "id": 92040000,
+    "masterLevel": -1,
+    "skillLevel": -1
+   }
+  ],
+  "meso": 351,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80020,
+  "levelMinimum": 10,
+  "npcId": 401,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80020,
+  "mobs": [
+   {
+    "count": 30,
+    "id": 8
+   }
+  ],
+  "items": [
+   {
+    "count": 5,
+    "id": 4000049
+   }
+  ],
+  "npcId": 401,
+  "state": 1
+ }
+}

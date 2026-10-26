@@ -1,0 +1,1757 @@
+[
+ {
+  "id": 1000,
+  "name": "Borrowing Sera's Mirror",
+  "minLevel": 1
+ },
+ {
+  "id": 1001,
+  "name": "Bringing a Mirror to Heena"
+ },
+ {
+  "id": 1002,
+  "name": "Roger's Apple",
+  "minLevel": 1
+ },
+ {
+  "id": 1003,
+  "name": "What Sen wants to eat",
+  "minLevel": 1
+ },
+ {
+  "id": 1004,
+  "name": "Returning to Nina"
+ },
+ {
+  "id": 1005,
+  "name": "Todd's How-to-Hunt",
+  "minLevel": 1
+ },
+ {
+  "id": 1006,
+  "name": "Sam's Suggestion",
+  "minLevel": 1
+ },
+ {
+  "id": 1007,
+  "name": "Letter for Lucas",
+  "minLevel": 2
+ },
+ {
+  "id": 1008,
+  "name": "Lucas's Reply"
+ },
+ {
+  "id": 1009,
+  "name": "Mai's Training",
+  "minLevel": 3
+ },
+ {
+  "id": 1010,
+  "name": "Mai's Final Training"
+ },
+ {
+  "id": 1011,
+  "name": "Biggs's Collection of Items",
+  "minLevel": 3
+ },
+ {
+  "id": 1012,
+  "name": "Pio's Collecting Recycled Goods",
+  "minLevel": 5
+ },
+ {
+  "id": 1013,
+  "name": "Rain's Maple Quiz 1",
+  "minLevel": 5
+ },
+ {
+  "id": 1014,
+  "name": "Rain's Maple Quiz 2",
+  "minLevel": 5
+ },
+ {
+  "id": 1015,
+  "name": "Rain's Maple Quiz 3",
+  "minLevel": 5
+ },
+ {
+  "id": 1016,
+  "name": "Rain's Maple Quiz 4",
+  "minLevel": 5
+ },
+ {
+  "id": 1017,
+  "name": "Rain's Maple Quiz 5",
+  "minLevel": 5
+ },
+ {
+  "id": 1018,
+  "name": "Rain's Maple Quiz 6",
+  "minLevel": 5
+ },
+ {
+  "id": 1019,
+  "name": "Rain's Maple Quiz 7",
+  "minLevel": 5
+ },
+ {
+  "id": 7707,
+  "name": "Midnight Rest Quest"
+ },
+ {
+  "id": 10000,
+  "name": "Olaf's First Training",
+  "minLevel": 8
+ },
+ {
+  "id": 10001,
+  "name": "Phil's Call",
+  "minLevel": 8
+ },
+ {
+  "id": 10002,
+  "name": "Jane and the Mushroom",
+  "minLevel": 20
+ },
+ {
+  "id": 10003,
+  "name": "Jane's First Challenge",
+  "minLevel": 44
+ },
+ {
+  "id": 10004,
+  "name": "Jane's Second Challenge",
+  "minLevel": 44
+ },
+ {
+  "id": 10005,
+  "name": "Jane's Final Challenge",
+  "minLevel": 44
+ },
+ {
+  "id": 10006,
+  "name": "[Deep Forest of Patience] John's Pink Flower Basket",
+  "minLevel": 65
+ },
+ {
+  "id": 10007,
+  "name": "[Deep Forest of Patience] John's Present",
+  "minLevel": 65
+ },
+ {
+  "id": 10008,
+  "name": "[Deep Forest of Patience] John's Last Present",
+  "minLevel": 65
+ },
+ {
+  "id": 10009,
+  "name": "Olaf's Second Training",
+  "minLevel": 8
+ },
+ {
+  "id": 10010,
+  "name": "Teo's Weird Hobby",
+  "minLevel": 8
+ },
+ {
+  "id": 10011,
+  "name": "Teo's Even Weirder Hobby",
+  "minLevel": 8
+ },
+ {
+  "id": 10100,
+  "name": "Mrs. Ming Ming's First Worry",
+  "minLevel": 15
+ },
+ {
+  "id": 10101,
+  "name": "Mrs. Ming Ming's Second Worry",
+  "minLevel": 15
+ },
+ {
+  "id": 10102,
+  "name": "Estelle's Request",
+  "minLevel": 15
+ },
+ {
+  "id": 10103,
+  "name": "Estelle's Special Sauce",
+  "minLevel": 15
+ },
+ {
+  "id": 10104,
+  "name": "Pia and the Blue Mushroom",
+  "minLevel": 16
+ },
+ {
+  "id": 10105,
+  "name": "Camila's Gem",
+  "minLevel": 24
+ },
+ {
+  "id": 10106,
+  "name": "Maya of Henesys",
+  "minLevel": 21
+ },
+ {
+  "id": 10107,
+  "name": "Finding Sophia",
+  "minLevel": 21
+ },
+ {
+  "id": 10108,
+  "name": "Making a Sparkling Rock",
+  "minLevel": 21
+ },
+ {
+  "id": 10109,
+  "name": "Arcon's Blood?",
+  "minLevel": 21
+ },
+ {
+  "id": 10110,
+  "name": "Getting Arcon's Blood",
+  "minLevel": 21
+ },
+ {
+  "id": 10111,
+  "name": "Making Sparkling Rock",
+  "minLevel": 21
+ },
+ {
+  "id": 10112,
+  "name": "Delivering the Weird Medicine",
+  "minLevel": 21
+ },
+ {
+  "id": 10113,
+  "name": "Luke the Security Guy",
+  "minLevel": 19
+ },
+ {
+  "id": 10114,
+  "name": "Luke the Security Guy's Wish to Travel",
+  "minLevel": 46
+ },
+ {
+  "id": 10115,
+  "name": "Maya's First Collection",
+  "minLevel": 30
+ },
+ {
+  "id": 10116,
+  "name": "Maya's Second Collection",
+  "minLevel": 30
+ },
+ {
+  "id": 10117,
+  "name": "Maya's Third Collection",
+  "minLevel": 47
+ },
+ {
+  "id": 10118,
+  "name": "Maya's Last Collection",
+  "minLevel": 47
+ },
+ {
+  "id": 10119,
+  "name": "Pia's Present For a Friend",
+  "minLevel": 42
+ },
+ {
+  "id": 10120,
+  "name": "Looking for the Red Cape",
+  "minLevel": 42
+ },
+ {
+  "id": 10121,
+  "name": "What Pia Borrowed",
+  "minLevel": 42
+ },
+ {
+  "id": 10122,
+  "name": "Pia's Gift",
+  "minLevel": 42
+ },
+ {
+  "id": 10123,
+  "name": "The Reason Behind the Mushroom Studies",
+  "minLevel": 10
+ },
+ {
+  "id": 10124,
+  "name": "I Need to Find My Daughter 1",
+  "minLevel": 11
+ },
+ {
+  "id": 10125,
+  "name": "I Need to Find My Daughter 2",
+  "minLevel": 11
+ },
+ {
+  "id": 10126,
+  "name": "The Old Snail",
+  "minLevel": 20
+ },
+ {
+  "id": 10127,
+  "name": "Hero of the Story",
+  "minLevel": 20
+ },
+ {
+  "id": 10128,
+  "name": "Snail Hunt",
+  "minLevel": 20
+ },
+ {
+  "id": 10129,
+  "name": "What I Learned About Snails",
+  "minLevel": 20
+ },
+ {
+  "id": 10130,
+  "name": "A rainbow snail shell that makes wishes come true!?",
+  "minLevel": 20
+ },
+ {
+  "id": 10200,
+  "name": "Arwen and the Glass Shoe",
+  "minLevel": 29
+ },
+ {
+  "id": 10201,
+  "name": "Collecting 50 Cursed Dolls",
+  "minLevel": 36
+ },
+ {
+  "id": 10202,
+  "name": "Collecting 70 Cursed Dolls",
+  "minLevel": 36
+ },
+ {
+  "id": 10203,
+  "name": "Collecting 100 Cursed Dolls",
+  "minLevel": 36
+ },
+ {
+  "id": 10204,
+  "name": "Collecting 150 Cursed Dolls",
+  "minLevel": 36
+ },
+ {
+  "id": 10205,
+  "name": "Collecting 200 Cursed Dolls",
+  "minLevel": 36
+ },
+ {
+  "id": 10206,
+  "name": "First Material Delivery for Building a New House",
+  "minLevel": 41
+ },
+ {
+  "id": 10207,
+  "name": "Second Material Delivery for Building a New House",
+  "minLevel": 41
+ },
+ {
+  "id": 10208,
+  "name": "Third Material Delivery for Building a New House",
+  "minLevel": 41
+ },
+ {
+  "id": 10209,
+  "name": "Last Material Delivery for Building a New House",
+  "minLevel": 41
+ },
+ {
+  "id": 10210,
+  "name": "I Need Help on My Homework!",
+  "minLevel": 10
+ },
+ {
+  "id": 10211,
+  "name": "How to Enjoy Mushrooms",
+  "minLevel": 14
+ },
+ {
+  "id": 10212,
+  "name": "How to Enjoy Mushrooms Even More",
+  "minLevel": 14
+ },
+ {
+  "id": 10213,
+  "name": "The Filing Error",
+  "minLevel": 28
+ },
+ {
+  "id": 10214,
+  "name": "Chief Stan's Signature",
+  "minLevel": 28
+ },
+ {
+  "id": 10215,
+  "name": "Repairing the Book",
+  "minLevel": 28
+ },
+ {
+  "id": 10216,
+  "name": "The Faded Ink",
+  "minLevel": 28
+ },
+ {
+  "id": 10217,
+  "name": "The Dark Lord's Signature",
+  "minLevel": 28
+ },
+ {
+  "id": 10218,
+  "name": "We Hold Your Place",
+  "minLevel": 28
+ },
+ {
+  "id": 10300,
+  "name": "Alex's Request",
+  "minLevel": 18
+ },
+ {
+  "id": 10301,
+  "name": "Talking to Stan",
+  "minLevel": 18
+ },
+ {
+  "id": 10302,
+  "name": "Mother's Gold Watch",
+  "minLevel": 18
+ },
+ {
+  "id": 10303,
+  "name": "Don Hwang's Request",
+  "minLevel": 10
+ },
+ {
+  "id": 10304,
+  "name": "Shumi's Request",
+  "minLevel": 10
+ },
+ {
+  "id": 10305,
+  "name": "Andre's Request",
+  "minLevel": 10
+ },
+ {
+  "id": 10306,
+  "name": "Dr. Faymus's Request",
+  "minLevel": 22
+ },
+ {
+  "id": 10307,
+  "name": "Chris's Request",
+  "minLevel": 22
+ },
+ {
+  "id": 10308,
+  "name": "Cutthroat Manny's Request",
+  "minLevel": 22
+ },
+ {
+  "id": 10309,
+  "name": "Stranger's Request",
+  "minLevel": 23
+ },
+ {
+  "id": 10310,
+  "name": "Stranger's Identity",
+  "minLevel": 23
+ },
+ {
+  "id": 10311,
+  "name": "Proof of Companionship",
+  "minLevel": 21
+ },
+ {
+  "id": 10312,
+  "name": "[Construction Site B1] Shumi's Lost Coin",
+  "minLevel": 35
+ },
+ {
+  "id": 10313,
+  "name": "[Construction Site B2] Shumi's Lost Roll of Cash",
+  "minLevel": 35
+ },
+ {
+  "id": 10314,
+  "name": "[Construction Site B3] Shumi's Lost Sack of Cash",
+  "minLevel": 35
+ },
+ {
+  "id": 10315,
+  "name": "I'm Bored 1",
+  "minLevel": 11
+ },
+ {
+  "id": 10316,
+  "name": "I'm Bored 2",
+  "minLevel": 11
+ },
+ {
+  "id": 10317,
+  "name": "Icarus's Hang Glider",
+  "minLevel": 31
+ },
+ {
+  "id": 10318,
+  "name": "Icarus and the Balloon",
+  "minLevel": 31
+ },
+ {
+  "id": 10319,
+  "name": "In search of Wing the Fairy",
+  "minLevel": 46
+ },
+ {
+  "id": 10320,
+  "name": "The Ingredients for the Flying Medicine",
+  "minLevel": 46
+ },
+ {
+  "id": 10321,
+  "name": "Delivering the Flying Medicine",
+  "minLevel": 46
+ },
+ {
+  "id": 10400,
+  "name": "Fixing Blackbull's House",
+  "minLevel": 11
+ },
+ {
+  "id": 10401,
+  "name": "Building a New House For Blackbull",
+  "minLevel": 48
+ },
+ {
+  "id": 10402,
+  "name": "Old Gladius",
+  "minLevel": 50
+ },
+ {
+  "id": 10403,
+  "name": "Reawakening the Gladius",
+  "minLevel": 50
+ },
+ {
+  "id": 10404,
+  "name": "Hero's Gladius",
+  "minLevel": 50
+ },
+ {
+  "id": 10405,
+  "name": "Searching for Fossils",
+  "minLevel": 17
+ },
+ {
+  "id": 10406,
+  "name": "Delivering a Box of Fossils",
+  "minLevel": 17
+ },
+ {
+  "id": 10407,
+  "name": "Research on Plant Fossils",
+  "minLevel": 17
+ },
+ {
+  "id": 10408,
+  "name": "Research on Animal Fossils",
+  "minLevel": 17
+ },
+ {
+  "id": 10409,
+  "name": "Transporting Drake's Skull",
+  "minLevel": 17
+ },
+ {
+  "id": 10410,
+  "name": "Progress on Fossil Research",
+  "minLevel": 17
+ },
+ {
+  "id": 10411,
+  "name": "The Stump Horror Story",
+  "minLevel": 10
+ },
+ {
+  "id": 10412,
+  "name": "Taking Out the Alligators 1",
+  "minLevel": 48
+ },
+ {
+  "id": 10413,
+  "name": "Taking Out the Alligators 2",
+  "minLevel": 48
+ },
+ {
+  "id": 10414,
+  "name": "Truth of the Rumor",
+  "minLevel": 34
+ },
+ {
+  "id": 10415,
+  "name": "Truth of the Rumor-Blackbull",
+  "minLevel": 34
+ },
+ {
+  "id": 10416,
+  "name": "Truth of the Rumor-Manji",
+  "minLevel": 34
+ },
+ {
+  "id": 10417,
+  "name": "Truth of the Rumor- Dances with Balrog",
+  "minLevel": 34
+ },
+ {
+  "id": 10418,
+  "name": "Truth of the Rumor-Betty",
+  "minLevel": 34
+ },
+ {
+  "id": 10419,
+  "name": "A Report for the Doctor",
+  "minLevel": 34
+ },
+ {
+  "id": 10420,
+  "name": "Stump Research",
+  "minLevel": 34
+ },
+ {
+  "id": 10421,
+  "name": "Monstrous Tree Stumpy",
+  "minLevel": 34
+ },
+ {
+  "id": 10500,
+  "name": "A Clue to the Secret Book",
+  "minLevel": 32
+ },
+ {
+  "id": 10501,
+  "name": "Hungry Ronnie",
+  "minLevel": 32
+ },
+ {
+  "id": 10502,
+  "name": "Still Hungry Ronnie",
+  "minLevel": 32
+ },
+ {
+  "id": 10503,
+  "name": "Secret to Unagi Special",
+  "minLevel": 32
+ },
+ {
+  "id": 10504,
+  "name": "Rina's Unagi Special",
+  "minLevel": 32
+ },
+ {
+  "id": 10505,
+  "name": "Thirsty Ronnie",
+  "minLevel": 32
+ },
+ {
+  "id": 10506,
+  "name": "Cold Milk",
+  "minLevel": 32
+ },
+ {
+  "id": 10507,
+  "name": "Satisfied Ronnie",
+  "minLevel": 32
+ },
+ {
+  "id": 10508,
+  "name": "Returned Secret Book",
+  "minLevel": 32
+ },
+ {
+  "id": 10509,
+  "name": "[Forest of Patience] Sabitrama and the Diet Medicine",
+  "minLevel": 25
+ },
+ {
+  "id": 10510,
+  "name": "[Forest of Patience] Sabitrama's Anti-Aging Medicine",
+  "minLevel": 50
+ },
+ {
+  "id": 10617,
+  "name": "Matters of the Heart",
+  "minLevel": 45,
+  "availabilityStart": "2026-12-09T00:00:00"
+ },
+ {
+  "id": 10618,
+  "name": "A Memory of Iron",
+  "minLevel": 45,
+  "availabilityStart": "2026-12-09T00:00:00"
+ },
+ {
+  "id": 10619,
+  "name": "A Heart of Stillness and Wood",
+  "minLevel": 50,
+  "availabilityStart": "2026-12-09T00:00:00"
+ },
+ {
+  "id": 10620,
+  "name": "The Sage's Burden",
+  "minLevel": 50,
+  "availabilityStart": "2026-12-09T00:00:00"
+ },
+ {
+  "id": 10621,
+  "name": "Embers in the Garden",
+  "minLevel": 50,
+  "availabilityStart": "2026-11-18T00:00:00"
+ },
+ {
+  "id": 10622,
+  "name": "Words Nobody Taught",
+  "minLevel": 50,
+  "availabilityStart": "2026-11-18T00:00:00"
+ },
+ {
+  "id": 10623,
+  "name": "Boughs for the Lanterns",
+  "minLevel": 50,
+  "availabilityStart": "2026-11-18T00:00:00"
+ },
+ {
+  "id": 10624,
+  "name": "Charms Gone Gray",
+  "minLevel": 55,
+  "availabilityStart": "2026-11-18T00:00:00"
+ },
+ {
+  "id": 10625,
+  "name": "The Dilapidated Tomb",
+  "minLevel": 55,
+  "availabilityStart": "2026-11-18T00:00:00"
+ },
+ {
+  "id": 10626,
+  "name": "The Last Lantern",
+  "minLevel": 55,
+  "availabilityStart": "2026-11-18T00:00:00"
+ },
+ {
+  "id": 10700,
+  "name": "Special Taste of Florina Beach I",
+  "minLevel": 37
+ },
+ {
+  "id": 10701,
+  "name": "Special Taste of Florina Beach II",
+  "minLevel": 37
+ },
+ {
+  "id": 10702,
+  "name": "Special Taste of Florina Beach III",
+  "minLevel": 37
+ },
+ {
+  "id": 10703,
+  "name": "Special Taste of Florina Beach IV",
+  "minLevel": 37
+ },
+ {
+  "id": 20000,
+  "name": "The Warrior's Next Journey",
+  "minLevel": 30
+ },
+ {
+  "id": 20001,
+  "name": "Finding the Instructor",
+  "minLevel": 30
+ },
+ {
+  "id": 20002,
+  "name": "Test of Qualification",
+  "minLevel": 30
+ },
+ {
+  "id": 20003,
+  "name": "Proof of Qualification",
+  "minLevel": 30
+ },
+ {
+  "id": 20100,
+  "name": "The Magician's Next Journey",
+  "minLevel": 30
+ },
+ {
+  "id": 20101,
+  "name": "Finding the Instructor",
+  "minLevel": 30
+ },
+ {
+  "id": 20102,
+  "name": "Test of Qualification",
+  "minLevel": 30
+ },
+ {
+  "id": 20103,
+  "name": "Proof of Qualification",
+  "minLevel": 30
+ },
+ {
+  "id": 20200,
+  "name": "The Bowman's Next Journey",
+  "minLevel": 30
+ },
+ {
+  "id": 20201,
+  "name": "Finding the Instructor",
+  "minLevel": 30
+ },
+ {
+  "id": 20202,
+  "name": "Test of Qualification",
+  "minLevel": 30
+ },
+ {
+  "id": 20203,
+  "name": "Proof of Qualification",
+  "minLevel": 30
+ },
+ {
+  "id": 20300,
+  "name": "The Thief's Next Journey",
+  "minLevel": 30
+ },
+ {
+  "id": 20301,
+  "name": "Finding the Instructor",
+  "minLevel": 30
+ },
+ {
+  "id": 20302,
+  "name": "Test of Qualification",
+  "minLevel": 30
+ },
+ {
+  "id": 20303,
+  "name": "Proof of Qualification",
+  "minLevel": 30
+ },
+ {
+  "id": 80000,
+  "name": "\"Mar\" the Fairy and the Water of Life"
+ },
+ {
+  "id": 80001,
+  "name": "Make a Match Cards Set",
+  "minLevel": 12
+ },
+ {
+  "id": 80002,
+  "name": "Make a Slime & Mushroom Omok Set",
+  "minLevel": 12
+ },
+ {
+  "id": 80003,
+  "name": "Make a Slime & Pig Omok Set",
+  "minLevel": 12
+ },
+ {
+  "id": 80004,
+  "name": "Make a Slime & Octopus�Omok Set",
+  "minLevel": 12
+ },
+ {
+  "id": 80005,
+  "name": "Make a Pig�& Mushroom�Omok Set",
+  "minLevel": 12
+ },
+ {
+  "id": 80006,
+  "name": "Make a Octopus�& Mushroom�Omok Set",
+  "minLevel": 12
+ },
+ {
+  "id": 80007,
+  "name": "Make a Pig�& Octopus�Omok Set",
+  "minLevel": 12
+ },
+ {
+  "id": 80008,
+  "name": "Silas Irons in Need of an Apprentice",
+  "minLevel": 10
+ },
+ {
+  "id": 80009,
+  "name": "A Blacksmith in My Own Right!",
+  "minLevel": 25
+ },
+ {
+  "id": 80010,
+  "name": "Silas Irons in Need of Help",
+  "minLevel": 15
+ },
+ {
+  "id": 80011,
+  "name": "Mr. Thunder�in Need of an Apprentice",
+  "minLevel": 10
+ },
+ {
+  "id": 80012,
+  "name": "A Weaponcrafter in My Own Right!",
+  "minLevel": 25
+ },
+ {
+  "id": 80013,
+  "name": "Mr. Thunder in Need of Help",
+  "minLevel": 15
+ },
+ {
+  "id": 80014,
+  "name": "Francois in Need of an Apprentice",
+  "minLevel": 10
+ },
+ {
+  "id": 80015,
+  "name": "A Tailor in My Own Right!",
+  "minLevel": 25
+ },
+ {
+  "id": 80016,
+  "name": "Francois in Need of Help",
+  "minLevel": 15
+ },
+ {
+  "id": 80017,
+  "name": "Vicious in Need of an Apprentice",
+  "minLevel": 10
+ },
+ {
+  "id": 80018,
+  "name": "A Carpenter in My Own Right!",
+  "minLevel": 25
+ },
+ {
+  "id": 80019,
+  "name": "Vicious in Need of Help",
+  "minLevel": 15
+ },
+ {
+  "id": 80020,
+  "name": "JM From tha Streetz Looking for a Partner",
+  "minLevel": 10
+ },
+ {
+  "id": 80021,
+  "name": "A Leatherworker in My Own Right!",
+  "minLevel": 25
+ },
+ {
+  "id": 80022,
+  "name": "JM From tha Streetz in Need of Help",
+  "minLevel": 15
+ },
+ {
+  "id": 80023,
+  "name": "Chrishrama in Need of an Apprentice",
+  "minLevel": 10
+ },
+ {
+  "id": 80024,
+  "name": "An Arcforger in My Own Right!",
+  "minLevel": 25
+ },
+ {
+  "id": 80025,
+  "name": "Chrishrama in Need of Help",
+  "minLevel": 15
+ },
+ {
+  "id": 80026,
+  "name": "Welcome to the Free Market!",
+  "minLevel": 13
+ },
+ {
+  "id": 80027,
+  "name": "Chief Stan's Reply",
+  "minLevel": 13
+ },
+ {
+  "id": 80028,
+  "name": "Asking Perion for Help",
+  "minLevel": 13
+ },
+ {
+  "id": 80029,
+  "name": "Dances with Balrog's Reply",
+  "minLevel": 13
+ },
+ {
+  "id": 500000,
+  "name": "[Event] A Strange and Familiar Wood",
+  "minLevel": 10,
+  "availabilityStart": "2026-08-04T00:00:00",
+  "availabilityEnd": "2026-08-12T23:59:00"
+ },
+ {
+  "id": 500001,
+  "name": "[Event] Beyond the Unknown",
+  "minLevel": 15,
+  "availabilityStart": "2026-08-04T00:00:00",
+  "availabilityEnd": "2026-08-12T23:59:00"
+ },
+ {
+  "id": 500002,
+  "name": "[Event] The One Who Sealed the Darkness",
+  "minLevel": 15,
+  "availabilityStart": "2026-04-21T15:00:00",
+  "availabilityEnd": "2026-04-23T23:59:00"
+ },
+ {
+  "id": 500005,
+  "name": "[Event] Gathering Leaves ",
+  "minLevel": 10,
+  "availabilityStart": "2026-04-14T00:00:00",
+  "availabilityEnd": "2026-04-23T23:59:00"
+ },
+ {
+  "id": 500006,
+  "name": "[Event] Gift for the New Journey",
+  "minLevel": 8,
+  "availabilityStart": "2026-08-04T00:00:00",
+  "availabilityEnd": "2026-08-12T23:59:00"
+ },
+ {
+  "id": 500008,
+  "name": "[Event] A New Adventure Awaits",
+  "minLevel": 20,
+  "availabilityStart": "2026-08-08T00:00:00",
+  "availabilityEnd": "2026-08-12T23:59:00"
+ },
+ {
+  "id": 500009,
+  "name": "[Event] Growing Leaf",
+  "minLevel": 10,
+  "availabilityStart": "2026-08-04T00:00:00",
+  "availabilityEnd": "2026-08-12T23:59:00"
+ },
+ {
+  "id": 500010,
+  "name": "[Event] Halloween Candies",
+  "minLevel": 10,
+  "availabilityStart": "2026-10-28T00:00:00",
+  "availabilityEnd": "2026-11-19T00:00:00"
+ },
+ {
+  "id": 500011,
+  "name": "[Event] Trick or Treat!",
+  "minLevel": 10,
+  "availabilityStart": "2026-10-28T00:00:00",
+  "availabilityEnd": "2026-11-19T00:00:00"
+ },
+ {
+  "id": 506000,
+  "name": "To Henesys, the Prairie Town",
+  "minLevel": 12
+ },
+ {
+  "id": 506001,
+  "name": "First Greeting with Rina, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506002,
+  "name": "Asking After Rina, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506003,
+  "name": "First Greeting with Mrs. Ming Ming, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506004,
+  "name": "Asking After Mrs. Ming Ming, the Town Resident.",
+  "minLevel": 12
+ },
+ {
+  "id": 506005,
+  "name": "First Greeting with Camila, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506006,
+  "name": "Asking After Camila, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506007,
+  "name": "First Greeting with Bruce, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506008,
+  "name": "Asking After Bruce, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506009,
+  "name": "First Greeting with Maya, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506010,
+  "name": "Asking After Maya, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506011,
+  "name": "First Greeting with Pia, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506012,
+  "name": "Asking After Pia, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506013,
+  "name": "First Greeting with Anne, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506014,
+  "name": "Asking After Anne, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506015,
+  "name": "First Greeting with Chief Stan",
+  "minLevel": 12
+ },
+ {
+  "id": 506016,
+  "name": "Asking After Chief Stan",
+  "minLevel": 12
+ },
+ {
+  "id": 506017,
+  "name": "First Greeting with Athena Pierce",
+  "minLevel": 12
+ },
+ {
+  "id": 506018,
+  "name": "Asking After Athena Pierce",
+  "minLevel": 12
+ },
+ {
+  "id": 506019,
+  "name": "Donating to Henesys",
+  "minLevel": 12
+ },
+ {
+  "id": 506020,
+  "name": "Donating to Henesys",
+  "minLevel": 12
+ },
+ {
+  "id": 506021,
+  "name": "Donating to Henesys",
+  "minLevel": 12
+ },
+ {
+  "id": 506022,
+  "name": "Donating to Henesys",
+  "minLevel": 12
+ },
+ {
+  "id": 506023,
+  "name": "Donating to Henesys",
+  "minLevel": 12
+ },
+ {
+  "id": 506024,
+  "name": "Donating to Henesys",
+  "minLevel": 12
+ },
+ {
+  "id": 506025,
+  "name": "Donating to Henesys",
+  "minLevel": 12
+ },
+ {
+  "id": 506026,
+  "name": "Donating to Henesys",
+  "minLevel": 12
+ },
+ {
+  "id": 506027,
+  "name": "Donating to Henesys",
+  "minLevel": 12
+ },
+ {
+  "id": 506028,
+  "name": "Donating to Henesys",
+  "minLevel": 12
+ },
+ {
+  "id": 506029,
+  "name": "Donating to Henesys",
+  "minLevel": 12
+ },
+ {
+  "id": 506030,
+  "name": "Donating to Henesys",
+  "minLevel": 12
+ },
+ {
+  "id": 506031,
+  "name": "Donating to Henesys",
+  "minLevel": 12
+ },
+ {
+  "id": 506032,
+  "name": "Donating to Henesys",
+  "minLevel": 12
+ },
+ {
+  "id": 506033,
+  "name": "Donating to Henesys",
+  "minLevel": 12
+ },
+ {
+  "id": 506034,
+  "name": "Donating to Henesys",
+  "minLevel": 12
+ },
+ {
+  "id": 506035,
+  "name": "Donating to Henesys",
+  "minLevel": 12
+ },
+ {
+  "id": 506036,
+  "name": "Bruce's Dilemma",
+  "minLevel": 17
+ },
+ {
+  "id": 506037,
+  "name": "Mrs. Ming Ming's Advice",
+  "minLevel": 17
+ },
+ {
+  "id": 506038,
+  "name": "Bruce's Cooking Ingredients",
+  "minLevel": 17
+ },
+ {
+  "id": 506039,
+  "name": "A Father's Love for His Daughter",
+  "minLevel": 17
+ },
+ {
+  "id": 506040,
+  "name": "The Best Dad",
+  "minLevel": 17
+ },
+ {
+  "id": 506041,
+  "name": "Mrs. Ming Ming's Concern",
+  "minLevel": 27
+ },
+ {
+  "id": 506042,
+  "name": "Chief Stan's Past",
+  "minLevel": 27
+ },
+ {
+  "id": 506043,
+  "name": "Chief Stan's Hammer",
+  "minLevel": 27
+ },
+ {
+  "id": 506044,
+  "name": "Memories of Youth",
+  "minLevel": 27
+ },
+ {
+  "id": 506045,
+  "name": "Regained Vitality",
+  "minLevel": 27
+ },
+ {
+  "id": 506046,
+  "name": "A Gift for Pia",
+  "minLevel": 37
+ },
+ {
+  "id": 506047,
+  "name": "Pia's Mischievous Wish",
+  "minLevel": 37
+ },
+ {
+  "id": 506048,
+  "name": "Materials for a Special Marble",
+  "minLevel": 37
+ },
+ {
+  "id": 506049,
+  "name": "A Marble Made With Care",
+  "minLevel": 37
+ },
+ {
+  "id": 506050,
+  "name": "A Promise Between Three Friends",
+  "minLevel": 37
+ },
+ {
+  "id": 506051,
+  "name": "An Unknown Savior",
+  "minLevel": 47
+ },
+ {
+  "id": 506052,
+  "name": "A Name on a Note",
+  "minLevel": 47
+ },
+ {
+  "id": 506053,
+  "name": "A Price to Pay",
+  "minLevel": 47
+ },
+ {
+  "id": 506054,
+  "name": "A Man Atoning",
+  "minLevel": 47
+ },
+ {
+  "id": 506055,
+  "name": "A Name Never Given",
+  "minLevel": 47
+ },
+ {
+  "id": 506056,
+  "name": "Becoming a Citizen of Honor",
+  "minLevel": 57
+ },
+ {
+  "id": 506057,
+  "name": "A Box Hidden Long Ago",
+  "minLevel": 57
+ },
+ {
+  "id": 506058,
+  "name": "A Worn-Out Bow",
+  "minLevel": 57
+ },
+ {
+  "id": 506059,
+  "name": "A Craftsman's Touch",
+  "minLevel": 57
+ },
+ {
+  "id": 506060,
+  "name": "A Memory Restored",
+  "minLevel": 57
+ },
+ {
+  "id": 506061,
+  "name": "The Right to Own a Home",
+  "minLevel": 17
+ },
+ {
+  "id": 506062,
+  "name": "Looking for a House",
+  "minLevel": 17
+ },
+ {
+  "id": 506100,
+  "name": "To the Gray City, Kerning City",
+  "minLevel": 12
+ },
+ {
+  "id": 506101,
+  "name": "First Greeting with Alex, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506102,
+  "name": "Asking After Alex, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506103,
+  "name": "First Greeting with Shumi, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506104,
+  "name": "Asking After Shumi, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506105,
+  "name": "First Greeting with Nella, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506106,
+  "name": "Asking After Nella, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506107,
+  "name": "First Greeting with Icarus, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506108,
+  "name": "Asking After�Icarus, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506109,
+  "name": "First Greeting with Jane Doe, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506110,
+  "name": "Asking After Jane Doe, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506111,
+  "name": "First Greeting with Jake, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506112,
+  "name": "Asking After Jake, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506113,
+  "name": "First Greeting with Mr. Pickall, the Town Resident",
+  "minLevel": 12
+ },
+ {
+  "id": 506114,
+  "name": "Asking After Mr. Pickall, the Town Resident ",
+  "minLevel": 12
+ },
+ {
+  "id": 506115,
+  "name": "First Greeting with Chun Ji ",
+  "minLevel": 12
+ },
+ {
+  "id": 506116,
+  "name": "Asking After Chun Ji ",
+  "minLevel": 12
+ },
+ {
+  "id": 506117,
+  "name": "First Greeting with Dark Lord",
+  "minLevel": 12
+ },
+ {
+  "id": 506118,
+  "name": "Asking After Dark Lord",
+  "minLevel": 12
+ },
+ {
+  "id": 506119,
+  "name": "Donating to Kerning City",
+  "minLevel": 12
+ },
+ {
+  "id": 506120,
+  "name": "Donating to Kerning City",
+  "minLevel": 12
+ },
+ {
+  "id": 506121,
+  "name": "Donating to Kerning City",
+  "minLevel": 12
+ },
+ {
+  "id": 506122,
+  "name": "Donating to Kerning City",
+  "minLevel": 12
+ },
+ {
+  "id": 506123,
+  "name": "Donating to Kerning City",
+  "minLevel": 12
+ },
+ {
+  "id": 506124,
+  "name": "Donating to Kerning City",
+  "minLevel": 12
+ },
+ {
+  "id": 506125,
+  "name": "Donating to Kerning City",
+  "minLevel": 12
+ },
+ {
+  "id": 506126,
+  "name": "Donating to Kerning City",
+  "minLevel": 12
+ },
+ {
+  "id": 506127,
+  "name": "Donating to Kerning City",
+  "minLevel": 12
+ },
+ {
+  "id": 506128,
+  "name": "Donating to Kerning City",
+  "minLevel": 12
+ },
+ {
+  "id": 506129,
+  "name": "Donating to Kerning City",
+  "minLevel": 12
+ },
+ {
+  "id": 506130,
+  "name": "Donating to Kerning City",
+  "minLevel": 12
+ },
+ {
+  "id": 506131,
+  "name": "Donating to Kerning City",
+  "minLevel": 12
+ },
+ {
+  "id": 506132,
+  "name": "Donating to Kerning City",
+  "minLevel": 12
+ },
+ {
+  "id": 506133,
+  "name": "Donating to Kerning City",
+  "minLevel": 12
+ },
+ {
+  "id": 506134,
+  "name": "Donating to Kerning City",
+  "minLevel": 12
+ },
+ {
+  "id": 506135,
+  "name": "Donating to Kerning City",
+  "minLevel": 12
+ },
+ {
+  "id": 506136,
+  "name": "Donating to Kerning City",
+  "minLevel": 12
+ },
+ {
+  "id": 506137,
+  "name": "Stirge Phobia",
+  "minLevel": 17
+ },
+ {
+  "id": 506138,
+  "name": "Making the Medicine",
+  "minLevel": 17
+ },
+ {
+  "id": 506139,
+  "name": "The Final Ingredient for the Cure",
+  "minLevel": 17
+ },
+ {
+  "id": 506140,
+  "name": "Grandfather's Vitamin Gummy",
+  "minLevel": 17
+ },
+ {
+  "id": 506141,
+  "name": "It's All in the Mind",
+  "minLevel": 17
+ },
+ {
+  "id": 506142,
+  "name": "A Lost Thank-You",
+  "minLevel": 27
+ },
+ {
+  "id": 506143,
+  "name": "Too Shy to Say It Himself",
+  "minLevel": 27
+ },
+ {
+  "id": 506144,
+  "name": "Nella's Old Memory",
+  "minLevel": 27
+ },
+ {
+  "id": 506145,
+  "name": "One More Debt to Repay",
+  "minLevel": 27
+ },
+ {
+  "id": 506146,
+  "name": "Not Ready to Go Home Yet",
+  "minLevel": 27
+ },
+ {
+  "id": 506147,
+  "name": "Worn Bandages",
+  "minLevel": 37
+ },
+ {
+  "id": 506148,
+  "name": "A Torn Letter",
+  "minLevel": 37
+ },
+ {
+  "id": 506149,
+  "name": "Once a Renowned Doctor",
+  "minLevel": 37
+ },
+ {
+  "id": 506150,
+  "name": "The Price of Information",
+  "minLevel": 37
+ },
+ {
+  "id": 506151,
+  "name": "A Truth Finally Known",
+  "minLevel": 37
+ },
+ {
+  "id": 506152,
+  "name": "A Quiet Line of Work",
+  "minLevel": 47
+ },
+ {
+  "id": 506153,
+  "name": "Another Lead",
+  "minLevel": 47
+ },
+ {
+  "id": 506154,
+  "name": "A Name She Couldn't Say",
+  "minLevel": 47
+ },
+ {
+  "id": 506155,
+  "name": "An Old Grudge",
+  "minLevel": 47
+ },
+ {
+  "id": 506156,
+  "name": "An Unresolved Question",
+  "minLevel": 47
+ },
+ {
+  "id": 506157,
+  "name": "Becoming a Citizen of Honor",
+  "minLevel": 57
+ },
+ {
+  "id": 506158,
+  "name": "A Missing Comrade ",
+  "minLevel": 57
+ },
+ {
+  "id": 506159,
+  "name": "An Unbreakable Code",
+  "minLevel": 57
+ },
+ {
+  "id": 506160,
+  "name": "What It Takes",
+  "minLevel": 57
+ },
+ {
+  "id": 506161,
+  "name": "The Weight of Truth",
+  "minLevel": 57
+ },
+ {
+  "id": 506162,
+  "name": "The Right to Own a Home",
+  "minLevel": 17
+ },
+ {
+  "id": 506163,
+  "name": "Looking for a House",
+  "minLevel": 17
+ },
+ {
+  "id": 600000,
+  "name": "[Event] Founder's First Step",
+  "minLevel": 10,
+  "availabilityStart": "2026-10-06T00:00:00",
+  "availabilityEnd": "2026-10-20T23:59:00"
+ },
+ {
+  "id": 600002,
+  "name": "[Event] The Journey Begins",
+  "minLevel": 10,
+  "availabilityStart": "2026-10-21T16:00:00",
+  "availabilityEnd": "2026-11-18T23:59:00"
+ },
+ {
+  "id": 600004,
+  "name": "[Event] The Marks We Leave Behind",
+  "minLevel": 25,
+  "availabilityStart": "2026-10-21T00:00:00",
+  "availabilityEnd": "2026-11-19T00:00:00"
+ },
+ {
+  "id": 600005,
+  "name": "[Event] The First Mark",
+  "minLevel": 25,
+  "availabilityStart": "2026-10-21T00:00:00",
+  "availabilityEnd": "2026-11-19T00:00:00"
+ },
+ {
+  "id": 600006,
+  "name": "[Event] The Second Mark",
+  "minLevel": 25,
+  "availabilityStart": "2026-10-21T00:00:00",
+  "availabilityEnd": "2026-11-19T00:00:00"
+ },
+ {
+  "id": 600007,
+  "name": "[Event] The Third Mark",
+  "minLevel": 25,
+  "availabilityStart": "2026-10-21T00:00:00",
+  "availabilityEnd": "2026-11-19T00:00:00"
+ },
+ {
+  "id": 600008,
+  "name": "[Event] The Fourth Mark",
+  "minLevel": 25,
+  "availabilityStart": "2026-10-21T00:00:00",
+  "availabilityEnd": "2026-11-19T00:00:00"
+ },
+ {
+  "id": 600009,
+  "name": "[Event] The Fifth Mark",
+  "minLevel": 25,
+  "availabilityStart": "2026-10-21T00:00:00",
+  "availabilityEnd": "2026-11-19T00:00:00"
+ },
+ {
+  "id": 600010,
+  "name": "[Event] The Final Mark",
+  "minLevel": 25,
+  "availabilityStart": "2026-10-21T00:00:00",
+  "availabilityEnd": "2026-11-19T00:00:00"
+ }
+]

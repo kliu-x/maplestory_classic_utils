@@ -1,0 +1,64 @@
+{
+ "id": 10210,
+ "name": "I Need Help on My Homework!",
+ "area": 13,
+ "areaName": "Ellinia",
+ "demandSummary": "#i4000011# #t4000011# #c4000011# / 10\\n#i4000006# #t4000006# #c4000006# / 10\\n#i4000007# #t4000007# #c4000007# / 3",
+ "rewardOnStart": {
+  "id": 10210,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10210,
+  "exp": 188,
+  "items": [
+   {
+    "id": 4000011,
+    "count": -10
+   },
+   {
+    "id": 4000006,
+    "count": -10
+   },
+   {
+    "id": 4000007,
+    "count": -3
+   },
+   {
+    "id": 2000003,
+    "count": 10
+   },
+   {
+    "id": 2030002,
+    "count": 2
+   }
+  ],
+  "meso": 351,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10210,
+  "levelMinimum": 10,
+  "npcId": 309,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10210,
+  "items": [
+   {
+    "count": 10,
+    "id": 4000011
+   },
+   {
+    "count": 10,
+    "id": 4000006
+   },
+   {
+    "count": 3,
+    "id": 4000007
+   }
+  ],
+  "npcId": 309,
+  "state": 1
+ }
+}

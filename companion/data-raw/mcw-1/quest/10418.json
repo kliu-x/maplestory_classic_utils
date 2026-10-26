@@ -1,0 +1,48 @@
+{
+ "id": 10418,
+ "name": "Truth of the Rumor-Betty",
+ "area": 15,
+ "areaName": "Perion",
+ "demandSummary": "Talk to #p308#",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10419,
+   "levelMinimum": 34,
+   "quests": [
+    {
+     "id": 10418,
+     "state": 2
+    }
+   ],
+   "npcId": 308,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10418,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10418,
+  "exp": 2755,
+  "meso": 757,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10418,
+  "levelMinimum": 34,
+  "quests": [
+   {
+    "id": 10417,
+    "state": 2
+   }
+  ],
+  "npcId": 511,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10418,
+  "npcId": 308,
+  "state": 1
+ }
+}

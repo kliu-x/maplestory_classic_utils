@@ -1,0 +1,49 @@
+{
+ "id": 506054,
+ "name": "A Man Atoning",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "Talk to the warrior at the top of #m10004000#",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506055,
+   "levelMinimum": 47,
+   "quests": [
+    {
+     "id": 506054,
+     "state": 2
+    }
+   ],
+   "npcId": 502,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506054,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506054,
+  "exp": 11400,
+  "meso": 1477,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506054,
+  "levelMinimum": 47,
+  "quests": [
+   {
+    "id": 506053,
+    "state": 2
+   }
+  ],
+  "npcId": 602,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506054,
+  "levelMinimum": 47,
+  "npcId": 502,
+  "state": 1
+ }
+}

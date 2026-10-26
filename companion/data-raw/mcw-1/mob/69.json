@@ -1,0 +1,24 @@
+{
+ "id": 69,
+ "name": "Commander Skeleton",
+ "meta": {
+  "isBodyAttack": true,
+  "level": 73,
+  "maxHP": 11915,
+  "maxMP": 0,
+  "speed": -20,
+  "physicalDamage": 320,
+  "physicalDefense": 15,
+  "magicDamage": 0,
+  "magicDefense": 15,
+  "accuracy": 160,
+  "evasion": 42,
+  "exp": 390,
+  "isUndead": true,
+  "minimumPushDamage": 1425,
+  "hpRecovery": 119,
+  "elementalAttributes": "H3I2S1",
+  "summonType": 1,
+  "revivesMonsterId": []
+ }
+}

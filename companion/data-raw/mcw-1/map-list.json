@@ -1,0 +1,1737 @@
+[
+ {
+  "name": "Mushroom Town - West Entrance",
+  "streetName": "Maple Road",
+  "id": 1
+ },
+ {
+  "name": "Mushroom Town",
+  "streetName": "Maple Road",
+  "id": 10
+ },
+ {
+  "name": "Mushroom Town",
+  "streetName": "Maple Road",
+  "id": 20
+ },
+ {
+  "name": "Mushroom Town Townstreet",
+  "streetName": "Maple Road",
+  "id": 21
+ },
+ {
+  "name": "East Entrance to Mushroom Town",
+  "streetName": "Maple Road",
+  "id": 30
+ },
+ {
+  "name": "Snail Hunting Ground I",
+  "streetName": "Maple Road",
+  "id": 40
+ },
+ {
+  "name": "Snail Hunting Ground II",
+  "streetName": "Maple Road",
+  "id": 41
+ },
+ {
+  "name": "Snail Hunting Ground III",
+  "streetName": "Maple Road",
+  "id": 42
+ },
+ {
+  "name": "A Split Road",
+  "streetName": "Maple Road",
+  "id": 50
+ },
+ {
+  "name": "Southperry",
+  "streetName": "Maple Road",
+  "id": 60
+ },
+ {
+  "name": "Southperry Armor Store",
+  "streetName": "Maple Road",
+  "id": 61
+ },
+ {
+  "name": "The Field West of Amherst",
+  "streetName": "Rainbow Street",
+  "id": 1000
+ },
+ {
+  "name": "In a Small Forest",
+  "streetName": "Rainbow Street",
+  "id": 1001
+ },
+ {
+  "name": "Dangerous Forest",
+  "streetName": "Rainbow Street",
+  "id": 1002
+ },
+ {
+  "name": "Mushroom Garden",
+  "streetName": "Rainbow Street",
+  "id": 1003
+ },
+ {
+  "name": "Snail Garden",
+  "streetName": "Rainbow Street",
+  "id": 1004
+ },
+ {
+  "name": "Hunting Ground Middle of the Forest I",
+  "streetName": "Rainbow Street",
+  "id": 1005
+ },
+ {
+  "name": "Hunting Ground Middle of the Forest II",
+  "streetName": "Rainbow Street",
+  "id": 1006
+ },
+ {
+  "name": "Amherst",
+  "streetName": "Rainbow Street",
+  "id": 1010
+ },
+ {
+  "name": "Amherst Weapon Store",
+  "streetName": "Rainbow Street",
+  "id": 1011
+ },
+ {
+  "name": "Amherst Townstreet",
+  "streetName": "Rainbow Street",
+  "id": 1012
+ },
+ {
+  "name": "Amherst Department Store",
+  "streetName": "Rainbow Street",
+  "id": 1013
+ },
+ {
+  "name": "Snail Field of Flowers",
+  "streetName": "Rainbow Street",
+  "id": 1014
+ },
+ {
+  "name": "The Field East of Amherst",
+  "streetName": "Rainbow Street",
+  "id": 1020
+ },
+ {
+  "name": "Tomato Field",
+  "streetName": "Rainbow Street",
+  "id": 1021
+ },
+ {
+  "name": "Lith Harbor",
+  "streetName": "Victoria Road",
+  "id": 10000000
+ },
+ {
+  "name": "Lith Harbor Armor Shop",
+  "streetName": "Victoria Road",
+  "id": 10000001
+ },
+ {
+  "name": "Lith Harbor Department Store",
+  "streetName": "Victoria Road",
+  "id": 10000002
+ },
+ {
+  "name": "Lith Harbor Weapon Shop",
+  "streetName": "Victoria Road",
+  "id": 10000003
+ },
+ {
+  "name": "Right Around Lith Harbor",
+  "streetName": "Victoria Road",
+  "id": 10000010
+ },
+ {
+  "name": "Thicket Around the Beach I",
+  "streetName": "Victoria Road",
+  "id": 10000011
+ },
+ {
+  "name": "Thicket Around the Beach II",
+  "streetName": "Victoria Road",
+  "id": 10000012
+ },
+ {
+  "name": "Thicket Around the Beach III",
+  "streetName": "Victoria Road",
+  "id": 10000013
+ },
+ {
+  "name": "3-Way Road-Split",
+  "streetName": "Victoria Road",
+  "id": 10000020
+ },
+ {
+  "name": "The Pig Beach",
+  "streetName": "Hidden Street",
+  "id": 10000021
+ },
+ {
+  "name": "Beach Hunting Ground",
+  "streetName": "Hidden Street",
+  "id": 10000022
+ },
+ {
+  "name": "Henesys",
+  "streetName": "Victoria Road",
+  "id": 10001000
+ },
+ {
+  "name": "Henesys Townstreet",
+  "streetName": "Victoria Road",
+  "id": 10001001
+ },
+ {
+  "name": "An Empty House",
+  "streetName": "Hidden Street",
+  "id": 10001002
+ },
+ {
+  "name": "Pig Park",
+  "streetName": "Hidden Street",
+  "id": 10001003
+ },
+ {
+  "name": "Pig Park II",
+  "streetName": "Hidden Street",
+  "id": 10001004
+ },
+ {
+  "name": "Someone Else's House",
+  "streetName": "Hidden Street",
+  "id": 10001005
+ },
+ {
+  "name": "The Resting Spot, Pig Park",
+  "streetName": "Hidden Street",
+  "id": 10001006
+ },
+ {
+  "name": "Henesys Town Hall",
+  "streetName": "Victoria Road",
+  "id": 10001007
+ },
+ {
+  "name": "Victoria Road",
+  "streetName": "Yellow Mushroom House",
+  "id": 10001008
+ },
+ {
+  "name": "Henesys Hunting Ground I",
+  "streetName": "Victoria Road",
+  "id": 10001010
+ },
+ {
+  "name": "Henesys Hunting Ground II",
+  "streetName": "Victoria Road",
+  "id": 10001011
+ },
+ {
+  "name": "Henesys Hunting Ground III",
+  "streetName": "Victoria Road",
+  "id": 10001012
+ },
+ {
+  "name": "A Hill West of Henesys ",
+  "streetName": "Victoria Road",
+  "id": 10001020
+ },
+ {
+  "name": "Mushroom Garden",
+  "streetName": "Hidden Street",
+  "id": 10001021
+ },
+ {
+  "name": "Forest West of Henesys",
+  "streetName": "Victoria Road",
+  "id": 10001030
+ },
+ {
+  "name": "Henesys Market",
+  "streetName": "Victoria Road",
+  "id": 10001040
+ },
+ {
+  "name": "Henesys Weapon Store",
+  "streetName": "Victoria Road",
+  "id": 10001041
+ },
+ {
+  "name": "Henesys Department Store",
+  "streetName": "Victoria Road",
+  "id": 10001042
+ },
+ {
+  "name": "Henesys Plastic Surgery",
+  "streetName": "Victoria Road",
+  "id": 10001043
+ },
+ {
+  "name": "Henesys Hair Salon",
+  "streetName": "Victoria Road",
+  "id": 10001044
+ },
+ {
+  "name": "Henesys Skin-Care",
+  "streetName": "Victoria Road",
+  "id": 10001045
+ },
+ {
+  "name": "Henesys Park",
+  "streetName": "Victoria Road",
+  "id": 10001050
+ },
+ {
+  "name": "Bowman Instructional School",
+  "streetName": "Victoria Road",
+  "id": 10001051
+ },
+ {
+  "name": "Pet-Walking Road",
+  "streetName": "Victoria Road",
+  "id": 10001052
+ },
+ {
+  "name": "The Hill East of Henesys",
+  "streetName": "Victoria Road",
+  "id": 10001060
+ },
+ {
+  "name": "The Rain-Forest East of Henesys",
+  "streetName": "Victoria Road",
+  "id": 10001070
+ },
+ {
+  "name": "The Forest East of Henesys",
+  "streetName": "Victoria Road",
+  "id": 10001080
+ },
+ {
+  "name": "The Blue Mushroom Forest",
+  "streetName": "Hidden Street",
+  "id": 10001081
+ },
+ {
+  "name": "Utah's Pig Farm",
+  "streetName": "Hidden Street",
+  "id": 10001082
+ },
+ {
+  "name": "The Road to the Dungeon",
+  "streetName": "Warning Street",
+  "id": 10001090
+ },
+ {
+  "name": "Henesys Dungeon Entrance",
+  "streetName": "Warning Street",
+  "id": 10001100
+ },
+ {
+  "name": "The Breathing Rock",
+  "streetName": "Hidden Street",
+  "id": 10001101
+ },
+ {
+  "name": "The Entrance of Golem's Temple",
+  "streetName": "Victoria Road",
+  "id": 10001102
+ },
+ {
+  "name": "Golem's Temple I",
+  "streetName": "Victoria Road",
+  "id": 10001103
+ },
+ {
+  "name": "Golem's Temple II",
+  "streetName": "Victoria Road",
+  "id": 10001104
+ },
+ {
+  "name": "Golem's Temple III",
+  "streetName": "Victoria Road",
+  "id": 10001105
+ },
+ {
+  "name": "Golem's Temple IV",
+  "streetName": "Victoria Road",
+  "id": 10001106
+ },
+ {
+  "name": "Ellinia",
+  "streetName": "Victoria Road",
+  "id": 10002000
+ },
+ {
+  "name": "Ellinia Weapon Store",
+  "streetName": "Victoria Road",
+  "id": 10002001
+ },
+ {
+  "name": "Ellinia Department Store",
+  "streetName": "Victoria Road",
+  "id": 10002002
+ },
+ {
+  "name": "Magic Library",
+  "streetName": "Victoria Road",
+  "id": 10002003
+ },
+ {
+  "name": "Marr's Forest",
+  "streetName": "Hidden Street",
+  "id": 10002004
+ },
+ {
+  "name": "The Circulation Desk",
+  "streetName": "Hidden Street",
+  "id": 10002005
+ },
+ {
+  "name": "The Field South of Ellinia",
+  "streetName": "Victoria Road",
+  "id": 10002010
+ },
+ {
+  "name": "The Forest of Wisdom",
+  "streetName": "Victoria Road",
+  "id": 10002020
+ },
+ {
+  "name": "Monkey Forest I",
+  "streetName": "Hidden Street",
+  "id": 10002021
+ },
+ {
+  "name": "Tree Dungeon, Monkey Forest I",
+  "streetName": "Victoria Road",
+  "id": 10002022
+ },
+ {
+  "name": "Monkey Forest II",
+  "streetName": "Victoria Road",
+  "id": 10002023
+ },
+ {
+  "name": "Tree Dungeon, Monkey Forest II",
+  "streetName": "Hidden Street",
+  "id": 10002024
+ },
+ {
+  "name": "The Forest of Evil I",
+  "streetName": "Hidden Street",
+  "id": 10002025
+ },
+ {
+  "name": "The Forest of Evil II",
+  "streetName": "Hidden Street",
+  "id": 10002026
+ },
+ {
+  "name": "Downstairs at the Forest",
+  "streetName": "Hidden Street",
+  "id": 10002027
+ },
+ {
+  "name": "The Forest South of Ellinia",
+  "streetName": "Victoria Road",
+  "id": 10002030
+ },
+ {
+  "name": "Dungeon, Southern Forest I",
+  "streetName": "Victoria Road",
+  "id": 10002031
+ },
+ {
+  "name": "Dungeon, Southern Forest II",
+  "streetName": "Victoria Road",
+  "id": 10002032
+ },
+ {
+  "name": "Dungeon, Southern Forest III",
+  "streetName": "Victoria Road",
+  "id": 10002033
+ },
+ {
+  "name": "Dungeon, Southern Forest IV",
+  "streetName": "Victoria Road",
+  "id": 10002034
+ },
+ {
+  "name": "The Forest of Patience <Step 1>",
+  "streetName": "Hidden Street",
+  "id": 10002040
+ },
+ {
+  "name": "The Forest of Patience <Step 2>",
+  "streetName": "Hidden Street",
+  "id": 10002041
+ },
+ {
+  "name": "The Forest of Patience <Step 3>",
+  "streetName": "Hidden Street",
+  "id": 10002042
+ },
+ {
+  "name": "The Forest of Patience <Step 4>",
+  "streetName": "Hidden Street",
+  "id": 10002043
+ },
+ {
+  "name": "The Forest of Patience <Step 5>",
+  "streetName": "Hidden Street",
+  "id": 10002044
+ },
+ {
+  "name": "The Field Up North of Ellinia",
+  "streetName": "Victoria Road",
+  "id": 10002050
+ },
+ {
+  "name": "The Tree That Grew I",
+  "streetName": "Victoria Road",
+  "id": 10002060
+ },
+ {
+  "name": "The Tree That Grew II",
+  "streetName": "Victoria Road",
+  "id": 10002061
+ },
+ {
+  "name": "The Tree That Grew III",
+  "streetName": "Victoria Road",
+  "id": 10002062
+ },
+ {
+  "name": "The Forest North of Ellinia",
+  "streetName": "Victoria Road",
+  "id": 10002070
+ },
+ {
+  "name": "The Tree Tunnel At the Forest Up North",
+  "streetName": "Victoria Road",
+  "id": 10002071
+ },
+ {
+  "name": "Tree Dungeon, Forest Up North I",
+  "streetName": "Victoria Road",
+  "id": 10002072
+ },
+ {
+  "name": "Tree Dungeon, Forest Up North II",
+  "streetName": "Victoria Road",
+  "id": 10002073
+ },
+ {
+  "name": "Tree Dungeon, Forest Up North III",
+  "streetName": "Victoria Road",
+  "id": 10002074
+ },
+ {
+  "name": "Tree Dungeon, Forest Up North IV",
+  "streetName": "Victoria Road",
+  "id": 10002075
+ },
+ {
+  "name": "Tree Dungeon, Forest Up North V",
+  "streetName": "Victoria Road",
+  "id": 10002076
+ },
+ {
+  "name": "Tree Dungeon, Forest Up North VI",
+  "streetName": "Victoria Road",
+  "id": 10002080
+ },
+ {
+  "name": "Tree Dungeon, Forest Up North VII",
+  "streetName": "Victoria Road",
+  "id": 10002081
+ },
+ {
+  "name": "Tree Dungeon, Forest Up North VIII",
+  "streetName": "Victoria Road",
+  "id": 10002082
+ },
+ {
+  "name": "Tree Dungeon, Forest Up North IX",
+  "streetName": "Victoria Road",
+  "id": 10002083
+ },
+ {
+  "name": "Ellinia Station",
+  "streetName": "Victoria Road",
+  "id": 10002090
+ },
+ {
+  "name": "Before Takeoff <To Orbis>",
+  "streetName": "Victoria Road",
+  "id": 10002091
+ },
+ {
+  "name": "Kerning City",
+  "streetName": "Victoria Road",
+  "id": 10003000
+ },
+ {
+  "name": "Kerning City Self-Defence Item Store",
+  "streetName": "Victoria Road",
+  "id": 10003001
+ },
+ {
+  "name": "Kerning City Pharmacy",
+  "streetName": "Victoria Road",
+  "id": 10003002
+ },
+ {
+  "name": "Thieves' Hideout",
+  "streetName": "Victoria Road",
+  "id": 10003003
+ },
+ {
+  "name": "Niora Hospital",
+  "streetName": "Victoria Road",
+  "id": 10003004
+ },
+ {
+  "name": "Kerning City Hair Salon",
+  "streetName": "Victoria Road",
+  "id": 10003005
+ },
+ {
+  "name": "Kerning City Repair Shop",
+  "streetName": "Victoria Road",
+  "id": 10003006
+ },
+ {
+  "name": "Kerning City Civic Center",
+  "streetName": "Victoria Road",
+  "id": 10003007
+ },
+ {
+  "name": "Backalley Semi-Basement",
+  "streetName": "Victoria Road",
+  "id": 10003008
+ },
+ {
+  "name": "Kerning City Construction Site",
+  "streetName": "Victoria Road",
+  "id": 10003010
+ },
+ {
+  "name": "Caution Falling Down",
+  "streetName": "Hidden Street",
+  "id": 10003011
+ },
+ {
+  "name": "L Forest I",
+  "streetName": "Victoria Road",
+  "id": 10003020
+ },
+ {
+  "name": "L Forest II",
+  "streetName": "Victoria Road",
+  "id": 10003030
+ },
+ {
+  "name": "L Forest III",
+  "streetName": "Victoria Road",
+  "id": 10003040
+ },
+ {
+  "name": "Kerning City Middle Forest I",
+  "streetName": "Victoria Road",
+  "id": 10003050
+ },
+ {
+  "name": "Kerning City Middle Forest II",
+  "streetName": "Victoria Road",
+  "id": 10003051
+ },
+ {
+  "name": "Kerning City Middle Forest III",
+  "streetName": "Victoria Road",
+  "id": 10003052
+ },
+ {
+  "name": "Subway Ticketing Booth",
+  "streetName": "Victoria Road",
+  "id": 10003060
+ },
+ {
+  "name": "Line 1 <Area 1>",
+  "streetName": "Kerning City Subway",
+  "id": 10003061
+ },
+ {
+  "name": "Transfer Area",
+  "streetName": "Kerning City Subway",
+  "id": 10003062
+ },
+ {
+  "name": "Line 1 <Area 2>",
+  "streetName": "Kerning City Subway",
+  "id": 10003063
+ },
+ {
+  "name": "Line 1 <Area 3>",
+  "streetName": "Kerning City Subway",
+  "id": 10003064
+ },
+ {
+  "name": "Line 1 <Area 4>",
+  "streetName": "Kerning City Subway",
+  "id": 10003065
+ },
+ {
+  "name": "Line 2 <Area 1>",
+  "streetName": "Kerning City Subway",
+  "id": 10003066
+ },
+ {
+  "name": "Line 2 <Area 2>",
+  "streetName": "Kerning City Subway",
+  "id": 10003067
+ },
+ {
+  "name": "Line 2 <Area 3>",
+  "streetName": "Kerning City Subway",
+  "id": 10003068
+ },
+ {
+  "name": "Sunset Sky",
+  "streetName": "Victoria Road",
+  "id": 10003070
+ },
+ {
+  "name": "Construction Site North of Kerning City",
+  "streetName": "Victoria Road",
+  "id": 10003080
+ },
+ {
+  "name": "Northern Top of Construction Site",
+  "streetName": "Hidden Street",
+  "id": 10003081
+ },
+ {
+  "name": "The Swamp of Despair I",
+  "streetName": "Warning Street",
+  "id": 10003090
+ },
+ {
+  "name": "The Swamp of Despair II",
+  "streetName": "Warning Street",
+  "id": 10003091
+ },
+ {
+  "name": "The Swamp of Despair III",
+  "streetName": "Warning Street",
+  "id": 10003092
+ },
+ {
+  "name": "Dangerous Croko I",
+  "streetName": "Warning Street",
+  "id": 10003093
+ },
+ {
+  "name": "Dangerous Croko II",
+  "streetName": "Warning Street",
+  "id": 10003094
+ },
+ {
+  "name": "Monkey Swamp I",
+  "streetName": "Hidden Street",
+  "id": 10003095
+ },
+ {
+  "name": "Monkey Swamp II",
+  "streetName": "Hidden Street",
+  "id": 10003096
+ },
+ {
+  "name": "Monkey Swamp III",
+  "streetName": "Hidden Street",
+  "id": 10003097
+ },
+ {
+  "name": "The Hermit's Cabin",
+  "streetName": "Hidden Street",
+  "id": 10003098
+ },
+ {
+  "name": "B1 <Area 1>",
+  "streetName": "Line 3 Construction Site",
+  "id": 10003100
+ },
+ {
+  "name": "B1 <Area 2>",
+  "streetName": "Line 3 Construction Site",
+  "id": 10003101
+ },
+ {
+  "name": "B1 <Subway Depot>",
+  "streetName": "Line 3 Construction Site",
+  "id": 10003102
+ },
+ {
+  "name": "B2 <Area 1>",
+  "streetName": "Line 3 Construction Site",
+  "id": 10003103
+ },
+ {
+  "name": "B2 <Area 2>",
+  "streetName": "Line 3 Construction Site",
+  "id": 10003104
+ },
+ {
+  "name": "B2 <Subway Depot>",
+  "streetName": "Line 3 Construction Site",
+  "id": 10003105
+ },
+ {
+  "name": "B3 <Area 1>",
+  "streetName": "Line 3 Construction Site",
+  "id": 10003106
+ },
+ {
+  "name": "B3 <Area 2>",
+  "streetName": "Line 3 Construction Site",
+  "id": 10003107
+ },
+ {
+  "name": "B3 <Area 3>",
+  "streetName": "Line 3 Construction Site",
+  "id": 10003108
+ },
+ {
+  "name": "B3 <Subway Depot>",
+  "streetName": "Line 3 Construction Site",
+  "id": 10003109
+ },
+ {
+  "name": "The Murky Swamp I",
+  "streetName": "Hidden Street",
+  "id": 10003110
+ },
+ {
+  "name": "The Murky Swamp II",
+  "streetName": "Hidden Street",
+  "id": 10003111
+ },
+ {
+  "name": "Cabin of the Forsaken",
+  "streetName": "Hidden Street",
+  "id": 10003112
+ },
+ {
+  "name": "Perion",
+  "streetName": "Victoria Road",
+  "id": 10004000
+ },
+ {
+  "name": "Perion Weapon Store",
+  "streetName": "Victoria Road",
+  "id": 10004001
+ },
+ {
+  "name": "Perion Department Store",
+  "streetName": "Victoria Road",
+  "id": 10004002
+ },
+ {
+  "name": "Warriors' Sanctuary",
+  "streetName": "Victoria Road",
+  "id": 10004003
+ },
+ {
+  "name": "West Street Corner of Perion",
+  "streetName": "Victoria Road",
+  "id": 10004010
+ },
+ {
+  "name": "West Rocky Mountain I",
+  "streetName": "Victoria Road",
+  "id": 10004020
+ },
+ {
+  "name": "West Rocky Mountain II",
+  "streetName": "Victoria Road",
+  "id": 10004021
+ },
+ {
+  "name": "West Rocky Mountain III",
+  "streetName": "Victoria Road",
+  "id": 10004022
+ },
+ {
+  "name": "West Rocky Mountain IV",
+  "streetName": "Victoria Road",
+  "id": 10004023
+ },
+ {
+  "name": "West Domain of Perion",
+  "streetName": "Victoria Road",
+  "id": 10004030
+ },
+ {
+  "name": "Perion Street Corner",
+  "streetName": "Victoria Road",
+  "id": 10004040
+ },
+ {
+  "name": "Land of Wild Boar",
+  "streetName": "Hidden Street",
+  "id": 10004041
+ },
+ {
+  "name": "Over the Wall",
+  "streetName": "Hidden Street",
+  "id": 10004042
+ },
+ {
+  "name": "East Rocky Mountain I",
+  "streetName": "Victoria Road",
+  "id": 10004050
+ },
+ {
+  "name": "East Rocky Mountain II",
+  "streetName": "Victoria Road",
+  "id": 10004051
+ },
+ {
+  "name": "East Rocky Mountain III",
+  "streetName": "Victoria Road",
+  "id": 10004052
+ },
+ {
+  "name": "East Rocky Mountain IV",
+  "streetName": "Victoria Road",
+  "id": 10004053
+ },
+ {
+  "name": "East Rocky Mountain V",
+  "streetName": "Victoria Road",
+  "id": 10004054
+ },
+ {
+  "name": "East Rocky Mountain VI",
+  "streetName": "Victoria Road",
+  "id": 10004055
+ },
+ {
+  "name": "East Rocky Mountain VII",
+  "streetName": "Victoria Road",
+  "id": 10004056
+ },
+ {
+  "name": "Parched Land",
+  "streetName": "Victoria Road",
+  "id": 10004057
+ },
+ {
+  "name": "Rocky Road I",
+  "streetName": "Victoria Road",
+  "id": 10004060
+ },
+ {
+  "name": "Rocky Road II",
+  "streetName": "Victoria Road",
+  "id": 10004070
+ },
+ {
+  "name": "Rocky Road III",
+  "streetName": "Victoria Road",
+  "id": 10004080
+ },
+ {
+  "name": "East Domain of Perion",
+  "streetName": "Victoria Road",
+  "id": 10004090
+ },
+ {
+  "name": "The Land of Wild Boar II",
+  "streetName": "Hidden Street",
+  "id": 10004091
+ },
+ {
+  "name": "Deep Valley I",
+  "streetName": "Warning Street",
+  "id": 10004100
+ },
+ {
+  "name": "Dangerous Valley",
+  "streetName": "Hidden Street",
+  "id": 10004101
+ },
+ {
+  "name": "Dangerous Valley II",
+  "streetName": "Hidden Street",
+  "id": 10004102
+ },
+ {
+  "name": "Deep Valley II",
+  "streetName": "Warning Street",
+  "id": 10004110
+ },
+ {
+  "name": "The Burnt Land I",
+  "streetName": "Warning Street",
+  "id": 10004111
+ },
+ {
+  "name": "The Burnt Land II",
+  "streetName": "Warning Street",
+  "id": 10004112
+ },
+ {
+  "name": "The Burnt Land III",
+  "streetName": "Warning Street",
+  "id": 10004113
+ },
+ {
+  "name": "The Burnt Land IV",
+  "streetName": "Warning Street",
+  "id": 10004114
+ },
+ {
+  "name": "The Burnt Land V",
+  "streetName": "Warning Street",
+  "id": 10004115
+ },
+ {
+  "name": "Deep Valley III",
+  "streetName": "Warning Street",
+  "id": 10004120
+ },
+ {
+  "name": "Perion Dungeon Entrance",
+  "streetName": "Warning Street",
+  "id": 10004121
+ },
+ {
+  "name": "Excavation Site I",
+  "streetName": "Victoria Road",
+  "id": 10004130
+ },
+ {
+  "name": "Excavation Site II",
+  "streetName": "Victoria Road",
+  "id": 10004131
+ },
+ {
+  "name": "Excavation Site III",
+  "streetName": "Victoria Road",
+  "id": 10004132
+ },
+ {
+  "name": "Excavation Site <Camp>",
+  "streetName": "Victoria Road",
+  "id": 10004133
+ },
+ {
+  "name": "Remains <Tomb> I",
+  "streetName": "Victoria Road",
+  "id": 10004134
+ },
+ {
+  "name": "Remains <Tomb> II",
+  "streetName": "Victoria Road",
+  "id": 10004135
+ },
+ {
+  "name": "Remains <Tomb> III",
+  "streetName": "Victoria Road",
+  "id": 10004136
+ },
+ {
+  "name": "Remains <Tomb> IV",
+  "streetName": "Victoria Road",
+  "id": 10004137
+ },
+ {
+  "name": "Remains <Cliff>",
+  "streetName": "Victoria Road",
+  "id": 10004138
+ },
+ {
+  "name": "Camp 1",
+  "streetName": "Victoria Road",
+  "id": 10004140
+ },
+ {
+  "name": "Camp 2",
+  "streetName": "Victoria Road",
+  "id": 10004141
+ },
+ {
+  "name": "Camp 3",
+  "streetName": "Victoria Road",
+  "id": 10004142
+ },
+ {
+  "name": "Sleepywood",
+  "streetName": "Dungeon",
+  "id": 10005000
+ },
+ {
+  "name": "Sleepywood Hotel",
+  "streetName": "Dungeon",
+  "id": 10005001
+ },
+ {
+  "name": "Regular Sauna",
+  "streetName": "Dungeon",
+  "id": 10005002
+ },
+ {
+  "name": "VIP Sauna",
+  "streetName": "Dungeon",
+  "id": 10005003
+ },
+ {
+  "name": "Swampy Land in a Deep Forest",
+  "streetName": "Dungeon",
+  "id": 10005010
+ },
+ {
+  "name": "Hunting Ground in the Deep Forest I",
+  "streetName": "Dungeon",
+  "id": 10005011
+ },
+ {
+  "name": "Hunting Ground in the Deep Forest II",
+  "streetName": "Dungeon",
+  "id": 10005012
+ },
+ {
+  "name": "Deep Forest",
+  "streetName": "Dungeon",
+  "id": 10005020
+ },
+ {
+  "name": "Damp Tree-Forest",
+  "streetName": "Dungeon",
+  "id": 10005030
+ },
+ {
+  "name": "Damp Forest",
+  "streetName": "Dungeon",
+  "id": 10005031
+ },
+ {
+  "name": "The Deep Forest of Patience <Step 1>",
+  "streetName": "Hidden Street",
+  "id": 10005040
+ },
+ {
+  "name": "The Deep Forest of Patience <Step 2>",
+  "streetName": "Hidden Street",
+  "id": 10005041
+ },
+ {
+  "name": "The Deep Forest of Patience <Step 3>",
+  "streetName": "Hidden Street",
+  "id": 10005042
+ },
+ {
+  "name": "The Deep Forest of Patience <Step 4>",
+  "streetName": "Hidden Street",
+  "id": 10005043
+ },
+ {
+  "name": "The Deep Forest of Patience <Step 5>",
+  "streetName": "Hidden Street",
+  "id": 10005044
+ },
+ {
+  "name": "The Deep Forest of Patience <Step 6>",
+  "streetName": "Hidden Street",
+  "id": 10005045
+ },
+ {
+  "name": "The Deep Forest of Patience <Step 7>",
+  "streetName": "Hidden Street",
+  "id": 10005046
+ },
+ {
+  "name": "Sleepy Dungeon I",
+  "streetName": "Dungeon",
+  "id": 10005050
+ },
+ {
+  "name": "Sleepy Dungeon II",
+  "streetName": "Dungeon",
+  "id": 10005051
+ },
+ {
+  "name": "Sleepy Dungeon III",
+  "streetName": "Dungeon",
+  "id": 10005052
+ },
+ {
+  "name": "Sleepy Dungeon IV",
+  "streetName": "Dungeon",
+  "id": 10005053
+ },
+ {
+  "name": "Sleepy Dungeon V",
+  "streetName": "Dungeon",
+  "id": 10005054
+ },
+ {
+  "name": "Ant Tunnel I",
+  "streetName": "Dungeon",
+  "id": 10005060
+ },
+ {
+  "name": "Ant Tunnel II",
+  "streetName": "Dungeon",
+  "id": 10005061
+ },
+ {
+  "name": "Ant Tunnel III",
+  "streetName": "Dungeon",
+  "id": 10005062
+ },
+ {
+  "name": "Ant Tunnel IV",
+  "streetName": "Dungeon",
+  "id": 10005063
+ },
+ {
+  "name": "Dark Cave",
+  "streetName": "Dungeon",
+  "id": 10005064
+ },
+ {
+  "name": "Dangerous Steam",
+  "streetName": "Dungeon",
+  "id": 10005065
+ },
+ {
+  "name": "Deep Ant Tunnel I",
+  "streetName": "Dungeon",
+  "id": 10005066
+ },
+ {
+  "name": "Deep Ant Tunnel II",
+  "streetName": "Dungeon",
+  "id": 10005067
+ },
+ {
+  "name": "Ant Tunnel Park",
+  "streetName": "Dungeon",
+  "id": 10005070
+ },
+ {
+  "name": "The Cave of Evil Eye I",
+  "streetName": "Dungeon",
+  "id": 10005071
+ },
+ {
+  "name": "The Cave of Evil Eye II",
+  "streetName": "Dungeon",
+  "id": 10005072
+ },
+ {
+  "name": "The Cave of Evil Eye III",
+  "streetName": "Dungeon",
+  "id": 10005073
+ },
+ {
+  "name": "The Cave of Evil Eye IV",
+  "streetName": "Dungeon",
+  "id": 10005074
+ },
+ {
+  "name": "Drake Hunting Ground",
+  "streetName": "Dungeon",
+  "id": 10005075
+ },
+ {
+  "name": "The Tunnel That Lost Light I",
+  "streetName": "Dungeon",
+  "id": 10005076
+ },
+ {
+  "name": "The Tunnel That Lost Light II",
+  "streetName": "Dungeon",
+  "id": 10005077
+ },
+ {
+  "name": "The Grave of Mushmom",
+  "streetName": "Dungeon",
+  "id": 10005078
+ },
+ {
+  "name": "Another Entrance",
+  "streetName": "Dungeon",
+  "id": 10005080
+ },
+ {
+  "name": "Drake's Meal Table",
+  "streetName": "Dungeon",
+  "id": 10005090
+ },
+ {
+  "name": "Wild Kargo's Area",
+  "streetName": "Dungeon",
+  "id": 10005091
+ },
+ {
+  "name": "Another Path",
+  "streetName": "Dungeon",
+  "id": 10005100
+ },
+ {
+  "name": "Sanctuary Entrance I",
+  "streetName": "Dungeon",
+  "id": 10005101
+ },
+ {
+  "name": "Sanctuary Entrance II",
+  "streetName": "Dungeon",
+  "id": 10005102
+ },
+ {
+  "name": "Sanctuary Entrance III",
+  "streetName": "Dungeon",
+  "id": 10005103
+ },
+ {
+  "name": "Sanctuary Entrance IV",
+  "streetName": "Dungeon",
+  "id": 10005104
+ },
+ {
+  "name": "The Cursed Sanctuary",
+  "streetName": "Dungeon",
+  "id": 10005105
+ },
+ {
+  "name": "Florina Beach",
+  "streetName": "Florina Road",
+  "id": 10007000
+ },
+ {
+  "name": "A Look-Out Shed Around the Beach",
+  "streetName": "Florina Road",
+  "id": 10007010
+ },
+ {
+  "name": "Lorang Lorang",
+  "streetName": "Florina Road",
+  "id": 10007020
+ },
+ {
+  "name": "Lorang Lorang Lorang",
+  "streetName": "Hidden Street",
+  "id": 10007021
+ },
+ {
+  "name": "Lorang and Clang",
+  "streetName": "Florina Road",
+  "id": 10007030
+ },
+ {
+  "name": "Clang and Lorang",
+  "streetName": "Florina Road",
+  "id": 10007031
+ },
+ {
+  "name": "Hot Sand",
+  "streetName": "Florina Road",
+  "id": 10007040
+ },
+ {
+  "name": "1st Accompaniment <1st Stage>",
+  "streetName": "Hidden Street",
+  "id": 80000000
+ },
+ {
+  "name": "1st Accompaniment <2nd Stage>",
+  "streetName": "Hidden Street",
+  "id": 80000100
+ },
+ {
+  "name": "1st Accompaniment <3rd Stage>",
+  "streetName": "Hidden Street",
+  "id": 80000200
+ },
+ {
+  "name": "1st Accompaniment <4th stage>",
+  "streetName": "Hidden Street",
+  "id": 80000300
+ },
+ {
+  "name": "1st Accompaniment <Last Stage>",
+  "streetName": "Hidden Street",
+  "id": 80000400
+ },
+ {
+  "name": "1st Accompaniment <Bonus>",
+  "streetName": "Hidden Street",
+  "id": 80000500
+ },
+ {
+  "name": "1st Accompaniment <Exit>",
+  "streetName": "Hidden Street",
+  "id": 80000600
+ },
+ {
+  "name": "Ant Tunnel For Bowman",
+  "streetName": "Hidden Street",
+  "id": 80001000
+ },
+ {
+  "name": "Magician's Tree Dungeon",
+  "streetName": "Hidden Street",
+  "id": 80001100
+ },
+ {
+  "name": "Thief's Construction Site",
+  "streetName": "Hidden Street",
+  "id": 80001200
+ },
+ {
+  "name": "Warrior's Rocky Mountain",
+  "streetName": "Hidden Street",
+  "id": 80001300
+ },
+ {
+  "name": "Free Market Entrance",
+  "streetName": "Hidden Street",
+  "id": 80002000
+ },
+ {
+  "name": "Free Market <1>",
+  "streetName": "Hidden Street",
+  "id": 80002001
+ },
+ {
+  "name": "Free Market <2>",
+  "streetName": "Hidden Street",
+  "id": 80002002
+ },
+ {
+  "name": "Free Market <3>",
+  "streetName": "Hidden Street",
+  "id": 80002003
+ },
+ {
+  "name": "Free Market <4>",
+  "streetName": "Hidden Street",
+  "id": 80002004
+ },
+ {
+  "name": "Free Market <5>",
+  "streetName": "Hidden Street",
+  "id": 80002005
+ },
+ {
+  "name": "Free Market <6>",
+  "streetName": "Hidden Street",
+  "id": 80002006
+ },
+ {
+  "name": "Free Market <7>",
+  "streetName": "Hidden Street",
+  "id": 80002007
+ },
+ {
+  "name": "Free Market <8>",
+  "streetName": "Hidden Street",
+  "id": 80002008
+ },
+ {
+  "name": "Free Market <9>",
+  "streetName": "Hidden Street",
+  "id": 80002009
+ },
+ {
+  "name": "Free Market <10>",
+  "streetName": "Hidden Street",
+  "id": 80002010
+ },
+ {
+  "name": "Free Market <11>",
+  "streetName": "Hidden Street",
+  "id": 80002011
+ },
+ {
+  "name": "Free Market <12>",
+  "streetName": "Hidden Street",
+  "id": 80002012
+ },
+ {
+  "name": "Free Market <13>",
+  "streetName": "Hidden Street",
+  "id": 80002013
+ },
+ {
+  "name": "Free Market <14>",
+  "streetName": "Hidden Street",
+  "id": 80002014
+ },
+ {
+  "name": "Free Market <15>",
+  "streetName": "Hidden Street",
+  "id": 80002015
+ },
+ {
+  "name": "Free Market <16>",
+  "streetName": "Hidden Street",
+  "id": 80002016
+ },
+ {
+  "name": "Free Market <17>",
+  "streetName": "Hidden Street",
+  "id": 80002017
+ },
+ {
+  "name": "Free Market <18>",
+  "streetName": "Hidden Street",
+  "id": 80002018
+ },
+ {
+  "name": "Free Market <19>",
+  "streetName": "Hidden Street",
+  "id": 80002019
+ },
+ {
+  "name": "Free Market <20>",
+  "streetName": "Hidden Street",
+  "id": 80002020
+ },
+ {
+  "name": "Primrose Hill",
+  "streetName": "Hidden Street",
+  "id": 80003000
+ },
+ {
+  "name": "Shortcut",
+  "streetName": "Hidden Street",
+  "id": 80003100
+ },
+ {
+  "name": "Pig Town",
+  "streetName": "Hidden Street",
+  "id": 80003200
+ },
+ {
+  "name": "Back to Town",
+  "streetName": "Hidden Street",
+  "id": 80003300
+ },
+ {
+  "name": "Shortcut",
+  "streetName": "Hidden Street",
+  "id": 80003400
+ },
+ {
+  "name": "Yellow Mushroom House",
+  "streetName": "Victoria Road",
+  "id": 88000000
+ },
+ {
+  "name": "Backalley Semi-Basement",
+  "streetName": "Victoria Road",
+  "id": 88001000
+ },
+ {
+  "name": "Truth Booth",
+  "streetName": "Truth Booth",
+  "id": 89000000
+ },
+ {
+  "name": "Maple Hill",
+  "streetName": "Hidden Street",
+  "id": 90000000
+ },
+ {
+  "name": "Physical Fitness Test <Waiting Room>",
+  "streetName": "Hidden Street",
+  "id": 90040000
+ },
+ {
+  "name": "Physical Fitness Test <Level 1>",
+  "streetName": "Hidden Street",
+  "id": 90040001
+ },
+ {
+  "name": "Physical Fitness Test <Level 2>",
+  "streetName": "Hidden Street",
+  "id": 90040002
+ },
+ {
+  "name": "Physical Fitness Test <Level 3>",
+  "streetName": "Hidden Street",
+  "id": 90040003
+ },
+ {
+  "name": "Physical Fitness Test <Level 4>",
+  "streetName": "Hidden Street",
+  "id": 90040004
+ },
+ {
+  "name": "Physical Fitness Test <Easy Waiting Room>",
+  "streetName": "Hidden Street",
+  "id": 90040010
+ },
+ {
+  "name": "Physical Fitness Test <Easy Level 1>",
+  "streetName": "Hidden Street",
+  "id": 90040011
+ },
+ {
+  "name": "Physical Fitness Test <Easy Level 2>",
+  "streetName": "Hidden Street",
+  "id": 90040012
+ },
+ {
+  "name": "Physical Fitness Test <Easy Level 3>",
+  "streetName": "Hidden Street",
+  "id": 90040013
+ },
+ {
+  "name": "Physical Fitness Test <Normal Waiting Room>",
+  "streetName": "Hidden Street",
+  "id": 90040020
+ },
+ {
+  "name": "Physical Fitness Test <Normal Level 1>",
+  "streetName": "Hidden Street",
+  "id": 90040021
+ },
+ {
+  "name": "Physical Fitness Test <Normal Level 2>",
+  "streetName": "Hidden Street",
+  "id": 90040022
+ },
+ {
+  "name": "Physical Fitness Test <Normal Level 3>",
+  "streetName": "Hidden Street",
+  "id": 90040023
+ },
+ {
+  "name": "Up and Up <Level 1>",
+  "streetName": "Hidden Street",
+  "id": 90040101
+ },
+ {
+  "name": "Up and Up <Level 2>",
+  "streetName": "Hidden Street",
+  "id": 90040102
+ },
+ {
+  "name": "Up and Up <Level 3>",
+  "streetName": "Hidden Street",
+  "id": 90040103
+ },
+ {
+  "name": "Up and Up <Level 1>",
+  "streetName": "Hidden Street",
+  "id": 90040111
+ },
+ {
+  "name": "Up and Up <Level 2>",
+  "streetName": "Hidden Street",
+  "id": 90040112
+ },
+ {
+  "name": "Up and Up <Level 3>",
+  "streetName": "Hidden Street",
+  "id": 90040113
+ },
+ {
+  "name": "Up and Up <Level 1>",
+  "streetName": "Hidden Street",
+  "id": 90040121
+ },
+ {
+  "name": "Up and Up <Level 2>",
+  "streetName": "Hidden Street",
+  "id": 90040122
+ },
+ {
+  "name": "Up and Up <Level 3>",
+  "streetName": "Hidden Street",
+  "id": 90040123
+ },
+ {
+  "name": "Up and Up <Level 1>",
+  "streetName": "Hidden Street",
+  "id": 90040131
+ },
+ {
+  "name": "Up and Up <Level 2>",
+  "streetName": "Hidden Street",
+  "id": 90040132
+ },
+ {
+  "name": "Up and Up <Level 3>",
+  "streetName": "Hidden Street",
+  "id": 90040133
+ },
+ {
+  "name": "Up and Up <Level 1>",
+  "streetName": "Hidden Street",
+  "id": 90040141
+ },
+ {
+  "name": "Up and Up <Level 2>",
+  "streetName": "Hidden Street",
+  "id": 90040142
+ },
+ {
+  "name": "Up and Up <Level 3>",
+  "streetName": "Hidden Street",
+  "id": 90040143
+ },
+ {
+  "name": "Coconut Harvest",
+  "streetName": "Hidden Street",
+  "id": 90040200
+ },
+ {
+  "name": "Coconut Harvest",
+  "streetName": "Hidden Street",
+  "id": 90040201
+ },
+ {
+  "name": "Coconut Harvest",
+  "streetName": "Hidden Street",
+  "id": 90040202
+ },
+ {
+  "name": "G* Coconut Season",
+  "streetName": "Hidden Street",
+  "id": 90040203
+ },
+ {
+  "name": "Leaving the Event",
+  "streetName": "Hidden Street",
+  "id": 90050000
+ },
+ {
+  "name": "Receiving the Reward For the Event",
+  "streetName": "Hidden Street",
+  "id": 90050001
+ },
+ {
+  "name": "The Manager's Room",
+  "streetName": "Hidden Street",
+  "id": 900000000
+ },
+ {
+  "name": "White Room",
+  "streetName": "Hidden Street",
+  "id": 900000003
+ }
+]

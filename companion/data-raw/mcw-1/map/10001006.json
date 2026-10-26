@@ -1,0 +1,16 @@
+{
+ "id": 10001006,
+ "name": "The Resting Spot, Pig Park",
+ "streetName": "Hidden Street",
+ "mapMark": "Henesys",
+ "isTown": false,
+ "mobRate": 1,
+ "returnMap": 10001001,
+ "vrBounds": {
+  "width": 1408,
+  "height": 1210
+ },
+ "mobs": [],
+ "npcs": [],
+ "portals": []
+}

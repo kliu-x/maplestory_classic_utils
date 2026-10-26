@@ -1,0 +1,1810 @@
+{
+ "id": 110,
+ "description": {
+  "id": 110,
+  "desc": "",
+  "name": "",
+  "shortDesc": "",
+  "bookName": "Fighter Techniques",
+  "names": {
+   "en": "Fighter Techniques",
+   "es": "Técnicas de Fighter",
+   "ko": "Fighter 기술"
+  }
+ },
+ "skills": [
+  {
+   "id": 1100000,
+   "masterLevel": 20,
+   "weapons": [
+    30,
+    40
+   ],
+   "description": {
+    "name": "Sword Mastery",
+    "desc": "[Master Level: 20]\\nIncreases Sword Mastery and Accuracy. It only applies when a one-handed or two-handed sword is equipped."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mastery": "1",
+     "x": "1"
+    },
+    {
+     "hs": "h2",
+     "mastery": "1",
+     "x": "2"
+    },
+    {
+     "hs": "h3",
+     "mastery": "1",
+     "x": "3"
+    },
+    {
+     "hs": "h4",
+     "mastery": "2",
+     "x": "4"
+    },
+    {
+     "hs": "h5",
+     "mastery": "2",
+     "x": "5"
+    },
+    {
+     "hs": "h6",
+     "mastery": "3",
+     "x": "6"
+    },
+    {
+     "hs": "h7",
+     "mastery": "3",
+     "x": "7"
+    },
+    {
+     "hs": "h8",
+     "mastery": "4",
+     "x": "8"
+    },
+    {
+     "hs": "h9",
+     "mastery": "4",
+     "x": "9"
+    },
+    {
+     "hs": "h10",
+     "mastery": "5",
+     "x": "10"
+    },
+    {
+     "hs": "h11",
+     "mastery": "5",
+     "x": "11"
+    },
+    {
+     "hs": "h12",
+     "mastery": "6",
+     "x": "12"
+    },
+    {
+     "hs": "h13",
+     "mastery": "6",
+     "x": "13"
+    },
+    {
+     "hs": "h14",
+     "mastery": "7",
+     "x": "14"
+    },
+    {
+     "hs": "h15",
+     "mastery": "7",
+     "x": "15"
+    },
+    {
+     "hs": "h16",
+     "mastery": "8",
+     "x": "16"
+    },
+    {
+     "hs": "h17",
+     "mastery": "8",
+     "x": "17"
+    },
+    {
+     "hs": "h18",
+     "mastery": "9",
+     "x": "18"
+    },
+    {
+     "hs": "h19",
+     "mastery": "9",
+     "x": "19"
+    },
+    {
+     "hs": "h20",
+     "mastery": "10",
+     "x": "20"
+    }
+   ]
+  },
+  {
+   "id": 1100001,
+   "masterLevel": 20,
+   "weapons": [
+    31,
+    41
+   ],
+   "description": {
+    "name": "Axe Mastery",
+    "desc": "[Master Level: 20]\\nIncreases Axe Mastery, and attacks have a chance to inflict a bleeding effect on the target when attacking. It only applies when a one-handed or two-handed axe is equipped."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mastery": "1",
+     "prop": "5",
+     "dot": "40",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h2",
+     "mastery": "1",
+     "prop": "6",
+     "dot": "43",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h3",
+     "mastery": "1",
+     "prop": "7",
+     "dot": "46",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h4",
+     "mastery": "2",
+     "prop": "8",
+     "dot": "49",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h5",
+     "mastery": "2",
+     "prop": "9",
+     "dot": "52",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h6",
+     "mastery": "3",
+     "prop": "10",
+     "dot": "55",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h7",
+     "mastery": "3",
+     "prop": "11",
+     "dot": "58",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h8",
+     "mastery": "4",
+     "prop": "12",
+     "dot": "61",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h9",
+     "mastery": "4",
+     "prop": "13",
+     "dot": "64",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h10",
+     "mastery": "5",
+     "prop": "14",
+     "dot": "67",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h11",
+     "mastery": "5",
+     "prop": "15",
+     "dot": "70",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h12",
+     "mastery": "6",
+     "prop": "16",
+     "dot": "73",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h13",
+     "mastery": "6",
+     "prop": "17",
+     "dot": "76",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h14",
+     "mastery": "7",
+     "prop": "18",
+     "dot": "79",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h15",
+     "mastery": "7",
+     "prop": "19",
+     "dot": "82",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h16",
+     "mastery": "8",
+     "prop": "20",
+     "dot": "85",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h17",
+     "mastery": "8",
+     "prop": "21",
+     "dot": "88",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h18",
+     "mastery": "9",
+     "prop": "22",
+     "dot": "91",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h19",
+     "mastery": "9",
+     "prop": "23",
+     "dot": "94",
+     "dotTime": "3",
+     "dotInterval": "1"
+    },
+    {
+     "hs": "h20",
+     "mastery": "10",
+     "prop": "25",
+     "dot": "100",
+     "dotTime": "3",
+     "dotInterval": "1"
+    }
+   ]
+  },
+  {
+   "id": 1101000,
+   "masterLevel": 30,
+   "requiredSkillLevels": {
+    "1100000": 3
+   },
+   "weapons": [
+    30,
+    40
+   ],
+   "description": {
+    "name": "Final Attack: Sword",
+    "desc": "[Master Level: 30]\\nUsing attack skills has a chance to enable the Final Attack skill for 60 sec. While enabled, the skill can be used, dealing heavy damage to up to 3 enemies in front. Only applies when equipped with a one-handed or two-handed sword.\\nRequired Skill: #cAt least Level 3 Sword Mastery#"
+   },
+   "levelProperties": [
+    {
+     "damage": "140",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "12",
+     "mpCon": "10",
+     "prop": "25",
+     "time": "60",
+     "hs": "h1"
+    },
+    {
+     "damage": "142",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "13",
+     "mpCon": "11",
+     "prop": "25",
+     "time": "60",
+     "hs": "h2"
+    },
+    {
+     "damage": "144",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "13",
+     "mpCon": "11",
+     "prop": "25",
+     "time": "60",
+     "hs": "h3"
+    },
+    {
+     "damage": "146",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "13",
+     "mpCon": "11",
+     "prop": "25",
+     "time": "60",
+     "hs": "h4"
+    },
+    {
+     "damage": "148",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "13",
+     "mpCon": "11",
+     "prop": "25",
+     "time": "60",
+     "hs": "h5"
+    },
+    {
+     "damage": "150",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "14",
+     "mpCon": "12",
+     "prop": "25",
+     "time": "60",
+     "hs": "h6"
+    },
+    {
+     "damage": "152",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "14",
+     "mpCon": "12",
+     "prop": "25",
+     "time": "60",
+     "hs": "h7"
+    },
+    {
+     "damage": "154",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "14",
+     "mpCon": "12",
+     "prop": "25",
+     "time": "60",
+     "hs": "h8"
+    },
+    {
+     "damage": "156",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "14",
+     "mpCon": "12",
+     "prop": "25",
+     "time": "60",
+     "hs": "h9"
+    },
+    {
+     "damage": "158",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "15",
+     "mpCon": "13",
+     "prop": "25",
+     "time": "60",
+     "hs": "h10"
+    },
+    {
+     "damage": "160",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "15",
+     "mpCon": "13",
+     "prop": "25",
+     "time": "60",
+     "hs": "h11"
+    },
+    {
+     "damage": "162",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "15",
+     "mpCon": "13",
+     "prop": "25",
+     "time": "60",
+     "hs": "h12"
+    },
+    {
+     "damage": "164",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "15",
+     "mpCon": "13",
+     "prop": "25",
+     "time": "60",
+     "hs": "h13"
+    },
+    {
+     "damage": "166",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "16",
+     "mpCon": "14",
+     "prop": "25",
+     "time": "60",
+     "hs": "h14"
+    },
+    {
+     "damage": "168",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "16",
+     "mpCon": "14",
+     "prop": "25",
+     "time": "60",
+     "hs": "h15"
+    },
+    {
+     "damage": "170",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "16",
+     "mpCon": "14",
+     "prop": "25",
+     "time": "60",
+     "hs": "h16"
+    },
+    {
+     "damage": "172",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "16",
+     "mpCon": "14",
+     "prop": "25",
+     "time": "60",
+     "hs": "h17"
+    },
+    {
+     "damage": "174",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "17",
+     "mpCon": "15",
+     "prop": "25",
+     "time": "60",
+     "hs": "h18"
+    },
+    {
+     "damage": "176",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "17",
+     "mpCon": "15",
+     "prop": "25",
+     "time": "60",
+     "hs": "h19"
+    },
+    {
+     "damage": "178",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "17",
+     "mpCon": "15",
+     "prop": "25",
+     "time": "60",
+     "hs": "h20"
+    },
+    {
+     "damage": "180",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "17",
+     "mpCon": "15",
+     "prop": "25",
+     "time": "60",
+     "hs": "h21"
+    },
+    {
+     "damage": "182",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "18",
+     "mpCon": "16",
+     "prop": "25",
+     "time": "60",
+     "hs": "h22"
+    },
+    {
+     "damage": "184",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "18",
+     "mpCon": "16",
+     "prop": "25",
+     "time": "60",
+     "hs": "h23"
+    },
+    {
+     "damage": "186",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "18",
+     "mpCon": "16",
+     "prop": "25",
+     "time": "60",
+     "hs": "h24"
+    },
+    {
+     "damage": "188",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "18",
+     "mpCon": "16",
+     "prop": "25",
+     "time": "60",
+     "hs": "h25"
+    },
+    {
+     "damage": "190",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "19",
+     "mpCon": "17",
+     "prop": "25",
+     "time": "60",
+     "hs": "h26"
+    },
+    {
+     "damage": "192",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "19",
+     "mpCon": "17",
+     "prop": "25",
+     "time": "60",
+     "hs": "h27"
+    },
+    {
+     "damage": "194",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "19",
+     "mpCon": "17",
+     "prop": "25",
+     "time": "60",
+     "hs": "h28"
+    },
+    {
+     "damage": "196",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "19",
+     "mpCon": "17",
+     "prop": "25",
+     "time": "60",
+     "hs": "h29"
+    },
+    {
+     "damage": "200",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "20",
+     "mpCon": "18",
+     "prop": "25",
+     "time": "60",
+     "hs": "h30"
+    }
+   ]
+  },
+  {
+   "id": 1101001,
+   "masterLevel": 30,
+   "requiredSkillLevels": {
+    "1100001": 3
+   },
+   "weapons": [
+    31,
+    41
+   ],
+   "description": {
+    "name": "Final Attack: Axe",
+    "desc": "[Master Level: 30]\\nUsing attack skills has a chance to enable the Final Attack skill for 60 sec. While enabled, the skill can be used, dealing heavy damage to up to 3 enemies in front. Only applies when equipped with a one-handed or two-handed axe.\\nRequired Skill: #cAt least Level 3 Axe Mastery#"
+   },
+   "levelProperties": [
+    {
+     "damage": "140",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "12",
+     "mpCon": "10",
+     "prop": "25",
+     "time": "60",
+     "hs": "h1"
+    },
+    {
+     "damage": "142",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "13",
+     "mpCon": "11",
+     "prop": "25",
+     "time": "60",
+     "hs": "h2"
+    },
+    {
+     "damage": "144",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "13",
+     "mpCon": "11",
+     "prop": "25",
+     "time": "60",
+     "hs": "h3"
+    },
+    {
+     "damage": "146",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "13",
+     "mpCon": "11",
+     "prop": "25",
+     "time": "60",
+     "hs": "h4"
+    },
+    {
+     "damage": "148",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "13",
+     "mpCon": "11",
+     "prop": "25",
+     "time": "60",
+     "hs": "h5"
+    },
+    {
+     "damage": "150",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "14",
+     "mpCon": "12",
+     "prop": "25",
+     "time": "60",
+     "hs": "h6"
+    },
+    {
+     "damage": "152",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "14",
+     "mpCon": "12",
+     "prop": "25",
+     "time": "60",
+     "hs": "h7"
+    },
+    {
+     "damage": "154",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "14",
+     "mpCon": "12",
+     "prop": "25",
+     "time": "60",
+     "hs": "h8"
+    },
+    {
+     "damage": "156",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "14",
+     "mpCon": "12",
+     "prop": "25",
+     "time": "60",
+     "hs": "h9"
+    },
+    {
+     "damage": "158",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "15",
+     "mpCon": "13",
+     "prop": "25",
+     "time": "60",
+     "hs": "h10"
+    },
+    {
+     "damage": "160",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "15",
+     "mpCon": "13",
+     "prop": "25",
+     "time": "60",
+     "hs": "h11"
+    },
+    {
+     "damage": "162",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "15",
+     "mpCon": "13",
+     "prop": "25",
+     "time": "60",
+     "hs": "h12"
+    },
+    {
+     "damage": "164",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "15",
+     "mpCon": "13",
+     "prop": "25",
+     "time": "60",
+     "hs": "h13"
+    },
+    {
+     "damage": "166",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "16",
+     "mpCon": "14",
+     "prop": "25",
+     "time": "60",
+     "hs": "h14"
+    },
+    {
+     "damage": "168",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "130",
+     "hpCon": "16",
+     "mpCon": "14",
+     "prop": "25",
+     "time": "60",
+     "hs": "h15"
+    },
+    {
+     "damage": "170",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "16",
+     "mpCon": "14",
+     "prop": "25",
+     "time": "60",
+     "hs": "h16"
+    },
+    {
+     "damage": "172",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "16",
+     "mpCon": "14",
+     "prop": "25",
+     "time": "60",
+     "hs": "h17"
+    },
+    {
+     "damage": "174",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "17",
+     "mpCon": "15",
+     "prop": "25",
+     "time": "60",
+     "hs": "h18"
+    },
+    {
+     "damage": "176",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "17",
+     "mpCon": "15",
+     "prop": "25",
+     "time": "60",
+     "hs": "h19"
+    },
+    {
+     "damage": "178",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "17",
+     "mpCon": "15",
+     "prop": "25",
+     "time": "60",
+     "hs": "h20"
+    },
+    {
+     "damage": "180",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "17",
+     "mpCon": "15",
+     "prop": "25",
+     "time": "60",
+     "hs": "h21"
+    },
+    {
+     "damage": "182",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "18",
+     "mpCon": "16",
+     "prop": "25",
+     "time": "60",
+     "hs": "h22"
+    },
+    {
+     "damage": "184",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "18",
+     "mpCon": "16",
+     "prop": "25",
+     "time": "60",
+     "hs": "h23"
+    },
+    {
+     "damage": "186",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "18",
+     "mpCon": "16",
+     "prop": "25",
+     "time": "60",
+     "hs": "h24"
+    },
+    {
+     "damage": "188",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "18",
+     "mpCon": "16",
+     "prop": "25",
+     "time": "60",
+     "hs": "h25"
+    },
+    {
+     "damage": "190",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "19",
+     "mpCon": "17",
+     "prop": "25",
+     "time": "60",
+     "hs": "h26"
+    },
+    {
+     "damage": "192",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "19",
+     "mpCon": "17",
+     "prop": "25",
+     "time": "60",
+     "hs": "h27"
+    },
+    {
+     "damage": "194",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "19",
+     "mpCon": "17",
+     "prop": "25",
+     "time": "60",
+     "hs": "h28"
+    },
+    {
+     "damage": "196",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "19",
+     "mpCon": "17",
+     "prop": "25",
+     "time": "60",
+     "hs": "h29"
+    },
+    {
+     "damage": "200",
+     "mobCount": "3",
+     "attackCount": "1",
+     "range": "150",
+     "hpCon": "20",
+     "mpCon": "18",
+     "prop": "25",
+     "time": "60",
+     "hs": "h30"
+    }
+   ]
+  },
+  {
+   "id": 1101002,
+   "masterLevel": 20,
+   "requiredSkillLevels": {
+    "1100000": 5
+   },
+   "weapons": [
+    30,
+    40
+   ],
+   "description": {
+    "name": "Sword Booster",
+    "desc": "[Master Level: 20]\\nConsumes HP and MP to temporarily increase the Attack Speed of the equipped sword. Only applies when equipped with a one-handed or two-handed sword.\\nRequired Skill: #cAt least Level 5 Sword Mastery#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "hpCon": "30",
+     "mpCon": "30",
+     "time": "100",
+     "x": "-2"
+    },
+    {
+     "hs": "h2",
+     "hpCon": "29",
+     "mpCon": "29",
+     "time": "110",
+     "x": "-2"
+    },
+    {
+     "hs": "h3",
+     "hpCon": "28",
+     "mpCon": "28",
+     "time": "120",
+     "x": "-2"
+    },
+    {
+     "hs": "h4",
+     "hpCon": "27",
+     "mpCon": "27",
+     "time": "130",
+     "x": "-2"
+    },
+    {
+     "hs": "h5",
+     "hpCon": "26",
+     "mpCon": "26",
+     "time": "140",
+     "x": "-2"
+    },
+    {
+     "hs": "h6",
+     "hpCon": "25",
+     "mpCon": "25",
+     "time": "150",
+     "x": "-2"
+    },
+    {
+     "hs": "h7",
+     "hpCon": "24",
+     "mpCon": "24",
+     "time": "160",
+     "x": "-2"
+    },
+    {
+     "hs": "h8",
+     "hpCon": "23",
+     "mpCon": "23",
+     "time": "170",
+     "x": "-2"
+    },
+    {
+     "hs": "h9",
+     "hpCon": "22",
+     "mpCon": "22",
+     "time": "180",
+     "x": "-2"
+    },
+    {
+     "hs": "h10",
+     "hpCon": "21",
+     "mpCon": "21",
+     "time": "190",
+     "x": "-2"
+    },
+    {
+     "hs": "h11",
+     "hpCon": "20",
+     "mpCon": "20",
+     "time": "200",
+     "x": "-2"
+    },
+    {
+     "hs": "h12",
+     "hpCon": "19",
+     "mpCon": "19",
+     "time": "210",
+     "x": "-2"
+    },
+    {
+     "hs": "h13",
+     "hpCon": "18",
+     "mpCon": "18",
+     "time": "220",
+     "x": "-2"
+    },
+    {
+     "hs": "h14",
+     "hpCon": "17",
+     "mpCon": "17",
+     "time": "230",
+     "x": "-2"
+    },
+    {
+     "hs": "h15",
+     "hpCon": "16",
+     "mpCon": "16",
+     "time": "240",
+     "x": "-2"
+    },
+    {
+     "hs": "h16",
+     "hpCon": "15",
+     "mpCon": "15",
+     "time": "250",
+     "x": "-2"
+    },
+    {
+     "hs": "h17",
+     "hpCon": "14",
+     "mpCon": "14",
+     "time": "260",
+     "x": "-2"
+    },
+    {
+     "hs": "h18",
+     "hpCon": "13",
+     "mpCon": "13",
+     "time": "270",
+     "x": "-2"
+    },
+    {
+     "hs": "h19",
+     "hpCon": "12",
+     "mpCon": "12",
+     "time": "280",
+     "x": "-2"
+    },
+    {
+     "hs": "h20",
+     "hpCon": "10",
+     "mpCon": "10",
+     "time": "300",
+     "x": "-2"
+    }
+   ]
+  },
+  {
+   "id": 1101003,
+   "masterLevel": 20,
+   "requiredSkillLevels": {
+    "1100001": 5
+   },
+   "weapons": [
+    31,
+    41
+   ],
+   "description": {
+    "name": "Axe Booster",
+    "desc": "[Master Level: 20]\\nConsumes HP and MP to temporarily increase the Attack Speed of the equipped axe. Only applies when equipped with a one-handed or two-handed axe.\\nRequired Skill: #cAt least Level 5 Axe Mastery#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "hpCon": "30",
+     "mpCon": "30",
+     "time": "100",
+     "x": "-2"
+    },
+    {
+     "hs": "h2",
+     "hpCon": "29",
+     "mpCon": "29",
+     "time": "110",
+     "x": "-2"
+    },
+    {
+     "hs": "h3",
+     "hpCon": "28",
+     "mpCon": "28",
+     "time": "120",
+     "x": "-2"
+    },
+    {
+     "hs": "h4",
+     "hpCon": "27",
+     "mpCon": "27",
+     "time": "130",
+     "x": "-2"
+    },
+    {
+     "hs": "h5",
+     "hpCon": "26",
+     "mpCon": "26",
+     "time": "140",
+     "x": "-2"
+    },
+    {
+     "hs": "h6",
+     "hpCon": "25",
+     "mpCon": "25",
+     "time": "150",
+     "x": "-2"
+    },
+    {
+     "hs": "h7",
+     "hpCon": "24",
+     "mpCon": "24",
+     "time": "160",
+     "x": "-2"
+    },
+    {
+     "hs": "h8",
+     "hpCon": "23",
+     "mpCon": "23",
+     "time": "170",
+     "x": "-2"
+    },
+    {
+     "hs": "h9",
+     "hpCon": "22",
+     "mpCon": "22",
+     "time": "180",
+     "x": "-2"
+    },
+    {
+     "hs": "h10",
+     "hpCon": "21",
+     "mpCon": "21",
+     "time": "190",
+     "x": "-2"
+    },
+    {
+     "hs": "h11",
+     "hpCon": "20",
+     "mpCon": "20",
+     "time": "200",
+     "x": "-2"
+    },
+    {
+     "hs": "h12",
+     "hpCon": "19",
+     "mpCon": "19",
+     "time": "210",
+     "x": "-2"
+    },
+    {
+     "hs": "h13",
+     "hpCon": "18",
+     "mpCon": "18",
+     "time": "220",
+     "x": "-2"
+    },
+    {
+     "hs": "h14",
+     "hpCon": "17",
+     "mpCon": "17",
+     "time": "230",
+     "x": "-2"
+    },
+    {
+     "hs": "h15",
+     "hpCon": "16",
+     "mpCon": "16",
+     "time": "240",
+     "x": "-2"
+    },
+    {
+     "hs": "h16",
+     "hpCon": "15",
+     "mpCon": "15",
+     "time": "250",
+     "x": "-2"
+    },
+    {
+     "hs": "h17",
+     "hpCon": "14",
+     "mpCon": "14",
+     "time": "260",
+     "x": "-2"
+    },
+    {
+     "hs": "h18",
+     "hpCon": "13",
+     "mpCon": "13",
+     "time": "270",
+     "x": "-2"
+    },
+    {
+     "hs": "h19",
+     "hpCon": "12",
+     "mpCon": "12",
+     "time": "280",
+     "x": "-2"
+    },
+    {
+     "hs": "h20",
+     "hpCon": "10",
+     "mpCon": "10",
+     "time": "300",
+     "x": "-2"
+    }
+   ]
+  },
+  {
+   "id": 1101004,
+   "masterLevel": 30,
+   "weapons": [],
+   "description": {
+    "name": "Rage",
+    "desc": "[Master Level: 30]\\nTemporarily increases the Attack Power of everyone in the party around the area, but also decreases Weapon Def."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "10",
+     "time": "150",
+     "indiePad": "10",
+     "indiePdd": "-10",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "10",
+     "time": "155",
+     "indiePad": "11",
+     "indiePdd": "-11",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "10",
+     "time": "160",
+     "indiePad": "12",
+     "indiePdd": "-12",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "11",
+     "time": "165",
+     "indiePad": "13",
+     "indiePdd": "-13",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "11",
+     "time": "170",
+     "indiePad": "14",
+     "indiePdd": "-14",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "12",
+     "time": "175",
+     "indiePad": "15",
+     "indiePdd": "-15",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "12",
+     "time": "180",
+     "indiePad": "16",
+     "indiePdd": "-16",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "13",
+     "time": "185",
+     "indiePad": "17",
+     "indiePdd": "-17",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "13",
+     "time": "190",
+     "indiePad": "18",
+     "indiePdd": "-18",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "14",
+     "time": "195",
+     "indiePad": "19",
+     "indiePdd": "-19",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "14",
+     "time": "200",
+     "indiePad": "20",
+     "indiePdd": "-20",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "15",
+     "time": "205",
+     "indiePad": "21",
+     "indiePdd": "-21",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "15",
+     "time": "210",
+     "indiePad": "22",
+     "indiePdd": "-22",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "16",
+     "time": "215",
+     "indiePad": "23",
+     "indiePdd": "-23",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "16",
+     "time": "220",
+     "indiePad": "24",
+     "indiePdd": "-24",
+     "lt": "Point [ X=-250, Y=-150 ]",
+     "rb": "Point [ X=250, Y=150 ]"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "17",
+     "time": "225",
+     "indiePad": "25",
+     "indiePdd": "-25",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "17",
+     "time": "230",
+     "indiePad": "26",
+     "indiePdd": "-26",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "18",
+     "time": "235",
+     "indiePad": "27",
+     "indiePdd": "-27",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "18",
+     "time": "240",
+     "indiePad": "28",
+     "indiePdd": "-28",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "19",
+     "time": "245",
+     "indiePad": "29",
+     "indiePdd": "-29",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h21",
+     "mpCon": "19",
+     "time": "250",
+     "indiePad": "30",
+     "indiePdd": "-30",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h22",
+     "mpCon": "20",
+     "time": "255",
+     "indiePad": "31",
+     "indiePdd": "-31",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h23",
+     "mpCon": "20",
+     "time": "260",
+     "indiePad": "32",
+     "indiePdd": "-32",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h24",
+     "mpCon": "21",
+     "time": "265",
+     "indiePad": "33",
+     "indiePdd": "-33",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h25",
+     "mpCon": "21",
+     "time": "270",
+     "indiePad": "34",
+     "indiePdd": "-34",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h26",
+     "mpCon": "22",
+     "time": "275",
+     "indiePad": "35",
+     "indiePdd": "-35",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h27",
+     "mpCon": "22",
+     "time": "280",
+     "indiePad": "36",
+     "indiePdd": "-36",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h28",
+     "mpCon": "23",
+     "time": "285",
+     "indiePad": "37",
+     "indiePdd": "-37",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h29",
+     "mpCon": "23",
+     "time": "290",
+     "indiePad": "38",
+     "indiePdd": "-38",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    },
+    {
+     "hs": "h30",
+     "mpCon": "25",
+     "time": "300",
+     "indiePad": "40",
+     "indiePdd": "-40",
+     "lt": "Point [ X=-300, Y=-200 ]",
+     "rb": "Point [ X=300, Y=200 ]"
+    }
+   ]
+  },
+  {
+   "id": 1101005,
+   "masterLevel": 20,
+   "weapons": [
+    30,
+    40,
+    31,
+    41
+   ],
+   "description": {
+    "name": "Rush",
+    "desc": "[Master Level: 20]\\nRushes forward a certain distance in the direction you are facing. If there are monsters within the rush range, you can deal damage to up to 6 of them and knock them back a certain distance. While rushing, you will not be knocked back even if attacked by monsters.\\n#cCooldown: 2 sec#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "35",
+     "damage": "60",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "130",
+     "lt": "Point [ X=-200, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "34",
+     "damage": "61",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "130",
+     "lt": "Point [ X=-200, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "33",
+     "damage": "62",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "130",
+     "lt": "Point [ X=-200, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "32",
+     "damage": "63",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "130",
+     "lt": "Point [ X=-200, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "31",
+     "damage": "64",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "130",
+     "lt": "Point [ X=-200, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "30",
+     "damage": "65",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "130",
+     "lt": "Point [ X=-200, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "29",
+     "damage": "66",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "130",
+     "lt": "Point [ X=-200, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "28",
+     "damage": "67",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "130",
+     "lt": "Point [ X=-200, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "27",
+     "damage": "68",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "130",
+     "lt": "Point [ X=-200, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "26",
+     "damage": "69",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "130",
+     "lt": "Point [ X=-200, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "25",
+     "damage": "69",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "150",
+     "lt": "Point [ X=-220, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "24",
+     "damage": "71",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "150",
+     "lt": "Point [ X=-220, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "23",
+     "damage": "72",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "150",
+     "lt": "Point [ X=-220, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "22",
+     "damage": "74",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "150",
+     "lt": "Point [ X=-220, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "21",
+     "damage": "74",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "150",
+     "lt": "Point [ X=-220, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "20",
+     "damage": "75",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "150",
+     "lt": "Point [ X=-220, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "19",
+     "damage": "76",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "150",
+     "lt": "Point [ X=-220, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "18",
+     "damage": "77",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "150",
+     "lt": "Point [ X=-220, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "17",
+     "damage": "78",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "150",
+     "lt": "Point [ X=-220, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "15",
+     "damage": "80",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "150",
+     "lt": "Point [ X=-220, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    }
+   ]
+  }
+ ]
+}

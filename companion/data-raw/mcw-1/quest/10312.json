@@ -1,0 +1,83 @@
+{
+ "id": 10312,
+ "name": "[Construction Site B1] Shumi's Lost Coin",
+ "area": 14,
+ "areaName": "Kerning City",
+ "demandSummary": "#i4031039# #t4031039# #b#c4031039# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10313,
+   "levelMinimum": 35,
+   "quests": [
+    {
+     "id": 10312,
+     "state": 2
+    }
+   ],
+   "npcId": 403,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10312,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10312,
+  "exp": 6720,
+  "fame": 1,
+  "items": [
+   {
+    "id": 4031039,
+    "count": -1
+   },
+   {
+    "id": 2030000,
+    "count": 5
+   },
+   {
+    "id": 2030001,
+    "count": 3
+   },
+   {
+    "id": 2030002,
+    "count": 3
+   },
+   {
+    "id": 2030003,
+    "count": 3
+   },
+   {
+    "id": 2030004,
+    "count": 3
+   },
+   {
+    "id": 2030005,
+    "count": 3
+   },
+   {
+    "id": 2030006,
+    "count": 3
+   }
+  ],
+  "meso": 1111,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10312,
+  "levelMinimum": 35,
+  "npcId": 403,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10312,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031039
+   }
+  ],
+  "npcId": 403,
+  "state": 1
+ }
+}

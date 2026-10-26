@@ -1,0 +1,16 @@
+{
+ "id": 1012,
+ "name": "Amherst Townstreet",
+ "streetName": "Rainbow Street",
+ "mapMark": "Amherst",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 1010,
+ "vrBounds": {
+  "width": 1498,
+  "height": 942
+ },
+ "mobs": [],
+ "npcs": [],
+ "portals": []
+}

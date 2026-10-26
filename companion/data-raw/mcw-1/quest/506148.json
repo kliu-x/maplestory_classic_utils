@@ -1,0 +1,49 @@
+{
+ "id": 506148,
+ "name": "A Torn Letter",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "Talk to #p425#",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506149,
+   "levelMinimum": 37,
+   "quests": [
+    {
+     "id": 506148,
+     "state": 2
+    }
+   ],
+   "npcId": 425,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506148,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506148,
+  "exp": 5117,
+  "meso": 819,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506148,
+  "levelMinimum": 37,
+  "quests": [
+   {
+    "id": 506147,
+    "state": 2
+   }
+  ],
+  "npcId": 412,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506148,
+  "levelMinimum": 37,
+  "npcId": 425,
+  "state": 1
+ }
+}

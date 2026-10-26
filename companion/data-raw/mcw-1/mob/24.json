@@ -1,0 +1,23 @@
+{
+ "id": 24,
+ "name": "Iron Hog",
+ "meta": {
+  "isBodyAttack": true,
+  "level": 28,
+  "maxHP": 572,
+  "maxMP": 50,
+  "speed": 20,
+  "physicalDamage": 136,
+  "physicalDefense": 500,
+  "magicDamage": 0,
+  "magicDefense": 100,
+  "accuracy": 104,
+  "evasion": 17,
+  "exp": 52,
+  "isUndead": false,
+  "minimumPushDamage": 500,
+  "elementalAttributes": "L3",
+  "summonType": 1,
+  "revivesMonsterId": []
+ }
+}

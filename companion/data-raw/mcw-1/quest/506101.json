@@ -1,0 +1,64 @@
+{
+ "id": 506101,
+ "name": "First Greeting with Alex, the Town Resident",
+ "area": 20,
+ "areaName": "Citizenship",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506102,
+   "levelMinimum": 12,
+   "quests": [
+    {
+     "id": 506101,
+     "state": 2
+    }
+   ],
+   "npcId": 431,
+   "state": 0
+  },
+  {
+   "id": 506142,
+   "levelMinimum": 27,
+   "quests": [
+    {
+     "id": 10302,
+     "state": 2
+    },
+    {
+     "id": 506101,
+     "state": 2
+    }
+   ],
+   "npcId": 402,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506101,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506101,
+  "exp": 334,
+  "items": [
+   {
+    "id": 2010004,
+    "count": 8
+   }
+  ],
+  "meso": 409,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506101,
+  "levelMinimum": 12,
+  "npcId": 431,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506101,
+  "levelMinimum": 12,
+  "npcId": 402,
+  "state": 1
+ }
+}

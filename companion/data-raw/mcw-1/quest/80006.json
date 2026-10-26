@@ -1,0 +1,80 @@
+{
+ "id": 80006,
+ "name": "Make a Octopus�& Mushroom�Omok Set",
+ "area": 12,
+ "areaName": "Henesys",
+ "demandSummary": "#i4031058:# #t4031058:# #c4031058# / 1\\n#i4031059:# #t4031059:# #c4031059# / 1\\n#i4031060:# #t4031060:# #c4031060# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 80007,
+   "levelMinimum": 12,
+   "quests": [
+    {
+     "id": 80006,
+     "state": 2
+    }
+   ],
+   "npcId": 228,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 80006,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80006,
+  "exp": 334,
+  "items": [
+   {
+    "id": 4031058,
+    "count": -1
+   },
+   {
+    "id": 4031059,
+    "count": -1
+   },
+   {
+    "id": 4031060,
+    "count": -1
+   },
+   {
+    "id": 4080004,
+    "count": 1
+   }
+  ],
+  "meso": 409,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80006,
+  "levelMinimum": 12,
+  "quests": [
+   {
+    "id": 80005,
+    "state": 2
+   }
+  ],
+  "npcId": 228,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80006,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031058
+   },
+   {
+    "count": 1,
+    "id": 4031059
+   },
+   {
+    "count": 1,
+    "id": 4031060
+   }
+  ],
+  "npcId": 228,
+  "state": 1
+ }
+}

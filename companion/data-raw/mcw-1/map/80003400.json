@@ -1,0 +1,20 @@
+{
+ "id": 80003400,
+ "name": "Shortcut",
+ "streetName": "Hidden Street",
+ "mapMark": "Quest",
+ "isTown": false,
+ "mobRate": 1,
+ "returnMap": 80003300,
+ "vrBounds": {
+  "width": 0,
+  "height": 0
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 800019
+  }
+ ],
+ "portals": []
+}

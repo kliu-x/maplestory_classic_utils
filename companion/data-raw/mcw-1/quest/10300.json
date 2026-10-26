@@ -1,0 +1,47 @@
+{
+ "id": 10300,
+ "name": "Alex's Request",
+ "area": 14,
+ "areaName": "Kerning City",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10301,
+   "levelMinimum": 18,
+   "quests": [
+    {
+     "id": 10300,
+     "state": 2
+    }
+   ],
+   "npcId": 202,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10300,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10300,
+  "exp": 819,
+  "items": [
+   {
+    "id": 2010003,
+    "count": 5
+   }
+  ],
+  "meso": 409,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10300,
+  "levelMinimum": 18,
+  "npcId": 402,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10300,
+  "npcId": 202,
+  "state": 1
+ }
+}

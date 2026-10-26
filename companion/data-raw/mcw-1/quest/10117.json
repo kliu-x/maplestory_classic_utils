@@ -1,0 +1,88 @@
+{
+ "id": 10117,
+ "name": "Maya's Third Collection",
+ "area": 12,
+ "areaName": "Henesys",
+ "demandSummary": "#i4000023# #t4000023# #b#c4000023##k / 30\\n#i4000030# #t4000030# #b#c4000030##k /30\\n#i4000034# #t4000034# #b#c4000034##k / 30\\n#i4000037# #t4000037# #b#c4000037##k / 30",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10118,
+   "levelMinimum": 47,
+   "quests": [
+    {
+     "id": 10117,
+     "state": 2
+    }
+   ],
+   "npcId": 207,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10117,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10117,
+  "exp": 11400,
+  "items": [
+   {
+    "id": 4000023,
+    "count": -30
+   },
+   {
+    "id": 4000030,
+    "count": -30
+   },
+   {
+    "id": 4000034,
+    "count": -30
+   },
+   {
+    "id": 4000037,
+    "count": -30
+   },
+   {
+    "id": 2000002,
+    "count": 25
+   }
+  ],
+  "meso": 1477,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10117,
+  "levelMinimum": 47,
+  "quests": [
+   {
+    "id": 10116,
+    "state": 2
+   }
+  ],
+  "npcId": 207,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10117,
+  "items": [
+   {
+    "count": 30,
+    "id": 4000023
+   },
+   {
+    "count": 30,
+    "id": 4000030
+   },
+   {
+    "count": 30,
+    "id": 4000034
+   },
+   {
+    "count": 30,
+    "id": 4000037
+   }
+  ],
+  "npcId": 207,
+  "state": 1
+ }
+}

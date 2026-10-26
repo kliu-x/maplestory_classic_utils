@@ -1,0 +1,63 @@
+{
+ "id": 80015,
+ "name": "A Tailor in My Own Right!",
+ "area": 19,
+ "areaName": "Crafting",
+ "demandSummary": "#o22# #a800151#\\n#i1002084:# #t1002084:# #c1002084# / 1",
+ "rewardOnStart": {
+  "id": 80015,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80015,
+  "exp": 3060,
+  "items": [
+   {
+    "id": 1002084,
+    "count": -1
+   },
+   {
+    "id": 4130002,
+    "count": 1
+   }
+  ],
+  "skills": [
+   {
+    "id": 92020000,
+    "masterLevel": -1,
+    "skillLevel": -1
+   }
+  ],
+  "meso": 804,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80015,
+  "levelMinimum": 25,
+  "quests": [
+   {
+    "id": 80014,
+    "state": 2
+   }
+  ],
+  "npcId": 303,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80015,
+  "mobs": [
+   {
+    "count": 30,
+    "id": 22
+   }
+  ],
+  "items": [
+   {
+    "count": 1,
+    "id": 1002084
+   }
+  ],
+  "npcId": 303,
+  "state": 1
+ }
+}

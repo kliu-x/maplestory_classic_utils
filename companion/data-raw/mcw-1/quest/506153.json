@@ -1,0 +1,49 @@
+{
+ "id": 506153,
+ "name": "Another Lead",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "Talk to #p425#",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506154,
+   "levelMinimum": 47,
+   "quests": [
+    {
+     "id": 506153,
+     "state": 2
+    }
+   ],
+   "npcId": 425,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506153,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506153,
+  "exp": 7980,
+  "meso": 1033,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506153,
+  "levelMinimum": 47,
+  "quests": [
+   {
+    "id": 506152,
+    "state": 2
+   }
+  ],
+  "npcId": 900014,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506153,
+  "levelMinimum": 47,
+  "npcId": 425,
+  "state": 1
+ }
+}

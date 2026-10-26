@@ -1,0 +1,50 @@
+{
+ "id": 90040202,
+ "name": "Coconut Harvest",
+ "streetName": "Hidden Street",
+ "mapMark": "Event",
+ "isTown": false,
+ "mobRate": 1.2000000476837158,
+ "returnMap": 90050000,
+ "vrBounds": {
+  "width": 2398,
+  "height": 3080
+ },
+ "mobs": [
+  {
+   "id": 94,
+   "x": 682,
+   "y": -203
+  },
+  {
+   "id": 94,
+   "x": 1486,
+   "y": -323
+  },
+  {
+   "id": 94,
+   "x": 574,
+   "y": -1163
+  },
+  {
+   "id": 94,
+   "x": 525,
+   "y": -1763
+  }
+ ],
+ "npcs": [
+  {
+   "id": 900016
+  }
+ ],
+ "portals": [
+  {
+   "toMap": 90040202,
+   "portalName": "h002"
+  },
+  {
+   "toMap": 90040202,
+   "portalName": "h003"
+  }
+ ]
+}

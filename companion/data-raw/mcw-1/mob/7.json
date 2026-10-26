@@ -1,0 +1,23 @@
+{
+ "id": 7,
+ "name": "Slime",
+ "meta": {
+  "isBodyAttack": true,
+  "level": 6,
+  "maxHP": 115,
+  "maxMP": 30,
+  "speed": -20,
+  "physicalDamage": 13,
+  "physicalDefense": 10,
+  "magicDamage": 0,
+  "magicDefense": 20,
+  "accuracy": 53,
+  "evasion": 0,
+  "exp": 12,
+  "isUndead": false,
+  "minimumPushDamage": 1,
+  "elementalAttributes": "L3",
+  "summonType": 1,
+  "revivesMonsterId": []
+ }
+}

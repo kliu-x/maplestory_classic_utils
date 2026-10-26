@@ -1,0 +1,43 @@
+{
+ "id": 500009,
+ "name": "[Event] Growing Leaf",
+ "area": 99,
+ "areaName": "Event",
+ "demandSummary": "#questorder1##i3994011:# #t3994011:# #c3994011# / 1",
+ "rewardOnStart": {
+  "id": 500009,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 500009,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 500009,
+  "startTime": "2026-08-04T00:00:00",
+  "endTime": "2026-08-12T23:59:00",
+  "levelMinimum": 10,
+  "items": [
+   {
+    "id": 3994010
+   },
+   {
+    "id": 3994011
+   }
+  ],
+  "npcId": 9010000,
+  "dayByDay": true,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 500009,
+  "items": [
+   {
+    "count": 1,
+    "id": 3994011
+   }
+  ],
+  "npcId": 9010000,
+  "state": 1
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "id": 10002090,
+ "name": "Ellinia Station",
+ "streetName": "Victoria Road",
+ "mapMark": "Ellinia",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10002000,
+ "vrBounds": {
+  "width": 2315,
+  "height": 767
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 322
+  },
+  {
+   "id": 323
+  }
+ ],
+ "portals": [
+  {
+   "toMap": 10002000,
+   "portalName": "out00"
+  }
+ ]
+}

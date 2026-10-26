@@ -1,0 +1,21 @@
+{
+ "id": 90040000,
+ "name": "Physical Fitness Test <Waiting Room>",
+ "streetName": "Hidden Street",
+ "mapMark": "Event",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 90050000,
+ "vrBounds": {
+  "width": 0,
+  "height": 0
+ },
+ "mobs": [],
+ "npcs": [],
+ "portals": [
+  {
+   "toMap": 90040000,
+   "portalName": "join00"
+  }
+ ]
+}

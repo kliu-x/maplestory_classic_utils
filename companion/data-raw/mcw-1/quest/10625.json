@@ -1,0 +1,78 @@
+{
+ "id": 10625,
+ "name": "The Dilapidated Tomb",
+ "area": 17,
+ "areaName": "Forgotten Hollow",
+ "demandSummary": "#o63# #a106251#\\n#i4031141# #t4031141# #b#c4031141##k / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10626,
+   "startTime": "2026-11-18T00:00:00",
+   "levelMinimum": 55,
+   "quests": [
+    {
+     "id": 10625,
+     "state": 2
+    }
+   ],
+   "npcId": 712,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10625,
+  "items": [
+   {
+    "id": 4031141,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10625,
+  "exp": 16200,
+  "items": [
+   {
+    "id": 4031141,
+    "count": -1
+   },
+   {
+    "id": 2000006,
+    "count": 10
+   }
+  ],
+  "meso": 1725,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10625,
+  "startTime": "2026-11-18T00:00:00",
+  "levelMinimum": 55,
+  "quests": [
+   {
+    "id": 10624,
+    "state": 2
+   }
+  ],
+  "npcId": 711,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10625,
+  "mobs": [
+   {
+    "count": 60,
+    "id": 63
+   }
+  ],
+  "items": [
+   {
+    "count": 1,
+    "id": 4031141
+   }
+  ],
+  "npcId": 712,
+  "state": 1
+ }
+}

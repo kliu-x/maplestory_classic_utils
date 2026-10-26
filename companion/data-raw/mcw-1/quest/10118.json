@@ -1,0 +1,70 @@
+{
+ "id": 10118,
+ "name": "Maya's Last Collection",
+ "area": 12,
+ "areaName": "Henesys",
+ "demandSummary": "#i4000043:# #t4000043:# #c4000043# / 50\\n#i4000044:# #t4000044:# #c4000044# / 50\\n#i4020107:# #t4020107:# #c4020107# / 1",
+ "rewardOnStart": {
+  "id": 10118,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10118,
+  "exp": 11400,
+  "items": [
+   {
+    "id": 4000043,
+    "count": -50,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4000044,
+    "count": -50,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4020107,
+    "count": -1,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 1102004,
+    "count": 1,
+    "potentialGrade": "normal"
+   }
+  ],
+  "meso": 1477,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10118,
+  "levelMinimum": 47,
+  "quests": [
+   {
+    "id": 10117,
+    "state": 2
+   }
+  ],
+  "npcId": 207,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10118,
+  "items": [
+   {
+    "count": 50,
+    "id": 4000043
+   },
+   {
+    "count": 50,
+    "id": 4000044
+   },
+   {
+    "count": 1,
+    "id": 4020107
+   }
+  ],
+  "npcId": 207,
+  "state": 1
+ }
+}

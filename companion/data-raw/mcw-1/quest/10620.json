@@ -1,0 +1,49 @@
+{
+ "id": 10620,
+ "name": "The Sage's Burden",
+ "area": 17,
+ "areaName": "Forgotten Hollow",
+ "demandSummary": "Return to #b#p313##k, and inform him of what you've learned.",
+ "rewardOnStart": {
+  "id": 10620,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10620,
+  "exp": 12900,
+  "items": [
+   {
+    "id": 2000006,
+    "count": 2
+   },
+   {
+    "id": 2010005,
+    "count": 10
+   },
+   {
+    "id": 2000004,
+    "count": 15
+   }
+  ],
+  "meso": 1579,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10620,
+  "startTime": "2026-12-09T00:00:00",
+  "levelMinimum": 50,
+  "quests": [
+   {
+    "id": 10619,
+    "state": 2
+   }
+  ],
+  "npcId": 712,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10620,
+  "npcId": 313,
+  "state": 1
+ }
+}

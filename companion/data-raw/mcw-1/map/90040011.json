@@ -1,0 +1,16 @@
+{
+ "id": 90040011,
+ "name": "Physical Fitness Test <Easy Level 1>",
+ "streetName": "Hidden Street",
+ "mapMark": "Event",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 90050000,
+ "vrBounds": {
+  "width": 3296,
+  "height": 2290
+ },
+ "mobs": [],
+ "npcs": [],
+ "portals": []
+}

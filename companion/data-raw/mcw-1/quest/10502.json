@@ -1,0 +1,47 @@
+{
+ "id": 10502,
+ "name": "Still Hungry Ronnie",
+ "area": 16,
+ "areaName": "Sleepywood",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10503,
+   "levelMinimum": 32,
+   "quests": [
+    {
+     "id": 10502,
+     "state": 2
+    }
+   ],
+   "npcId": 201,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10502,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10502,
+  "exp": 4095,
+  "meso": 716,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10502,
+  "levelMinimum": 32,
+  "quests": [
+   {
+    "id": 10501,
+    "state": 2
+   }
+  ],
+  "npcId": 320,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10502,
+  "npcId": 201,
+  "state": 1
+ }
+}

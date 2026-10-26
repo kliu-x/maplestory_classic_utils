@@ -1,0 +1,60 @@
+{
+ "id": 1006,
+ "name": "Sam's Suggestion",
+ "area": 1,
+ "areaName": "Maple Island",
+ "demandSummary": "#o2# #a10061#",
+ "questsAvailableOnComplete": [
+  {
+   "id": 1009,
+   "jobs": [
+    0
+   ],
+   "levelMinimum": 3,
+   "quests": [
+    {
+     "id": 1006,
+     "state": 2
+    }
+   ],
+   "npcId": 11,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 1006,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 1006,
+  "exp": 30,
+  "items": [
+   {
+    "id": 2010002,
+    "count": 5,
+    "potentialGrade": "normal"
+   }
+  ],
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 1006,
+  "jobs": [
+   0
+  ],
+  "levelMinimum": 1,
+  "npcId": 9,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 1006,
+  "mobs": [
+   {
+    "count": 10,
+    "id": 2
+   }
+  ],
+  "npcId": 11,
+  "state": 1
+ }
+}

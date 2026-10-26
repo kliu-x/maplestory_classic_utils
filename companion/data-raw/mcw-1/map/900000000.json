@@ -1,0 +1,20 @@
+{
+ "id": 900000000,
+ "name": "The Manager's Room",
+ "streetName": "Hidden Street",
+ "mapMark": "Event",
+ "isTown": false,
+ "mobRate": 1,
+ "returnMap": 900000000,
+ "vrBounds": {
+  "width": 778,
+  "height": 550
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 900001
+  }
+ ],
+ "portals": []
+}

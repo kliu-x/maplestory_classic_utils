@@ -1,0 +1,73 @@
+{
+ "id": 80017,
+ "name": "Vicious in Need of an Apprentice",
+ "area": 19,
+ "areaName": "Crafting",
+ "demandSummary": "#o6# #a800171#\\n#i4000005:# #t4000005:# #c4000005# / 20",
+ "questsAvailableOnComplete": [
+  {
+   "id": 80018,
+   "levelMinimum": 25,
+   "quests": [
+    {
+     "id": 80017,
+     "state": 2
+    }
+   ],
+   "npcId": 208,
+   "state": 0
+  },
+  {
+   "id": 80019,
+   "levelMinimum": 15,
+   "quests": [
+    {
+     "id": 80017,
+     "state": 2
+    }
+   ],
+   "npcId": 208,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 80017,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80017,
+  "exp": 188,
+  "skills": [
+   {
+    "id": 92030000,
+    "masterLevel": -1,
+    "skillLevel": -1
+   }
+  ],
+  "meso": 351,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80017,
+  "levelMinimum": 10,
+  "npcId": 208,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80017,
+  "mobs": [
+   {
+    "count": 30,
+    "id": 6
+   }
+  ],
+  "items": [
+   {
+    "count": 20,
+    "id": 4000005
+   }
+  ],
+  "npcId": 208,
+  "state": 1
+ }
+}

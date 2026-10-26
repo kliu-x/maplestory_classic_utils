@@ -1,0 +1,80 @@
+{
+ "id": 10128,
+ "name": "Snail Hunt",
+ "area": 12,
+ "areaName": "Henesys",
+ "demandSummary": "#i4000001##t4000001# #b#c4000001##k / 20\\n#i4000002##t4000002# #b#c4000002##k / 20\\n#i4000004##t4000004# #b#c4000004##k / 20",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10129,
+   "levelMinimum": 20,
+   "quests": [
+    {
+     "id": 10128,
+     "state": 2
+    }
+   ],
+   "npcId": 309,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10128,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10128,
+  "exp": 2021,
+  "items": [
+   {
+    "id": 4000001,
+    "count": -20
+   },
+   {
+    "id": 4000002,
+    "count": -20
+   },
+   {
+    "id": 4000004,
+    "count": -20
+   },
+   {
+    "id": 2000003,
+    "count": 20
+   }
+  ],
+  "meso": 658,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10128,
+  "levelMinimum": 20,
+  "quests": [
+   {
+    "id": 10127,
+    "state": 2
+   }
+  ],
+  "npcId": 309,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10128,
+  "items": [
+   {
+    "count": 20,
+    "id": 4000001
+   },
+   {
+    "count": 20,
+    "id": 4000002
+   },
+   {
+    "count": 20,
+    "id": 4000004
+   }
+  ],
+  "npcId": 309,
+  "state": 1
+ }
+}

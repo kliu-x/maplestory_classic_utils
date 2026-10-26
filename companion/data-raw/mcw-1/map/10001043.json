@@ -1,0 +1,23 @@
+{
+ "id": 10001043,
+ "name": "Henesys Plastic Surgery",
+ "streetName": "Victoria Road",
+ "mapMark": "Henesys",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10001000,
+ "vrBounds": {
+  "width": 800,
+  "height": 600
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 213
+  },
+  {
+   "id": 214
+  }
+ ],
+ "portals": []
+}

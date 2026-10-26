@@ -1,0 +1,75 @@
+{
+ "id": 10003102,
+ "name": "B1 <Subway Depot>",
+ "streetName": "Line 3 Construction Site",
+ "mapMark": "KerningCity",
+ "isTown": false,
+ "mobRate": 0.49999991059303284,
+ "returnMap": 10003000,
+ "vrBounds": {
+  "width": 2250,
+  "height": 860
+ },
+ "mobs": [
+  {
+   "id": 14,
+   "x": -422,
+   "y": 812
+  },
+  {
+   "id": 14,
+   "x": -159,
+   "y": 812
+  },
+  {
+   "id": 14,
+   "x": 35,
+   "y": 839
+  },
+  {
+   "id": 14,
+   "x": 347,
+   "y": 812
+  },
+  {
+   "id": 14,
+   "x": 512,
+   "y": 812
+  },
+  {
+   "id": 14,
+   "x": -315,
+   "y": 812
+  },
+  {
+   "id": 14,
+   "x": 211,
+   "y": 812
+  },
+  {
+   "id": 14,
+   "x": 733,
+   "y": 812
+  },
+  {
+   "id": 14,
+   "x": 618,
+   "y": 812
+  }
+ ],
+ "npcs": [
+  {
+   "id": 420
+  }
+ ],
+ "portals": [
+  {
+   "toMap": 10003102,
+   "portalName": "h001"
+  },
+  {
+   "toMap": 10003102,
+   "portalName": "h003"
+  }
+ ]
+}

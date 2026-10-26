@@ -1,0 +1,22 @@
+{
+ "id": 80000,
+ "name": "\"Mar\" the Fairy and the Water of Life",
+ "area": 13,
+ "areaName": "Ellinia",
+ "rewardOnStart": {
+  "id": 80000,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80000,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80000,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80000,
+  "state": 1
+ }
+}

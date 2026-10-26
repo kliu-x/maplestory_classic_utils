@@ -1,0 +1,49 @@
+{
+ "id": 506052,
+ "name": "A Name on a Note",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "Talk to #p602#",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506053,
+   "levelMinimum": 47,
+   "quests": [
+    {
+     "id": 506052,
+     "state": 2
+    }
+   ],
+   "npcId": 602,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506052,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506052,
+  "exp": 11400,
+  "meso": 1477,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506052,
+  "levelMinimum": 47,
+  "quests": [
+   {
+    "id": 506051,
+    "state": 2
+   }
+  ],
+  "npcId": 207,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506052,
+  "levelMinimum": 47,
+  "npcId": 602,
+  "state": 1
+ }
+}

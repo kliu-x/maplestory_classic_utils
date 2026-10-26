@@ -1,0 +1,23 @@
+{
+ "id": 80000300,
+ "name": "1st Accompaniment <4th stage>",
+ "streetName": "Hidden Street",
+ "mapMark": "Dungeon",
+ "isTown": false,
+ "mobRate": 1,
+ "returnMap": 80000000,
+ "vrBounds": {
+  "width": 1216,
+  "height": 1309
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 800002
+  },
+  {
+   "id": 800001
+  }
+ ],
+ "portals": []
+}

@@ -1,0 +1,44 @@
+{
+ "id": 1003,
+ "name": "What Sen wants to eat",
+ "area": 1,
+ "areaName": "Maple Island",
+ "questsAvailableOnComplete": [
+  {
+   "id": 1004,
+   "jobs": [
+    0
+   ],
+   "quests": [
+    {
+     "id": 1003,
+     "state": 2
+    }
+   ],
+   "npcId": 5,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 1003,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 1003,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 1003,
+  "jobs": [
+   0
+  ],
+  "levelMinimum": 1,
+  "npcId": 4,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 1003,
+  "npcId": 5,
+  "state": 1
+ }
+}

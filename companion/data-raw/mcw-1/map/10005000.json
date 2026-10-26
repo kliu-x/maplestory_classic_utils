@@ -1,0 +1,47 @@
+{
+ "id": 10005000,
+ "name": "Sleepywood",
+ "streetName": "Dungeon",
+ "mapMark": "Dungeon",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10005000,
+ "vrBounds": {
+  "width": 2476,
+  "height": 1300
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 602
+  },
+  {
+   "id": 603
+  },
+  {
+   "id": 609
+  },
+  {
+   "id": 604
+  },
+  {
+   "id": 605
+  },
+  {
+   "id": 600
+  },
+  {
+   "id": 800015
+  }
+ ],
+ "portals": [
+  {
+   "toMap": 10005000,
+   "portalName": "hide00"
+  },
+  {
+   "toMap": 10005000,
+   "portalName": "hide01"
+  }
+ ]
+}

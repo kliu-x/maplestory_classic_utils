@@ -1,0 +1,58 @@
+{
+ "id": 20102,
+ "name": "Test of Qualification",
+ "area": 101,
+ "areaName": "Magician",
+ "demandSummary": "#i4031019:# #t4031019:# #c4031019# / 30#k",
+ "questsAvailableOnComplete": [
+  {
+   "id": 20103,
+   "jobs": [
+    200
+   ],
+   "levelMinimum": 30,
+   "quests": [
+    {
+     "id": 20102,
+     "state": 2
+    }
+   ],
+   "npcId": 319,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 20102,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 20102,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 20102,
+  "jobs": [
+   200
+  ],
+  "levelMinimum": 30,
+  "quests": [
+   {
+    "id": 20101,
+    "state": 2
+   }
+  ],
+  "npcId": 319,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 20102,
+  "items": [
+   {
+    "count": 30,
+    "id": 4031019
+   }
+  ],
+  "npcId": 319,
+  "state": 1
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "id": 506143,
+ "name": "Too Shy to Say It Himself",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#i4031127:# #t4031127:# #c4031127# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506144,
+   "levelMinimum": 27,
+   "quests": [
+    {
+     "id": 506143,
+     "state": 2
+    }
+   ],
+   "npcId": 406,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506143,
+  "items": [
+   {
+    "id": 4031127,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506143,
+  "exp": 2625,
+  "items": [
+   {
+    "id": 4031127,
+    "count": -1
+   }
+  ],
+  "meso": 603,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506143,
+  "levelMinimum": 27,
+  "quests": [
+   {
+    "id": 506142,
+    "state": 2
+   }
+  ],
+  "npcId": 402,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506143,
+  "levelMinimum": 27,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031127
+   }
+  ],
+  "npcId": 406,
+  "state": 1
+ }
+}

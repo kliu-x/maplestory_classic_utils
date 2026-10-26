@@ -1,0 +1,22 @@
+{
+ "id": 3,
+ "name": "Blue Snail",
+ "meta": {
+  "isBodyAttack": true,
+  "level": 2,
+  "maxHP": 51,
+  "maxMP": 30,
+  "speed": -50,
+  "physicalDamage": 5,
+  "physicalDefense": 0,
+  "magicDamage": 0,
+  "magicDefense": 0,
+  "accuracy": 39,
+  "evasion": 0,
+  "exp": 4,
+  "isUndead": false,
+  "minimumPushDamage": 1,
+  "summonType": 1,
+  "revivesMonsterId": []
+ }
+}

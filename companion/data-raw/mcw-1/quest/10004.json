@@ -1,0 +1,98 @@
+{
+ "id": 10004,
+ "name": "Jane's Second Challenge",
+ "area": 11,
+ "areaName": "Lith Harbor",
+ "demandSummary": "#o43# #a100041#\\n#o47# #a100042#\\n#i4000048# #t4000048# #b#c4000048##k / 1\\n#i2012000# #t2012000# #b#c2012000##k / 3\\n#i4000039# #t4000039# #b#c4000039##k / 25\\n#i4000042# #t4000042# #b#c4000042##k / 25",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10005,
+   "levelMinimum": 44,
+   "quests": [
+    {
+     "id": 10004,
+     "state": 2
+    }
+   ],
+   "npcId": 103,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10004,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10004,
+  "exp": 9940,
+  "items": [
+   {
+    "id": 2012000,
+    "count": -3
+   },
+   {
+    "id": 4000048,
+    "count": -1
+   },
+   {
+    "id": 4000039,
+    "count": -25
+   },
+   {
+    "id": 4000042,
+    "count": -25
+   },
+   {
+    "id": 2000005,
+    "count": 15
+   }
+  ],
+  "meso": 1389,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10004,
+  "levelMinimum": 44,
+  "quests": [
+   {
+    "id": 10003,
+    "state": 2
+   }
+  ],
+  "npcId": 103,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10004,
+  "mobs": [
+   {
+    "count": 50,
+    "id": 43
+   },
+   {
+    "count": 50,
+    "id": 47
+   }
+  ],
+  "items": [
+   {
+    "count": 3,
+    "id": 2012000
+   },
+   {
+    "count": 1,
+    "id": 4000048
+   },
+   {
+    "count": 25,
+    "id": 4000039
+   },
+   {
+    "count": 25,
+    "id": 4000042
+   }
+  ],
+  "npcId": 103,
+  "state": 1
+ }
+}

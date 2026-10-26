@@ -1,0 +1,40 @@
+{
+ "id": 506016,
+ "name": "Asking After Chief Stan",
+ "area": 20,
+ "areaName": "Citizenship",
+ "rewardOnStart": {
+  "id": 506016,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506016,
+  "exp": 4095,
+  "items": [
+   {
+    "id": 2000003,
+    "count": 8
+   }
+  ],
+  "meso": 716,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506016,
+  "levelMinimum": 12,
+  "quests": [
+   {
+    "id": 506015,
+    "state": 2
+   }
+  ],
+  "npcId": 235,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506016,
+  "levelMinimum": 32,
+  "npcId": 202,
+  "state": 1
+ }
+}

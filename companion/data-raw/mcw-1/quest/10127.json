@@ -1,0 +1,48 @@
+{
+ "id": 10127,
+ "name": "Hero of the Story",
+ "area": 12,
+ "areaName": "Henesys",
+ "demandSummary": "Talk to #b#p309##k",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10128,
+   "levelMinimum": 20,
+   "quests": [
+    {
+     "id": 10127,
+     "state": 2
+    }
+   ],
+   "npcId": 309,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10127,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10127,
+  "exp": 2021,
+  "meso": 658,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10127,
+  "levelMinimum": 20,
+  "quests": [
+   {
+    "id": 10126,
+    "state": 2
+   }
+  ],
+  "npcId": 203,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10127,
+  "npcId": 309,
+  "state": 1
+ }
+}

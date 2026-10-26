@@ -1,0 +1,49 @@
+{
+ "id": 1010,
+ "name": "Mai's Final Training",
+ "area": 1,
+ "areaName": "Maple Island",
+ "demandSummary": "#o9# #a10101#",
+ "rewardOnStart": {
+  "id": 1010,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 1010,
+  "exp": 120,
+  "items": [
+   {
+    "id": 2010002,
+    "count": 10,
+    "potentialGrade": "normal"
+   }
+  ],
+  "meso": 150,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 1010,
+  "jobs": [
+   0
+  ],
+  "quests": [
+   {
+    "id": 1009,
+    "state": 2
+   }
+  ],
+  "npcId": 11,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 1010,
+  "mobs": [
+   {
+    "count": 1,
+    "id": 9
+   }
+  ],
+  "npcId": 11,
+  "state": 1
+ }
+}

@@ -1,0 +1,887 @@
+{
+ "id": 400,
+ "description": {
+  "id": 400,
+  "desc": "",
+  "name": "",
+  "shortDesc": "",
+  "bookName": "Introduction to the Thief",
+  "names": {
+   "en": "Introduction to the Thief",
+   "es": "Introducción al Thief",
+   "ko": "Thief 입문"
+  }
+ },
+ "skills": [
+  {
+   "id": 4000000,
+   "masterLevel": 15,
+   "weapons": [],
+   "description": {
+    "name": "Nimble Body",
+    "desc": "[Master Level: 15]\\nIncreases Accuracy and Evasion."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "accX": "1",
+     "evaX": "1"
+    },
+    {
+     "hs": "h2",
+     "accX": "2",
+     "evaX": "2"
+    },
+    {
+     "hs": "h3",
+     "accX": "3",
+     "evaX": "3"
+    },
+    {
+     "hs": "h4",
+     "accX": "4",
+     "evaX": "4"
+    },
+    {
+     "hs": "h5",
+     "accX": "5",
+     "evaX": "5"
+    },
+    {
+     "hs": "h6",
+     "accX": "6",
+     "evaX": "6"
+    },
+    {
+     "hs": "h7",
+     "accX": "7",
+     "evaX": "7"
+    },
+    {
+     "hs": "h8",
+     "accX": "8",
+     "evaX": "8"
+    },
+    {
+     "hs": "h9",
+     "accX": "9",
+     "evaX": "9"
+    },
+    {
+     "hs": "h10",
+     "accX": "10",
+     "evaX": "10"
+    },
+    {
+     "hs": "h11",
+     "accX": "11",
+     "evaX": "11"
+    },
+    {
+     "hs": "h12",
+     "accX": "12",
+     "evaX": "12"
+    },
+    {
+     "hs": "h13",
+     "accX": "13",
+     "evaX": "13"
+    },
+    {
+     "hs": "h14",
+     "accX": "14",
+     "evaX": "14"
+    },
+    {
+     "hs": "h15",
+     "accX": "15",
+     "evaX": "15"
+    }
+   ]
+  },
+  {
+   "id": 4000001,
+   "masterLevel": 15,
+   "requiredSkillLevels": {
+    "4000000": 3
+   },
+   "weapons": [],
+   "description": {
+    "name": "Keen Eyes",
+    "desc": "[Master Level: 15]\\nIncreases attack range for throwing weapons such as Throwing Stars and Knives.\\nRequired Skill: #cAt least Level 3 on Nimble Body#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "range": "50"
+    },
+    {
+     "hs": "h2",
+     "range": "60"
+    },
+    {
+     "hs": "h3",
+     "range": "70"
+    },
+    {
+     "hs": "h4",
+     "range": "80"
+    },
+    {
+     "hs": "h5",
+     "range": "90"
+    },
+    {
+     "hs": "h6",
+     "range": "100"
+    },
+    {
+     "hs": "h7",
+     "range": "110"
+    },
+    {
+     "hs": "h8",
+     "range": "120"
+    },
+    {
+     "hs": "h9",
+     "range": "130"
+    },
+    {
+     "hs": "h10",
+     "range": "140"
+    },
+    {
+     "hs": "h11",
+     "range": "150"
+    },
+    {
+     "hs": "h12",
+     "range": "160"
+    },
+    {
+     "hs": "h13",
+     "range": "170"
+    },
+    {
+     "hs": "h14",
+     "range": "180"
+    },
+    {
+     "hs": "h15",
+     "range": "200"
+    }
+   ]
+  },
+  {
+   "id": 4001000,
+   "masterLevel": 20,
+   "weapons": [],
+   "description": {
+    "name": "Disorder",
+    "desc": "[Master Level: 20]\\nTemporarily decreases the Attack Power and Weapon Def. of an enemy and dissuades it from attacking you. Has no effect on a monster that's already in \"Disorder.\""
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "5",
+     "time": "10",
+     "x": "5",
+     "y": "1",
+     "mobCount": "1",
+     "attackCount": "1",
+     "damage": "100"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "5",
+     "time": "11",
+     "x": "6",
+     "y": "1",
+     "mobCount": "1",
+     "attackCount": "1",
+     "damage": "100"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "5",
+     "time": "12",
+     "x": "7",
+     "y": "1",
+     "mobCount": "1",
+     "attackCount": "1",
+     "damage": "100"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "5",
+     "time": "13",
+     "x": "8",
+     "y": "1",
+     "mobCount": "1",
+     "attackCount": "1",
+     "damage": "100"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "5",
+     "time": "14",
+     "x": "9",
+     "y": "2",
+     "mobCount": "1",
+     "attackCount": "1",
+     "damage": "100"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "6",
+     "time": "15",
+     "x": "10",
+     "y": "2",
+     "mobCount": "1",
+     "attackCount": "1",
+     "damage": "100"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "6",
+     "time": "16",
+     "x": "11",
+     "y": "2",
+     "mobCount": "1",
+     "attackCount": "1",
+     "damage": "100"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "6",
+     "time": "17",
+     "x": "12",
+     "y": "2",
+     "mobCount": "1",
+     "attackCount": "1",
+     "damage": "100"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "7",
+     "time": "18",
+     "x": "13",
+     "y": "2",
+     "mobCount": "1",
+     "attackCount": "1",
+     "damage": "100"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "7",
+     "time": "19",
+     "x": "14",
+     "y": "3",
+     "mobCount": "1",
+     "attackCount": "1",
+     "damage": "100"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "7",
+     "time": "20",
+     "x": "15",
+     "y": "3",
+     "mobCount": "1",
+     "attackCount": "1",
+     "damage": "100"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "8",
+     "time": "21",
+     "x": "16",
+     "y": "3",
+     "mobCount": "1",
+     "attackCount": "1",
+     "damage": "100"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "8",
+     "time": "22",
+     "x": "17",
+     "y": "3",
+     "mobCount": "1",
+     "attackCount": "1",
+     "damage": "100"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "8",
+     "time": "23",
+     "x": "18",
+     "y": "3",
+     "mobCount": "1",
+     "attackCount": "1",
+     "damage": "100"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "9",
+     "time": "24",
+     "x": "19",
+     "y": "4",
+     "mobCount": "1",
+     "attackCount": "1",
+     "damage": "100"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "9",
+     "time": "25",
+     "x": "20",
+     "y": "4",
+     "mobCount": "1",
+     "attackCount": "1",
+     "damage": "100"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "9",
+     "time": "26",
+     "x": "21",
+     "y": "4",
+     "mobCount": "1",
+     "attackCount": "1",
+     "damage": "100"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "10",
+     "time": "27",
+     "x": "22",
+     "y": "4",
+     "mobCount": "1",
+     "attackCount": "1",
+     "damage": "100"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "10",
+     "time": "28",
+     "x": "23",
+     "y": "4",
+     "mobCount": "1",
+     "attackCount": "1",
+     "damage": "100"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "10",
+     "time": "30",
+     "x": "25",
+     "y": "5",
+     "mobCount": "1",
+     "attackCount": "1",
+     "damage": "100"
+    }
+   ]
+  },
+  {
+   "id": 4001001,
+   "masterLevel": 20,
+   "requiredSkillLevels": {
+    "4001000": 3
+   },
+   "weapons": [],
+   "description": {
+    "name": "Dark Sight",
+    "desc": "[Master Level: 20]\\nConsumes MP to hide in the shadows. Cannot be attacked and cannot attack while hidden. Press the key again to deactivate the effect.\\nRequired Skill: #cAt least Level 3 Disorder#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "50",
+     "speed": "20"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "49",
+     "speed": "19"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "48",
+     "speed": "18"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "47",
+     "speed": "17"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "46",
+     "speed": "16"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "45",
+     "speed": "15"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "44",
+     "speed": "14"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "43",
+     "speed": "13"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "42",
+     "speed": "12"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "41",
+     "speed": "11"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "40",
+     "speed": "10"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "39",
+     "speed": "9"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "38",
+     "speed": "8"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "37",
+     "speed": "7"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "36",
+     "speed": "6"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "35",
+     "speed": "5"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "34",
+     "speed": "4"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "33",
+     "speed": "3"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "32",
+     "speed": "2"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "30"
+    }
+   ]
+  },
+  {
+   "id": 4001002,
+   "masterLevel": 20,
+   "weapons": [
+    33
+   ],
+   "description": {
+    "name": "Double Stab",
+    "desc": "[Master Level: 20]\\nConsumes MP to quickly stab a monster twice using a dagger."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "8",
+     "damage": "80",
+     "attackCount": "2",
+     "mobCount": "1"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "8",
+     "damage": "84",
+     "attackCount": "2",
+     "mobCount": "1"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "8",
+     "damage": "88",
+     "attackCount": "2",
+     "mobCount": "1"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "8",
+     "damage": "92",
+     "attackCount": "2",
+     "mobCount": "1"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "9",
+     "damage": "96",
+     "attackCount": "2",
+     "mobCount": "1"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "9",
+     "damage": "100",
+     "attackCount": "2",
+     "mobCount": "1"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "9",
+     "damage": "104",
+     "attackCount": "2",
+     "mobCount": "1"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "10",
+     "damage": "108",
+     "attackCount": "2",
+     "mobCount": "1"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "10",
+     "damage": "112",
+     "attackCount": "2",
+     "mobCount": "1"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "11",
+     "damage": "116",
+     "attackCount": "2",
+     "mobCount": "1"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "11",
+     "damage": "120",
+     "attackCount": "2",
+     "mobCount": "1"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "12",
+     "damage": "124",
+     "attackCount": "2",
+     "mobCount": "1"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "12",
+     "damage": "128",
+     "attackCount": "2",
+     "mobCount": "1"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "13",
+     "damage": "132",
+     "attackCount": "2",
+     "mobCount": "1"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "13",
+     "damage": "136",
+     "attackCount": "2",
+     "mobCount": "1"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "14",
+     "damage": "140",
+     "attackCount": "2",
+     "mobCount": "1"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "14",
+     "damage": "144",
+     "attackCount": "2",
+     "mobCount": "1"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "15",
+     "damage": "148",
+     "attackCount": "2",
+     "mobCount": "1"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "15",
+     "damage": "152",
+     "attackCount": "2",
+     "mobCount": "1"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "16",
+     "damage": "160",
+     "attackCount": "2",
+     "mobCount": "1"
+    }
+   ]
+  },
+  {
+   "id": 4001003,
+   "masterLevel": 20,
+   "weapons": [
+    47
+   ],
+   "description": {
+    "name": "Lucky Seven",
+    "desc": "[Master Level: 20]\\nConsumes MP to throw 2 throwing stars at a single enemy within 200 range in front, dealing powerful damage based on LUK. Attacks based on LUK regardless of Claw Mastery."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "8",
+     "damage": "60",
+     "bulletCount": "2",
+     "x": "30",
+     "y": "5",
+     "z": "500",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "8",
+     "damage": "64",
+     "bulletCount": "2",
+     "x": "30",
+     "y": "5",
+     "z": "500",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "8",
+     "damage": "68",
+     "bulletCount": "2",
+     "x": "30",
+     "y": "5",
+     "z": "500",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "8",
+     "damage": "72",
+     "bulletCount": "2",
+     "x": "30",
+     "y": "5",
+     "z": "500",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "9",
+     "damage": "76",
+     "bulletCount": "2",
+     "x": "30",
+     "y": "5",
+     "z": "500",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "9",
+     "damage": "80",
+     "bulletCount": "2",
+     "x": "30",
+     "y": "5",
+     "z": "500",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "9",
+     "damage": "84",
+     "bulletCount": "2",
+     "x": "30",
+     "y": "5",
+     "z": "500",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "10",
+     "damage": "88",
+     "bulletCount": "2",
+     "x": "30",
+     "y": "5",
+     "z": "500",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "10",
+     "damage": "92",
+     "bulletCount": "2",
+     "x": "30",
+     "y": "5",
+     "z": "500",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "11",
+     "damage": "96",
+     "bulletCount": "2",
+     "x": "30",
+     "y": "5",
+     "z": "500",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "11",
+     "damage": "100",
+     "bulletCount": "2",
+     "x": "30",
+     "y": "5",
+     "z": "500",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "12",
+     "damage": "104",
+     "bulletCount": "2",
+     "x": "30",
+     "y": "5",
+     "z": "500",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "12",
+     "damage": "108",
+     "bulletCount": "2",
+     "x": "30",
+     "y": "5",
+     "z": "500",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "13",
+     "damage": "112",
+     "bulletCount": "2",
+     "x": "30",
+     "y": "5",
+     "z": "500",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "13",
+     "damage": "116",
+     "bulletCount": "2",
+     "x": "30",
+     "y": "5",
+     "z": "500",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "14",
+     "damage": "120",
+     "bulletCount": "2",
+     "x": "30",
+     "y": "5",
+     "z": "500",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "14",
+     "damage": "124",
+     "bulletCount": "2",
+     "x": "30",
+     "y": "5",
+     "z": "500",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "15",
+     "damage": "128",
+     "bulletCount": "2",
+     "x": "30",
+     "y": "5",
+     "z": "500",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "15",
+     "damage": "132",
+     "bulletCount": "2",
+     "x": "30",
+     "y": "5",
+     "z": "500",
+     "mobCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "16",
+     "damage": "140",
+     "bulletCount": "2",
+     "x": "30",
+     "y": "5",
+     "z": "500",
+     "mobCount": "1",
+     "attackCount": "1"
+    }
+   ]
+  }
+ ]
+}

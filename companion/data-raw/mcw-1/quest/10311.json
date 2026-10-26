@@ -1,0 +1,52 @@
+{
+ "id": 10311,
+ "name": "Proof of Companionship",
+ "area": 14,
+ "areaName": "Kerning City",
+ "rewardOnStart": {
+  "id": 10311,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10311,
+  "exp": 1870,
+  "fame": 1,
+  "items": [
+   {
+    "id": 2040301,
+    "count": 1
+   },
+   {
+    "id": 2040305,
+    "count": 1
+   },
+   {
+    "id": 2040309,
+    "count": 1
+   },
+   {
+    "id": 2040313,
+    "count": 1
+   }
+  ],
+  "meso": 687,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10311,
+  "levelMinimum": 21,
+  "npcId": 800000,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10311,
+  "mobs": [
+   {
+    "count": 1,
+    "id": 800003
+   }
+  ],
+  "npcId": 800000,
+  "state": 1
+ }
+}

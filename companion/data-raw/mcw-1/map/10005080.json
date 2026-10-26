@@ -1,0 +1,16 @@
+{
+ "id": 10005080,
+ "name": "Another Entrance",
+ "streetName": "Dungeon",
+ "mapMark": "Dungeon",
+ "isTown": false,
+ "mobRate": 1,
+ "returnMap": 10005000,
+ "vrBounds": {
+  "width": 800,
+  "height": 1590
+ },
+ "mobs": [],
+ "npcs": [],
+ "portals": []
+}

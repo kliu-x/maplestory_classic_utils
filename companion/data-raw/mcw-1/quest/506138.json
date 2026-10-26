@@ -1,0 +1,73 @@
+{
+ "id": 506138,
+ "name": "Making the Medicine",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#i4000014:# #t4000014:# #c4000014# / 10\\n#i4000017:# #t4000017:# #c4000017# / 10",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506139,
+   "levelMinimum": 17,
+   "quests": [
+    {
+     "id": 506138,
+     "state": 2
+    }
+   ],
+   "npcId": 404,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506138,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506138,
+  "exp": 982,
+  "items": [
+   {
+    "id": 4000014,
+    "count": -10
+   },
+   {
+    "id": 4000017,
+    "count": -10
+   },
+   {
+    "id": 2000003,
+    "count": 10
+   }
+  ],
+  "meso": 555,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506138,
+  "levelMinimum": 17,
+  "quests": [
+   {
+    "id": 506137,
+    "state": 2
+   }
+  ],
+  "npcId": 404,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506138,
+  "levelMinimum": 17,
+  "items": [
+   {
+    "count": 10,
+    "id": 4000014
+   },
+   {
+    "count": 10,
+    "id": 4000017
+   }
+  ],
+  "npcId": 404,
+  "state": 1
+ }
+}

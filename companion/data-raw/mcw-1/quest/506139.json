@@ -1,0 +1,49 @@
+{
+ "id": 506139,
+ "name": "The Final Ingredient for the Cure",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "Talk to #p111#",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506140,
+   "levelMinimum": 17,
+   "quests": [
+    {
+     "id": 506139,
+     "state": 2
+    }
+   ],
+   "npcId": 111,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506139,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506139,
+  "exp": 982,
+  "meso": 555,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506139,
+  "levelMinimum": 17,
+  "quests": [
+   {
+    "id": 506138,
+    "state": 2
+   }
+  ],
+  "npcId": 404,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506139,
+  "levelMinimum": 17,
+  "npcId": 111,
+  "state": 1
+ }
+}

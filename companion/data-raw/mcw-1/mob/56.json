@@ -1,0 +1,22 @@
+{
+ "id": 56,
+ "name": "Golden Stirge",
+ "meta": {
+  "isBodyAttack": true,
+  "level": 42,
+  "maxHP": 1278,
+  "maxMP": 50,
+  "flySpeed": -20,
+  "physicalDamage": 225,
+  "physicalDefense": 0,
+  "magicDamage": 0,
+  "magicDefense": 0,
+  "accuracy": 133,
+  "evasion": 29,
+  "exp": 93,
+  "isUndead": false,
+  "minimumPushDamage": 175,
+  "summonType": 1,
+  "revivesMonsterId": []
+ }
+}

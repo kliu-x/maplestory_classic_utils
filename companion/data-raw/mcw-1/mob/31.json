@@ -1,0 +1,23 @@
+{
+ "id": 31,
+ "name": "Curse Eye",
+ "meta": {
+  "isBodyAttack": true,
+  "level": 33,
+  "maxHP": 1001,
+  "maxMP": 50,
+  "speed": -15,
+  "physicalDamage": 202,
+  "physicalDefense": 30,
+  "magicDamage": 0,
+  "magicDefense": 0,
+  "accuracy": 112,
+  "evasion": 22,
+  "exp": 63,
+  "isUndead": false,
+  "minimumPushDamage": 75,
+  "elementalAttributes": "S2",
+  "summonType": 1,
+  "revivesMonsterId": []
+ }
+}

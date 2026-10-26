@@ -1,0 +1,32 @@
+{
+ "id": 10003007,
+ "name": "Kerning City Civic Center",
+ "streetName": "Victoria Road",
+ "mapMark": "KerningCity",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10003000,
+ "vrBounds": {
+  "width": 1360,
+  "height": 1093
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 425
+  },
+  {
+   "id": 426
+  },
+  {
+   "id": 428
+  },
+  {
+   "id": 429
+  },
+  {
+   "id": 430
+  }
+ ],
+ "portals": []
+}

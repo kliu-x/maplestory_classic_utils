@@ -1,0 +1,23 @@
+{
+ "id": 65,
+ "name": "Skeledog",
+ "meta": {
+  "isBodyAttack": true,
+  "level": 44,
+  "maxHP": 2134,
+  "maxMP": 0,
+  "speed": 10,
+  "physicalDamage": 234,
+  "physicalDefense": 15,
+  "magicDamage": 0,
+  "magicDefense": 15,
+  "accuracy": 135,
+  "evasion": 27,
+  "exp": 102,
+  "isUndead": true,
+  "minimumPushDamage": 337,
+  "elementalAttributes": "H3",
+  "summonType": 1,
+  "revivesMonsterId": []
+ }
+}

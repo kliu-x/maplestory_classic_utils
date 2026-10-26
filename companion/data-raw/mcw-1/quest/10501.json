@@ -1,0 +1,70 @@
+{
+ "id": 10501,
+ "name": "Hungry Ronnie",
+ "area": 16,
+ "areaName": "Sleepywood",
+ "demandSummary": "#o35# #a105011#\\n#i4000031:# #t4000031:# #c4000031# / 30",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10502,
+   "levelMinimum": 32,
+   "quests": [
+    {
+     "id": 10501,
+     "state": 2
+    }
+   ],
+   "npcId": 320,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10501,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10501,
+  "exp": 5850,
+  "items": [
+   {
+    "id": 4000031,
+    "count": -30
+   },
+   {
+    "id": 2000003,
+    "count": 20
+   }
+  ],
+  "meso": 1023,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10501,
+  "levelMinimum": 32,
+  "quests": [
+   {
+    "id": 10500,
+    "state": 2
+   }
+  ],
+  "npcId": 320,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10501,
+  "mobs": [
+   {
+    "count": 50,
+    "id": 35
+   }
+  ],
+  "items": [
+   {
+    "count": 30,
+    "id": 4000031
+   }
+  ],
+  "npcId": 320,
+  "state": 1
+ }
+}

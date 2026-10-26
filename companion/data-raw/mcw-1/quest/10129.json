@@ -1,0 +1,48 @@
+{
+ "id": 10129,
+ "name": "What I Learned About Snails",
+ "area": 12,
+ "areaName": "Henesys",
+ "demandSummary": "Talk to #p218#",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10130,
+   "levelMinimum": 20,
+   "quests": [
+    {
+     "id": 10129,
+     "state": 2
+    }
+   ],
+   "npcId": 218,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10129,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10129,
+  "exp": 2021,
+  "meso": 658,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10129,
+  "levelMinimum": 20,
+  "quests": [
+   {
+    "id": 10128,
+    "state": 2
+   }
+  ],
+  "npcId": 309,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10129,
+  "npcId": 218,
+  "state": 1
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "id": 10321,
+ "name": "Delivering the Flying Medicine",
+ "area": 14,
+ "areaName": "Kerning City",
+ "demandSummary": "#i4031079# #t4031079# #c4031079# / 1",
+ "rewardOnStart": {
+  "id": 10321,
+  "items": [
+   {
+    "id": 4031079,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10321,
+  "exp": 10800,
+  "items": [
+   {
+    "id": 4031079,
+    "count": -1
+   },
+   {
+    "id": 1102001,
+    "count": 1
+   },
+   {
+    "id": 1102002,
+    "count": 1
+   },
+   {
+    "id": 1102003,
+    "count": 1
+   }
+  ],
+  "meso": 1447,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10321,
+  "levelMinimum": 46,
+  "quests": [
+   {
+    "id": 10320,
+    "state": 2
+   }
+  ],
+  "npcId": 309,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10321,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031079
+   }
+  ],
+  "npcId": 407,
+  "state": 1
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "id": 10308,
+ "name": "Cutthroat Manny's Request",
+ "area": 14,
+ "areaName": "Kerning City",
+ "demandSummary": "#o23# #a103081#\\n#i4000022# #t4000022# #b#c4000022##k / 30",
+ "rewardOnStart": {
+  "id": 10308,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10308,
+  "exp": 2140,
+  "items": [
+   {
+    "id": 1072058,
+    "count": 1,
+    "job": 1074922497
+   },
+   {
+    "id": 1072044,
+    "count": 1,
+    "job": 2099202
+   },
+   {
+    "id": 1072048,
+    "count": 1,
+    "potentialGrade": "normal",
+    "job": 4198404
+   },
+   {
+    "id": 1072051,
+    "count": 1,
+    "job": 8200
+   },
+   {
+    "id": 1072054,
+    "count": 1,
+    "job": 16400
+   },
+   {
+    "id": 4000022,
+    "count": -30
+   }
+  ],
+  "meso": 716,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10308,
+  "levelMinimum": 22,
+  "quests": [
+   {
+    "id": 10307,
+    "state": 2
+   }
+  ],
+  "npcId": 406,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10308,
+  "mobs": [
+   {
+    "count": 50,
+    "id": 23
+   }
+  ],
+  "items": [
+   {
+    "count": 30,
+    "id": 4000022
+   }
+  ],
+  "npcId": 406,
+  "state": 1
+ }
+}

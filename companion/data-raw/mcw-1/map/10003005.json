@@ -1,0 +1,23 @@
+{
+ "id": 10003005,
+ "name": "Kerning City Hair Salon",
+ "streetName": "Victoria Road",
+ "mapMark": "KerningCity",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10003000,
+ "vrBounds": {
+  "width": 800,
+  "height": 600
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 413
+  },
+  {
+   "id": 414
+  }
+ ],
+ "portals": []
+}

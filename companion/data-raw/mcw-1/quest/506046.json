@@ -1,0 +1,53 @@
+{
+ "id": 506046,
+ "name": "A Gift for Pia",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "Talk to #p218#",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506047,
+   "levelMinimum": 37,
+   "quests": [
+    {
+     "id": 506046,
+     "state": 2
+    }
+   ],
+   "npcId": 218,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506046,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506046,
+  "exp": 5117,
+  "meso": 819,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506046,
+  "levelMinimum": 37,
+  "quests": [
+   {
+    "id": 506005,
+    "state": 2
+   },
+   {
+    "id": 10105,
+    "state": 2
+   }
+  ],
+  "npcId": 204,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506046,
+  "levelMinimum": 37,
+  "npcId": 218,
+  "state": 1
+ }
+}

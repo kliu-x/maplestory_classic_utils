@@ -1,0 +1,20 @@
+{
+ "id": 10005002,
+ "name": "Regular Sauna",
+ "streetName": "Dungeon",
+ "mapMark": "Dungeon",
+ "isTown": false,
+ "mobRate": 1,
+ "returnMap": 10005000,
+ "vrBounds": {
+  "width": 800,
+  "height": 620
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 607
+  }
+ ],
+ "portals": []
+}

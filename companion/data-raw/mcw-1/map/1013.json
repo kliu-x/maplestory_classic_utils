@@ -1,0 +1,20 @@
+{
+ "id": 1013,
+ "name": "Amherst Department Store",
+ "streetName": "Rainbow Street",
+ "mapMark": "Amherst",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 1010,
+ "vrBounds": {
+  "width": 800,
+  "height": 600
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 21
+  }
+ ],
+ "portals": []
+}

@@ -1,0 +1,88 @@
+{
+ "id": 10005,
+ "name": "Jane's Final Challenge",
+ "area": 11,
+ "areaName": "Lith Harbor",
+ "demandSummary": "#o20# #a100051#\\n#o45# #a100052#\\n#i4010107:# #t4010107:# #c4010107# / 1\\n#i4000050:# #t4000050:# #c4000050# / 20\\n#i2012002:# #t2012002:# #c2012002# / 10",
+ "rewardOnStart": {
+  "id": 10005,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10005,
+  "exp": 9940,
+  "items": [
+   {
+    "id": 4010107,
+    "count": -1
+   },
+   {
+    "id": 4000050,
+    "count": -20
+   },
+   {
+    "id": 2012002,
+    "count": -10
+   },
+   {
+    "id": 2040801,
+    "count": 1
+   },
+   {
+    "id": 2040802,
+    "count": 1
+   },
+   {
+    "id": 2040805,
+    "count": 1
+   },
+   {
+    "id": 2040806,
+    "count": 1
+   }
+  ],
+  "meso": 1389,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10005,
+  "levelMinimum": 44,
+  "quests": [
+   {
+    "id": 10004,
+    "state": 2
+   }
+  ],
+  "npcId": 103,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10005,
+  "mobs": [
+   {
+    "count": 100,
+    "id": 20
+   },
+   {
+    "count": 50,
+    "id": 45
+   }
+  ],
+  "items": [
+   {
+    "count": 1,
+    "id": 4010107
+   },
+   {
+    "count": 20,
+    "id": 4000050
+   },
+   {
+    "count": 10,
+    "id": 2012002
+   }
+  ],
+  "npcId": 103,
+  "state": 1
+ }
+}

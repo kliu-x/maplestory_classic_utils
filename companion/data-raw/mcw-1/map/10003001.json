@@ -1,0 +1,23 @@
+{
+ "id": 10003001,
+ "name": "Kerning City Self-Defence Item Store",
+ "streetName": "Victoria Road",
+ "mapMark": "KerningCity",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10003000,
+ "vrBounds": {
+  "width": 800,
+  "height": 670
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 408
+  },
+  {
+   "id": 409
+  }
+ ],
+ "portals": []
+}

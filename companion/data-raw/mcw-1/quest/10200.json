@@ -1,0 +1,52 @@
+{
+ "id": 10200,
+ "name": "Arwen and the Glass Shoe",
+ "area": 13,
+ "areaName": "Ellinia",
+ "demandSummary": "#i4001000# #t4001000# #b#c4001000# / 1#k",
+ "rewardOnStart": {
+  "id": 10200,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10200,
+  "exp": 4430,
+  "items": [
+   {
+    "id": 4001000,
+    "count": -1,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4003004,
+    "count": 1,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4003005,
+    "count": 1,
+    "potentialGrade": "normal"
+   }
+  ],
+  "meso": 921,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10200,
+  "levelMinimum": 29,
+  "npcId": 304,
+  "state": 0,
+  "repeatInterval": 0
+ },
+ "requirementToComplete": {
+  "id": 10200,
+  "items": [
+   {
+    "count": 1,
+    "id": 4001000
+   }
+  ],
+  "npcId": 304,
+  "state": 1
+ }
+}

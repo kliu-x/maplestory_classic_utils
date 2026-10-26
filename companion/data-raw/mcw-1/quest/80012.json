@@ -1,0 +1,63 @@
+{
+ "id": 80012,
+ "name": "A Weaponcrafter in My Own Right!",
+ "area": 19,
+ "areaName": "Crafting",
+ "demandSummary": "#o24# #a800121#\\n#i1422003:# #t1422003:# #c1422003# / 1",
+ "rewardOnStart": {
+  "id": 80012,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80012,
+  "exp": 3060,
+  "items": [
+   {
+    "id": 1422003,
+    "count": -1
+   },
+   {
+    "id": 4130000,
+    "count": 1
+   }
+  ],
+  "skills": [
+   {
+    "id": 92010000,
+    "masterLevel": -1,
+    "skillLevel": -1
+   }
+  ],
+  "meso": 804,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80012,
+  "levelMinimum": 25,
+  "quests": [
+   {
+    "id": 80011,
+    "state": 2
+   }
+  ],
+  "npcId": 503,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80012,
+  "mobs": [
+   {
+    "count": 30,
+    "id": 24
+   }
+  ],
+  "items": [
+   {
+    "count": 1,
+    "id": 1422003
+   }
+  ],
+  "npcId": 503,
+  "state": 1
+ }
+}

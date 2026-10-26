@@ -1,0 +1,52 @@
+{
+ "id": 1005,
+ "name": "Todd's How-to-Hunt",
+ "area": 1,
+ "areaName": "Maple Island",
+ "demandSummary": "#o1# #a10051#\\n#i4000000:# #t4000000:# #c4000000# / 3",
+ "rewardOnStart": {
+  "id": 1005,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 1005,
+  "exp": 10,
+  "items": [
+   {
+    "id": 4000000,
+    "count": -3
+   },
+   {
+    "id": 2010002,
+    "count": 3
+   }
+  ],
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 1005,
+  "jobs": [
+   0
+  ],
+  "levelMinimum": 1,
+  "npcId": 7,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 1005,
+  "mobs": [
+   {
+    "count": 3,
+    "id": 1
+   }
+  ],
+  "items": [
+   {
+    "count": 3,
+    "id": 4000000
+   }
+  ],
+  "npcId": 6,
+  "state": 1
+ }
+}

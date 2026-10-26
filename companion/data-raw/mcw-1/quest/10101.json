@@ -1,0 +1,47 @@
+{
+ "id": 10101,
+ "name": "Mrs. Ming Ming's Second Worry",
+ "area": 12,
+ "areaName": "Henesys",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10102,
+   "levelMinimum": 15,
+   "quests": [
+    {
+     "id": 10101,
+     "state": 2
+    }
+   ],
+   "npcId": 300,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10101,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10101,
+  "exp": 669,
+  "meso": 497,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10101,
+  "levelMinimum": 15,
+  "quests": [
+   {
+    "id": 10100,
+    "state": 2
+   }
+  ],
+  "npcId": 203,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10101,
+  "npcId": 300,
+  "state": 1
+ }
+}

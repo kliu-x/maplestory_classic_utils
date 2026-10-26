@@ -1,0 +1,72 @@
+{
+ "id": 10320,
+ "name": "The Ingredients for the Flying Medicine",
+ "area": 14,
+ "areaName": "Kerning City",
+ "demandSummary": "#i4000039# #t4000039# #c4000039# / 50\\n#i4031012# #t4031012# #c4031012# / 20",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10321,
+   "levelMinimum": 46,
+   "quests": [
+    {
+     "id": 10320,
+     "state": 2
+    }
+   ],
+   "npcId": 309,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10320,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10320,
+  "exp": 10800,
+  "items": [
+   {
+    "id": 4000039,
+    "count": -50
+   },
+   {
+    "id": 4031012,
+    "count": -20
+   },
+   {
+    "id": 2000003,
+    "count": 25
+   }
+  ],
+  "meso": 1447,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10320,
+  "levelMinimum": 46,
+  "quests": [
+   {
+    "id": 10319,
+    "state": 2
+   }
+  ],
+  "npcId": 309,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10320,
+  "items": [
+   {
+    "count": 50,
+    "id": 4000039
+   },
+   {
+    "count": 20,
+    "id": 4031012
+   }
+  ],
+  "npcId": 309,
+  "state": 1
+ }
+}

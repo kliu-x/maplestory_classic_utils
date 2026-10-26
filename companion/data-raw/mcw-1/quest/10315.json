@@ -1,0 +1,47 @@
+{
+ "id": 10315,
+ "name": "I'm Bored 1",
+ "area": 14,
+ "areaName": "Kerning City",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10316,
+   "levelMinimum": 11,
+   "quests": [
+    {
+     "id": 10315,
+     "state": 2
+    }
+   ],
+   "npcId": 407,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10315,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10315,
+  "exp": 252,
+  "items": [
+   {
+    "id": 2010003,
+    "count": 5
+   }
+  ],
+  "meso": 380,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10315,
+  "levelMinimum": 11,
+  "npcId": 407,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10315,
+  "npcId": 407,
+  "state": 1
+ }
+}

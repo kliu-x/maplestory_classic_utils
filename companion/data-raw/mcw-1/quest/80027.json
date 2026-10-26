@@ -1,0 +1,70 @@
+{
+ "id": 80027,
+ "name": "Chief Stan's Reply",
+ "area": 10,
+ "areaName": "Victoria Island",
+ "demandSummary": "#i4031092:# #t4031092:# #c4031092# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 80028,
+   "levelMinimum": 13,
+   "quests": [
+    {
+     "id": 80027,
+     "state": 2
+    }
+   ],
+   "npcId": 800018,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 80027,
+  "items": [
+   {
+    "id": 4031092,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80027,
+  "exp": 424,
+  "items": [
+   {
+    "id": 4031092,
+    "count": -1
+   },
+   {
+    "id": 2000003,
+    "count": 10
+   }
+  ],
+  "meso": 306,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80027,
+  "levelMinimum": 13,
+  "quests": [
+   {
+    "id": 80026,
+    "state": 2
+   }
+  ],
+  "npcId": 202,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80027,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031092
+   }
+  ],
+  "npcId": 800018,
+  "state": 1
+ }
+}

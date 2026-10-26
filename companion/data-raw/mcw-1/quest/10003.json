@@ -1,0 +1,90 @@
+{
+ "id": 10003,
+ "name": "Jane's First Challenge",
+ "area": 11,
+ "areaName": "Lith Harbor",
+ "demandSummary": "#o40# #a100031#\\n#o43# #a100032#\\n#i2022000:# #t2022000:# #c2022000# / 1\\n#i4000036:# #t4000036:# #c4000036# / 25\\n#i4000039:# #t4000039:# #c4000039# / 25",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10004,
+   "levelMinimum": 44,
+   "quests": [
+    {
+     "id": 10003,
+     "state": 2
+    }
+   ],
+   "npcId": 103,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10003,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10003,
+  "exp": 9940,
+  "items": [
+   {
+    "id": 2022000,
+    "count": -1
+   },
+   {
+    "id": 4000036,
+    "count": -25
+   },
+   {
+    "id": 4000039,
+    "count": -25
+   },
+   {
+    "id": 2000004,
+    "count": 10
+   }
+  ],
+  "meso": 1389,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10003,
+  "levelMinimum": 44,
+  "quests": [
+   {
+    "id": 10002,
+    "state": 2
+   }
+  ],
+  "npcId": 103,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10003,
+  "mobs": [
+   {
+    "count": 50,
+    "id": 40
+   },
+   {
+    "count": 50,
+    "id": 43
+   }
+  ],
+  "items": [
+   {
+    "count": 1,
+    "id": 2022000
+   },
+   {
+    "count": 25,
+    "id": 4000036
+   },
+   {
+    "count": 25,
+    "id": 4000039
+   }
+  ],
+  "npcId": 103,
+  "state": 1
+ }
+}

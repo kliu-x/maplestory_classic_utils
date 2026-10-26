@@ -1,0 +1,23 @@
+{
+ "id": 1,
+ "name": "Mushroom Town - West Entrance",
+ "streetName": "Maple Road",
+ "mapMark": "MushroomVillage",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 1,
+ "vrBounds": {
+  "width": 1498,
+  "height": 985
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 1
+  },
+  {
+   "id": 2
+  }
+ ],
+ "portals": []
+}

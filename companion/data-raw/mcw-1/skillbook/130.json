@@ -1,0 +1,1622 @@
+{
+ "id": 130,
+ "description": {
+  "id": 130,
+  "desc": "",
+  "name": "",
+  "shortDesc": "",
+  "bookName": "Spearman Techniques",
+  "names": {
+   "en": "Spearman Techniques",
+   "es": "Técnicas de Lancero",
+   "ko": "Spearman 기술"
+  }
+ },
+ "skills": [
+  {
+   "id": 1300000,
+   "masterLevel": 20,
+   "weapons": [
+    43
+   ],
+   "description": {
+    "name": "Spear Mastery",
+    "desc": "[Master Level: 20]\\nIncreases Spear Mastery and gives a chance to deal damage that ignores the target’s Weapon Def. It only applies when a spear is equipped."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mastery": "1",
+     "prop": "1"
+    },
+    {
+     "hs": "h2",
+     "mastery": "1",
+     "prop": "2"
+    },
+    {
+     "hs": "h3",
+     "mastery": "1",
+     "prop": "3"
+    },
+    {
+     "hs": "h4",
+     "mastery": "2",
+     "prop": "4"
+    },
+    {
+     "hs": "h5",
+     "mastery": "2",
+     "prop": "5"
+    },
+    {
+     "hs": "h6",
+     "mastery": "3",
+     "prop": "6"
+    },
+    {
+     "hs": "h7",
+     "mastery": "3",
+     "prop": "7"
+    },
+    {
+     "hs": "h8",
+     "mastery": "4",
+     "prop": "8"
+    },
+    {
+     "hs": "h9",
+     "mastery": "4",
+     "prop": "9"
+    },
+    {
+     "hs": "h10",
+     "mastery": "5",
+     "prop": "10"
+    },
+    {
+     "hs": "h11",
+     "mastery": "5",
+     "prop": "11"
+    },
+    {
+     "hs": "h12",
+     "mastery": "6",
+     "prop": "12"
+    },
+    {
+     "hs": "h13",
+     "mastery": "6",
+     "prop": "13"
+    },
+    {
+     "hs": "h14",
+     "mastery": "7",
+     "prop": "14"
+    },
+    {
+     "hs": "h15",
+     "mastery": "7",
+     "prop": "15"
+    },
+    {
+     "hs": "h16",
+     "mastery": "8",
+     "prop": "16"
+    },
+    {
+     "hs": "h17",
+     "mastery": "8",
+     "prop": "17"
+    },
+    {
+     "hs": "h18",
+     "mastery": "9",
+     "prop": "18"
+    },
+    {
+     "hs": "h19",
+     "mastery": "9",
+     "prop": "19"
+    },
+    {
+     "hs": "h20",
+     "mastery": "10",
+     "prop": "20"
+    }
+   ]
+  },
+  {
+   "id": 1300001,
+   "masterLevel": 20,
+   "weapons": [
+    44
+   ],
+   "description": {
+    "name": "Polearm Mastery",
+    "desc": "[Master Level: 20]\\nIncreases Polearm Mastery and movement speed. It only applies when a polearm is equipped."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mastery": "1",
+     "x": "1"
+    },
+    {
+     "hs": "h2",
+     "mastery": "1",
+     "x": "2"
+    },
+    {
+     "hs": "h3",
+     "mastery": "1",
+     "x": "3"
+    },
+    {
+     "hs": "h4",
+     "mastery": "2",
+     "x": "4"
+    },
+    {
+     "hs": "h5",
+     "mastery": "2",
+     "x": "5"
+    },
+    {
+     "hs": "h6",
+     "mastery": "3",
+     "x": "6"
+    },
+    {
+     "hs": "h7",
+     "mastery": "3",
+     "x": "7"
+    },
+    {
+     "hs": "h8",
+     "mastery": "4",
+     "x": "8"
+    },
+    {
+     "hs": "h9",
+     "mastery": "4",
+     "x": "9"
+    },
+    {
+     "hs": "h10",
+     "mastery": "5",
+     "x": "10"
+    },
+    {
+     "hs": "h11",
+     "mastery": "5",
+     "x": "11"
+    },
+    {
+     "hs": "h12",
+     "mastery": "6",
+     "x": "12"
+    },
+    {
+     "hs": "h13",
+     "mastery": "6",
+     "x": "13"
+    },
+    {
+     "hs": "h14",
+     "mastery": "7",
+     "x": "14"
+    },
+    {
+     "hs": "h15",
+     "mastery": "7",
+     "x": "15"
+    },
+    {
+     "hs": "h16",
+     "mastery": "8",
+     "x": "16"
+    },
+    {
+     "hs": "h17",
+     "mastery": "8",
+     "x": "17"
+    },
+    {
+     "hs": "h18",
+     "mastery": "9",
+     "x": "18"
+    },
+    {
+     "hs": "h19",
+     "mastery": "9",
+     "x": "19"
+    },
+    {
+     "hs": "h20",
+     "mastery": "10",
+     "x": "20"
+    }
+   ]
+  },
+  {
+   "id": 1301000,
+   "masterLevel": 30,
+   "requiredSkillLevels": {
+    "1300000": 3
+   },
+   "weapons": [
+    43
+   ],
+   "description": {
+    "name": "Final Attack: Spear",
+    "desc": "[Master Level: 30]\\nUsing attack skills has a chance to enable the Final Attack skill for 60 sec. While enabled, the skill can be used, dealing heavy damage to a single enemy and absorbing some of the damage dealt as HP. The most one can absorb at once is 25% of the character's Max HP, and can't absorb more than the Max HP of the enemy. Only applies when equipped with a spear.\\nRequired Skill: #cAt least Level 3 Spear Mastery#"
+   },
+   "levelProperties": [
+    {
+     "damage": "260",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "5",
+     "mpCon": "8",
+     "prop": "25",
+     "time": "60",
+     "hs": "h1"
+    },
+    {
+     "damage": "263",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "5",
+     "mpCon": "9",
+     "prop": "25",
+     "time": "60",
+     "hs": "h2"
+    },
+    {
+     "damage": "266",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "5",
+     "mpCon": "9",
+     "prop": "25",
+     "time": "60",
+     "hs": "h3"
+    },
+    {
+     "damage": "269",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "5",
+     "mpCon": "9",
+     "prop": "25",
+     "time": "60",
+     "hs": "h4"
+    },
+    {
+     "damage": "272",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "5",
+     "mpCon": "9",
+     "prop": "25",
+     "time": "60",
+     "hs": "h5"
+    },
+    {
+     "damage": "275",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "6",
+     "mpCon": "10",
+     "prop": "25",
+     "time": "60",
+     "hs": "h6"
+    },
+    {
+     "damage": "278",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "6",
+     "mpCon": "10",
+     "prop": "25",
+     "time": "60",
+     "hs": "h7"
+    },
+    {
+     "damage": "281",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "6",
+     "mpCon": "10",
+     "prop": "25",
+     "time": "60",
+     "hs": "h8"
+    },
+    {
+     "damage": "284",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "6",
+     "mpCon": "10",
+     "prop": "25",
+     "time": "60",
+     "hs": "h9"
+    },
+    {
+     "damage": "287",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "6",
+     "mpCon": "11",
+     "prop": "25",
+     "time": "60",
+     "hs": "h10"
+    },
+    {
+     "damage": "290",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "6",
+     "mpCon": "11",
+     "prop": "25",
+     "time": "60",
+     "hs": "h11"
+    },
+    {
+     "damage": "293",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "7",
+     "mpCon": "11",
+     "prop": "25",
+     "time": "60",
+     "hs": "h12"
+    },
+    {
+     "damage": "296",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "7",
+     "mpCon": "11",
+     "prop": "25",
+     "time": "60",
+     "hs": "h13"
+    },
+    {
+     "damage": "299",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "7",
+     "mpCon": "12",
+     "prop": "25",
+     "time": "60",
+     "hs": "h14"
+    },
+    {
+     "damage": "302",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "7",
+     "mpCon": "12",
+     "prop": "25",
+     "time": "60",
+     "hs": "h15"
+    },
+    {
+     "damage": "305",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "7",
+     "mpCon": "12",
+     "prop": "25",
+     "time": "60",
+     "hs": "h16"
+    },
+    {
+     "damage": "308",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "7",
+     "mpCon": "12",
+     "prop": "25",
+     "time": "60",
+     "hs": "h17"
+    },
+    {
+     "damage": "311",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "8",
+     "mpCon": "13",
+     "prop": "25",
+     "time": "60",
+     "hs": "h18"
+    },
+    {
+     "damage": "314",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "8",
+     "mpCon": "13",
+     "prop": "25",
+     "time": "60",
+     "hs": "h19"
+    },
+    {
+     "damage": "317",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "8",
+     "mpCon": "13",
+     "prop": "25",
+     "time": "60",
+     "hs": "h20"
+    },
+    {
+     "damage": "320",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "8",
+     "mpCon": "13",
+     "prop": "25",
+     "time": "60",
+     "hs": "h21"
+    },
+    {
+     "damage": "323",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "8",
+     "mpCon": "14",
+     "prop": "25",
+     "time": "60",
+     "hs": "h22"
+    },
+    {
+     "damage": "326",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "8",
+     "mpCon": "14",
+     "prop": "25",
+     "time": "60",
+     "hs": "h23"
+    },
+    {
+     "damage": "329",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "9",
+     "mpCon": "14",
+     "prop": "25",
+     "time": "60",
+     "hs": "h24"
+    },
+    {
+     "damage": "332",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "9",
+     "mpCon": "14",
+     "prop": "25",
+     "time": "60",
+     "hs": "h25"
+    },
+    {
+     "damage": "335",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "9",
+     "mpCon": "15",
+     "prop": "25",
+     "time": "60",
+     "hs": "h26"
+    },
+    {
+     "damage": "338",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "9",
+     "mpCon": "15",
+     "prop": "25",
+     "time": "60",
+     "hs": "h27"
+    },
+    {
+     "damage": "341",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "9",
+     "mpCon": "15",
+     "prop": "25",
+     "time": "60",
+     "hs": "h28"
+    },
+    {
+     "damage": "344",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "9",
+     "mpCon": "15",
+     "prop": "25",
+     "time": "60",
+     "hs": "h29"
+    },
+    {
+     "damage": "350",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "10",
+     "mpCon": "16",
+     "prop": "25",
+     "time": "60",
+     "hs": "h30"
+    }
+   ]
+  },
+  {
+   "id": 1301001,
+   "masterLevel": 30,
+   "requiredSkillLevels": {
+    "1300001": 3
+   },
+   "weapons": [
+    44
+   ],
+   "description": {
+    "name": "Final Attack: Polearm",
+    "desc": "[Master Level: 30]\\nUsing attack skills has a chance to enable the Final Attack skill for 60 sec. While enabled, the skill can be used, dealing heavy damage to a single enemy and absorbing some of the damage dealt as HP. The most one can absorb at once is 25% of the character's Max HP, and can't absorb more than the Max HP of the enemy. Only applies when equipped with a polearm.\\nRequired Skill: #cAt least Level 3 Polearm Mastery#"
+   },
+   "levelProperties": [
+    {
+     "damage": "260",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "5",
+     "mpCon": "8",
+     "prop": "25",
+     "time": "60",
+     "hs": "h1"
+    },
+    {
+     "damage": "263",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "5",
+     "mpCon": "9",
+     "prop": "25",
+     "time": "60",
+     "hs": "h2"
+    },
+    {
+     "damage": "266",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "5",
+     "mpCon": "9",
+     "prop": "25",
+     "time": "60",
+     "hs": "h3"
+    },
+    {
+     "damage": "269",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "5",
+     "mpCon": "9",
+     "prop": "25",
+     "time": "60",
+     "hs": "h4"
+    },
+    {
+     "damage": "272",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "5",
+     "mpCon": "9",
+     "prop": "25",
+     "time": "60",
+     "hs": "h5"
+    },
+    {
+     "damage": "275",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "6",
+     "mpCon": "10",
+     "prop": "25",
+     "time": "60",
+     "hs": "h6"
+    },
+    {
+     "damage": "278",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "6",
+     "mpCon": "10",
+     "prop": "25",
+     "time": "60",
+     "hs": "h7"
+    },
+    {
+     "damage": "281",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "6",
+     "mpCon": "10",
+     "prop": "25",
+     "time": "60",
+     "hs": "h8"
+    },
+    {
+     "damage": "284",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "6",
+     "mpCon": "10",
+     "prop": "25",
+     "time": "60",
+     "hs": "h9"
+    },
+    {
+     "damage": "287",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "6",
+     "mpCon": "11",
+     "prop": "25",
+     "time": "60",
+     "hs": "h10"
+    },
+    {
+     "damage": "290",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "6",
+     "mpCon": "11",
+     "prop": "25",
+     "time": "60",
+     "hs": "h11"
+    },
+    {
+     "damage": "293",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "7",
+     "mpCon": "11",
+     "prop": "25",
+     "time": "60",
+     "hs": "h12"
+    },
+    {
+     "damage": "296",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "7",
+     "mpCon": "11",
+     "prop": "25",
+     "time": "60",
+     "hs": "h13"
+    },
+    {
+     "damage": "299",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "7",
+     "mpCon": "12",
+     "prop": "25",
+     "time": "60",
+     "hs": "h14"
+    },
+    {
+     "damage": "302",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "7",
+     "mpCon": "12",
+     "prop": "25",
+     "time": "60",
+     "hs": "h15"
+    },
+    {
+     "damage": "305",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "7",
+     "mpCon": "12",
+     "prop": "25",
+     "time": "60",
+     "hs": "h16"
+    },
+    {
+     "damage": "308",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "7",
+     "mpCon": "12",
+     "prop": "25",
+     "time": "60",
+     "hs": "h17"
+    },
+    {
+     "damage": "311",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "8",
+     "mpCon": "13",
+     "prop": "25",
+     "time": "60",
+     "hs": "h18"
+    },
+    {
+     "damage": "314",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "8",
+     "mpCon": "13",
+     "prop": "25",
+     "time": "60",
+     "hs": "h19"
+    },
+    {
+     "damage": "317",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "8",
+     "mpCon": "13",
+     "prop": "25",
+     "time": "60",
+     "hs": "h20"
+    },
+    {
+     "damage": "320",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "8",
+     "mpCon": "13",
+     "prop": "25",
+     "time": "60",
+     "hs": "h21"
+    },
+    {
+     "damage": "323",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "8",
+     "mpCon": "14",
+     "prop": "25",
+     "time": "60",
+     "hs": "h22"
+    },
+    {
+     "damage": "326",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "8",
+     "mpCon": "14",
+     "prop": "25",
+     "time": "60",
+     "hs": "h23"
+    },
+    {
+     "damage": "329",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "9",
+     "mpCon": "14",
+     "prop": "25",
+     "time": "60",
+     "hs": "h24"
+    },
+    {
+     "damage": "332",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "9",
+     "mpCon": "14",
+     "prop": "25",
+     "time": "60",
+     "hs": "h25"
+    },
+    {
+     "damage": "335",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "9",
+     "mpCon": "15",
+     "prop": "25",
+     "time": "60",
+     "hs": "h26"
+    },
+    {
+     "damage": "338",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "9",
+     "mpCon": "15",
+     "prop": "25",
+     "time": "60",
+     "hs": "h27"
+    },
+    {
+     "damage": "341",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "9",
+     "mpCon": "15",
+     "prop": "25",
+     "time": "60",
+     "hs": "h28"
+    },
+    {
+     "damage": "344",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "9",
+     "mpCon": "15",
+     "prop": "25",
+     "time": "60",
+     "hs": "h29"
+    },
+    {
+     "damage": "350",
+     "mobCount": "1",
+     "attackCount": "1",
+     "x": "10",
+     "mpCon": "16",
+     "prop": "25",
+     "time": "60",
+     "hs": "h30"
+    }
+   ]
+  },
+  {
+   "id": 1301002,
+   "masterLevel": 20,
+   "requiredSkillLevels": {
+    "1300000": 5
+   },
+   "weapons": [
+    43
+   ],
+   "description": {
+    "name": "Spear Booster",
+    "desc": "[Master Level: 20]\\nConsumes HP and MP to temporarily increase the Attack Speed of the equipped spear. Only applies when equipped with a spear.\\nRequired Skill: #cAt least Level 5 Spear Mastery#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "hpCon": "30",
+     "mpCon": "30",
+     "time": "100",
+     "x": "-2"
+    },
+    {
+     "hs": "h2",
+     "hpCon": "29",
+     "mpCon": "29",
+     "time": "110",
+     "x": "-2"
+    },
+    {
+     "hs": "h3",
+     "hpCon": "28",
+     "mpCon": "28",
+     "time": "120",
+     "x": "-2"
+    },
+    {
+     "hs": "h4",
+     "hpCon": "27",
+     "mpCon": "27",
+     "time": "130",
+     "x": "-2"
+    },
+    {
+     "hs": "h5",
+     "hpCon": "26",
+     "mpCon": "26",
+     "time": "140",
+     "x": "-2"
+    },
+    {
+     "hs": "h6",
+     "hpCon": "25",
+     "mpCon": "25",
+     "time": "150",
+     "x": "-2"
+    },
+    {
+     "hs": "h7",
+     "hpCon": "24",
+     "mpCon": "24",
+     "time": "160",
+     "x": "-2"
+    },
+    {
+     "hs": "h8",
+     "hpCon": "23",
+     "mpCon": "23",
+     "time": "170",
+     "x": "-2"
+    },
+    {
+     "hs": "h9",
+     "hpCon": "22",
+     "mpCon": "22",
+     "time": "180",
+     "x": "-2"
+    },
+    {
+     "hs": "h10",
+     "hpCon": "21",
+     "mpCon": "21",
+     "time": "190",
+     "x": "-2"
+    },
+    {
+     "hs": "h11",
+     "hpCon": "20",
+     "mpCon": "20",
+     "time": "200",
+     "x": "-2"
+    },
+    {
+     "hs": "h12",
+     "hpCon": "19",
+     "mpCon": "19",
+     "time": "210",
+     "x": "-2"
+    },
+    {
+     "hs": "h13",
+     "hpCon": "18",
+     "mpCon": "18",
+     "time": "220",
+     "x": "-2"
+    },
+    {
+     "hs": "h14",
+     "hpCon": "17",
+     "mpCon": "17",
+     "time": "230",
+     "x": "-2"
+    },
+    {
+     "hs": "h15",
+     "hpCon": "16",
+     "mpCon": "16",
+     "time": "240",
+     "x": "-2"
+    },
+    {
+     "hs": "h16",
+     "hpCon": "15",
+     "mpCon": "15",
+     "time": "250",
+     "x": "-2"
+    },
+    {
+     "hs": "h17",
+     "hpCon": "14",
+     "mpCon": "14",
+     "time": "260",
+     "x": "-2"
+    },
+    {
+     "hs": "h18",
+     "hpCon": "13",
+     "mpCon": "13",
+     "time": "270",
+     "x": "-2"
+    },
+    {
+     "hs": "h19",
+     "hpCon": "12",
+     "mpCon": "12",
+     "time": "280",
+     "x": "-2"
+    },
+    {
+     "hs": "h20",
+     "hpCon": "10",
+     "mpCon": "10",
+     "time": "300",
+     "x": "-2"
+    }
+   ]
+  },
+  {
+   "id": 1301003,
+   "masterLevel": 20,
+   "requiredSkillLevels": {
+    "1300001": 5
+   },
+   "weapons": [
+    44
+   ],
+   "description": {
+    "name": "Polearm Booster",
+    "desc": "[Master Level: 20]\\nConsumes HP and MP to temporarily increase the Attack Speed of the equipped polearm. Only applies when equipped with a polearm.\\nRequired Skill: #cAt least Level 5 Polearm Mastery#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "hpCon": "30",
+     "mpCon": "30",
+     "time": "100",
+     "x": "-2"
+    },
+    {
+     "hs": "h2",
+     "hpCon": "29",
+     "mpCon": "29",
+     "time": "110",
+     "x": "-2"
+    },
+    {
+     "hs": "h3",
+     "hpCon": "28",
+     "mpCon": "28",
+     "time": "120",
+     "x": "-2"
+    },
+    {
+     "hs": "h4",
+     "hpCon": "27",
+     "mpCon": "27",
+     "time": "130",
+     "x": "-2"
+    },
+    {
+     "hs": "h5",
+     "hpCon": "26",
+     "mpCon": "26",
+     "time": "140",
+     "x": "-2"
+    },
+    {
+     "hs": "h6",
+     "hpCon": "25",
+     "mpCon": "25",
+     "time": "150",
+     "x": "-2"
+    },
+    {
+     "hs": "h7",
+     "hpCon": "24",
+     "mpCon": "24",
+     "time": "160",
+     "x": "-2"
+    },
+    {
+     "hs": "h8",
+     "hpCon": "23",
+     "mpCon": "23",
+     "time": "170",
+     "x": "-2"
+    },
+    {
+     "hs": "h9",
+     "hpCon": "22",
+     "mpCon": "22",
+     "time": "180",
+     "x": "-2"
+    },
+    {
+     "hs": "h10",
+     "hpCon": "21",
+     "mpCon": "21",
+     "time": "190",
+     "x": "-2"
+    },
+    {
+     "hs": "h11",
+     "hpCon": "20",
+     "mpCon": "20",
+     "time": "200",
+     "x": "-2"
+    },
+    {
+     "hs": "h12",
+     "hpCon": "19",
+     "mpCon": "19",
+     "time": "210",
+     "x": "-2"
+    },
+    {
+     "hs": "h13",
+     "hpCon": "18",
+     "mpCon": "18",
+     "time": "220",
+     "x": "-2"
+    },
+    {
+     "hs": "h14",
+     "hpCon": "17",
+     "mpCon": "17",
+     "time": "230",
+     "x": "-2"
+    },
+    {
+     "hs": "h15",
+     "hpCon": "16",
+     "mpCon": "16",
+     "time": "240",
+     "x": "-2"
+    },
+    {
+     "hs": "h16",
+     "hpCon": "15",
+     "mpCon": "15",
+     "time": "250",
+     "x": "-2"
+    },
+    {
+     "hs": "h17",
+     "hpCon": "14",
+     "mpCon": "14",
+     "time": "260",
+     "x": "-2"
+    },
+    {
+     "hs": "h18",
+     "hpCon": "13",
+     "mpCon": "13",
+     "time": "270",
+     "x": "-2"
+    },
+    {
+     "hs": "h19",
+     "hpCon": "12",
+     "mpCon": "12",
+     "time": "280",
+     "x": "-2"
+    },
+    {
+     "hs": "h20",
+     "hpCon": "10",
+     "mpCon": "10",
+     "time": "300",
+     "x": "-2"
+    }
+   ]
+  },
+  {
+   "id": 1301004,
+   "masterLevel": 30,
+   "weapons": [],
+   "description": {
+    "name": "Iron Will",
+    "desc": "[Master Level: 30]\\nTemporarily increases the user's Weapon Defense and grants a chance to ignore knockback effects."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "10",
+     "time": "150",
+     "indiePdd": "20",
+     "prop": "5"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "10",
+     "time": "155",
+     "indiePdd": "21",
+     "prop": "6"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "10",
+     "time": "160",
+     "indiePdd": "22",
+     "prop": "7"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "11",
+     "time": "165",
+     "indiePdd": "23",
+     "prop": "8"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "11",
+     "time": "170",
+     "indiePdd": "24",
+     "prop": "9"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "12",
+     "time": "175",
+     "indiePdd": "25",
+     "prop": "10"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "12",
+     "time": "180",
+     "indiePdd": "26",
+     "prop": "11"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "13",
+     "time": "185",
+     "indiePdd": "27",
+     "prop": "12"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "13",
+     "time": "190",
+     "indiePdd": "28",
+     "prop": "13"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "14",
+     "time": "195",
+     "indiePdd": "29",
+     "prop": "14"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "14",
+     "time": "200",
+     "indiePdd": "30",
+     "prop": "15"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "15",
+     "time": "205",
+     "indiePdd": "31",
+     "prop": "16"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "15",
+     "time": "210",
+     "indiePdd": "32",
+     "prop": "17"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "16",
+     "time": "215",
+     "indiePdd": "33",
+     "prop": "18"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "16",
+     "time": "220",
+     "indiePdd": "34",
+     "prop": "19"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "17",
+     "time": "225",
+     "indiePdd": "35",
+     "prop": "20"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "17",
+     "time": "230",
+     "indiePdd": "36",
+     "prop": "21"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "18",
+     "time": "235",
+     "indiePdd": "37",
+     "prop": "22"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "18",
+     "time": "240",
+     "indiePdd": "38",
+     "prop": "23"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "19",
+     "time": "245",
+     "indiePdd": "39",
+     "prop": "24"
+    },
+    {
+     "hs": "h21",
+     "mpCon": "19",
+     "time": "250",
+     "indiePdd": "40",
+     "prop": "25"
+    },
+    {
+     "hs": "h22",
+     "mpCon": "20",
+     "time": "255",
+     "indiePdd": "41",
+     "prop": "26"
+    },
+    {
+     "hs": "h23",
+     "mpCon": "20",
+     "time": "260",
+     "indiePdd": "42",
+     "prop": "27"
+    },
+    {
+     "hs": "h24",
+     "mpCon": "21",
+     "time": "265",
+     "indiePdd": "43",
+     "prop": "28"
+    },
+    {
+     "hs": "h25",
+     "mpCon": "21",
+     "time": "270",
+     "indiePdd": "44",
+     "prop": "29"
+    },
+    {
+     "hs": "h26",
+     "mpCon": "22",
+     "time": "275",
+     "indiePdd": "45",
+     "prop": "30"
+    },
+    {
+     "hs": "h27",
+     "mpCon": "22",
+     "time": "280",
+     "indiePdd": "46",
+     "prop": "31"
+    },
+    {
+     "hs": "h28",
+     "mpCon": "23",
+     "time": "285",
+     "indiePdd": "47",
+     "prop": "32"
+    },
+    {
+     "hs": "h29",
+     "mpCon": "23",
+     "time": "290",
+     "indiePdd": "48",
+     "prop": "33"
+    },
+    {
+     "hs": "h30",
+     "mpCon": "25",
+     "time": "300",
+     "indiePdd": "50",
+     "prop": "35"
+    }
+   ]
+  },
+  {
+   "id": 1301005,
+   "masterLevel": 20,
+   "weapons": [
+    43,
+    44
+   ],
+   "description": {
+    "name": "Rush",
+    "desc": "[Master Level: 20]\\nRushes forward a certain distance in the direction you are facing. If there are monsters within the rush range, you can deal damage to up to 6 of them and knock them back a certain distance. While rushing, you will not be knocked back even if attacked by monsters.\\n#cCooldown: 2 sec#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "35",
+     "damage": "60",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "130",
+     "lt": "Point [ X=-200, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "34",
+     "damage": "61",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "130",
+     "lt": "Point [ X=-200, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "33",
+     "damage": "62",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "130",
+     "lt": "Point [ X=-200, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "32",
+     "damage": "63",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "130",
+     "lt": "Point [ X=-200, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "31",
+     "damage": "64",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "130",
+     "lt": "Point [ X=-200, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "30",
+     "damage": "65",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "130",
+     "lt": "Point [ X=-200, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "29",
+     "damage": "66",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "130",
+     "lt": "Point [ X=-200, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "28",
+     "damage": "67",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "130",
+     "lt": "Point [ X=-200, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "27",
+     "damage": "68",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "130",
+     "lt": "Point [ X=-200, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "26",
+     "damage": "69",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "130",
+     "lt": "Point [ X=-200, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "25",
+     "damage": "69",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "150",
+     "lt": "Point [ X=-220, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "24",
+     "damage": "71",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "150",
+     "lt": "Point [ X=-220, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "23",
+     "damage": "72",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "150",
+     "lt": "Point [ X=-220, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "22",
+     "damage": "74",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "150",
+     "lt": "Point [ X=-220, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "21",
+     "damage": "74",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "150",
+     "lt": "Point [ X=-220, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "20",
+     "damage": "75",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "150",
+     "lt": "Point [ X=-220, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "19",
+     "damage": "76",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "150",
+     "lt": "Point [ X=-220, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "18",
+     "damage": "77",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "150",
+     "lt": "Point [ X=-220, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "17",
+     "damage": "78",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "150",
+     "lt": "Point [ X=-220, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "15",
+     "damage": "80",
+     "mobCount": "6",
+     "cooltime": "2",
+     "range": "150",
+     "lt": "Point [ X=-220, Y=-50 ]",
+     "rb": "Point [ X=0, Y=0 ]"
+    }
+   ]
+  }
+ ]
+}

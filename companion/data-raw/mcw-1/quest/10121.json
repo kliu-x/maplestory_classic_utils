@@ -1,0 +1,83 @@
+{
+ "id": 10121,
+ "name": "What Pia Borrowed",
+ "area": 12,
+ "areaName": "Henesys",
+ "demandSummary": "#i4000039:# #t4000039:# #c4000039# / 30\\n#i4001007:# #t4001007:# #c4001007# / 1\\n#i4020108:# #t4020108:# #c4020108# / 1\\n",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10122,
+   "levelMinimum": 42,
+   "quests": [
+    {
+     "id": 10121,
+     "state": 2
+    }
+   ],
+   "npcId": 201,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10121,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10121,
+  "exp": 9060,
+  "items": [
+   {
+    "id": 4000039,
+    "count": -30,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4001007,
+    "count": -1,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 4020108,
+    "count": -1,
+    "potentialGrade": "normal"
+   },
+   {
+    "id": 2000003,
+    "count": 25
+   }
+  ],
+  "meso": 1330,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10121,
+  "levelMinimum": 42,
+  "quests": [
+   {
+    "id": 10120,
+    "state": 2
+   }
+  ],
+  "npcId": 201,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10121,
+  "items": [
+   {
+    "count": 30,
+    "id": 4000039
+   },
+   {
+    "count": 1,
+    "id": 4001007
+   },
+   {
+    "count": 1,
+    "id": 4020108
+   }
+  ],
+  "npcId": 201,
+  "state": 1
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "id": 10417,
+ "name": "Truth of the Rumor- Dances with Balrog",
+ "area": 15,
+ "areaName": "Perion",
+ "demandSummary": "Talk to #p511#",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10418,
+   "levelMinimum": 34,
+   "quests": [
+    {
+     "id": 10417,
+     "state": 2
+    }
+   ],
+   "npcId": 511,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10417,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10417,
+  "exp": 2755,
+  "meso": 757,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10417,
+  "levelMinimum": 34,
+  "quests": [
+   {
+    "id": 10416,
+    "state": 2
+   }
+  ],
+  "npcId": 502,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10417,
+  "npcId": 511,
+  "state": 1
+ }
+}

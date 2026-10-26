@@ -1,0 +1,20 @@
+{
+ "id": 10001051,
+ "name": "Bowman Instructional School",
+ "streetName": "Victoria Road",
+ "mapMark": "Henesys",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10001000,
+ "vrBounds": {
+  "width": 800,
+  "height": 735
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 221
+  }
+ ],
+ "portals": []
+}

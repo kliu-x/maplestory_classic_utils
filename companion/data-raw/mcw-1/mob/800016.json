@@ -1,0 +1,24 @@
+{
+ "id": 800016,
+ "name": "Fire Boar",
+ "meta": {
+  "isBodyAttack": true,
+  "level": 30,
+  "maxHP": 718,
+  "maxMP": 0,
+  "speed": 0,
+  "physicalDamage": 204,
+  "physicalDefense": 10,
+  "magicDamage": 0,
+  "magicDefense": 0,
+  "accuracy": 108,
+  "evasion": 18,
+  "exp": 56,
+  "isUndead": false,
+  "minimumPushDamage": 225,
+  "elementalAttributes": "F2I3",
+  "summonType": 1,
+  "revivesMonsterId": [],
+  "linksToOtherMob": 30
+ }
+}

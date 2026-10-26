@@ -1,0 +1,1474 @@
+{
+ "id": 310,
+ "description": {
+  "id": 310,
+  "desc": "",
+  "name": "",
+  "shortDesc": "",
+  "bookName": "Hunter's Guide",
+  "names": {
+   "en": "Hunter's Guide",
+   "es": "Guía de Hunter",
+   "ko": "Hunter의 지침"
+  }
+ },
+ "skills": [
+  {
+   "id": 3100000,
+   "masterLevel": 20,
+   "weapons": [
+    45
+   ],
+   "description": {
+    "name": "Bow Mastery",
+    "desc": "[Master Level: 20]\\nIncreases Bow Mastery, Critical Rate, and Movement Speed. This effect only applies when a bow is equipped."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mastery": "1",
+     "x": "1",
+     "prop": "0",
+     "y": "1"
+    },
+    {
+     "hs": "h2",
+     "mastery": "1",
+     "x": "1",
+     "prop": "0",
+     "y": "2"
+    },
+    {
+     "hs": "h3",
+     "mastery": "1",
+     "x": "2",
+     "prop": "0",
+     "y": "2"
+    },
+    {
+     "hs": "h4",
+     "mastery": "2",
+     "x": "2",
+     "prop": "0",
+     "y": "2"
+    },
+    {
+     "hs": "h5",
+     "mastery": "2",
+     "x": "2",
+     "prop": "0",
+     "y": "3"
+    },
+    {
+     "hs": "h6",
+     "mastery": "3",
+     "x": "3",
+     "prop": "0",
+     "y": "3"
+    },
+    {
+     "hs": "h7",
+     "mastery": "3",
+     "x": "3",
+     "prop": "0",
+     "y": "4"
+    },
+    {
+     "hs": "h8",
+     "mastery": "4",
+     "x": "4",
+     "prop": "0",
+     "y": "4"
+    },
+    {
+     "hs": "h9",
+     "mastery": "4",
+     "x": "4",
+     "prop": "0",
+     "y": "5"
+    },
+    {
+     "hs": "h10",
+     "mastery": "5",
+     "x": "5",
+     "prop": "0",
+     "y": "5"
+    },
+    {
+     "hs": "h11",
+     "mastery": "5",
+     "x": "5",
+     "prop": "0",
+     "y": "6"
+    },
+    {
+     "hs": "h12",
+     "mastery": "6",
+     "x": "6",
+     "prop": "0",
+     "y": "6"
+    },
+    {
+     "hs": "h13",
+     "mastery": "6",
+     "x": "6",
+     "prop": "0",
+     "y": "7"
+    },
+    {
+     "hs": "h14",
+     "mastery": "7",
+     "x": "7",
+     "prop": "0",
+     "y": "7"
+    },
+    {
+     "hs": "h15",
+     "mastery": "7",
+     "x": "7",
+     "prop": "0",
+     "y": "8"
+    },
+    {
+     "hs": "h16",
+     "mastery": "8",
+     "x": "8",
+     "prop": "0",
+     "y": "8"
+    },
+    {
+     "hs": "h17",
+     "mastery": "8",
+     "x": "8",
+     "prop": "0",
+     "y": "9"
+    },
+    {
+     "hs": "h18",
+     "mastery": "9",
+     "x": "9",
+     "prop": "0",
+     "y": "9"
+    },
+    {
+     "hs": "h19",
+     "mastery": "9",
+     "x": "9",
+     "prop": "0",
+     "y": "10"
+    },
+    {
+     "hs": "h20",
+     "mastery": "10",
+     "x": "10",
+     "prop": "0",
+     "y": "10"
+    }
+   ]
+  },
+  {
+   "id": 3100001,
+   "masterLevel": 20,
+   "requiredSkillLevels": {
+    "3100000": 5
+   },
+   "weapons": [],
+   "description": {
+    "name": "Amazon's Judgement",
+    "desc": "[Master Level: 20]\\nCritical hits sever the enemy's tendons, slowing them down.\\nRequired Skill : #cAt least Level 5 Bow Mastery#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "prop": "60",
+     "speed": "15",
+     "time": "3"
+    },
+    {
+     "hs": "h2",
+     "prop": "62",
+     "speed": "16",
+     "time": "3"
+    },
+    {
+     "hs": "h3",
+     "prop": "64",
+     "speed": "17",
+     "time": "3"
+    },
+    {
+     "hs": "h4",
+     "prop": "66",
+     "speed": "18",
+     "time": "3"
+    },
+    {
+     "hs": "h5",
+     "prop": "68",
+     "speed": "19",
+     "time": "3"
+    },
+    {
+     "hs": "h6",
+     "prop": "70",
+     "speed": "20",
+     "time": "3"
+    },
+    {
+     "hs": "h7",
+     "prop": "72",
+     "speed": "21",
+     "time": "3"
+    },
+    {
+     "hs": "h8",
+     "prop": "74",
+     "speed": "22",
+     "time": "3"
+    },
+    {
+     "hs": "h9",
+     "prop": "76",
+     "speed": "23",
+     "time": "3"
+    },
+    {
+     "hs": "h10",
+     "prop": "78",
+     "speed": "24",
+     "time": "4"
+    },
+    {
+     "hs": "h11",
+     "prop": "80",
+     "speed": "25",
+     "time": "4"
+    },
+    {
+     "hs": "h12",
+     "prop": "82",
+     "speed": "26",
+     "time": "4"
+    },
+    {
+     "hs": "h13",
+     "prop": "84",
+     "speed": "27",
+     "time": "4"
+    },
+    {
+     "hs": "h14",
+     "prop": "86",
+     "speed": "28",
+     "time": "4"
+    },
+    {
+     "hs": "h15",
+     "prop": "88",
+     "speed": "29",
+     "time": "4"
+    },
+    {
+     "hs": "h16",
+     "prop": "90",
+     "speed": "30",
+     "time": "4"
+    },
+    {
+     "hs": "h17",
+     "prop": "92",
+     "speed": "31",
+     "time": "4"
+    },
+    {
+     "hs": "h18",
+     "prop": "94",
+     "speed": "32",
+     "time": "4"
+    },
+    {
+     "hs": "h19",
+     "prop": "96",
+     "speed": "33",
+     "time": "4"
+    },
+    {
+     "hs": "h20",
+     "prop": "100",
+     "speed": "35",
+     "time": "5"
+    }
+   ]
+  },
+  {
+   "id": 3101000,
+   "masterLevel": 30,
+   "requiredSkillLevels": {
+    "3100000": 3
+   },
+   "weapons": [
+    45
+   ],
+   "description": {
+    "name": "Final Attack: Bow",
+    "desc": "[Master Level: 30]\\nUsing attack skills has a chance to enable the Final Attack skill for 60 sec. While enabled, the skill can be used, dealing heavy damage to up to 3 enemies in front. Only applies when equipped with a bow.\\nRequired Skill: #cAt least Level 3 Bow Mastery#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "prop": "25",
+     "mpCon": "12",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "90"
+    },
+    {
+     "hs": "h2",
+     "prop": "25",
+     "mpCon": "13",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "91"
+    },
+    {
+     "hs": "h3",
+     "prop": "25",
+     "mpCon": "13",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "92"
+    },
+    {
+     "hs": "h4",
+     "prop": "25",
+     "mpCon": "13",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "93"
+    },
+    {
+     "hs": "h5",
+     "prop": "25",
+     "mpCon": "13",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "94"
+    },
+    {
+     "hs": "h6",
+     "prop": "25",
+     "mpCon": "14",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "95"
+    },
+    {
+     "hs": "h7",
+     "prop": "25",
+     "mpCon": "14",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "96"
+    },
+    {
+     "hs": "h8",
+     "prop": "25",
+     "mpCon": "14",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "97"
+    },
+    {
+     "hs": "h9",
+     "prop": "25",
+     "mpCon": "14",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "98"
+    },
+    {
+     "hs": "h10",
+     "prop": "25",
+     "mpCon": "15",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "99"
+    },
+    {
+     "hs": "h11",
+     "prop": "25",
+     "mpCon": "15",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "100"
+    },
+    {
+     "hs": "h12",
+     "prop": "25",
+     "mpCon": "15",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "101"
+    },
+    {
+     "hs": "h13",
+     "prop": "25",
+     "mpCon": "15",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "102"
+    },
+    {
+     "hs": "h14",
+     "prop": "25",
+     "mpCon": "16",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "103"
+    },
+    {
+     "hs": "h15",
+     "prop": "25",
+     "mpCon": "16",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "104"
+    },
+    {
+     "hs": "h16",
+     "prop": "25",
+     "mpCon": "16",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "105"
+    },
+    {
+     "hs": "h17",
+     "prop": "25",
+     "mpCon": "16",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "106"
+    },
+    {
+     "hs": "h18",
+     "prop": "25",
+     "mpCon": "17",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "107"
+    },
+    {
+     "hs": "h19",
+     "prop": "25",
+     "mpCon": "17",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "108"
+    },
+    {
+     "hs": "h20",
+     "prop": "25",
+     "mpCon": "17",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "109"
+    },
+    {
+     "hs": "h21",
+     "prop": "25",
+     "mpCon": "17",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "110"
+    },
+    {
+     "hs": "h22",
+     "prop": "25",
+     "mpCon": "18",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "111"
+    },
+    {
+     "hs": "h23",
+     "prop": "25",
+     "mpCon": "18",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "112"
+    },
+    {
+     "hs": "h24",
+     "prop": "25",
+     "mpCon": "18",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "113"
+    },
+    {
+     "hs": "h25",
+     "prop": "25",
+     "mpCon": "18",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "114"
+    },
+    {
+     "hs": "h26",
+     "prop": "25",
+     "mpCon": "19",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "115"
+    },
+    {
+     "hs": "h27",
+     "prop": "25",
+     "mpCon": "19",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "116"
+    },
+    {
+     "hs": "h28",
+     "prop": "25",
+     "mpCon": "19",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "117"
+    },
+    {
+     "hs": "h29",
+     "prop": "25",
+     "mpCon": "19",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "118"
+    },
+    {
+     "hs": "h30",
+     "prop": "25",
+     "mpCon": "20",
+     "bulletCount": "3",
+     "ballDelay": "100",
+     "ballDelay1": "100",
+     "mobCount": "3",
+     "attackCount": "1",
+     "time": "60",
+     "damage": "120"
+    }
+   ]
+  },
+  {
+   "id": 3101001,
+   "masterLevel": 20,
+   "requiredSkillLevels": {
+    "3100000": 5
+   },
+   "weapons": [
+    45
+   ],
+   "description": {
+    "name": "Bow Booster",
+    "desc": "[Master Level: 20]\\nConsumes HP and MP to temporarily increase the Attack Speed of the equipped bow. Only applies when equipped with a bow.\\nRequired Skill: #cAt least Level 5 Bow Mastery#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "hpCon": "30",
+     "mpCon": "30",
+     "time": "100",
+     "x": "-2"
+    },
+    {
+     "hs": "h2",
+     "hpCon": "29",
+     "mpCon": "29",
+     "time": "110",
+     "x": "-2"
+    },
+    {
+     "hs": "h3",
+     "hpCon": "28",
+     "mpCon": "28",
+     "time": "120",
+     "x": "-2"
+    },
+    {
+     "hs": "h4",
+     "hpCon": "27",
+     "mpCon": "27",
+     "time": "130",
+     "x": "-2"
+    },
+    {
+     "hs": "h5",
+     "hpCon": "26",
+     "mpCon": "26",
+     "time": "140",
+     "x": "-2"
+    },
+    {
+     "hs": "h6",
+     "hpCon": "25",
+     "mpCon": "25",
+     "time": "150",
+     "x": "-2"
+    },
+    {
+     "hs": "h7",
+     "hpCon": "24",
+     "mpCon": "24",
+     "time": "160",
+     "x": "-2"
+    },
+    {
+     "hs": "h8",
+     "hpCon": "23",
+     "mpCon": "23",
+     "time": "170",
+     "x": "-2"
+    },
+    {
+     "hs": "h9",
+     "hpCon": "22",
+     "mpCon": "22",
+     "time": "180",
+     "x": "-2"
+    },
+    {
+     "hs": "h10",
+     "hpCon": "21",
+     "mpCon": "21",
+     "time": "190",
+     "x": "-2"
+    },
+    {
+     "hs": "h11",
+     "hpCon": "20",
+     "mpCon": "20",
+     "time": "200",
+     "x": "-2"
+    },
+    {
+     "hs": "h12",
+     "hpCon": "19",
+     "mpCon": "19",
+     "time": "210",
+     "x": "-2"
+    },
+    {
+     "hs": "h13",
+     "hpCon": "18",
+     "mpCon": "18",
+     "time": "220",
+     "x": "-2"
+    },
+    {
+     "hs": "h14",
+     "hpCon": "17",
+     "mpCon": "17",
+     "time": "230",
+     "x": "-2"
+    },
+    {
+     "hs": "h15",
+     "hpCon": "16",
+     "mpCon": "16",
+     "time": "240",
+     "x": "-2"
+    },
+    {
+     "hs": "h16",
+     "hpCon": "15",
+     "mpCon": "15",
+     "time": "250",
+     "x": "-2"
+    },
+    {
+     "hs": "h17",
+     "hpCon": "14",
+     "mpCon": "14",
+     "time": "260",
+     "x": "-2"
+    },
+    {
+     "hs": "h18",
+     "hpCon": "13",
+     "mpCon": "13",
+     "time": "270",
+     "x": "-2"
+    },
+    {
+     "hs": "h19",
+     "hpCon": "12",
+     "mpCon": "12",
+     "time": "280",
+     "x": "-2"
+    },
+    {
+     "hs": "h20",
+     "hpCon": "10",
+     "mpCon": "10",
+     "time": "300",
+     "x": "-2"
+    }
+   ]
+  },
+  {
+   "id": 3101003,
+   "masterLevel": 20,
+   "requiredSkillLevels": {
+    "3101001": 5
+   },
+   "weapons": [
+    45
+   ],
+   "description": {
+    "name": "Soul Arrow: Bow",
+    "desc": "[Master Level: 20]\\nTemporarily allows the character to fire bow arrows without using up arrows. Only works with a bow equipped.\\nRequired Skill: #cAt least Level 5 Bow Booster#"
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "25",
+     "prop": "100",
+     "time": "60"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "24",
+     "prop": "100",
+     "time": "72"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "23",
+     "prop": "100",
+     "time": "84"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "22",
+     "prop": "100",
+     "time": "96"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "21",
+     "prop": "100",
+     "time": "108"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "20",
+     "prop": "100",
+     "time": "120"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "19",
+     "prop": "100",
+     "time": "132"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "18",
+     "prop": "100",
+     "time": "144"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "17",
+     "prop": "100",
+     "time": "156"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "16",
+     "prop": "100",
+     "time": "168"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "15",
+     "prop": "100",
+     "time": "180"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "14",
+     "prop": "100",
+     "time": "192"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "13",
+     "prop": "100",
+     "time": "204"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "12",
+     "prop": "100",
+     "time": "216"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "11",
+     "prop": "100",
+     "time": "228"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "10",
+     "prop": "100",
+     "time": "240"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "9",
+     "prop": "100",
+     "time": "252"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "8",
+     "prop": "100",
+     "time": "264"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "7",
+     "prop": "100",
+     "time": "276"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "5",
+     "prop": "100",
+     "time": "300"
+    }
+   ]
+  },
+  {
+   "id": 3101004,
+   "masterLevel": 30,
+   "weapons": [
+    45
+   ],
+   "description": {
+    "name": "Arrow Bomb",
+    "desc": "[Master Level: 30]\\nFires an arrow with a bomb attached to it. If struck cleanly, the bomb explodes on the enemy, stunning some enemies around with a certain trigger rate. Can't attack more than 6 at once, and it only works with a bow equipped."
+   },
+   "levelProperties": [
+    {
+     "hs": "h1",
+     "mpCon": "14",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h2",
+     "mpCon": "14",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h3",
+     "mpCon": "14",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h4",
+     "mpCon": "15",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h5",
+     "mpCon": "15",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h6",
+     "mpCon": "16",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h7",
+     "mpCon": "16",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h8",
+     "mpCon": "17",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h9",
+     "mpCon": "17",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h10",
+     "mpCon": "18",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h11",
+     "mpCon": "18",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h12",
+     "mpCon": "19",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h13",
+     "mpCon": "19",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h14",
+     "mpCon": "20",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h15",
+     "mpCon": "20",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h16",
+     "mpCon": "21",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h17",
+     "mpCon": "21",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h18",
+     "mpCon": "22",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h19",
+     "mpCon": "22",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h20",
+     "mpCon": "23",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h21",
+     "mpCon": "23",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h22",
+     "mpCon": "24",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h23",
+     "mpCon": "24",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h24",
+     "mpCon": "25",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h25",
+     "mpCon": "25",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h26",
+     "mpCon": "26",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h27",
+     "mpCon": "26",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h28",
+     "mpCon": "27",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h29",
+     "mpCon": "27",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    },
+    {
+     "hs": "h30",
+     "mpCon": "28",
+     "mobCount": "1",
+     "damage": "0",
+     "bulletCount": "1",
+     "attackCount": "1"
+    }
+   ]
+  },
+  {
+   "id": 3101005,
+   "masterLevel": 30,
+   "weapons": [
+    45
+   ],
+   "levelProperties": [
+    {
+     "prop": "30",
+     "damage": "70",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-130, Y=-100 ]",
+     "rb": "Point [ X=130, Y=100 ]"
+    },
+    {
+     "prop": "31",
+     "damage": "72",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-130, Y=-100 ]",
+     "rb": "Point [ X=130, Y=100 ]"
+    },
+    {
+     "prop": "32",
+     "damage": "74",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-130, Y=-100 ]",
+     "rb": "Point [ X=130, Y=100 ]"
+    },
+    {
+     "prop": "33",
+     "damage": "76",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-130, Y=-100 ]",
+     "rb": "Point [ X=130, Y=100 ]"
+    },
+    {
+     "prop": "34",
+     "damage": "78",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-130, Y=-100 ]",
+     "rb": "Point [ X=130, Y=100 ]"
+    },
+    {
+     "prop": "35",
+     "damage": "80",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-130, Y=-100 ]",
+     "rb": "Point [ X=130, Y=100 ]"
+    },
+    {
+     "prop": "36",
+     "damage": "82",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-130, Y=-100 ]",
+     "rb": "Point [ X=130, Y=100 ]"
+    },
+    {
+     "prop": "37",
+     "damage": "84",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-130, Y=-100 ]",
+     "rb": "Point [ X=130, Y=100 ]"
+    },
+    {
+     "prop": "38",
+     "damage": "86",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-130, Y=-100 ]",
+     "rb": "Point [ X=130, Y=100 ]"
+    },
+    {
+     "prop": "39",
+     "damage": "88",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-130, Y=-100 ]",
+     "rb": "Point [ X=130, Y=100 ]"
+    },
+    {
+     "prop": "40",
+     "damage": "90",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-130, Y=-100 ]",
+     "rb": "Point [ X=130, Y=100 ]"
+    },
+    {
+     "prop": "41",
+     "damage": "92",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-130, Y=-100 ]",
+     "rb": "Point [ X=130, Y=100 ]"
+    },
+    {
+     "prop": "42",
+     "damage": "94",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-130, Y=-100 ]",
+     "rb": "Point [ X=130, Y=100 ]"
+    },
+    {
+     "prop": "43",
+     "damage": "96",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-130, Y=-100 ]",
+     "rb": "Point [ X=130, Y=100 ]"
+    },
+    {
+     "prop": "44",
+     "damage": "98",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-130, Y=-100 ]",
+     "rb": "Point [ X=130, Y=100 ]"
+    },
+    {
+     "prop": "45",
+     "damage": "100",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-150, Y=-100 ]",
+     "rb": "Point [ X=150, Y=100 ]"
+    },
+    {
+     "prop": "46",
+     "damage": "102",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-150, Y=-100 ]",
+     "rb": "Point [ X=150, Y=100 ]"
+    },
+    {
+     "prop": "47",
+     "damage": "104",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-150, Y=-100 ]",
+     "rb": "Point [ X=150, Y=100 ]"
+    },
+    {
+     "prop": "48",
+     "damage": "106",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-150, Y=-100 ]",
+     "rb": "Point [ X=150, Y=100 ]"
+    },
+    {
+     "prop": "49",
+     "damage": "108",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-150, Y=-100 ]",
+     "rb": "Point [ X=150, Y=100 ]"
+    },
+    {
+     "prop": "50",
+     "damage": "110",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-150, Y=-100 ]",
+     "rb": "Point [ X=150, Y=100 ]"
+    },
+    {
+     "prop": "51",
+     "damage": "112",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-150, Y=-100 ]",
+     "rb": "Point [ X=150, Y=100 ]"
+    },
+    {
+     "prop": "52",
+     "damage": "114",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-150, Y=-100 ]",
+     "rb": "Point [ X=150, Y=100 ]"
+    },
+    {
+     "prop": "53",
+     "damage": "116",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-150, Y=-100 ]",
+     "rb": "Point [ X=150, Y=100 ]"
+    },
+    {
+     "prop": "54",
+     "damage": "118",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-150, Y=-100 ]",
+     "rb": "Point [ X=150, Y=100 ]"
+    },
+    {
+     "prop": "55",
+     "damage": "120",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-150, Y=-100 ]",
+     "rb": "Point [ X=150, Y=100 ]"
+    },
+    {
+     "prop": "56",
+     "damage": "122",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-150, Y=-100 ]",
+     "rb": "Point [ X=150, Y=100 ]"
+    },
+    {
+     "prop": "57",
+     "damage": "124",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-150, Y=-100 ]",
+     "rb": "Point [ X=150, Y=100 ]"
+    },
+    {
+     "prop": "58",
+     "damage": "126",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-150, Y=-100 ]",
+     "rb": "Point [ X=150, Y=100 ]"
+    },
+    {
+     "prop": "60",
+     "damage": "130",
+     "time": "2",
+     "mobCount": "6",
+     "lt": "Point [ X=-150, Y=-100 ]",
+     "rb": "Point [ X=150, Y=100 ]"
+    }
+   ]
+  }
+ ]
+}

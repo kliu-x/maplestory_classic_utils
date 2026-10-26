@@ -1,0 +1,28 @@
+{
+ "id": 810004,
+ "name": "Rotten Mushmom",
+ "meta": {
+  "isBodyAttack": true,
+  "level": 60,
+  "maxHP": 86400,
+  "maxMP": 200,
+  "speed": -40,
+  "physicalDamage": 752,
+  "physicalDefense": 20,
+  "magicDamage": 827,
+  "magicDefense": 10,
+  "accuracy": 150,
+  "evasion": 4,
+  "exp": 844,
+  "isUndead": true,
+  "minimumPushDamage": 4750,
+  "hpRecovery": 864,
+  "mpRecovery": 20,
+  "elementalAttributes": "S2F3H3",
+  "summonType": 0,
+  "revivesMonsterId": [],
+  "linksToOtherMob": 700003,
+  "isBoss": true,
+  "isAutoAggro": false
+ }
+}

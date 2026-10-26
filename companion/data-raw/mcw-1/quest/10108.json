@@ -1,0 +1,47 @@
+{
+ "id": 10108,
+ "name": "Making a Sparkling Rock",
+ "area": 12,
+ "areaName": "Henesys",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10109,
+   "levelMinimum": 21,
+   "quests": [
+    {
+     "id": 10108,
+     "state": 2
+    }
+   ],
+   "npcId": 502,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10108,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10108,
+  "exp": 1870,
+  "meso": 687,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10108,
+  "levelMinimum": 21,
+  "quests": [
+   {
+    "id": 10107,
+    "state": 2
+   }
+  ],
+  "npcId": 510,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10108,
+  "npcId": 502,
+  "state": 1
+ }
+}

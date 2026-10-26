@@ -1,0 +1,63 @@
+{
+ "id": 80019,
+ "name": "Vicious in Need of Help",
+ "area": 19,
+ "areaName": "Crafting",
+ "demandSummary": "#o15# #a800191#\\n#i4003001:# #t4003001:# #c4003001# / 1",
+ "rewardOnStart": {
+  "id": 80019,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80019,
+  "exp": 669,
+  "items": [
+   {
+    "id": 4003001,
+    "count": -1
+   },
+   {
+    "id": 2002006,
+    "count": 1
+   }
+  ],
+  "skills": [
+   {
+    "id": 92030000,
+    "masterLevel": -1,
+    "skillLevel": -1
+   }
+  ],
+  "meso": 497,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80019,
+  "levelMinimum": 15,
+  "quests": [
+   {
+    "id": 80017,
+    "state": 2
+   }
+  ],
+  "npcId": 208,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80019,
+  "mobs": [
+   {
+    "count": 25,
+    "id": 15
+   }
+  ],
+  "items": [
+   {
+    "count": 1,
+    "id": 4003001
+   }
+  ],
+  "npcId": 208,
+  "state": 1
+ }
+}

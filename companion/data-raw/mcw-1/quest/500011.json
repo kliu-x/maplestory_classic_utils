@@ -1,0 +1,36 @@
+{
+ "id": 500011,
+ "name": "[Event] Trick or Treat!",
+ "area": 99,
+ "areaName": "Event",
+ "demandSummary": "#questorder1#Find the child in the dark tunnel \r\n#questorder1#Find the child on the open field \r\n#questorder1#Find the child up on the high ground ",
+ "rewardSummary": "#i1302019# #t1302019# x1",
+ "rewardOnStart": {
+  "id": 500011,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 500011,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 500011,
+  "startTime": "2026-10-28T00:00:00",
+  "endTime": "2026-11-19T00:00:00",
+  "levelMinimum": 10,
+  "quests": [
+   {
+    "id": 500010,
+    "state": 2
+   }
+  ],
+  "npcId": 900026,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 500011,
+  "levelMinimum": 10,
+  "npcId": 900026,
+  "state": 1
+ }
+}

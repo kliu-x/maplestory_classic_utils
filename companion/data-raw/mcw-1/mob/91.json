@@ -1,0 +1,24 @@
+{
+ "id": 91,
+ "name": "Super Slime",
+ "meta": {
+  "isBodyAttack": true,
+  "level": 200,
+  "maxHP": 9999,
+  "maxMP": 0,
+  "speed": -20,
+  "physicalDamage": 1,
+  "physicalDefense": 999,
+  "magicDamage": 0,
+  "magicDefense": 999,
+  "accuracy": 999,
+  "evasion": 999,
+  "exp": 0,
+  "isUndead": false,
+  "minimumPushDamage": 9999,
+  "summonType": 1,
+  "revivesMonsterId": [],
+  "linksToOtherMob": 7,
+  "isInvincible": true
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "id": 80005,
+ "name": "Make a Pig�& Mushroom�Omok Set",
+ "area": 12,
+ "areaName": "Henesys",
+ "demandSummary": "#i4031055:# #t4031055:# #c4031055# / 1\\n#i4031056:# #t4031056:# #c4031056# / 1\\n#i4031057:# #t4031057:# #c4031057# / 1",
+ "questsAvailableOnComplete": [
+  {
+   "id": 80006,
+   "levelMinimum": 12,
+   "quests": [
+    {
+     "id": 80005,
+     "state": 2
+    }
+   ],
+   "npcId": 228,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 80005,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80005,
+  "exp": 334,
+  "items": [
+   {
+    "id": 4031055,
+    "count": -1
+   },
+   {
+    "id": 4031056,
+    "count": -1
+   },
+   {
+    "id": 4031057,
+    "count": -1
+   },
+   {
+    "id": 4080003,
+    "count": 1
+   }
+  ],
+  "meso": 409,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80005,
+  "levelMinimum": 12,
+  "quests": [
+   {
+    "id": 80004,
+    "state": 2
+   }
+  ],
+  "npcId": 228,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80005,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031055
+   },
+   {
+    "count": 1,
+    "id": 4031056
+   },
+   {
+    "count": 1,
+    "id": 4031057
+   }
+  ],
+  "npcId": 228,
+  "state": 1
+ }
+}

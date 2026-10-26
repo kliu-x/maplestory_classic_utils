@@ -1,0 +1,54 @@
+{
+ "id": 506040,
+ "name": "The Best Dad",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "Talk to #p206#",
+ "rewardOnStart": {
+  "id": 506040,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506040,
+  "exp": 982,
+  "fame": 1,
+  "items": [
+   {
+    "id": 2048001,
+    "count": 1
+   },
+   {
+    "id": 2048002,
+    "count": 1
+   },
+   {
+    "id": 2048005,
+    "count": 1
+   },
+   {
+    "id": 2048006,
+    "count": 1
+   }
+  ],
+  "meso": 555,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506040,
+  "levelMinimum": 17,
+  "quests": [
+   {
+    "id": 506039,
+    "state": 2
+   }
+  ],
+  "npcId": 506,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506040,
+  "levelMinimum": 17,
+  "npcId": 206,
+  "state": 1
+ }
+}

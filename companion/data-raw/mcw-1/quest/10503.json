@@ -1,0 +1,72 @@
+{
+ "id": 10503,
+ "name": "Secret to Unagi Special",
+ "area": 16,
+ "areaName": "Sleepywood",
+ "demandSummary": "#i4000027:# #t4000027:# #c4000027# / 50\\n#i4000008:# #t4000008:# #c4000008# / 10",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10504,
+   "levelMinimum": 32,
+   "quests": [
+    {
+     "id": 10503,
+     "state": 2
+    }
+   ],
+   "npcId": 201,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10503,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10503,
+  "exp": 5850,
+  "items": [
+   {
+    "id": 4000027,
+    "count": -50
+   },
+   {
+    "id": 4000008,
+    "count": -10
+   },
+   {
+    "id": 2000003,
+    "count": 20
+   }
+  ],
+  "meso": 1023,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10503,
+  "levelMinimum": 32,
+  "quests": [
+   {
+    "id": 10502,
+    "state": 2
+   }
+  ],
+  "npcId": 201,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10503,
+  "items": [
+   {
+    "count": 50,
+    "id": 4000027
+   },
+   {
+    "count": 10,
+    "id": 4000008
+   }
+  ],
+  "npcId": 201,
+  "state": 1
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "id": 506107,
+ "name": "First Greeting with Icarus, the Town Resident",
+ "area": 20,
+ "areaName": "Citizenship",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506108,
+   "levelMinimum": 12,
+   "quests": [
+    {
+     "id": 506107,
+     "state": 2
+    }
+   ],
+   "npcId": 431,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506107,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506107,
+  "exp": 334,
+  "items": [
+   {
+    "id": 2010004,
+    "count": 8
+   }
+  ],
+  "meso": 409,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506107,
+  "levelMinimum": 12,
+  "npcId": 431,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506107,
+  "levelMinimum": 12,
+  "npcId": 407,
+  "state": 1
+ }
+}

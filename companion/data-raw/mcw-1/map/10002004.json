@@ -1,0 +1,49 @@
+{
+ "id": 10002004,
+ "name": "Marr's Forest",
+ "streetName": "Hidden Street",
+ "mapMark": "None",
+ "isTown": true,
+ "mobRate": 1.2000000476837158,
+ "returnMap": 10002000,
+ "vrBounds": {
+  "width": 1096,
+  "height": 1478
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 317
+  }
+ ],
+ "portals": [
+  {
+   "toMap": 10002004,
+   "portalName": "h001"
+  },
+  {
+   "toMap": 10002004,
+   "portalName": "h002"
+  },
+  {
+   "toMap": 10002004,
+   "portalName": "h003"
+  },
+  {
+   "toMap": 10002004,
+   "portalName": "h004"
+  },
+  {
+   "toMap": 10002004,
+   "portalName": "h005"
+  },
+  {
+   "toMap": 10002004,
+   "portalName": "h006"
+  },
+  {
+   "toMap": 10002000,
+   "portalName": "out00"
+  }
+ ]
+}

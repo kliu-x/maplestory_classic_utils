@@ -1,0 +1,36 @@
+{
+ "id": 600010,
+ "name": "[Event] The Final Mark",
+ "area": 99,
+ "areaName": "Event",
+ "demandSummary": "Follow the footsteps underground to the final treasure.",
+ "rewardSummary": "#i1002994# #t1002994# x1",
+ "disableAtNPC": true,
+ "disableAtStartTab": true,
+ "rewardOnStart": {
+  "id": 600010,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 600010,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 600010,
+  "startTime": "2026-10-21T00:00:00",
+  "endTime": "2026-11-19T00:00:00",
+  "levelMinimum": 25,
+  "quests": [
+   {
+    "id": 600009,
+    "state": 2
+   }
+  ],
+  "npcId": 205,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 600010,
+  "state": 1
+ }
+}

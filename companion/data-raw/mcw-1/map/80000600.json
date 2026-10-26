@@ -1,0 +1,20 @@
+{
+ "id": 80000600,
+ "name": "1st Accompaniment <Exit>",
+ "streetName": "Hidden Street",
+ "mapMark": "KerningCity",
+ "isTown": false,
+ "mobRate": 0.7999999523162842,
+ "returnMap": 80000600,
+ "vrBounds": {
+  "width": 870,
+  "height": 768
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 800002
+  }
+ ],
+ "portals": []
+}

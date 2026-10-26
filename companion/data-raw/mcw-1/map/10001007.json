@@ -1,0 +1,37 @@
+{
+ "id": 10001007,
+ "name": "Henesys Town Hall",
+ "streetName": "Victoria Road",
+ "mapMark": "Henesys",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10001000,
+ "vrBounds": {
+  "width": 1346,
+  "height": 905
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 229
+  },
+  {
+   "id": 230
+  },
+  {
+   "id": 232
+  },
+  {
+   "id": 233
+  },
+  {
+   "id": 234
+  }
+ ],
+ "portals": [
+  {
+   "toMap": 10001000,
+   "portalName": "out00"
+  }
+ ]
+}

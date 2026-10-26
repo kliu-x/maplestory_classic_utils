@@ -1,0 +1,49 @@
+{
+ "id": 506047,
+ "name": "Pia's Mischievous Wish",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "Talk to #p204#",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506048,
+   "levelMinimum": 37,
+   "quests": [
+    {
+     "id": 506047,
+     "state": 2
+    }
+   ],
+   "npcId": 204,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 506047,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506047,
+  "exp": 5117,
+  "meso": 819,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506047,
+  "levelMinimum": 37,
+  "quests": [
+   {
+    "id": 506046,
+    "state": 2
+   }
+  ],
+  "npcId": 218,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506047,
+  "levelMinimum": 37,
+  "npcId": 204,
+  "state": 1
+ }
+}

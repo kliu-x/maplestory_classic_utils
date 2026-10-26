@@ -1,0 +1,62 @@
+{
+ "id": 10411,
+ "name": "The Stump Horror Story",
+ "area": 15,
+ "areaName": "Perion",
+ "demandSummary": "#o6# #a104111#",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10124,
+   "levelMinimum": 11,
+   "quests": [
+    {
+     "id": 10411,
+     "state": 2
+    },
+    {
+     "id": 10123,
+     "state": 2
+    }
+   ],
+   "npcId": 206,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10411,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10411,
+  "exp": 188,
+  "items": [
+   {
+    "id": 2030003,
+    "count": 2
+   },
+   {
+    "id": 2000003,
+    "count": 10
+   }
+  ],
+  "meso": 351,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10411,
+  "levelMinimum": 10,
+  "npcId": 506,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10411,
+  "mobs": [
+   {
+    "count": 30,
+    "id": 6
+   }
+  ],
+  "npcId": 506,
+  "state": 1
+ }
+}

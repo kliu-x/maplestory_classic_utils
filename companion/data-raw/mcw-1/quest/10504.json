@@ -1,0 +1,65 @@
+{
+ "id": 10504,
+ "name": "Rina's Unagi Special",
+ "area": 16,
+ "areaName": "Sleepywood",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10505,
+   "levelMinimum": 32,
+   "quests": [
+    {
+     "id": 10504,
+     "state": 2
+    }
+   ],
+   "npcId": 320,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10504,
+  "items": [
+   {
+    "id": 4031030,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10504,
+  "exp": 5850,
+  "items": [
+   {
+    "id": 4031030,
+    "count": -1
+   }
+  ],
+  "meso": 1023,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10504,
+  "levelMinimum": 32,
+  "quests": [
+   {
+    "id": 10503,
+    "state": 2
+   }
+  ],
+  "npcId": 201,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10504,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031030
+   }
+  ],
+  "npcId": 320,
+  "state": 1
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "id": 10420,
+ "name": "Stump Research",
+ "area": 15,
+ "areaName": "Perion",
+ "demandSummary": "#i4031137##t4031137# #b#c4031137##k / 100",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10421,
+   "levelMinimum": 34,
+   "quests": [
+    {
+     "id": 10420,
+     "state": 2
+    }
+   ],
+   "npcId": 512,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10420,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10420,
+  "exp": 3937,
+  "items": [
+   {
+    "id": 4031137,
+    "count": -100
+   },
+   {
+    "id": 2000003,
+    "count": 20
+   }
+  ],
+  "meso": 1082,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10420,
+  "levelMinimum": 34,
+  "quests": [
+   {
+    "id": 10419,
+    "state": 2
+   }
+  ],
+  "npcId": 512,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10420,
+  "items": [
+   {
+    "count": 100,
+    "id": 4031137
+   }
+  ],
+  "npcId": 512,
+  "state": 1
+ }
+}

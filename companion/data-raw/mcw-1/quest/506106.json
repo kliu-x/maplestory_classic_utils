@@ -1,0 +1,40 @@
+{
+ "id": 506106,
+ "name": "Asking After Nella, the Town Resident",
+ "area": 20,
+ "areaName": "Citizenship",
+ "rewardOnStart": {
+  "id": 506106,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506106,
+  "exp": 233,
+  "items": [
+   {
+    "id": 2010005,
+    "count": 8
+   }
+  ],
+  "meso": 286,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506106,
+  "levelMinimum": 12,
+  "quests": [
+   {
+    "id": 506105,
+    "state": 2
+   }
+  ],
+  "npcId": 431,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506106,
+  "levelMinimum": 12,
+  "npcId": 406,
+  "state": 1
+ }
+}

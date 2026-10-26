@@ -1,0 +1,22 @@
+{
+ "id": 40,
+ "name": "Copper Drake",
+ "meta": {
+  "isBodyAttack": true,
+  "level": 45,
+  "maxHP": 2595,
+  "maxMP": 150,
+  "speed": 10,
+  "physicalDamage": 262,
+  "physicalDefense": 15,
+  "magicDamage": 0,
+  "magicDefense": 15,
+  "accuracy": 124,
+  "evasion": 28,
+  "exp": 107,
+  "minimumPushDamage": 450,
+  "elementalAttributes": "F2I3",
+  "summonType": 1,
+  "revivesMonsterId": []
+ }
+}

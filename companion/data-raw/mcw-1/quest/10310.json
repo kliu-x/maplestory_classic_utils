@@ -1,0 +1,74 @@
+{
+ "id": 10310,
+ "name": "Stranger's Identity",
+ "area": 14,
+ "areaName": "Kerning City",
+ "demandSummary": "#o21# #a103101#\\n#i4000020##t4000020# �#c4000020# / 25",
+ "questsAvailableOnComplete": [
+  {
+   "id": 506147,
+   "levelMinimum": 37,
+   "quests": [
+    {
+     "id": 10310,
+     "state": 2
+    },
+    {
+     "id": 506109,
+     "state": 2
+    }
+   ],
+   "npcId": 412,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10310,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10310,
+  "exp": 2430,
+  "items": [
+   {
+    "id": 4000020,
+    "count": -25
+   },
+   {
+    "id": 1102000,
+    "count": 1
+   }
+  ],
+  "meso": 745,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10310,
+  "levelMinimum": 23,
+  "quests": [
+   {
+    "id": 10309,
+    "state": 2
+   }
+  ],
+  "npcId": 412,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10310,
+  "mobs": [
+   {
+    "count": 50,
+    "id": 21
+   }
+  ],
+  "items": [
+   {
+    "count": 25,
+    "id": 4000020
+   }
+  ],
+  "npcId": 412,
+  "state": 1
+ }
+}

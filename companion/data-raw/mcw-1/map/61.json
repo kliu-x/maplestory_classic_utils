@@ -1,0 +1,20 @@
+{
+ "id": 61,
+ "name": "Southperry Armor Store",
+ "streetName": "Maple Road",
+ "mapMark": "SouthPerry",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 60,
+ "vrBounds": {
+  "width": 800,
+  "height": 600
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 16
+  }
+ ],
+ "portals": []
+}

@@ -1,0 +1,31 @@
+{
+ "id": 7707,
+ "autoStart": true,
+ "autoAccept": true,
+ "name": "Midnight Rest Quest",
+ "area": 99,
+ "areaName": "Event",
+ "disableAtCompleteTab": true,
+ "disableAtNPC": true,
+ "disableAtPerformTab": true,
+ "disableAtStartTab": true,
+ "rewardOnStart": {
+  "id": 7707,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 7707,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 7707,
+  "npcId": 9010000,
+  "dayByDay": true,
+  "normalAutoStart": true,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 7707,
+  "state": 1
+ }
+}

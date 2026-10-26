@@ -1,0 +1,78 @@
+{
+ "id": 10205,
+ "name": "Collecting 200 Cursed Dolls",
+ "area": 13,
+ "areaName": "Ellinia",
+ "demandSummary": "#o38# #a102051#\\n#i4000033:# #t4000033:# #c4000033# / 200",
+ "rewardOnStart": {
+  "id": 10205,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10205,
+  "exp": 7020,
+  "fame": 3,
+  "items": [
+   {
+    "id": 4000033,
+    "count": -200
+   },
+   {
+    "id": 1002053,
+    "count": 1,
+    "job": 1
+   },
+   {
+    "id": 1002139,
+    "count": 1,
+    "job": 2
+   },
+   {
+    "id": 1002144,
+    "count": 1,
+    "job": 4
+   },
+   {
+    "id": 1002151,
+    "count": 1,
+    "job": 8
+   },
+   {
+    "id": 1002156,
+    "count": 1,
+    "job": 16
+   }
+  ],
+  "meso": 1140,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10205,
+  "levelMinimum": 36,
+  "quests": [
+   {
+    "id": 10204,
+    "state": 2
+   }
+  ],
+  "npcId": 305,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10205,
+  "mobs": [
+   {
+    "count": 200,
+    "id": 38
+   }
+  ],
+  "items": [
+   {
+    "count": 200,
+    "id": 4000033
+   }
+  ],
+  "npcId": 305,
+  "state": 1
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "id": 506161,
+ "name": "The Weight of Truth",
+ "area": 20,
+ "areaName": "Citizenship",
+ "demandSummary": "#i4031135:# #t4031135:# #c4031135# / 1",
+ "rewardOnStart": {
+  "id": 506161,
+  "items": [
+   {
+    "id": 4031135,
+    "count": 1
+   }
+  ],
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 506161,
+  "exp": 17800,
+  "fame": 3,
+  "items": [
+   {
+    "id": 4031135,
+    "count": -1
+   },
+   {
+    "id": 1032022,
+    "count": 1
+   }
+  ],
+  "meso": 1784,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 506161,
+  "levelMinimum": 57,
+  "quests": [
+   {
+    "id": 506160,
+    "state": 2
+   }
+  ],
+  "npcId": 436,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 506161,
+  "levelMinimum": 57,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031135
+   }
+  ],
+  "npcId": 411,
+  "state": 1
+ }
+}

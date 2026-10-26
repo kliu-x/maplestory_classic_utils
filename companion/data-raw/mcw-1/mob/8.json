@@ -1,0 +1,22 @@
+{
+ "id": 8,
+ "name": "Pig",
+ "meta": {
+  "isBodyAttack": true,
+  "level": 7,
+  "maxHP": 128,
+  "maxMP": 0,
+  "speed": 0,
+  "physicalDamage": 15,
+  "physicalDefense": 0,
+  "magicDamage": 0,
+  "magicDefense": 0,
+  "accuracy": 54,
+  "evasion": 0,
+  "exp": 13,
+  "isUndead": false,
+  "minimumPushDamage": 1,
+  "summonType": 1,
+  "revivesMonsterId": []
+ }
+}

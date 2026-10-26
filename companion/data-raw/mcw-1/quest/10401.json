@@ -1,0 +1,141 @@
+{
+ "id": 10401,
+ "name": "Building a New House For Blackbull",
+ "area": 15,
+ "areaName": "Perion",
+ "demandSummary": "#t4000043# #b#c4000043##k / 100\\n#t4003000# #b#c4003000##k / 30\\n#t4003001# #b#c4003001##k / 30\\n#t4001006# #b#c4001006##k / 1",
+ "rewardOnStart": {
+  "id": 10401,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10401,
+  "exp": 11800,
+  "fame": 2,
+  "items": [
+   {
+    "id": 4000043,
+    "count": -100
+   },
+   {
+    "id": 4003000,
+    "count": -30
+   },
+   {
+    "id": 4003001,
+    "count": -30
+   },
+   {
+    "id": 4001006,
+    "count": -1
+   },
+   {
+    "id": 2043002,
+    "count": 1,
+    "job": 2
+   },
+   {
+    "id": 2043102,
+    "count": 1,
+    "job": 2
+   },
+   {
+    "id": 2043202,
+    "count": 1,
+    "job": 2
+   },
+   {
+    "id": 2044002,
+    "count": 1,
+    "job": 2
+   },
+   {
+    "id": 2044102,
+    "count": 1,
+    "job": 2
+   },
+   {
+    "id": 2044202,
+    "count": 1,
+    "job": 2
+   },
+   {
+    "id": 2044302,
+    "count": 1,
+    "job": 2
+   },
+   {
+    "id": 2044402,
+    "count": 1,
+    "job": 2
+   },
+   {
+    "id": 2043702,
+    "count": 1,
+    "job": 4
+   },
+   {
+    "id": 2043802,
+    "count": 1,
+    "job": 4
+   },
+   {
+    "id": 2044502,
+    "count": 1,
+    "job": 8
+   },
+   {
+    "id": 2044602,
+    "count": 1,
+    "job": 8
+   },
+   {
+    "id": 2043302,
+    "count": 1,
+    "job": 16
+   },
+   {
+    "id": 2044702,
+    "count": 1,
+    "job": 16
+   }
+  ],
+  "meso": 1506,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10401,
+  "levelMinimum": 48,
+  "quests": [
+   {
+    "id": 10400,
+    "state": 2
+   }
+  ],
+  "npcId": 501,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10401,
+  "items": [
+   {
+    "count": 100,
+    "id": 4000043
+   },
+   {
+    "count": 30,
+    "id": 4003000
+   },
+   {
+    "count": 30,
+    "id": 4003001
+   },
+   {
+    "count": 1,
+    "id": 4001006
+   }
+  ],
+  "npcId": 501,
+  "state": 1
+ }
+}

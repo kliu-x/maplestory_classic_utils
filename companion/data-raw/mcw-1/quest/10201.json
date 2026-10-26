@@ -1,0 +1,91 @@
+{
+ "id": 10201,
+ "name": "Collecting 50 Cursed Dolls",
+ "area": 13,
+ "areaName": "Ellinia",
+ "demandSummary": "#o38# #a102011#\\n#i4000033:# #t4000033:# #c4000033# / 50",
+ "questsAvailableOnComplete": [
+  {
+   "id": 10202,
+   "levelMinimum": 36,
+   "quests": [
+    {
+     "id": 10201,
+     "state": 2
+    }
+   ],
+   "npcId": 305,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 10201,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10201,
+  "exp": 7020,
+  "fame": 1,
+  "items": [
+   {
+    "id": 4000033,
+    "count": -50
+   },
+   {
+    "id": 4010000,
+    "count": 7
+   },
+   {
+    "id": 4010001,
+    "count": 7
+   },
+   {
+    "id": 4010002,
+    "count": 7
+   },
+   {
+    "id": 4010003,
+    "count": 7
+   },
+   {
+    "id": 4010004,
+    "count": 7
+   },
+   {
+    "id": 4010005,
+    "count": 7
+   }
+  ],
+  "meso": 1140,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10201,
+  "levelMinimum": 36,
+  "quests": [
+   {
+    "id": 10508,
+    "state": 2
+   }
+  ],
+  "npcId": 305,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10201,
+  "mobs": [
+   {
+    "count": 50,
+    "id": 38
+   }
+  ],
+  "items": [
+   {
+    "count": 50,
+    "id": 4000033
+   }
+  ],
+  "npcId": 305,
+  "state": 1
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "id": 80024,
+ "name": "An Arcforger in My Own Right!",
+ "area": 19,
+ "areaName": "Crafting",
+ "demandSummary": "#o19# #a800241#\\n#i4020106:# #t4020106:# #c4020106# / 1",
+ "rewardOnStart": {
+  "id": 80024,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 80024,
+  "exp": 3060,
+  "items": [
+   {
+    "id": 4020106,
+    "count": -1
+   },
+   {
+    "id": 4130003,
+    "count": 1
+   }
+  ],
+  "skills": [
+   {
+    "id": 92050000,
+    "masterLevel": -1,
+    "skillLevel": -1
+   }
+  ],
+  "meso": 804,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 80024,
+  "levelMinimum": 25,
+  "quests": [
+   {
+    "id": 80023,
+    "state": 2
+   }
+  ],
+  "npcId": 602,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 80024,
+  "mobs": [
+   {
+    "count": 30,
+    "id": 19
+   }
+  ],
+  "items": [
+   {
+    "count": 1,
+    "id": 4020106
+   }
+  ],
+  "npcId": 602,
+  "state": 1
+ }
+}

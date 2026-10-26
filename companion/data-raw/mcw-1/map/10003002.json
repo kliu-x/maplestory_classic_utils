@@ -1,0 +1,20 @@
+{
+ "id": 10003002,
+ "name": "Kerning City Pharmacy",
+ "streetName": "Victoria Road",
+ "mapMark": "KerningCity",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10003000,
+ "vrBounds": {
+  "width": 800,
+  "height": 650
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 410
+  }
+ ],
+ "portals": []
+}

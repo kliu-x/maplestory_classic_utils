@@ -1,0 +1,23 @@
+{
+ "id": 38,
+ "name": "Zombie Lupin",
+ "meta": {
+  "isBodyAttack": true,
+  "level": 41,
+  "maxHP": 1774,
+  "maxMP": 50,
+  "speed": 30,
+  "physicalDamage": 221,
+  "physicalDefense": 0,
+  "magicDamage": 242,
+  "magicDefense": 30,
+  "accuracy": 121,
+  "evasion": 29,
+  "exp": 89,
+  "isUndead": true,
+  "minimumPushDamage": 175,
+  "elementalAttributes": "H3",
+  "summonType": 1,
+  "revivesMonsterId": []
+ }
+}

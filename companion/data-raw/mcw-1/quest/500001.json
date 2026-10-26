@@ -1,0 +1,71 @@
+{
+ "id": 500001,
+ "name": "[Event] Beyond the Unknown",
+ "area": 99,
+ "areaName": "Event",
+ "demandSummary": "#questorder1##i4031081:# #t4031081:# #c4031081# / 1",
+ "rewardSummary": "#i1112219# #t1112219# x1\\n  (Account Reward)",
+ "questsAvailableOnComplete": [
+  {
+   "id": 500002,
+   "startTime": "2026-04-21T15:00:00",
+   "endTime": "2026-04-23T23:59:00",
+   "levelMinimum": 15,
+   "quests": [
+    {
+     "id": 500001,
+     "state": 2
+    }
+   ],
+   "npcId": 313,
+   "state": 0
+  },
+  {
+   "id": 500008,
+   "startTime": "2026-08-08T00:00:00",
+   "endTime": "2026-08-12T23:59:00",
+   "levelMinimum": 20,
+   "quests": [
+    {
+     "id": 500001,
+     "state": 2
+    }
+   ],
+   "npcId": 308,
+   "state": 0
+  }
+ ],
+ "rewardOnStart": {
+  "id": 500001,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 500001,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 500001,
+  "startTime": "2026-08-04T00:00:00",
+  "endTime": "2026-08-12T23:59:00",
+  "levelMinimum": 15,
+  "quests": [
+   {
+    "id": 500000,
+    "state": 2
+   }
+  ],
+  "npcId": 304,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 500001,
+  "items": [
+   {
+    "count": 1,
+    "id": 4031081
+   }
+  ],
+  "npcId": 304,
+  "state": 1
+ }
+}

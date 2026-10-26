@@ -1,0 +1,23 @@
+{
+ "id": 10001044,
+ "name": "Henesys Hair Salon",
+ "streetName": "Victoria Road",
+ "mapMark": "Henesys",
+ "isTown": true,
+ "mobRate": 1,
+ "returnMap": 10001000,
+ "vrBounds": {
+  "width": 800,
+  "height": 600
+ },
+ "mobs": [],
+ "npcs": [
+  {
+   "id": 215
+  },
+  {
+   "id": 216
+  }
+ ],
+ "portals": []
+}

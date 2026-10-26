@@ -1,0 +1,38 @@
+{
+ "id": 10130,
+ "name": "A rainbow snail shell that makes wishes come true!?",
+ "area": 12,
+ "areaName": "Henesys",
+ "demandSummary": "Bring the #t2210000# to #b#p218##k or use the #t2210000#, then talk to #b#p218##k.",
+ "rewardOnStart": {
+  "id": 10130,
+  "state": 0
+ },
+ "rewardOnComplete": {
+  "id": 10130,
+  "state": 1
+ },
+ "requirementToStart": {
+  "id": 10130,
+  "levelMinimum": 20,
+  "quests": [
+   {
+    "id": 10129,
+    "state": 2
+   }
+  ],
+  "npcId": 218,
+  "state": 0
+ },
+ "requirementToComplete": {
+  "id": 10130,
+  "items": [
+   {
+    "count": 1,
+    "id": 2210000
+   }
+  ],
+  "npcId": 218,
+  "state": 1
+ }
+}
