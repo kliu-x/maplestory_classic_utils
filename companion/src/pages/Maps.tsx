@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { MAPS, mapById, monsterById } from '../data';
+import { IMG, MAPS, QUESTS, mapById, monsterById } from '../data';
 import { go, href } from '../router';
 import { MapView } from '../components/MapView';
 import { SourceBadge } from '../components/ui';
@@ -12,6 +12,9 @@ export default function Maps({ params }: PageProps) {
   const [region, setRegion] = useState('');
   const [huntOnly, setHuntOnly] = useState(false);
   const selected = params.get('id') ? mapById.get(Number(params.get('id'))) : undefined;
+  const npcId = Number(params.get('npc')) || null;
+  const npc = npcId != null ? selected?.npcs.find((n) => n.id === npcId) : undefined;
+  const npcQuests = npcId != null ? QUESTS.filter((q) => q.npcId === npcId || q.endNpcId === npcId) : [];
   const list = useMemo(() => {
     const t = q.trim().toLowerCase();
     return MAPS.filter((m) => (!t || `${m.name} ${m.street}`.toLowerCase().includes(t)) && (!region || m.region === region) && (!huntOnly || m.spawns.length > 0));
@@ -39,7 +42,20 @@ export default function Maps({ params }: PageProps) {
             </div>
           </div>
           <div style={{ marginBottom: 12 }}>
-            <MapView map={selected} pins={selected.npcs.map((n) => ({ x: n.x, y: n.y, label: n.name, kind: 'npc' as const }))} />
+            {npc && (
+              <div className="callout info" style={{ marginBottom: 8 }}>
+                <div className="icon-row">
+                  <img src={IMG.npc(npc.id)} alt="" loading="lazy" onError={(e) => (e.currentTarget.style.visibility = 'hidden')} />
+                  <span><strong>{npc.name}</strong> is the big pin below{selected.returnMap ? <> · nearest town: <a href={href('maps', { id: selected.returnMap })}>{mapById.get(selected.returnMap)?.name}</a></> : null}</span>
+                </div>
+                {npcQuests.length > 0 && (
+                  <div className="small" style={{ marginTop: 4 }}>
+                    Quests: {npcQuests.map((q, i) => <span key={q.id}>{i > 0 && ' · '}<a href={href('quests', { id: q.id })}>{q.name}</a> <span className="muted">Lv {q.minLevel}</span></span>)}
+                  </div>
+                )}
+              </div>
+            )}
+            <MapView map={selected} pins={selected.npcs.map((n) => ({ x: n.x, y: n.y, label: n.name, kind: 'npc' as const, highlight: n.id === npcId }))} />
           </div>
           <div className="grid grid-3">
             <div>

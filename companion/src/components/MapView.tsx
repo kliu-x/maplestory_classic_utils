@@ -9,6 +9,8 @@ export interface Pin {
   y: number;
   label: string;
   kind: 'npc' | 'portal' | 'mob';
+  /** The one the user is looking for: drawn bigger, label always on top. */
+  highlight?: boolean;
 }
 
 /** The map's in-game minimap with pins at world positions (NPCs, the portal you arrive by...). */
@@ -30,7 +32,7 @@ export function MapView({ map, pins = [], caption }: { map: GameMap; pins?: Pin[
             return (
               <span
                 key={i}
-                className={`mapview-pin ${p.kind}`}
+                className={`mapview-pin ${p.kind}${p.highlight ? ' hl' : ''}`}
                 style={{ left: `${(pt.left / pt.width) * 100}%`, top: `${(pt.top / pt.height) * 100}%` }}
                 title={p.label}
               >
