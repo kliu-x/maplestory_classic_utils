@@ -33,8 +33,10 @@ export default function Characters({ params }: PageProps) {
     if (!code || received.current) return;
     received.current = true;
     try {
-      const c = decodeCharacter(code);
-      const existing = state.characters.find((x) => x.id === c.id);
+      let c = decodeCharacter(code);
+      // Sending the same character again should update it, not pile up copies.
+      const existing = state.characters.find((x) => x.id === c.id) ?? state.characters.find((x) => x.name.toLowerCase() === c.name.toLowerCase() && JOBS[x.job].family === JOBS[c.job].family);
+      if (existing) c = { ...c, id: existing.id, observations: c.observations.length ? c.observations : existing.observations };
       const ok = confirm(existing ? `Replace ${existing.name} on this device with the shared copy (Lv ${c.level})?` : `Add ${c.name} (Lv ${c.level} ${JOBS[c.job].label}) to this device?`);
       if (ok) {
         upsertCharacter(c);
@@ -361,6 +363,14 @@ function Observations({ c, update }: { c: Character; update: (p: Partial<Charact
   const [draft, setDraft] = useState<DamageObservation>(blank);
   const set = (p: Partial<DamageObservation>) => setDraft((d) => ({ ...d, ...p }));
   const valid = draft.max > 0 && draft.min <= draft.max;
+  const mob = draft.mobId != null ? monsterById.get(draft.mobId) : undefined;
+  // "I kill it in one hit": every hit is at least its HP. Max is a guess (+20%) unless you know better.
+  const oneShot = () => {
+    if (!mob) return;
+    const o = { ...draft, min: mob.hp, avg: Math.round(mob.hp * 1.1), max: Math.max(draft.max, Math.round(mob.hp * 1.2)), hitRate: 1, note: draft.note || `one-shots ${mob.name}`, recordedAt: new Date().toISOString() };
+    update({ observations: [o, ...c.observations] });
+    setDraft({ ...blank(), skillId: draft.skillId, mobId: draft.mobId });
+  };
 
   return (
     <div className="card">
@@ -371,6 +381,7 @@ function Observations({ c, update }: { c: Character; update: (p: Partial<Charact
       <p className="small muted">
         Enter the damage numbers you see <strong>per line</strong> (Magic Claw shows 2 numbers per cast, Lucky Seven 2 stars). Record which monster you hit: its defense affects the numbers.
         Measurements on a monster are used as-is for that monster and projected to others.
+        Kill it in one hit? Pick the skill and monster and press <strong>I one-shot it</strong>.
       </p>
       <div className="fields" style={{ alignItems: 'end' }}>
         <label className="field">
@@ -394,6 +405,9 @@ function Observations({ c, update }: { c: Character; update: (p: Partial<Charact
           Note
           <input type="text" value={draft.note} placeholder="e.g. with Meditation, 20 casts sampled" onChange={(e) => set({ note: e.target.value })} />
         </label>
+        <button className="btn" disabled={!mob} onClick={oneShot} title={mob ? `Records hits of at least ${mob.hp} (its HP) on ${mob.name}` : 'Pick the monster first'}>
+          I one-shot it
+        </button>
         <button
           className="btn primary"
           disabled={!valid}

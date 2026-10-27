@@ -75,6 +75,8 @@ export function adviceFor(c: Character, a: TrainingAssumptions): Advice {
   if (unspent < 0) warnings.push(`Base stats add up to ${-unspent} more than expected for Lv ${c.level} (check base vs equipment split).`);
 
   const skillId = defaultAttackSkill(c);
+  if (skillId && !(c.skills[skillId] > 0) && tier > 0)
+    warnings.push('Your main attack is Lv 0 in this profile, so damage is estimated as if you had not learned it. Enter your skill levels on the Characters page, or tick "I follow the plan".');
   const topMaps = skillId ? rankMaps(c, skillId, a).slice(0, 3) : [];
   if (!c.observations.length) warnings.push('No measured damage yet: training numbers use formula estimates. Record a few hits on the Characters page.');
 
