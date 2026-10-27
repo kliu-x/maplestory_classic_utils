@@ -15,6 +15,14 @@ export interface ParsedScreenshot {
   base: Partial<Record<StatKey, number>>;
   equip: Partial<Record<StatKey, number>>;
   skills: Record<number, number>;
+  /** DETAIL panel's MAGIC line: floor(INT/2) + Magic Attack from gear (MeowDB). */
+  magicTotal?: number;
+}
+
+/** Combine reads of several snips (stat window, skill window, DETAIL panel). Later values win. */
+export function mergeParsed(a: ParsedScreenshot, b: ParsedScreenshot): ParsedScreenshot {
+  const defined = Object.fromEntries(Object.entries(b).filter(([, v]) => v !== undefined));
+  return { ...a, ...defined, base: { ...a.base, ...b.base }, equip: { ...a.equip, ...b.equip }, skills: { ...a.skills, ...b.skills } };
 }
 
 const STAT_KEYS: StatKey[] = ['str', 'dex', 'int', 'luk'];
@@ -64,7 +72,12 @@ export function splitBonus(total: number, inner: string): [number, number] | nul
  * step only offers values that were actually read.
  */
 export function parseScreenshotText(text: string, skills: Skill[]): ParsedScreenshot {
-  const t = text.replace(/\r/g, '');
+  // Each window row ends in small +/- buttons that OCR reads as "00", "O00" or "(OO".
+  const t = text
+    .replace(/\r/g, '')
+    .split('\n')
+    .map((l) => l.replace(/\s+[([{|]?[0oO]{2,3}[)\]}|]*\s*$/, ''))
+    .join('\n');
   const out: ParsedScreenshot = { base: {}, equip: {}, skills: {} };
 
   const name = /\bNAME\s*[:.]?\s*([A-Za-z0-9]{2,12})\b/i.exec(t);
@@ -106,8 +119,26 @@ export function parseScreenshotText(text: string, skills: Skill[]): ParsedScreen
   // DEX INT LUK, and HP/MP ("611/611") and EXP ("11152 (20%)") have distinctive shapes.
   const lines0 = t.split('\n').map((l) => l.trim()).filter(Boolean);
   const fracs = [...t.matchAll(/(\d{1,6})\s*\/\s*(\d{1,6})/g)];
+  if (out.name == null) {
+    // The name is the first row under the window title.
+    const title = lines0.findIndex((l) => /CHARACTER\s*STAT/i.test(l));
+    const m = title >= 0 ? /^\W{0,2}([A-Za-z0-9]{2,12})\W{0,2}$/.exec(lines0[title + 1] ?? '') : null;
+    if (m) out.name = m[1];
+  }
   if (out.hp == null && fracs[0]) out.hp = +fracs[0][2];
   if (out.mp == null && fracs[1]) out.mp = +fracs[1][2];
+  if (out.mp == null && fracs[0]) {
+    // "1000/1000" sometimes loses its slash: "10001000" (two equal halves).
+    const after = lines0[lines0.findIndex((l) => l.includes(fracs[0][0])) + 1] ?? '';
+    const d = /^\D{0,3}(\d{2,12})\b/.exec(after)?.[1];
+    if (d && d.length % 2 === 0 && d.slice(0, d.length / 2) === d.slice(d.length / 2)) out.mp = +d.slice(d.length / 2);
+  }
+  // DETAIL panel: ATTACK "20 - 26", then WEAPON DEF, then MAGIC, one value per row.
+  const atk = lines0.findIndex((l) => /^\D{0,6}\d{1,4}\s*[-~]\s*\d{1,4}\s*$/.test(l));
+  if (atk >= 0) {
+    const vals = lines0.slice(atk + 1, atk + 4).map((l) => /(\d{1,4})\s*$/.exec(l)?.[1]).filter((v): v is string => !!v);
+    if (vals.length >= 2) out.magicTotal = +vals[1];
+  }
   const expLine = lines0.findIndex((l) => /^\D{0,3}[\d,]{1,13}\s*[([]\s*\d{1,3}(?:\.\d+)?\s*%/.test(l));
   if (out.currentExp == null && expLine >= 0) out.currentExp = num(/[\d,]{1,13}/.exec(lines0[expLine])![0]);
   if (out.level == null && fracs[0]) {
@@ -192,6 +223,11 @@ export function reviewRows(c: Character, p: ParsedScreenshot, skillName: (id: nu
   for (const k of STAT_KEYS) {
     add(`base.${k}`, `${k.toUpperCase()} (base)`, c.base[k], p.base[k], (x) => ({ ...x, base: { ...x.base, [k]: p.base[k]! }, followPlan: false }));
     add(`equip.${k}`, `${k.toUpperCase()} (equipment)`, c.equip[k], p.equip[k], (x) => ({ ...x, equip: { ...x.equip, [k]: p.equip[k]! } }));
+  }
+  if (p.magicTotal != null) {
+    const int = (p.base.int ?? c.base.int) + (p.equip.int ?? c.equip.int);
+    const matk = p.magicTotal - Math.floor(int / 2);
+    if (matk >= 0) add('matk', `Magic ATT from gear (MAGIC ${p.magicTotal} − INT ${int}/2)`, c.magicAttack, matk, (x) => ({ ...x, magicAttack: matk }));
   }
   for (const [id, lv] of Object.entries(p.skills)) {
     add(`skill.${id}`, skillName(Number(id)), c.skills[Number(id)] ?? 0, lv, (x) => ({ ...x, skills: { ...x.skills, [id]: lv }, followPlan: false }));

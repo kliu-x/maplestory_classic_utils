@@ -256,3 +256,12 @@ h1.char-pick select { font: inherit; font-weight: 700; color: var(--text); backg
 .shot-label { display: inline-block; min-width: 48px; padding: 0 4px; border-radius: 3px; background: #d9568f; color: #fff; font-weight: 700; }
 .shot-label.g { background: #79b84a; }
 .shot-skill { border-bottom: 1px dashed var(--border); }
+.shot-label.b { background: #4f7fc9; }
+.shot-picker { position: relative; display: inline-block; max-width: 100%; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; touch-action: none; cursor: crosshair; }
+.shot-picker img { display: block; max-width: 100%; height: auto; user-select: none; }
+.shot-box { position: absolute; border: 2px dashed var(--accent); background: rgba(194, 65, 12, 0.12); pointer-events: none; }
+.shot-box.done { border-style: solid; border-color: #2f9e44; background: rgba(47, 158, 68, 0.15); }
+.shot-overlay { position: fixed; inset: 0; z-index: 50; background: rgba(0, 0, 0, 0.75); display: flex; flex-direction: column; padding: 12px; gap: 8px; overflow: auto; }
+.shot-overlay-bar { background: var(--surface); color: var(--text); border-radius: 8px; padding: 8px 12px; }
+.shot-overlay .shot-picker { align-self: center; background: #000; }
+.shot-overlay .shot-picker img { max-height: calc(100vh - 90px); width: auto; }

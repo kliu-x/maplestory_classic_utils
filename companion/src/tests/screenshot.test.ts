@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { jobFromName, parseScreenshotText, reviewRows, splitBonus } from '../integrations/screenshot';
+import { jobFromName, mergeParsed, parseScreenshotText, reviewRows, splitBonus } from '../integrations/screenshot';
 import { skillsForJob } from '../data';
 import { newCharacter } from '../storage/store';
 
@@ -146,6 +146,20 @@ El 0
     expect(splitBonus(134, '12747')).toEqual([127, 7]);
     expect(splitBonus(16, '15t1')).toEqual([15, 1]);
     expect(splitBonus(50, '12+7')).toBeNull();
+  });
+
+  it('reads real snips of the stat window, skill window and DETAIL panel', () => {
+    // OCR output from a real Classic World screenshot, each window cropped on its own.
+    const stat = 'CHARACTER STAT (])\nKayloo\nMAGICIAN\n26\n611/611 00\n10001000 (OO\n11152 (20%)\n| 0\n4 O00\n4 00\n134 (127+7) 00\n16 (15+1) 00\nae faleo ind NI |\n';
+    const skill = 'SKILL INVENTORY U])\nI™ Introduction to Magic |\nImproved MP Reco... =\n| 15 00)\nMax MP Increase\n13 00)\n55) Magic Guard\n5 1 00)\nMagic Armor\nn 4 0 00)\nEnergy Bolt\n20 00)\n7) Magic Claw\n0 00\nSRE I TR 0\n';
+    const detail = 'AB Ran A.M LA AS 4\n\nSr 20-26\nase a 89\n\nTo 115\n120\nCTR 1\nEINE 13\nPRT 6%\nWee 120%\nree 101%\nIe 100%\n';
+    const p = [stat, skill, detail].map((x) => parseScreenshotText(x, skills)).reduce(mergeParsed);
+    expect(p).toMatchObject({ name: 'Kayloo', job: 'magician', level: 26, hp: 611, mp: 1000, currentExp: 11152, magicTotal: 115 });
+    expect(p.base).toEqual({ str: 4, dex: 4, int: 127, luk: 15 });
+    expect(p.skills).toEqual({ 2000000: 15, 2000001: 13, 2001000: 1, 2001001: 0, 2001002: 20, 2001003: 0 });
+    const rows = reviewRows({ ...newCharacter('magician', 'Kayloo'), level: 26 }, p, String);
+    // MAGIC 115 = floor(134 / 2) + 48
+    expect(rows.find((r) => r.key === 'matk')?.found).toBe('48');
   });
 
   it('maps job names from the game and ClassicRank', () => {

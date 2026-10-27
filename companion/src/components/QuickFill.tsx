@@ -1,26 +1,46 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import type { Character } from '../models/types';
 import { skillById, skillsForJob } from '../data';
-import { lookupByName, parseScreenshotText, readScreenshot, reviewRows, type ReviewRow } from '../integrations/screenshot';
+import { lookupByName, mergeParsed, parseScreenshotText, readScreenshot, reviewRows, type ParsedScreenshot } from '../integrations/screenshot';
 
-// "Quick fill" for a profile: level/job by name from ClassicRank, or everything on the
-// Character Stat + Skill windows from a screenshot read on this device. Nothing is saved
-// until the user ticks the rows they want.
+// "Quick fill" for a profile: level/job by name from ClassicRank, or the Character Stat,
+// DETAIL and Skill windows read from screenshots on this device. OCR reads one window at a
+// time far better than a whole desktop, so several snips are merged into one review, and a
+// full screenshot opens a picker where you box each window. Nothing is saved until the
+// user ticks the rows they want.
+
+const EMPTY: ParsedScreenshot = { base: {}, equip: {}, skills: {} };
+/** Wider than this, an image is a whole screen and goes to the window picker. */
+const FULL_SCREEN_WIDTH = 1100;
+
+interface Picker {
+  url: string;
+  bmp: ImageBitmap;
+  boxes: { x: number; y: number; w: number; h: number }[];
+}
 
 export function QuickFill({ c, save }: { c: Character; save: (c: Character) => void }) {
   const [status, setStatus] = useState('');
   const [busy, setBusy] = useState(false);
-  const [rows, setRows] = useState<ReviewRow[] | null>(null);
-  const [picked, setPicked] = useState<Set<string>>(new Set());
-  const [rawText, setRawText] = useState('');
+  const [acc, setAcc] = useState<ParsedScreenshot | null>(null);
+  const [snips, setSnips] = useState(0);
+  const [unticked, setUnticked] = useState<Set<string>>(new Set());
+  const [rawText, setRawText] = useState<string[]>([]);
+  const [picker, setPicker] = useState<Picker | null>(null);
   const [showExample, setShowExample] = useState(false);
   const file = useRef<HTMLInputElement>(null);
   const box = useRef<HTMLDivElement>(null);
 
-  const review = (r: ReviewRow[], none: string) => {
-    setRows(r);
-    setPicked(new Set(r.map((x) => x.key)));
-    setStatus(r.length ? '' : none);
+  const rows = useMemo(() => (acc ? reviewRows(c, acc, (id) => skillById.get(id)?.name ?? String(id)) : null), [acc, c]);
+  const picked = rows?.filter((r) => !unticked.has(r.key)) ?? [];
+
+  const reset = () => {
+    setAcc(null);
+    setSnips(0);
+    setUnticked(new Set());
+    setRawText([]);
+    if (picker) URL.revokeObjectURL(picker.url);
+    setPicker(null);
   };
 
   const fromName = async () => {
@@ -28,11 +48,10 @@ export function QuickFill({ c, save }: { c: Character; save: (c: Character) => v
     setStatus('Looking up on ClassicRank…');
     try {
       const hit = await lookupByName(c.name);
-      if (!hit) return review([], `${c.name} is not on ClassicRank (new, low-level or hidden characters are missing). Try a screenshot instead.`);
-      review(
-        reviewRows(c, { level: hit.level, job: hit.job, base: {}, equip: {}, skills: {} }, String),
-        `ClassicRank has ${hit.name} at Lv ${hit.level} ${hit.jobLabel}, the same as this profile.`,
-      );
+      if (!hit) return setStatus(`${c.name} is not on ClassicRank (new, low-level or hidden characters are missing). Try a screenshot instead.`);
+      const next = mergeParsed(acc ?? EMPTY, { ...EMPTY, level: hit.level, job: hit.job });
+      setAcc(next);
+      setStatus(reviewRows(c, next, String).length ? `ClassicRank: ${hit.name}, Lv ${hit.level} ${hit.jobLabel}.` : `ClassicRank has ${hit.name} at Lv ${hit.level} ${hit.jobLabel}, the same as this profile.`);
     } catch (e) {
       setStatus(`Lookup failed: ${(e as Error).message}`);
     } finally {
@@ -40,21 +59,19 @@ export function QuickFill({ c, save }: { c: Character; save: (c: Character) => v
     }
   };
 
-  const fromImage = async (img: Blob) => {
+  /** OCR one window (or a small screenshot) and merge it into what has been read so far. */
+  const readSnip = async (img: Blob) => {
     setBusy(true);
-    setRows(null);
-    setStatus('Reading screenshot on this device…');
+    setStatus('Reading on this device…');
     try {
       const text = await readScreenshot(img, (p, s) => setStatus(s.includes('recogniz') ? `Reading text… ${Math.round(p * 100)}%` : 'Loading the text reader (first time only)…'));
-      setRawText(text);
-      const job = (() => {
-        const p = parseScreenshotText(text, []);
-        return p.job ?? c.job;
-      })();
+      setRawText((t) => [...t, text]);
       // Skills of the job on the screenshot (or this profile's), 1st and 2nd job.
-      const skills = skillsForJob(job);
-      const parsed = parseScreenshotText(text, skills);
-      review(reviewRows(c, parsed, (id) => skillById.get(id)?.name ?? String(id)), 'Nothing new found. Check the screenshot shows the Character Stat and Skill windows clearly (see the example).');
+      const job = parseScreenshotText(text, []).job ?? acc?.job ?? c.job;
+      const next = mergeParsed(acc ?? EMPTY, parseScreenshotText(text, skillsForJob(job)));
+      setAcc(next);
+      setSnips((n) => n + 1);
+      setStatus(reviewRows(c, next, String).length ? '' : 'Nothing new found in that one. Check it shows a whole window clearly (see the example).');
     } catch (e) {
       setStatus(`Could not read the image: ${(e as Error).message}`);
     } finally {
@@ -62,14 +79,36 @@ export function QuickFill({ c, save }: { c: Character; save: (c: Character) => v
     }
   };
 
-  // Paste a screenshot (Ctrl+V / Print Screen) anywhere on the page.
+  const fromImage = async (img: Blob) => {
+    const bmp = await createImageBitmap(img);
+    if (bmp.width > FULL_SCREEN_WIDTH) {
+      if (picker) URL.revokeObjectURL(picker.url);
+      setPicker({ url: URL.createObjectURL(img), bmp, boxes: [] });
+      setStatus('');
+      return;
+    }
+    await readSnip(img);
+  };
+
+  const cropAndRead = async (r: Picker['boxes'][number]) => {
+    if (!picker) return;
+    const cv = document.createElement('canvas');
+    cv.width = r.w;
+    cv.height = r.h;
+    cv.getContext('2d')!.drawImage(picker.bmp, r.x, r.y, r.w, r.h, 0, 0, r.w, r.h);
+    setPicker({ ...picker, boxes: [...picker.boxes, r] });
+    const blob = await new Promise<Blob | null>((ok) => cv.toBlob(ok, 'image/png'));
+    if (blob) await readSnip(blob);
+  };
+
+  // Paste a screenshot or snip (Print Screen, Windows+Shift+S) anywhere on the page.
   useEffect(() => {
     const onPaste = (e: ClipboardEvent) => {
       const item = [...(e.clipboardData?.items ?? [])].find((i) => i.type.startsWith('image/'));
       const blob = item?.getAsFile();
       if (blob && !busy) {
         e.preventDefault();
-        box.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        box.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
         void fromImage(blob);
       }
     };
@@ -78,10 +117,9 @@ export function QuickFill({ c, save }: { c: Character; save: (c: Character) => v
   });
 
   const apply = () => {
-    if (!rows) return;
-    save(rows.filter((r) => picked.has(r.key)).reduce((x, r) => r.apply(x), c));
-    setStatus(`Saved ${picked.size} field${picked.size === 1 ? '' : 's'}.`);
-    setRows(null);
+    save(picked.reduce((x, r) => r.apply(x), c));
+    setStatus(`Saved ${picked.length} field${picked.length === 1 ? '' : 's'}.`);
+    reset();
   };
 
   return (
@@ -97,11 +135,11 @@ export function QuickFill({ c, save }: { c: Character; save: (c: Character) => v
     >
       <div className="card-head">
         <h2>Quick fill</h2>
-        <button className="btn small ghost" onClick={() => setShowExample(!showExample)}>{showExample ? 'Hide example' : 'What should the screenshot show?'}</button>
+        <button className="btn small ghost" onClick={() => setShowExample(!showExample)}>{showExample ? 'Hide example' : 'What should I capture?'}</button>
       </div>
       <p className="small muted" style={{ marginTop: 0 }}>
-        Upload, drop or paste (Ctrl+V) a screenshot and the app reads your level, EXP, HP/MP, stats and skills. It reads the image <strong>on this device</strong>; nothing is uploaded.
-        You check every value before it is saved.
+        Snip each game window with <strong>Windows+Shift+S</strong> and paste it here (Ctrl+V), or upload a full screenshot and box the windows.
+        It reads them <strong>on this device</strong>; nothing is uploaded. You check every value before it is saved.
       </p>
       <div className="row">
         <button className="btn primary" disabled={busy} onClick={() => file.current?.click()}>Upload screenshot</button>
@@ -112,45 +150,52 @@ export function QuickFill({ c, save }: { c: Character; save: (c: Character) => v
 
       {showExample && <Example />}
 
-      {rows && rows.length > 0 && (
+      {picker && <WindowPicker picker={picker} busy={busy} onBox={cropAndRead} onDone={() => { URL.revokeObjectURL(picker.url); setPicker(null); }} />}
+
+      {rows && (
         <div style={{ marginTop: 12 }}>
-          <div className="table-wrap">
-            <table>
-              <thead>
-                <tr><th></th><th>Field</th><th className="num">Now</th><th className="num">From screenshot</th></tr>
-              </thead>
-              <tbody>
-                {rows.map((r) => (
-                  <tr key={r.key}>
-                    <td>
-                      <input
-                        type="checkbox"
-                        checked={picked.has(r.key)}
-                        aria-label={`Use ${r.label}`}
-                        onChange={(e) => {
-                          const next = new Set(picked);
-                          if (e.target.checked) next.add(r.key);
-                          else next.delete(r.key);
-                          setPicked(next);
-                        }}
-                      />
-                    </td>
-                    <td>{r.label}</td>
-                    <td className="num muted">{r.current}</td>
-                    <td className="num"><strong>{r.found}</strong></td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+          <p className="small" style={{ marginTop: 0 }}>
+            Read {snips} window{snips === 1 ? '' : 's'}. {picker ? 'Box another window, or' : 'Paste another (stat, DETAIL or skill window), or'} save below.
+          </p>
+          {rows.length > 0 && (
+            <div className="table-wrap">
+              <table>
+                <thead>
+                  <tr><th></th><th>Field</th><th className="num">Now</th><th className="num">From screenshot</th></tr>
+                </thead>
+                <tbody>
+                  {rows.map((r) => (
+                    <tr key={r.key}>
+                      <td>
+                        <input
+                          type="checkbox"
+                          checked={!unticked.has(r.key)}
+                          aria-label={`Use ${r.label}`}
+                          onChange={(e) => {
+                            const next = new Set(unticked);
+                            if (e.target.checked) next.delete(r.key);
+                            else next.add(r.key);
+                            setUnticked(next);
+                          }}
+                        />
+                      </td>
+                      <td>{r.label}</td>
+                      <td className="num muted">{r.current}</td>
+                      <td className="num"><strong>{r.found}</strong></td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
           <p className="small muted">Untick anything it misread, then fix it by hand below. Saving skills or base stats turns off "I follow the plan".</p>
           <div className="row">
-            <button className="btn primary" disabled={!picked.size} onClick={apply}>Save {picked.size} field{picked.size === 1 ? '' : 's'}</button>
-            <button className="btn" onClick={() => { setRows(null); setStatus(''); }}>Cancel</button>
-            {rawText && (
+            <button className="btn primary" disabled={!picked.length} onClick={apply}>Save {picked.length} field{picked.length === 1 ? '' : 's'}</button>
+            <button className="btn" onClick={() => { reset(); setStatus(''); }}>Cancel</button>
+            {rawText.length > 0 && (
               <details className="small muted">
                 <summary>Text it read</summary>
-                <pre style={{ whiteSpace: 'pre-wrap', maxHeight: 200, overflow: 'auto' }}>{rawText}</pre>
+                <pre style={{ whiteSpace: 'pre-wrap', maxHeight: 200, overflow: 'auto' }}>{rawText.join('\n----\n')}</pre>
               </details>
             )}
           </div>
@@ -160,10 +205,62 @@ export function QuickFill({ c, save }: { c: Character; save: (c: Character) => v
   );
 }
 
-/** A schematic of a good screenshot: which windows to open and what must be visible. */
+/** Shows a full screenshot; drag a box around a game window to read just that window. */
+function WindowPicker({ picker, busy, onBox, onDone }: { picker: Picker; busy: boolean; onBox: (r: Picker['boxes'][number]) => void; onDone: () => void }) {
+  const img = useRef<HTMLImageElement>(null);
+  const [drag, setDrag] = useState<{ x0: number; y0: number; x1: number; y1: number } | null>(null);
+  const scale = () => (img.current ? picker.bmp.width / img.current.clientWidth : 1);
+  const at = (e: React.PointerEvent) => {
+    const r = img.current!.getBoundingClientRect();
+    return { x: Math.max(0, Math.min(r.width, e.clientX - r.left)), y: Math.max(0, Math.min(r.height, e.clientY - r.top)) };
+  };
+  const rect = (d: NonNullable<typeof drag>) => ({ left: Math.min(d.x0, d.x1), top: Math.min(d.y0, d.y1), width: Math.abs(d.x1 - d.x0), height: Math.abs(d.y1 - d.y0) });
+
+  return (
+    <div className="shot-overlay">
+      <div className="row shot-overlay-bar">
+        <span className="small">
+          <strong>Drag a box around each window</strong>: Character Stat, its DETAIL panel, Skill. Each box is read on its own.
+          {busy ? ' Reading…' : picker.boxes.length ? ` ${picker.boxes.length} read.` : ''}
+        </span>
+        <span className="spacer" />
+        <button className="btn small primary" onClick={onDone}>Done</button>
+      </div>
+      <div className="shot-picker">
+        <img
+          ref={img}
+          src={picker.url}
+          alt="Your screenshot"
+          draggable={false}
+          onPointerDown={(e) => {
+            if (busy) return;
+            (e.target as Element).setPointerCapture(e.pointerId);
+            const p = at(e);
+            setDrag({ x0: p.x, y0: p.y, x1: p.x, y1: p.y });
+          }}
+          onPointerMove={(e) => drag && setDrag({ ...drag, x1: at(e).x, y1: at(e).y })}
+          onPointerUp={() => {
+            if (!drag) return;
+            const r = rect(drag);
+            setDrag(null);
+            const s = scale();
+            if (r.width * s > 40 && r.height * s > 20) onBox({ x: Math.round(r.left * s), y: Math.round(r.top * s), w: Math.round(r.width * s), h: Math.round(r.height * s) });
+          }}
+        />
+        {picker.boxes.map((b, i) => {
+          const s = scale();
+          return <div key={i} className="shot-box done" style={{ left: b.x / s, top: b.y / s, width: b.w / s, height: b.h / s }} />;
+        })}
+        {drag && <div className="shot-box" style={rect(drag)} />}
+      </div>
+    </div>
+  );
+}
+
+/** A schematic of what to capture: which windows to open and what must be visible. */
 function Example() {
-  const job = 'MAGICIAN';
-  const stat = [['NAME', 'Kayloo'], ['JOB', job], ['LEVEL', '26'], ['HP', '611/611'], ['MP', '1000/1000'], ['EXP.', '11152 (20%)'], ['STR', '4'], ['DEX', '4'], ['INT', '134 (127+7)'], ['LUK', '16 (15+1)']];
+  const stat = [['NAME', 'Kayloo'], ['JOB', 'MAGICIAN'], ['LEVEL', '26'], ['HP', '611/611'], ['MP', '1000/1000'], ['EXP.', '11152 (20%)'], ['STR', '4'], ['DEX', '4'], ['INT', '134 (127+7)'], ['LUK', '16 (15+1)']];
+  const detail = [['ATTACK', '20 - 26'], ['WEAPON DEF.', '89'], ['MAGIC', '115'], ['MAGIC DEF.', '120']];
   const skills = [['Energy Bolt', '20'], ['Magic Claw', '0'], ['Magic Guard', '1'], ['Magic Armor', '0'], ['Max MP Increase', '13'], ['Improved MP Reco…', '15']];
   return (
     <div className="shot-example">
@@ -174,19 +271,24 @@ function Example() {
         ))}
       </div>
       <div className="shot-win">
-        <div className="shot-title">SKILL INVENTORY <span className="muted">(press K, 1st or 2nd job tab)</span></div>
+        <div className="shot-title">DETAIL <span className="muted">(button on the stat window)</span></div>
+        {detail.map(([k, v]) => (
+          <div key={k} className="shot-line"><span className="shot-label b">{k}</span><span>{v}</span></div>
+        ))}
+        <div className="small muted" style={{ marginTop: 4 }}>MAGIC = INT/2 + your gear's Magic ATT, so the app works out your Magic ATT.</div>
+      </div>
+      <div className="shot-win">
+        <div className="shot-title">SKILL INVENTORY <span className="muted">(press K)</span></div>
         {skills.map(([k, v]) => (
           <div key={k} className="shot-skill"><span>{k}</span><strong>{v}</strong></div>
         ))}
       </div>
       <ul className="small" style={{ margin: 0, paddingLeft: 18 }}>
-        <li>Open <strong>Character Stat (S)</strong> and <strong>Skill (K)</strong> side by side, then press Print Screen and paste here.</li>
-        <li>Move the mouse off items: a tooltip over the stat window hides numbers.</li>
-        <li>Full-size screenshot, not a phone photo of the screen. Crop to the two windows if you like.</li>
-        <li>More skills than fit? Scroll the Skill window and add a second screenshot.</li>
-        <li>Not in these windows: <strong>Magic ATT / Weapon ATT</strong> (click DETAIL, or hover your weapon). Type it under Weapon &amp; attack.</li>
+        <li>Open <strong>Character Stat (S)</strong> with <strong>DETAIL</strong>, and <strong>Skill (K)</strong>.</li>
+        <li>Best: <strong>Windows+Shift+S</strong>, snip one window, Ctrl+V here; repeat for each. Or Print Screen once and box the windows.</li>
+        <li>Move the mouse off items: a tooltip over a window hides numbers.</li>
+        <li>More skills than fit, or a 2nd job tab? Scroll or switch tabs and snip again.</li>
       </ul>
     </div>
   );
 }
-
