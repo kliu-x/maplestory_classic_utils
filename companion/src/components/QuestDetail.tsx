@@ -1,6 +1,7 @@
 import type { GameMap, Quest } from '../models/types';
 import { IMG, MAPS, QUESTS, itemById, mapById, monsterById, npcById } from '../data';
 import { QUEST_NOTES } from '../data/questNotes';
+import { QUEST_LOG_TITLES } from '../data/questAliases';
 import { homeTown, routeFromTown } from '../calculators/route';
 import { href } from '../router';
 import { fmt, SourceBadge, StatusPill } from './ui';
@@ -82,6 +83,7 @@ export function QuestDetail({ quest: q }: { quest: Quest }) {
         <h2>{q.name}</h2>
         <SourceBadge source={q.source} compact />
       </div>
+      {QUEST_LOG_TITLES[q.id] && <p className="small muted" style={{ margin: '-6px 0 6px' }}>In your quest log under <strong>{QUEST_LOG_TITLES[q.id]}</strong></p>}
       <p className="small" style={{ marginTop: 0 }}>
         Lv {q.minLevel || 1}+{q.exp ? ` · ${fmt(q.exp)} EXP` : ''}{q.meso ? ` · ${fmt(q.meso)} mesos` : ''}
         {q.availableUntil && <> · event, start before <strong>{q.availableUntil}</strong></>}

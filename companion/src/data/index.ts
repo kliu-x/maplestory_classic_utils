@@ -7,6 +7,7 @@ import metaJson from './generated/meta.json';
 import npcsJson from './generated/npcs.json';
 import itemsJson from './generated/items.json';
 import { JOBS } from './rules';
+import { QUEST_LOG_TITLES } from './questAliases';
 
 export const MONSTERS = monstersJson as unknown as Monster[];
 export const MAPS = mapsJson as unknown as GameMap[];
@@ -26,6 +27,7 @@ export const itemById = new Map(ITEMS.map((i) => [i.id, i]));
 export function questSearchText(q: Quest): string {
   return [
     q.name,
+    QUEST_LOG_TITLES[q.id] ?? '',
     q.area,
     q.npcId != null ? npcById.get(q.npcId)?.name : '',
     q.endNpcId != null ? npcById.get(q.endNpcId)?.name : '',

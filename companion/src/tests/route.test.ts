@@ -68,5 +68,8 @@ describe('quest search', () => {
     const hits = (t: string) => QUESTS.filter((q) => questSearchText(q).includes(t)).map((q) => q.name);
     expect(hits('stuffed drake')).toContain("Transporting Drake's Skull");
     expect(hits('betty')).toContain('Research on Plant Fossils');
+    // by the storyline title the in-game quest log shows
+    expect(hits('legend of the snail')).toContain('A rainbow snail shell that makes wishes come true!?');
+    expect(hits("dr. betty's research")).toContain('Research on Plant Fossils');
   });
 });
