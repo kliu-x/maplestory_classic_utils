@@ -10,24 +10,39 @@
   "width": 1466,
   "height": 1090
  },
+ "miniMap": {
+  "centerX": 688,
+  "centerY": -615,
+  "width": 1466,
+  "height": 1090,
+  "magnification": 4
+ },
  "mobs": [],
  "npcs": [],
  "portals": [
   {
    "toMap": 80002012,
-   "portalName": "up00"
+   "portalName": "up00",
+   "x": -438,
+   "y": 1511
   },
   {
    "toMap": 80002012,
-   "portalName": "up01"
+   "portalName": "up01",
+   "x": -416,
+   "y": 1181
   },
   {
    "toMap": 80002012,
-   "portalName": "dn00"
+   "portalName": "dn00",
+   "x": 461,
+   "y": 971
   },
   {
    "toMap": 80002012,
-   "portalName": "dn01"
+   "portalName": "dn01",
+   "x": 491,
+   "y": 1181
   }
  ]
 }

@@ -10,22 +10,44 @@
   "width": 3180,
   "height": 1190
  },
+ "miniMap": {
+  "centerX": 1190,
+  "centerY": 850,
+  "width": 3180,
+  "height": 1190,
+  "magnification": 4
+ },
  "mobs": [],
  "npcs": [
   {
-   "id": 802
+   "id": 802,
+   "x": 497,
+   "y": -143,
+   "hidden": false
   },
   {
-   "id": 800
+   "id": 800,
+   "x": 667,
+   "y": -143,
+   "hidden": false
   },
   {
-   "id": 801
+   "id": 801,
+   "x": -285,
+   "y": 175,
+   "hidden": false
   },
   {
-   "id": 803
+   "id": 803,
+   "x": 557,
+   "y": -143,
+   "hidden": false
   },
   {
-   "id": 804
+   "id": 804,
+   "x": 432,
+   "y": -143,
+   "hidden": false
   }
  ],
  "portals": []

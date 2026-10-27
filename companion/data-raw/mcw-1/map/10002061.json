@@ -10,6 +10,13 @@
   "width": 1587,
   "height": 2675
  },
+ "miniMap": {
+  "centerX": 1663,
+  "centerY": 342,
+  "width": 1587,
+  "height": 2675,
+  "magnification": 4
+ },
  "mobs": [
   {
    "id": 7,
@@ -366,43 +373,63 @@
  "portals": [
   {
    "toMap": 10002061,
-   "portalName": "up00"
+   "portalName": "up00",
+   "x": -1355,
+   "y": 2021
   },
   {
    "toMap": 10002061,
-   "portalName": "up01"
+   "portalName": "up01",
+   "x": -1338,
+   "y": 1622
   },
   {
    "toMap": 10002061,
-   "portalName": "up02"
+   "portalName": "up02",
+   "x": -1336,
+   "y": 1223
   },
   {
    "toMap": 10002061,
-   "portalName": "up03"
+   "portalName": "up03",
+   "x": -1334,
+   "y": 821
   },
   {
    "toMap": 10002061,
-   "portalName": "up04"
+   "portalName": "up04",
+   "x": -1336,
+   "y": 423
   },
   {
    "toMap": 10002061,
-   "portalName": "dw00"
+   "portalName": "dw00",
+   "x": -359,
+   "y": 25
   },
   {
    "toMap": 10002061,
-   "portalName": "dw01"
+   "portalName": "dw01",
+   "x": -363,
+   "y": 427
   },
   {
    "toMap": 10002061,
-   "portalName": "dw02"
+   "portalName": "dw02",
+   "x": -357,
+   "y": 828
   },
   {
    "toMap": 10002061,
-   "portalName": "dw03"
+   "portalName": "dw03",
+   "x": -358,
+   "y": 1230
   },
   {
    "toMap": 10002061,
-   "portalName": "dw04"
+   "portalName": "dw04",
+   "x": -369,
+   "y": 1626
   }
  ]
 }

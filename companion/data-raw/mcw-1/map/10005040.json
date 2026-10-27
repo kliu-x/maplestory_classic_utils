@@ -10,10 +10,20 @@
   "width": 1396,
   "height": 3670
  },
+ "miniMap": {
+  "centerX": 158,
+  "centerY": 3045,
+  "width": 1396,
+  "height": 3670,
+  "magnification": 4
+ },
  "mobs": [],
  "npcs": [
   {
-   "id": 610
+   "id": 610,
+   "x": 56,
+   "y": 435,
+   "hidden": false
   }
  ],
  "portals": []

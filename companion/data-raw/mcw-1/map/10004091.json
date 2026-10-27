@@ -10,6 +10,13 @@
   "width": 1466,
   "height": 1570
  },
+ "miniMap": {
+  "centerX": 103,
+  "centerY": -825,
+  "width": 1466,
+  "height": 1570,
+  "magnification": 4
+ },
  "mobs": [
   {
    "id": 22,

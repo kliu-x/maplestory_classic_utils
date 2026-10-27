@@ -10,12 +10,21 @@
   "width": 0,
   "height": 0
  },
+ "miniMap": {
+  "centerX": 745,
+  "centerY": 780,
+  "width": 1757,
+  "height": 1291,
+  "magnification": 4
+ },
  "mobs": [],
  "npcs": [],
  "portals": [
   {
    "toMap": 90040000,
-   "portalName": "join00"
+   "portalName": "join00",
+   "x": 139,
+   "y": 105
   }
  ]
 }

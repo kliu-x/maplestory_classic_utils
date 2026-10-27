@@ -10,23 +10,40 @@
   "width": 1990,
   "height": 3000
  },
+ "miniMap": {
+  "centerX": 1774,
+  "centerY": 1964,
+  "width": 2290,
+  "height": 3100,
+  "magnification": 4
+ },
  "mobs": [],
  "npcs": [
   {
-   "id": 419
+   "id": 419,
+   "x": -1348,
+   "y": 923,
+   "hidden": false
   },
   {
-   "id": 419
+   "id": 419,
+   "x": -160,
+   "y": 923,
+   "hidden": false
   }
  ],
  "portals": [
   {
    "toMap": 10003104,
-   "portalName": "cross00"
+   "portalName": "cross00",
+   "x": -1090,
+   "y": 918
   },
   {
    "toMap": 10003104,
-   "portalName": "cross01"
+   "portalName": "cross01",
+   "x": -469,
+   "y": 920
   }
  ]
 }

@@ -10,6 +10,13 @@
   "width": 4530,
   "height": 2800
  },
+ "miniMap": {
+  "centerX": 1054,
+  "centerY": 1424,
+  "width": 4810,
+  "height": 2860,
+  "magnification": 4
+ },
  "mobs": [
   {
    "id": 90,
@@ -29,61 +36,96 @@
  ],
  "npcs": [
   {
-   "id": 419
+   "id": 419,
+   "x": 1170,
+   "y": 194,
+   "hidden": false
   },
   {
-   "id": 419
+   "id": 419,
+   "x": -255,
+   "y": -517,
+   "hidden": false
   },
   {
-   "id": 419
+   "id": 419,
+   "x": 1622,
+   "y": -644,
+   "hidden": false
   },
   {
-   "id": 419
+   "id": 419,
+   "x": 2114,
+   "y": 196,
+   "hidden": false
   },
   {
-   "id": 419
+   "id": 419,
+   "x": 1623,
+   "y": 1038,
+   "hidden": false
   }
  ],
  "portals": [
   {
    "toMap": 10003100,
-   "portalName": "in00"
+   "portalName": "in00",
+   "x": 252,
+   "y": -230
   },
   {
    "toMap": 10003100,
-   "portalName": "out00"
+   "portalName": "out00",
+   "x": -544,
+   "y": -521
   },
   {
    "toMap": 10003100,
-   "portalName": "in02"
+   "portalName": "in02",
+   "x": 1159,
+   "y": -950
   },
   {
    "toMap": 10003100,
-   "portalName": "in04"
+   "portalName": "in04",
+   "x": 3281,
+   "y": -859
   },
   {
    "toMap": 10003100,
-   "portalName": "in01"
+   "portalName": "in01",
+   "x": 1257,
+   "y": 321
   },
   {
    "toMap": 10003100,
-   "portalName": "out01"
+   "portalName": "out01",
+   "x": 1208,
+   "y": 701
   },
   {
    "toMap": 10003100,
-   "portalName": "in03"
+   "portalName": "in03",
+   "x": 1214,
+   "y": 1162
   },
   {
    "toMap": 10003100,
-   "portalName": "in05"
+   "portalName": "in05",
+   "x": 3303,
+   "y": 821
   },
   {
    "toMap": 10003100,
-   "portalName": "cross00"
+   "portalName": "cross00",
+   "x": -361,
+   "y": 1160
   },
   {
    "toMap": 10003100,
-   "portalName": "cross01"
+   "portalName": "cross01",
+   "x": -68,
+   "y": 1159
   }
  ]
 }

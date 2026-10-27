@@ -26,6 +26,23 @@ const src = (path, extra = {}) => ({
   ...extra,
 });
 
+// ---------- npcs & items (names; map files carry only ids and positions) ----------
+const readDir = async (dir) => (await readdir(join(RAW, dir)).catch(() => [])).filter((f) => f.endsWith('.json'));
+const npcName = new Map();
+const npcShop = new Set();
+for (const f of await readDir('npc')) {
+  const n = await readJson(join(RAW, 'npc', f));
+  if (!ok(n) || !n.name) continue;
+  npcName.set(n.id, n.name);
+  if (n.isShop) npcShop.add(n.id);
+}
+const items = [];
+for (const f of await readDir('item')) {
+  const it = await readJson(join(RAW, 'item', f));
+  if (ok(it) && it.name) items.push({ id: it.id, name: it.name });
+}
+items.sort((a, b) => a.id - b.id);
+
 // ---------- maps ----------
 // Lanes: spawn points grouped by platform. Footholds are not kept, so a lane is inferred:
 // points within LANE_DY px of height form a row, and a row splits where points are more
@@ -76,14 +93,19 @@ for (const m of mapList) {
     name: d.name || m.name,
     street: d.streetName || m.streetName || '',
     region: d.mapMark || '',
-    isTown: String(d.isTown) === 'True',
+    isTown: String(d.isTown).toLowerCase() === 'true',
+    // Where you respawn: the town this map belongs to.
+    ...(d.returnMap && d.returnMap !== 999999999 && d.returnMap !== d.id ? { returnMap: d.returnMap } : {}),
     mobRate: Number(d.mobRate) || 1,
     width: d.vrBounds?.width ?? 0,
     height: d.vrBounds?.height ?? 0,
     spawns: [...counts].map(([mobId, count]) => ({ mobId, count })).sort((a, b) => b.count - a.count),
     ...(lanes.length > 1 ? { lanes } : {}),
     portalsTo: [...new Set((d.portals || []).map((p) => p.toMap))].sort((a, b) => a - b),
-    npcs: (d.npcs || []).map((n) => n.name).filter(Boolean),
+    // Positions are world coordinates; minimap pixel = (x + centerX) / 2^magnification.
+    npcs: (d.npcs || []).filter((n) => !n.hidden && npcName.has(n.id)).map((n) => ({ id: n.id, name: npcName.get(n.id), x: n.x, y: n.y })),
+    portals: (d.portals || []).filter((p) => p.toMap && Number.isFinite(p.x)).map((p) => ({ toMap: p.toMap, x: p.x, y: p.y })),
+    ...(d.miniMap?.magnification != null ? { miniMap: d.miniMap } : {}),
     source: src(`/map/${d.id}`),
   });
 }
@@ -175,7 +197,10 @@ for (const q of questList) {
   const d = await readJson(join(RAW, 'quest', `${q.id}.json`)).catch(() => null);
   if (!ok(d)) continue;
   const start = d.requirementToStart || {};
+  const done = d.requirementToComplete || {};
   const reward = d.rewardOnComplete || {};
+  // demandSummary is either game markup (#o4# #i4000003#...) or a plain-language riddle (event quests).
+  const hint = d.demandSummary && !d.demandSummary.includes('#') ? d.demandSummary.replace(/\n/g, ' ').trim() : undefined;
   quests.push({
     id: d.id,
     name: d.name,
@@ -187,6 +212,11 @@ for (const q of questList) {
     rewardItemCount: (reward.items || []).filter((i) => i.count > 0).length,
     prereqQuestIds: (start.quests || []).map((x) => x.id),
     npcId: start.npcId,
+    ...(done.npcId != null && done.npcId !== start.npcId ? { endNpcId: done.npcId } : {}),
+    killMobs: (done.mobs || []).map((m) => ({ mobId: m.id, count: m.count })),
+    collectItems: (done.items || []).filter((i) => i.count > 0).map((i) => ({ itemId: i.id, count: i.count })),
+    ...(hint ? { hint } : {}),
+    ...(start.endTime ? { availableUntil: start.endTime.slice(0, 10) } : {}),
     repeatable: !!(start.repeatInterval || start.dayByDay || start.interval),
     source: src(`/quest/${d.id}`),
   });
@@ -199,6 +229,10 @@ await write('maps.json', maps);
 await write('monsters.json', monsters);
 await write('skills.json', skills);
 await write('quests.json', quests);
+const npcMaps = new Map();
+for (const m of maps) for (const n of m.npcs) (npcMaps.get(n.id) ?? npcMaps.set(n.id, []).get(n.id)).push(m.id);
+await write('npcs.json', [...npcName].map(([id, name]) => ({ id, name, isShop: npcShop.has(id), mapIds: npcMaps.get(id) ?? [] })).sort((a, b) => a.id - b.id));
+await write('items.json', items);
 await write('meta.json', {
   source: API,
   retrieved_at: meta.retrieved_at,

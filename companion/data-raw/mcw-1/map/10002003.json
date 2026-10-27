@@ -13,13 +13,18 @@
  "mobs": [],
  "npcs": [
   {
-   "id": 313
+   "id": 313,
+   "x": -7,
+   "y": -77,
+   "hidden": false
   }
  ],
  "portals": [
   {
    "toMap": 10002000,
-   "portalName": "jobout00"
+   "portalName": "jobout00",
+   "x": 253,
+   "y": 184
   }
  ]
 }

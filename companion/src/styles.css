@@ -265,3 +265,19 @@ h1.char-pick select { font: inherit; font-weight: 700; color: var(--text); backg
 .shot-overlay-bar { background: var(--surface); color: var(--text); border-radius: 8px; padding: 8px 12px; }
 .shot-overlay .shot-picker { align-self: center; background: #000; }
 .shot-overlay .shot-picker img { max-height: calc(100vh - 90px); width: auto; }
+
+/* Minimap with pins (quest NPCs, arrival portal) */
+.mapview { margin: 0; }
+.mapview figcaption { margin-bottom: 4px; }
+.mapview-img { position: relative; max-width: 100%; background: #1b1f27; border-radius: 6px; overflow: visible; }
+.mapview-img img { position: absolute; inset: 0; width: 100%; height: 100%; image-rendering: pixelated; border-radius: 6px; }
+.mapview-pin { position: absolute; width: 12px; height: 12px; margin: -12px 0 0 -6px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); border: 2px solid #fff; box-shadow: 0 0 0 1px rgba(0,0,0,.5); }
+.mapview-pin.npc { background: #e8590c; }
+.mapview-pin.portal { background: #2f9e44; width: 10px; height: 10px; }
+.mapview-pin.mob { background: #7048e8; }
+.mapview-label { position: absolute; left: 12px; top: -14px; transform: rotate(45deg); transform-origin: left; white-space: nowrap; font-size: 11px; font-weight: 600; color: #fff; background: rgba(0,0,0,.7); padding: 0 4px; border-radius: 3px; pointer-events: none; }
+.quest-detail { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.icon-row { display: flex; align-items: center; gap: 8px; }
+.icon-row img { width: 32px; height: 32px; object-fit: contain; image-rendering: pixelated; }
+.route { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; font-size: 13px; }
+.route .arrow { color: var(--muted); }

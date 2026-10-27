@@ -10,44 +10,82 @@
   "width": 3266,
   "height": 3082
  },
+ "miniMap": {
+  "centerX": 238,
+  "centerY": 897,
+  "width": 3266,
+  "height": 3082,
+  "magnification": 4
+ },
  "mobs": [],
  "npcs": [
   {
-   "id": 500
+   "id": 500,
+   "x": 776,
+   "y": 1875,
+   "hidden": false
   },
   {
-   "id": 501
+   "id": 501,
+   "x": 1719,
+   "y": 1935,
+   "hidden": false
   },
   {
-   "id": 502
+   "id": 502,
+   "x": 744,
+   "y": 251,
+   "hidden": false
   },
   {
-   "id": 503
+   "id": 503,
+   "x": 1336,
+   "y": 585,
+   "hidden": false
   },
   {
-   "id": 504
+   "id": 504,
+   "x": 792,
+   "y": 589,
+   "hidden": false
   },
   {
-   "id": 505
+   "id": 505,
+   "x": 1062,
+   "y": 1566,
+   "hidden": false
   },
   {
-   "id": 506
+   "id": 506,
+   "x": 2133,
+   "y": 1236,
+   "hidden": false
   },
   {
-   "id": 800011
+   "id": 800011,
+   "x": 1458,
+   "y": 585,
+   "hidden": false
   },
   {
-   "id": 800010
+   "id": 800010,
+   "x": 718,
+   "y": 591,
+   "hidden": false
   }
  ],
  "portals": [
   {
    "toMap": 10004000,
-   "portalName": "h_00"
+   "portalName": "h_00",
+   "x": 2504,
+   "y": 1937
   },
   {
    "toMap": 10004000,
-   "portalName": "h_01"
+   "portalName": "h_01",
+   "x": 1445,
+   "y": 745
   }
  ]
 }

@@ -1,9 +1,11 @@
-import type { GameMap, JobId, Monster, Quest, Skill } from '../models/types';
+import type { GameMap, Item, JobId, Monster, Npc, Quest, Skill } from '../models/types';
 import monstersJson from './generated/monsters.json';
 import mapsJson from './generated/maps.json';
 import skillsJson from './generated/skills.json';
 import questsJson from './generated/quests.json';
 import metaJson from './generated/meta.json';
+import npcsJson from './generated/npcs.json';
+import itemsJson from './generated/items.json';
 import { JOBS } from './rules';
 
 export const MONSTERS = monstersJson as unknown as Monster[];
@@ -11,10 +13,22 @@ export const MAPS = mapsJson as unknown as GameMap[];
 export const SKILLS = skillsJson as unknown as Skill[];
 export const QUESTS = questsJson as unknown as Quest[];
 export const DATA_META = metaJson;
+export const NPCS = npcsJson as Npc[];
+export const ITEMS = itemsJson as Item[];
 
 export const monsterById = new Map(MONSTERS.map((m) => [m.id, m]));
 export const mapById = new Map(MAPS.map((m) => [m.id, m]));
 export const skillById = new Map(SKILLS.map((s) => [s.id, s]));
+export const npcById = new Map(NPCS.map((n) => [n.id, n]));
+export const itemById = new Map(ITEMS.map((i) => [i.id, i]));
+
+/** Images served by maplestory.io for Classic World (loaded only when shown). */
+export const IMG = {
+  minimap: (mapId: number) => `https://maplestory.io/api/MCW/1/map/${mapId}/minimap`,
+  npc: (id: number) => `https://maplestory.io/api/MCW/1/npc/${id}/icon`,
+  mob: (id: number) => `https://maplestory.io/api/MCW/1/mob/${id}/icon`,
+  item: (id: number) => `https://maplestory.io/api/MCW/1/item/${id}/icon`,
+};
 
 /** Skills usable by a job (its own and earlier tiers), hidden helper skills excluded. */
 export function skillsForJob(job: JobId, includeHidden = false): Skill[] {

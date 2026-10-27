@@ -10,37 +10,64 @@
   "width": 4826,
   "height": 940
  },
+ "miniMap": {
+  "centerX": 118,
+  "centerY": 56,
+  "width": 4826,
+  "height": 940,
+  "magnification": 4
+ },
  "mobs": [],
  "npcs": [
   {
-   "id": 218
+   "id": 218,
+   "x": 2756,
+   "y": 574,
+   "hidden": false
   },
   {
-   "id": 219
+   "id": 219,
+   "x": 1687,
+   "y": 574,
+   "hidden": false
   },
   {
-   "id": 220
+   "id": 220,
+   "x": 1039,
+   "y": 424,
+   "hidden": false
   },
   {
-   "id": 228
+   "id": 228,
+   "x": 4480,
+   "y": 694,
+   "hidden": false
   }
  ],
  "portals": [
   {
    "toMap": 10001050,
-   "portalName": "hide01"
+   "portalName": "hide01",
+   "x": 197,
+   "y": 452
   },
   {
    "toMap": 10001050,
-   "portalName": "hide02"
+   "portalName": "hide02",
+   "x": 3423,
+   "y": 302
   },
   {
    "toMap": 10001050,
-   "portalName": "hide03"
+   "portalName": "hide03",
+   "x": 1622,
+   "y": 574
   },
   {
    "toMap": 10001040,
-   "portalName": "out01"
+   "portalName": "out01",
+   "x": 910,
+   "y": 424
   }
  ]
 }

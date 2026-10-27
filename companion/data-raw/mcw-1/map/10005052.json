@@ -10,6 +10,13 @@
   "width": 1396,
   "height": 3355
  },
+ "miniMap": {
+  "centerX": 608,
+  "centerY": 870,
+  "width": 1396,
+  "height": 3355,
+  "magnification": 4
+ },
  "mobs": [
   {
    "id": 31,
@@ -241,7 +248,9 @@
  "portals": [
   {
    "toMap": 10005051,
-   "portalName": "out00"
+   "portalName": "out00",
+   "x": -180,
+   "y": -660
   }
  ]
 }

@@ -13,10 +13,16 @@
  "mobs": [],
  "npcs": [
   {
-   "id": 213
+   "id": 213,
+   "x": -51,
+   "y": 154,
+   "hidden": false
   },
   {
-   "id": 214
+   "id": 214,
+   "x": 52,
+   "y": 181,
+   "hidden": false
   }
  ],
  "portals": []

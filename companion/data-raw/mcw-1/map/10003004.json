@@ -13,17 +13,24 @@
  "mobs": [],
  "npcs": [
   {
-   "id": 412
+   "id": 412,
+   "x": 189,
+   "y": -46,
+   "hidden": false
   }
  ],
  "portals": [
   {
    "toMap": 10003000,
-   "portalName": "out00"
+   "portalName": "out00",
+   "x": 297,
+   "y": 179
   },
   {
    "toMap": 10003000,
-   "portalName": "out01"
+   "portalName": "out01",
+   "x": 310,
+   "y": -46
   }
  ]
 }

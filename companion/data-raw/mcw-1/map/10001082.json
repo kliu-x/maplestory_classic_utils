@@ -10,6 +10,13 @@
   "width": 3658,
   "height": 1642
  },
+ "miniMap": {
+  "centerX": 1559,
+  "centerY": 1237,
+  "width": 3658,
+  "height": 1642,
+  "magnification": 4
+ },
  "mobs": [
   {
    "id": 92,
@@ -154,81 +161,120 @@
  ],
  "npcs": [
   {
-   "id": 225
+   "id": 225,
+   "x": 1766,
+   "y": -805,
+   "hidden": false
   }
  ],
  "portals": [
   {
    "toMap": 10001082,
-   "portalName": "t001"
+   "portalName": "t001",
+   "x": -1463,
+   "y": -155
   },
   {
    "toMap": 10001082,
-   "portalName": "t002"
+   "portalName": "t002",
+   "x": -338,
+   "y": -456
   },
   {
    "toMap": 10001082,
-   "portalName": "t003"
+   "portalName": "t003",
+   "x": -769,
+   "y": -216
   },
   {
    "toMap": 10001082,
-   "portalName": "t004"
+   "portalName": "t004",
+   "x": -141,
+   "y": 86
   },
   {
    "toMap": 10001082,
-   "portalName": "t005"
+   "portalName": "t005",
+   "x": 478,
+   "y": -513
   },
   {
    "toMap": 10001082,
-   "portalName": "t006"
+   "portalName": "t006",
+   "x": 783,
+   "y": -35
   },
   {
    "toMap": 10001082,
-   "portalName": "t007"
+   "portalName": "t007",
+   "x": 1584,
+   "y": -99
   },
   {
    "toMap": 10001082,
-   "portalName": "h001"
+   "portalName": "h001",
+   "x": -1320,
+   "y": -455
   },
   {
    "toMap": 10001082,
-   "portalName": "h002"
+   "portalName": "h002",
+   "x": -1132,
+   "y": -695
   },
   {
    "toMap": 10001082,
-   "portalName": "h003"
+   "portalName": "h003",
+   "x": -755,
+   "y": -457
   },
   {
    "toMap": 10001082,
-   "portalName": "h004"
+   "portalName": "h004",
+   "x": -102,
+   "y": -156
   },
   {
    "toMap": 10001082,
-   "portalName": "h005"
+   "portalName": "h005",
+   "x": 420,
+   "y": 85
   },
   {
    "toMap": 10001082,
-   "portalName": "h006"
+   "portalName": "h006",
+   "x": 927,
+   "y": -454
   },
   {
    "toMap": 10001082,
-   "portalName": "h007"
+   "portalName": "h007",
+   "x": 1235,
+   "y": -157
   },
   {
    "toMap": 10001082,
-   "portalName": "h008"
+   "portalName": "h008",
+   "x": -351,
+   "y": -694
   },
   {
    "toMap": 10001082,
-   "portalName": "h009"
+   "portalName": "h009",
+   "x": 128,
+   "y": -393
   },
   {
    "toMap": 10001080,
-   "portalName": "out00"
+   "portalName": "out00",
+   "x": 1469,
+   "y": -808
   },
   {
    "toMap": 10001080,
-   "portalName": "out01"
+   "portalName": "out01",
+   "x": -1466,
+   "y": 152
   }
  ]
 }

@@ -10,6 +10,13 @@
   "width": 1408,
   "height": 942
  },
+ "miniMap": {
+  "centerX": 749,
+  "centerY": 477,
+  "width": 1408,
+  "height": 942,
+  "magnification": 4
+ },
  "mobs": [],
  "npcs": [],
  "portals": []

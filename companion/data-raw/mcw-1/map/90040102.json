@@ -10,16 +10,27 @@
   "width": 0,
   "height": 0
  },
+ "miniMap": {
+  "centerX": 2000,
+  "centerY": 789,
+  "width": 3008,
+  "height": 2344,
+  "magnification": 4
+ },
  "mobs": [],
  "npcs": [],
  "portals": [
   {
    "toMap": 90040102,
-   "portalName": "np01"
+   "portalName": "np01",
+   "x": 46,
+   "y": 1172
   },
   {
    "toMap": 90040102,
-   "portalName": "np02"
+   "portalName": "np02",
+   "x": 46,
+   "y": 1172
   }
  ]
 }

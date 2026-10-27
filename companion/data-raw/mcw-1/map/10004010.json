@@ -10,6 +10,13 @@
   "width": 3626,
   "height": 1218
  },
+ "miniMap": {
+  "centerX": 1318,
+  "centerY": -1087,
+  "width": 3626,
+  "height": 1218,
+  "magnification": 4
+ },
  "mobs": [
   {
    "id": 6,
@@ -281,39 +288,57 @@
  "portals": [
   {
    "toMap": 10004010,
-   "portalName": "hide00"
+   "portalName": "hide00",
+   "x": 1093,
+   "y": 2055
   },
   {
    "toMap": 10004010,
-   "portalName": "tohide00"
+   "portalName": "tohide00",
+   "x": 1674,
+   "y": 1550
   },
   {
    "toMap": 10004010,
-   "portalName": "hide01"
+   "portalName": "hide01",
+   "x": 879,
+   "y": 2055
   },
   {
    "toMap": 10004010,
-   "portalName": "tohide01"
+   "portalName": "tohide01",
+   "x": 1146,
+   "y": 1471
   },
   {
    "toMap": 10004010,
-   "portalName": "hide03"
+   "portalName": "hide03",
+   "x": -722,
+   "y": 2055
   },
   {
    "toMap": 10004010,
-   "portalName": "tohide03"
+   "portalName": "tohide03",
+   "x": -1064,
+   "y": 1613
   },
   {
    "toMap": 10004010,
-   "portalName": "hide02"
+   "portalName": "hide02",
+   "x": 7,
+   "y": 2113
   },
   {
    "toMap": 10004010,
-   "portalName": "tohide02"
+   "portalName": "tohide02",
+   "x": 251,
+   "y": 1480
   },
   {
    "toMap": 10004020,
-   "portalName": "west00"
+   "portalName": "west00",
+   "x": -1224,
+   "y": 1992
   }
  ]
 }

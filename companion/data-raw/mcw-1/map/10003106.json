@@ -10,6 +10,13 @@
   "width": 1380,
   "height": 3730
  },
+ "miniMap": {
+  "centerX": 1144,
+  "centerY": 2684,
+  "width": 1660,
+  "height": 3820,
+  "magnification": 4
+ },
  "mobs": [
   {
    "id": 93,
@@ -34,13 +41,18 @@
  ],
  "npcs": [
   {
-   "id": 419
+   "id": 419,
+   "x": -722,
+   "y": 923,
+   "hidden": false
   }
  ],
  "portals": [
   {
    "toMap": 10003106,
-   "portalName": "stage1"
+   "portalName": "stage1",
+   "x": -487,
+   "y": 252
   }
  ]
 }

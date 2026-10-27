@@ -10,11 +10,21 @@
   "width": 1406,
   "height": 679
  },
+ "miniMap": {
+  "centerX": 748,
+  "centerY": 215,
+  "width": 1406,
+  "height": 679,
+  "magnification": 4
+ },
  "mobs": [],
  "npcs": [
   {
    "id": 900012,
-   "name": "Pietro"
+   "name": "Pietro",
+   "x": 300,
+   "y": 274,
+   "hidden": false
   }
  ],
  "portals": []

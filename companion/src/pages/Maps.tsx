@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import { MAPS, mapById, monsterById } from '../data';
 import { go, href } from '../router';
+import { MapView } from '../components/MapView';
 import { SourceBadge } from '../components/ui';
 import type { PageProps } from './shared';
 
@@ -37,6 +38,9 @@ export default function Maps({ params }: PageProps) {
               <a className="btn small" href={href('maps')}>Close</a>
             </div>
           </div>
+          <div style={{ marginBottom: 12 }}>
+            <MapView map={selected} pins={selected.npcs.map((n) => ({ x: n.x, y: n.y, label: n.name, kind: 'npc' as const }))} />
+          </div>
           <div className="grid grid-3">
             <div>
               <h3>Monsters</h3>
@@ -66,7 +70,7 @@ export default function Maps({ params }: PageProps) {
               <ul className="notes" style={{ fontSize: 13 }}>
                 <li>Size {selected.width}×{selected.height}px</li>
                 <li>{selected.isTown ? 'Town' : 'Field'} · mobRate {selected.mobRate}</li>
-                {selected.npcs.length > 0 && <li>NPCs: {selected.npcs.join(', ')}</li>}
+                {selected.npcs.length > 0 && <li>NPCs: {selected.npcs.map((n) => n.name).join(', ')}</li>}
               </ul>
               <p className="small muted">Map connections come from portal data; hidden portals and routes needing a ship or taxi may be missing.</p>
             </div>

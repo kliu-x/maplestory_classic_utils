@@ -1,5 +1,7 @@
 import { useMemo, useState } from 'react';
-import { QUESTS } from '../data';
+import { QUESTS, npcById } from '../data';
+import { QuestDetail } from '../components/QuestDetail';
+import { href } from '../router';
 import { SOURCES } from '../data/sources';
 import { upsertCharacter } from '../storage/store';
 import { fmt, NumField, SourceBadge, StatusPill } from '../components/ui';
@@ -33,7 +35,8 @@ export default function Quests({ params }: PageProps) {
     if (!c) return;
     upsertCharacter({ ...c, completedQuests: done.has(id) ? c.completedQuests.filter((x) => x !== id) : [...c.completedQuests, id] });
   };
-  const shown = focus ? QUESTS.filter((x) => x.id === focus) : list;
+  const focused = focus ? QUESTS.find((x) => x.id === focus) : undefined;
+  const shown = focused ? [focused] : list;
 
   return (
     <>
@@ -64,7 +67,10 @@ export default function Quests({ params }: PageProps) {
 
       <div className="card">
         {focus ? (
-          <div className="row"><span>Showing one quest.</span><a className="btn small" href="#/quests">Show all</a></div>
+          <>
+            <div className="row"><span>Showing one quest.</span><a className="btn small" href="#/quests">Show all</a></div>
+            {focused && <QuestDetail quest={focused} />}
+          </>
         ) : (
           <div className="row" style={{ alignItems: 'end' }}>
             <label className="field" style={{ flex: '1 1 180px' }}>
@@ -99,14 +105,14 @@ export default function Quests({ params }: PageProps) {
             {shown.slice(0, 300).map((x) => (
               <tr key={x.id} className={x.id === focus ? 'selected' : ''}>
                 <td><input type="checkbox" disabled={!c} checked={done.has(x.id)} onChange={() => toggle(x.id)} aria-label={`Completed ${x.name}`} /></td>
-                <td><strong>{x.name}</strong>{x.repeatable && <span className="pill accent"> repeatable</span>}</td>
+                <td><a href={href('quests', { id: x.id })}><strong>{x.name}</strong></a>{x.repeatable && <span className="pill accent"> repeatable</span>}</td>
                 <td className="small">{x.area}</td>
                 <td className="num">{x.minLevel || '—'}{x.maxLevel ? `–${x.maxLevel}` : ''}</td>
                 <td className="num">{fmt(x.exp)}</td>
                 <td className="num">{fmt(x.meso)}</td>
                 <td className="num">{x.rewardItemCount || ''}</td>
                 <td className="small">{x.prereqQuestIds.map((id) => questName.get(id) ?? id).join(', ')}</td>
-                <td className="small muted">{x.npcId ?? ''}</td>
+                <td className="small">{x.npcId != null ? npcById.get(x.npcId)?.name ?? x.npcId : ''}</td>
                 <td><a href={x.source.source_url} target="_blank" rel="noreferrer"><StatusPill status={x.source.verification_status} /></a></td>
               </tr>
             ))}
@@ -115,7 +121,7 @@ export default function Quests({ params }: PageProps) {
         {shown.length === 0 && <div className="empty">No quests match.</div>}
       </div>
       <p className="small muted" style={{ marginTop: 8 }}>
-        NPC names, quest locations and travel effort are not in the dataset yet (shown as NPC ids). Some quests are event or job-specific; check in game.
+        Click a quest for its NPCs on the minimap, the route from the nearest town, and what to hunt or collect. Some quests are event or job-specific; check in game.
       </p>
     </>
   );

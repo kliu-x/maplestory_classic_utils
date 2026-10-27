@@ -13,7 +13,10 @@
  "mobs": [],
  "npcs": [
   {
-   "id": 607
+   "id": 607,
+   "x": 137,
+   "y": 107,
+   "hidden": false
   }
  ],
  "portals": []

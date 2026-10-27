@@ -10,6 +10,13 @@
   "width": 3110,
   "height": 2108
  },
+ "miniMap": {
+  "centerX": 5560,
+  "centerY": 1312,
+  "width": 3110,
+  "height": 2108,
+  "magnification": 4
+ },
  "mobs": [
   {
    "id": 12,
@@ -284,17 +291,24 @@
  ],
  "npcs": [
   {
-   "id": 424
+   "id": 424,
+   "x": -3298,
+   "y": -916,
+   "hidden": false
   }
  ],
  "portals": [
   {
    "toMap": 10003080,
-   "portalName": "h_east00"
+   "portalName": "h_east00",
+   "x": -2741,
+   "y": 125
   },
   {
    "toMap": 10003080,
-   "portalName": "h_west00"
+   "portalName": "h_west00",
+   "x": -5049,
+   "y": 545
   }
  ]
 }

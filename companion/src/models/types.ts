@@ -62,7 +62,12 @@ export interface GameMap {
   /** Spawn points grouped by platform (inferred from spawn x/y; only when the map has 2+). Ordered top to bottom. */
   lanes?: MapLane[];
   portalsTo: number[];
-  npcs: string[];
+  /** The town you respawn in from this map (its home town). */
+  returnMap?: number;
+  /** World coordinates; see minimapPoint(). */
+  npcs: { id: number; name: string; x: number; y: number }[];
+  portals: { toMap: number; x: number; y: number }[];
+  miniMap?: { centerX: number; centerY: number; width: number; height: number; magnification: number };
   source: SourceMeta;
 }
 
@@ -100,8 +105,28 @@ export interface Quest {
   rewardItemCount: number;
   prereqQuestIds: number[];
   npcId?: number;
+  /** Hand-in NPC when it differs from the quest giver. */
+  endNpcId?: number;
+  killMobs: { mobId: number; count: number }[];
+  collectItems: { itemId: number; count: number }[];
+  /** Plain-language objective (event quests give only a riddle). */
+  hint?: string;
+  /** Last day an event quest can be started (YYYY-MM-DD, exclusive). */
+  availableUntil?: string;
   repeatable: boolean;
   source: SourceMeta;
+}
+
+export interface Npc {
+  id: number;
+  name: string;
+  isShop: boolean;
+  mapIds: number[];
+}
+
+export interface Item {
+  id: number;
+  name: string;
 }
 
 // ---------- Jobs ----------

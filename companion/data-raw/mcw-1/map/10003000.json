@@ -10,92 +10,166 @@
   "width": 5180,
   "height": 2119
  },
+ "miniMap": {
+  "centerX": 2500,
+  "centerY": 1443,
+  "width": 5180,
+  "height": 2119,
+  "magnification": 4
+ },
  "mobs": [],
  "npcs": [
   {
-   "id": 401
+   "id": 401,
+   "x": -581,
+   "y": -15,
+   "hidden": false
   },
   {
-   "id": 402
+   "id": 402,
+   "x": 1005,
+   "y": -503,
+   "hidden": false
   },
   {
-   "id": 403
+   "id": 403,
+   "x": 447,
+   "y": 426,
+   "hidden": false
   },
   {
-   "id": 404
+   "id": 404,
+   "x": 1286,
+   "y": 21,
+   "hidden": false
   },
   {
-   "id": 400
+   "id": 400,
+   "x": 1796,
+   "y": 156,
+   "hidden": false
   },
   {
-   "id": 405
+   "id": 405,
+   "x": 656,
+   "y": 156,
+   "hidden": false
   },
   {
-   "id": 800000
+   "id": 800000,
+   "x": -540,
+   "y": 426,
+   "hidden": false
   },
   {
-   "id": 406
+   "id": 406,
+   "x": 71,
+   "y": -54,
+   "hidden": false
   },
   {
-   "id": 407
+   "id": 407,
+   "x": 522,
+   "y": -1072,
+   "hidden": false
   },
   {
-   "id": 900015
+   "id": 900015,
+   "x": 1146,
+   "y": 400,
+   "hidden": false
   },
   {
-   "id": 800011
+   "id": 800011,
+   "x": -274,
+   "y": 156,
+   "hidden": false
   },
   {
-   "id": 800014
+   "id": 800014,
+   "x": -446,
+   "y": -32,
+   "hidden": false
   },
   {
-   "id": 431
+   "id": 431,
+   "x": 2126,
+   "y": -204,
+   "hidden": false
   },
   {
-   "id": 427
+   "id": 427,
+   "x": 1227,
+   "y": 156,
+   "hidden": false
   },
   {
-   "id": 432
+   "id": 432,
+   "x": 1044,
+   "y": 156,
+   "hidden": false
   },
   {
-   "id": 900026
+   "id": 900026,
+   "x": -1766,
+   "y": 426,
+   "hidden": false
   },
   {
-   "id": 9010000
+   "id": 9010000,
+   "x": -1371,
+   "y": 307,
+   "hidden": false
   }
  ],
  "portals": [
   {
    "toMap": 10003000,
-   "portalName": "hide01"
+   "portalName": "hide01",
+   "x": -45,
+   "y": -522
   },
   {
    "toMap": 10003000,
-   "portalName": "hide01_1"
+   "portalName": "hide01_1",
+   "x": 171,
+   "y": -802
   },
   {
    "toMap": 10003000,
-   "portalName": "hide02"
+   "portalName": "hide02",
+   "x": 1418,
+   "y": -606
   },
   {
    "toMap": 10003000,
-   "portalName": "hide02_1"
+   "portalName": "hide02_1",
+   "x": 1640,
+   "y": -887
   },
   {
    "toMap": 10003000,
-   "portalName": "hide03"
+   "portalName": "hide03",
+   "x": 2030,
+   "y": 309
   },
   {
    "toMap": 10003000,
-   "portalName": "hide03_1"
+   "portalName": "hide03_1",
+   "x": -2345,
+   "y": 255
   },
   {
    "toMap": 10003070,
-   "portalName": "east00"
+   "portalName": "east00",
+   "x": 2512,
+   "y": -204
   },
   {
    "toMap": 10003010,
-   "portalName": "west00"
+   "portalName": "west00",
+   "x": -2279,
+   "y": 153
   }
  ]
 }
