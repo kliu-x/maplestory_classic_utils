@@ -3,6 +3,7 @@
 import { useSyncExternalStore } from 'react';
 import type { AppState, Character, JobId, TrainingAssumptions } from '../models/types';
 import { expectedBase } from '../calculators/ap';
+import { applyPlan } from '../calculators/choose';
 import { expForLevel } from '../data/expTable';
 
 const KEY = 'mcw-companion:v1';
@@ -12,6 +13,7 @@ export const DEFAULT_ASSUMPTIONS: TrainingAssumptions = {
   uptime: 0.7,
   respawnSeconds: 8,
   spawnShare: 0.6,
+  laneSpawnShare: 0.9,
   mobsPerCast: null,
   packSize: 3,
   sessionMinutes: 60,
@@ -54,6 +56,7 @@ export function newCharacter(job: JobId = 'magician', name = 'New character'): C
     skills: {},
     statGoals: {},
     mainSkillId: null, // auto: highest-level attack skill
+    followPlan: true,
     observations: [],
     favorites: [],
     completedQuests: [],
@@ -81,7 +84,7 @@ export function migrate(raw: unknown): AppState {
   const template = newCharacter();
   const characters = chars
     .filter((c): c is Character => !!c && typeof c === 'object' && typeof (c as Character).id === 'string')
-    .map((c) => ({ ...template, ...c, base: { ...template.base, ...c.base }, equip: { ...template.equip, ...c.equip }, statGoals: c.statGoals ?? {}, observations: c.observations ?? [], skills: c.skills ?? {} }))
+    .map((c) => ({ ...template, ...c, base: { ...template.base, ...c.base }, equip: { ...template.equip, ...c.equip }, statGoals: c.statGoals ?? {}, observations: c.observations ?? [], skills: c.skills ?? {}, followPlan: c.followPlan ?? false }))
     .map(({ expToNext, ...c }) => ({ ...c, currentExp: expToNext ? Math.max(0, expForLevel(c.level) - expToNext) : c.currentExp ?? 0 }))
     .map((c) => (OLD_DEFAULT_MAIN.has(c.mainSkillId ?? 0) && outlevelled(c) ? { ...c, mainSkillId: null } : c));
   const settings = { ...base.settings, ...(r.settings ?? {}) };
@@ -134,7 +137,7 @@ export function useAppState(): AppState {
 
 export function upsertCharacter(c: Character) {
   setState((s) => {
-    const updated = { ...c, updatedAt: new Date().toISOString() };
+    const updated = { ...applyPlan(c), updatedAt: new Date().toISOString() };
     const exists = s.characters.some((x) => x.id === c.id);
     return {
       ...s,
@@ -179,4 +182,29 @@ export function importJson(text: string): AppState {
   const next = migrate(parsed);
   setState(() => next);
   return next;
+}
+
+// ---------- share links ----------
+// A character travels inside the link's #fragment, which browsers never send to the server.
+
+const toB64Url = (text: string) => {
+  let bin = '';
+  for (const b of new TextEncoder().encode(text)) bin += String.fromCharCode(b);
+  return btoa(bin).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+};
+const fromB64Url = (b64: string) => {
+  const bin = atob(b64.replace(/-/g, '+').replace(/_/g, '/'));
+  return new TextDecoder().decode(Uint8Array.from(bin, (ch) => ch.charCodeAt(0)));
+};
+
+export function encodeCharacter(c: Character): string {
+  return toB64Url(JSON.stringify(c));
+}
+
+/** Decode a shared character; it goes through migrate() so old or partial data is filled in. */
+export function decodeCharacter(code: string): Character {
+  const raw = JSON.parse(fromB64Url(code));
+  const c = migrate({ characters: [raw] }).characters[0];
+  if (!c) throw new Error('This link does not contain a character.');
+  return c;
 }

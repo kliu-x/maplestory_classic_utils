@@ -42,6 +42,13 @@ export interface Monster {
   source: SourceMeta;
 }
 
+export interface MapLane {
+  y: number;
+  xMin: number;
+  xMax: number;
+  spawns: { mobId: number; count: number }[];
+}
+
 export interface GameMap {
   id: number;
   name: string;
@@ -52,6 +59,8 @@ export interface GameMap {
   width: number;
   height: number;
   spawns: { mobId: number; count: number }[];
+  /** Spawn points grouped by platform (inferred from spawn x/y; only when the map has 2+). Ordered top to bottom. */
+  lanes?: MapLane[];
   portalsTo: number[];
   npcs: string[];
   source: SourceMeta;
@@ -159,6 +168,8 @@ export interface Character {
   skills: Record<number, number>; // skillId -> level
   statGoals: Partial<Stats>; // total stat requirements to reach (e.g. next claw's DEX), equipment included
   buildId?: string;
+  /** Fill skills and base stats from the plan whenever level/job/build changes. */
+  followPlan?: boolean;
   mainSkillId: number | null;
   observations: DamageObservation[];
   favorites: number[]; // monster ids
@@ -171,6 +182,8 @@ export interface TrainingAssumptions {
   uptime: number; // share of time spent attacking (rest = moving, looting, sitting)
   respawnSeconds: number; // UNVERIFIED for Classic World
   spawnShare: number; // share of map spawns you can actually reach/keep up with
+  laneSpawnShare: number; // same, when you stay on one lane (platform)
+  useLanes?: boolean; // rank single lanes as well as whole maps (default on)
   mobsPerCast: number | null; // override targets hit per cast; null = min(skill mobCount, assumed pack)
   packSize: number; // monsters typically in range for a multi-target skill
   sessionMinutes: number;

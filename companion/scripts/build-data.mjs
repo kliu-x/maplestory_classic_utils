@@ -27,6 +27,42 @@ const src = (path, extra = {}) => ({
 });
 
 // ---------- maps ----------
+// Lanes: spawn points grouped by platform. Footholds are not kept, so a lane is inferred:
+// points within LANE_DY px of height form a row, and a row splits where points are more
+// than LANE_DX px apart horizontally.
+const LANE_DY = 40;
+const LANE_DX = 600;
+function lanesOf(mobs) {
+  const pts = mobs.filter((s) => Number.isFinite(s.x) && Number.isFinite(s.y)).sort((a, b) => a.y - b.y);
+  const rows = [];
+  for (const p of pts) {
+    const row = rows.at(-1);
+    if (row && p.y - row.at(-1).y <= LANE_DY) row.push(p);
+    else rows.push([p]);
+  }
+  const lanes = [];
+  for (const row of rows) {
+    row.sort((a, b) => a.x - b.x);
+    let cur = [];
+    for (const p of row) {
+      if (cur.length && p.x - cur.at(-1).x > LANE_DX) { lanes.push(cur); cur = []; }
+      cur.push(p);
+    }
+    if (cur.length) lanes.push(cur);
+  }
+  return lanes.map((ps) => {
+    const counts = new Map();
+    for (const s of ps) counts.set(s.id, (counts.get(s.id) || 0) + 1);
+    const ys = ps.map((p) => p.y).sort((a, b) => a - b);
+    return {
+      y: ys[Math.floor(ys.length / 2)],
+      xMin: ps[0].x,
+      xMax: ps.at(-1).x,
+      spawns: [...counts].map(([mobId, count]) => ({ mobId, count })).sort((a, b) => b.count - a.count),
+    };
+  });
+}
+
 const mapList = await readJson(join(RAW, 'map-list.json'));
 const maps = [];
 for (const m of mapList) {
@@ -34,6 +70,7 @@ for (const m of mapList) {
   if (!ok(d)) continue;
   const counts = new Map();
   for (const s of d.mobs || []) counts.set(s.id, (counts.get(s.id) || 0) + 1);
+  const lanes = lanesOf((d.mobs || []).filter(Boolean));
   maps.push({
     id: Number(d.id),
     name: d.name || m.name,
@@ -44,6 +81,7 @@ for (const m of mapList) {
     width: d.vrBounds?.width ?? 0,
     height: d.vrBounds?.height ?? 0,
     spawns: [...counts].map(([mobId, count]) => ({ mobId, count })).sort((a, b) => b.count - a.count),
+    ...(lanes.length > 1 ? { lanes } : {}),
     portalsTo: [...new Set((d.portals || []).map((p) => p.toMap))].sort((a, b) => a - b),
     npcs: (d.npcs || []).map((n) => n.name).filter(Boolean),
     source: src(`/map/${d.id}`),

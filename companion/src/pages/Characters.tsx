@@ -6,7 +6,7 @@ import { buildsFor } from '../data/builds';
 import { spPools, spentByTier, validateAllocation } from '../calculators/sp';
 import { expectedBase, startingStats, unspentAp } from '../calculators/ap';
 import { EXP_TABLE_SOURCE, expForLevel, expRemaining } from '../data/expTable';
-import { deleteCharacter, exportJson, importJson, newCharacter, newObservationId, setActive, upsertCharacter, useAppState } from '../storage/store';
+import { decodeCharacter, deleteCharacter, encodeCharacter, exportJson, importJson, newCharacter, newObservationId, setActive, upsertCharacter, useAppState } from '../storage/store';
 import { go, href } from '../router';
 import { Empty, NumField, fmt, StatusPill } from '../components/ui';
 import type { PageProps } from './shared';
@@ -26,6 +26,27 @@ export default function Characters({ params }: PageProps) {
     }
   }, [params, state.characters.length]);
 
+  const received = useRef(false);
+  const [shareMsg, setShareMsg] = useState('');
+  useEffect(() => {
+    const code = params.get('share');
+    if (!code || received.current) return;
+    received.current = true;
+    try {
+      const c = decodeCharacter(code);
+      const existing = state.characters.find((x) => x.id === c.id);
+      const ok = confirm(existing ? `Replace ${existing.name} on this device with the shared copy (Lv ${c.level})?` : `Add ${c.name} (Lv ${c.level} ${JOBS[c.job].label}) to this device?`);
+      if (ok) {
+        upsertCharacter(c);
+        setActive(c.id);
+        go('characters', { id: c.id });
+      } else go('characters');
+    } catch {
+      setShareMsg('That share link is damaged or incomplete. Send it again.');
+      go('characters');
+    }
+  }, [params, state.characters]);
+
   const selectedId = params.get('id') ?? state.settings.activeCharacterId;
   const c = state.characters.find((x) => x.id === selectedId) ?? state.characters[0] ?? null;
 
@@ -34,7 +55,8 @@ export default function Characters({ params }: PageProps) {
       <div className="page-head">
         <div>
           <h1>Characters</h1>
-          <p>Profiles are stored only in this browser. Export a backup to move them to another device.</p>
+          <p>Profiles are stored only in this browser. Use <strong>Send to another device</strong> to copy one to your phone or PC.</p>
+          {shareMsg && <p className="small" style={{ color: 'var(--warn)' }}>{shareMsg}</p>}
         </div>
         <ImportExport />
       </div>
@@ -117,6 +139,8 @@ function ImportExport() {
 
 function Editor({ c }: { c: Character }) {
   const update = (patch: Partial<Character>) => upsertCharacter({ ...c, ...patch });
+  // Typing a skill or stat by hand means you are off-plan; stop overwriting it.
+  const manual = (patch: Partial<Character>) => update({ ...patch, followPlan: false });
   const job = JOBS[c.job];
   const attacks = attackSkillsForJob(c.job);
   const ap = unspentAp(c.level, c.base);
@@ -134,6 +158,8 @@ function Editor({ c }: { c: Character }) {
       <div className="card">
         <div className="card-head">
           <h2>Profile</h2>
+          <span className="spacer" />
+          <ShareButton c={c} />
           <button
             className="btn small danger"
             onClick={() => {
@@ -175,6 +201,18 @@ function Editor({ c }: { c: Character }) {
           <NumField label="Max MP" value={c.mp} min={0} onChange={(v) => update({ mp: v })} />
         </div>
 
+        <label className={`callout ${c.followPlan ? 'info' : ''}`} style={{ display: 'flex', gap: 8, alignItems: 'flex-start', marginTop: 12, cursor: 'pointer' }}>
+          <input type="checkbox" checked={!!c.followPlan} onChange={(e) => update({ followPlan: e.target.checked })} style={{ marginTop: 3 }} />
+          <span>
+            <strong>I follow the plan</strong>: fill in my skills and stats automatically from my level.
+            <span className="small muted" style={{ display: 'block' }}>
+              {c.followPlan
+                ? 'Just update your level (and EXP). Skills follow the SP build for your main attack; all AP goes into your main stat. Editing a skill or base stat by hand turns this off.'
+                : 'Off: skills and base stats are exactly what you typed.'}
+            </span>
+          </span>
+        </label>
+
         {levelExp > 0 && (
           <p className="small muted" style={{ marginTop: 6 }}>
             {fmt(expRemaining(c.level, c.currentExp ?? 0))} EXP to Lv {c.level + 1} ({fmt(((c.currentExp ?? 0) / levelExp) * 100)}%).
@@ -186,7 +224,7 @@ function Editor({ c }: { c: Character }) {
           <h3 style={{ margin: 0 }}>Stats</h3>
           <span className="spacer" />
           {!atDefault && (
-            <button className="btn small" onClick={() => update({ base: expectedBase(c.job, c.level) })} title="Starting stats plus every AP in your main stat">
+            <button className="btn small" onClick={() => manual({ base: expectedBase(c.job, c.level) })} title="Starting stats plus every AP in your main stat">
               Reset base to typical Lv {c.level}
             </button>
           )}
@@ -205,7 +243,7 @@ function Editor({ c }: { c: Character }) {
                   <td className="small muted">{row === 'base' ? 'Base (AP)' : 'Equipment bonus'}</td>
                   {STATS.map((s) => (
                     <td key={s}>
-                      <NumField label="" value={c[row][s]} min={0} onChange={(v) => update({ [row]: { ...c[row], [s]: Math.max(0, Math.round(v)) } })} />
+                      <NumField label="" value={c[row][s]} min={0} onChange={(v) => (row === 'base' ? manual : update)({ [row]: { ...c[row], [s]: Math.max(0, Math.round(v)) } })} />
                     </td>
                   ))}
                 </tr>
@@ -304,7 +342,7 @@ function SkillEditor({ c, update }: { c: Character; update: (p: Partial<Characte
                   value={c.skills[s.id] ?? 0}
                   min={0}
                   max={s.masterLevel}
-                  onChange={(v) => update({ skills: { ...c.skills, [s.id]: Math.max(0, Math.round(v)) } })}
+                  onChange={(v) => update({ skills: { ...c.skills, [s.id]: Math.max(0, Math.round(v)) }, followPlan: false })}
                 />
               ))}
           </div>
@@ -393,5 +431,37 @@ function Observations({ c, update }: { c: Character; update: (p: Partial<Charact
         </div>
       )}
     </div>
+  );
+}
+
+function ShareButton({ c }: { c: Character }) {
+  const [msg, setMsg] = useState('');
+  const send = async () => {
+    const url = `${location.origin}${location.pathname}#/characters?share=${encodeCharacter(c)}`;
+    const title = `${c.name} (Classic Companion)`;
+    try {
+      // Phone/PC share sheet: email, text, notes, AirDrop... whatever the device offers.
+      if (navigator.share) {
+        await navigator.share({ title, text: `Open on your other device to copy ${c.name} there:`, url });
+        return;
+      }
+    } catch (e) {
+      if ((e as Error).name === 'AbortError') return;
+    }
+    try {
+      await navigator.clipboard.writeText(url);
+      setMsg('Link copied. Paste it into an email or message to yourself.');
+    } catch {
+      prompt('Copy this link and open it on your other device:', url);
+    }
+    setTimeout(() => setMsg(''), 6000);
+  };
+  return (
+    <>
+      {msg && <span className="small muted">{msg}</span>}
+      <button className="btn small" onClick={send} title="Makes a link that copies this character onto another device. Nothing is uploaded.">
+        Send to another device
+      </button>
+    </>
   );
 }

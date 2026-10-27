@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import type { TrainingAssumptions } from '../models/types';
 import { attackSkillsForJob, mapById } from '../data';
-import { rankMaps, evaluateMapFor, mainProvenance, type MapRow } from '../calculators/rank';
+import { rankMaps, evaluateMapFor, mainProvenance, laneLabel, type MapRow } from '../calculators/rank';
 import { DEFAULT_ASSUMPTIONS, setAssumptions } from '../storage/store';
 import { fmt, fmt1, minutes, NumField, ProvenancePill, StatusPill } from '../components/ui';
 import { defaultAttackSkill, NeedCharacter, useActive, type PageProps } from './shared';
@@ -101,6 +101,12 @@ export default function Training({ params }: PageProps) {
                       <td>
                         <span className="muted small">{i + 1}.</span> <strong>{r.map.name}</strong>
                         <div className="small muted">{r.map.street}</div>
+                        {r.lane && (
+                          <div className="small" title="Lanes are inferred from spawn positions in the map file (platform height and gaps).">
+                            <span className="pill accent">{laneLabel(r)}</span>{' '}
+                            <span className="muted">whole map {fmt(r.wholeMap?.netExpPerMin ?? 0)}/min</span>
+                          </div>
+                        )}
                       </td>
                       <td className="small">
                         {r.spawns.map((s, k) => (
@@ -268,6 +274,10 @@ function Assumptions({ a }: { a: TrainingAssumptions }) {
         <NumField label="Uptime %" value={Math.round(a.uptime * 100)} min={5} max={100} onChange={(v) => set({ uptime: v / 100 })} title="Share of time spent attacking (rest is moving, looting, sitting)." />
         <NumField label={<>Respawn (s) <U /></>} value={a.respawnSeconds} min={1} onChange={(v) => set({ respawnSeconds: v })} title="Seconds for a killed monster's spawn point to refill." />
         <NumField label="Reachable spawns %" value={Math.round(a.spawnShare * 100)} min={1} max={100} onChange={(v) => set({ spawnShare: v / 100 })} title="Share of the map's spawn points you can realistically keep clearing (map size, other players)." />
+        <NumField label="Reachable on one lane %" value={Math.round(a.laneSpawnShare * 100)} min={1} max={100} onChange={(v) => set({ laneSpawnShare: v / 100 })} title="Same, when you stay on one platform. Higher than the whole map because you never leave it." />
+        <label className="check" title="Also rank single lanes (platforms). A lane wins when staying on it earns more than roaming the whole map.">
+          <input type="checkbox" checked={a.useLanes !== false} onChange={(e) => set({ useLanes: e.target.checked })} /> Rank single lanes
+        </label>
         <NumField label="Pack size (multi-target)" value={a.packSize} min={1} max={6} onChange={(v) => set({ packSize: v })} title="Monsters typically in range for skills like Thunder Bolt (capped by the skill)." />
         <NumField label="Session (min)" value={a.sessionMinutes} min={1} onChange={(v) => set({ sessionMinutes: v })} />
         <NumField label="Travel (min)" value={a.travelMinutes} min={0} onChange={(v) => set({ travelMinutes: v })} />

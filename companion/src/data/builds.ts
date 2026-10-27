@@ -23,22 +23,6 @@ export interface Build {
 
 export const BUILDS: Build[] = [
   {
-    id: 'mage1-bolt-mp',
-    name: 'Energy Bolt first, then MP',
-    jobs: ['magician', 'wizard_fp', 'wizard_il', 'cleric'],
-    tier: 1,
-    status: 'proposed',
-    summary: 'For Energy Bolt users: max the single-target Energy Bolt, then Magic Guard, then MP passives, with 1 point in Magic Claw. Uses exactly 61 SP.',
-    steps: [
-      { skillId: 2001002, to: 20, why: 'Energy Bolt: your main attack.' },
-      { skillId: 2001000, to: 15, why: 'Magic Guard: up to 80% of damage taken from MP.' },
-      { skillId: 2000000, to: 3, why: 'Prerequisite for Max MP Increase.' },
-      { skillId: 2000001, to: 15, why: 'Max MP Increase: up to +25% Max MP.' },
-      { skillId: 2000000, to: 10, why: 'Improved MP Recovery: more MP from potions.' },
-      { skillId: 2001003, to: 1, why: 'Magic Claw Lv 1, kept as a backup attack.' },
-    ],
-  },
-  {
     id: 'mage1-claw-mp',
     name: 'Magic Claw first, then MP',
     jobs: ['magician', 'wizard_fp', 'wizard_il', 'cleric'],
@@ -52,6 +36,22 @@ export const BUILDS: Build[] = [
       { skillId: 2000000, to: 3, why: 'Prerequisite for Max MP Increase.' },
       { skillId: 2000001, to: 15, why: 'Max MP Increase: up to +25% Max MP.' },
       { skillId: 2000000, to: 10, why: 'Improved MP Recovery: more MP from potions.' },
+    ],
+  },
+  {
+    id: 'mage1-bolt-mp',
+    name: 'Energy Bolt first, then MP',
+    jobs: ['magician', 'wizard_fp', 'wizard_il', 'cleric'],
+    tier: 1,
+    status: 'proposed',
+    summary: 'For Energy Bolt users: max the single-target Energy Bolt, then Magic Guard, then MP passives, with 1 point in Magic Claw. Uses exactly 61 SP.',
+    steps: [
+      { skillId: 2001002, to: 20, why: 'Energy Bolt: your main attack.' },
+      { skillId: 2001000, to: 15, why: 'Magic Guard: up to 80% of damage taken from MP.' },
+      { skillId: 2000000, to: 3, why: 'Prerequisite for Max MP Increase.' },
+      { skillId: 2000001, to: 15, why: 'Max MP Increase: up to +25% Max MP.' },
+      { skillId: 2000000, to: 10, why: 'Improved MP Recovery: more MP from potions.' },
+      { skillId: 2001003, to: 1, why: 'Magic Claw Lv 1, kept as a backup attack.' },
     ],
   },
   {

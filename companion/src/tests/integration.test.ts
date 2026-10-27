@@ -2,13 +2,14 @@ import { describe, expect, it } from 'vitest';
 import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { parseNameResults, NAME_STATUSES } from '../integrations/nameChecker';
-import { migrate, newCharacter, DEFAULT_ASSUMPTIONS, exportJson, importJson, getState } from '../storage/store';
+import { migrate, newCharacter, DEFAULT_ASSUMPTIONS, exportJson, importJson, getState, encodeCharacter, decodeCharacter } from '../storage/store';
 import { resolveAttack } from '../calculators/attack';
 import { monsterById } from '../data';
-import { rankMaps, isPqVariant } from '../calculators/rank';
+import { rankMaps, isPqVariant, bestOnMap, laneLabel } from '../calculators/rank';
+import { MAPS } from '../data';
 import { expForLevel, expRemaining } from '../data/expTable';
 import { expectedBase, startingStats, unspentAp } from '../calculators/ap';
-import { activeBuild } from '../calculators/choose';
+import { activeBuild, applyPlan } from '../calculators/choose';
 import { JOBS } from '../data/rules';
 import { buildsFor } from '../data/builds';
 import { attackSkillsForJob } from '../data';
@@ -130,5 +131,43 @@ describe('profile defaults (EXP, stats, build)', () => {
     expect(s.characters[0].currentExp).toBe(50000);
     expect(s.characters[0].mainSkillId).toBeNull();
     expect('expToNext' in s.characters[0]).toBe(false);
+  });
+});
+
+describe('lanes', () => {
+  it('prefers an Octopus lane over roaming a map full of Stumps and Snails', () => {
+    const map = MAPS.find((m) => m.name === 'Kerning City Construction Site')!;
+    const thief = { ...newCharacter('thief', 'T'), level: 18, mainSkillId: 4001003 };
+    const a = { ...DEFAULT_ASSUMPTIONS, adjustForAccuracy: false };
+    const best = bestOnMap(thief, 4001003, map, a);
+    expect(best.lane).toBeDefined();
+    expect(best.spawns.map((s) => s.name)).toContain('Octopus');
+    expect(best.spawns.map((s) => s.name)).not.toContain('Stump');
+    expect(best.result.netExpPerMin).toBeGreaterThan(best.wholeMap!.netExpPerMin);
+    expect(laneLabel(best)).toMatch(/^Lane \d+ of \d+ from the top/);
+    expect(bestOnMap(thief, 4001003, map, { ...a, useLanes: false }).lane).toBeUndefined();
+  });
+});
+
+describe('follow the plan', () => {
+  it('fills skills and stats from the level, and keeps them in step on level-up', () => {
+    const c = { ...newCharacter('magician', 'P'), level: 26, mainSkillId: 2001002 };
+    const p = applyPlan(c);
+    // Lv 26: 1 + 3 x 16 = 49 SP, Energy Bolt build: EB 20, then Magic Guard
+    expect(p.skills[2001002]).toBe(20);
+    expect(Object.values(p.skills).reduce((t, n) => t + n, 0)).toBe(49);
+    expect(p.base).toEqual(expectedBase('magician', 26));
+    const up = applyPlan({ ...p, level: 27 });
+    expect(Object.values(up.skills).reduce((t, n) => t + n, 0)).toBe(52);
+    expect(applyPlan({ ...p, followPlan: false, level: 40 }).skills).toEqual(p.skills);
+    // A new Thief with nothing learned follows the first Thief build (Lucky Seven), not Double Stab.
+    expect(applyPlan({ ...newCharacter('thief', 'T'), level: 20 }).skills[4001003]).toBe(20);
+  });
+
+  it('a share link round-trips a character', () => {
+    const c = { ...newCharacter('thief', 'Suzukii ★'), level: 33, observations: [] };
+    const back = decodeCharacter(encodeCharacter(c));
+    expect(back).toMatchObject({ id: c.id, name: 'Suzukii ★', level: 33, job: 'thief' });
+    expect(() => decodeCharacter('not-a-real-code')).toThrow();
   });
 });

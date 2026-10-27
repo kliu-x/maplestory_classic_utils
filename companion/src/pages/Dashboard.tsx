@@ -6,7 +6,7 @@ import { href } from '../router';
 import { fmt, minutes, ProvenancePill, Stat, StatusPill } from '../components/ui';
 import { adviceFor, NeedCharacter, useActive, type PageProps } from './shared';
 import { useAppState } from '../storage/store';
-import { mainProvenance } from '../calculators/rank';
+import { laneLabel, mainProvenance } from '../calculators/rank';
 
 export default function Dashboard(_: PageProps) {
   const { character: c, assumptions } = useActive();
@@ -103,6 +103,7 @@ export default function Dashboard(_: PageProps) {
                     <a href={href('training', { map: r.map.id })}>
                       <strong>{r.map.name}</strong>
                     </a>
+                    {r.lane && <div className="small"><span className="pill accent">{laneLabel(r)}</span></div>}
                     <div className="small muted">
                       {fmt(r.result.netExpPerMin)} EXP/min · {fmt(r.result.expPerCast, 1)} EXP/cast · {r.result.limitedBy === 'spawns' ? 'spawn-limited' : 'attack-limited'}
                     </div>
