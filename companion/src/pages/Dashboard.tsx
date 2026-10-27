@@ -5,7 +5,7 @@ import { JOBS, RULES } from '../data/rules';
 import { href } from '../router';
 import { fmt, minutes, ProvenancePill, Stat, StatusPill } from '../components/ui';
 import { adviceFor, NeedCharacter, useActive, type PageProps } from './shared';
-import { useAppState } from '../storage/store';
+import { setActive, useAppState } from '../storage/store';
 import { laneLabel, mainProvenance } from '../calculators/rank';
 
 export default function Dashboard(_: PageProps) {
@@ -21,8 +21,21 @@ export default function Dashboard(_: PageProps) {
     <>
       <div className="page-head">
         <div>
-          <h1>
-            {c.name} <span className="muted">· Lv {c.level} {job.label}</span>
+          <h1 className="char-pick">
+            {all.length > 1 ? (
+              <select value={c.id} onChange={(e) => setActive(e.target.value)} aria-label="Switch character">
+                {all.map((x) => (
+                  <option key={x.id} value={x.id}>
+                    {x.name} · Lv {x.level} {JOBS[x.job].label}
+                  </option>
+                ))}
+              </select>
+            ) : (
+              <>
+                {c.name} <span className="muted">· Lv {c.level} {job.label}</span>
+              </>
+            )}
+            <a className="btn small" href={href('characters', { new: 1 })} title="Add another character">+ New</a>
           </h1>
           <p>
             Main attack: <strong>{skill?.name ?? 'none'}</strong>

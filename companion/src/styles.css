@@ -242,3 +242,7 @@ details summary { cursor: pointer; }
 .stat-table label.field { gap: 0; align-items: center; }
 .stat-table input[type='number'] { width: 60px; text-align: center; }
 .stat-table th, .stat-table td { padding-left: 6px; padding-right: 6px; }
+
+/* Dashboard heading doubles as the character switcher */
+h1.char-pick { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+h1.char-pick select { font: inherit; font-weight: 700; color: var(--text); background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 2px 8px; max-width: 100%; cursor: pointer; }
