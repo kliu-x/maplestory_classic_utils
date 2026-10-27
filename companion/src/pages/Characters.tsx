@@ -9,6 +9,7 @@ import { EXP_TABLE_SOURCE, expForLevel, expRemaining } from '../data/expTable';
 import { decodeCharacter, deleteCharacter, encodeCharacter, exportJson, importJson, newCharacter, newObservationId, setActive, upsertCharacter, useAppState } from '../storage/store';
 import { go, href } from '../router';
 import { Empty, NumField, fmt, StatusPill } from '../components/ui';
+import { QuickFill } from '../components/QuickFill';
 import type { PageProps } from './shared';
 
 const STATS: StatKey[] = ['str', 'dex', 'int', 'luk'];
@@ -157,6 +158,7 @@ function Editor({ c }: { c: Character }) {
 
   return (
     <div className="stack" style={{ gap: 16 }}>
+      <QuickFill c={c} save={upsertCharacter} />
       <div className="card">
         <div className="card-head">
           <h2>Profile</h2>

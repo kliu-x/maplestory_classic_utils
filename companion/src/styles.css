@@ -246,3 +246,13 @@ details summary { cursor: pointer; }
 /* Dashboard heading doubles as the character switcher */
 h1.char-pick { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 h1.char-pick select { font: inherit; font-weight: 700; color: var(--text); background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 2px 8px; max-width: 100%; cursor: pointer; }
+
+/* Quick fill: schematic of a good screenshot */
+.shot-example { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 12px; align-items: start; }
+.shot-win { border: 1px solid var(--border); border-radius: 6px; background: var(--surface-2); font-size: 12px; padding: 6px; }
+.shot-title { font-weight: 700; letter-spacing: 0.04em; margin-bottom: 4px; }
+.shot-line, .shot-skill { display: flex; justify-content: space-between; gap: 8px; padding: 2px 0; }
+.shot-line { justify-content: flex-start; }
+.shot-label { display: inline-block; min-width: 48px; padding: 0 4px; border-radius: 3px; background: #d9568f; color: #fff; font-weight: 700; }
+.shot-label.g { background: #79b84a; }
+.shot-skill { border-bottom: 1px dashed var(--border); }
