@@ -1,3 +1,4 @@
+import { expRemaining } from '../data/expTable';
 import { useMemo } from 'react';
 import { skillById } from '../data';
 import { JOBS, RULES } from '../data/rules';
@@ -36,7 +37,7 @@ export default function Dashboard(_: PageProps) {
 
       <div className="grid grid-3" style={{ marginBottom: 16 }}>
         <Stat label="Best EXP / min (estimate)" value={best ? fmt(best.result.netExpPerMin) : '—'} sub={best ? best.map.name : 'no killable map'} />
-        <Stat label="Time to next level" value={best ? minutes(best.result.minutesToLevel) : '—'} sub={c.expToNext ? `${fmt(c.expToNext)} EXP to go` : 'set "EXP to next level" in profile'} />
+        <Stat label="Time to next level" value={best ? minutes(best.result.minutesToLevel) : '—'} sub={`${fmt(expRemaining(c.level, c.currentExp ?? 0))} EXP to go`} />
         <Stat label="Unspent AP (expected)" value={advice.unspentAp >= 0 ? fmt(advice.unspentAp) : '?'} sub={`based on ${RULES.apPerLevel.value} AP/level (community)`} />
       </div>
 

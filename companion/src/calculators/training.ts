@@ -81,7 +81,8 @@ export interface MapEval {
  * Evaluate a map with one or more monster species. Kills are assumed to follow the
  * spawn mix (you attack whatever is nearby), so per-kill time and EXP are spawn-weighted.
  */
-export function evaluateMap(spawns: SpawnInput[], a: TrainingAssumptions, expToNext?: number): MapEval {
+/** `expToNext` = EXP still needed this level; `levelExp` = the whole level's requirement (death penalty base). */
+export function evaluateMap(spawns: SpawnInput[], a: TrainingAssumptions, expToNext?: number, levelExp = expToNext): MapEval {
   const notes: string[] = [];
   const killable = spawns.filter((s) => s.eval.killsPerCast > 0 && s.spawnPoints > 0);
   const totalPoints = killable.reduce((t, s) => t + s.spawnPoints, 0);
@@ -124,8 +125,8 @@ export function evaluateMap(spawns: SpawnInput[], a: TrainingAssumptions, expToN
   const travelFactor = session / (session + Math.max(0, a.travelMinutes));
   let deathExpPerMin = 0;
   if (a.deathsPerHour > 0) {
-    if (expToNext && expToNext > 0) deathExpPerMin = (a.deathsPerHour * (a.deathExpLossPct / 100) * expToNext) / 60;
-    else notes.push('Death penalty ignored: set "EXP to next level" on the character.');
+    if (levelExp && levelExp > 0) deathExpPerMin = (a.deathsPerHour * (a.deathExpLossPct / 100) * levelExp) / 60;
+    else notes.push('Death penalty ignored: no EXP requirement for this level.');
   }
   const netExpPerMin = Math.max(0, grossExpPerMin * travelFactor - deathExpPerMin);
 

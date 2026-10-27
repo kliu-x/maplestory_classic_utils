@@ -1,10 +1,11 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import type { Character, DamageObservation, JobId, StatKey } from '../models/types';
+import type { Character, DamageObservation, JobId, StatKey, Stats } from '../models/types';
 import { JOBS, RULES, jobTierOfGameJob } from '../data/rules';
 import { MONSTERS, attackSkillsForJob, monsterById, skillsForJob } from '../data';
 import { buildsFor } from '../data/builds';
 import { spPools, spentByTier, validateAllocation } from '../calculators/sp';
-import { unspentAp } from '../calculators/ap';
+import { expectedBase, startingStats, unspentAp } from '../calculators/ap';
+import { EXP_TABLE_SOURCE, expForLevel, expRemaining } from '../data/expTable';
 import { deleteCharacter, exportJson, importJson, newCharacter, newObservationId, setActive, upsertCharacter, useAppState } from '../storage/store';
 import { go, href } from '../router';
 import { Empty, NumField, fmt, StatusPill } from '../components/ui';
@@ -119,6 +120,14 @@ function Editor({ c }: { c: Character }) {
   const job = JOBS[c.job];
   const attacks = attackSkillsForJob(c.job);
   const ap = unspentAp(c.level, c.base);
+  const levelExp = expForLevel(c.level);
+  const sameStats = (a: Stats, b: Stats) => STATS.every((s) => a[s] === b[s]);
+  // Base stats still at the default follow level/job changes; edited ones are left alone.
+  const atDefault = sameStats(c.base, expectedBase(c.job, c.level));
+  const setLevel = (v: number) => {
+    const level = Math.max(1, Math.min(RULES.maxLevel.value, Math.round(v)));
+    update({ level, ...(atDefault ? { base: expectedBase(c.job, level) } : {}) });
+  };
 
   return (
     <div className="stack" style={{ gap: 16 }}>
@@ -141,7 +150,10 @@ function Editor({ c }: { c: Character }) {
           </label>
           <label className="field" style={{ gridColumn: 'span 2' }}>
             Job
-            <select value={c.job} onChange={(e) => update({ job: e.target.value as JobId, buildId: undefined, mainSkillId: null })}>
+            <select value={c.job} onChange={(e) => {
+              const j = e.target.value as JobId;
+              update({ job: j, buildId: undefined, mainSkillId: null, ...(atDefault ? { base: expectedBase(j, c.level) } : {}) });
+            }}>
               {JOB_IDS.map((j) => (
                 <option key={j} value={j}>
                   {JOBS[j].label}
@@ -150,19 +162,41 @@ function Editor({ c }: { c: Character }) {
               ))}
             </select>
           </label>
-          <NumField label="Level" value={c.level} min={1} max={RULES.maxLevel.value} onChange={(v) => update({ level: Math.max(1, Math.min(RULES.maxLevel.value, Math.round(v))) })} />
-          <NumField label="EXP to next level" value={c.expToNext ?? 0} min={0} onChange={(v) => update({ expToNext: v || undefined })} title="Copy from the in-game EXP bar. Used for time-to-level and death penalty." />
+          <NumField label="Level" value={c.level} min={1} max={RULES.maxLevel.value} onChange={setLevel} />
+          <NumField
+            label={levelExp ? `Current EXP (of ${fmt(levelExp)})` : 'Current EXP'}
+            value={c.currentExp ?? 0}
+            min={0}
+            max={levelExp || undefined}
+            onChange={(v) => update({ currentExp: Math.max(0, Math.round(v)) })}
+            title="The EXP number on your in-game EXP bar. EXP needed per level comes from a community table."
+          />
           <NumField label="Max HP" value={c.hp} min={0} onChange={(v) => update({ hp: v })} />
           <NumField label="Max MP" value={c.mp} min={0} onChange={(v) => update({ mp: v })} />
         </div>
 
-        <h3 style={{ marginTop: 16 }}>Stats</h3>
-        <div className="table-wrap">
-          <table>
+        {levelExp > 0 && (
+          <p className="small muted" style={{ marginTop: 6 }}>
+            {fmt(expRemaining(c.level, c.currentExp ?? 0))} EXP to Lv {c.level + 1} ({fmt(((c.currentExp ?? 0) / levelExp) * 100)}%).
+            EXP per level: <a href={EXP_TABLE_SOURCE.source_url} target="_blank" rel="noreferrer">community table</a> <StatusPill status="community_reported" />
+          </p>
+        )}
+
+        <div className="row" style={{ marginTop: 16 }}>
+          <h3 style={{ margin: 0 }}>Stats</h3>
+          <span className="spacer" />
+          {!atDefault && (
+            <button className="btn small" onClick={() => update({ base: expectedBase(c.job, c.level) })} title="Starting stats plus every AP in your main stat">
+              Reset base to typical Lv {c.level}
+            </button>
+          )}
+        </div>
+        <div className="table-wrap" style={{ marginTop: 6 }}>
+          <table className="stat-table">
             <thead>
               <tr>
                 <th></th>
-                {STATS.map((s) => <th key={s} className="num">{s.toUpperCase()}{s === job.primaryStat ? ' ★' : ''}</th>)}
+                {STATS.map((s) => <th key={s}>{s.toUpperCase()}{s === job.primaryStat ? ' ★' : ''}</th>)}
               </tr>
             </thead>
             <tbody>
@@ -170,15 +204,15 @@ function Editor({ c }: { c: Character }) {
                 <tr key={row}>
                   <td className="small muted">{row === 'base' ? 'Base (AP)' : 'Equipment bonus'}</td>
                   {STATS.map((s) => (
-                    <td key={s} className="num">
-                      <NumField label="" value={c[row][s]} min={0} width={80} onChange={(v) => update({ [row]: { ...c[row], [s]: v } })} />
+                    <td key={s}>
+                      <NumField label="" value={c[row][s]} min={0} onChange={(v) => update({ [row]: { ...c[row], [s]: Math.max(0, Math.round(v)) } })} />
                     </td>
                   ))}
                 </tr>
               ))}
               <tr>
                 <td className="small muted">Total</td>
-                {STATS.map((s) => <td key={s} className="num"><strong>{c.base[s] + c.equip[s]}</strong></td>)}
+                {STATS.map((s) => <td key={s}><strong>{c.base[s] + c.equip[s]}</strong></td>)}
               </tr>
             </tbody>
           </table>
@@ -186,7 +220,8 @@ function Editor({ c }: { c: Character }) {
         <p className="small muted" style={{ marginTop: 6 }}>
           {ap > 0 && <>Expected unspent AP: <strong>{ap}</strong>. </>}
           {ap < 0 && <span style={{ color: 'var(--warn)' }}>Base stats are {-ap} higher than expected for Lv {c.level}. Check that equipment bonuses are not counted as base. </span>}
-          Expected total assumes starting stats summing to 25 and {RULES.apPerLevel.value} AP/level <StatusPill status="community_reported" />.
+          Base stats default to starting stats ({STATS.map((s) => startingStats(c.job)[s]).join('/')} STR/DEX/INT/LUK) plus every AP in {job.primaryStat.toUpperCase()}, and follow your level until you edit them.
+          Starting stats 12/5/4/4 (total 25) and {RULES.apPerLevel.value} AP/level <StatusPill status="community_reported" />.
         </p>
 
         <h3 style={{ marginTop: 16 }}>Weapon &amp; attack</h3>
@@ -208,8 +243,8 @@ function Editor({ c }: { c: Character }) {
           )}
           <label className="field" style={{ gridColumn: 'span 2' }}>
             Main attack skill
-            <select value={c.mainSkillId ?? ''} onChange={(e) => update({ mainSkillId: e.target.value ? Number(e.target.value) : null })}>
-              <option value="">(auto)</option>
+            <select value={c.mainSkillId ?? ''} onChange={(e) => update({ mainSkillId: e.target.value ? Number(e.target.value) : null, buildId: undefined })}>
+              <option value="">(auto: highest-level attack)</option>
               {attacks.map((a) => <option key={a.skill.id} value={a.skill.id}>{a.skill.name}</option>)}
             </select>
           </label>
@@ -254,7 +289,7 @@ function SkillEditor({ c, update }: { c: Character; update: (p: Partial<Characte
                 value={buildsFor(c.job, t as 1 | 2).some((b) => b.id === c.buildId) ? c.buildId : ''}
                 onChange={(e) => update({ buildId: e.target.value || undefined })}
               >
-                <option value="">(default)</option>
+                <option value="">(match main attack)</option>
                 {buildsFor(c.job, t as 1 | 2).map((b) => <option key={b.id} value={b.id}>{b.name}</option>)}
               </select>
             </label>

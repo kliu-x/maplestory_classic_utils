@@ -2,6 +2,8 @@
 
 import { useSyncExternalStore } from 'react';
 import type { AppState, Character, JobId, TrainingAssumptions } from '../models/types';
+import { expectedBase } from '../calculators/ap';
+import { expForLevel } from '../data/expTable';
 
 const KEY = 'mcw-companion:v1';
 
@@ -39,7 +41,8 @@ export function newCharacter(job: JobId = 'magician', name = 'New character'): C
     name,
     job,
     level: 10,
-    base: mage ? { str: 4, dex: 4, int: 57, luk: 5 } : thief ? { str: 4, dex: 25, int: 4, luk: 37 } : { str: 47, dex: 15, int: 4, luk: 4 },
+    base: expectedBase(job, 10),
+    currentExp: 0,
     equip: { str: 0, dex: 0, int: 0, luk: 0 },
     hp: 0,
     mp: 0,
@@ -50,7 +53,7 @@ export function newCharacter(job: JobId = 'magician', name = 'New character'): C
     starAttack: thief ? 15 : 0,
     skills: {},
     statGoals: {},
-    mainSkillId: mage ? 2001003 : thief ? 4001003 : null,
+    mainSkillId: null, // auto: highest-level attack skill
     observations: [],
     favorites: [],
     completedQuests: [],
@@ -62,6 +65,13 @@ function defaultState(): AppState {
   return { version: 1, characters: [], settings: { activeCharacterId: null, assumptions: { ...DEFAULT_ASSUMPTIONS }, recentMonsters: [] } };
 }
 
+// Versions before 2026-10-27 pre-set Magic Claw / Lucky Seven as every character's main
+// attack. If another skill is levelled higher, that was never the player's choice.
+const OLD_DEFAULT_MAIN = new Set([2001003, 4001003]);
+const outlevelled = (c: Character) =>
+  Object.entries(c.skills).some(([id, lv]) => Number(id) !== c.mainSkillId && lv > (c.skills[c.mainSkillId ?? 0] ?? 0) && ATTACK_IDS.has(Number(id)));
+const ATTACK_IDS = new Set([2001002, 2001003, 4001003]);
+
 /** Fill in fields added after the data was saved, and drop anything malformed. */
 export function migrate(raw: unknown): AppState {
   const base = defaultState();
@@ -71,7 +81,9 @@ export function migrate(raw: unknown): AppState {
   const template = newCharacter();
   const characters = chars
     .filter((c): c is Character => !!c && typeof c === 'object' && typeof (c as Character).id === 'string')
-    .map((c) => ({ ...template, ...c, base: { ...template.base, ...c.base }, equip: { ...template.equip, ...c.equip }, statGoals: c.statGoals ?? {}, observations: c.observations ?? [], skills: c.skills ?? {} }));
+    .map((c) => ({ ...template, ...c, base: { ...template.base, ...c.base }, equip: { ...template.equip, ...c.equip }, statGoals: c.statGoals ?? {}, observations: c.observations ?? [], skills: c.skills ?? {} }))
+    .map(({ expToNext, ...c }) => ({ ...c, currentExp: expToNext ? Math.max(0, expForLevel(c.level) - expToNext) : c.currentExp ?? 0 }))
+    .map((c) => (OLD_DEFAULT_MAIN.has(c.mainSkillId ?? 0) && outlevelled(c) ? { ...c, mainSkillId: null } : c));
   const settings = { ...base.settings, ...(r.settings ?? {}) };
   settings.assumptions = { ...DEFAULT_ASSUMPTIONS, ...(r.settings?.assumptions ?? {}) };
   if (!characters.some((c) => c.id === settings.activeCharacterId)) settings.activeCharacterId = characters[0]?.id ?? null;

@@ -1,3 +1,4 @@
+import { expForLevel, expRemaining } from '../data/expTable';
 import type { Character, GameMap, Monster, TrainingAssumptions } from '../models/types';
 import { MAPS, monsterById } from '../data';
 import { resolveAttack } from './attack';
@@ -32,7 +33,7 @@ export function evaluateMapFor(c: Character, skillId: number | null, map: GameMa
     }
     spawns.push({ mobId: m.id, name: m.name, exp: m.exp, spawnPoints: s.count, eval: row.eval, atk: row.atk });
   }
-  return { map, spawns, result: evaluateMap(spawns, a, c.expToNext) };
+  return { map, spawns, result: evaluateMap(spawns, a, expRemaining(c.level, c.currentExp ?? 0), expForLevel(c.level)) };
 }
 
 /**

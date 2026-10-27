@@ -1,13 +1,16 @@
 import type { Character, TrainingAssumptions } from '../models/types';
-import { buildById, buildsFor, type Build } from '../data/builds';
+import type { Build } from '../data/builds';
+import { activeBuild, defaultAttackSkill } from '../calculators/choose';
 import { JOBS, RULES } from '../data/rules';
-import { attackSkillsForJob, skillsForJob } from '../data';
+import { skillsForJob } from '../data';
 import { nextSp, type SpSuggestion } from '../calculators/planner';
 import { spPools, spentByTier, validateAllocation, type AllocationIssue } from '../calculators/sp';
 import { suggestAp, unspentAp, type ApSuggestion } from '../calculators/ap';
 import { rankMaps, type MapRow } from '../calculators/rank';
 import { useAppState } from '../storage/store';
 import { href } from '../router';
+
+export { activeBuild, defaultAttackSkill };
 
 export type PageProps = { params: URLSearchParams };
 
@@ -33,21 +36,6 @@ export function spendingTier(c: Character): 1 | 2 | null {
   const t = JOBS[c.job].tier;
   if (t === 0) return null;
   return t === 2 ? 2 : 1;
-}
-
-export function activeBuild(c: Character, tier: 1 | 2): Build | null {
-  const chosen = c.buildId ? buildById.get(c.buildId) : undefined;
-  if (chosen && chosen.tier === tier && chosen.jobs.includes(c.job)) return chosen;
-  // A 2nd-job character may still have unspent 1st-job SP; pick per tier.
-  return buildsFor(c.job, tier)[0] ?? null;
-}
-
-export function defaultAttackSkill(c: Character): number | null {
-  const skills = attackSkillsForJob(c.job);
-  if (c.mainSkillId && skills.some((s) => s.skill.id === c.mainSkillId)) return c.mainSkillId;
-  // Highest-level learned attack, else the first one.
-  const learned = skills.filter((s) => (c.skills[s.skill.id] ?? 0) > 0).sort((a, b) => (c.skills[b.skill.id] ?? 0) - (c.skills[a.skill.id] ?? 0));
-  return (learned[0] ?? skills[0])?.skill.id ?? null;
 }
 
 export interface Advice {

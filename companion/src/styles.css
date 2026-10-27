@@ -235,3 +235,10 @@ tbody tr.selected { background: var(--accent-soft); }
 details summary { cursor: pointer; }
 .star { cursor: pointer; border: 0; background: none; font-size: 15px; padding: 0 2px; color: var(--muted); }
 .star.on { color: #f59f00; }
+
+/* stats grid on the Characters page: columns centred so headers line up with inputs */
+.stat-table th, .stat-table td { text-align: center; vertical-align: middle; }
+.stat-table th:first-child, .stat-table td:first-child { text-align: left; }
+.stat-table label.field { gap: 0; align-items: center; }
+.stat-table input[type='number'] { width: 60px; text-align: center; }
+.stat-table th, .stat-table td { padding-left: 6px; padding-right: 6px; }

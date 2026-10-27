@@ -6,6 +6,13 @@ import { migrate, newCharacter, DEFAULT_ASSUMPTIONS, exportJson, importJson, get
 import { resolveAttack } from '../calculators/attack';
 import { monsterById } from '../data';
 import { rankMaps, isPqVariant } from '../calculators/rank';
+import { expForLevel, expRemaining } from '../data/expTable';
+import { expectedBase, startingStats, unspentAp } from '../calculators/ap';
+import { activeBuild } from '../calculators/choose';
+import { JOBS } from '../data/rules';
+import { buildsFor } from '../data/builds';
+import { attackSkillsForJob } from '../data';
+import type { JobId } from '../models/types';
 
 describe('name checker adapter', () => {
   it('never offers an "available" label for automated statuses', () => {
@@ -79,5 +86,49 @@ describe('attack resolution', () => {
     expect(rows.length).toBeGreaterThan(5);
     for (const r of rows) expect(r.spawns.some((s) => !isPqVariant(s.mobId))).toBe(true);
     for (let i = 1; i < rows.length; i++) expect(rows[i - 1].result.netExpPerMin).toBeGreaterThanOrEqual(rows[i].result.netExpPerMin);
+  });
+});
+
+describe('profile defaults (EXP, stats, build)', () => {
+  it('EXP table: remaining = level requirement - current EXP', () => {
+    expect(expForLevel(1)).toBe(15);
+    expect(expForLevel(26)).toBe(54900);
+    expect(expForLevel(100)).toBe(0);
+    expect(expRemaining(26, 20000)).toBe(34900);
+    expect(expRemaining(26, 999999)).toBe(0);
+  });
+
+  it('expected base stats: 12/5/4/4 start plus 5 AP per level into the main stat', () => {
+    expect(startingStats('magician')).toEqual({ str: 4, dex: 4, int: 12, luk: 5 });
+    expect(expectedBase('magician', 26)).toEqual({ str: 4, dex: 4, int: 137, luk: 5 });
+    expect(expectedBase('thief', 10)).toEqual({ str: 4, dex: 5, int: 4, luk: 57 });
+    expect(unspentAp(26, expectedBase('magician', 26))).toBe(0);
+  });
+
+  it('default SP build follows the attack the character levels', () => {
+    const bolt = { ...newCharacter('magician', 'B'), level: 26, skills: { 2001002: 15, 2001003: 0 } };
+    expect(activeBuild(bolt, 1)?.id).toBe('mage1-bolt-mp');
+    const claw = { ...bolt, skills: { 2001002: 1, 2001003: 12 } };
+    expect(activeBuild(claw, 1)?.id).toBe('mage1-claw-mp');
+  });
+
+  it('for every job, choosing a main attack picks a build that maxes it when one exists', () => {
+    for (const job of Object.keys(JOBS) as JobId[]) {
+      const tiers = JOBS[job].tier === 2 ? [1, 2] as const : JOBS[job].tier === 1 ? [1] as const : [];
+      for (const { skill } of attackSkillsForJob(job)) {
+        const c = { ...newCharacter(job, 'X'), level: 40, mainSkillId: skill.id };
+        for (const t of tiers) {
+          const maxing = buildsFor(job, t).filter((b) => b.steps.some((s) => s.skillId === skill.id && s.to >= 20));
+          if (maxing.length) expect(maxing).toContain(activeBuild(c, t));
+        }
+      }
+    }
+  });
+
+  it('migrate converts old "EXP to next level" and drops the old pre-set Magic Claw main skill', () => {
+    const s = migrate({ characters: [{ id: 'k', name: 'Kayloo', job: 'magician', level: 26, expToNext: 4900, mainSkillId: 2001003, skills: { 2001002: 20, 2001003: 1 } }] });
+    expect(s.characters[0].currentExp).toBe(50000);
+    expect(s.characters[0].mainSkillId).toBeNull();
+    expect('expToNext' in s.characters[0]).toBe(false);
   });
 });

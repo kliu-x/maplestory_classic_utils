@@ -33,7 +33,7 @@ export const JOBS: Record<JobId, JobInfo> = {
   magician: { id: 'magician', label: 'Magician', family: 'Magician', tier: 1, gameJobIds: [200], primaryStat: 'int', secondaryStat: 'luk', damageType: 'magic', plannerSupported: true },
   wizard_fp: { id: 'wizard_fp', label: 'Wizard (Fire/Poison)', family: 'Magician', tier: 2, gameJobIds: [200, 210], primaryStat: 'int', secondaryStat: 'luk', damageType: 'magic', plannerSupported: true },
   wizard_il: { id: 'wizard_il', label: 'Wizard (Ice/Lightning)', family: 'Magician', tier: 2, gameJobIds: [200, 220], primaryStat: 'int', secondaryStat: 'luk', damageType: 'magic', plannerSupported: true },
-  cleric: { id: 'cleric', label: 'Cleric', family: 'Magician', tier: 2, gameJobIds: [200, 230], primaryStat: 'int', secondaryStat: 'luk', damageType: 'magic', plannerSupported: false },
+  cleric: { id: 'cleric', label: 'Cleric', family: 'Magician', tier: 2, gameJobIds: [200, 230], primaryStat: 'int', secondaryStat: 'luk', damageType: 'magic', plannerSupported: true },
   thief: { id: 'thief', label: 'Thief', family: 'Thief', tier: 1, gameJobIds: [400], primaryStat: 'luk', secondaryStat: 'dex', damageType: 'physical', plannerSupported: true },
   assassin: { id: 'assassin', label: 'Assassin', family: 'Thief', tier: 2, gameJobIds: [400, 410], primaryStat: 'luk', secondaryStat: 'dex', damageType: 'physical', plannerSupported: true },
   bandit: { id: 'bandit', label: 'Bandit', family: 'Thief', tier: 2, gameJobIds: [400, 420], primaryStat: 'luk', secondaryStat: 'dex', damageType: 'physical', plannerSupported: false },

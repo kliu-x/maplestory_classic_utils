@@ -153,7 +153,9 @@ export interface Character {
   magicAttack: number; // M.ATT from gear (wand/staff etc.)
   throwingStar: string;
   starAttack: number;
-  expToNext?: number; // copied from the in-game EXP bar, used for death-penalty estimates
+  currentExp?: number; // EXP into the current level, as shown in game
+  /** @deprecated replaced by currentExp; converted on load. */
+  expToNext?: number;
   skills: Record<number, number>; // skillId -> level
   statGoals: Partial<Stats>; // total stat requirements to reach (e.g. next claw's DEX), equipment included
   buildId?: string;
