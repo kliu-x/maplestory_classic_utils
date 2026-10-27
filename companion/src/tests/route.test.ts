@@ -61,3 +61,12 @@ describe('Mark of the Beta chain', () => {
     expect(QUEST_NOTES[600007].sources.every((s) => s.verification_status === 'conflicting')).toBe(true);
   });
 });
+
+describe('quest search', () => {
+  it('finds a quest by the item, NPC or monster in it', async () => {
+    const { questSearchText } = await import('../data');
+    const hits = (t: string) => QUESTS.filter((q) => questSearchText(q).includes(t)).map((q) => q.name);
+    expect(hits('stuffed drake')).toContain("Transporting Drake's Skull");
+    expect(hits('betty')).toContain('Research on Plant Fossils');
+  });
+});

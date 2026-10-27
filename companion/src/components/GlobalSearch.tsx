@@ -1,5 +1,5 @@
 import { useMemo, useRef, useState } from 'react';
-import { MAPS, MONSTERS, NPCS, QUESTS, SKILLS, mapById } from '../data';
+import { MAPS, MONSTERS, NPCS, QUESTS, SKILLS, mapById, questSearchText } from '../data';
 import { go, type PageId } from '../router';
 
 interface Hit {
@@ -22,7 +22,7 @@ const INDEX: (Hit & { key: string })[] = [
       return { kind: 'NPC' as const, label: n.name, sub: m ? `${m.name} · ${m.street}` : `map ${mapId}`, page: 'maps' as const, params: { id: mapId, npc: n.id }, key: n.name.toLowerCase() };
     }),
   ),
-  ...QUESTS.map((q) => ({ kind: 'Quest' as const, label: q.name, sub: `Lv ${q.minLevel}+ · ${q.exp.toLocaleString()} EXP · ${q.area}`, page: 'quests' as const, params: { id: q.id }, key: `${q.name} ${q.area}`.toLowerCase() })),
+  ...QUESTS.map((q) => ({ kind: 'Quest' as const, label: q.name, sub: `Lv ${q.minLevel}+ · ${q.exp.toLocaleString()} EXP · ${q.area}`, page: 'quests' as const, params: { id: q.id }, key: questSearchText(q) })),
 ];
 
 export function GlobalSearch() {

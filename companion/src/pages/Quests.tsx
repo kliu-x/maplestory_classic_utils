@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { QUESTS, npcById } from '../data';
+import { QUESTS, npcById, questSearchText } from '../data';
 import { QuestDetail } from '../components/QuestDetail';
 import { href } from '../router';
 import { SOURCES } from '../data/sources';
@@ -25,7 +25,7 @@ export default function Quests({ params }: PageProps) {
   const list = useMemo(() => {
     const t = q.trim().toLowerCase();
     const r = QUESTS.filter(
-      (x) => (!t || x.name.toLowerCase().includes(t)) && (!area || x.area === area) && x.minLevel <= maxLv && x.exp >= minExp && (!hideDone || !done.has(x.id)) && (!repeatOnly || x.repeatable),
+      (x) => (!t || questSearchText(x).includes(t)) && (!area || x.area === area) && x.minLevel <= maxLv && x.exp >= minExp && (!hideDone || !done.has(x.id)) && (!repeatOnly || x.repeatable),
     );
     return r.sort((a, b) => (sort === 'exp' ? b.exp - a.exp : a.minLevel - b.minLevel || b.exp - a.exp));
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -75,7 +75,7 @@ export default function Quests({ params }: PageProps) {
           <div className="row" style={{ alignItems: 'end' }}>
             <label className="field" style={{ flex: '1 1 180px' }}>
               Search
-              <input type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Quest name" />
+              <input type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Quest, NPC, monster or item" />
             </label>
             <label className="field">
               Area

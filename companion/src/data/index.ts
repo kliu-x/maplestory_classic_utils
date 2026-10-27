@@ -22,6 +22,20 @@ export const skillById = new Map(SKILLS.map((s) => [s.id, s]));
 export const npcById = new Map(NPCS.map((n) => [n.id, n]));
 export const itemById = new Map(ITEMS.map((i) => [i.id, i]));
 
+/** Everything a player might remember a quest by: its name, area, NPCs, monsters and items. */
+export function questSearchText(q: Quest): string {
+  return [
+    q.name,
+    q.area,
+    q.npcId != null ? npcById.get(q.npcId)?.name : '',
+    q.endNpcId != null ? npcById.get(q.endNpcId)?.name : '',
+    ...q.killMobs.map((k) => monsterById.get(k.mobId)?.name ?? ''),
+    ...q.collectItems.map((i) => itemById.get(i.itemId)?.name ?? ''),
+  ]
+    .join(' ')
+    .toLowerCase();
+}
+
 /** Images served by maplestory.io for Classic World (loaded only when shown). */
 export const IMG = {
   minimap: (mapId: number) => `https://maplestory.io/api/MCW/1/map/${mapId}/minimap`,
