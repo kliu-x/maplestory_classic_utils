@@ -12,7 +12,7 @@ export default function Training({ params }: PageProps) {
   const { character: c, assumptions: a } = useActive();
   const [skillId, setSkillId] = useState<number | null>(null);
   const [levelWindow, setLevelWindow] = useState(15);
-  const [limit, setLimit] = useState(10);
+  const [limit, setLimit] = useState(5);
   const [open, setOpen] = useState<number | null>(params.get('map') ? Number(params.get('map')) : null);
 
   const sid = skillId ?? (c ? defaultAttackSkill(c) : null);
@@ -69,10 +69,10 @@ export default function Training({ params }: PageProps) {
                 <button className="rank-row" onClick={() => setOpen(isOpen ? null : r.map.id)} aria-expanded={isOpen}>
                   <span className="rank-n">{i + 1}</span>
                   <span className="rank-main">
-                    <strong>{r.map.name}</strong> <span className="small muted">{r.map.street}</span>
-                    {r.lane && <span className="pill accent" style={{ marginLeft: 6 }} title="Stay on this platform: it beats roaming the whole map.">{laneLabel(r)}</span>}
+                    <strong title={r.map.street}>{r.map.name}</strong>
+                    {r.lane && <span className="small muted" title="Stay on this platform: it beats roaming the whole map.">{laneLabel(r)}</span>}
                     <span className="rank-mobs">
-                      {r.spawns.map((sp) => {
+                      {r.spawns.filter((sp) => sp.eval.killsPerCast > 0).map((sp) => {
                         const hits = sp.eval.kill.expected;
                         return (
                           <span key={sp.mobId} className={`mob-chip ${sp.eval.killsPerCast > 0 ? '' : 'off'}`} title={sp.eval.killsPerCast > 0 ? `${sp.spawnPoints} spawn points, ${sp.exp} EXP each` : "Can't be killed with this attack"}>
@@ -81,11 +81,9 @@ export default function Training({ params }: PageProps) {
                         );
                       })}
                     </span>
-                    <span className="small muted">Level up in {minutes(r.result.minutesToLevel)}</span>
                   </span>
                   <span className="rank-rate">
-                    <span className="value">{fmt(r.result.netExpPerMin)}</span>
-                    <span className="small muted">EXP/min</span>
+                    <span className="value">{fmt(r.result.netExpPerMin)}<span className="small muted">/min</span></span>
                     {mine.length > 0 && <span className="pill verified" title="Your best recorded session here">you: {fmt(Math.max(...mine))}</span>}
                   </span>
                 </button>
@@ -101,7 +99,7 @@ export default function Training({ params }: PageProps) {
         {rows.length === 0 && <div className="empty">No killable maps in range. Check your attack skill and its level.</div>}
         {rows.length > limit && (
           <div style={{ textAlign: 'center' }}>
-            <button className="btn" onClick={() => setLimit((l) => l + 10)}>Show more maps</button>
+            <button className="btn" onClick={() => setLimit((l) => l + 5)}>Show more maps</button>
           </div>
         )}
         <p className="small muted" style={{ margin: '8px 0 0' }}>
