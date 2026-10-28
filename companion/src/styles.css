@@ -294,3 +294,11 @@ h1.char-pick select { font: inherit; font-weight: 700; color: var(--text); backg
 .icon-row.dim { opacity: 0.45; }
 .rec-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: #e03131; margin-right: 4px; animation: rec 1.2s infinite; vertical-align: middle; }
 @keyframes rec { 50% { opacity: 0.25; } }
+
+/* Your sessions: one readable row per session, EXP/min on the right */
+.session-list { list-style: none; margin: 0 0 8px; padding: 0; display: grid; gap: 8px; }
+.session-item { display: flex; gap: 12px; align-items: center; padding: 10px 12px; border-radius: 8px; background: var(--surface-2); }
+.session-main { flex: 1; min-width: 0; display: grid; gap: 2px; }
+.session-facts { color: var(--text); opacity: 0.85; }
+.session-rate { text-align: right; }
+.session-rate .value { font-size: 1.4rem; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1.1; }
