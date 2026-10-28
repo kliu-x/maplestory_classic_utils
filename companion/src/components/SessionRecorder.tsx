@@ -8,6 +8,7 @@ import { expRemaining } from '../data/expTable';
 import { upsertCharacter } from '../storage/store';
 import { fmt, minutes } from './ui';
 import { WindowPicker, type Picker } from './QuickFill';
+import { MapPicker } from './MapPicker';
 
 // "Record a session": share the MapleStory window, box the status bar once, and the app
 // reads LV / HP / MP / EXP about once a second on this device. Only the numbers are kept.
@@ -20,7 +21,6 @@ const NAME_KEY = 'mcw-companion:mapNameBox';
 const NAME_EVERY = 12;
 const EVERY_MS = 1200;
 const MIN_REPORT_SECONDS = 5 * 60;
-const HUNT_MAPS = MAPS.filter((m) => !m.isTown && m.spawns.length > 0);
 const lastMapKey = (charId: string) => `mcw-companion:lastSessionMap:${charId}`;
 function loadLastMap(charId: string): number | null {
   try {
@@ -318,24 +318,20 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
       {(phase === 'recording' || phase === 'done') && (
         <>
           <div className="row" style={{ alignItems: 'end', marginBottom: 8 }}>
-            <label className="field" style={{ flex: '1 1 220px' }}>
-              Map
-              <select
-                value={mapId ?? ''}
-                onChange={(e) => {
-                  setMapId(e.target.value ? Number(e.target.value) : null);
+            <div style={{ flex: '1 1 300px' }}>
+              <MapPicker
+                value={mapId}
+                onChange={(id) => {
+                  setMapId(id);
                   setMapChosen(true);
                   mapChosenRef.current = true;
                 }}
-              >
-                <option value="">(not set)</option>
-                {HUNT_MAPS.map((m) => <option key={m.id} value={m.id}>{m.name} · {m.street}</option>)}
-              </select>
-            </label>
-            {!mapChosen && mapFromName && <span className="small muted">Read from the game's minimap</span>}
-            {!mapChosen && !mapFromName && guessed.length === 1 && report?.expPerKill && (
-              <span className="small muted">Guessed from {report.expPerKill} EXP per kill: {guessed[0].name}</span>
-            )}
+                suggest={[...guessed.flatMap((m) => m.spawns.slice(0, 2).map((s) => (s as { mapId: number }).mapId)), loadLastMap(c.id), ...(c.sessions ?? []).map((s) => s.mapId), defaultMapId]}
+                note={
+                  mapChosen ? undefined : mapFromName ? "read from the game's minimap" : guessed.length === 1 && report?.expPerKill ? `guessed from ${report.expPerKill} EXP per kill (${guessed[0].name})` : undefined
+                }
+              />
+            </div>
             {phase === 'recording' && (
               <span className="small">
                 <span className="rec-dot" /> {minutes(elapsed / 60)} · {samples.length} readings
@@ -411,11 +407,12 @@ export function PastSessions({ c }: { c: Character }) {
             <li key={s.id} className="session-item">
               <div className="session-main">
                 <div>
-                  <select className="plain-select" value={s.mapId ?? ''} onChange={(e) => setMap(s.id, e.target.value ? Number(e.target.value) : null)} aria-label="Map">
-                    <option value="">Which map? (pick)</option>
-                    {HUNT_MAPS.map((m) => <option key={m.id} value={m.id}>{m.name}</option>)}
-                  </select>
-                  {s.id === best && list.length > 1 && <span className="pill verified" style={{ marginLeft: 8 }}>Best</span>}
+                  {s.id === best && list.length > 1 && <span className="pill verified" style={{ float: 'right' }}>Best</span>}
+                  <MapPicker
+                    value={s.mapId}
+                    onChange={(id) => setMap(s.id, id)}
+                    suggest={[...monstersGiving(MONSTERS, s.expPerKill).flatMap((m) => m.spawns.slice(0, 2).map((x) => (x as { mapId: number }).mapId)), ...list.map((x) => x.mapId)]}
+                  />
                 </div>
                 <div className="small muted">
                   Lv {s.level} · {new Date(s.at).toLocaleString([], { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })} · {fmt(s.activeMinutes, 1)} of {fmt(s.minutes, 1)} min hunting

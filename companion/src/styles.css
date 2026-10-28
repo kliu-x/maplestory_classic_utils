@@ -302,6 +302,10 @@ h1.char-pick select { font: inherit; font-weight: 700; color: var(--text); backg
 .session-facts { color: var(--text); opacity: 0.85; }
 .session-rate { text-align: right; }
 .session-rate .value { font-size: 1.4rem; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1.1; }
-/* A select that reads as a bold title until you click it */
-.plain-select { font: inherit; font-weight: 700; color: var(--text); background: transparent; border: 1px dashed transparent; border-radius: 6px; padding: 0 4px; margin-left: -4px; max-width: 100%; cursor: pointer; }
-.plain-select:hover, .plain-select:focus { border-color: var(--muted); }
+/* Map picker: chips for likely maps, search by map or monster */
+.link-btn { background: none; border: 0; padding: 0; color: var(--accent, inherit); text-decoration: underline; cursor: pointer; font: inherit; }
+.map-picker.open { display: grid; gap: 4px; }
+.map-results { list-style: none; margin: 4px 0 0; padding: 0; max-width: 520px; border-radius: 8px; overflow: hidden; border: 1px solid var(--border, rgba(127,127,127,.25)); }
+.map-results li + li { border-top: 1px solid var(--border, rgba(127,127,127,.25)); }
+.map-results button { display: block; width: 100%; text-align: left; padding: 8px 10px; background: var(--surface, transparent); color: var(--text); border: 0; cursor: pointer; font: inherit; }
+.map-results button:hover, .map-results button:focus { background: var(--surface-2); }
