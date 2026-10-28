@@ -101,3 +101,26 @@ export async function createBarReader() {
     close: () => worker.terminate(),
   };
 }
+
+const words = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+
+/**
+ * Which map the minimap's title names ("Victoria Road : Line 1 <Area 1>"). OCR text is
+ * noisy, so the longest map name found inside it wins; the street breaks ties between
+ * maps that share a name. Returns null unless the match is specific enough.
+ */
+export function matchMapName<M extends { id: number; name: string; street: string }>(text: string, maps: M[]): M | null {
+  const t = ` ${words(text)} `;
+  // Some maps are named like a street ("Victoria Road"); the title shows the street too, so
+  // such a name only wins if nothing else matches.
+  const streets = new Set(maps.map((m) => words(m.street)));
+  let best: M | null = null;
+  let score = -Infinity;
+  for (const m of maps) {
+    const n = words(m.name);
+    if (n.length < 4 || !t.includes(` ${n} `)) continue;
+    const s = n.length + (t.includes(words(m.street)) ? 0.5 : 0) - (streets.has(n) ? 100 : 0);
+    if (s > score) [best, score] = [m, s];
+  }
+  return best;
+}

@@ -133,3 +133,12 @@ export function summarize(samples: Sample[], opts: SessionOptions = {}): Session
     rejected,
   };
 }
+
+/**
+ * Which monsters give exactly this much EXP per kill (most EXP values in Classic World
+ * belong to one monster: 28 is Bubbling). Bosses and monsters with no spawns are skipped.
+ */
+export function monstersGiving<M extends { exp: number; isBoss: boolean; spawns: unknown[] }>(monsters: M[], expPerKill: number | null): M[] {
+  if (!expPerKill) return [];
+  return monsters.filter((m) => !m.isBoss && m.spawns.length > 0 && m.exp === expPerKill);
+}

@@ -203,7 +203,7 @@ export function QuickFill({ c, save }: { c: Character; save: (c: Character) => v
 }
 
 /** Shows a full screenshot; drag a box around a game window to read just that window. */
-export function WindowPicker({ picker, busy, onBox, onDone, prompt }: { picker: Picker; busy: boolean; onBox: (r: Picker['boxes'][number]) => void; onDone: () => void; prompt?: React.ReactNode }) {
+export function WindowPicker({ picker, busy, onBox, onDone, prompt, doneLabel }: { picker: Picker; busy: boolean; onBox: (r: Picker['boxes'][number]) => void; onDone: () => void; prompt?: React.ReactNode; doneLabel?: string }) {
   const img = useRef<HTMLImageElement>(null);
   const [drag, setDrag] = useState<{ x0: number; y0: number; x1: number; y1: number } | null>(null);
   const scale = () => (img.current ? picker.bmp.width / img.current.clientWidth : 1);
@@ -221,7 +221,7 @@ export function WindowPicker({ picker, busy, onBox, onDone, prompt }: { picker: 
           {busy ? ' Reading…' : picker.boxes.length ? ` ${picker.boxes.length} read.` : ''}
         </span>
         <span className="spacer" />
-        <button className="btn small primary" onClick={onDone}>{picker.boxes.length ? 'Done' : 'Cancel'}</button>
+        <button className="btn small primary" onClick={onDone}>{doneLabel ?? (picker.boxes.length ? 'Done' : 'Cancel')}</button>
       </div>
       <div className="shot-picker">
         <img

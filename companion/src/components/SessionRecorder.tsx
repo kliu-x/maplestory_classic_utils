@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { Character, SavedSession, TrainingAssumptions } from '../models/types';
-import { MAPS, mapById, skillById } from '../data';
-import { summarize, type Sample, type SessionReport } from '../calculators/session';
-import { createBarReader, parseStatusBar, prepareBar } from '../integrations/statusBar';
+import { MAPS, MONSTERS, mapById, skillById } from '../data';
+import { monstersGiving, summarize, type Sample, type SessionReport } from '../calculators/session';
+import { createBarReader, matchMapName, parseStatusBar, prepareBar } from '../integrations/statusBar';
 import { evaluateMapFor } from '../calculators/rank';
 import { expRemaining } from '../data/expTable';
 import { upsertCharacter } from '../storage/store';
@@ -14,8 +14,20 @@ import { WindowPicker, type Picker } from './QuickFill';
 
 type Box = Picker['boxes'][number];
 const BOX_KEY = 'mcw-companion:statusBarBox';
+/** The minimap title (map name), top left; 'skip' if the player chose not to box it. */
+const NAME_KEY = 'mcw-companion:mapNameBox';
+/** Read the map name every this many ticks (about every 15 s). */
+const NAME_EVERY = 12;
 const EVERY_MS = 1200;
 const MIN_REPORT_SECONDS = 5 * 60;
+const lastMapKey = (charId: string) => `mcw-companion:lastSessionMap:${charId}`;
+function loadLastMap(charId: string): number | null {
+  try {
+    return Number(localStorage.getItem(lastMapKey(charId))) || null;
+  } catch {
+    return null;
+  }
+}
 
 /** Remembered as fractions of the shared frame, so a resized window still lines up. */
 function loadBox(): { x: number; y: number; w: number; h: number } | null {
@@ -26,8 +38,17 @@ function loadBox(): { x: number; y: number; w: number; h: number } | null {
     return null;
   }
 }
-function saveBox(b: { x: number; y: number; w: number; h: number }) {
+function loadNameBox(): { x: number; y: number; w: number; h: number } | 'skip' | null {
   try {
+    const v = localStorage.getItem(NAME_KEY);
+    return v === 'skip' ? 'skip' : v ? JSON.parse(v) : null;
+  } catch {
+    return null;
+  }
+}
+function saveBox(b: { x: number; y: number; w: number; h: number }, name: { x: number; y: number; w: number; h: number } | null) {
+  try {
+    localStorage.setItem(NAME_KEY, name ? JSON.stringify(name) : 'skip');
     localStorage.setItem(BOX_KEY, JSON.stringify(b));
   } catch {
     /* private mode: just box again next time */
@@ -65,14 +86,26 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
   const [samples, setSamples] = useState<Sample[]>([]);
   const [misses, setMisses] = useState(0);
   const [error, setError] = useState('');
-  const [mapId, setMapId] = useState<number | null>(defaultMapId);
+  const [mapId, setMapId] = useState<number | null>(() => loadLastMap(c.id) ?? defaultMapId);
+  // Until the user picks a map, it is guessed from the EXP each kill gives.
+  const [mapChosen, setMapChosen] = useState(false);
   const [saved, setSaved] = useState(false);
-  const live = useRef<{ stream: MediaStream; video: HTMLVideoElement; stopTick?: () => void; reader?: Awaited<ReturnType<typeof createBarReader>>; box?: Box; t0: number; busy: boolean } | null>(null);
+  const live = useRef<{ stream: MediaStream; video: HTMLVideoElement; stopTick?: () => void; reader?: Awaited<ReturnType<typeof createBarReader>>; box?: Box; nameBox?: Box | null; t0: number; busy: boolean; ticks: number } | null>(null);
+  // Boxing happens in two steps: the status bar, then (optionally) the map name.
+  const [barBox, setBarBox] = useState<Box | null>(null);
+  const mapChosenRef = useRef(false);
+  const [mapFromName, setMapFromName] = useState(false);
 
   const skill = skillId ? skillById.get(skillId) : undefined;
   const mpPerCast = skill ? skill.levels[(c.skills[skill.id] ?? 1) - 1]?.mpCon : undefined;
   const report: SessionReport | null = useMemo(() => (samples.length > 1 ? summarize(samples, { mpPerCast: mpPerCast || undefined }) : null), [samples, mpPerCast]);
   const huntMaps = useMemo(() => MAPS.filter((m) => !m.isTown && m.spawns.length > 0), []);
+  const guessed = useMemo(() => monstersGiving(MONSTERS, report?.expPerKill ?? null), [report?.expPerKill]);
+  useEffect(() => {
+    if (mapChosen || mapFromName || guessed.length !== 1) return;
+    const top = guessed[0].spawns[0]; // spawns are sorted by spawn points, most first
+    if (top && (top as { mapId: number }).mapId !== mapId) setMapId((top as { mapId: number }).mapId);
+  }, [guessed, mapChosen]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => () => stopAll(), []); // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -96,11 +129,15 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
       video.muted = true;
       video.srcObject = stream;
       await video.play();
-      live.current = { stream, video, t0: 0, busy: false };
+      live.current = { stream, video, t0: 0, busy: false, ticks: 0 };
+      setBarBox(null);
+      setMapFromName(false);
       stream.getVideoTracks()[0].addEventListener('ended', () => finish());
       const w = video.videoWidth, h = video.videoHeight;
       const remembered = loadBox();
-      if (remembered) return begin({ x: remembered.x * w, y: remembered.y * h, w: remembered.w * w, h: remembered.h * h });
+      const nameRemembered = loadNameBox();
+      const scale = (b: { x: number; y: number; w: number; h: number }) => ({ x: b.x * w, y: b.y * h, w: b.w * w, h: b.h * h });
+      if (remembered && nameRemembered) return begin(scale(remembered), nameRemembered === 'skip' ? null : scale(nameRemembered));
       const frame = await grab(stream.getVideoTracks()[0], video);
       const cv = document.createElement('canvas');
       cv.width = w;
@@ -118,11 +155,13 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
     }
   }
 
-  async function begin(box: Box) {
+  async function begin(box: Box, nameBox: Box | null) {
     const l = live.current;
     if (!l) return;
     const w = l.video.videoWidth, h = l.video.videoHeight;
-    saveBox({ x: box.x / w, y: box.y / h, w: box.w / w, h: box.h / h });
+    const frac = (b: Box) => ({ x: b.x / w, y: b.y / h, w: b.w / w, h: b.h / h });
+    saveBox(frac(box), nameBox ? frac(nameBox) : null);
+    l.nameBox = nameBox;
     if (picker) URL.revokeObjectURL(picker.url);
     setPicker(null);
     setPhase('recording');
@@ -137,6 +176,14 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
       cur.busy = true;
       try {
         const frame = await grab(track, cur.video);
+        // Now and then, read the map name from the minimap title (top left).
+        if (cur.nameBox && cur.ticks++ % NAME_EVERY === 0 && !mapChosenRef.current) {
+          const m = matchMapName(await cur.reader.read(prepareBar(frame, cur.nameBox, 3)), MAPS);
+          if (m) {
+            setMapId(m.id);
+            setMapFromName(true);
+          }
+        }
         const text = await cur.reader.read(prepareBar(frame, cur.box));
         const r = parseStatusBar(text, { level: last?.level ?? c.level, mpMax: last?.mpMax ?? (c.mp || undefined) });
         if (r.exp == null) setMisses((n) => n + 1);
@@ -176,6 +223,11 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
       potions: report.potions,
     };
     const lastSample = samples[samples.length - 1];
+    try {
+      if (mapId != null) localStorage.setItem(lastMapKey(c.id), String(mapId));
+    } catch {
+      /* fine: the next session just guesses again */
+    }
     upsertCharacter({ ...c, sessions: [s, ...(c.sessions ?? [])], ...(lastSample?.level ? { level: lastSample.level, currentExp: lastSample.exp } : {}) });
     setSaved(true);
   }
@@ -207,14 +259,27 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
         <WindowPicker
           picker={picker}
           busy={false}
-          onBox={(b) => void begin(b)}
+          onBox={(b) => {
+            if (!barBox) {
+              setBarBox(b);
+              setPicker({ ...picker, boxes: [b] });
+            } else void begin(barBox, b);
+          }}
+          doneLabel={barBox ? 'Skip' : 'Cancel'}
           onDone={() => {
+            if (barBox) return void begin(barBox, null);
             stopAll();
             setPicker(null);
             setPhase('idle');
             setError("Not recording: the status bar wasn't boxed. Press Start again and drag a box around LV · HP · MP · EXP at the bottom of the game.");
           }}
-          prompt={<><strong>Step 2 of 2: drag a box around the status bar</strong> at the bottom of the game (LV · HP · MP · EXP). Recording starts when you let go; the box is remembered next time.</>}
+          prompt={
+            barBox ? (
+              <><strong>Step 3 (optional): box the map name</strong> at the top left (the minimap title, expanded so the name shows). Then the map is picked for you. Or press Skip.</>
+            ) : (
+              <><strong>Step 2: drag a box around the status bar</strong> at the bottom of the game (LV · HP · MP · EXP). The boxes are remembered next time.</>
+            )
+          }
         />
       )}
 
@@ -223,11 +288,22 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
           <div className="row" style={{ alignItems: 'end', marginBottom: 8 }}>
             <label className="field" style={{ flex: '1 1 220px' }}>
               Map
-              <select value={mapId ?? ''} onChange={(e) => setMapId(e.target.value ? Number(e.target.value) : null)}>
+              <select
+                value={mapId ?? ''}
+                onChange={(e) => {
+                  setMapId(e.target.value ? Number(e.target.value) : null);
+                  setMapChosen(true);
+                  mapChosenRef.current = true;
+                }}
+              >
                 <option value="">(not set)</option>
                 {huntMaps.map((m) => <option key={m.id} value={m.id}>{m.name} · {m.street}</option>)}
               </select>
             </label>
+            {!mapChosen && mapFromName && <span className="small muted">Read from the game's minimap</span>}
+            {!mapChosen && !mapFromName && guessed.length === 1 && report?.expPerKill && (
+              <span className="small muted">Guessed from {report.expPerKill} EXP per kill: {guessed[0].name}</span>
+            )}
             {phase === 'recording' && (
               <span className="small">
                 <span className="rec-dot" /> {minutes(elapsed / 60)} · {samples.length} readings
@@ -235,7 +311,7 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
               </span>
             )}
           </div>
-          {misses >= 5 && <p className="callout warn small">Can't read the EXP on the status bar. Is it covered, or the game minimised? <button className="btn small" onClick={() => { try { localStorage.removeItem(BOX_KEY); } catch { /* ignore */ } finish(); }}>Re-box it</button></p>}
+          {misses >= 5 && <p className="callout warn small">Can't read the EXP on the status bar. Is it covered, or the game minimised? <button className="btn small" onClick={() => { try { localStorage.removeItem(BOX_KEY); localStorage.removeItem(NAME_KEY); } catch { /* ignore */ } finish(); }}>Re-box it</button></p>}
           {report && (
             <div className="grid grid-3">
               <Big label="EXP / min (hunting)" value={fmt(report.expPerActiveMin)} sub={`${fmt(report.expPerMin)} counting breaks`} />

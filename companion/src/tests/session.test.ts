@@ -75,3 +75,25 @@ describe('status bar: single-digit percentages', () => {
     expect(parseStatusBar('EXP 2.91515.31%', { level: 26 })).toMatchObject({ exp: 2915, expPct: 5.31, level: 26 });
   });
 });
+
+describe('guessing the monster from EXP per kill', () => {
+  it('28 EXP is Bubbling, whose main map is the Kerning subway', async () => {
+    const { MONSTERS, mapById } = await import('../data');
+    const { monstersGiving } = await import('../calculators/session');
+    const hits = monstersGiving(MONSTERS, 28);
+    expect(hits.map((m) => m.name)).toEqual(['Bubbling']);
+    expect(mapById.get(hits[0].spawns[0].mapId)!.name).toBe('Line 1 <Area 1>');
+    expect(monstersGiving(MONSTERS, null)).toEqual([]);
+  });
+});
+
+describe('reading the map from the minimap title', () => {
+  it('matches the most specific map name in noisy text', async () => {
+    const { MAPS } = await import('../data');
+    const { matchMapName } = await import('../integrations/statusBar');
+    expect(matchMapName('MINI MAP  Line 1 <Area 1>', MAPS)?.name).toBe('Line 1 <Area 1>');
+    expect(matchMapName('Victoria Road : Henesys Park [WORLD]', MAPS)?.name).toBe('Henesys Park');
+    expect(matchMapName('Thicket Around the Beach III', MAPS)?.name).toBe('Thicket Around the Beach III');
+    expect(matchMapName('MINI MAP', MAPS)).toBeNull();
+  });
+});
