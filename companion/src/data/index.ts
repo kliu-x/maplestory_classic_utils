@@ -41,6 +41,8 @@ export function questSearchText(q: Quest): string {
 /** Images served by maplestory.io for Classic World (loaded only when shown). */
 export const IMG = {
   minimap: (mapId: number) => `https://maplestory.io/api/MCW/1/map/${mapId}/minimap`,
+  /** The whole map drawn at full size (large: 1-2 MB, so only on request). Same frame as the minimap. */
+  render: (mapId: number) => `https://maplestory.io/api/MCW/1/map/${mapId}/render`,
   npc: (id: number) => `https://maplestory.io/api/MCW/1/npc/${id}/icon`,
   mob: (id: number) => `https://maplestory.io/api/MCW/1/mob/${id}/icon`,
   item: (id: number) => `https://maplestory.io/api/MCW/1/item/${id}/icon`,

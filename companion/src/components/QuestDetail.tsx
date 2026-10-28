@@ -137,7 +137,18 @@ export function QuestDetail({ quest: q }: { quest: Quest }) {
           <strong>Where to go</strong> {note.sources.map((s) => <SourceBadge key={s.source_url} source={s} compact />)}
           <p style={{ margin: '6px 0' }}>{note.where}</p>
           {note.alternatives?.map((a) => <p key={a} className="small" style={{ margin: '4px 0' }}><StatusPill status="conflicting" /> {a}</p>)}
-          {noteMap && <Place map={noteMap} pins={[]} caption="Community location; the exact spot is described above (not in the game files)." />}
+          {noteMap && (
+            <Place
+              map={noteMap}
+              pins={note.spot ? [{ ...note.spot, label: 'Go here', kind: 'spot' }] : []}
+              caption={note.spot ? 'Circle placed from the guide below (not in the game files).' : 'Exact spot: see the guide picture (not in the game files).'}
+            />
+          )}
+          {note.picture && (
+            <p className="small" style={{ margin: '6px 0 0' }}>
+              <a href={note.picture} target="_blank" rel="noreferrer">MeowDB's marked screenshot ↗</a>
+            </p>
+          )}
         </div>
       )}
 

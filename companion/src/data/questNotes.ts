@@ -6,12 +6,17 @@ import type { SourceMeta } from '../models/types';
 
 export interface QuestNote {
   mapId?: number;
+  /** The exact spot in world coordinates, placed by matching the guide's marked screenshot to the map drawing. */
+  spot?: { x: number; y: number };
+  /** The guide's own marked-up screenshot (linked, not copied). */
+  picture?: string;
   where: string;
   alternatives?: string[];
   sources: SourceMeta[];
 }
 
 const R = '2026-10-27';
+const MEOW_IMG = 'https://meowdb.com/msclassic/guides/mark-of-the-beta-event-guide/';
 const meow: SourceMeta = { source_url: 'https://meowdb.com/msclassic/guides/mark-of-the-beta-event-guide', source_title: 'MeowDB: Mark of the Beta event guide', retrieved_at: R, verification_status: 'community_reported' };
 const mscom: SourceMeta = { source_url: 'https://maplestory-classic.com/guides/mark-of-the-beta-event-guide', source_title: 'maplestory-classic.com: Mark of the Beta guide', retrieved_at: R, verification_status: 'community_reported' };
 const hgg: SourceMeta = { source_url: 'https://henesys.gg/quests/event-the-marks-we-leave-behind', source_title: 'Henesys.gg: The Marks We Leave Behind', retrieved_at: R, verification_status: 'community_reported' };
@@ -20,21 +25,26 @@ const conflicting = (s: SourceMeta): SourceMeta => ({ ...s, verification_status:
 export const QUEST_NOTES: Record<number, QuestNote> = {
   600007: {
     mapId: 10002004,
+    picture: `${MEOW_IMG}page-4-marrs-forest.webp`,
     where: "Marr's Forest (off Ellinia): bottom-right corner, at the right end of the lowest platform. Guides call this journal page 4.",
     alternatives: ['Henesys.gg and MapleClassicGuide instead say to climb high in the forest and check the old tree. Check the bottom right first, then climb.'],
     sources: [conflicting(meow), conflicting(mscom), conflicting(hgg)],
   },
   600008: {
+    picture: `${MEOW_IMG}page-5-mong-from-kong.webp`,
     where: 'Kerning City: Mong from Kong, just right of the Pharmacy. He wants 10 mesos for the page (page 5).',
     sources: [meow, mscom],
   },
   600009: {
     mapId: 10004091,
+    picture: `${MEOW_IMG}page-6-land-of-wild-boar-ii.webp`,
     where: 'The Land of Wild Boar II, a hidden map: its portal is at the very top right of East Domain of Perion. The page is on the second small stepping stone from the left, just before the rope (page 6).',
     sources: [meow, mscom],
   },
   600010: {
     mapId: 10005070,
+    spot: { x: 2413, y: -181 },
+    picture: `${MEOW_IMG}mark-of-the-beta-ant-tunnel-park.webp`,
     where: 'Ant Tunnel Park (past Deep Ant Tunnel II): upper right, just below and to the right of the portal to The Grave of Mushmom. Reward: Mark of the Beta hat.',
     sources: [meow, mscom],
   },
