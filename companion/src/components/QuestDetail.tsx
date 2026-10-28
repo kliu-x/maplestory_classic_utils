@@ -1,5 +1,6 @@
-import type { GameMap, Quest } from '../models/types';
-import { IMG, MAPS, QUESTS, itemById, mapById, monsterById, npcById } from '../data';
+import type { GameMap, Monster, Quest } from '../models/types';
+import { IMG, MAPS, MONSTERS, QUESTS, itemById, mapById, monsterById, npcById } from '../data';
+import { likelyDroppers } from '../calculators/drops';
 import { QUEST_NOTES } from '../data/questNotes';
 import { QUEST_LOG_TITLES } from '../data/questAliases';
 import { JOBS } from '../data/rules';
@@ -44,6 +45,50 @@ function Rewards({ q }: { q: Quest }) {
     </div>
   );
 }
+/** Top maps for a monster; ids that share a name (event copies) are merged. */
+function Where({ mobs }: { mobs: Monster[] }) {
+  const counts = new Map<number, { name: string; count: number }>();
+  for (const m of mobs) for (const sp of m.spawns) {
+    const c = counts.get(sp.mapId) ?? { name: sp.mapName.split(': ').pop()!, count: 0 };
+    c.count += sp.count;
+    counts.set(sp.mapId, c);
+  }
+  const top = [...counts].sort((a, b) => b[1].count - a[1].count).slice(0, 3);
+  if (!top.length) return null;
+  return (
+    <div className="small">
+      <span className="muted">Found in:</span>{' '}
+      {top.map(([id, c], i) => <span key={id}>{i > 0 && ', '}<a href={href('maps', { id })}>{c.name}</a> <span className="muted">({c.count})</span></span>)}
+    </div>
+  );
+}
+
+/** Who drops a collect item, as far as the game files' names tell, with where they live. */
+function Droppers({ itemId }: { itemId: number }) {
+  const found = likelyDroppers(itemById.get(itemId), MONSTERS);
+  const byName = new Map<string, Monster[]>();
+  for (const d of found) byName.set(d.mob.name, [...(byName.get(d.mob.name) ?? []), d.mob]);
+  if (!byName.size) return <div className="small muted">Not a monster drop we can match. Usually from an NPC or made from other items.</div>;
+  const clue = found[0].clue === 'item-name' ? 'The item is named after this monster' : "The item's description names this monster";
+  return (
+    <div className="droppers">
+      {[...byName].map(([name, mobs]) => (
+        <div key={name} className="dropper">
+          <div className="icon-row">
+            <img src={IMG.mob(mobs[0].id)} alt="" loading="lazy" onError={(e) => (e.currentTarget.style.visibility = 'hidden')} />
+            <span>
+              <span className="muted" title={clue}>Likely from</span> <a href={href('monsters', { id: mobs[0].id })}><strong>{name}</strong></a>
+              <span className="small muted"> Lv {mobs[0].level}</span>{' '}
+              <a className="small" href={`https://meowdb.com/msclassic/monsters/${mobs[0].id}`} target="_blank" rel="noreferrer">drop list ↗</a>
+            </span>
+          </div>
+          <Where mobs={mobs} />
+        </div>
+      ))}
+    </div>
+  );
+}
+
 const nextOf = (id: number) => QUESTS.filter((q) => q.prereqQuestIds.includes(id));
 
 /** Breadcrumb from the nearest town, e.g. Henesys → Henesys Hunting Ground I → ... */
@@ -190,11 +235,7 @@ export function QuestDetail({ quest: q }: { quest: Quest }) {
                     <img src={IMG.mob(k.mobId)} alt="" loading="lazy" onError={(e) => (e.currentTarget.style.visibility = 'hidden')} />
                     <span><a href={href('monsters', { id: k.mobId })}>{m?.name ?? `Monster ${k.mobId}`}</a> × {k.count}</span>
                   </div>
-                  {m && m.spawns.length > 0 && (
-                    <div className="small muted">
-                      Found in: {m.spawns.slice(0, 3).map((s, i) => <span key={s.mapId}>{i > 0 && ', '}<a href={href('maps', { id: s.mapId })}>{s.mapName.split(': ').pop()}</a> ({s.count})</span>)}
-                    </div>
-                  )}
+                  {m && <Where mobs={MONSTERS.filter((x) => x.name === m.name)} />}
                 </div>
               );
             })}
@@ -202,15 +243,19 @@ export function QuestDetail({ quest: q }: { quest: Quest }) {
             {q.collectItems.map((it) => {
               const item = itemById.get(it.itemId);
               return (
-                <div key={it.itemId} className="icon-row" style={{ marginBottom: 6, alignItems: 'flex-start' }}>
-                  <img src={IMG.item(it.itemId)} alt="" loading="lazy" onError={(e) => (e.currentTarget.style.visibility = 'hidden')} />
-                  <span>
-                    {item?.name ?? `Item ${it.itemId}`} × {it.count}
-                    {item?.description && <span className="small muted" style={{ display: 'block' }}>{item.description}</span>}
-                  </span>
+                <div key={it.itemId} style={{ marginBottom: 12 }}>
+                  <div className="icon-row" style={{ alignItems: 'flex-start' }}>
+                    <img src={IMG.item(it.itemId)} alt="" loading="lazy" onError={(e) => (e.currentTarget.style.visibility = 'hidden')} />
+                    <span>
+                      <strong>{item?.name ?? `Item ${it.itemId}`} × {it.count}</strong>
+                      {item?.description && <span className="small muted" style={{ display: 'block' }}>{item.description}</span>}
+                    </span>
+                  </div>
+                  <Droppers itemId={it.itemId} />
                 </div>
               );
             })}
+            {q.collectItems.length > 0 && <p className="small muted" style={{ margin: 0 }}>Drop tables aren't in the game files: monsters are matched by name, so confirm with the drop list.</p>}
           </div>
         )}
       </div>
