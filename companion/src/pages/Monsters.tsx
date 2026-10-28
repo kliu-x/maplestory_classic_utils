@@ -21,6 +21,8 @@ export default function Monsters({ params }: PageProps) {
   const [bosses, setBosses] = useState(true);
   const [favOnly, setFavOnly] = useState(false);
   const [sort, setSort] = useState<SortKey>('level');
+  // Click a column to sort by it; click it again to flip the order.
+  const [desc, setDesc] = useState(false);
   const selected = params.get('id') ? monsterById.get(Number(params.get('id'))) : undefined;
 
   useEffect(() => {
@@ -41,11 +43,12 @@ export default function Monsters({ params }: PageProps) {
         (!favOnly || favs.has(m.id)),
     );
     const key: Record<SortKey, (m: Monster) => number | string> = {
-      level: (m) => m.level, hp: (m) => m.hp, exp: (m) => -m.exp, expPerHp: (m) => -(m.exp / m.hp), name: (m) => m.name,
+      level: (m) => m.level, hp: (m) => m.hp, exp: (m) => m.exp, expPerHp: (m) => m.exp / m.hp, name: (m) => m.name,
     };
-    return r.sort((a, b) => (key[sort](a) < key[sort](b) ? -1 : key[sort](a) > key[sort](b) ? 1 : a.level - b.level));
+    const dir = desc ? -1 : 1;
+    return r.sort((a, b) => (key[sort](a) < key[sort](b) ? -dir : key[sort](a) > key[sort](b) ? dir : a.level - b.level));
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [q, minLv, maxLv, weakTo, spawnsOnly, bosses, favOnly, sort, c?.favorites]);
+  }, [q, minLv, maxLv, weakTo, spawnsOnly, bosses, favOnly, sort, desc, c?.favorites]);
 
   const toggleFav = (id: number) => {
     if (!c) return;
@@ -53,9 +56,20 @@ export default function Monsters({ params }: PageProps) {
   };
 
   const th = (k: SortKey, label: string, num = true) => (
-    <th className={`sortable ${num ? 'num' : ''}`} onClick={() => setSort(k)}>
+    <th
+      className={`sortable ${num ? 'num' : ''}`}
+      onClick={() => {
+        // Same column: flip. New column: numbers start high to low (EXP, HP), level and name low to high.
+        if (sort === k) setDesc(!desc);
+        else {
+          setSort(k);
+          setDesc(k === 'exp' || k === 'hp' || k === 'expPerHp');
+        }
+      }}
+      title="Click again to flip the order"
+    >
       {label}
-      {sort === k ? ' ▾' : ''}
+      {sort === k ? (desc ? ' ▼' : ' ▲') : ''}
     </th>
   );
 

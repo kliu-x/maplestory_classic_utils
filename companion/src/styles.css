@@ -411,3 +411,20 @@ th { background: var(--surface-2); }
 .mob-chip.off { background: var(--surface-2); color: var(--muted); }
 @media (prefers-color-scheme: dark) { .mob-chip { background: #27500a; color: #eaf3de; } }
 .rank-main > :first-child strong, .session-main strong { font-size: 1.15rem; }
+
+/* ---------- copy pastas ---------- */
+.pasta-list { display: flex; flex-direction: column; gap: 8px; }
+.pasta-item { display: flex; align-items: stretch; gap: 6px; background: var(--surface); border: 2px solid var(--border); border-radius: 14px; }
+.pasta-item.next { border-color: var(--accent); }
+.pasta-item.copied { background: var(--accent-soft); }
+.pasta-item.editing { padding: 6px; }
+.pasta-item.editing textarea { flex: 1; font: inherit; padding: 6px 8px; }
+.pasta-text { flex: 1; min-width: 0; display: flex; align-items: center; gap: 10px; border: 0; background: transparent; text-align: left; padding: 10px 12px; cursor: copy; font: inherit; color: inherit; }
+.pasta-n { flex: none; width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; background: var(--surface-2); font-weight: 800; font-size: 14px; }
+.pasta-body { flex: 1; min-width: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+.pasta-meta { flex: none; font-size: 13px; color: var(--muted); }
+.pasta-item.copied .pasta-meta { color: var(--accent); font-weight: 700; }
+.pasta-tools { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; padding-right: 6px; }
+@media (max-width: 600px) { .pasta-item { flex-direction: column; } .pasta-tools { padding: 0 6px 6px; } }
+kbd { border: 1px solid var(--border); border-bottom-width: 2px; border-radius: 5px; padding: 0 5px; font-size: 13px; background: var(--surface-2); }
+textarea { font: inherit; padding: 8px 10px; color: var(--text); resize: vertical; }

@@ -13,6 +13,7 @@ import Quests from './pages/Quests';
 import Maps from './pages/Maps';
 import NameChecker from './pages/NameChecker';
 import Sources from './pages/Sources';
+import Pastas from './pages/Pastas';
 
 const VIEWS = {
   dashboard: Dashboard,
@@ -23,6 +24,7 @@ const VIEWS = {
   gear: Gear,
   quests: Quests,
   maps: Maps,
+  pastas: Pastas,
   names: NameChecker,
   sources: Sources,
 };

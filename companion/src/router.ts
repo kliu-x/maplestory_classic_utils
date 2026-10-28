@@ -9,6 +9,7 @@ export const PAGES = [
   { id: 'gear', label: 'Gear', ico: '⛨' },
   { id: 'quests', label: 'Quests', ico: '✎' },
   { id: 'maps', label: 'Maps', ico: '⌖' },
+  { id: 'pastas', label: 'Copy Pastas', ico: '✉' },
   { id: 'names', label: 'Name Checker', ico: '⌕' },
   { id: 'sources', label: 'Sources', ico: '§' },
 ] as const;
