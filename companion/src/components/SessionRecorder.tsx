@@ -333,28 +333,46 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
         </>
       )}
 
-      {(c.sessions?.length ?? 0) > 0 && phase !== 'recording' && (
-        <details style={{ marginTop: 10 }}>
-          <summary className="small">Past sessions ({c.sessions!.length})</summary>
-          <div className="table-wrap" style={{ marginTop: 6 }}>
-            <table>
-              <thead><tr><th>When</th><th>Map</th><th className="num">Min</th><th className="num">EXP/min</th><th className="num">Kills</th><th className="num">Casts/kill</th></tr></thead>
-              <tbody>
-                {c.sessions!.map((s) => (
-                  <tr key={s.id}>
-                    <td className="small">{s.at.slice(0, 16).replace('T', ' ')}</td>
-                    <td className="small">{s.mapId != null ? mapById.get(s.mapId)?.name : '—'}</td>
-                    <td className="num">{fmt(s.minutes, 1)}</td>
-                    <td className="num"><strong>{fmt(s.expPerActiveMin)}</strong></td>
-                    <td className="num">{fmt(s.kills)}</td>
-                    <td className="num">{s.castsPerKill != null ? fmt(s.castsPerKill, 2) : '—'}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </details>
-      )}
+    </div>
+  );
+}
+
+/** Saved sessions for this character, newest first, as their own section. */
+export function PastSessions({ c }: { c: Character }) {
+  const list = c.sessions ?? [];
+  if (!list.length) return null;
+  const remove = (id: string) => {
+    if (confirm('Delete this session?')) upsertCharacter({ ...c, sessions: list.filter((s) => s.id !== id) });
+  };
+  return (
+    <div className="card">
+      <div className="card-head">
+        <h2>Your sessions</h2>
+        <span className="small muted">{list.length} saved</span>
+      </div>
+      <div className="table-wrap">
+        <table>
+          <thead>
+            <tr><th>When</th><th>Map</th><th className="num">Lv</th><th className="num">Minutes</th><th className="num">EXP/min</th><th className="num">Kills/min</th><th className="num">Casts/kill</th><th className="num">MP/min</th><th></th></tr>
+          </thead>
+          <tbody>
+            {list.map((s) => (
+              <tr key={s.id}>
+                <td className="small">{new Date(s.at).toLocaleString([], { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })}</td>
+                <td className="small">{s.mapId != null ? mapById.get(s.mapId)?.name : '—'}</td>
+                <td className="num">{s.level}</td>
+                <td className="num">{fmt(s.activeMinutes, 1)}</td>
+                <td className="num"><strong>{fmt(s.expPerActiveMin)}</strong></td>
+                <td className="num">{s.activeMinutes ? fmt(s.kills / s.activeMinutes, 1) : '—'}</td>
+                <td className="num">{s.castsPerKill != null ? fmt(s.castsPerKill, 2) : '—'}</td>
+                <td className="num">{fmt(s.mpPerMin)}</td>
+                <td><button className="btn small ghost danger" onClick={() => remove(s.id)} aria-label="Delete session">✕</button></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p className="small muted" style={{ marginBottom: 0 }}>EXP/min and kills/min count hunting time only (breaks left out).</p>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { SessionRecorder } from '../components/SessionRecorder';
+import { PastSessions, SessionRecorder } from '../components/SessionRecorder';
 import { useMemo, useState } from 'react';
 import type { TrainingAssumptions } from '../models/types';
 import { attackSkillsForJob, mapById } from '../data';
@@ -65,6 +65,8 @@ export default function Training({ params }: PageProps) {
       </div>
 
       <SessionRecorder c={c} a={a} skillId={sid} defaultMapId={rows[0]?.map.id ?? null} />
+
+      <PastSessions c={c} />
 
       <Assumptions a={a} />
 
@@ -270,9 +272,9 @@ function Assumptions({ a }: { a: TrainingAssumptions }) {
   return (
     <details className="card">
       <summary>
-        <strong>Assumptions</strong>{' '}
+        <strong>Estimate settings</strong>{' '}
         <span className="small muted">
-          {a.castsPerSecond} casts/s · {Math.round(a.uptime * 100)}% attacking · {a.respawnSeconds}s respawn · {a.useLanes === false ? 'whole maps' : 'best lane'} — click to edit
+          how the ranking below guesses EXP/min where you haven't recorded: {a.castsPerSecond} casts/s · {Math.round(a.uptime * 100)}% attacking · {a.respawnSeconds}s respawn — click to edit
         </span>
       </summary>
       <div className="fields" style={{ marginTop: 12 }}>
