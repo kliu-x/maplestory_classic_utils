@@ -113,7 +113,7 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
     } catch (e) {
       stopAll();
       const msg = (e as Error).message;
-      setError(/denied|NotAllowed/i.test(msg) ? 'Sharing was cancelled.' : `Could not start: ${msg}`);
+      setError(/denied|NotAllowed|cancel/i.test(msg) ? 'Not recording: no window was shared. Press Start, choose your MapleStory window and press Share.' : `Could not start: ${msg}`);
       setPhase('idle');
     }
   }
@@ -195,21 +195,26 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
           <button className="btn small primary" onClick={start}>{phase === 'done' ? 'Record again' : 'Start'}</button>
         )}
       </div>
-      {phase === 'idle' && (
+      {phase === 'idle' && !error && (
         <p className="small muted" style={{ margin: 0 }}>
           Share your MapleStory window and train as usual; the app reads EXP and MP from the status bar about once a second, on this device (nothing is recorded or
           uploaded). Five minutes is enough for a solid EXP/min. Works in desktop Chrome or Edge.
         </p>
       )}
-      {error && <p className="small" style={{ color: 'var(--warn)' }}>{error}</p>}
+      {error && <p className="callout warn small">{error}</p>}
 
       {phase === 'boxing' && picker && (
         <WindowPicker
           picker={picker}
           busy={false}
           onBox={(b) => void begin(b)}
-          onDone={() => { stopAll(); setPicker(null); setPhase('idle'); }}
-          prompt={<><strong>Drag a box around the status bar</strong> at the bottom of the game (LV · HP · MP · EXP). It is remembered for next time.</>}
+          onDone={() => {
+            stopAll();
+            setPicker(null);
+            setPhase('idle');
+            setError("Not recording: the status bar wasn't boxed. Press Start again and drag a box around LV · HP · MP · EXP at the bottom of the game.");
+          }}
+          prompt={<><strong>Step 2 of 2: drag a box around the status bar</strong> at the bottom of the game (LV · HP · MP · EXP). Recording starts when you let go; the box is remembered next time.</>}
         />
       )}
 

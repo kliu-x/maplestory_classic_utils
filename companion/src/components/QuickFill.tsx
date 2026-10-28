@@ -221,7 +221,7 @@ export function WindowPicker({ picker, busy, onBox, onDone, prompt }: { picker: 
           {busy ? ' Reading…' : picker.boxes.length ? ` ${picker.boxes.length} read.` : ''}
         </span>
         <span className="spacer" />
-        <button className="btn small primary" onClick={onDone}>Done</button>
+        <button className="btn small primary" onClick={onDone}>{picker.boxes.length ? 'Done' : 'Cancel'}</button>
       </div>
       <div className="shot-picker">
         <img
