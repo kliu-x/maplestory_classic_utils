@@ -29,6 +29,8 @@ export default function Characters({ params }: PageProps) {
 
   const received = useRef(false);
   const [shareMsg, setShareMsg] = useState('');
+  // What opening a share link changed, so it can be undone (no confirm(): in-app browsers block it).
+  const [received_, setReceived] = useState<{ id: string; name: string; before: Character | null } | null>(null);
   useEffect(() => {
     const code = params.get('share');
     if (!code || received.current) return;
@@ -37,13 +39,11 @@ export default function Characters({ params }: PageProps) {
       let c = decodeCharacter(code);
       // Sending the same character again should update it, not pile up copies.
       const existing = state.characters.find((x) => x.id === c.id) ?? state.characters.find((x) => x.name.toLowerCase() === c.name.toLowerCase() && JOBS[x.job].family === JOBS[c.job].family);
-      if (existing) c = { ...c, id: existing.id, observations: c.observations.length ? c.observations : existing.observations };
-      const ok = confirm(existing ? `Replace ${existing.name} on this device with the shared copy (Lv ${c.level})?` : `Add ${c.name} (Lv ${c.level} ${JOBS[c.job].label}) to this device?`);
-      if (ok) {
-        upsertCharacter(c);
-        setActive(c.id);
-        go('characters', { id: c.id });
-      } else go('characters');
+      if (existing) c = { ...c, id: existing.id, sessions: existing.sessions, observations: c.observations.length ? c.observations : existing.observations };
+      upsertCharacter(c);
+      setActive(c.id);
+      setReceived({ id: c.id, name: c.name, before: existing ?? null });
+      go('characters', { id: c.id });
     } catch {
       setShareMsg('That share link is damaged or incomplete. Send it again.');
       go('characters');
@@ -60,6 +60,21 @@ export default function Characters({ params }: PageProps) {
           <h1>Characters</h1>
           <p>Profiles are stored only in this browser. Use <strong>Send to another device</strong> to copy one to your phone or PC.</p>
           {shareMsg && <p className="small" style={{ color: 'var(--warn)' }}>{shareMsg}</p>}
+          {received_ && (
+            <p className="callout info" style={{ marginTop: 8 }}>
+              {received_.before ? `Updated ${received_.name} from the link.` : `Added ${received_.name} to this device.`}{' '}
+              <button
+                className="btn small ghost"
+                onClick={() => {
+                  if (received_.before) upsertCharacter(received_.before);
+                  else deleteCharacter(received_.id);
+                  setReceived(null);
+                }}
+              >
+                Undo
+              </button>
+            </p>
+          )}
         </div>
         <ImportExport />
       </div>
