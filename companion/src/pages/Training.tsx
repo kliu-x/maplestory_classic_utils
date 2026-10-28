@@ -1,3 +1,4 @@
+import { SessionRecorder } from '../components/SessionRecorder';
 import { useMemo, useState } from 'react';
 import type { TrainingAssumptions } from '../models/types';
 import { attackSkillsForJob, mapById } from '../data';
@@ -62,6 +63,8 @@ export default function Training({ params }: PageProps) {
           <NumField label="Max levels above you" value={levelWindow} min={0} max={60} width={80} onChange={setLevelWindow} />
         </div>
       </div>
+
+      <SessionRecorder c={c} a={a} skillId={sid} defaultMapId={rows[0]?.map.id ?? null} />
 
       <Assumptions a={a} />
 

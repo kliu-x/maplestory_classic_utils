@@ -6,3 +6,4 @@ __pycache__/
 # name checker: local cache and raw API responses (regenerated on each run)
 pokemon_name_checker/cache/
 *.tsbuildinfo
+companion/public/_test_*

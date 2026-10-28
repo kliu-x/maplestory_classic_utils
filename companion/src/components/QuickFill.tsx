@@ -13,7 +13,7 @@ const EMPTY: ParsedScreenshot = { base: {}, equip: {}, skills: {} };
 /** Wider than this, an image is a whole screen and goes to the window picker. */
 const FULL_SCREEN_WIDTH = 1100;
 
-interface Picker {
+export interface Picker {
   url: string;
   bmp: ImageBitmap;
   boxes: { x: number; y: number; w: number; h: number }[];
@@ -203,7 +203,7 @@ export function QuickFill({ c, save }: { c: Character; save: (c: Character) => v
 }
 
 /** Shows a full screenshot; drag a box around a game window to read just that window. */
-function WindowPicker({ picker, busy, onBox, onDone }: { picker: Picker; busy: boolean; onBox: (r: Picker['boxes'][number]) => void; onDone: () => void }) {
+export function WindowPicker({ picker, busy, onBox, onDone, prompt }: { picker: Picker; busy: boolean; onBox: (r: Picker['boxes'][number]) => void; onDone: () => void; prompt?: React.ReactNode }) {
   const img = useRef<HTMLImageElement>(null);
   const [drag, setDrag] = useState<{ x0: number; y0: number; x1: number; y1: number } | null>(null);
   const scale = () => (img.current ? picker.bmp.width / img.current.clientWidth : 1);
@@ -217,7 +217,7 @@ function WindowPicker({ picker, busy, onBox, onDone }: { picker: Picker; busy: b
     <div className="shot-overlay">
       <div className="row shot-overlay-bar">
         <span className="small">
-          <strong>Drag a box around each window</strong>: Character Stat, its DETAIL panel, Skill. Each box is read on its own.
+          {prompt ?? <><strong>Drag a box around each window</strong>: Character Stat, its DETAIL panel, Skill. Each box is read on its own.</>}
           {busy ? ' Reading…' : picker.boxes.length ? ` ${picker.boxes.length} read.` : ''}
         </span>
         <span className="spacer" />

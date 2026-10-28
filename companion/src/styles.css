@@ -292,3 +292,5 @@ h1.char-pick select { font: inherit; font-weight: 700; color: var(--text); backg
 .dot.unverified { background: var(--warn); }
 .quest-log { margin: 0 0 12px; padding: 8px 12px; border-left: 3px solid var(--accent); background: var(--surface-2); border-radius: 0 6px 6px 0; font-size: 14px; }
 .icon-row.dim { opacity: 0.45; }
+.rec-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: #e03131; margin-right: 4px; animation: rec 1.2s infinite; vertical-align: middle; }
+@keyframes rec { 50% { opacity: 0.25; } }

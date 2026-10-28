@@ -209,6 +209,8 @@ export interface Character {
   observations: DamageObservation[];
   favorites: number[]; // monster ids
   completedQuests: number[];
+  /** Training sessions measured from the game's status bar. */
+  sessions?: SavedSession[];
   updatedAt: string;
 }
 
@@ -248,4 +250,21 @@ export interface AppState {
   version: 1;
   characters: Character[];
   settings: Settings;
+}
+
+export interface SavedSession {
+  id: string;
+  at: string;
+  mapId: number | null;
+  level: number;
+  minutes: number;
+  activeMinutes: number;
+  expGained: number;
+  expPerMin: number;
+  expPerActiveMin: number;
+  kills: number;
+  expPerKill: number | null;
+  castsPerKill: number | null;
+  mpPerMin: number;
+  potions: number;
 }
