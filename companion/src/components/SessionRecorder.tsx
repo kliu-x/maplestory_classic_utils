@@ -91,7 +91,7 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
   // Until the user picks a map, it is guessed from the EXP each kill gives.
   const [mapChosen, setMapChosen] = useState(false);
   const [savedId, setSavedId] = useState<string | null>(null);
-  const live = useRef<{ stream: MediaStream; video: HTMLVideoElement; stopTick?: () => void; reader?: Awaited<ReturnType<typeof createBarReader>>; box?: Box; nameBox?: Box | null; t0: number; busy: boolean; ticks: number } | null>(null);
+  const live = useRef<{ stream: MediaStream; video: HTMLVideoElement; stopTick?: () => void; reader?: Awaited<ReturnType<typeof createBarReader>>; box?: Box; nameBox?: Box | null; t0: number; busy: boolean; ticks: number; misses: number } | null>(null);
   // Boxing happens in two steps: the status bar, then (optionally) the map name.
   const [barBox, setBarBox] = useState<Box | null>(null);
   const mapChosenRef = useRef(false);
@@ -129,7 +129,7 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
       video.muted = true;
       video.srcObject = stream;
       await video.play();
-      live.current = { stream, video, t0: 0, busy: false, ticks: 0 };
+      live.current = { stream, video, t0: 0, busy: false, ticks: 0, misses: 0 };
       setBarBox(null);
       setMapFromName(false);
       stream.getVideoTracks()[0].addEventListener('ended', () => finish());
@@ -190,10 +190,25 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
             setMapFromName(true);
           }
         }
-        const text = await cur.reader.read(prepareBar(frame, cur.box));
-        const r = parseStatusBar(text, { level: last?.level ?? c.level, mpMax: last?.mpMax ?? (c.mp || undefined) });
-        if (r.exp == null) setMisses((n) => n + 1);
-        else {
+        const hints = { level: last?.level ?? c.level, mpMax: last?.mpMax ?? (c.mp || undefined) };
+        let r = parseStatusBar(await cur.reader.read(prepareBar(frame, cur.box)), hints);
+        // One bad frame (a damage number or pop-up over the bar) is common: try larger once.
+        if (r.exp == null) r = parseStatusBar(await cur.reader.read(prepareBar(frame, cur.box, 3)), hints);
+        if (r.exp == null) {
+          cur.misses++;
+          setMisses(cur.misses);
+          // Still nothing after ~10 s: the window was probably resized or moved; find the bar again.
+          if (cur.misses % 8 === 0) {
+            const vw = cur.video.videoWidth, vh = cur.video.videoHeight;
+            const found = await locateBar(frame, vw, vh, cur.reader, hints);
+            if (found) {
+              cur.box = found;
+              cur.nameBox = titleRegion(vw, vh);
+              saveBox({ x: found.x / vw, y: found.y / vh, w: found.w / vw, h: found.h / vh }, { x: 0, y: 0, w: 0.4, h: 0.12 });
+            }
+          }
+        } else {
+          cur.misses = 0;
           setMisses(0);
           last = { t: (performance.now() - cur.t0) / 1000, level: r.level, exp: r.exp, mp: r.mp, mpMax: r.mpMax };
           setSamples((s) => [...s, last!]);
@@ -328,7 +343,12 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
               </span>
             )}
           </div>
-          {misses >= 5 && <p className="callout warn small">Can't read the EXP on the status bar. Is it covered, or the game minimised? <button className="btn small" onClick={() => { try { localStorage.removeItem(BOX_KEY); localStorage.removeItem(NAME_KEY); } catch { /* ignore */ } finish(); }}>Re-box it</button></p>}
+          {misses >= 25 && (
+            <p className="callout warn small">
+              No EXP read for {Math.round((misses * EVERY_MS) / 1000)} s. Is the game minimised, or something covering the bottom bar? It keeps trying by itself.{' '}
+              <button className="btn small ghost" onClick={() => { try { localStorage.removeItem(BOX_KEY); localStorage.removeItem(NAME_KEY); } catch { /* ignore */ } finish(); }}>Stop and box it myself</button>
+            </p>
+          )}
           {report && (
             <div className="grid grid-3">
               <Big label="EXP / min (hunting)" value={fmt(report.expPerActiveMin)} sub={`${fmt(report.expPerMin)} counting breaks`} />

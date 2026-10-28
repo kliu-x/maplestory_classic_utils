@@ -125,9 +125,11 @@ export async function locateBar(frame: CanvasImageSource, w: number, h: number, 
   // "LV. 26" is not needed: the level comes from EXP and its percentage.
   const x0 = Math.min(...row.map((wd) => wd.bbox.x0)) / scale, x1 = Math.max(...row.map((wd) => wd.bbox.x1)) / scale;
   const y0 = top + Math.min(...row.map((wd) => wd.bbox.y0)) / scale, y1 = top + Math.max(...row.map((wd) => wd.bbox.y1)) / scale;
-  const pad = 6;
-  const x = Math.max(0, x0 - pad), y = Math.max(0, y0 - pad);
-  return { x, y, w: Math.min(w - x, x1 - x0 + 2 * pad), h: Math.min(h - y, y1 - y0 + 2 * pad) };
+  // Generous margins: EXP gains digits as you level ("9,870[9.87%]" -> "51,020[92.10%]"),
+  // and a box that clips the percentage stops reading.
+  const x = Math.max(0, x0 - 40), y = Math.max(0, y0 - 8);
+  const right = Math.min(w, x1 + Math.max(160, (x1 - x0) * 0.35));
+  return { x, y, w: right - x, h: Math.min(h - y, y1 - y0 + 16) };
 }
 
 /** Where the minimap title (map name) sits in a shared game window: the top-left corner. */
