@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import type { Character, SavedSession, TrainingAssumptions } from '../models/types';
 import { MAPS, MONSTERS, mapById, skillById } from '../data';
 import { monstersGiving, summarize, type Sample, type SessionReport } from '../calculators/session';
-import { createBarReader, matchMapName, parseStatusBar, prepareBar } from '../integrations/statusBar';
+import { createBarReader, locateBar, matchMapName, parseStatusBar, prepareBar, titleRegion } from '../integrations/statusBar';
 import { evaluateMapFor } from '../calculators/rank';
 import { expRemaining } from '../data/expTable';
 import { upsertCharacter } from '../storage/store';
@@ -20,6 +20,7 @@ const NAME_KEY = 'mcw-companion:mapNameBox';
 const NAME_EVERY = 12;
 const EVERY_MS = 1200;
 const MIN_REPORT_SECONDS = 5 * 60;
+const HUNT_MAPS = MAPS.filter((m) => !m.isTown && m.spawns.length > 0);
 const lastMapKey = (charId: string) => `mcw-companion:lastSessionMap:${charId}`;
 function loadLastMap(charId: string): number | null {
   try {
@@ -81,7 +82,7 @@ async function grab(track: MediaStreamTrack, video: HTMLVideoElement): Promise<C
 }
 
 export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character; a: TrainingAssumptions; skillId: number | null; defaultMapId: number | null }) {
-  const [phase, setPhase] = useState<'idle' | 'boxing' | 'recording' | 'done'>('idle');
+  const [phase, setPhase] = useState<'idle' | 'finding' | 'boxing' | 'recording' | 'done'>('idle');
   const [picker, setPicker] = useState<Picker | null>(null);
   const [samples, setSamples] = useState<Sample[]>([]);
   const [misses, setMisses] = useState(0);
@@ -89,7 +90,7 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
   const [mapId, setMapId] = useState<number | null>(() => loadLastMap(c.id) ?? defaultMapId);
   // Until the user picks a map, it is guessed from the EXP each kill gives.
   const [mapChosen, setMapChosen] = useState(false);
-  const [saved, setSaved] = useState(false);
+  const [savedId, setSavedId] = useState<string | null>(null);
   const live = useRef<{ stream: MediaStream; video: HTMLVideoElement; stopTick?: () => void; reader?: Awaited<ReturnType<typeof createBarReader>>; box?: Box; nameBox?: Box | null; t0: number; busy: boolean; ticks: number } | null>(null);
   // Boxing happens in two steps: the status bar, then (optionally) the map name.
   const [barBox, setBarBox] = useState<Box | null>(null);
@@ -99,7 +100,6 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
   const skill = skillId ? skillById.get(skillId) : undefined;
   const mpPerCast = skill ? skill.levels[(c.skills[skill.id] ?? 1) - 1]?.mpCon : undefined;
   const report: SessionReport | null = useMemo(() => (samples.length > 1 ? summarize(samples, { mpPerCast: mpPerCast || undefined }) : null), [samples, mpPerCast]);
-  const huntMaps = useMemo(() => MAPS.filter((m) => !m.isTown && m.spawns.length > 0), []);
   const guessed = useMemo(() => monstersGiving(MONSTERS, report?.expPerKill ?? null), [report?.expPerKill]);
   useEffect(() => {
     if (mapChosen || mapFromName || guessed.length !== 1) return;
@@ -120,7 +120,7 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
 
   async function start() {
     setError('');
-    setSaved(false);
+    setSavedId(null);
     setSamples([]);
     setMisses(0);
     try {
@@ -134,6 +134,12 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
       setMapFromName(false);
       stream.getVideoTracks()[0].addEventListener('ended', () => finish());
       const w = video.videoWidth, h = video.videoHeight;
+      // Find the status bar by itself; the map name is then the top-left corner of the window.
+      setPhase('finding');
+      const reader = await createBarReader();
+      live.current.reader = reader;
+      const found = await locateBar(await grab(stream.getVideoTracks()[0], video), w, h, reader, { level: c.level, mpMax: c.mp || undefined });
+      if (found) return begin(found, titleRegion(w, h));
       const remembered = loadBox();
       const nameRemembered = loadNameBox();
       const scale = (b: { x: number; y: number; w: number; h: number }) => ({ x: b.x * w, y: b.y * h, w: b.w * w, h: b.h * h });
@@ -166,7 +172,7 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
     setPicker(null);
     setPhase('recording');
     l.box = box;
-    l.reader = await createBarReader();
+    l.reader ??= await createBarReader();
     l.t0 = performance.now();
     const track = l.stream.getVideoTracks()[0];
     let last: Sample | undefined;
@@ -204,6 +210,11 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
     setPhase((p) => (p === 'recording' ? 'done' : 'idle'));
   }
 
+  // Save as soon as recording stops (if anything was gained); Undo removes it again.
+  useEffect(() => {
+    if (phase === 'done' && report && report.expGained > 0 && !savedId) save();
+  }, [phase]); // eslint-disable-line react-hooks/exhaustive-deps
+
   function save() {
     if (!report) return;
     const s: SavedSession = {
@@ -229,7 +240,12 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
       /* fine: the next session just guesses again */
     }
     upsertCharacter({ ...c, sessions: [s, ...(c.sessions ?? [])], ...(lastSample?.level ? { level: lastSample.level, currentExp: lastSample.exp } : {}) });
-    setSaved(true);
+    setSavedId(s.id);
+  }
+
+  function undo() {
+    upsertCharacter({ ...c, sessions: (c.sessions ?? []).filter((s) => s.id !== savedId) });
+    setSavedId(null);
   }
 
   const map = mapId != null ? mapById.get(mapId) : undefined;
@@ -244,16 +260,17 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
         {phase === 'recording' ? (
           <button className="btn small danger" onClick={finish}>Stop</button>
         ) : (
-          <button className="btn small primary" onClick={start}>{phase === 'done' ? 'Record again' : 'Start'}</button>
+          <button className="btn small primary" onClick={start} disabled={phase === 'finding'}>{phase === 'done' ? 'Record again' : 'Start'}</button>
         )}
       </div>
       {phase === 'idle' && !error && (
         <p className="small muted" style={{ margin: 0 }}>
-          Share your MapleStory window and train as usual; the app reads EXP and MP from the status bar about once a second, on this device (nothing is recorded or
+          Press Start, pick your MapleStory window and train as usual; press Stop when done and the session saves itself. The app reads EXP, MP and the map from the game about once a second, on this device (nothing is recorded or
           uploaded). Five minutes is enough for a solid EXP/min. Works in desktop Chrome or Edge.
         </p>
       )}
       {error && <p className="callout warn small">{error}</p>}
+      {phase === 'finding' && <p className="small muted" style={{ margin: 0 }}>Looking for the status bar…</p>}
 
       {phase === 'boxing' && picker && (
         <WindowPicker
@@ -275,9 +292,9 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
           }}
           prompt={
             barBox ? (
-              <><strong>Step 3 (optional): box the map name</strong> at the top left (the minimap title, expanded so the name shows). Then the map is picked for you. Or press Skip.</>
+              <><strong>Optional: box the map name</strong> at the top left (the minimap title, expanded so the name shows). Then the map is picked for you. Or press Skip.</>
             ) : (
-              <><strong>Step 2: drag a box around the status bar</strong> at the bottom of the game (LV · HP · MP · EXP). The boxes are remembered next time.</>
+              <><strong>Couldn't find the status bar by itself</strong> (it does when you share just the game window). Drag a box around LV · HP · MP · EXP at the bottom of the game; it's remembered next time.</>
             )
           }
         />
@@ -297,7 +314,7 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
                 }}
               >
                 <option value="">(not set)</option>
-                {huntMaps.map((m) => <option key={m.id} value={m.id}>{m.name} · {m.street}</option>)}
+                {HUNT_MAPS.map((m) => <option key={m.id} value={m.id}>{m.name} · {m.street}</option>)}
               </select>
             </label>
             {!mapChosen && mapFromName && <span className="small muted">Read from the game's minimap</span>}
@@ -326,8 +343,17 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
           {report && report.rejected > 0 && <p className="small muted">{report.rejected} unreadable reading{report.rejected === 1 ? '' : 's'} skipped.</p>}
           {phase === 'done' && report && (
             <div className="row">
-              <button className="btn primary" disabled={saved} onClick={save}>{saved ? 'Saved' : 'Save session'}</button>
-              <span className="small muted">Also updates {c.name}'s level and EXP.</span>
+              {savedId ? (
+                <>
+                  <span className="small">Saved to Your sessions, and {c.name}'s level and EXP updated.</span>
+                  <button className="btn small ghost" onClick={undo}>Undo</button>
+                </>
+              ) : (
+                <>
+                  <span className="small muted">No EXP gained, so nothing was saved.</span>
+                  {report.readings > 1 && <button className="btn small ghost" onClick={save}>Save anyway</button>}
+                </>
+              )}
             </div>
           )}
         </>
@@ -345,6 +371,7 @@ export function PastSessions({ c }: { c: Character }) {
   const remove = (id: string) => {
     if (confirm('Delete this session?')) upsertCharacter({ ...c, sessions: list.filter((s) => s.id !== id) });
   };
+  const setMap = (id: string, mapId: number | null) => upsertCharacter({ ...c, sessions: list.map((s) => (s.id === id ? { ...s, mapId } : s)) });
   return (
     <div className="card">
       <div className="card-head">
@@ -364,7 +391,10 @@ export function PastSessions({ c }: { c: Character }) {
             <li key={s.id} className="session-item">
               <div className="session-main">
                 <div>
-                  <strong>{s.mapId != null ? mapById.get(s.mapId)?.name ?? 'Unknown map' : 'No map picked'}</strong>
+                  <select className="plain-select" value={s.mapId ?? ''} onChange={(e) => setMap(s.id, e.target.value ? Number(e.target.value) : null)} aria-label="Map">
+                    <option value="">Which map? (pick)</option>
+                    {HUNT_MAPS.map((m) => <option key={m.id} value={m.id}>{m.name}</option>)}
+                  </select>
                   {s.id === best && list.length > 1 && <span className="pill verified" style={{ marginLeft: 8 }}>Best</span>}
                 </div>
                 <div className="small muted">

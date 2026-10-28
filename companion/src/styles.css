@@ -302,3 +302,6 @@ h1.char-pick select { font: inherit; font-weight: 700; color: var(--text); backg
 .session-facts { color: var(--text); opacity: 0.85; }
 .session-rate { text-align: right; }
 .session-rate .value { font-size: 1.4rem; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1.1; }
+/* A select that reads as a bold title until you click it */
+.plain-select { font: inherit; font-weight: 700; color: var(--text); background: transparent; border: 1px dashed transparent; border-radius: 6px; padding: 0 4px; margin-left: -4px; max-width: 100%; cursor: pointer; }
+.plain-select:hover, .plain-select:focus { border-color: var(--muted); }

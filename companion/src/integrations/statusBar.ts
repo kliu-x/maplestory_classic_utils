@@ -98,9 +98,40 @@ export async function createBarReader() {
   const worker = await createWorker('eng');
   return {
     read: async (canvas: HTMLCanvasElement) => (await worker.recognize(canvas)).data.text,
+    lines: async (canvas: HTMLCanvasElement) => (await worker.recognize(canvas)).data.lines.map((l) => ({ text: l.text, bbox: l.bbox, words: l.words.map((w) => ({ text: w.text, bbox: w.bbox })) })),
     close: () => worker.terminate(),
   };
 }
+
+type Rect = { x: number; y: number; w: number; h: number };
+type BarReader = Awaited<ReturnType<typeof createBarReader>>;
+
+/**
+ * Find the status bar in a shared game window without asking: read the bottom strip, take
+ * the line that parses as EXP, and box its words from HP / LV through the EXP percentage
+ * (the rest of that line is quick slots and other noise). Null when it is not there.
+ */
+export async function locateBar(frame: CanvasImageSource, w: number, h: number, reader: BarReader, hints: BarHints = {}): Promise<Rect | null> {
+  const top = Math.round(h * 0.8);
+  const scale = 2;
+  const lines = await reader.lines(prepareBar(frame, { x: 0, y: top, w, h: h - top }, scale));
+  const hit = lines.find((l) => parseStatusBar(l.text, hints).exp != null);
+  if (!hit) return null;
+  const ws = hit.words;
+  const first = Math.max(0, ws.findIndex((wd) => /LV|HP/i.test(wd.text)));
+  const pct = ws.findIndex((wd, i) => i >= first && /%/.test(wd.text));
+  const row = ws.slice(first, pct >= 0 ? pct + 1 : ws.length);
+  if (!row.length) return null;
+  // "LV. 26" is not needed: the level comes from EXP and its percentage.
+  const x0 = Math.min(...row.map((wd) => wd.bbox.x0)) / scale, x1 = Math.max(...row.map((wd) => wd.bbox.x1)) / scale;
+  const y0 = top + Math.min(...row.map((wd) => wd.bbox.y0)) / scale, y1 = top + Math.max(...row.map((wd) => wd.bbox.y1)) / scale;
+  const pad = 6;
+  const x = Math.max(0, x0 - pad), y = Math.max(0, y0 - pad);
+  return { x, y, w: Math.min(w - x, x1 - x0 + 2 * pad), h: Math.min(h - y, y1 - y0 + 2 * pad) };
+}
+
+/** Where the minimap title (map name) sits in a shared game window: the top-left corner. */
+export const titleRegion = (w: number, h: number): Rect => ({ x: 0, y: 0, w: Math.round(w * 0.4), h: Math.round(h * 0.12) });
 
 const words = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 
