@@ -432,3 +432,11 @@ textarea { font: inherit; padding: 8px 10px; color: var(--text); resize: vertica
    so the column names stay visible. Short tables are unaffected. */
 .table-wrap { overflow: auto; max-height: calc(100vh - 130px); }
 th { z-index: 1; box-shadow: inset 0 -2px 0 var(--border); }
+/* Dashboard: best monsters, each with where to farm it */
+.farm-list { list-style: none; margin: 0 0 8px; padding: 0; display: grid; gap: 10px; }
+.farm-list li { background: var(--surface); border: 2px solid var(--border); border-radius: 14px; padding: 8px 10px; }
+.farm-mob { display: flex; align-items: center; gap: 10px; color: var(--text); margin-bottom: 4px; }
+.farm-mob img { width: 40px; height: 40px; object-fit: contain; image-rendering: pixelated; }
+.farm-map { display: flex; justify-content: space-between; gap: 8px; padding: 4px 8px; border-radius: 8px; color: var(--text); font-weight: 600; }
+.farm-map:hover { background: var(--surface-2); text-decoration: none; }
+.farm-map strong { color: var(--accent-dark); white-space: nowrap; }

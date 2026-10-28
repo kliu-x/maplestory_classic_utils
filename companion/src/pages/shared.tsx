@@ -6,7 +6,7 @@ import { skillsForJob } from '../data';
 import { nextSp, type SpSuggestion } from '../calculators/planner';
 import { spPools, spentByTier, validateAllocation, type AllocationIssue } from '../calculators/sp';
 import { suggestAp, unspentAp, type ApSuggestion } from '../calculators/ap';
-import { rankMaps, type MapRow } from '../calculators/rank';
+import { byMonster, rankMaps, type MapRow, type MonsterSpots } from '../calculators/rank';
 import { useAppState } from '../storage/store';
 import { href } from '../router';
 
@@ -44,6 +44,8 @@ export interface Advice {
   unspentAp: number;
   issues: AllocationIssue[];
   topMaps: MapRow[];
+  /** Best monsters to farm, each with its best maps. */
+  topMonsters: MonsterSpots[];
   skillId: number | null;
   warnings: string[];
 }
@@ -77,8 +79,10 @@ export function adviceFor(c: Character, a: TrainingAssumptions): Advice {
   const skillId = defaultAttackSkill(c);
   if (skillId && !(c.skills[skillId] > 0) && tier > 0)
     warnings.push('Your main attack is Lv 0 in this profile, so damage is estimated as if you had not learned it. Enter your skill levels on the Characters page, or tick "I follow the plan".');
-  const topMaps = skillId ? rankMaps(c, skillId, a).slice(0, 3) : [];
+  const ranked = skillId ? rankMaps(c, skillId, a) : [];
+  const topMaps = ranked.slice(0, 3);
+  const topMonsters = byMonster(ranked).slice(0, 4).map((g) => ({ ...g, maps: g.maps.slice(0, 2) }));
   if (!c.observations.length) warnings.push('No measured damage yet: training numbers use formula estimates. Record a few hits on the Characters page.');
 
-  return { sp, ap: job.tier >= 0 ? suggestAp(job, c.base, c.equip, c.statGoals ?? {}) : [], unspentAp: unspent, issues, topMaps, skillId, warnings };
+  return { sp, ap: job.tier >= 0 ? suggestAp(job, c.base, c.equip, c.statGoals ?? {}) : [], unspentAp: unspent, issues, topMaps, topMonsters, skillId, warnings };
 }

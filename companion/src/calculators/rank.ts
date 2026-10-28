@@ -100,3 +100,30 @@ export function mainProvenance(row: MapRow) {
   const killable = row.spawns.filter((s) => s.eval.killsPerCast > 0).sort((a, b) => b.spawnPoints - a.spawnPoints);
   return (killable[0] ?? row.spawns[0])?.atk.provenance ?? 'none';
 }
+
+export interface MonsterSpots {
+  mobId: number;
+  name: string;
+  exp: number;
+  /** Casts to kill one (expected). */
+  hits: number;
+  /** Best maps for this monster, best first. */
+  maps: MapRow[];
+}
+
+/**
+ * The same ranking, monster first: each map is filed under the monster that gives most of its
+ * EXP (spawn points x EXP, among what this attack can kill). Groups keep the order of their
+ * best map, so the first monster is the one on the best map.
+ */
+export function byMonster(rows: MapRow[]): MonsterSpots[] {
+  const groups = new Map<number, MonsterSpots>();
+  for (const r of rows) {
+    const main = r.spawns.filter((s) => s.eval.killsPerCast > 0).sort((a, b) => b.spawnPoints * b.exp - a.spawnPoints * a.exp)[0];
+    if (!main) continue;
+    const g = groups.get(main.mobId) ?? { mobId: main.mobId, name: main.name, exp: main.exp, hits: main.eval.kill.expected, maps: [] };
+    g.maps.push(r);
+    groups.set(main.mobId, g);
+  }
+  return [...groups.values()];
+}

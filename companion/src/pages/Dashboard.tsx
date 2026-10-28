@@ -1,6 +1,6 @@
 import { expRemaining } from '../data/expTable';
 import { useMemo } from 'react';
-import { skillById } from '../data';
+import { IMG, skillById } from '../data';
 import { JOBS } from '../data/rules';
 import { href } from '../router';
 import { fmt, minutes, ProvenancePill, Stat, StatusPill } from '../components/ui';
@@ -106,27 +106,31 @@ export default function Dashboard(_: PageProps) {
           </section>
 
           <section>
-            <h3>Top training spots</h3>
-            {advice.topMaps.length === 0 && <p className="muted small">Nothing killable found. Check your attack skill and damage.</p>}
-            <ol className="next-list">
-              {advice.topMaps.map((r, i) => (
-                <li key={r.map.id}>
-                  <span className="step">{i + 1}</span>
-                  <span>
-                    <a href={href('training', { map: r.map.id })}>
-                      <strong>{r.map.name}</strong>
+            <h3>Best monsters to farm</h3>
+            {advice.topMonsters.length === 0 && <p className="muted small">Nothing killable found. Check your attack skill and damage.</p>}
+            <ol className="farm-list">
+              {advice.topMonsters.map((g) => (
+                <li key={g.mobId}>
+                  <a className="farm-mob" href={href('monsters', { id: g.mobId })}>
+                    <img src={IMG.mob(g.mobId)} alt="" loading="lazy" />
+                    <span>
+                      <strong>{g.name}</strong>
+                      <span className="small muted"> {g.exp} EXP · {g.hits <= 1.05 ? '1 hit' : `${Math.round(g.hits * 10) / 10} hits`}</span>
+                    </span>
+                  </a>
+                  {g.maps.map((r) => (
+                    <a key={`${r.map.id}-${r.lane?.index ?? 'all'}`} className="farm-map" href={href('training', { map: r.map.id })}>
+                      <span>
+                        {r.map.name}
+                        {r.lane && <span className="small muted"> · {laneLabel(r)}</span>}
+                      </span>
+                      <strong>{fmt(r.result.netExpPerMin)}<span className="small muted">/min</span></strong>
                     </a>
-                    {r.lane && <div className="small"><span className="pill accent">{laneLabel(r)}</span></div>}
-                    <div className="small muted">
-                      {fmt(r.result.netExpPerMin)} EXP/min · {fmt(r.result.expPerCast, 1)} EXP/cast · {r.result.limitedBy === 'spawns' ? 'spawn-limited' : 'attack-limited'}
-                    </div>
-                    <div className="small muted">
-                      {r.spawns.filter((s) => s.eval.killsPerCast > 0).map((s) => s.name).join(', ')} <ProvenancePill p={mainProvenance(r)} />
-                    </div>
-                  </span>
+                  ))}
                 </li>
               ))}
             </ol>
+            {advice.topMaps[0] && <div className="small muted">Estimates <ProvenancePill p={mainProvenance(advice.topMaps[0])} /></div>}
           </section>
         </div>
       </div>
