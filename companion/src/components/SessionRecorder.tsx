@@ -98,7 +98,7 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
   const [mapFromName, setMapFromName] = useState(false);
 
   const skill = skillId ? skillById.get(skillId) : undefined;
-  const mpPerCast = skill ? skill.levels[(c.skills[skill.id] ?? 1) - 1]?.mpCon : undefined;
+  const mpPerCast = skill ? skill.levels[Math.max(1, c.skills[skill.id] ?? 1) - 1]?.mpCon : undefined;
   const report: SessionReport | null = useMemo(() => (samples.length > 1 ? summarize(samples, { mpPerCast: mpPerCast || undefined }) : null), [samples, mpPerCast]);
   const guessed = useMemo(() => monstersGiving(MONSTERS, report?.expPerKill ?? null), [report?.expPerKill]);
   useEffect(() => {
@@ -221,7 +221,7 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
       id: Math.random().toString(36).slice(2, 10),
       at: new Date().toISOString(),
       mapId,
-      level: samples[samples.length - 1]?.level ?? c.level,
+      level: report.last?.level ?? c.level,
       minutes: report.seconds / 60,
       activeMinutes: report.activeSeconds / 60,
       expGained: report.expGained,
@@ -233,13 +233,13 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
       mpPerMin: report.mpPerMin,
       potions: report.potions,
     };
-    const lastSample = samples[samples.length - 1];
+    const lastSample = report.last;
     try {
       if (mapId != null) localStorage.setItem(lastMapKey(c.id), String(mapId));
     } catch {
       /* fine: the next session just guesses again */
     }
-    upsertCharacter({ ...c, sessions: [s, ...(c.sessions ?? [])], ...(lastSample?.level ? { level: lastSample.level, currentExp: lastSample.exp } : {}) });
+    upsertCharacter({ ...c, sessions: [s, ...(c.sessions ?? [])], ...(lastSample?.level && Math.abs(lastSample.level - c.level) <= 1 ? { level: lastSample.level, currentExp: lastSample.exp } : {}) });
     setSavedId(s.id);
   }
 
@@ -335,7 +335,7 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
               <Big label="Kills / min" value={report.activeSeconds ? fmt((report.kills * 60) / report.activeSeconds, 1) : '—'} sub={`${fmt(report.kills)} kills${report.expPerKill ? ` · ${fmt(report.expPerKill)} EXP each` : ''}`} />
               <Big label="Casts per kill" value={report.castsPerKill != null ? fmt(report.castsPerKill, 2) : '—'} sub={mpPerCast ? `from MP spent (${mpPerCast} MP per ${skill?.name})` : 'set your main attack'} />
               <Big label="MP / min" value={fmt(report.mpPerMin)} sub={`${report.potions} potion${report.potions === 1 ? '' : 's'}`} />
-              <Big label="Time to level" value={report.expPerActiveMin > 0 && lastS?.level ? minutes(expRemaining(lastS.level, lastS.exp ?? 0) / report.expPerActiveMin) : '—'} sub="at this rate" />
+              <Big label="Time to level" value={report.expPerActiveMin > 0 && report.last?.level ? minutes(expRemaining(report.last.level, report.last.exp ?? 0) / report.expPerActiveMin) : '—'} sub="at this rate" />
               <Big label="App estimate here" value={estimate != null ? fmt(estimate) : '—'} sub={estimate == null ? 'pick the map' : report.expPerActiveMin ? `you: ×${fmt(report.expPerActiveMin / estimate, 2)}` : 'EXP/min for this map'} />
             </div>
           )}
@@ -398,7 +398,7 @@ export function PastSessions({ c }: { c: Character }) {
                   {s.id === best && list.length > 1 && <span className="pill verified" style={{ marginLeft: 8 }}>Best</span>}
                 </div>
                 <div className="small muted">
-                  Lv {s.level} · {new Date(s.at).toLocaleString([], { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })} · {fmt(s.activeMinutes, 1)} min hunting
+                  Lv {s.level} · {new Date(s.at).toLocaleString([], { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })} · {fmt(s.activeMinutes, 1)} of {fmt(s.minutes, 1)} min hunting
                 </div>
                 <div className="small session-facts">{facts.join(' · ')}</div>
               </div>

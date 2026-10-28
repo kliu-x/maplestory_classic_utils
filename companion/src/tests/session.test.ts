@@ -97,3 +97,44 @@ describe('reading the map from the minimap title', () => {
     expect(matchMapName('MINI MAP', MAPS)).toBeNull();
   });
 });
+
+describe('session report: misreads that repeat', () => {
+  // Lv 27 on Bubblings: 28 EXP a kill, a kill every 3 s, read every 1.2 s for 5 minutes.
+  const need = expForLevel(27);
+  const truth: Sample[] = [];
+  for (let i = 0; i <= 250; i++) {
+    const t = i * 1.2;
+    truth.push({ t, level: 27, exp: 24000 + Math.floor(t / 3) * 28, mp: 900, mpMax: 1000 });
+  }
+
+  it('ignores a misread that repeats while the screen is still, and a wrong level', () => {
+    const noisy = truth.map((s, i) => {
+      if (i >= 40 && i < 50) return { ...s, exp: s.exp! * 10 }; // same wrong digit ten readings in a row
+      if (i % 7 === 0) return { ...s, level: 26, exp: Math.min(s.exp!, expForLevel(26) - 1) }; // level misread
+      if (i % 11 === 0) return { ...s, exp: s.exp! + 3000 }; // one-off jump
+      return s;
+    });
+    const r = summarize(noisy, { mpPerCast: 8 });
+    const real = truth[truth.length - 1].exp! - truth[0].exp!;
+    expect(r.expGained).toBeLessThanOrEqual(real);
+    expect(r.expGained).toBeGreaterThan(real * 0.9);
+    expect(r.levelUps).toBe(0);
+    expect(r.expPerKill).toBe(28);
+    expect(r.last?.level).toBe(27);
+    expect(r.expPerActiveMin).toBeLessThan(700);
+    expect(r.rejected).toBeGreaterThan(40);
+    expect(need).toBeGreaterThan(0);
+  });
+
+  it('still follows a real level-up', () => {
+    const up: Sample[] = [
+      { t: 0, level: 27, exp: expForLevel(27) - 50 },
+      { t: 3, level: 27, exp: expForLevel(27) - 22 },
+      { t: 6, level: 28, exp: 6 },
+      { t: 9, level: 28, exp: 34 },
+    ];
+    const r = summarize(up);
+    expect(r.levelUps).toBe(1);
+    expect(r.expGained).toBe(84);
+  });
+});

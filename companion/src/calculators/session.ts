@@ -29,6 +29,8 @@ export interface SessionReport {
   mpPerMin: number;
   potions: number;
   readings: number;
+  /** The last trustworthy reading (for "time to level" and updating the profile). */
+  last: Sample | null;
   /** Readings thrown out as misreads (EXP going backwards, impossible jumps). */
   rejected: number;
 }
@@ -40,29 +42,43 @@ export interface SessionOptions {
   idleAfter?: number;
 }
 
-/** Keep EXP readings that make sense: never backwards within a level, no absurd jumps unless the next reading agrees. */
+/** EXP earned since level 1: lets readings on either side of a level-up be compared directly. */
+function totalExp(s: Sample): number {
+  let sum = s.exp!;
+  for (let l = 1; l < s.level!; l++) sum += expForLevel(l);
+  return sum;
+}
+
+/** Fastest believable gain: 0.2% of a level per second (12% a minute), plus one reading's worth. */
+const MAX_SHARE_PER_SECOND = 0.002;
+
+/**
+ * Keep the readings that tell one consistent story: the longest chain where total EXP never
+ * goes down and never climbs faster than anyone could earn it. A misread can repeat while the
+ * screen is still, so "the next reading agrees" proves nothing; the true readings are simply
+ * the majority, and a wrong level or digit breaks the chain and drops out.
+ */
 function cleanExp(samples: Sample[]): { kept: Sample[]; rejected: number } {
-  const withExp = samples.filter((s) => s.exp != null && s.level != null);
-  const kept: Sample[] = [];
-  let rejected = 0;
-  for (let i = 0; i < withExp.length; i++) {
-    const s = withExp[i];
-    const prev = kept[kept.length - 1];
-    if (!prev) {
-      kept.push(s);
-      continue;
+  const xs = samples.filter((s) => s.exp != null && s.level != null && s.level >= 1 && s.exp < expForLevel(s.level));
+  const tot = xs.map(totalExp);
+  const best = xs.map(() => 1);
+  const from = xs.map(() => -1);
+  for (let j = 0; j < xs.length; j++) {
+    const cap = expForLevel(xs[j].level!) * MAX_SHARE_PER_SECOND;
+    for (let i = Math.max(0, j - 600); i < j; i++) {
+      const gain = tot[j] - tot[i];
+      const dt = xs[j].t - xs[i].t;
+      if (gain >= 0 && gain <= cap * Math.max(dt, 1.5) && best[i] + 1 > best[j]) {
+        best[j] = best[i] + 1;
+        from[j] = i;
+      }
     }
-    const sameLevel = s.level === prev.level;
-    const levelUp = s.level === prev.level! + 1;
-    const gain = sameLevel ? s.exp! - prev.exp! : levelUp ? expForLevel(prev.level!) - prev.exp! + s.exp! : NaN;
-    // A jump of more than 10% of a level is a misread unless the next reading confirms it.
-    const big = gain > expForLevel(prev.level!) * 0.1;
-    const next = withExp[i + 1];
-    const confirmed = !big || (next != null && next.level === s.level && next.exp! >= s.exp!);
-    if (Number.isFinite(gain) && gain >= 0 && confirmed) kept.push(s);
-    else rejected++;
   }
-  return { kept, rejected };
+  let end = -1;
+  for (let j = 0; j < xs.length; j++) if (end < 0 || best[j] >= best[end]) end = j;
+  const kept: Sample[] = [];
+  for (let j = end; j >= 0; j = from[j]) kept.unshift(xs[j]);
+  return { kept, rejected: samples.filter((s) => s.exp != null).length - kept.length };
 }
 
 export function summarize(samples: Sample[], opts: SessionOptions = {}): SessionReport {
@@ -75,7 +91,7 @@ export function summarize(samples: Sample[], opts: SessionOptions = {}): Session
   const gains: { t: number; amount: number }[] = [];
   for (let i = 1; i < kept.length; i++) {
     const a = kept[i - 1], b = kept[i];
-    const g = b.level === a.level ? b.exp! - a.exp! : expForLevel(a.level!) - a.exp! + b.exp!;
+    const g = totalExp(b) - totalExp(a);
     if (b.level !== a.level) levelUps++;
     if (g > 0) {
       expGained += g;
@@ -105,7 +121,11 @@ export function summarize(samples: Sample[], opts: SessionOptions = {}): Session
   let mpUsed = 0;
   let potions = 0;
   let casts = 0;
-  const mp = samples.filter((s) => s.mp != null);
+  // Only readings that agree on Max MP (the most common one) and fit under it.
+  const maxes = new Map<number, number>();
+  for (const s of samples) if (s.mpMax) maxes.set(s.mpMax, (maxes.get(s.mpMax) ?? 0) + 1);
+  const mpMax = [...maxes].sort((x, y) => y[1] - x[1])[0]?.[0];
+  const mp = samples.filter((s) => s.mp != null && (!mpMax || (s.mpMax === mpMax && s.mp <= mpMax)));
   for (let i = 1; i < mp.length; i++) {
     const d = mp[i].mp! - mp[i - 1].mp!;
     if (d < 0) {
@@ -130,6 +150,7 @@ export function summarize(samples: Sample[], opts: SessionOptions = {}): Session
     mpPerMin: perMin(mpUsed, seconds),
     potions,
     readings: samples.length,
+    last: kept[kept.length - 1] ?? null,
     rejected,
   };
 }

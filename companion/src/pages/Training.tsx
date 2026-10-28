@@ -3,7 +3,7 @@ import { useMemo, useState } from 'react';
 import type { TrainingAssumptions } from '../models/types';
 import { attackSkillsForJob, mapById } from '../data';
 import { rankMaps, evaluateMapFor, mainProvenance, laneLabel, type MapRow } from '../calculators/rank';
-import { DEFAULT_ASSUMPTIONS, setAssumptions } from '../storage/store';
+import { DEFAULT_ASSUMPTIONS, setAssumptions, upsertCharacter } from '../storage/store';
 import { fmt, fmt1, minutes, NumField, ProvenancePill, StatusPill } from '../components/ui';
 import { defaultAttackSkill, NeedCharacter, useActive, type PageProps } from './shared';
 import { href } from '../router';
@@ -63,6 +63,14 @@ export default function Training({ params }: PageProps) {
           <NumField label="Max levels above you" value={levelWindow} min={0} max={60} width={80} onChange={setLevelWindow} />
         </div>
       </div>
+
+      {sid != null && !(c.skills[sid] > 0) && (
+        <p className="callout warn small">
+          {c.name}'s profile has this attack at Lv 0, so nothing can be killed in the estimates.{' '}
+          <button className="btn small" onClick={() => upsertCharacter({ ...c, followPlan: true, mainSkillId: sid })}>Fill skills from the plan for Lv {c.level}</button>{' '}
+          or <a href={href('characters', { id: c.id })}>enter them yourself</a>.
+        </p>
+      )}
 
       <SessionRecorder c={c} a={a} skillId={sid} defaultMapId={rows[0]?.map.id ?? null} />
 
