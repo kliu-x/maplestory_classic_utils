@@ -104,6 +104,9 @@ export interface Quest {
   exp: number;
   meso: number;
   rewardItemCount: number;
+  rewardItems: { itemId: number; count: number; jobMask?: number }[];
+  fame?: number;
+  rewardSkills?: number;
   prereqQuestIds: number[];
   npcId?: number;
   /** Hand-in NPC when it differs from the quest giver. */

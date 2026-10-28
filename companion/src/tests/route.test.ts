@@ -84,3 +84,16 @@ describe('quest log text', () => {
     expect(thicket.bossSpawns?.map((b) => b.mobId)).toContain(q.mentionsMobs[0]);
   });
 });
+
+describe('quest rewards', () => {
+  it('lists EXP, mesos, fame and items, with class-specific items marked', () => {
+    const mush = QUESTS.find((x) => x.id === 10123)!;
+    expect(mush).toMatchObject({ exp: 188, meso: 351 });
+    expect(mush.rewardItems).toContainEqual({ itemId: 2000000, count: 10 });
+    // items the quest takes away (negative counts) are not rewards
+    expect(mush.rewardItems.every((i) => i.count > 0)).toBe(true);
+    const john = QUESTS.find((x) => x.id === 10007)!;
+    expect(john.fame).toBe(1);
+    expect(john.rewardItems.map((i) => i.jobMask)).toEqual([1, 2, 4, 8, 16]);
+  });
+});

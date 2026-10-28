@@ -233,6 +233,11 @@ for (const q of questList) {
     exp: reward.exp ?? 0,
     meso: reward.meso ?? 0,
     rewardItemCount: (reward.items || []).filter((i) => i.count > 0).length,
+    // Items given on completion. `job` is the client's class bitmask (1 warrior, 2 magician,
+    // 4 bowman, 8 thief, 16 pirate): one of several class-specific rewards.
+    rewardItems: (reward.items || []).filter((i) => i.count > 0).map((i) => ({ itemId: i.id, count: i.count, ...(i.job ? { jobMask: i.job } : {}) })),
+    ...(reward.fame ? { fame: reward.fame } : {}),
+    ...(reward.skills?.length ? { rewardSkills: reward.skills.length } : {}),
     prereqQuestIds: (start.quests || []).map((x) => x.id),
     npcId: start.npcId,
     ...(done.npcId != null && done.npcId !== start.npcId ? { endNpcId: done.npcId } : {}),

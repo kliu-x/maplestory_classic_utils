@@ -120,6 +120,8 @@ async function main() {
   for (const q of quests) {
     const d = await cached(`quest/${q.id}.json`, `/quest/${q.id}`, trimQuest);
     for (const it of d.requirementToComplete?.items || []) if (it.count > 0) itemIds.add(it.id);
+    // ...items quests give as rewards...
+    for (const it of d.rewardOnComplete?.items || []) if (it.count > 0) itemIds.add(it.id);
     // ...and items the quest texts mention (#t4000016#)
     for (const m of d.messages || []) for (const t of String(m).matchAll(/#[tz]0*(\d+)/g)) itemIds.add(Number(t[1]));
   }

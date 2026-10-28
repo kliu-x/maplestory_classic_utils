@@ -2,12 +2,48 @@ import type { GameMap, Quest } from '../models/types';
 import { IMG, MAPS, QUESTS, itemById, mapById, monsterById, npcById } from '../data';
 import { QUEST_NOTES } from '../data/questNotes';
 import { QUEST_LOG_TITLES } from '../data/questAliases';
+import { JOBS } from '../data/rules';
+import { useActive } from '../pages/shared';
 import { homeTown, routeFromTown } from '../calculators/route';
 import { href } from '../router';
 import { fmt, SourceBadge, StatusPill } from './ui';
 import { MapView, type Pin } from './MapView';
 
 const questById = new Map(QUESTS.map((q) => [q.id, q]));
+
+// The client's class bitmask on class-specific rewards.
+const JOB_BITS: [number, string][] = [[1, 'Warrior'], [2, 'Magician'], [4, 'Bowman'], [8, 'Thief'], [16, 'Pirate']];
+const jobsOf = (mask: number) => JOB_BITS.filter(([b]) => mask & b).map(([, name]) => name);
+
+/** What the quest gives: EXP, mesos, fame, items (class-specific ones marked for your class). */
+function Rewards({ q }: { q: Quest }) {
+  const { character } = useActive();
+  const family = character ? JOBS[character.job].family : null;
+  const bits = [q.exp ? `${fmt(q.exp)} EXP` : '', q.meso ? `${fmt(q.meso)} mesos` : '', q.fame ? `+${q.fame} fame` : '', q.rewardSkills ? 'a skill' : ''].filter(Boolean);
+  if (!bits.length && !q.rewardItems.length) return <p className="small muted" style={{ margin: 0 }}>No reward listed in the game files.</p>;
+  const choice = q.rewardItems.some((i) => i.jobMask);
+  return (
+    <div>
+      {bits.length > 0 && <p style={{ margin: '0 0 6px' }}><strong>{bits.join(' · ')}</strong></p>}
+      {choice && <p className="small muted" style={{ margin: '0 0 4px' }}>One item for your class:</p>}
+      {q.rewardItems.map((it, i) => {
+        const jobs = it.jobMask ? jobsOf(it.jobMask) : [];
+        const mine = !!family && jobs.includes(family);
+        const item = itemById.get(it.itemId);
+        return (
+          <div key={`${it.itemId}-${i}`} className={`icon-row${it.jobMask && family && !mine ? ' dim' : ''}`} style={{ marginBottom: 4 }} title={item?.description}>
+            <img src={IMG.item(it.itemId)} alt="" loading="lazy" onError={(e) => (e.currentTarget.style.visibility = 'hidden')} />
+            <span>
+              {item?.name ?? `Item ${it.itemId}`}{it.count > 1 ? ` × ${it.count}` : ''}
+              {jobs.length > 0 && <span className="small muted"> · {jobs.join('/')}</span>}
+              {mine && <span className="pill accent" style={{ marginLeft: 6 }}>yours</span>}
+            </span>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
 const nextOf = (id: number) => QUESTS.filter((q) => q.prereqQuestIds.includes(id));
 
 /** Breadcrumb from the nearest town, e.g. Henesys → Henesys Hunting Ground I → ... */
@@ -90,7 +126,7 @@ export function QuestDetail({ quest: q }: { quest: Quest }) {
       </div>
       {QUEST_LOG_TITLES[q.id] && <p className="small muted" style={{ margin: '-6px 0 6px' }}>In your quest log under <strong>{QUEST_LOG_TITLES[q.id]}</strong></p>}
       <p className="small" style={{ marginTop: 0 }}>
-        Lv {q.minLevel || 1}+{q.exp ? ` · ${fmt(q.exp)} EXP` : ''}{q.meso ? ` · ${fmt(q.meso)} mesos` : ''}
+        Lv {q.minLevel || 1}+{q.exp ? ` · ${fmt(q.exp)} EXP` : ''}
         {q.availableUntil && <> · event, start before <strong>{q.availableUntil}</strong></>}
       </p>
       {q.hint && <p className="callout info" style={{ marginTop: 0 }}>Objective from the game: <em>“{q.hint}”</em></p>}
@@ -166,6 +202,11 @@ export function QuestDetail({ quest: q }: { quest: Quest }) {
             })}
           </div>
         )}
+      </div>
+
+      <div style={{ marginTop: 12 }}>
+        <h3>Rewards</h3>
+        <Rewards q={q} />
       </div>
 
       {(prev.length > 0 || next.length > 0) && (
