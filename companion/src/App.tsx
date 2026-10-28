@@ -48,7 +48,7 @@ export default function App() {
     <div className="app">
       <aside className="sidebar">
         <div className="brand">
-          <span style={{ fontSize: 22, color: 'var(--accent)' }}>✹</span>
+          <span style={{ fontSize: 26 }} aria-hidden>🍁</span>
           <span>
             Classic Companion
             <small>MapleStory Classic World</small>

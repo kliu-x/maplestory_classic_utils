@@ -331,3 +331,83 @@ h1.char-pick select { font: inherit; font-weight: 700; color: var(--text); backg
 .mapview-pin.spot .mapview-label { transform: none; left: 50px; top: 10px; font-size: 14px; background: #c92a2a; }
 @keyframes spot-pulse { 50% { box-shadow: 0 0 0 10px rgba(255,59,59,.25), inset 0 0 0 2px rgba(0,0,0,.4); } }
 .mapview-img:has(.mapview-pin.spot) .mapview-pin:not(.spot) .mapview-label { display: none; }
+
+/* ================= Maple theme =================
+   Warm parchment panels, a wooden sidebar, chunky rounded buttons. Overrides the
+   neutral base above; everything still reads from the same tokens. */
+:root {
+  --bg: #fbf1dc;
+  --surface: #fffaf0;
+  --surface-2: #fbe9c8;
+  --border: #e9bf7a;
+  --text: #3b2405;
+  --muted: #7a5520;
+  --accent: #d85a30;
+  --accent-soft: #fde1d2;
+  --accent-dark: #993c1d;
+  --wood: #5a3a12;
+  --wood-2: #74501f;
+  --info: #b24a1a;
+  --radius: 16px;
+  --shadow: 0 3px 0 rgba(120, 72, 10, 0.18);
+  --font: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c1309;
+    --surface: #2a1c0c;
+    --surface-2: #3a2811;
+    --border: #6b4a1c;
+    --text: #fbeed6;
+    --muted: #d6b47c;
+    --accent: #f0884f;
+    --accent-soft: #4a2414;
+    --accent-dark: #ffb38a;
+    --wood: #140d05;
+    --wood-2: #2a1c0c;
+    --info: #ffae73;
+    --shadow: 0 3px 0 rgba(0, 0, 0, 0.35);
+  }
+}
+body { font-weight: 500; }
+h1, h2, h3, .brand, strong { font-weight: 800; }
+h1 { font-size: 1.75rem; color: var(--accent-dark); }
+h2 { font-size: 1.3rem; }
+a { color: var(--info); font-weight: 700; }
+
+.sidebar { background: var(--wood); border-right: 0; color: #fbeed6; }
+.brand { color: #ffd59a; font-size: 1.1rem; }
+.brand small { color: #e9c58e; font-size: 12px; }
+.nav-link { color: #fbeed6; border-radius: 999px; padding: 8px 14px; font-weight: 700; }
+.nav-link:hover { background: var(--wood-2); }
+.nav-link.active { background: var(--accent); color: #fff; box-shadow: 0 3px 0 rgba(0,0,0,.25); }
+.sidebar-foot, .sidebar-foot a { color: #e9c58e; }
+.mobile-nav { background: var(--wood); }
+.topbar { background: color-mix(in srgb, var(--bg) 92%, transparent); border-bottom: 2px solid var(--border); }
+
+.card { border: 2px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 18px; }
+.card-head h2 { display: inline-flex; align-items: center; gap: 8px; }
+.card-head h2::before { content: ''; width: 10px; height: 22px; border-radius: 4px; background: var(--accent); }
+.stat { background: var(--surface); border: 2px solid var(--border); border-radius: 14px; }
+.stat .value, .big { color: var(--accent-dark); }
+
+.btn { border: 2px solid var(--border); border-radius: 999px; padding: 6px 16px; font-weight: 800; background: var(--surface); box-shadow: 0 2px 0 var(--border); }
+.btn:hover { background: var(--surface-2); }
+.btn:active { transform: translateY(2px); box-shadow: none; }
+.btn.primary { background: var(--accent); border-color: var(--accent-dark); color: #fff; box-shadow: 0 3px 0 var(--accent-dark); }
+.btn.ghost { box-shadow: none; border-color: transparent; }
+.btn.small { padding: 4px 12px; }
+input[type='text'], input[type='number'], input[type='search'], select, textarea { border: 2px solid var(--border); border-radius: 10px; background: var(--surface); }
+.callout { border: 2px solid var(--border); border-radius: 14px; }
+.pill { border-radius: 999px; }
+th { background: var(--surface-2); }
+
+.rank-item, .session-item { background: var(--surface); border: 2px solid var(--border); border-radius: 14px; box-shadow: var(--shadow); }
+.rank-item.top { outline: 0; border-color: var(--accent); box-shadow: 0 3px 0 var(--accent-dark); }
+.rank-n { background: var(--surface-2); color: var(--accent-dark); width: 36px; height: 36px; font-size: 1.1rem; }
+.rank-item.top .rank-n { background: var(--accent); color: #fff; }
+.rank-rate .value, .session-rate .value { color: var(--accent-dark); font-weight: 800; }
+.mob-chip { background: #eaf3de; color: #27500a; font-weight: 700; }
+.mob-chip.off { background: var(--surface-2); color: var(--muted); }
+@media (prefers-color-scheme: dark) { .mob-chip { background: #27500a; color: #eaf3de; } }
+.rank-main > :first-child strong, .session-main strong { font-size: 1.15rem; }
