@@ -280,8 +280,7 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
       </div>
       {phase === 'idle' && !error && (
         <p className="small muted" style={{ margin: 0 }}>
-          Press Start, pick your MapleStory window and train as usual; press Stop when done and the session saves itself. The app reads EXP, MP and the map from the game about once a second, on this device (nothing is recorded or
-          uploaded). Five minutes is enough for a solid EXP/min. Works in desktop Chrome or Edge.
+          Press Start, pick the MapleStory window, play, then Stop. It saves by itself. Nothing leaves this device.
         </p>
       )}
       {error && <p className="callout warn small">{error}</p>}
@@ -428,7 +427,7 @@ export function PastSessions({ c }: { c: Character }) {
           );
         })}
       </ul>
-      <p className="small muted" style={{ marginBottom: 0 }}>EXP/min and kills/min count hunting time only (breaks left out).</p>
+      
     </div>
   );
 }

@@ -1,53 +1,30 @@
 import { PastSessions, SessionRecorder } from '../components/SessionRecorder';
 import { useMemo, useState } from 'react';
 import type { TrainingAssumptions } from '../models/types';
-import { attackSkillsForJob, mapById } from '../data';
-import { rankMaps, evaluateMapFor, mainProvenance, laneLabel, type MapRow } from '../calculators/rank';
+import { attackSkillsForJob } from '../data';
+import { rankMaps, mainProvenance, laneLabel, type MapRow } from '../calculators/rank';
 import { DEFAULT_ASSUMPTIONS, setAssumptions, upsertCharacter } from '../storage/store';
 import { fmt, fmt1, minutes, NumField, ProvenancePill, StatusPill } from '../components/ui';
 import { defaultAttackSkill, NeedCharacter, useActive, type PageProps } from './shared';
 import { href } from '../router';
 
-type SortKey = 'netExpPerMin' | 'expPerCast' | 'killsPerMin' | 'mesoCostPerMin';
-
 export default function Training({ params }: PageProps) {
   const { character: c, assumptions: a } = useActive();
   const [skillId, setSkillId] = useState<number | null>(null);
-  const [sort, setSort] = useState<SortKey>('netExpPerMin');
   const [levelWindow, setLevelWindow] = useState(15);
-  const [limit, setLimit] = useState(25);
-  const [picked, setPicked] = useState<number[]>(() => (params.get('map') ? [Number(params.get('map'))] : []));
+  const [limit, setLimit] = useState(10);
   const [open, setOpen] = useState<number | null>(params.get('map') ? Number(params.get('map')) : null);
 
   const sid = skillId ?? (c ? defaultAttackSkill(c) : null);
   const rows = useMemo(() => (c ? rankMaps(c, sid, a, { maxLevelAbove: levelWindow }) : []), [c, sid, a, levelWindow]);
-  const sorted = useMemo(() => {
-    const r = [...rows];
-    if (sort === 'mesoCostPerMin') r.sort((x, y) => x.result.mesoCostPerMin - y.result.mesoCostPerMin);
-    else r.sort((x, y) => y.result[sort] - x.result[sort] || y.result.killableShare - x.result.killableShare);
-    return r;
-  }, [rows, sort]);
-
   if (!c) return <NeedCharacter />;
   const attacks = attackSkillsForJob(c.job);
-  const compareRows = picked
-    .map((id) => rows.find((r) => r.map.id === id) ?? (mapById.get(id) ? evaluateMapFor(c, sid, mapById.get(id)!, a) : null))
-    .filter((r): r is MapRow => !!r);
-
-  const toggle = (id: number) => setPicked((p) => (p.includes(id) ? p.filter((x) => x !== id) : [...p, id].slice(-2)));
-  const th = (k: SortKey, label: string, title?: string) => (
-    <th className="sortable num" title={title} onClick={() => setSort(k)}>
-      {label}
-      {sort === k ? ' ▾' : ''}
-    </th>
-  );
-
   return (
     <>
       <div className="page-head">
         <div>
           <h1>Training</h1>
-          <p>Maps ranked by estimated EXP per minute for {c.name}. Change damage or assumptions and everything recalculates.</p>
+          <p>Where {c.name} should train.</p>
         </div>
         <div className="row">
           <label className="field">
@@ -78,95 +55,59 @@ export default function Training({ params }: PageProps) {
 
       <Assumptions a={a} />
 
-      {compareRows.length === 2 && <Compare rows={compareRows} />}
+      <div className="card" style={{ marginTop: 16 }}>
+        <div className="card-head">
+          <h2>Where to train</h2>
 
-      <div className="card" style={{ padding: 0, marginTop: 16 }}>
-        <div className="card-head" style={{ padding: '12px 16px 0' }}>
-          <h2>Ranking</h2>
-          <span className="small muted">Tick two maps to compare side by side · click a row for details</span>
         </div>
-        <div className="table-wrap" style={{ border: 0, borderRadius: 0 }}>
-          <table>
-            <thead>
-              <tr>
-                <th></th>
-                <th>Map</th>
-                <th>Monsters (spawn points)</th>
-                {th('netExpPerMin', 'EXP/min', 'Net of travel and death penalty')}
-                {th('expPerCast', 'EXP/cast', 'Efficiency per attack. Not the same as EXP/min')}
-                {th('killsPerMin', 'Kills/min')}
-                <th className="num">Casts/kill</th>
-                <th>Limit</th>
-                {th('mesoCostPerMin', 'Meso cost/min', 'Potions + stars')}
-                <th>Damage</th>
-              </tr>
-            </thead>
-            <tbody>
-              {sorted.slice(0, limit).map((r, i) => {
-                const castsPerKill = r.result.killsPerMin > 0 ? r.result.castsPerMin / r.result.killsPerMin : Infinity;
-                const prov = mainProvenance(r);
-                return (
-                  <FragmentRow key={r.map.id} open={open === r.map.id} row={r}>
-                    <tr className={`clickable ${picked.includes(r.map.id) ? 'selected' : ''}`} onClick={() => setOpen(open === r.map.id ? null : r.map.id)}>
-                      <td onClick={(e) => e.stopPropagation()}>
-                        <input type="checkbox" checked={picked.includes(r.map.id)} onChange={() => toggle(r.map.id)} aria-label={`Compare ${r.map.name}`} />
-                      </td>
-                      <td>
-                        <span className="muted small">{i + 1}.</span> <strong>{r.map.name}</strong>
-                        <div className="small muted">{r.map.street}</div>
-                        {r.lane && (
-                          <div className="small" title="Lanes are inferred from spawn positions in the map file (platform height and gaps).">
-                            <span className="pill accent">{laneLabel(r)}</span>{' '}
-                            <span className="muted">whole map {fmt(r.wholeMap?.netExpPerMin ?? 0)}/min</span>
-                          </div>
-                        )}
-                      </td>
-                      <td className="small">
-                        {r.spawns.map((s, k) => (
-                          <span key={s.mobId} style={s.eval.killsPerCast > 0 ? undefined : { color: 'var(--muted)', textDecoration: 'line-through' }} title={s.eval.killsPerCast > 0 ? undefined : 'Cannot be killed with this attack (0 damage or 0% hit chance)'}>
-                            {k > 0 && ', '}
-                            {s.name} ({s.spawnPoints})
+        <ol className="rank-list">
+          {rows.slice(0, limit).map((r, i) => {
+            const mine = (c.sessions ?? []).filter((s) => s.mapId === r.map.id).map((s) => s.expPerActiveMin);
+            const isOpen = open === r.map.id;
+            return (
+              <li key={`${r.map.id}-${r.lane?.index ?? 'all'}`} className={`rank-item ${i === 0 ? 'top' : ''}`}>
+                <button className="rank-row" onClick={() => setOpen(isOpen ? null : r.map.id)} aria-expanded={isOpen}>
+                  <span className="rank-n">{i + 1}</span>
+                  <span className="rank-main">
+                    <strong>{r.map.name}</strong> <span className="small muted">{r.map.street}</span>
+                    {r.lane && <span className="pill accent" style={{ marginLeft: 6 }} title="Stay on this platform: it beats roaming the whole map.">{laneLabel(r)}</span>}
+                    <span className="rank-mobs">
+                      {r.spawns.map((sp) => {
+                        const hits = sp.eval.kill.expected;
+                        return (
+                          <span key={sp.mobId} className={`mob-chip ${sp.eval.killsPerCast > 0 ? '' : 'off'}`} title={sp.eval.killsPerCast > 0 ? `${sp.spawnPoints} spawn points, ${sp.exp} EXP each` : "Can't be killed with this attack"}>
+                            {sp.name} <span className="muted">{sp.eval.killsPerCast > 0 ? (hits <= 1.05 ? '1 hit' : `${Math.abs(hits - Math.round(hits)) < 0.05 ? Math.round(hits) : fmt1(hits)} hits`) : '✕'}</span>
                           </span>
-                        ))}
-                      </td>
-                      <td className="num"><strong>{fmt(r.result.netExpPerMin)}</strong></td>
-                      <td className="num">{fmt1(r.result.expPerCast)}</td>
-                      <td className="num">{fmt1(r.result.killsPerMin)}</td>
-                      <td className="num">{fmt1(castsPerKill)}</td>
-                      <td>
-                        <span className={`pill ${r.result.limitedBy === 'spawns' ? 'accent' : 'neutral'}`}>{r.result.limitedBy === 'spawns' ? 'spawns' : 'attack'}</span>
-                      </td>
-                      <td className="num">{fmt(r.result.mesoCostPerMin)}</td>
-                      <td><ProvenancePill p={prov} /></td>
-                    </tr>
-                  </FragmentRow>
-                );
-              })}
-            </tbody>
-          </table>
-          {sorted.length === 0 && <div className="empty">No killable maps in range. Check your attack skill, damage and the level window.</div>}
-        </div>
-        {sorted.length > limit && (
-          <div style={{ padding: 12, textAlign: 'center' }}>
-            <button className="btn" onClick={() => setLimit((l) => l + 25)}>Show more ({sorted.length - limit} left)</button>
+                        );
+                      })}
+                    </span>
+                    <span className="small muted">Level up in {minutes(r.result.minutesToLevel)}</span>
+                  </span>
+                  <span className="rank-rate">
+                    <span className="value">{fmt(r.result.netExpPerMin)}</span>
+                    <span className="small muted">EXP/min</span>
+                    {mine.length > 0 && <span className="pill verified" title="Your best recorded session here">you: {fmt(Math.max(...mine))}</span>}
+                  </span>
+                </button>
+                {isOpen && (
+                  <div className="rank-detail">
+                    <MapDetail row={r} />
+                  </div>
+                )}
+              </li>
+            );
+          })}
+        </ol>
+        {rows.length === 0 && <div className="empty">No killable maps in range. Check your attack skill and its level.</div>}
+        {rows.length > limit && (
+          <div style={{ textAlign: 'center' }}>
+            <button className="btn" onClick={() => setLimit((l) => l + 10)}>Show more maps</button>
           </div>
         )}
+        <p className="small muted" style={{ margin: '8px 0 0' }}>
+          Estimates <ProvenancePill p={rows[0] ? mainProvenance(rows[0]) : 'estimated'} /> · click a map for details
+        </p>
       </div>
-    </>
-  );
-}
-
-function FragmentRow({ children, open, row }: { children: React.ReactNode; open: boolean; row: MapRow }) {
-  return (
-    <>
-      {children}
-      {open && (
-        <tr>
-          <td colSpan={10} style={{ background: 'var(--surface-2)' }}>
-            <MapDetail row={row} />
-          </td>
-        </tr>
-      )}
     </>
   );
 }
@@ -231,45 +172,6 @@ function KV({ k, v }: { k: string; v: React.ReactNode }) {
     <div className="kv">
       <div className="k">{k}</div>
       <div className="v">{v}</div>
-    </div>
-  );
-}
-
-function Compare({ rows }: { rows: MapRow[] }) {
-  const [x, y] = rows;
-  const line = (label: string, f: (r: MapRow) => number, digits = 0, lowerBetter = false) => {
-    const a = f(x);
-    const b = f(y);
-    const better = (v: number, o: number) => (lowerBetter ? v < o : v > o);
-    return (
-      <>
-        <div className="muted">{label}</div>
-        <div className={`num ${better(a, b) ? 'better' : ''}`}>{fmt(a, digits)}</div>
-        <div className={`num ${better(b, a) ? 'better' : ''}`}>{fmt(b, digits)}</div>
-      </>
-    );
-  };
-  return (
-    <div className="card" style={{ marginTop: 16 }}>
-      <h2>Side by side</h2>
-      <div className="compare">
-        <div className="h"></div>
-        <div className="h">{x.map.name}</div>
-        <div className="h">{y.map.name}</div>
-        {line('Net EXP/min', (r) => r.result.netExpPerMin)}
-        {line('EXP/cast', (r) => r.result.expPerCast, 1)}
-        {line('EXP/kill (avg)', (r) => r.result.expPerKill, 1)}
-        {line('Kills/min', (r) => r.result.killsPerMin, 1)}
-        {line('Attack-limited kills/min', (r) => r.result.attackKillsPerMin, 1)}
-        {line('Spawn-limited kills/min', (r) => r.result.spawnKillsPerMin, 1)}
-        {line('Spawn points', (r) => r.spawns.reduce((t, s) => t + s.spawnPoints, 0))}
-        {line('Meso cost/min', (r) => r.result.mesoCostPerMin, 0, true)}
-        {line('MP/min', (r) => r.result.mpPerMin, 0, true)}
-        <div className="muted">Limited by</div>
-        <div>{x.result.limitedBy}</div>
-        <div>{y.result.limitedBy}</div>
-      </div>
-      <p className="small muted" style={{ marginTop: 8 }}>Both columns use the same assumptions below. A map can win EXP/cast and still lose EXP/min if it is spawn-limited.</p>
     </div>
   );
 }
