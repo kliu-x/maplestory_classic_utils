@@ -447,3 +447,5 @@ th { z-index: 1; box-shadow: inset 0 -2px 0 var(--border); }
 .rank-n { width: 28px; height: 28px; font-size: 0.95rem; }
 .rank-rate .value { font-size: 1.3rem; }
 .mob-chip { padding: 1px 8px; }
+.mob-chip { display: inline-flex; align-items: center; gap: 4px; }
+.mob-chip img { width: 28px; height: 28px; object-fit: contain; margin: -4px 0; }

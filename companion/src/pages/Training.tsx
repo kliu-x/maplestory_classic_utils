@@ -1,7 +1,7 @@
 import { PastSessions, SessionRecorder } from '../components/SessionRecorder';
 import { useMemo, useState } from 'react';
 import type { TrainingAssumptions } from '../models/types';
-import { attackSkillsForJob } from '../data';
+import { IMG, attackSkillsForJob } from '../data';
 import { rankMaps, mainProvenance, laneLabel, type MapRow } from '../calculators/rank';
 import { DEFAULT_ASSUMPTIONS, setAssumptions, upsertCharacter } from '../storage/store';
 import { fmt, fmt1, minutes, NumField, ProvenancePill, StatusPill } from '../components/ui';
@@ -76,6 +76,7 @@ export default function Training({ params }: PageProps) {
                         const hits = sp.eval.kill.expected;
                         return (
                           <span key={sp.mobId} className={`mob-chip ${sp.eval.killsPerCast > 0 ? '' : 'off'}`} title={sp.eval.killsPerCast > 0 ? `${sp.spawnPoints} spawn points, ${sp.exp} EXP each` : "Can't be killed with this attack"}>
+                            <img src={IMG.mob(sp.mobId)} alt="" loading="lazy" />
                             {sp.name} <span className="muted">{sp.eval.killsPerCast > 0 ? (hits <= 1.05 ? '1 hit' : `${Math.abs(hits - Math.round(hits)) < 0.05 ? Math.round(hits) : fmt1(hits)} hits`) : '✕'}</span>
                           </span>
                         );
