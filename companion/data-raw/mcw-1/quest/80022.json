@@ -1,5 +1,10 @@
 {
  "id": 80022,
+ "messages": [
+  "It looks like the leatherworking master #p401# of #m10003000# needs help again. It's been a while, perhaps I should pay him a visit.",
+  "The leatherworking master, #p401# of #m10003000#, received an important request, but he's been struggling due to a lack of materials. To help him, I'll need to defeat #r#o18#s#k and gather #b#t4000018#s#k.",
+  "I was able to safely deliver the items requested by the leatherworking master #p401# of #m10003000#. At this point, wouldn't I qualify as a reliable partner?"
+ ],
  "name": "JM From tha Streetz in Need of Help",
  "area": 19,
  "areaName": "Crafting",

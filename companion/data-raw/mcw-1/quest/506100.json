@@ -1,5 +1,10 @@
 {
  "id": 506100,
+ "messages": [
+  "#p229#, the Town Clerk of #m10001000#, seems to have another proposal.",
+  "Town Clerk #p229# of #m10001000# recommended listening to the explanation in #m10003000# as well before deciding which city to become a resident of.�\\r\\n#rOnly characters at Level 12 or higher can complete this quest.#k",
+  "City Clerk #p425#, whom I met in #m10003000#, suggested that I become a resident of #m10003000#. Which city suits me better, #m10001000# or #m10003000#? Once I make up my mind, I should speak with the City Clerk of that city for more details."
+ ],
  "name": "To the Gray City, Kerning City",
  "area": 20,
  "areaName": "Citizenship",

@@ -47,11 +47,10 @@ export default function Quests({ params }: PageProps) {
         </div>
       </div>
 
-      <div className="card">
-        <div className="card-head">
-          <h2>Kerning City Party Quest (KPQ)</h2>
-        </div>
-        <div className="grid grid-2">
+      {!focus && (
+      <details className="card">
+        <summary><strong>Kerning City Party Quest (KPQ)</strong> <span className="small muted">Lv 21+, Lakelis, channels 3–12</span></summary>
+        <div className="grid grid-2" style={{ marginTop: 8 }}>
           <ul className="notes" style={{ color: 'var(--text)', fontSize: 13 }}>
             <li>Level 21+, talk to <strong>Lakelis</strong>, <strong>channels 3–12 only</strong> <SourceBadge source={SOURCES.launchNotes} compact /></li>
             <li>Exactly 4 party members, no level cap, 30-minute limit <SourceBadge source={SOURCES.meowKpq} compact /></li>
@@ -63,12 +62,13 @@ export default function Quests({ params }: PageProps) {
             leads.
           </div>
         </div>
-      </div>
+      </details>
+      )}
 
       <div className="card">
         {focus ? (
           <>
-            <div className="row"><span>Showing one quest.</span><a className="btn small" href="#/quests">Show all</a></div>
+            <a className="btn small" href="#/quests">← All quests</a>
             {focused && <QuestDetail quest={focused} />}
           </>
         ) : (
@@ -96,33 +96,35 @@ export default function Quests({ params }: PageProps) {
         )}
       </div>
 
+      {!focus && (
       <div className="table-wrap" style={{ marginTop: 12 }}>
         <table>
           <thead>
-            <tr><th>Done</th><th>Quest</th><th>Area</th><th className="num">Min Lv</th><th className="num">EXP</th><th className="num">Mesos</th><th className="num">Items</th><th>Requires quest</th><th>NPC</th><th></th></tr>
+            <tr><th>Done</th><th>Quest</th><th>Area</th><th className="num">Lv</th><th className="num">EXP</th></tr>
           </thead>
           <tbody>
             {shown.slice(0, 300).map((x) => (
-              <tr key={x.id} className={x.id === focus ? 'selected' : ''}>
+              <tr key={x.id}>
                 <td><input type="checkbox" disabled={!c} checked={done.has(x.id)} onChange={() => toggle(x.id)} aria-label={`Completed ${x.name}`} /></td>
-                <td><a href={href('quests', { id: x.id })}><strong>{x.name}</strong></a>{x.repeatable && <span className="pill accent"> repeatable</span>}</td>
+                <td>
+                  <a href={href('quests', { id: x.id })}><strong>{x.name}</strong></a>
+                  {x.repeatable && <span className="pill accent"> repeatable</span>}
+                  <div className="small muted">
+                    {x.npcId != null ? npcById.get(x.npcId)?.name : ''}
+                    {x.prereqQuestIds.length > 0 && <> · after {x.prereqQuestIds.map((id) => questName.get(id) ?? id).join(', ')}</>}
+                  </div>
+                </td>
                 <td className="small">{x.area}</td>
                 <td className="num">{x.minLevel || '—'}{x.maxLevel ? `–${x.maxLevel}` : ''}</td>
                 <td className="num">{fmt(x.exp)}</td>
-                <td className="num">{fmt(x.meso)}</td>
-                <td className="num">{x.rewardItemCount || ''}</td>
-                <td className="small">{x.prereqQuestIds.map((id) => questName.get(id) ?? id).join(', ')}</td>
-                <td className="small">{x.npcId != null ? npcById.get(x.npcId)?.name ?? x.npcId : ''}</td>
-                <td><a href={x.source.source_url} target="_blank" rel="noreferrer"><StatusPill status={x.source.verification_status} /></a></td>
               </tr>
             ))}
           </tbody>
         </table>
         {shown.length === 0 && <div className="empty">No quests match.</div>}
       </div>
-      <p className="small muted" style={{ marginTop: 8 }}>
-        Click a quest for its NPCs on the minimap, the route from the nearest town, and what to hunt or collect. Some quests are event or job-specific; check in game.
-      </p>
+      )}
+      {!focus && <p className="small muted" style={{ marginTop: 8 }}>Click a quest to see who to talk to, where they stand, and what to hunt or collect.</p>}
     </>
   );
 }

@@ -1,5 +1,10 @@
 {
  "id": 10101,
+ "messages": [
+  "I hear #p203# in #m10001000# has a new concern...",
+  "I saw #p203# again in #m10001000#; she's still preparing for the village carnival. She said that this time she needs food for the carnival and asked me to collect #b10 #t4000008#s#k, #b30 #t4000012#s#k, and #b#t4031005##k. To get the Special Sauce, I think I'll have to go find #p300# in #m10002010#.",
+  "I met up with #b#p300##k in #m10002010# to get her #b#t4031005##k, but she apparently doesn't want to give it to me for free..."
+ ],
  "name": "Mrs. Ming Ming's Second Worry",
  "area": 12,
  "areaName": "Henesys",

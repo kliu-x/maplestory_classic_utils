@@ -1,5 +1,10 @@
 {
  "id": 506149,
+ "messages": [
+  "It seems #p425# of #m10003007# knows something about a doctor named Niora.�",
+  "#p425# of #m10003007# told me what she knew. According to her, Niora was once a fairly well-known doctor here in #m10003000#, but one day, after an accident at his hospital took the life of a young girl, he vanished from the city. She said she didn't know where Niora had gone, but suggested I go see #b#p406##k if I wanted to learn more.\\n#rOnly characters at Level 37 or higher can complete this quest.#k",
+  "I went to meet #p406# to try and track down Dr. Niora's whereabouts. I do hope I can get some useful information out of this."
+ ],
  "name": "Once a Renowned Doctor",
  "area": 20,
  "areaName": "Citizenship",

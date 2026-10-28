@@ -1,5 +1,10 @@
 {
  "id": 506057,
+ "messages": [
+  "It seems #p221# of #m10001000# has something to tell me now that I've become a #bCitizen of Honor#k.�",
+  "#p221# of #m10001000# said there was a gift prepared for me for becoming a #bCitizen of Honor#k, but that she'd give it to me if I could do her one favor first. She told me that a long, long time ago, she'd hidden a small box containing a bow somewhere in #bthe Golem's Temple#k, but when she recently went to retrieve it, it was gone — and she asked me to go find that box for her. I wonder if #b#o48##k or #b#o49##k out there might have it.  \\r\\n#rOnly characters at Level 57 or higher can complete this quest.#k",
+  "Why would #p221# have hidden this box in a place like that, I wonder?"
+ ],
  "name": "A Box Hidden Long Ago",
  "area": 20,
  "areaName": "Citizenship",

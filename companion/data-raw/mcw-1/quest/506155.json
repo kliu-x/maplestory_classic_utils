@@ -1,5 +1,10 @@
 {
  "id": 506155,
+ "messages": [
+  "It seems #p412# at #m10003004# looks the same as always. ",
+  "#p412# at #m10003004# said there was a #bhidden passage#k on the first floor of Niora Hospital, and that she could sense an unusually powerful force coming from somewhere deep inside it, suggesting I go take a look. To think a passage had been hidden away in a place like that... There might be something dangerous down there, so I'd better be well prepared before investigating, and then head back to #p425#. \\r\\n#rOnly characters at Level 47 or higher can complete this quest.#k ",
+  "Deep within the hidden passage on the first floor of Niora Hospital, I came face to face with a powerful evil spirit. The spirit, named #b#o700006##k, was consumed by such deep resentment that there was no reasoning with it, so I had no choice but to strike it down. Just what on earth happened in this place?"
+ ],
  "name": "An Old Grudge",
  "area": 20,
  "areaName": "Citizenship",

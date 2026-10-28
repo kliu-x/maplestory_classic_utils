@@ -1,5 +1,10 @@
 {
  "id": 10400,
+ "messages": [
+  "I hear that #p501# in #m10004000# is fixing up his house.",
+  "In the dusty town of #m10004000#, I ran into a man named #p501#. He needs to fix his house and asked if I could help him out by defeating #r20 #o6#s#k and #r20 #o11#s#k and getting him #b10 #t4000005#es#k and #b10 #t4000011#s#k. If I do him a favor, I'll get a nice shield from him, but what if I say no? I won't be... BANISHED from the village... will I? I really hope not...",
+  "I got #p501# of #m10004000# 10 #t4000005#es and 10 #t4000011#s after defeating 20 #o6#s and 20 #o11#s. With these, he can finally fix his house. I got this shield as a reward... and... well, there are scratch marks here and there, and it looks pretty old... Is this even usable?"
+ ],
  "name": "Fixing Blackbull's House",
  "area": 15,
  "areaName": "Perion",

@@ -1,5 +1,10 @@
 {
  "id": 80009,
+ "messages": [
+  "It looks like #p504#, the master blacksmith of #m10004000#, is finally ready to acknowledge my skills.",
+  "#p504#, the master blacksmith of #m10004000#, was impressed by how much I've grown and suggested I show off my abilities. I need to defeat #r#o20#s and #o21#s#k, then create an #b#t4010105##k and a #b#t4010106##k and bring them back to him.",
+  "#p504#, the master craftsman of #m10004000#, was amazed by my work and handed me a #t4130002#. It seems to be a special item that can be used during crafting to alter the stats of equipment. Maybe I should give it a try."
+ ],
  "name": "A Blacksmith in My Own Right!",
  "area": 19,
  "areaName": "Crafting",

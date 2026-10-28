@@ -1,5 +1,10 @@
 {
  "id": 506117,
+ "messages": [
+  "It looks like #p425#, the City Clerk, is looking for someone to help with her work. Let's go check out #p431# in front of #m10003007#.",
+  "#p425#, the City Clerk, asked me to go say hello to #b#p411##k, the hidden leader of the city. I'm a bit scared to say hello to #p411# for the first time.\\r\\n#rOnly characters at Level 32 or higher can complete this quest.#k",
+  "I was able to say hello to #p411#, the hidden leader of #m10003000#, for the first time. I felt completely overwhelmed by his presence."
+ ],
  "name": "First Greeting with Dark Lord",
  "area": 20,
  "areaName": "Citizenship",

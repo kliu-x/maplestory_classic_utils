@@ -1,5 +1,10 @@
 {
  "id": 506161,
+ "messages": [
+  "Can #p436# at #m10003098# really decipher #t4031131#?�",
+  "#p436# at #m10003098# succeeded in deciphering #t4031132# using #t4031133#. But the look on #p436#'s face darkened as he read over the deciphered document... Anyway, I'd better bring this to #b#p411##k at #m10003000# right away.  \\r\\n#rOnly characters at Level 57 or higher can complete this quest.#k ",
+  "I brought #b#t4031135##k to #b#p411##k at #m10003000#. Upon seeing the document, he fell silent for a long moment, having confirmed that Rex, once his comrade and friend, had sacrificed himself for his sake back then... Afterward, he told me I'd carried out the task admirably and handed me a gift. I think every time I look at this #t1032022#, I'll be reminded of #p411# and his friend."
+ ],
  "name": "The Weight of Truth",
  "area": 20,
  "areaName": "Citizenship",

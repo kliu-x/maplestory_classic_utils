@@ -1,5 +1,10 @@
 {
  "id": 500011,
+ "messages": [
+  "#b#p900026##k in #b#m10001000##k and #b#m10003000##k says there's still one more thing left to do for Halloween...",
+  "#b#p900026##k has split her Halloween Candy into three pouches for the children spending Halloween alone.\n\\nDeliver a pouch to the #bchild in the dark tunnel, the child on the open field#k and the #bchild up on the high ground#k.\\r\\n#rOnly characters at Level 10 or higher can complete this quest.#k",
+  "All three children received their Halloween Candy.\n #b#p900026##k kept her word and handed over the reward."
+ ],
  "name": "[Event] Trick or Treat!",
  "area": 99,
  "areaName": "Event",

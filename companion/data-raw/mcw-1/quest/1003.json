@@ -1,5 +1,10 @@
 {
  "id": 1003,
+ "messages": [
+  "Talk to #b#p4##k.",
+  "#b#p4##k is wondering what to make her brother, #b#p5##k, for dinner. Go talk to #b#p5##k, who's in the house next to #b#p4##k, and ask him what he wants to eat.",
+  "You asked #b#p5##k, #b#p4##k's brother, what he wants for dinner. He said he wants #bMushroom Soup#k."
+ ],
  "name": "What Sen wants to eat",
  "area": 1,
  "areaName": "Maple Island",

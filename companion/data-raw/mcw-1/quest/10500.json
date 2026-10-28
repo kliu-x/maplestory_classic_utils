@@ -1,5 +1,10 @@
 {
  "id": 10500,
+ "messages": [
+  "I hear #b#p608##k in #m10005000# is going through hard times... I should go check on him.",
+  "I met an old, balding man named #b#p608##k in the VIP Sauna in #m10005000#. His son's run away from home with a book that's apparently more important to him than his own son?? He asked that I find his son, get the book, and bring JUST the book back. He offered me a nice sauna robe as a reward. \\r\\n#b#p608##k told me that his son, #b#p320##k, likes to hang out at a tree tunnel somewhere around #m10002000#. That's probably a good place to start searching. Seriously, though, just what is in this book of his...???",
+  "I found #b#p320##k in the tree tunnel of #m10002000#, as requested by #p608#, whom I met at the #m10005003#."
+ ],
  "name": "A Clue to the Secret Book",
  "area": 16,
  "areaName": "Sleepywood",

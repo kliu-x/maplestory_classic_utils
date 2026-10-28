@@ -1,5 +1,10 @@
 {
  "id": 600008,
+ "messages": [
+  "The #b#t2430050##k carries a hint about the next place.\\r\\n\\r\\nThis one comes with a #rwarning#k folded into it.",
+  "The #b#t2430050##k reads:\\n#e#b\"Where shadows gather, leave no coin unturned.\"#k#n\\r\\n#rOnly characters at Level 10 or higher can complete this quest.#k",
+  "#b10 mesos#k was all the nameless thief ever wanted for it.\\r\\n\\r\\nThe #b#t2430051##k is mine. Two pages left."
+ ],
  "name": "[Event] The Fourth Mark",
  "area": 99,
  "areaName": "Event",

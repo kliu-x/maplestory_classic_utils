@@ -1,5 +1,10 @@
 {
  "id": 10409,
+ "messages": [
+  "It looks like #p224# has the item that Dr. #p308# needs.",
+  "I got the #t4031073# from #p224#, Dr. #p308#'s daughter. Now, to deliver this VERY CAREFULLY to Dr. #p308#...",
+  "I collected some #t4031072#s and a #t4031073# to help Dr. #p308#'s research on fossils. I can't wait to see the results... I should go and see Dr. #p308#, because she said she would tell me when I go back."
+ ],
  "name": "Transporting Drake's Skull",
  "area": 15,
  "areaName": "Perion",

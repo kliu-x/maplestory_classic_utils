@@ -1,5 +1,10 @@
 {
  "id": 10104,
+ "messages": [
+  "Find #p218# in #m10001050#.",
+  "Under the watchtower in #m10001050#, I saw Pia, who was wearing a teddy bear costume. How cute! She told me that she ran into a bully #o16# on her way to #m10002000#, and now she wants me to show the rude mushroom who's boss! I need to collect #b20 #t4000013#s#k and #b20 #t4000016#s#k to show her as evidence. I contemplated telling Pia she's basically asking to be teased, wandering around the forest in a teddy bear costume like that, but I decided against it.",
+  "I delivered #b20 #t4000013#s#k and #b20 #t4000016#s#k to Pia in #m10001050#. She was thrilled that she got vengeance on the mushrooms and gave me a scroll for hat. All I have to do is click on it in the Use tab of my Item Inventory and drag it to my helmet in the Equipment window... Oh, and I'll have to cross my fingers and hope the scroll doesn't fail."
+ ],
  "name": "Pia and the Blue Mushroom",
  "area": 12,
  "areaName": "Henesys",

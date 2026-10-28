@@ -1,5 +1,10 @@
 {
  "id": 506151,
+ "messages": [
+  "It seems #p406# of #m10003000# is about to tell me what she knows about Dr. Niora.�",
+  "I was able to learn a great deal from #p406#. Niora was a doctor of considerable skill, but in the course of practicing medicine, he'd carried out all sorts of experiments on his patients, and patients' conditions had begun worsening at his hospital with increasing frequency. Then, one day, a young girl lost her life — and that was what finally brought Niora under #p411#'s investigation. He was banished from the city and never returned. Which would mean that girl was... I suppose I'd better go see #b#p412##k again. \\r\\n#rOnly characters at Level 37 or higher can complete this quest.#k ",
+  "I met #p412# and told her everything I'd learned. It seemed she'd finally, however painfully, come to understand that Niora was never coming back to this hospital."
+ ],
  "name": "A Truth Finally Known",
  "area": 20,
  "areaName": "Citizenship",

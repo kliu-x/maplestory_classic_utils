@@ -1,5 +1,10 @@
 {
  "id": 10010,
+ "messages": [
+  "It seems a sailor named #p102# in #m10000000# is looking for an adventurer to lend a hand.",
+  "#p102# in #m10000000# told me his hobby is collecting weird things. He asked me to hunt #r#o7#s#k near the town and bring back #b1 #t4000007##k. He warned me that it might be hard to find, though!",
+  "I delivered 1 #t4000007# to #p102# in #m10000000#. But from the look on his face, he's already craving something else..."
+ ],
  "name": "Teo's Weird Hobby",
  "area": 11,
  "areaName": "Lith Harbor",

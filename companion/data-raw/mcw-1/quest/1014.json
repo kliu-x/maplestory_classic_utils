@@ -1,5 +1,10 @@
 {
  "id": 1014,
+ "messages": [
+  "Solve #b#p19##k's second question.",
+  "What's #b#p19#'s#k second question?",
+  "#b#p19#'s#k question was about equippable items, which can be worn by double-clicking on them."
+ ],
  "name": "Rain's Maple Quiz 2",
  "area": 1,
  "areaName": "Maple Island",

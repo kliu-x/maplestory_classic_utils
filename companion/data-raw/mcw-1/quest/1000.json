@@ -1,5 +1,10 @@
 {
  "id": 1000,
+ "messages": [
+  "Go talk to #b#p1##k.",
+  "I met #b#p1##k, who's worried the sun is damaging her skin. I should get her mirror from her sister, #b#p2##k, so she can check.",
+  "#b#p1##k asked me to get a mirror from her sister, so I walked all the way to #b#p2##k."
+ ],
  "name": "Borrowing Sera's Mirror",
  "area": 1,
  "areaName": "Maple Island",

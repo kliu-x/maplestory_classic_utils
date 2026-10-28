@@ -1,5 +1,9 @@
 {
  "id": 10501,
+ "messages": [
+  "I found #p608#'s son, #b#p320##k, inside a tree tunnel near #m10002000#. He declared that he'd never hand over the red book, but he was also pretty hungry. Ronnie asked me to defeat #r#o35#s#k in the western area of #m10002000# and bring back #b30 #t4000031#s#k.",
+  "I brought a bunch of #t4000031#s for the hungry #p320#. But it looked like he still wanted to eat more..."
+ ],
  "name": "Hungry Ronnie",
  "area": 16,
  "areaName": "Sleepywood",

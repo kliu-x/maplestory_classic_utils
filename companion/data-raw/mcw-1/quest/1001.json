@@ -1,5 +1,9 @@
 {
  "id": 1001,
+ "messages": [
+  "I got the mirror from #b#p2##k, who was doing her laundry. I have to take it to #b#p1##k now.",
+  "I got the mirror from #b#p2##k, who was doing her laundry, and took it to #b#p1##k."
+ ],
  "name": "Bringing a Mirror to Heena",
  "area": 1,
  "areaName": "Maple Island",

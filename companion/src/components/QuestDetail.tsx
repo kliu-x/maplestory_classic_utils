@@ -43,9 +43,9 @@ function Place({ map, pins, caption }: { map: GameMap; pins: Pin[]; caption?: st
         <div className="small">
           {(() => {
             const home = homeTown(MAPS, map.id);
-            return home != null ? <>Nearest town: <a href={href('maps', { id: home })}>{mapById.get(home)?.name}</a> (where you respawn from here). </> : null;
+            return home != null ? <>Nearest town: <a href={href('maps', { id: home })}>{mapById.get(home)?.name}</a></> : null;
           })()}
-          <span className="muted">The map files don't list every portal here, so the exact way in isn't shown.</span>
+
         </div>
       )}
     </div>
@@ -77,6 +77,11 @@ export function QuestDetail({ quest: q }: { quest: Quest }) {
   const noteMap = note?.mapId ? mapById.get(note.mapId) : undefined;
   const prev = q.prereqQuestIds.map((id) => questById.get(id)).filter((x): x is Quest => !!x);
   const next = nextOf(q.id);
+  // Maps the quest text names that aren't just where its NPCs stand ("go to Thicket Around the Beach III").
+  const npcMaps = new Set([q.npcId, q.endNpcId].flatMap((id) => (id != null ? npcById.get(id)?.mapIds ?? [] : [])));
+  const goMaps = q.mentionsMaps.filter((id) => !npcMaps.has(id) && id !== note?.mapId).map((id) => mapById.get(id)).filter((m): m is GameMap => !!m).slice(0, 2);
+  // Monsters the text names but the requirements don't count (bosses like Mano).
+  const named = q.mentionsMobs.filter((id) => !q.killMobs.some((k) => k.mobId === id));
   return (
     <div className="card" style={{ marginTop: 12 }}>
       <div className="card-head">
@@ -89,6 +94,7 @@ export function QuestDetail({ quest: q }: { quest: Quest }) {
         {q.availableUntil && <> · event, start before <strong>{q.availableUntil}</strong></>}
       </p>
       {q.hint && <p className="callout info" style={{ marginTop: 0 }}>Objective from the game: <em>“{q.hint}”</em></p>}
+      {!q.hint && q.log && <p className="quest-log">{q.log}</p>}
 
       {note && (
         <div className="callout" style={{ marginBottom: 12 }}>
@@ -103,8 +109,31 @@ export function QuestDetail({ quest: q }: { quest: Quest }) {
         {q.npcId != null && <NpcPlace npcId={q.npcId} role={q.endNpcId ? 'Start: talk to' : 'Talk to (start and hand in)'} />}
         {q.endNpcId != null && <NpcPlace npcId={q.endNpcId} role="Hand in to" />}
 
-        {(q.killMobs.length > 0 || q.collectItems.length > 0) && (
+        {goMaps.map((m) => {
+          const bosses = (m.bossSpawns ?? []).filter((b) => q.mentionsMobs.includes(b.mobId));
+          return (
+            <div key={m.id}>
+              <h3>Go to</h3>
+              <Place map={m} pins={bosses.map((b) => ({ x: b.x, y: b.y, label: monsterById.get(b.mobId)?.name ?? 'boss', kind: 'mob' as const }))} />
+            </div>
+          );
+        })}
+
+        {(q.killMobs.length > 0 || q.collectItems.length > 0 || named.length > 0) && (
           <div>
+            {named.length > 0 && <h3>Defeat</h3>}
+            {named.map((id) => {
+              const m = monsterById.get(id);
+              return (
+                <div key={id} className="icon-row" style={{ marginBottom: 8 }}>
+                  <img src={IMG.mob(id)} alt="" loading="lazy" onError={(e) => (e.currentTarget.style.visibility = 'hidden')} />
+                  <span>
+                    <a href={href('monsters', { id })}>{m?.name ?? `Monster ${id}`}</a>
+                    {m && <span className="small muted"> Lv {m.level} · {fmt(m.hp)} HP{m.isBoss ? ' · boss' : ''}</span>}
+                  </span>
+                </div>
+              );
+            })}
             {q.killMobs.length > 0 && <h3>Hunt</h3>}
             {q.killMobs.map((k) => {
               const m = monsterById.get(k.mobId);
@@ -123,13 +152,18 @@ export function QuestDetail({ quest: q }: { quest: Quest }) {
               );
             })}
             {q.collectItems.length > 0 && <h3>Collect</h3>}
-            {q.collectItems.map((it) => (
-              <div key={it.itemId} className="icon-row" style={{ marginBottom: 6 }}>
-                <img src={IMG.item(it.itemId)} alt="" loading="lazy" onError={(e) => (e.currentTarget.style.visibility = 'hidden')} />
-                <span>{itemById.get(it.itemId)?.name ?? `Item ${it.itemId}`} × {it.count}</span>
-              </div>
-            ))}
-            {q.collectItems.length > 0 && <p className="small muted">Which monsters drop each item is not in the dataset yet.</p>}
+            {q.collectItems.map((it) => {
+              const item = itemById.get(it.itemId);
+              return (
+                <div key={it.itemId} className="icon-row" style={{ marginBottom: 6, alignItems: 'flex-start' }}>
+                  <img src={IMG.item(it.itemId)} alt="" loading="lazy" onError={(e) => (e.currentTarget.style.visibility = 'hidden')} />
+                  <span>
+                    {item?.name ?? `Item ${it.itemId}`} × {it.count}
+                    {item?.description && <span className="small muted" style={{ display: 'block' }}>{item.description}</span>}
+                  </span>
+                </div>
+              );
+            })}
           </div>
         )}
       </div>
@@ -140,9 +174,7 @@ export function QuestDetail({ quest: q }: { quest: Quest }) {
           {next.length > 0 && <>Next: {next.map((n) => <a key={n.id} href={href('quests', { id: n.id })} style={{ marginRight: 8 }}>{n.name}</a>)}</>}
         </p>
       )}
-      <p className="small muted" style={{ marginBottom: 0 }}>
-        NPC positions, minimaps and portals come from the Classic World map files (images via maplestory.io). Routes follow portals only, so they may miss ships, taxis and hidden portals.
-      </p>
+
     </div>
   );
 }

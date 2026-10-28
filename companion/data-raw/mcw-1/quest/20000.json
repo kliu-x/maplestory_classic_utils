@@ -1,5 +1,10 @@
 {
  "id": 20000,
+ "messages": [
+  "Having reached level 30 and mastered the way of the Swordsman, I feel the urge to learn even more.",
+  "Does #b#p511##k of #b#m10004000##k have even greater lessons to teach me?",
+  "#b#p511##k of #b#m10004000##k seemed surprised to see how much stronger I had become compared to before."
+ ],
  "name": "The Warrior's Next Journey",
  "area": 100,
  "areaName": "Warrior",

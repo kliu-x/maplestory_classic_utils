@@ -1,5 +1,10 @@
 {
  "id": 506153,
+ "messages": [
+  "It seems #p900014# at #m10003010# is still lost in thought.�",
+  "#p900014# at #m10003010# said he could still sense the power of a strong evil spirit, and that something didn't seem right. Could it be that even after defeating all those evil spirits in the #m10003000# subway, it still wasn't enough? Just as #p900014# suggested, I should go talk to #p425# at #b#m10003007##k to get more information. \\r\\n#rOnly characters at Level 47 or higher can complete this quest.#k ",
+  "The moment #p425# at #m10003007# heard the word \"evil spirit,\" she seemed to think of a certain girl..."
+ ],
  "name": "Another Lead",
  "area": 20,
  "areaName": "Citizenship",

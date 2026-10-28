@@ -1,5 +1,10 @@
 {
  "id": 10120,
+ "messages": [
+  "Let's go to #p218# in #m10001000#.",
+  "#p218# also asked me to retrieve the #b#t4031064##k that #p201# in #m10001000# borrowed, to give it to her friend too. She'll give me something nice if I bring it back to her.",
+  "I went to #p201# to get #p218#'s cape, but #p201# told me that she's keeping the cape until #p218# brings back what she borrowed from her."
+ ],
  "name": "Looking for the Red Cape",
  "area": 12,
  "areaName": "Henesys",

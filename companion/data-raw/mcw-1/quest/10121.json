@@ -1,5 +1,10 @@
 {
  "id": 10121,
+ "messages": [
+  "It seems #p201# has her own reasons for not returning #p218#'s cape.",
+  "I went to see #p201# in #m10001000#, and she told me she actually took that red cape because #p218# also hasn't returned some items that she borrowed. She says that she'll return the cape when she gets her things back... The items are #b1 #t4020108##k, #b1 #t4001007##k, and #b30 #t4000039##k.",
+  "I paid off #p218#'s debt to #p201# on her behalf and received the #t4031064# in return. Next, all I have to do is bring this back to #p218#."
+ ],
  "name": "What Pia Borrowed",
  "area": 12,
  "areaName": "Henesys",

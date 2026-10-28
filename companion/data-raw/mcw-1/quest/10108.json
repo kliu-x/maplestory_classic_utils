@@ -1,5 +1,9 @@
 {
  "id": 10108,
+ "messages": [
+  "I met #p510# in #m10004002#. She told me that she's working on her dream of becoming an alchemist. To make the Sparkling Rock, she says she needs #b30 #t4000006#s#k, #b30 #t4000011#s#k, #b30 #t4000012#s#k, and #b1 #t4031010##k. Everything looks reasonable enough... wait, #t4031010#?! Fortunately, #p510# knew where to get some. She told me to have a chat with #p502#, who should be somewhere around #m10004000#.",
+  "#p510# told me that #p502# has some #t4031010#, a key ingredient in making a #t4031011#."
+ ],
  "name": "Making a Sparkling Rock",
  "area": 12,
  "areaName": "Henesys",

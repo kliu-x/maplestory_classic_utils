@@ -1,5 +1,10 @@
 {
  "id": 10417,
+ "messages": [
+  "Let's ask #b#p502##k in #m10004000# if there's anyone who might know more.",
+  "Let's ask elder #b#p511##k in #m10004000# about the rumor.",
+  "Asked #p511# about the rumor."
+ ],
  "name": "Truth of the Rumor- Dances with Balrog",
  "area": 15,
  "areaName": "Perion",

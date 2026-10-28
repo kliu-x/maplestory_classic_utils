@@ -1,5 +1,10 @@
 {
  "id": 80019,
+ "messages": [
+  "It looks like #p208#, the carpenter of #m10001000#, could use some help. Maybe I should pay him a visit.",
+  "#p208#, the carpenter of #m10001000#, received an important request, but he's been struggling due to a lack of materials. To help him out, I need to defeat #r#o15#s#k and craft #b1 #t4003001##k.",
+  "I was able to safely deliver the item #p208# asked for. At this point, I'd say I've proven myself to be a worthy apprentice."
+ ],
  "name": "Vicious in Need of Help",
  "area": 19,
  "areaName": "Crafting",

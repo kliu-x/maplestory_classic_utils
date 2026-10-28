@@ -1,5 +1,10 @@
 {
  "id": 506152,
+ "messages": [
+  "It seems #p900014# at #m10003010# has something to say. ",
+  "#p900014# at #m10003010#, unlike his brother #p502#, a renowned swordsman, had secretly been doing exorcism work, hunting down evil spirits. He said he could sense the power of a strong evil spirit somewhere around #m10003000#, and suggested that while he investigated elsewhere, I go investigate deep within the subway. If I ran into any #b#o43#s#k down there, it sounded like I'd need to defeat them all. \\r\\n#rOnly characters at Level 47 or higher can complete this quest.#k ",
+  "I defeated #o43# deep within the #m10003000# subway and went back to #p900014#. Still, there was something serious about the look on his face..."
+ ],
  "name": "A Quiet Line of Work",
  "area": 20,
  "areaName": "Citizenship",

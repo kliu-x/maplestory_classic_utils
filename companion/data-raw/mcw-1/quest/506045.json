@@ -1,5 +1,10 @@
 {
  "id": 506045,
+ "messages": [
+  "#p202# of #m10001000# seems to have something he wants to tell #p203#.",
+  "#p202# of #m10001000# asked me to tell #b#p203##k that he is sorry and grateful. However, the news that he has regained his vitality will likely be what makes her happiest. \\r\\n#rOnly characters at Level 27 or higher can complete this quest.#k",
+  "I delivered #p202#'s message to #p203# of #m10001000#. She seems relieved and ready to prepare for the next town festival."
+ ],
  "name": "Regained Vitality",
  "area": 20,
  "areaName": "Citizenship",

@@ -1,5 +1,10 @@
 {
  "id": 506040,
+ "messages": [
+  "It seems #p506# in #m10004000# was moved by her dad's cooking.",
+  "After eating her dad's food, I think #b#p506##k in #b#m10004000##k came to understand his true feelings. She then asked me to convey her feelings to #b#p206##k in #b#m10001000##k. \\r\\n#rOnly characters at Level 17 or higher can complete this quest.#k",
+  "I delivered the heartfelt message from his daughter, #p506#, to #p206# in #m10001000#. It might take time, but I feel like these two will be able to live happily together from now on."
+ ],
  "name": "The Best Dad",
  "area": 20,
  "areaName": "Citizenship",

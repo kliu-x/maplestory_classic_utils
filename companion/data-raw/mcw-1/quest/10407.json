@@ -1,5 +1,10 @@
 {
  "id": 10407,
+ "messages": [
+  "Dr. #p308#, a biologist near #m10002000#, is looking for an assistant.",
+  "#bDr. #p308##k asked me to help out as her assistant for a bit. My first task is to collect #b8 #t4031072#s#k. I can see a lot of plants covering the woods in #m10002000#.",
+  "My first job as Dr. #p308#'s assistant was to collect some plants in the woods in #m10002000# and sample them. It wasn't that hard, I guess."
+ ],
  "name": "Research on Plant Fossils",
  "area": 15,
  "areaName": "Perion",

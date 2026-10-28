@@ -1,5 +1,9 @@
 {
  "id": 10301,
+ "messages": [
+  "At the entrance of #m10001000#, I met #p402#'s father, #p202#, the chief of Henesys. He wouldn't let me even start a conversation about Alex with him, and he demanded I bring him #b15 #t4000013#s#k and #b15 #t4000016#s#k if I want to talk to him.",
+  "Only after I brought the #t4000013#s and #t4000016#s did #p202# start talking to me."
+ ],
  "name": "Talking to Stan",
  "area": 14,
  "areaName": "Kerning City",

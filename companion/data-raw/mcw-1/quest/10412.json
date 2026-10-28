@@ -1,5 +1,10 @@
 {
  "id": 10412,
+ "messages": [
+  "I hear something happened to the tribespeople of #m10004000#. I should go ask #p506# about this.",
+  "I spoke with #p506# in #m10004000#. A few days ago, a group of tribespeople went hunting in the swamp and wound up being ambushed by a group of Ligators. She's worried about the sudden surge of Ligators, and other alligator monsters, taking over the swamp and asked me to reduce their numbers before they spawn out of control. I'll have to kill #r100 #o29#s#k and #r40 #o18#s#k and pick up #b20 #t4000018#s#k along the way.",
+  "The tribespeople of #m10004000# got ambushed by the alligator herd at the swamp, so #p506# asked if I could help take care of the alligators. I responded by taking out 100 #o29#s and 40 #o18#s. Hopefully this will bring some peace back to the swamp."
+ ],
  "name": "Taking Out the Alligators 1",
  "area": 15,
  "areaName": "Perion",

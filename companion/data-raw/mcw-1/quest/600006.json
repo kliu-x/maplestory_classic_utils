@@ -1,5 +1,10 @@
 {
  "id": 600006,
+ "messages": [
+  "The #b#t2430048##k carries a hint about the next place.\\r\\n\\r\\nThis one leads #binland#k, away from the shore.",
+  "The #b#t2430048##k reads:\\n#e#b\"I spent one night beneath a stranger's roof.\"#k#n\\r\\n#rOnly characters at Level 10 or higher can complete this quest.#k",
+  "The monsters of #b#m10001005##k really were holding the next sheet.\\n\\nThe #b#t2430049##k is mine."
+ ],
  "name": "[Event] The Second Mark",
  "area": 99,
  "areaName": "Event",

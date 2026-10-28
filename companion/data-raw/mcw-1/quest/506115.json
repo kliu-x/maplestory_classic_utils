@@ -1,5 +1,10 @@
 {
  "id": 506115,
+ "messages": [
+  "It looks like #p425#, the City Clerk, is looking for someone to help with her work. Let's go check out #p431# in front of #m10003007#.",
+  "#p425#, the City Clerk, asked me to go say hi to #b#p900014##k, a resident of the city. Let's go greet #p900014#. \\r\\n#rOnly characters at Level 32 or higher can complete this quest.#k",
+  "I checked in on #p900014#, a resident of #m10003000#. Man, they were incredibly grumpy."
+ ],
  "name": "First Greeting with Chun Ji ",
  "area": 20,
  "areaName": "Citizenship",

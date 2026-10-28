@@ -1,5 +1,10 @@
 {
  "id": 80021,
+ "messages": [
+  "It seems the leatherworking master #p401# of #m10003000# is finally ready to acknowledge my leatherworking skills.",
+  "Impressed by my growth, the leatherworking master #p401# of #m10003000# suggested that I showcase what I'm capable of. I need to defeat #r#o22#s#k and craft #b1 #t3010005##k, then bring it back.",
+  "Amazed by my craftsmanship, the leatherworking master #p401# of #m10003000# handed me a #t4130002#. It seems to be a special item that can be used during crafting to alter equipment stats. Should I try using it?"
+ ],
  "name": "A Leatherworker in My Own Right!",
  "area": 19,
  "areaName": "Crafting",

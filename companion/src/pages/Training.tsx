@@ -265,9 +265,12 @@ function Assumptions({ a }: { a: TrainingAssumptions }) {
   const set = (p: Partial<TrainingAssumptions>) => setAssumptions(p);
   const U = () => <StatusPill status="unverified" title="Not verified for Classic World. Adjust to your own experience." />;
   return (
-    <details className="card" open={typeof window === 'undefined' || window.innerWidth > 860}>
+    <details className="card">
       <summary>
-        <strong>Assumptions</strong> <span className="small muted">(apply to all characters; the ones marked Unverified have no Classic World source)</span>
+        <strong>Assumptions</strong>{' '}
+        <span className="small muted">
+          {a.castsPerSecond} casts/s · {Math.round(a.uptime * 100)}% attacking · {a.respawnSeconds}s respawn · {a.useLanes === false ? 'whole maps' : 'best lane'} — click to edit
+        </span>
       </summary>
       <div className="fields" style={{ marginTop: 12 }}>
         <NumField label={<>Casts / second <U /></>} value={a.castsPerSecond} step={0.05} min={0.1} onChange={(v) => set({ castsPerSecond: v })} title="Your real attack rate including animation delay." />

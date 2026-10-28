@@ -1,5 +1,10 @@
 {
  "id": 600010,
+ "messages": [
+  "The #b#t2430052##k carries the last hint in the log.\\r\\n\\r\\nWhatever the trail was leading to, it ends #runderground#k.",
+  "The #b#t2430052##k reads:\\n#e#b\"Beneath the earth, even the smallest footsteps may lead the way.\"#k#n\\r\\n#rOnly characters at Level 10 or higher can complete this quest.#k",
+  "Past the hidden portal, at the end of #b#m10005070##k, the trail finally ran out — and the #e#b#t1002994##k#n was lying there waiting.\\r\\n\\r\\n#e#b\"Every hero leaves a mark. But only those who follow the trail will find it.\"#k#n\\r\\n\\r\\nSo that is what the log meant. The mark is mine now, and the next one is mine to leave."
+ ],
  "name": "[Event] The Final Mark",
  "area": 99,
  "areaName": "Event",

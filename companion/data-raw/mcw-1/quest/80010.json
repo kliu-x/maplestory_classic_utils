@@ -1,5 +1,10 @@
 {
  "id": 80010,
+ "messages": [
+  "It looks like #p504#, the master blacksmith of #m10004000#, needs some help. Maybe I should go check in on him.",
+  "#p504#, the master blacksmith of #m10004000#, received an important request, but he's been struggling because he's short on materials. I need to defeat #r#o14#s#k and bring back #b#t4010102##k to help him out.",
+  "I delivered the items #p504# requested without any issues. At this rate, I might really be considered a fine apprentice."
+ ],
  "name": "Silas Irons in Need of Help",
  "area": 19,
  "areaName": "Crafting",

@@ -1,5 +1,10 @@
 {
  "id": 506052,
+ "messages": [
+  "#p207#, who lives in the little mushroom house in #m10001000#, seems to want to follow the clue written on #t4031122#. ",
+  "From #b#t4031122##k, which I obtained after defeating #o700000#, the one who'd attacked #p207#, I picked up two leads: #b#m10002000##k and #p602#. I think it'd be best to head to #b#m10005000##k first and go hear what #b#p602##k has to say.  \\r\\n#rOnly characters at Level 47 or higher can complete this quest.#k ",
+  "I met #p602# at #m10005000#. It seems I might be able to track down the warrior who saved #p207# more easily than I thought."
+ ],
  "name": "A Name on a Note",
  "area": 20,
  "areaName": "Citizenship",

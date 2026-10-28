@@ -1,5 +1,10 @@
 {
  "id": 10413,
+ "messages": [
+  "#p506# of #m10004000# is desperately looking for me. Is something wrong?",
+  "I went to see #p506#, and she was in a panic. She had been walking around the swamp one day, when she ran into an even bigger, stronger, and more dangerous group of alligators, Crocos. She immediately turned and ran back to #m10004000#. She'd been waiting for me to come by since then, hoping I could help her. This time, I'll need to kill #r120 #o46#s#k and bring back #b50 #t4000041#s#k.",
+  "At #p506#'s request, I took out 120 #o46#s in the swamp. I'll have to revisit that spot from time to time and take out the alligators so they don't spawn out of control."
+ ],
  "name": "Taking Out the Alligators 2",
  "area": 15,
  "areaName": "Perion",

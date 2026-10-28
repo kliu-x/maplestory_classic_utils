@@ -137,10 +137,7 @@ export function QuickFill({ c, save }: { c: Character; save: (c: Character) => v
         <h2>Quick fill</h2>
         <button className="btn small ghost" onClick={() => setShowExample(!showExample)}>{showExample ? 'Hide example' : 'What should I capture?'}</button>
       </div>
-      <p className="small muted" style={{ marginTop: 0 }}>
-        Snip each game window with <strong>Windows+Shift+S</strong> and paste it here (Ctrl+V), or upload a full screenshot and box the windows.
-        It reads them <strong>on this device</strong>; nothing is uploaded. You check every value before it is saved.
-      </p>
+      <p className="small muted" style={{ marginTop: 0 }}>Paste (Ctrl+V) or upload a screenshot of your stat and skill windows. Read on this device; you review before saving.</p>
       <div className="row">
         <button className="btn primary" disabled={busy} onClick={() => file.current?.click()}>Upload screenshot</button>
         <button className="btn" disabled={busy} onClick={fromName} title="Public rankings: level and job only">Look up {c.name} by name</button>

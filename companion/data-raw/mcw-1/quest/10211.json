@@ -1,5 +1,10 @@
 {
  "id": 10211,
+ "messages": [
+  "It looks like #p306# in #m10002000# is looking for an adventurer to lend a hand.",
+  "#p306# in #m10002000# wants to eat a delicious mushroom dish and asked me to find some ingredients for him. He said that #b#t4000013#s#k are a favorite of his, so I should head out and hunt #r#o13#s#k near the forest.",
+  "I gave #t4000013#s to #p306# in #m10002000#. Can he really make a delicious meal out of this?"
+ ],
  "name": "How to Enjoy Mushrooms",
  "area": 13,
  "areaName": "Ellinia",

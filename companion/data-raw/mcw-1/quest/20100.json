@@ -1,5 +1,10 @@
 {
  "id": 20100,
+ "messages": [
+  "Having reached level 30 and mastered the way of the Magician, I feel the urge to learn more.",
+  "Does #b#p313##k of #b#m10002000##k have even greater lessons to teach me?",
+  "#b#p313##k said that if I can pass his test, he'll gladly teach me more. I'm no longer the weakling I once was, but hearing that I still have to face a trial makes me a bit nervous."
+ ],
  "name": "The Magician's Next Journey",
  "area": 101,
  "areaName": "Magician",

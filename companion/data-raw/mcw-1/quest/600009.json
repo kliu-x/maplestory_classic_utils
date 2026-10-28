@@ -1,5 +1,10 @@
 {
  "id": 600009,
+ "messages": [
+  "The #b#t2430051##k carries a hint about the next place.\\r\\n\\r\\nThis one leads #roff the beaten path#k.",
+  "The #b#t2430051##k reads:\\n#e#b\"Beyond the familiar path, the wild ones roam.\"#k#n\\r\\n#rOnly characters at Level 10 or higher can complete this quest.#k",
+  "The four scraps line up into a single sheet again.\\r\\n\\r\\nThe #b#t2430052##k is mine. #rOne page left!#k"
+ ],
  "name": "[Event] The Fifth Mark",
  "area": 99,
  "areaName": "Event",

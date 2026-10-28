@@ -1,5 +1,10 @@
 {
  "id": 506060,
+ "messages": [
+  "It seems #p208# is about to show off his skill.�",
+  "#b#p208##k of #m10001040#, true to his reputation as the town's finest craftsman, repaired  #b#p221##k's bow to perfection. All that's left now is to bring this #b#t4031125##k back to #b#p221##k.� \\r\\n#rOnly characters at Level 57 or higher can complete this quest.#k",
+  "I brought #t4031125# to #p221# and got to hear her story. That bow once belonged to a friend of hers from back when even #p221# herself was still young and inexperienced — he'd passed away in a war fought centuries ago, and #p221# had kept his bow all this time to remember him by. #p221# thanked me for helping her recover a bow that held such precious memories, and gave me a small gift in return. I should treasure this #b#t1032021##k she gave me too."
+ ],
  "name": "A Memory Restored",
  "area": 20,
  "areaName": "Citizenship",

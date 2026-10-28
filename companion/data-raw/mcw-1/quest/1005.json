@@ -1,5 +1,10 @@
 {
  "id": 1005,
+ "messages": [
+  "You hear that #b#p7##k can teach you how to hunt...",
+  "#b#p7##k asked me to defeat #r#o1#s#k, then talk to #b#p6##k.",
+  "You defeated the monsters, just as #b#p7##k instructed."
+ ],
  "name": "Todd's How-to-Hunt",
  "area": 1,
  "areaName": "Maple Island",

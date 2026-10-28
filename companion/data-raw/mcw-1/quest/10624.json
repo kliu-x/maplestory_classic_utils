@@ -1,5 +1,10 @@
 {
  "id": 10624,
+ "messages": [
+  "#b#p711##k has finished the lantern frames and is ready to head for the old tomb.",
+  "The #r#o62#s#k have scattered the old name-charms all over the deep tunnels. Collect #b30 #t4000059#s#k from them in #b#m010006160##k and #b#m010006161##k, and bring them to #b#p711##k.",
+  "I brought the #t4000059#s to #b#p711##k. While cleaning them, he found one with the same mark as the cover of #bElda#k's journal."
+ ],
  "name": "Charms Gone Gray",
  "area": 17,
  "areaName": "Forgotten Hollow",

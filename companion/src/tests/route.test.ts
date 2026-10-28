@@ -73,3 +73,14 @@ describe('quest search', () => {
     expect(hits("dr. betty's research")).toContain('Research on Plant Fossils');
   });
 });
+
+describe('quest log text', () => {
+  it('names the map and boss the requirements leave out (Rainbow Snail -> Mano)', () => {
+    const q = QUESTS.find((x) => x.id === 10130)!;
+    expect(q.log).toMatch(/Thicket Around the Beach III.*Mano/);
+    expect(q.log).not.toMatch(/#/);
+    const thicket = mapById.get(q.mentionsMaps[0])!;
+    expect(thicket.name).toBe('Thicket Around the Beach III');
+    expect(thicket.bossSpawns?.map((b) => b.mobId)).toContain(q.mentionsMobs[0]);
+  });
+});

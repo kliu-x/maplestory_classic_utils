@@ -1,5 +1,10 @@
 {
  "id": 80024,
+ "messages": [
+  "It seems the Arcforging master #p602# of #m10005000# is finally ready to recognize my Arcforging skills.",
+  "The Arcforging master, #p602# of #m10005000#, was impressed with my growth and challenged me to prove my skill. I need to defeat #r#o19#s#k and craft #b1 #t4020106##k to bring back to him.",
+  "Amazed by my craftsmanship, the Arcforging master #p602# of #m10005000# handed me a #t4130003#. It appears to be a special item that can be used during crafting to create even stronger scrolls. Should I give it a try?"
+ ],
  "name": "An Arcforger in My Own Right!",
  "area": 19,
  "areaName": "Crafting",

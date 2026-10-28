@@ -208,11 +208,9 @@ function Editor({ c }: { c: Character }) {
         <label className={`callout ${c.followPlan ? 'info' : ''}`} style={{ display: 'flex', gap: 8, alignItems: 'flex-start', marginTop: 12, cursor: 'pointer' }}>
           <input type="checkbox" checked={!!c.followPlan} onChange={(e) => update({ followPlan: e.target.checked })} style={{ marginTop: 3 }} />
           <span>
-            <strong>I follow the plan</strong>: fill in my skills and stats automatically from my level.
+            <strong>Auto-fill skills and stats from my level</strong>
             <span className="small muted" style={{ display: 'block' }}>
-              {c.followPlan
-                ? 'Just update your level (and EXP). Skills follow the SP build for your main attack; all AP goes into your main stat. Editing a skill or base stat by hand turns this off.'
-                : 'Off: skills and base stats are exactly what you typed.'}
+              {c.followPlan ? 'Follows the SP build for your main attack; editing a skill or stat by hand turns this off.' : 'Off: using exactly what you entered.'}
             </span>
           </span>
         </label>
@@ -259,11 +257,18 @@ function Editor({ c }: { c: Character }) {
             </tbody>
           </table>
         </div>
-        <p className="small muted" style={{ marginTop: 6 }}>
-          {ap > 0 && <>Expected unspent AP: <strong>{ap}</strong>. </>}
-          {ap < 0 && <span style={{ color: 'var(--warn)' }}>Base stats are {-ap} higher than expected for Lv {c.level}. Check that equipment bonuses are not counted as base. </span>}
-          Base stats default to starting stats ({STATS.map((s) => startingStats(c.job)[s]).join('/')} STR/DEX/INT/LUK) plus every AP in {job.primaryStat.toUpperCase()}, and follow your level until you edit them.
-          Starting stats 12/5/4/4 (total 25) and {RULES.apPerLevel.value} AP/level <StatusPill status="community_reported" />.
+        {(ap !== 0) && (
+          <p className="small" style={{ marginTop: 6 }}>
+            {ap > 0 && <>Unspent AP: <strong>{ap}</strong></>}
+            {ap < 0 && <span style={{ color: 'var(--warn)' }}>Base stats are {-ap} above what Lv {c.level} allows; is some equipment bonus counted as base?</span>}
+          </p>
+        )}
+        <p
+          className="small muted"
+          style={{ marginTop: 4 }}
+          title={`Starting stats ${STATS.map((s) => startingStats(c.job)[s]).join('/')} (STR/DEX/INT/LUK) plus ${RULES.apPerLevel.value} AP per level in ${job.primaryStat.toUpperCase()} (community-reported).`}
+        >
+          Base stats default to your level&apos;s typical build <StatusPill status="community_reported" />
         </p>
 
         <h3 style={{ marginTop: 16 }}>Weapon &amp; attack</h3>

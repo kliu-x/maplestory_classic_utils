@@ -1,5 +1,10 @@
 {
  "id": 10620,
+ "messages": [
+  "The Stasis Seal is only a temporary measure. #b#p712##k asked me to speak with him about warning the fairies on the surface.",
+  "I must travel back up to the #b#m010002003##k and deliver the truth to #b#p313##k before the Sages are caught completely off guard.",
+  "I returned to #b#m010002000##k and warned #b#p313##k. He was relieved to hear the Cave Fairies survived, but realized the Sages must prepare for the corrupted Arcon. He thanked me for buying them time."
+ ],
  "name": "The Sage's Burden",
  "area": 17,
  "areaName": "Forgotten Hollow",

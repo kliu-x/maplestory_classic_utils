@@ -1,5 +1,10 @@
 {
  "id": 80020,
+ "messages": [
+  "The leatherworking master #p401# of #m10003000# seems to be looking for someone who could become his business partner.",
+  "The leatherworking master, #p401# of #m10003000#, is giving me a test to see if I'm worthy of becoming his partner. He said that one must have the proper strength and knowledge for leatherworking and asked me to defeat monsters around #m10003000# and #m10001000# to collect #b#t4000049##k.",
+  "I passed the test given by the leatherworking master #p401# of #m10003000#. Could this mean that I, too, can stand proudly as a leatherworker of Maple World?"
+ ],
  "name": "JM From tha Streetz Looking for a Partner",
  "area": 19,
  "areaName": "Crafting",

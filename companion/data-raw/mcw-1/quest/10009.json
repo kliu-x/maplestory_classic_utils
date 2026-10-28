@@ -1,5 +1,10 @@
 {
  "id": 10009,
+ "messages": [
+  "It looks like #p107# in #m10000000# has prepared another round of training.",
+  "I saw #p107# again in #m10000000#. He said my training is still far from over and gave me a mission to hunt stronger monsters, farther from town. Once I finish this training, will I finally become a true adventurer?",
+  "I passed #p107#'s second training with flying colors! Once I reach Level 10, I'll be all set to choose my job!"
+ ],
  "name": "Olaf's Second Training",
  "area": 11,
  "areaName": "Lith Harbor",

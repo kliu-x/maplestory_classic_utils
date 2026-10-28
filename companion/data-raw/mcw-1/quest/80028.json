@@ -1,5 +1,10 @@
 {
  "id": 80028,
+ "messages": [
+  "#p800018# in the #m80002000# seems to have another favor.",
+  "This time, #p800018# in the #m80002000# asked me to deliver a letter to #p511# in #m10004000#.",
+  "I delivered #p800018#'s letter to #p511# in #m10004000#."
+ ],
  "name": "Asking Perion for Help",
  "area": 10,
  "areaName": "Victoria Island",

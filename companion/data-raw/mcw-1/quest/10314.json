@@ -1,5 +1,10 @@
 {
  "id": 10314,
+ "messages": [
+  "Let's go look for #p403# in #m10003000#.",
+  "I ran into #p403# again at #m10003000#. A while ago, she was doing a favor for #p401# and getting some #t4003000#s for him. But the Sack of Cash he gave her to buy them fell out of her pocket while she was walking around in the subway, and she lost it. She said it fell deep into the subway station, to #bConstruction Site B3#k.",
+  "I found #p403#'s lost Sack of Cash in the #m10003000# subway. #p403# can now buy what #p401# asked for. I received Mesos and some potions as a gift. I should go to #bConstruction Site B3#k in the subway to look for more stuff."
+ ],
  "name": "[Construction Site B3] Shumi's Lost Sack of Cash",
  "area": 14,
  "areaName": "Kerning City",

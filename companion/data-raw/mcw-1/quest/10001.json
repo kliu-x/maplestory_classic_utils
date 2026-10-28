@@ -1,5 +1,10 @@
 {
  "id": 10001,
+ "messages": [
+  "It seems #p101#, the informant of #m10000000#, has something to say to all novice adventurers who have just arrived on Victoria Island.",
+  "#p101#, the informant of #m10000000#, explained that once you reach Level 10, you can make a job advancement in each town of Victoria Island. They asked me to help out the townsfolk in #m10000000# and hunt monsters to reach Level 10, then return.",
+  "After reaching Level 10, I was able to get information about the job advancement from #b#p101##k. It seems you can advance to a Warrior in #m10004000#, a Magician in #m10002000#, an Archer in #m10001000#, and a Thief in #m10003000#. Talking to #p101# will allow you to go straight to your town of choice. Since a job advancement cannot be undone once made, I'd better choose carefully..."
+ ],
  "name": "Phil's Call",
  "area": 11,
  "areaName": "Lith Harbor",

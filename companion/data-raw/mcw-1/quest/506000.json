@@ -1,5 +1,10 @@
 {
  "id": 506000,
+ "messages": [
+  "Mentally exhausted from endless adventuring, a peaceful rest sounds pretty good right now.",
+  "It seems #m10001000# offers various services for adventurers. I should drop by #m10001000# if I'm ever in the area.\\r\\n#rOnly characters at Level 12 or higher can complete this quest.#k",
+  "#p229#, the Town Clerk I met at #m10001007#, suggested I become a resident of #m10001000#. Once I've made up my mind, I should speak with #p229# for more details."
+ ],
  "name": "To Henesys, the Prairie Town",
  "area": 20,
  "areaName": "Citizenship",

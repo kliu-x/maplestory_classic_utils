@@ -1,5 +1,10 @@
 {
  "id": 506162,
+ "messages": [
+  "It seems #p425# of #m10003007# has an exciting offer for me.",
+  "#p425# of #m10003007# said in an excited voice that she had good news, and told me I'd been granted the right to own a house in this town. To hear more details, I should go find #b#p426##k.",
+  "#p426# of #m10003007# gruffly told me all about houses."
+ ],
  "name": "The Right to Own a Home",
  "area": 20,
  "areaName": "Citizenship",

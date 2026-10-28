@@ -18,10 +18,10 @@ export default function Sources(_: PageProps) {
       <div className="card">
         <h2>Labels</h2>
         <div className="grid grid-2 small">
-          <div><StatusPill status="verified" /> Official Nexon notes, or numbers read from the Classic World game files (via maplestory.io, region MCW).</div>
-          <div><StatusPill status="community_reported" /> A Classic World community guide. Plausible, not confirmed.</div>
-          <div><StatusPill status="unverified" /> An app default or proposal with no Classic World source. Edit it.</div>
-          <div><StatusPill status="conflicting" /> Sources disagree; the app shows both and lets you choose.</div>
+          <div><StatusPill full status="verified" /> Official Nexon notes, or numbers read from the Classic World game files (via maplestory.io, region MCW).</div>
+          <div><StatusPill full status="community_reported" /> A Classic World community guide. Plausible, not confirmed.</div>
+          <div><StatusPill full status="unverified" /> An app default or proposal with no Classic World source. Edit it.</div>
+          <div><StatusPill full status="conflicting" /> Sources disagree; the app shows both and lets you choose.</div>
         </div>
         <p className="small muted" style={{ marginTop: 8 }}>Damage numbers are labelled separately: Measured (yours) → Projected (yours, rescaled) → Estimate (formula).</p>
       </div>
@@ -52,12 +52,12 @@ export default function Sources(_: PageProps) {
           <table>
             <thead><tr><th>Topic</th><th>Status</th><th>Detail</th></tr></thead>
             <tbody>
-              <tr><td>Element multipliers</td><td><StatusPill status="conflicting" /></td><td className="small">MeowDB: weak ×1.25, resistant ×0.75, half ×0.5. Legacy convention: weak ×1.5, resist ×0.5. Code meaning (1/2/3) is the legacy convention. Off by default; selectable on Training.</td></tr>
-              <tr><td>Damage / defense / accuracy formulas</td><td><StatusPill status="community_reported" /></td><td className="small">From MeowDB (updated 2026-10-21); not stated as verified for Classic World. Used only when you have no measured damage, and for projecting measurements.</td></tr>
-              <tr><td>SP / AP per level</td><td><StatusPill status="community_reported" /></td><td className="small">3 SP/level, +1 at advancement (inferred from 61 SP at Lv 30), 5 AP/level, starting stats total 25.</td></tr>
-              <tr><td>Respawn time, attack speed, potion prices</td><td><StatusPill status="unverified" /></td><td className="small">App defaults. Measure in game and edit on the Training page.</td></tr>
-              <tr><td>Poison Breath damage</td><td><StatusPill status="unverified" /></td><td className="small">Its own entry has no damage; hidden skill 2101005 (MAD 50–80, 6 targets) is assumed to be its explosion.</td></tr>
-              <tr><td>KPQ rush/bonus rules</td><td><StatusPill status="unverified" /></td><td className="small">No Classic World source found.</td></tr>
+              <tr><td>Element multipliers</td><td><StatusPill full status="conflicting" /></td><td className="small">MeowDB: weak ×1.25, resistant ×0.75, half ×0.5. Legacy convention: weak ×1.5, resist ×0.5. Code meaning (1/2/3) is the legacy convention. Off by default; selectable on Training.</td></tr>
+              <tr><td>Damage / defense / accuracy formulas</td><td><StatusPill full status="community_reported" /></td><td className="small">From MeowDB (updated 2026-10-21); not stated as verified for Classic World. Used only when you have no measured damage, and for projecting measurements.</td></tr>
+              <tr><td>SP / AP per level</td><td><StatusPill full status="community_reported" /></td><td className="small">3 SP/level, +1 at advancement (inferred from 61 SP at Lv 30), 5 AP/level, starting stats total 25.</td></tr>
+              <tr><td>Respawn time, attack speed, potion prices</td><td><StatusPill full status="unverified" /></td><td className="small">App defaults. Measure in game and edit on the Training page.</td></tr>
+              <tr><td>Poison Breath damage</td><td><StatusPill full status="unverified" /></td><td className="small">Its own entry has no damage; hidden skill 2101005 (MAD 50–80, 6 targets) is assumed to be its explosion.</td></tr>
+              <tr><td>KPQ rush/bonus rules</td><td><StatusPill full status="unverified" /></td><td className="small">No Classic World source found.</td></tr>
             </tbody>
           </table>
         </div>
@@ -68,7 +68,7 @@ export default function Sources(_: PageProps) {
         <div className="stack">
           {Object.values(SOURCES).filter((s) => s.source_url).map((s) => (
             <div key={s.source_title} className="row" style={{ alignItems: 'flex-start' }}>
-              <StatusPill status={s.verification_status} />
+              <StatusPill full status={s.verification_status} />
               <div>
                 <a href={s.source_url} target="_blank" rel="noreferrer">{s.source_title}</a>
                 <div className="small muted">

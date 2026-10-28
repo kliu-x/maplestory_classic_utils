@@ -1,5 +1,10 @@
 {
  "id": 10418,
+ "messages": [
+  "Let's ask #b#p511##k in #m10004000# if there's anyone who might know more.",
+  "Let's ask botanist #b#p308##k in #m10002000# about the rumor.",
+  "Asked Doctor #p308# about the rumor."
+ ],
  "name": "Truth of the Rumor-Betty",
  "area": 15,
  "areaName": "Perion",

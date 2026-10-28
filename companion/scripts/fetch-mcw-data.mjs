@@ -87,10 +87,9 @@ const trimSkillbook = (b) => ({
     levelProperties: s.levelProperties,
   })),
 });
-const trimQuest = (q) => {
-  const { messages, ...rest } = q; // dialogue text is not needed
-  return rest;
-};
+// Quest messages are the short log texts ("Pia asked me to go to #m...#, take out #o...#"):
+// they name the maps and monsters a quest needs when the requirements only list an item.
+const trimQuest = (q) => q;
 
 async function main() {
   const startedAt = new Date().toISOString();
@@ -121,6 +120,8 @@ async function main() {
   for (const q of quests) {
     const d = await cached(`quest/${q.id}.json`, `/quest/${q.id}`, trimQuest);
     for (const it of d.requirementToComplete?.items || []) if (it.count > 0) itemIds.add(it.id);
+    // ...and items the quest texts mention (#t4000016#)
+    for (const m of d.messages || []) for (const t of String(m).matchAll(/#[tz]0*(\d+)/g)) itemIds.add(Number(t[1]));
   }
   console.log(`  items: ${itemIds.size}`);
   for (const id of itemIds) await cached(`item/${id}.json`, `/item/${id}`, trimItem);

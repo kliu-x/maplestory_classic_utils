@@ -8,18 +8,28 @@ export const STATUS_LABEL: Record<VerificationStatus, string> = {
   conflicting: 'Conflicting',
 };
 
-export function StatusPill({ status, title }: { status: VerificationStatus; title?: string }) {
-  return (
-    <span className={`pill ${status}`} title={title}>
-      {STATUS_LABEL[status]}
-    </span>
-  );
+/**
+ * Where a value comes from. Quiet by default: verified (the norm) shows nothing, community
+ * and unverified are a small dot (hover for details), conflicting always shows in full so
+ * disagreements stay visible. `full` forces the labelled pill (Sources page, legends).
+ */
+export function StatusPill({ status, title, full }: { status: VerificationStatus; title?: string; full?: boolean }) {
+  const tip = title ? `${STATUS_LABEL[status]}: ${title}` : STATUS_LABEL[status];
+  if (full || status === 'conflicting')
+    return (
+      <span className={`pill ${status}`} title={title}>
+        {STATUS_LABEL[status]}
+      </span>
+    );
+  if (status === 'verified') return null;
+  return <span className={`dot ${status}`} title={tip} aria-label={STATUS_LABEL[status]} />;
 }
 
 /** Verification pill that links to the underlying source. */
 export function SourceBadge({ source, compact }: { source: SourceMeta; compact?: boolean }) {
   const title = `${source.source_title}\nRetrieved ${source.retrieved_at}${source.game_version_or_date ? `\nVersion: ${source.game_version_or_date}` : ''}${source.notes ? `\n${source.notes}` : ''}`;
   const pill = <StatusPill status={source.verification_status} title={title} />;
+  if (compact && source.verification_status === 'verified') return null;
   return (
     <span className="row" style={{ gap: 6, display: 'inline-flex' }}>
       {source.source_url ? (

@@ -1,5 +1,9 @@
 {
  "id": 10306,
+ "messages": [
+  "#p406# thinks I've grown a lot since my last visit; she's going to start giving me tasks of a slightly higher difficulty from here on out. First, she told me that #p410#, the owner of Kerning City Pharmacy, was working on a new potion when he ran out of ingredients. He needs me to hunt #r40 #o18#s#k and #r40 #o19#s#k, and collect #b20 #t4000018#s#k and #b20 #t4000019#s#k. Taking on #o18#s could be a bit tricky, but for me, it shouldn't be too much trouble!",
+  "I delivered what #p410# asked for and got a bunch of #t2000002#s in return. I wonder what kind of potion #p410# will make using those materials. Return to #p406# for another gig."
+ ],
  "name": "Dr. Faymus's Request",
  "area": 14,
  "areaName": "Kerning City",

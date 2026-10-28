@@ -1,5 +1,10 @@
 {
  "id": 506111,
+ "messages": [
+  "It looks like #p425#, the City Clerk, is looking for someone to help with her work. Let's go check out #p431# in front of #m10003007#.",
+  "#p425#, the City Clerk, asked me to greet #b#p417##k, a resident of the city. Since I've become a resident here too, greeting the cityspeople is a given, right? \\r\\n#rOnly characters at Level 12 or higher can complete this quest.#k",
+  "I greeted #p417#, a resident of #m10003000#. As expected, the residents of this city seem to be quite full of personality."
+ ],
  "name": "First Greeting with Jake, the Town Resident",
  "area": 20,
  "areaName": "Citizenship",

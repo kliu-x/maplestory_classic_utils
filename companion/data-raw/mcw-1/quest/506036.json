@@ -1,5 +1,10 @@
 {
  "id": 506036,
+ "messages": [
+  "It seems like #p206#, your neighbor living in #m10001000#, has something on his mind.",
+  "#b#p206##k, your neighbor living in #b#m10001000##k, has been agonizing over how to get his newly found daughter, #b#p506##k, to open her heart to him. It might be best to seek advice from #b#p203##k. \\r\\n#rOnly characters at Level 17 or higher can complete this quest.#k",
+  "I met with #p203# to find a way for #p206#, my neighbor living in #m10001000#, to become closer and open up with his daughter, #p506#."
+ ],
  "name": "Bruce's Dilemma",
  "area": 20,
  "areaName": "Citizenship",

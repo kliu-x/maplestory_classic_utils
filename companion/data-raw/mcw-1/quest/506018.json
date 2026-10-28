@@ -1,5 +1,10 @@
 {
  "id": 506018,
+ "messages": [
+  "It looks like #p229#, the town clerk, is looking for someone to help with their work. Let's go check out #p235# in front of #m10001007#.",
+  "#p229#, the town clerk, asked me to check on #b#p221##k. Let's go see how #p221# is doing.\\r\\n#rOnly characters at Level 32 or higher can complete this quest.#k",
+  "I checked on #p221#, the leader of the archers. I'm glad to see she is doing well!"
+ ],
  "name": "Asking After Athena Pierce",
  "area": 20,
  "areaName": "Citizenship",

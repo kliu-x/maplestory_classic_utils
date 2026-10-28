@@ -1,5 +1,10 @@
 {
  "id": 506118,
+ "messages": [
+  "It looks like #p425#, the City Clerk, is looking for someone to help with her work. Let's go check out #p431# in front of #m10003007#.",
+  "#p425#, the City Clerk, asked me to check on #b#p411##k, the hidden leader of the city. Time to take a deep breath and go...\\r\\n#rOnly characters at Level 32 or higher can complete this quest.#k",
+  "I checked in on #p411#, the hidden leader of #m10003000#. Truth be told, he's someone who doesn't really need me checking in on him anyway."
+ ],
  "name": "Asking After Dark Lord",
  "area": 20,
  "areaName": "Citizenship",

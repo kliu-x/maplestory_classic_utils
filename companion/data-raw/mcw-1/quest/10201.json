@@ -1,5 +1,10 @@
 {
  "id": 10201,
+ "messages": [
+  "I think #p305# in #m10002000# has something to ask me...",
+  "I ran into #b#p305##k again, who had given me #t4031031# for #p320#, #p608#'s son, last time. Back then, she seemed guarded, but now, she's accepted me as #p320#'s friend... \\r\\n\\r\\n#p305# is an assistant for the head magician of Ellinia, #p313#. She's concerned about the #t4000033#s: evil dolls he'd made with black magic, a long, long time ago. While they'd been sealed for quite some time, a bunch of #o35#s recently stole them and got away. The #o35#s have since become zombies and are destroying the forest. To take back the forest, someone needs to eliminate the #r#o38#s#k and take the #b#t4000033#s#k away from them... So, I readily accepted the request to collect #b50 Cursed Dolls#k, but I fear those crazy monkeys may be too much to handle...",
+  "I eliminated a bunch of #o38#s in a forest near #m10002000# and collected all #b50 #t4000033#s#k for Rowen. In return, she gave me 7 ores. I hope the forest returns to normal..."
+ ],
  "name": "Collecting 50 Cursed Dolls",
  "area": 13,
  "areaName": "Ellinia",

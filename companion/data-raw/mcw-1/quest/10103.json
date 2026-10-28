@@ -1,5 +1,9 @@
 {
  "id": 10103,
+ "messages": [
+  "I got the Special Sauce from #p300# in #m10002010#. Now, I need to deliver it to #p203#, along with #b10 #t4000008#s#k and #b30 #t4000012#s#k.",
+  "I got all the materials that #p203# asked me to get and gave them to her. I can't wait to see the village carnival!"
+ ],
  "name": "Estelle's Special Sauce",
  "area": 12,
  "areaName": "Henesys",

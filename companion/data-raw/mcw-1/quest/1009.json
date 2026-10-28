@@ -1,5 +1,10 @@
 {
  "id": 1009,
+ "messages": [
+  "#b#p11##k at #b#m50##k seems like a martial arts specialist who can train beginners.",
+  "I am now under the tutelage of the famous sword master, #b#p11##k, in #b#m50##k. For my first lesson, she told me to hunt #r#o3#s#k, #r#o4#s#k, and #r#o5#s#k. Ah, #b#p11##k also said to meet up with #b#p12##k in #b#m60##k for a useful quest.",
+  "#b#p11##k trained you, and you feel stronger."
+ ],
  "name": "Mai's Training",
  "area": 1,
  "areaName": "Maple Island",

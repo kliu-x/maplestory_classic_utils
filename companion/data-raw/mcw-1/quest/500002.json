@@ -1,5 +1,10 @@
 {
  "id": 500002,
+ "messages": [
+  "#p313# has something to say about the newly discovered #bbizarre cave entrance#k...",
+  "#p313# is worried that there might be a problem with the #bWorld Tree#k and asked me to talk to #p502# in #m10004000# about it.",
+  "I couldn't get any answers from #p502#... but I was able to see the battle he fought beneath the World Tree."
+ ],
  "name": "[Event] The One Who Sealed the Darkness",
  "area": 99,
  "areaName": "Event",

@@ -1,5 +1,10 @@
 {
  "id": 500010,
+ "messages": [
+  "#b#p900026##k in #b#m10001000##k and #b#m10003000##k has a favor to ask.\n Go and hear what she has to say.",
+  "#b#p900026##k in #b#m10001000##k and #b#m10003000##k has had her stash of #b#t4031129##k carried off by monsters. \n#b#t4031129##k dropped by #bmonsters level 10#k and above, such as #bRibbon Pig#k, #bDark Stump#k, #bOctopus#k, and #bGreen Mushroom#k.\\r\\n#rOnly characters at Level 10 or higher can complete this quest.#k",
+  "All the #b#t4031129##k has been returned to #b#p900026##k. Halloween is back on schedule."
+ ],
  "name": "[Event] Halloween Candies",
  "area": 99,
  "areaName": "Event",

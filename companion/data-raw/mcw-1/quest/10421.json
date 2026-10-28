@@ -1,5 +1,10 @@
 {
  "id": 10421,
+ "messages": [
+  "Doctor #p512# seems to have one last request.",
+  "Visited Doctor #p512# again. He says #o700007# seems to take all the nutrients from #m10004000#. He also added that if this continues, #m10004000# would become a wasteland devoid of life. The #r#o700007##k must be eliminated.",
+  "Acting on Doctor #p512#'s request, I've tracked down and eliminated #o700007# that was nourishing on #m10004000#. Will this help #m10004000# return to its original state?"
+ ],
  "name": "Monstrous Tree Stumpy",
  "area": 15,
  "areaName": "Perion",

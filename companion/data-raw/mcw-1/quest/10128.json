@@ -1,5 +1,10 @@
 {
  "id": 10128,
+ "messages": [
+  "Would #p309# in #m10002000# know anything about the Alloy...?",
+  "#p309# not only knew about Alloy, but also knew of #o700004#, the snail with the #r#t2210000##k. Wing offered to reveal #o700004#’s location on one condition: bring him some #bsnail shells#k.",
+  "Gave snail shells to #p309# and in return got information that #o700004# frequently appeared near the thicket around the beach."
+ ],
  "name": "Snail Hunt",
  "area": 12,
  "areaName": "Henesys",

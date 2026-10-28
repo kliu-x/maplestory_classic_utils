@@ -1,5 +1,10 @@
 {
  "id": 80015,
+ "messages": [
+  "It seems #p303#, the tailor of #m10002000#, is finally ready to acknowledge my tailoring skills.",
+  "#p303#, the tailor of #m10002000#, was impressed by how much I've grown and suggested I show off my abilities. I need to defeat #r#o22#s#k and craft #b1 #t1002084##k to bring back to him.",
+  "#p303#, the tailor of #m10002000#, admired my craftsmanship and handed me a #t4130002#. It seems to be a special item that can alter an equipment's stats when used during crafting. Maybe I should give it a try."
+ ],
  "name": "A Tailor in My Own Right!",
  "area": 19,
  "areaName": "Crafting",

@@ -1,5 +1,10 @@
 {
  "id": 80023,
+ "messages": [
+  "The Arcforging master, #p602# of #m10005000#, seems to be searching for someone who could become his apprentice.",
+  "The Arcforging master, #p602# of #m10005000#, gave me a test after I asked to become his apprentice. He said true Arcforgers must possess great wisdom and instructed me to defeat monsters around #m10005000# and collect #b1 #t4020000##k.",
+  "I passed the test given by the Arcforging master, #p602# of #m10005000#. Does this mean I can finally stand as a true Arcforger of Maple World?"
+ ],
  "name": "Chrishrama in Need of an Apprentice",
  "area": 19,
  "areaName": "Crafting",

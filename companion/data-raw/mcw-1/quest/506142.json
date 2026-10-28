@@ -1,5 +1,10 @@
 {
  "id": 506142,
+ "messages": [
+  "It seems #p402# of #m10003000# has something to tell me. ",
+  "#p402# of #m10003000# said that even though he'd made up with his father, he'd already gotten used to his free life in #m10003000#, so he was hesitant about going back home. In the meantime, he wanted to repay the people who'd helped him back when he first arrived in #m10003000# and had such a rough time of it, so he'd prepared some gifts for them — but he'd gone and lost them in the marshland, and asked me to help him get them back. Let's defeat #b#o29##k in the marshland near #m10003000# and find #b#t4031126##k. \\r\\n#rOnly characters at Level 27 or higher can complete this quest.#k ",
+  "I found #t4031126# in the marshland and brought it back to #p402#."
+ ],
  "name": "A Lost Thank-You",
  "area": 20,
  "areaName": "Citizenship",

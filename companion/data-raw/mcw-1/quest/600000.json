@@ -1,5 +1,9 @@
 {
  "id": 600000,
+ "messages": [
+  "A brand-new hero has just set foot in Maple World.\n\\nWord is that the #b#p9010000##k in #b#m10001000##k has prepared a welcome gift for every Founder who took that first step.\\n\nTalk to the Maple Admin #bonce a day to claim the reward for that day#k.\n",
+  "Today's gift have been claimed.\n\\nClaim all 14 rewards and your first step will be complete."
+ ],
  "autoStart": true,
  "name": "[Event] Founder's First Step",
  "area": 99,

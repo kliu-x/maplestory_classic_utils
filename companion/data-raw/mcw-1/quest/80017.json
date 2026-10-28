@@ -1,5 +1,10 @@
 {
  "id": 80017,
+ "messages": [
+  "It seems #p208#, the carpenter of #m10001000#, is looking for someone worthy of becoming his apprentice.",
+  "After I told #p208#, the carpenter of #m10001000#, that I wanted to become his apprentice, he gave me a test. He said that woodcrafting requires one to have the proper strength and knowledge and asked me to defeat monsters near #m10001000# and collect #b#t4000005#es#k.",
+  "I passed the test given by #p208#, the carpenter of #m10001000#. Does this mean I can now become a proper carpenter in Maple World?"
+ ],
  "name": "Vicious in Need of an Apprentice",
  "area": 19,
  "areaName": "Crafting",

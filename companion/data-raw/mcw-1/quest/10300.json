@@ -1,5 +1,10 @@
 {
  "id": 10300,
+ "messages": [
+  "There is a runaway kid named #p402# in #m10003000#...",
+  "On a lonely building rooftop in #m10003000#, I met a boy named #p402#, who's run away from home because of a fight with his father, #p202#, in #m10001000#. But #p402# is exhausted from being on the run and is out of money. He wants to go home and try to work things out with his strict, but admittedly loving, father. He asked me if I could persuade his father to not punish him for what he did. Also, he wants me to bring the #b#t4031006##k his mother left him when she died, as proof that he really did have his father's forgiveness.",
+  "As #p402# requested, I looked for his father in #m10001000# to get #p402#'s mother's #b#t4031006##k."
+ ],
  "name": "Alex's Request",
  "area": 14,
  "areaName": "Kerning City",

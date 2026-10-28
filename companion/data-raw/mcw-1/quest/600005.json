@@ -1,5 +1,10 @@
 {
  "id": 600005,
+ "messages": [
+  "The first page of the #b#t2430047##k is still legible.\\nLet's see what is written on the first page.",
+  "The first page of the #b#t2430047##k reads:\\n#e#b\"Where the sea meets a shore guarded by little snouts.\"#k#n\\r\\n#rOnly characters at Level 10 or higher can complete this quest.#k",
+  "Wedged in a crack in the rocks at #b#m10000021##k was the next sheet of the log.\\nThe #b#t2430048##k is mine. Whoever left this trail meant it to be followed."
+ ],
  "name": "[Event] The First Mark",
  "area": 99,
  "areaName": "Event",

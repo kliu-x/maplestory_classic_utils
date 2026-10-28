@@ -1,5 +1,10 @@
 {
  "id": 80027,
+ "messages": [
+  "#p202# in #m10001000# seems to want to send a reply to #p800018# in the #m80002000#.",
+  "#p202# in #m10001000# asked me to deliver a reply to #p800018# in the #m80002000#.",
+  "I delivered #p202#'s letter to #p800018# in the #m80002000#."
+ ],
  "name": "Chief Stan's Reply",
  "area": 10,
  "areaName": "Victoria Island",

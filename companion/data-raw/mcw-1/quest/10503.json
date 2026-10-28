@@ -1,5 +1,9 @@
 {
  "id": 10503,
+ "messages": [
+  "#p201# of #m10001000# needs #b50 #t4000027#s#k and #b10 #t4000008#s#k as ingredients to make her unagi special.",
+  "I brought #p201# everything needed to make #t4031030#."
+ ],
  "name": "Secret to Unagi Special",
  "area": 16,
  "areaName": "Sleepywood",

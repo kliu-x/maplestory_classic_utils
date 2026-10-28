@@ -1,5 +1,10 @@
 {
  "id": 80008,
+ "messages": [
+  "The master blacksmith of #m10004000#, #p504#, seems to be looking for someone worthy of becoming his apprentice.",
+  "The master blacksmith of #m10004000#, #p504#, is giving me a test to see if I'm fit to become his apprentice. He said that a true blacksmith must have the required amount of strength and knowledge. He told me to defeat the monsters around #m10004000# and bring back the raw ore they drop.",
+  "I passed the test given by #p504#, the master blacksmith of #m10004000#. Does this mean I can become a true blacksmith in Maple World?"
+ ],
  "name": "Silas Irons in Need of an Apprentice",
  "area": 19,
  "areaName": "Crafting",

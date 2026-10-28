@@ -1,5 +1,10 @@
 {
  "id": 506031,
+ "messages": [
+  "#p229#, the town clerk, seems to be looking for items needed to manage #m10001000#. Let's go see #p235# in front of #m10001007#.",
+  "#p229#, the town clerk, requested a donation of #b30 #t4000027#s#k for #m10001000#. \\r\\n#rOnly characters at Level 32 or higher can complete this quest.#k",
+  "I gathered the items requested by #p229#, the town clerk, and brought them to him. I'm glad I could contribute to the development of our town."
+ ],
  "name": "Donating to Henesys",
  "area": 20,
  "areaName": "Citizenship",

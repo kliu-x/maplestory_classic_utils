@@ -1,5 +1,10 @@
 {
  "id": 506110,
+ "messages": [
+  "It looks like #p425#, the City Clerk, is looking for someone to help with her work. Let's go check out #p431# in front of #m10003007#.",
+  "#p425#, the City Clerk, asked me to check on #b#p412##k, a resident of the city. Let's go see how #p412# is doing. \\r\\n#rOnly characters at Level 12 or higher can complete this quest.#k",
+  "I checked on #p412#, a resident of #m10003000#. In a city like this, no news is the best news."
+ ],
  "name": "Asking After Jane Doe, the Town Resident",
  "area": 20,
  "areaName": "Citizenship",

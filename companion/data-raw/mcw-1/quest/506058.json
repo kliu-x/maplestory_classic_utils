@@ -1,5 +1,10 @@
 {
  "id": 506058,
+ "messages": [
+  "It seems #p221# of #m10001000# has yet another favor to ask.�",
+  "Inside #p221#'s box was a small, old bow. But it had fallen apart after all that time, and #p221# said #b#p208##k should be able to fix it. It seems I should head to #b#p208##k at #b#m10001040##k and show them the bow. Still, if this bow is centuries old, just how many long years has #p221# been alive for?� \\r\\n#rOnly characters at Level 57 or higher can complete this quest.#k",
+  "I showed #t4031124# to #p208#. I hope he's able to fix it..."
+ ],
  "name": "A Worn-Out Bow",
  "area": 20,
  "areaName": "Citizenship",

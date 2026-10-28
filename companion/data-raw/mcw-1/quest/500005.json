@@ -1,5 +1,10 @@
 {
  "id": 500005,
+ "messages": [
+  "The #b#p9010000##k in #b#m10001000##k has something to say regarding the #bmysterious letters#k dropping from monsters lately.",
+  "I need to collect the #bmysterious letters#k dropped by #bmonsters level 10#k and above, such as #bRibbon Pig#k, #bDark Stump#k, #bOctopus#k, and #bGreen Mushroom#k.\\nI can exchange them with the #b#p9010000##k in #b#m10001000##k for a gift that'll help me in my adventure...",
+  "I've already collected all the #bmysterious letters#k and exchanged them for a gift today.\\nLet's visit the #b#p9010000##k in #m10001000##k again tomorrow."
+ ],
  "name": "[Event] Gathering Leaves ",
  "area": 99,
  "areaName": "Event",

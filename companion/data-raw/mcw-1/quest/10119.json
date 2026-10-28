@@ -1,5 +1,10 @@
 {
  "id": 10119,
+ "messages": [
+  "Let's go to #p218# in #m10001000#.",
+  "I ran into that same teddy-bear-costume-wearing #p218# at the #m10001050#. Last time I saw her, I took care of some #o16#s for her. This time, she wants to make a claw as a present for a friend in #m10002000#, who's embarking on an adventure soon. The claw she wants to make requires #b15 #t4010104#s#k, #b30 #t4000050#s#k, and #b30 #t4003000#s#k... If I get her all these... will I be richly rewarded?",
+  "#p218# asked me help her with a gift for her friend who decided to set out on an adventure. I brought back what she needed, but it seemed that wasn't enough."
+ ],
  "name": "Pia's Present For a Friend",
  "area": 12,
  "areaName": "Henesys",

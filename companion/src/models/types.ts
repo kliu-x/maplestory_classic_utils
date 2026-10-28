@@ -62,6 +62,7 @@ export interface GameMap {
   /** Spawn points grouped by platform (inferred from spawn x/y; only when the map has 2+). Ordered top to bottom. */
   lanes?: MapLane[];
   portalsTo: number[];
+  bossSpawns?: { mobId: number; x: number; y: number }[];
   /** The town you respawn in from this map (its home town). */
   returnMap?: number;
   /** World coordinates; see minimapPoint(). */
@@ -109,6 +110,11 @@ export interface Quest {
   endNpcId?: number;
   killMobs: { mobId: number; count: number }[];
   collectItems: { itemId: number; count: number }[];
+  /** The quest log text while in progress, markup resolved to names. */
+  log?: string;
+  /** Maps and monsters the quest text names (e.g. where to find a boss). */
+  mentionsMaps: number[];
+  mentionsMobs: number[];
   /** Plain-language objective (event quests give only a riddle). */
   hint?: string;
   /** Last day an event quest can be started (YYYY-MM-DD, exclusive). */
@@ -127,6 +133,7 @@ export interface Npc {
 export interface Item {
   id: number;
   name: string;
+  description?: string;
 }
 
 // ---------- Jobs ----------

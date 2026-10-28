@@ -1,5 +1,10 @@
 {
  "id": 506043,
+ "messages": [
+  "#p203# of #m10001000# seems to have another request.",
+  "#p203# of #m10001000# asked me to look for the #b#t4031116##k for #p202#. Will I be able to find it while hunting #b#o23##k deep inside the Ant Tunnel? Nothing is certain, but if I ever get the chance to go to the Ant Tunnel, I should look for it. \\r\\n#rOnly characters at Level 27 or higher can complete this quest.#k",
+  "I hunted #o23# deep inside the Ant Tunnel and finally found the #t4031116#. I thought it couldn't be found since it was lost decades ago... By the way, #p202# really must have been an adventurer in the past."
+ ],
  "name": "Chief Stan's Hammer",
  "area": 20,
  "areaName": "Citizenship",

@@ -1,5 +1,10 @@
 {
  "id": 506038,
+ "messages": [
+  "#p206# in #m10001000# is curious about what advice #p203# gave.",
+  "It seems #p206# in #m10001000# needs ingredients to make a dish according to #t4031111#. You need to bring him the ingredients by defeating monsters or buying them from the town's general store.\\r\\n#rOnly characters at Level 17 or higher can complete this quest.#k",
+  "I brought #p206# in #m10001000# the ingredients to finish the dish for his daughter. Now all I can do is hope he finishes cooking it well."
+ ],
  "name": "Bruce's Cooking Ingredients",
  "area": 20,
  "areaName": "Citizenship",

@@ -1,5 +1,10 @@
 {
  "id": 10416,
+ "messages": [
+  "Let's ask #b#p506##k in #m10004000# if there's anyone who might know more.",
+  "#b#p502##k has been training at #m10004000# for a long time. Let's go and ask about the rumor.",
+  "Asked #p502# about the rumor."
+ ],
  "name": "Truth of the Rumor-Manji",
  "area": 15,
  "areaName": "Perion",

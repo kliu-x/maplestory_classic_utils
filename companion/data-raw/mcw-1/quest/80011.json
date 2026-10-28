@@ -1,5 +1,10 @@
 {
  "id": 80011,
+ "messages": [
+  "It seems #p503#, the master weapon craftsman of #m10004000#, is looking for someone worthy of becoming his apprentice.",
+  "#p503#, the master weapon craftsman of #m10004000#, gave me a test when I asked to become his apprentice. He said that weapon crafting requires one to have the proper amount of strength and knowledge. He told me to use my Smithing skill to craft #b1 #t4010100##k and #b1 #t4010101##k. As long as I have the materials, those shouldn't be too difficult to make.",
+  "I passed the test #p503#, the master weapon craftsman of #m10004000#, gave me. Does this mean I can now become a true weapon craftsman of Maple World?"
+ ],
  "name": "Mr. Thunder�in Need of an Apprentice",
  "area": 19,
  "areaName": "Crafting",

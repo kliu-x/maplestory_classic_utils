@@ -1,5 +1,10 @@
 {
  "id": 10509,
+ "messages": [
+  "Let's go look for #p603# in #m10005000#.",
+  "I met #b#p603##k, a medicinal herb trader, in front of the #m10005001#. He appears to be the younger brother of #p602#. He recently discovered a place that grows the last herb he needs for a medicine he's been working on... He asked me to go deep in the forest and grab the #b#t4031025##k. It's made of green grass and a small pink flower... I need to make sure I get him the same exact one. #b#p306##k from #m10002000# can take me to the right place.",
+  "Thankfully, I got the flower that #p603# wanted from the Forest of Patience, and, as a sign of appreciation, he gave me a #bscroll for overall armor#k. Oh, and he also said that from here on out, I can enter the Forest of Patience without having to pay #p306# of #m10002000#. From what I've heard, the diet medicine #p603#'s working on is for #p306#'s fiance... I should go back to the Forest of Patience when I have some spare time..."
+ ],
  "name": "[Forest of Patience] Sabitrama and the Diet Medicine",
  "area": 16,
  "areaName": "Sleepywood",

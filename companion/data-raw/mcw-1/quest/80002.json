@@ -1,5 +1,10 @@
 {
  "id": 80002,
+ "messages": [
+  "It seems that #p228# in #m010001050# knows a way to have a different kind of fun in Maple World.",
+  "I met #b#p228##k in #m010001050#. He claimed he could make me something to entertain myself whenever I got tired of hunting and asked me to collect a few items. He said I can get them by defeating #o6#, #o7#, and #o9#, found around #m10001000#. I should try to gather them when I have the time.",
+  "I brought the requested items to #p228# in #m010001050# and received a #b#t4080000##k! With this, I can play the Omok mini-game with other adventurers anywhere! I should remember to ask #p228# if I want to know more about the mini-game."
+ ],
  "name": "Make a Slime & Mushroom Omok Set",
  "area": 12,
  "areaName": "Henesys",

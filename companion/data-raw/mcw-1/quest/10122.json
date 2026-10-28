@@ -1,5 +1,10 @@
 {
  "id": 10122,
+ "messages": [
+  "It looks like #p201# is ready to return the #t4031064# she borrowed from #p218#.",
+  "I finally got my hands on the #t4031064# that #p218# asked for. Now, I just need to bring it back to her.",
+  "I delivered the materials needed to make the claw to #p218# in #m10001050# and received a scroll in return. I wonder if #p218#'s friend has already set out on their adventure by now. Who knows? Maybe I'll run into them during my travels!"
+ ],
  "name": "Pia's Gift",
  "area": 12,
  "areaName": "Henesys",

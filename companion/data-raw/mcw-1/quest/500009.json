@@ -1,5 +1,10 @@
 {
  "id": 500009,
+ "messages": [
+  "The #b#p9010000##k in #b#m10001000##k is handing out #b#i3994010# #t3994010# for a special event! Nurture yours and see what it becomes...",
+  "Hold on to your #b#i3994010# #t3994010# and stay online for #r60 minutes#k. As time passes, the leaf will slowly turn into a #b#i3994011# #t3994011##k. Keep playing and let it grow!\\nIf you lost the leaf, forfeit the quest to receive another one.",
+  "Your #b#i3994010# #t3994010##k has grown into a #b#i3994011# #t3994011##k!"
+ ],
  "name": "[Event] Growing Leaf",
  "area": 99,
  "areaName": "Event",

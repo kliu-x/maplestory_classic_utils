@@ -1,5 +1,10 @@
 {
  "id": 506062,
+ "messages": [
+  "It seems #p230# of #m10001007# has something more to tell me about houses.",
+  "#p230# of #m10001007# suggested that if I want to get a house, I should go see #b#p231##k. I should be able to find #p231# on the east side of #m10001000#.",
+  "It seems I can buy a house from #p231# of #m10001000#. I'll have to remember that."
+ ],
  "name": "Looking for a House",
  "area": 20,
  "areaName": "Citizenship",

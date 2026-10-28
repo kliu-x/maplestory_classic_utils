@@ -1,5 +1,10 @@
 {
  "id": 10623,
+ "messages": [
+  "#b#p712##k has finished reading #bElda#k's journal.",
+  "For the Lantern Rite, the hearthkeepers built lantern frames from boughs the #o61#s gave freely. Collect #b30 #t4000058#s#k from #r#o61#s#k and bring them to #b#p711##k in #b#m010006140##k. He knows the way to the old tomb.",
+  "I brought the #t4000058#s to #b#p711##k. He will build the lantern frames and guide the way to #b#m010006161##k once I am strong enough."
+ ],
  "name": "Boughs for the Lanterns",
  "area": 17,
  "areaName": "Forgotten Hollow",

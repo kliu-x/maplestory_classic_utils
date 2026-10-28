@@ -1,5 +1,9 @@
 {
  "id": 10116,
+ "messages": [
+  "This time #p207# wants #b20 of each#k of the following: #b#t4000010##k, #b#t4000014##k, #b#t4000026##k, and #b#t4000028##k. I can get those from hunting monsters around the plateau, subway station, and prairie... Well, at least it'll be easy!",
+  "I got everything #p207# asked for. Please don't tell me she wanted all of it for free..."
+ ],
  "name": "Maya's Second Collection",
  "area": 12,
  "areaName": "Henesys",

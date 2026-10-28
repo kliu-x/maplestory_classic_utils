@@ -1,5 +1,10 @@
 {
  "id": 10210,
+ "messages": [
+  "Whenever I walk past #p309# in #m10002000#, he seems to be asking for help. I wonder why...",
+  "#p309# of #m10002000# seems to have a general disdain for humans. Definitely not the kind of attitude I'd expect from someone asking for a FAVOR. Well, he asked me to get him #b10 #t4000011#s#k, #b10 #t4000006#s#k, and #b3 #t4000007#s#k. They're ingredients for a potion he was assigned to make for homework.",
+  "I helped #p309# of #m10002000# with his homework. I have no idea what that potion is for, though."
+ ],
  "name": "I Need Help on My Homework!",
  "area": 13,
  "areaName": "Ellinia",

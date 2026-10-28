@@ -1,5 +1,10 @@
 {
  "id": 10311,
+ "messages": [
+  "It seems that�#b#p800000##k in #b#m10003000##k is looking for a party to take on a party quest that requires multiple adventurers to work together.",
+  "#b#p800000##k in #b#m10003000##k asked me to challenge the party quest #bFirst Time Together#k and defeat #b#o800003##k inside. The party quest must be attempted by a party of #bfour adventurers, all level 21 or higher#k. Once all members are ready, the party leader can speak to #p800000# to start the party quest. Better start looking for some friends to join me.",
+  "As requested by #b#p800000##k, my friends and I challenged the party quest #bFirst Time Together#k and defeated #o800003#. When everyone works together, there's nothing that can't be done!"
+ ],
  "name": "Proof of Companionship",
  "area": 14,
  "areaName": "Kerning City",

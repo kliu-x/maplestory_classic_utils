@@ -1,5 +1,9 @@
 {
  "id": 10102,
+ "messages": [
+  "#b#p300##k in #m10002010# wants a #t4020100##k in exchange for her Special Sauce. She wants to buy a necklace for her mom's birthday gift.",
+  "I got #b1 #t4020100##k for #b#p300##k, who I met near #m10002010#, for making her mother's birthday present. She gave me #b#t4031005##k. I better collect the other materials and return to #p203#."
+ ],
  "name": "Estelle's Request",
  "area": 12,
  "areaName": "Henesys",

@@ -1,5 +1,9 @@
 {
  "id": 1004,
+ "messages": [
+  "#b#p5##k wants Mushroom Soup for dinner. Better tell Nina now.",
+  "You told #b#p4##k what #b#p5##k wants for dinner."
+ ],
  "name": "Returning to Nina",
  "area": 1,
  "areaName": "Maple Island",

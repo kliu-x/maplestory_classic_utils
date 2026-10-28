@@ -1,5 +1,10 @@
 {
  "id": 506059,
+ "messages": [
+  "Can #p208# at #m10001040# fix #p221#'s bow?�",
+  "#p208# said the #t4031124# is made from a rare wood hardly ever found on Victoria Island, and asked me to gather #t4000050# and #t4000063# as materials to repair the bow. It seems #b#t4000050##k can be obtained from #b#o40##k, #b#o45##k, and #b#o50##k, while #b#t4000063##k can be obtained from monsters imbued with magical energy, such as #b#o47##k, #b#o48##k, and #b#o49##k.� \\r\\n#rOnly characters at Level 57 or higher can complete this quest.#k",
+  "I brought #p208# all the materials needed to repair the bow."
+ ],
  "name": "A Craftsman's Touch",
  "area": 20,
  "areaName": "Citizenship",

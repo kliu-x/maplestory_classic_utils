@@ -1,5 +1,10 @@
 {
  "id": 506055,
+ "messages": [
+  "The warrior #p207# had been searching for turned out to be #p502# of #m10004000#.�",
+  "When I told #p502# of #m10004000# that #b#p207##k was looking for the one who'd saved her life, he seemed to waver for a moment — but then asked me to keep his secret, saying he didn't want her to know who he was. I wonder what I should tell #b#p207##k when I go back to her...  \\r\\n#rOnly characters at Level 47 or higher can complete this quest.#k",
+  "I returned to #p207# at #m10001000# and told her what I'd learned about the one who'd saved her life. She seemed a little disappointed, but somehow looked happy all the same."
+ ],
  "name": "A Name Never Given",
  "area": 20,
  "areaName": "Citizenship",

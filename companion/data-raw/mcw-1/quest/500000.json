@@ -1,5 +1,10 @@
 {
  "id": 500000,
+ "messages": [
+  "Look for #p304# in #m10002000#.\\r\\nIt seems she has a favor to ask me.",
+  "Take the #b#i4031080# #t4031080##k from #b#p304##k to #b#p313##k for analysis.\\nThen, talk to #b#p304##k again.",
+  "I informed #p304# of the results of #b#p313##k's analysis on the #b#i4031080# #t4031080##k."
+ ],
  "name": "[Event] A Strange and Familiar Wood",
  "area": 99,
  "areaName": "Event",

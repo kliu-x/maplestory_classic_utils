@@ -1,5 +1,10 @@
 {
  "id": 80018,
+ "messages": [
+  "It seems #p208#, the carpenter of #m10001000#, is finally ready to acknowledge my woodcrafting skills.",
+  "#p208#, the carpenter of #m10001000#, was impressed by how much I've grown and suggested I show off my abilities. I need to defeat #r#o20#s#k and craft #b#t3010002##k to bring back to him.",
+  "#p208#, the carpenter of #m10001000#, admired my craftsmanship and handed me a #t4130001#. It seems to be a special item that can be used during crafting to alter an equipment's stats. Maybe I should give it a try."
+ ],
  "name": "A Carpenter in My Own Right!",
  "area": 19,
  "areaName": "Crafting",

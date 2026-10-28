@@ -1,5 +1,10 @@
 {
  "id": 80013,
+ "messages": [
+  "It looks like #p503#, the master weapon craftsman of #m10004000#, could use some help. Maybe I should go check in on him.",
+  "#p503#, the master weapon craftsman of #m10004000#, received an important request, but he's been having trouble because he's short on materials. I'll need to defeat some #r#o15#s#k and craft #b10 #t4003000#s#k to help him out.",
+  "I was able to deliver the items #p503# asked for without any issues. At this rate, I might really be considered a fine apprentice."
+ ],
  "name": "Mr. Thunder in Need of Help",
  "area": 19,
  "areaName": "Crafting",

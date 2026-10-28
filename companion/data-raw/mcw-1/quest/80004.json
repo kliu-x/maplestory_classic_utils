@@ -1,5 +1,10 @@
 {
  "id": 80004,
+ "messages": [
+  "It seems #p228# in #m010001050# can make another type of Omok Set.",
+  "#b#p228##k in #m010001050# said he could make a new type of Omok Set if I brought him a few items. He said I can easily get them by defeating #o6#, #o7#, and #o12#, found around #m10001000# and #m10003000#. I should try to gather them when I have the time.",
+  "I brought the requested items to #p228# in #m010001050# and received a #b#t4080002##k! With this, I can play the Omok mini-game with other adventurers anywhere! I should remember to ask #p228# if I want to know more about the mini-game."
+ ],
  "name": "Make a Slime & Octopus�Omok Set",
  "area": 12,
  "areaName": "Henesys",

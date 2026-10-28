@@ -1,5 +1,10 @@
 {
  "id": 506042,
+ "messages": [
+  "#p205# of #m10001000# seems to know a way for #p202# to regain his vitality.",
+  "#p205# of #m10001000# mentioned that #p202# was an adventurer who traveled the world in the past, and suggested that if he could find the #b#t4031116##k lost long ago when he was young, he might regain his energy. I should inform #b#p203##k of this information. \\r\\n#rOnly characters at Level 27 or higher can complete this quest.#k",
+  "I passed on #p205#'s advice to #p203# of #m10001000#."
+ ],
  "name": "Chief Stan's Past",
  "area": 20,
  "areaName": "Citizenship",

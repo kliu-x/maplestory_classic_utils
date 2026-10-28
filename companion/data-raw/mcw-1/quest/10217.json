@@ -1,5 +1,10 @@
 {
  "id": 10217,
+ "messages": [
+  "The receptionist sent the ledger ahead to #b#m010003000##k for me. The long entry names the #b#p411##k, but parts of it are missing.\n",
+  "#b#p411##k found his own name in the ledger and didn't care for it. He couldn't tell me much, but he sent me to #b#p402##k on the rooftops.\n",
+  "#b#p402##k filled in the part about the bench. Now to make my way to #b#p313##k."
+ ],
  "name": "The Dark Lord's Signature",
  "area": 13,
  "areaName": "Ellinia",

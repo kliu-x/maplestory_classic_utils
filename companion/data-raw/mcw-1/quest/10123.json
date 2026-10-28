@@ -1,5 +1,10 @@
 {
  "id": 10123,
+ "messages": [
+  "I should go see #p206# in #m10001000#...",
+  "I met #p206#, who's been studying the monsters and animals around #m10001000#. His bright smile and easygoing demeanor belie the painful fact that his daughter has been missing for some time now. The reason he's been studying the mushroom monsters is to uncover clues as to his daughter's whereabouts. He asked if I could help him out, and I just couldn't say no to such a worthy cause...",
+  "I helped #p206# gather up the materials necessary for his studies. Will these help him find his daughter?"
+ ],
  "name": "The Reason Behind the Mushroom Studies",
  "area": 12,
  "areaName": "Henesys",

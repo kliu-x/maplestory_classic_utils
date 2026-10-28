@@ -1,5 +1,10 @@
 {
  "id": 500001,
+ "messages": [
+  "#p304# in #m10002000# wants to speak with me again about the #b#i4031080# #t4031080##k from last time.",
+  "I need to head to #m10002071# to find the #bbizarre cave entrance#k and investigate its surroundings for #p304#.",
+  "I delivered the #b#i4031081# #t4031081##k from the cave entrance to #p304#."
+ ],
  "name": "[Event] Beyond the Unknown",
  "area": 99,
  "areaName": "Event",

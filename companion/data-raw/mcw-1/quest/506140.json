@@ -1,5 +1,10 @@
 {
  "id": 506140,
+ "messages": [
+  "It seems like #p111# in #m10000000# is willing to grant his grandson's request.",
+  "I obtained the final ingredient for the #o17# phobia cure, the #t4031113#, from #p111# in #m10000000#. Now, all I need to do is bring this to #b#p404##k in #b#m10003000##k. \\r\\n#rOnly characters at Level 17 or higher can complete this quest.#k�",
+  "I delivered all the ingredients for the #o17# phobia cure to #p404# in #m10003000#. Now, I can only hope that he crafts the cure properly."
+ ],
  "name": "Grandfather's Vitamin Gummy",
  "area": 20,
  "areaName": "Citizenship",

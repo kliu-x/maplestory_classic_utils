@@ -1,5 +1,10 @@
 {
  "id": 10312,
+ "messages": [
+  "Let's start looking for #p403# in #m10003000#.",
+  "I met this girl named #p403# in #m10003000#. She's devastated about losing the lucky coin that she borrowed from a friend, and she asked me to find it for her. She told me a bunch of guys draped in white cloths picked it up when she dropped it, and that I might find them at #bConstruction Site B1#k, deep in the subway station... I guess I should head there first...",
+  "I found the lost coin that #p403# of #m10003000# was looking for and returned it to her. A precious coin borrowed from her friend, huh...? As a reward, she gave me a bunch of return scrolls... Not bad at all!! She also said other items can be found at #bConstruction Site B1#k... I should check it out later..."
+ ],
  "name": "[Construction Site B1] Shumi's Lost Coin",
  "area": 14,
  "areaName": "Kerning City",

@@ -1,5 +1,10 @@
 {
  "id": 10625,
+ "messages": [
+  "#b#p711##k found a charm marked with #bElda#k's sign.",
+  "#b#p711##k wants to return the other charms to #b#m010006161##k. Defeat #r60 #o63#s#k there so he can work safely, then take the #b#t4031141##k to #b#p712##k in #b#m010006160##k so he can read it.",
+  "I cleared the #o63#s, and #b#p711##k put the charms back on the tomb walls. I gave the #b#t4031141##k to #b#p712##k."
+ ],
  "name": "The Dilapidated Tomb",
  "area": 17,
  "areaName": "Forgotten Hollow",

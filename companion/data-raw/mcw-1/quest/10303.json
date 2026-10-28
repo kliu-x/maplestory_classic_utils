@@ -1,5 +1,10 @@
 {
  "id": 10303,
+ "messages": [
+  "I hear that #p406# at #m10003000# is the one to talk to if I'm looking for work...",
+  "I paid #p406# a commission of 1,000 mesos in exchange for her bringing me various jobs and requests from the citizens of #m10003000#. The first request is from #p409#, the owner of the armor shop, who needs materials for crafting new armor. I need to defeat #r20 #o9#s#k and #r20 #o10#s#k, and collect #b10 #t4000009#s#k and #b10 #t4000010#s#k. It shouldn't be too hard, since #o9#s and #o10#s are easy to find near #m10003000#.",
+  "I delivered what #p409# asked for and got a bunch of #t2010005#s in return. I wonder what kind of armor #p409# will make. Nella said there are many more requests I can fulfill. I should visit #p406# every once in a while."
+ ],
  "name": "Don Hwang's Request",
  "area": 14,
  "areaName": "Kerning City",

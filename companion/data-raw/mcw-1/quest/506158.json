@@ -1,5 +1,10 @@
 {
  "id": 506158,
+ "messages": [
+  "It seems #p411# of #m10003000# has something to tell me now that I've become a #bCitizen of Honor#k.  ",
+  "#p411# of #m10003000# said there was a gift prepared for me for becoming a #bCitizen of Honor#k, but that he'd give it to me once I completed one task. #p411# told me that long ago, not long after he'd first become the Dark Lord, a comrade of his had been kidnapped by a rival faction seeking to seize control of the city, and he entrusted me with the task of finding some clue to his whereabouts. He said the faction most likely responsible for the kidnapping had their hideout deep in the marshland, so I might be able to turn up a clue by defeating #b#o46##k there.  \\r\\n#rOnly characters at Level 57 or higher can complete this quest.#k ",
+  "I found #t4031131# in the marshland. Still, deciphering what was written on the document doesn't look like it'll be easy."
+ ],
  "name": "A Missing Comrade ",
  "area": 20,
  "areaName": "Citizenship",

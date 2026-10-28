@@ -1,5 +1,10 @@
 {
  "id": 10403,
+ "messages": [
+  "See #b#p602##k in #m10005000#�to awaken the�#b#t1302009##k.",
+  "I showed #p602# #p502#'s #b#t1302009##k, and he revealed that he was the sword's creator. He needs #b1 #t4020109##k, #b1 #t4003004##k, #b1 #t4001007##k, and #b1 #t4001008##k to awaken it. Unfortunately, I've never heard of any of those items... He recommended talking to #b#p513# in #m10004121##k to get started.",
+  "I gathered the materials needed for the awakening and took them to #p602#. #p602# used the materials to reawaken the #t1302009# into the #b#t1302014##k. It's a nice sword that radiates a mysterious light... It's a shame I have to give it to #p502#."
+ ],
  "name": "Reawakening the Gladius",
  "area": 15,
  "areaName": "Perion",

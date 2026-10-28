@@ -39,10 +39,12 @@ for (const f of await readDir('npc')) {
 const items = [];
 for (const f of await readDir('item')) {
   const it = await readJson(join(RAW, 'item', f));
-  if (ok(it) && it.name) items.push({ id: it.id, name: it.name });
+  if (ok(it) && it.name) items.push({ id: it.id, name: it.name, ...(it.description ? { description: it.description.replace(/\\n|\n/g, ' ').replace(/#\w?/g, '').trim() } : {}) });
 }
 items.sort((a, b) => a.id - b.id);
 
+// Bosses, known before the monster section so maps can record their spawn points.
+const bossSet = new Set((await readJson(join(RAW, 'mob-list.json'))).filter((m) => m.isBoss).map((m) => m.id));
 // ---------- maps ----------
 // Lanes: spawn points grouped by platform. Footholds are not kept, so a lane is inferred:
 // points within LANE_DY px of height form a row, and a row splits where points are more
@@ -101,6 +103,8 @@ for (const m of mapList) {
     height: d.vrBounds?.height ?? 0,
     spawns: [...counts].map(([mobId, count]) => ({ mobId, count })).sort((a, b) => b.count - a.count),
     ...(lanes.length > 1 ? { lanes } : {}),
+    // Boss spawn points, so quests like "take out Mano" can pin where he appears.
+    bossSpawns: (d.mobs || []).filter((s) => bossSet.has(s.id)).map((s) => ({ mobId: s.id, x: s.x, y: s.y })),
     portalsTo: [...new Set((d.portals || []).map((p) => p.toMap))].sort((a, b) => a - b),
     // Positions are world coordinates; minimap pixel = (x + centerX) / 2^magnification.
     npcs: (d.npcs || []).filter((n) => !n.hidden && npcName.has(n.id)).map((n) => ({ id: n.id, name: npcName.get(n.id), x: n.x, y: n.y })),
@@ -191,6 +195,25 @@ for (const f of skillFiles) {
 skills.sort((a, b) => a.id - b.id);
 
 // ---------- quests ----------
+// Quest log texts use client markup: #p218# NPC, #m010000013# map, #o0700004# monster,
+// #t2210000# item, #i..# icon, #b #k #r #e #n colours/bold, #h # the player.
+const mapNames = new Map(maps.map((m) => [m.id, m.name]));
+const mobNames = new Map((await readJson(join(RAW, 'mob-list.json'))).map((m) => [m.id, m.name]));
+const itemNames = new Map(items.map((i) => [i.id, i.name]));
+const questText = (t) =>
+  String(t ?? '')
+    .replace(/#p0*(\d+)#/g, (_, id) => npcName.get(+id) ?? 'someone')
+    .replace(/#m0*(\d+)#/g, (_, id) => mapNames.get(+id) ?? 'a map')
+    .replace(/#o0*(\d+)#/g, (_, id) => mobNames.get(+id) ?? 'a monster')
+    .replace(/#[tz]0*(\d+)#/g, (_, id) => itemNames.get(+id) ?? 'an item')
+    .replace(/#h ?#/g, 'you')
+    .replace(/#[ic]\d+:?#/g, '')
+    .replace(/#[a-z]/g, '')
+    .replace(/#/g, '')
+    .replace(/\\n|\n/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+const refs = (texts, re, known) => [...new Set(texts.flatMap((t) => [...String(t ?? '').matchAll(re)].map((m) => +m[1])))].filter((id) => known.has(id));
 const questList = await readJson(join(RAW, 'quest-list.json'));
 const quests = [];
 for (const q of questList) {
@@ -216,6 +239,10 @@ for (const q of questList) {
     killMobs: (done.mobs || []).map((m) => ({ mobId: m.id, count: m.count })),
     collectItems: (done.items || []).filter((i) => i.count > 0).map((i) => ({ itemId: i.id, count: i.count })),
     ...(hint ? { hint } : {}),
+    // What the quest log says while the quest is in progress (falls back to its intro).
+    ...(questText(d.messages?.[1] || d.messages?.[0]) ? { log: questText(d.messages?.[1] || d.messages?.[0]) } : {}),
+    mentionsMaps: refs(d.messages || [], /#m0*(\d+)#/g, mapNames),
+    mentionsMobs: refs(d.messages || [], /#o0*(\d+)#/g, mobNames),
     ...(start.endTime ? { availableUntil: start.endTime.slice(0, 10) } : {}),
     repeatable: !!(start.repeatInterval || start.dayByDay || start.interval),
     source: src(`/quest/${d.id}`),

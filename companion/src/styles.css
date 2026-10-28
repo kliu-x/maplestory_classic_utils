@@ -286,3 +286,8 @@ h1.char-pick select { font: inherit; font-weight: 700; color: var(--text); backg
 /* With many NPCs, only the highlighted label stays visible; others show on hover. */
 .mapview-img:has(.mapview-pin.hl) .mapview-pin:not(.hl) .mapview-label { display: none; }
 .mapview-img:has(.mapview-pin.hl) .mapview-pin:not(.hl):hover .mapview-label { display: inline; }
+/* Quiet source marker: a small dot, details on hover */
+.dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin: 0 3px; vertical-align: middle; cursor: help; }
+.dot.community_reported { background: var(--info); }
+.dot.unverified { background: var(--warn); }
+.quest-log { margin: 0 0 12px; padding: 8px 12px; border-left: 3px solid var(--accent); background: var(--surface-2); border-radius: 0 6px 6px 0; font-size: 14px; }

@@ -1,5 +1,10 @@
 {
  "id": 10415,
+ "messages": [
+  "Let's ask #b#p501##k in #m10004000# if there's anyone who might know more.",
+  "#b#p506##k lived in #b#m10004000##k for a long time. Let's go ask about the rumor.",
+  "Asked #p506# about the rumor."
+ ],
  "name": "Truth of the Rumor-Blackbull",
  "area": 15,
  "areaName": "Perion",

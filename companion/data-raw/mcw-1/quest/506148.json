@@ -1,5 +1,10 @@
 {
  "id": 506148,
+ "messages": [
+  "It seems #p412# of #m10003004# has yet another favor to ask.�",
+  "#p412# of #m10003004# said she simply couldn't bring herself to change her own bandages, and asked me to go find Dr. Niora. She said she'd found part of a letter #p425# had sent to Dr. Niora, and thought #p425# might know something about her whereabouts. I should go see #b#p425##k at #b#m10003007##k. \\r\\n#rOnly characters at Level 37 or higher can complete this quest.#k ",
+  "I met #p425# at #m10003007#. She clearly seems to know something."
+ ],
  "name": "A Torn Letter",
  "area": 20,
  "areaName": "Citizenship",

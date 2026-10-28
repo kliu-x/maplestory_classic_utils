@@ -1,5 +1,10 @@
 {
  "id": 506159,
+ "messages": [
+  "It seems #p411# at #m10003003# has another task for me. ",
+  "#p411# at #m10003003# said there was someone who could decipher #b#t4031131##k, and told me to seek out an expert living somewhere deep in the marshland. It sounded like I could find him in a small cabin at #b#m10003097##k.  \\r\\n#rOnly characters at Level 57 or higher can complete this quest.#k ",
+  "I met #p436#, an expert in code-breaking, at #m10003098#."
+ ],
  "name": "An Unbreakable Code",
  "area": 20,
  "areaName": "Citizenship",

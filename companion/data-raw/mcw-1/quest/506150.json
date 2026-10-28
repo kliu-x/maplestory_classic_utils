@@ -1,5 +1,10 @@
 {
  "id": 506150,
+ "messages": [
+  "Does #p406# of #m10003000# actually know anything about the whereabouts of that doctor, Niora?�",
+  "#b#p406##k of #m10003000# said she couldn't just hand over information for free, but promised to tell me what she knew if I took care of a job request that had just come in. Let's gather #b#t4000024#s#k for her.  \\r\\n#rOnly characters at Level 37 or higher can complete this quest.#k ",
+  "I brought #p406# what she'd asked for. Now it's time to hear what she knows."
+ ],
  "name": "The Price of Information",
  "area": 20,
  "areaName": "Citizenship",

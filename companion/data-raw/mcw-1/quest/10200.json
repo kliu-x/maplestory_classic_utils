@@ -1,5 +1,10 @@
 {
  "id": 10200,
+ "messages": [
+  "#p304# from #m10002000# has lost something...",
+  "#p304# from #m10002000# told me that she lost #b#t4001000##k a couple of days ago, on her way to #m10004000#. A monster covered in flames stole it! Fairies tend to obsess over glimmering, shiny objects, so she obviously wants it back... Time to go hunt some boars near #m10004000#.",
+  "I returned #t4001000# to #p304# in #m10002000#. I got lucky, finding it off a nasty #o30#. As a sign of gratitude, she gave me a fairy item. It's gorgeous and glimmers like a star. Maybe I can use this to make something special."
+ ],
  "name": "Arwen and the Glass Shoe",
  "area": 13,
  "areaName": "Ellinia",

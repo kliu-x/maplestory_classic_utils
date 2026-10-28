@@ -1,5 +1,10 @@
 {
  "id": 10414,
+ "messages": [
+  "The archeologist, Doctor #p512#, currently does research at a camping site in #m10004051#. He recently called me about a strange rumor he heard.",
+  "During the excavation, Doctor #p512# said he heard a rumor about a very old tree living in #m10004000#. However, he had no clue on what kind of tree it was, or where exactly it was located. That's why he's asked me to visit #b#m10004000##k village to collect information on this particular tree. Shall I start by visiting #b#p501##k?",
+  "I met #p501# in #m10004000#. Would he know anything about that tree?"
+ ],
  "name": "Truth of the Rumor",
  "area": 15,
  "areaName": "Perion",

@@ -1,5 +1,10 @@
 {
  "id": 1006,
+ "messages": [
+  "#b#p9##k has some advice for beginner adventurers...",
+  "#b#p9##k told me to head east and hunt #r10#k #r#o2#s#k before meeting up with #b#p11##k.",
+  "As #b#p9##k suggested, you hunted #r10 #o2#s#k, then met #b#p11##k. Is this person a master? They definitely give off a strong, powerful vibe."
+ ],
  "name": "Sam's Suggestion",
  "area": 1,
  "areaName": "Maple Island",
@@ -56,5 +61,10 @@
   ],
   "npcId": 11,
   "state": 1
+ },
+ "names": {
+  "en": "Sam's Suggestion",
+  "es": "La sugerencia de Sam",
+  "ko": "샘의 제안"
  }
 }

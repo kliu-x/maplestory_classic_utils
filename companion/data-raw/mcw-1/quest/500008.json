@@ -1,5 +1,10 @@
 {
  "id": 500008,
+ "messages": [
+  "#p308# has just completed her latest research and needs someone to deliver the report across the sea.",
+  "Deliver #p308#'s research report to #p323#, the sailor who voyages to and from Ossyria. You can find her at #m10002090#.",
+  "You delivered #p308#'s research report to #p323#. Now that I've come all this way... why not hop aboard the ship bound for Ossyria?"
+ ],
  "name": "[Event] A New Adventure Awaits",
  "area": 99,
  "areaName": "Event",

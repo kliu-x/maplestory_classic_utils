@@ -1,5 +1,10 @@
 {
  "id": 10410,
+ "messages": [
+  "I hear Dr. #p308# has finished her fossil research. Maybe I should go and see the results.",
+  "I visited Dr. #p308# again. She finally completed her research and asked if I could take the final report to Dr. #p512# in #m10004000#. Dr. Betty also informed me that if I were to take #b20 #t4000011#s#k, #b15 pieces of #t4000015##k, #b1 #t4031075##k, and #b1 pair of #t1032002##k, it'd make Dr. #p512# very happy.",
+  "I delivered Dr. #p308#'s #t4031074# to Dr. #p512# in #m10004000#. Along with the report, I also gave him the #t4000011#, #t4000015#, #t4031075#, and #t1032002#. In return, Dr. Winston gave me the #t1032015#."
+ ],
  "name": "Progress on Fossil Research",
  "area": 15,
  "areaName": "Perion",

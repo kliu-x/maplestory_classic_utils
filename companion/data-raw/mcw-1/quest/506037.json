@@ -1,5 +1,10 @@
 {
  "id": 506037,
+ "messages": [
+  "I need to seek advice from #p203# on behalf of #p206# in #m10001000#.",
+  "#p203# in #m10001000# advised that it is crucial for #p206# to convey his true feelings to his daughter, and suggested that preparing a homemade dish for her would be a great idea. Since #p206# isn't good at cooking, she asked me to deliver a recipe for a dish that #p506# would love.\\r\\n#rOnly characters at Level 17 or higher can complete this quest.#k",
+  "I delivered the recipe written by #p203# to #p206#."
+ ],
  "name": "Mrs. Ming Ming's Advice",
  "area": 20,
  "areaName": "Citizenship",

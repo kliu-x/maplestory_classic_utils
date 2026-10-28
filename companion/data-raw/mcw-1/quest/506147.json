@@ -1,5 +1,10 @@
 {
  "id": 506147,
+ "messages": [
+  "It seems #p412# of #m10003004# has a new favor to ask.",
+  "#p412# knew full well she wasn't among the living anymore, and yet she refused to accept it. Worried that Dr. Niora might never come back, she said she'd have to change her own bandages, and asked me to defeat #r#o32##k and gather #b#t4000028##k for her. \\r\\n#rOnly characters at Level 37 or higher can complete this quest.#k ",
+  "I gathered #t4000028#s for #p412#. I only wish she hadn't asked me to help her change those bandages.."
+ ],
  "name": "Worn Bandages",
  "area": 20,
  "areaName": "Citizenship",

@@ -1,5 +1,9 @@
 {
  "id": 10505,
+ "messages": [
+  "#p320# got thirsty from eating #t4031030#. I need to go see #b#p305##k of #m10002000# to get #ba glass of #t4031031##k for him.",
+  "I went to see #p305# of #m10002000# to help quench #p320#'s thirst."
+ ],
  "name": "Thirsty Ronnie",
  "area": 16,
  "areaName": "Sleepywood",

@@ -1,5 +1,10 @@
 {
  "id": 10621,
+ "messages": [
+  "A cave fairy named #b#p715##k keeps a campfire burning in #b#m010006022##k. She looks like she could use a hand.",
+  "#b#p715##k says #r#o60#s#k keep crawling up from #b#m010006100##k toward her campfire. Defeat #r60 #o60#s#k so the camp stays safe.",
+  "I cleared out the #o60#s, and #b#p715##k's fire burns quietly again. She seemed to want to talk about something else, too..."
+ ],
  "name": "Embers in the Garden",
  "area": 17,
  "areaName": "Forgotten Hollow",

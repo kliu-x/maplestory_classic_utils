@@ -1,5 +1,10 @@
 {
  "id": 7707,
+ "messages": [
+  "Midnight Rest Quest",
+  "Midnight Rest Quest",
+  "Midnight Rest Quest"
+ ],
  "autoStart": true,
  "autoAccept": true,
  "name": "Midnight Rest Quest",

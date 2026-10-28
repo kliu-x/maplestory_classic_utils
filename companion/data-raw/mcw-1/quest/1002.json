@@ -1,5 +1,10 @@
 {
  "id": 1002,
+ "messages": [
+  "Talk to #b#p3##k.",
+  "Press the hotkey #bI#k to open your inventory, navigate to the #bUse#k tab, and double-click #b#t2010000##k to consume it. Then, talk to #b#p3##k.",
+  "You learned how to use items! This will make life much easier!"
+ ],
  "name": "Roger's Apple",
  "area": 1,
  "areaName": "Maple Island",

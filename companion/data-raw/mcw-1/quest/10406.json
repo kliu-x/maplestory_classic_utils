@@ -1,5 +1,10 @@
 {
  "id": 10406,
+ "messages": [
+  "It seems the archaeologist #p512# in the Rocky Mountains, east of Perion, has another request.",
+  "#b#p512# the archaeologist#k has realized that it's not the best idea to leave such valuable fossils in a tent. He asked me to deliver them to #bDr. #p308##k in #m10002000# for safekeeping. He also wrote me a letter of introduction to show her.",
+  "#b#p512# the archeologist#k in Perion said that it is not safe to leave the valuable fossils in his tent. He asked me to deliver them to #bDr. #p308##k in #m10002000#. Dr. #p308# said she's going to be really busy from now, and she asked me to stop by again and give her a hand afterwards. Fossils, huh...? Should I give it a try?"
+ ],
  "name": "Delivering a Box of Fossils",
  "area": 15,
  "areaName": "Perion",

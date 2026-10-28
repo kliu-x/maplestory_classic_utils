@@ -1,5 +1,10 @@
 {
  "id": 20300,
+ "messages": [
+  "Having reached level 30 and mastered the way of the Rogue, I feel the urge to learn more.",
+  "Does #b#p411##k of #b#m10003000##k have even greater lessons to teach me?",
+  "#b#p411##k said that if I can pass his test, he'll gladly teach me more. I'm no longer the weakling I once was, but hearing that I still have to face a trial makes me a bit nervous."
+ ],
  "name": "The Thief's Next Journey",
  "area": 103,
  "areaName": "Thief",

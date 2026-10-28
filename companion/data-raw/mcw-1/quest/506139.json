@@ -1,5 +1,10 @@
 {
  "id": 506139,
+ "messages": [
+  "It seems like #p404# in #m10003000# still needs something else.",
+  "Claiming that he needs the final ingredient for the #o17# phobia cure, #p404# in #m10003000# asked me to go get a #t4031113# from his grandfather, #b#p111##k in #b#m10000000##k. To think that #p111# was #p404#'s grandfather... \\r\\n#rOnly characters at Level 17 or higher can complete this quest.#k�",
+  "#p111# in #m10000000# handed over the #t4031113# with a suspicious look. Will this really be, okay?"
+ ],
  "name": "The Final Ingredient for the Cure",
  "area": 20,
  "areaName": "Citizenship",

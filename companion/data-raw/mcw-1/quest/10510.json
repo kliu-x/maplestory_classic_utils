@@ -1,5 +1,10 @@
 {
  "id": 10510,
+ "messages": [
+  "I hear that #p603# in #m10005000# is making a new medicine...",
+  "I ran into #b#p603##k in front of the #m10005001# again, the one I helped get herbs for before. This time, he found a new place with a different important herb that he needs for another type of medicine he's working on. He asked me to go back to the forest and grab a #b#t4031026##k for him. It has a reddish root split in two... I should make sure I grab the same exact one once I get to the top. I guess that means I have to go back to #b#p306##k in #m10002000#...",
+  "Thankfully, I got the herb that #p603# asked me to get, and for that, I was rewarded with a mysterious rock. And from here on out, I don't have to pay #p306# every time I go in the Forest of Patience. From what I hear, that anti-aging medicine #p603# is working on may be what #p306# needed... If I have time, I should go back in there..."
+ ],
  "name": "[Forest of Patience] Sabitrama's Anti-Aging Medicine",
  "area": 16,
  "areaName": "Sleepywood",

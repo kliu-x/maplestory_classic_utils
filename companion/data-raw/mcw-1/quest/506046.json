@@ -1,5 +1,10 @@
 {
  "id": 506046,
+ "messages": [
+  "#p204# of #m10001000# seems to have something on her mind. ",
+  "I met #p204# in #m10001000#, and it looks like she's fretting over a birthday present for yet another friend of hers in town, #b#p218##k. The trouble is, #p218# is quite picky about her tastes, so #p204# asked me to go find out what she'd like to receive. I hear I can find #b#p218##k over at #b#m10001050##k. \\r\\n#rOnly characters at Level 37 or higher can complete this quest.#k ",
+  "I asked #p218# what she'd like for her birthday, but she doesn't seem like she's about to give me a simple answer."
+ ],
  "name": "A Gift for Pia",
  "area": 20,
  "areaName": "Citizenship",

@@ -1,5 +1,10 @@
 {
  "id": 10000,
+ "messages": [
+  "It seems like #p107# in #m10000000# has something to say to the beginner adventurers who have just arrived on Victoria Island.",
+  "I met #p107# at #m10000000#. #p107# mentioned that I could get a job advancement once I reach level 10, but he wasn't sure if I truly have what it takes. To prove myself, #p107# told me to hunt monsters outside the village. I'm a bit nervous, since the monsters on Victoria Island seem really strong...",
+  "I successfully passed #p107#'s training. But is this really enough?"
+ ],
  "name": "Olaf's First Training",
  "area": 11,
  "areaName": "Lith Harbor",

@@ -1,5 +1,10 @@
 {
  "id": 10004,
+ "messages": [
+  "#p103# says she will make me something even better.",
+  "This time, #p103# promised to make me an even better item than last time, but she needs me to defeat some monsters and gather #b1 #t4000048##k, #b3 vials of #t2012000##k, #b25 #t4000039##k, and #b25 #t4000042#s#k. She claimed that she'll be able to use these ingredients to make a more powerful elixir...",
+  "I got #p103# the materials she needed. If she does well, I'll get some nice elixirs. If not... er, I wonder if I HAVE to take what she makes me..."
+ ],
  "name": "Jane's Second Challenge",
  "area": 11,
  "areaName": "Lith Harbor",

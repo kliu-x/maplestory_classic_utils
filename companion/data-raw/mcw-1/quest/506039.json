@@ -1,5 +1,10 @@
 {
  "id": 506039,
+ "messages": [
+  "It seems #p206# in #m10001000# wants to express his feelings to his daughter.�",
+  "#b#p206##k in #b#m10001000##k asked me to deliver his homemade #t4031112# to #b#p506##k in #b#m10004000##k. It would be better if he delivered it himself, but... I can understand him being shy. \\r\\n#rOnly characters at Level 17 or higher can complete this quest.#k�",
+  "I delivered #t4031112# to #p506# in #m10004000#. It seems #p506# felt #p206#'s sincerity after eating the dish."
+ ],
  "name": "A Father's Love for His Daughter",
  "area": 20,
  "areaName": "Citizenship",

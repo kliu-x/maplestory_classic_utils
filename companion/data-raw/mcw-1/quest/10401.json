@@ -1,5 +1,10 @@
 {
  "id": 10401,
+ "messages": [
+  "I hear that #p501# in #m10004000# is building a new house...",
+  "I ran into #p501# again, the guy whose house I'd helped fix before. He was surprised at how strong I'd gotten and asked me for another favor, a bit harder than the last one. His cousins from #m10001000# are trying to move to #m10004000#, so he needs to build a new house for them! The materials he needs for this project are #b100 #t4000043#s#k, #b30 #t4003000#s#k, #b30 #t4003001##k, and #b#t4001006##k. His son had the deed when it was stolen by #o31#s near #m10005000#... Hmmm... I should look for ones wandering around in the Deep Forest...",
+  "I got #p501# the items he requested, so that all of his cousins could move to #m10004000#. It was really tough, and I hope he doesn't ask me to BUILD a house for him next time..."
+ ],
  "name": "Building a New House For Blackbull",
  "area": 15,
  "areaName": "Perion",

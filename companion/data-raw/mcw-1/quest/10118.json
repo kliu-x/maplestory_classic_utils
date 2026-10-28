@@ -1,5 +1,10 @@
 {
  "id": 10118,
+ "messages": [
+  "Go see #b#p207##k in #b#m10001000##k.",
+  "#p207# asked me to gather #b1 #t4020107##k, #b50 #t4000043##k, and #b50 #t4000044##k. I can get them by defeating monsters at the Golem's Temple, which is on the way from #m10001000# to the dungeon... but this is getting way too hard!",
+  "I got all the items #p207# requested for the last time... or is it? As a sign of appreciation, she gave me a cape her grandma made for #p221#, the chief of this town. It may be really old, but it still looks brand new!"
+ ],
  "name": "Maya's Last Collection",
  "area": 12,
  "areaName": "Henesys",

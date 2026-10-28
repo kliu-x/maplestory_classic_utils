@@ -1,5 +1,10 @@
 {
  "id": 506051,
+ "messages": [
+  "#p207#, who lives in the little mushroom house in #m10001000#, seems to have something on her mind. ",
+  "#p207#, who lives in the little mushroom house in #m10001000#, said that a while back, she wandered a bit further from town than usual to pick some delicious mushrooms, and stumbled upon a giant mushroom monster that put her in grave danger — until a warrior appeared out of nowhere and saved her. She wants to track him down and repay his kindness, but he vanished the moment he'd saved her, and she's had no way of finding him since. She's hoping I can help her find some clue. To find any leads, I should probably start by heading to the place where it all happened. It seems I need to look for the #bGiant Mushroom#k somewhere at #b#m10001005##k in Henesys. I suppose I'll have to take it down? \\r\\n#rOnly characters at Level 47 or higher can complete this quest.#k",
+  "I defeated the Giant Mushroom, #b#o700000##k, that I encountered at #m10001005#, and found #b#t4031122##k, which I brought back to #p207#. Could this be a clue that leads me to that person?"
+ ],
  "name": "An Unknown Savior",
  "area": 20,
  "areaName": "Citizenship",

@@ -1,5 +1,10 @@
 {
  "id": 600002,
+ "messages": [
+  "To celebrate the #e#rGrand Launch#k#n, the #b#p9010000##k in #b#m10001000##k is #rhanding out gifts to everyone#k starting their journey.",
+  "To celebrate the #rGrand Launch#k, the #b#p9010000##k is handing out #bgifts#k.\\nA #b#t4031134# might be dropped by #rmonsters Lv. 10 and above#k. \nBring them to the #b#p9010000##k in exchange for a gift.\\r\\n#rOnly characters at Level 10 or higher can complete this quest.#k",
+  "Today's gift have been claimed.\n\\nClaim all #b14 rewards#k and your first step will be complete.\\r\\nDefeat monsters each day to receive that day's gift. #bThe gift changes every day#k."
+ ],
  "autoStart": true,
  "name": "[Event] The Journey Begins",
  "area": 99,

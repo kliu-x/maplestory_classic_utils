@@ -1,5 +1,10 @@
 {
  "id": 506137,
+ "messages": [
+  "It seems like #p417#, who works at the subway entrance in #m10003000#, has something on his mind.�",
+  "It seems like #p417#, who works at the subway entrance in #m10003000#, needs #p404#'s help to cure his fear of #o17#. I should ask #b#p404##k in #b#m10003000##k if there is a good way. \\r\\n#rOnly characters at Level 17 or higher can complete this quest.#k�",
+  "I went to see #p404# to help cure the fear of #o17# that #p417#, who works at the subway entrance in #m10003000#, is suffering from."
+ ],
  "name": "Stirge Phobia",
  "area": 20,
  "areaName": "Citizenship",

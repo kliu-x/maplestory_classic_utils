@@ -1,5 +1,10 @@
 {
  "id": 80001,
+ "messages": [
+  "It seems that #p228# in #m010001050# knows a way to have a different kind of fun in Maple World.",
+  "I met #b#p228##k in #m010001050#. He claimed he could make me something to entertain myself whenever I got tired of hunting if I brought him enough #t4031045#s. Getting them should be easy. I just have to defeat any of the following monsters, scattered across Maple World: #b#o3##k, #b#o8##k, #b#o10##k, #b#o12##k, #b#o16##k, #b#o19##k, #b#o23##k, #b#o31##k, #b#o35##k, #b#o37##k, #b#o36##k, #b#o41##k, #b#o43##k, #b#o45##k, or #b#o51##k. I should try to gather them when I have time.",
+  "I brought the requested items to #p228# in #m010001050# and received a #b#t4080100##k! With this, I can play the Match Cards mini-game with other adventurers anywhere! I should remember to ask #p228# if I want to know more about the mini-game."
+ ],
  "name": "Make a Match Cards Set",
  "area": 12,
  "areaName": "Henesys",

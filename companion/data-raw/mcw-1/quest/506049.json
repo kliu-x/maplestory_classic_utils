@@ -1,5 +1,10 @@
 {
  "id": 506049,
+ "messages": [
+  "#p204# of #m10001000# seems to have finished the birthday present for #p218#.�",
+  "#b#p204##k asked me to deliver the birthday present to #b#p218##k on her behalf. Since it isn't the exact item #p218# said she wanted, #p204# seems quite worried about it. Still, it must've just been my imagination that #p218# seemed to be thinking about #p225#.�\\r\\n#rOnly characters at Level 37 or higher can complete this quest.#k",
+  "I delivered #p204#'s birthday present to #p218#. Now that she's received it, #p218# seems somehow flustered."
+ ],
  "name": "A Marble Made With Care",
  "area": 20,
  "areaName": "Citizenship",

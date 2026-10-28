@@ -1,5 +1,10 @@
 {
  "id": 506054,
+ "messages": [
+  "It seems #p602#, who I met at #m10005000#, is finally about to reveal the secret.�",
+  "#p602#, who I met at #m10005000#, told me to go find #ba man#k standing at the top of #b#m10004000##k. He clearly seems to know more than he's letting on, but for now he seems to be holding his tongue. Let's go find that #bwarrior#k at #b#m10004000##k.� \\r\\n#rOnly characters at Level 47 or higher can complete this quest.#k",
+  "I met #p502# at #m10004000#. I don't think I've ever seen him look so flustered before."
+ ],
  "name": "A Man Atoning",
  "area": 20,
  "areaName": "Citizenship",

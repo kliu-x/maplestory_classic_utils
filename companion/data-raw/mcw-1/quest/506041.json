@@ -1,5 +1,10 @@
 {
  "id": 506041,
+ "messages": [
+  "#p203# of #m10001000# seems to have something on her mind.",
+  "#p203# mentioned that although the town festival was a huge success, #p202# hasn't been feeling quite like himself lately. She asked for help finding a way to cheer him up, suggesting that #b#p205##k, who is well-versed in ancient history, might know something. \\r\\n#rOnly characters at Level 27 or higher can complete this quest.#k",
+  "I went to see #p205# in #m10001000# to seek advice on how to raise #p202#'s spirits."
+ ],
  "name": "Mrs. Ming Ming's Concern",
  "area": 20,
  "areaName": "Citizenship",

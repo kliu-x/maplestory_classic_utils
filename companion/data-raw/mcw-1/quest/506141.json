@@ -1,5 +1,10 @@
 {
  "id": 506141,
+ "messages": [
+  "It seems like #p404# in #m10003000# has finally crafted the #o17# phobia cure.�",
+  "I need to deliver the #b#t4031114##k crafted by #p404# to #b#p417##k at the subway entrance in #b#m10003000##k. I hope this helps... \\r\\n#rOnly characters at Level 17 or higher can complete this quest.#k�",
+  "I delivered the #t4031114# crafted by #p404# to #p417# at the subway entrance in #m10003000#. Truth be told, it seems like a medicine with little to no actual effect, but if it gave #p417# the courage he needed, perhaps that is enough."
+ ],
  "name": "It's All in the Mind",
  "area": 20,
  "areaName": "Citizenship",

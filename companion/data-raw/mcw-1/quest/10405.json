@@ -1,5 +1,10 @@
 {
  "id": 10405,
+ "messages": [
+  "I hear that #p512# the archeologist is searching for something in the Rocky Mountains on the east side of Perion...",
+  "#b#p512##k, an archaeologist I ran into in the Rocky Mountains east of Perion, has lost the fossils he's meticulously been collecting in the region. He asked me to bring back #b12 #t4031068#s#k and #b12 #t4031069#s#k, which have been stolen by #r#o13#s#k and #r#o15#s#k. How could he lose such important things? He's more careless than he looks...",
+  "I found the fossils that #b#p512##k lost."
+ ],
  "name": "Searching for Fossils",
  "area": 15,
  "areaName": "Perion",

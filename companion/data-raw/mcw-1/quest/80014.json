@@ -1,5 +1,10 @@
 {
  "id": 80014,
+ "messages": [
+  "It seems #p303#, the tailor of #m10002000#, is looking for someone worthy of becoming his apprentice.",
+  "After I told #p303#, the tailor of #m10002000#, that I want to become his apprentice, he gave me a test. He told me tailoring requires one to have the right balance of skill and knowledge and asked me to defeat monsters near #m10002000# and collect #b#t4000011#s#k.",
+  "I passed the test given by #p303#, the tailor of #m10002000#. Does this mean I can now become a proper tailor of Maple World?"
+ ],
  "name": "Francois in Need of an Apprentice",
  "area": 19,
  "areaName": "Crafting",

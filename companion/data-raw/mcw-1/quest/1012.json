@@ -1,5 +1,10 @@
 {
  "id": 1012,
+ "messages": [
+  "#b#p18##k in #b#m1010##k wants you to help collect recycled goods.",
+  "I ran into #b#p18##k, who's famous in #b#m1010##k for fixing broken things. He asked me to break down wooden boxes from around town and bring back #b#t4031003#s#k and #b#t4031004#s#k.",
+  "I broke wooden boxes and collected supplies for #p18#. It was fun because I found other useful items in the boxes as well."
+ ],
  "name": "Pio's Collecting Recycled Goods",
  "area": 1,
  "areaName": "Maple Island",

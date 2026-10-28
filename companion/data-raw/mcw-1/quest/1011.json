@@ -1,5 +1,10 @@
 {
  "id": 1011,
+ "messages": [
+  "#b#p12##k in #b#m60##k has a task for you.",
+  "I met #b#p12##k in #b#m60##k. He wants me to get him #b1 #t4000009##k and #b10 #t4000002#s#k. He seemed pretty skeptical that I'd be able to do it, but it sounds like a piece of cake to me!",
+  "I gathered #b1 #t4000009##k and #b10 #t4000002#s#k for #p12# in #b#m60##k. The weapon he gave me as a reward was pretty decent."
+ ],
  "name": "Biggs's Collection of Items",
  "area": 1,
  "areaName": "Maple Island",

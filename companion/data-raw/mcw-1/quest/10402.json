@@ -1,5 +1,10 @@
 {
  "id": 10402,
+ "messages": [
+  "Find #b#p502##k in�#m10004000#.",
+  "I visited #b#p502##k again, whom I'd first met in #m10004000#, when making the medicine for #p207# of #m10001000#. Surprised at how much stronger I've become, #p502# asked me for a favor. Long ago, when he was in danger of being struck down by Balrog, he was saved by the legendary hero Tristan, who ended up dying in Manji's place. Ever since then, Manji has held onto Tristan's sword. However, the blade was so corrupted by Balrog that it's almost too worn down to even be called a sword anymore...\\n#p502# handed me the #b#t1302009##k that he'd held onto all these years and asked me to reawaken its true form. Once fully awakened, it will become the #b#t1302014##k. #p502# told me to begin with seeking out #b#p602##k in #b#m10005000##k.",
+  "I met #b#p602##k in #b#m10005000##k and was able to ask him how to awaken the #b#t1302009##k."
+ ],
  "name": "Old Gladius",
  "area": 15,
  "areaName": "Perion",

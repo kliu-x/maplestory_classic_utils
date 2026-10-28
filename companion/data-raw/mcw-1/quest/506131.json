@@ -1,5 +1,10 @@
 {
  "id": 506131,
+ "messages": [
+  "#p425#, the City Clerk, seems to be looking for items needed to manage #m10003000#. Let's go see #p431# in front of #m10003007#.",
+  "#p425#, the City Clerk, requested a donation of #b30 #t4000026#s#k for #m10003000#. \\r\\n#rOnly characters at Level 32 or higher can complete this quest.#k",
+  "I gathered the items requested by #p425#, the City Clerk, and brought them to her. I'm glad I could contribute to the development of our town."
+ ],
  "name": "Donating to Kerning City",
  "area": 20,
  "areaName": "Citizenship",

@@ -1,5 +1,10 @@
 {
  "id": 506146,
+ "messages": [
+  "Did #p401# of #m10003000# like #p402#'s gift?�",
+  "#p401# of #m10003000# accepted #p402#'s gift with an air of indifference, but seemed secretly pleased deep down. I should go let #p402# know. \\r\\n#rOnly characters at Level 27 or higher can complete this quest.#k ",
+  "#p402# seemed happy to hear that #p401# had secretly liked the gift. It seems #p402# has learned a lot during his time here in #m10003000#."
+ ],
  "name": "Not Ready to Go Home Yet",
  "area": 20,
  "areaName": "Citizenship",

@@ -1,5 +1,10 @@
 {
  "id": 10419,
+ "messages": [
+  "Botanist #b#p308##k in #m10002000# seems to have a suggestion.",
+  "Botanist #b#p308##k in #m10002000# suggested that I take all the information I've gathered so far to Archaeologist #p512# in #m10004051#.",
+  "Told Doctor #p512# what the villagers of #m10004000# talked about. Could #o700007# mentioned by #p511# be the same tree Doctor #p308# is looking for?"
+ ],
  "name": "A Report for the Doctor",
  "area": 15,
  "areaName": "Perion",
