@@ -11,6 +11,7 @@ export const PAGES = [
   { id: 'maps', label: 'Maps', ico: '⌖' },
   { id: 'pastas', label: 'Copy Pastas', ico: '✉' },
   { id: 'names', label: 'Name Checker', ico: '⌕' },
+  { id: 'links', label: 'Links', ico: '↗' },
   { id: 'sources', label: 'Sources', ico: '§' },
 ] as const;
 

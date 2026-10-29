@@ -14,6 +14,7 @@ import Maps from './pages/Maps';
 import NameChecker from './pages/NameChecker';
 import Sources from './pages/Sources';
 import Pastas from './pages/Pastas';
+import Links from './pages/Links';
 
 const VIEWS = {
   dashboard: Dashboard,
@@ -26,6 +27,7 @@ const VIEWS = {
   maps: Maps,
   pastas: Pastas,
   names: NameChecker,
+  links: Links,
   sources: Sources,
 };
 

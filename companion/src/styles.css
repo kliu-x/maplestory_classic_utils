@@ -479,3 +479,10 @@ button.pill { cursor: pointer; font: inherit; font-size: 13px; font-weight: 600;
 .seg { display: inline-flex; border: 2px solid var(--border); border-radius: 999px; overflow: hidden; }
 .seg button { border: 0; background: transparent; padding: 3px 12px; font: inherit; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; }
 .seg button.on { background: var(--accent); color: #fff; }
+
+/* Links page */
+.link-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+.link-tile { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 14px; border: 2px solid var(--border); background: var(--surface-2); color: var(--text); text-decoration: none; transition: transform .1s, border-color .1s; }
+.link-tile:hover { border-color: var(--accent); transform: translateY(-1px); }
+.link-tile strong { display: block; color: var(--accent); }
+.link-ico { font-size: 28px; line-height: 1; }
