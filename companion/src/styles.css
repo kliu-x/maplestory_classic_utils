@@ -502,3 +502,7 @@ button.pill { cursor: pointer; font: inherit; font-size: 13px; font-weight: 600;
 .sess-axis { display: flex; justify-content: space-between; gap: 8px; margin-top: 4px; }
 .sess-key { display: inline-block; width: 10px; height: 10px; border-radius: 2px; background: var(--bar-solo); vertical-align: -1px; margin-left: 6px; }
 .sess-key.party { background: repeating-linear-gradient(45deg, var(--bar-party) 0 3px, transparent 3px 5px); border: 1px solid var(--bar-party); }
+.mob-icon { width: 32px; height: 32px; object-fit: contain; vertical-align: middle; margin-right: 8px; }
+.mob-icon.big { width: 56px; height: 56px; }
+.mob-name { display: inline-flex; align-items: center; white-space: nowrap; }
+.elem.tough { color: var(--warn); font-weight: 700; }

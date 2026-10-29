@@ -1,13 +1,16 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { Element, Monster } from '../models/types';
-import { MONSTERS, attackSkillsForJob, monsterById } from '../data';
+import { IMG, MONSTERS, attackSkillsForJob, monsterById } from '../data';
 import { evaluateMonsterFor, isPqVariant } from '../calculators/rank';
+import { LEVEL_WINDOW, TOUGH_LABEL, toughTagMap } from '../calculators/toughness';
 import { touchRecentMonster, upsertCharacter, useAppState } from '../storage/store';
 import { go, href } from '../router';
 import { ElemTags, fmt, fmt1, NumField, ProvenancePill, SourceBadge } from '../components/ui';
 import { useActive, type PageProps } from './shared';
 
-type SortKey = 'level' | 'hp' | 'exp' | 'expPerHp' | 'name';
+const TOUGH = toughTagMap(MONSTERS);
+
+type SortKey ='level' | 'hp' | 'exp' | 'expPerHp' | 'name';
 const ELEMENTS: Element[] = ['fire', 'ice', 'lightning', 'poison', 'holy'];
 
 export default function Monsters({ params }: PageProps) {
@@ -126,11 +129,11 @@ export default function Monsters({ params }: PageProps) {
               {th('hp', 'HP')}
               {th('exp', 'EXP')}
               {th('expPerHp', 'EXP/HP')}
+              <th>Elements &amp; notes</th>
+              <th>Best spawn map</th>
               <th className="num">W.DEF</th>
               <th className="num">M.DEF</th>
               <th className="num">EVA</th>
-              <th>Elements</th>
-              <th>Best spawn map</th>
             </tr>
           </thead>
           <tbody>
@@ -140,17 +143,27 @@ export default function Monsters({ params }: PageProps) {
                   <button className={`star ${favs.has(m.id) ? 'on' : ''}`} disabled={!c} onClick={() => toggleFav(m.id)} aria-label="Favorite">★</button>
                 </td>
                 <td>
-                  <strong>{m.name}</strong> {m.isBoss && <span className="pill accent">boss</span>}{isPqVariant(m.id) && <span className="pill neutral" title="Party-quest / event copy (id 800000+)">PQ/event</span>}
+                  <span className="mob-name">
+                    <img className="mob-icon" src={IMG.mob(m.id)} alt="" loading="lazy" onError={(e) => (e.currentTarget.style.visibility = 'hidden')} />
+                    <strong>{m.name}</strong>
+                  </span> {m.isBoss && <span className="pill accent">boss</span>}{isPqVariant(m.id) && <span className="pill neutral" title="Party-quest / event copy (id 800000+)">PQ/event</span>}
                 </td>
                 <td className="num">{m.level}</td>
                 <td className="num">{fmt(m.hp)}</td>
                 <td className="num">{fmt(m.exp)}</td>
                 <td className="num">{(m.exp / m.hp).toFixed(3)}</td>
+                <td>
+                  <ElemTags m={m} />
+                  {TOUGH.get(m.id)?.map((t) => (
+                    <span key={t.stat} className="elem tough" title={`${TOUGH_LABEL[t.stat]} ${t.value} vs ${t.peerMedian} typical within ${LEVEL_WINDOW} levels`}>
+                      high {TOUGH_LABEL[t.stat]}
+                    </span>
+                  ))}
+                </td>
+                <td className="small">{m.spawns[0] ? `${m.spawns[0].mapName} (${m.spawns[0].count})` : <span className="muted">none in map files</span>}</td>
                 <td className="num">{m.pdd}</td>
                 <td className="num">{m.mdd}</td>
                 <td className="num">{m.evasion}</td>
-                <td><ElemTags m={m} /></td>
-                <td className="small">{m.spawns[0] ? `${m.spawns[0].mapName} (${m.spawns[0].count})` : <span className="muted">none in map files</span>}</td>
               </tr>
             ))}
           </tbody>
@@ -169,7 +182,8 @@ export default function Monsters({ params }: PageProps) {
       <div className="card">
         <div className="card-head">
           <h2>
-            <button className={`star ${fav ? 'on' : ''}`} onClick={onFav} disabled={!c} aria-label="Favorite">★</button> {m.name}{' '}
+            <button className={`star ${fav ? 'on' : ''}`} onClick={onFav} disabled={!c} aria-label="Favorite">★</button>
+            <img className="mob-icon big" src={IMG.mob(m.id)} alt="" onError={(e) => (e.currentTarget.style.visibility = 'hidden')} /> {m.name}{' '}
             <span className="muted">Lv {m.level}</span>
           </h2>
           <div className="row">
