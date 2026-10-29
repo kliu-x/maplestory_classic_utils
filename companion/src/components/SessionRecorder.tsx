@@ -9,6 +9,7 @@ import { upsertCharacter } from '../storage/store';
 import { fmt, minutes } from './ui';
 import { WindowPicker, type Picker } from './QuickFill';
 import { MapPicker } from './MapPicker';
+import { SessionChart } from './SessionChart';
 
 // "Record a session": share the MapleStory window, box the status bar once, and the app
 // reads LV / HP / MP / EXP about once a second on this device. Only the numbers are kept.
@@ -387,6 +388,8 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
 /** Saved sessions for this character, newest first, as their own section. */
 export function PastSessions({ c }: { c: Character }) {
   const list = c.sessions ?? [];
+  const [openId, setOpenId] = useState<string | null>(null);
+  const [showAll, setShowAll] = useState(false);
   if (!list.length) return null;
   const solo = list.filter((s) => !s.party);
   const best = solo.length ? solo.reduce((b, s) => (s.expPerActiveMin > b.expPerActiveMin ? s : b)).id : null;
@@ -399,10 +402,11 @@ export function PastSessions({ c }: { c: Character }) {
     <div className="card">
       <div className="card-head">
         <h2>Your sessions</h2>
-        <span className="small muted">{list.length} saved, newest first</span>
+        <span className="small muted">{list.length} saved</span>
       </div>
+      <SessionChart sessions={list} best={solo.length > 1 ? best : null} selected={openId} onSelect={(id) => setOpenId(openId === id ? null : id)} />
       <ul className="session-list">
-        {[...list].sort((a, b) => b.at.localeCompare(a.at)).map((s) => {
+        {[...list].sort((a, b) => b.at.localeCompare(a.at)).filter((s) => list.length < 2 || showAll || s.id === openId).map((s) => {
           const facts = [
             s.activeMinutes ? `${fmt(s.kills / s.activeMinutes, 1)} kills/min` : null,
             s.expPerKill ? `${fmt(s.expPerKill)} EXP/kill` : null,
@@ -440,7 +444,11 @@ export function PastSessions({ c }: { c: Character }) {
           );
         })}
       </ul>
-      
+      {list.length > 1 && (
+        <button className="link-btn small" onClick={() => setShowAll(!showAll)} aria-expanded={showAll}>
+          {showAll ? 'Hide the list ▴' : `Show all ${list.length} runs ▾`}
+        </button>
+      )}
     </div>
   );
 }
