@@ -29,7 +29,8 @@ export interface SessionReport {
   mpPerMin: number;
   potions: number;
   readings: number;
-  /** The last trustworthy reading (for "time to level" and updating the profile). */
+  /** The first and last trustworthy readings (level bar, "time to level", the profile). */
+  first: Sample | null;
   last: Sample | null;
   /** Readings thrown out as misreads (EXP going backwards, impossible jumps). */
   rejected: number;
@@ -150,6 +151,7 @@ export function summarize(samples: Sample[], opts: SessionOptions = {}): Session
     mpPerMin: perMin(mpUsed, seconds),
     potions,
     readings: samples.length,
+    first: kept[0] ?? null,
     last: kept[kept.length - 1] ?? null,
     rejected,
   };

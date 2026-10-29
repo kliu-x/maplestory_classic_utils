@@ -4,7 +4,7 @@ import { MAPS, MONSTERS, mapById, skillById } from '../data';
 import { monstersGiving, summarize, type Sample, type SessionReport } from '../calculators/session';
 import { createBarReader, locateBar, matchMapName, parseStatusBar, prepareBar, titleRegion } from '../integrations/statusBar';
 import { evaluateMapFor } from '../calculators/rank';
-import { expRemaining } from '../data/expTable';
+import { expForLevel, expRemaining } from '../data/expTable';
 import { upsertCharacter } from '../storage/store';
 import { fmt, minutes } from './ui';
 import { WindowPicker, type Picker } from './QuickFill';
@@ -318,6 +318,7 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
 
       {(phase === 'recording' || phase === 'done') && (
         <>
+          {phase === 'done' && report && <h3 className="run-title">{report.expGained > 0 ? 'Run complete' : 'Run stopped'}</h3>}
           <div className="row" style={{ alignItems: 'end', marginBottom: 8 }}>
             <div style={{ flex: '1 1 300px' }}>
               <MapPicker
@@ -346,7 +347,7 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
               <button className="btn small ghost" onClick={() => { try { localStorage.removeItem(BOX_KEY); localStorage.removeItem(NAME_KEY); } catch { /* ignore */ } finish(); }}>Stop and box it myself</button>
             </p>
           )}
-          {report && (
+          {phase === 'recording' && report && (
             <div className="grid grid-3">
               <Big label="EXP / min (hunting)" value={fmt(report.expPerActiveMin)} sub={`${fmt(report.expPerMin)} counting breaks`} />
               <Big label="Kills / min" value={report.activeSeconds ? fmt((report.kills * 60) / report.activeSeconds, 1) : '—'} sub={`${fmt(report.kills)} kills${report.expPerKill ? ` · ${fmt(report.expPerKill)} EXP each` : ''}`} />
@@ -356,14 +357,17 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
               <Big label="App estimate here" value={estimate != null ? fmt(estimate) : '—'} sub={estimate == null ? 'pick the map' : report.expPerActiveMin ? `you: ×${fmt(report.expPerActiveMin / estimate, 2)}` : 'EXP/min for this map'} />
             </div>
           )}
-          {report && elapsed < MIN_REPORT_SECONDS && <p className="small muted">Keep going: numbers settle after about 5 minutes.</p>}
+          {phase === 'done' && report && (
+            <RunResult c={c} report={report} mapId={mapId} savedId={savedId} estimate={estimate} castsLabel={mpPerCast ? skill?.name ?? null : null} />
+          )}
+          {phase === 'recording' && report && elapsed < MIN_REPORT_SECONDS && <p className="small muted">Keep going: numbers settle after about 5 minutes.</p>}
           {report && report.rejected > 0 && <p className="small muted">{report.rejected} unreadable reading{report.rejected === 1 ? '' : 's'} skipped.</p>}
           {phase === 'done' && report && (
             <div className="row">
               {savedId ? (
                 <>
-                  <span className="small">Saved to Your sessions, and {c.name}'s level and EXP updated.</span>
-                  <button className="btn small ghost" onClick={undo}>Undo</button>
+                  <span className="small muted">{c.name}'s level and EXP updated.</span>
+                  <button className="btn small ghost" onClick={undo}>Undo save</button>
                 </>
               ) : (
                 <>
@@ -437,6 +441,80 @@ export function PastSessions({ c }: { c: Character }) {
         })}
       </ul>
       
+    </div>
+  );
+}
+
+const pctOf = (s: Sample | null) => (s?.level && s.exp != null && expForLevel(s.level) ? (s.exp / expForLevel(s.level)) * 100 : null);
+
+/** The after-Stop screen: what you got, how it compares, then the details. */
+function RunResult({ c, report: r, mapId, savedId, estimate, castsLabel }: { c: Character; report: SessionReport; mapId: number | null; savedId: string | null; estimate: number | null; castsLabel: string | null }) {
+  const from = pctOf(r.first);
+  const to = pctOf(r.last);
+  const leveled = r.first?.level != null && r.last?.level != null && r.last.level > r.first.level;
+  const saved = (c.sessions ?? []).find((s) => s.id === savedId);
+  const party = !!saved?.party;
+  // Earlier solo runs on this map, not counting this one.
+  const before = (c.sessions ?? []).filter((s) => s.id !== savedId && mapId != null && s.mapId === mapId && !s.party).map((s) => s.expPerActiveMin);
+  const best = before.length ? Math.max(...before) : null;
+  const rate = r.expPerActiveMin;
+  let verdict: { text: string; cls: string } | null = null;
+  if (rate > 0 && !party) {
+    if (best == null) verdict = { text: estimate ? `First run here · app guessed ${fmt(estimate)}/min` : 'First run on this map', cls: 'neutral' };
+    else if (rate > best) verdict = { text: `New best here! Up ${fmt(((rate - best) / best) * 100)}% on ${fmt(best)}`, cls: 'best' };
+    else verdict = { text: `${fmt((rate / best) * 100)}% of your best here (${fmt(best)})`, cls: 'neutral' };
+  }
+  const toLevel = rate > 0 && r.last?.level ? minutes(expRemaining(r.last.level, r.last.exp ?? 0) / rate) : null;
+  const facts = [
+    r.activeSeconds ? `${fmt((r.kills * 60) / r.activeSeconds, 1)} kills/min` : null,
+    r.expPerKill ? `${fmt(r.expPerKill)} EXP/kill` : null,
+    r.castsPerKill != null ? `${fmt(r.castsPerKill, 2)} ${castsLabel ?? 'casts'}/kill` : null,
+    `${fmt(r.mpPerMin)} MP/min`,
+    `${r.potions} potion${r.potions === 1 ? '' : 's'}`,
+    Math.round(r.expPerMin) !== Math.round(rate) ? `${fmt(r.expPerMin)}/min with breaks` : null,
+  ].filter(Boolean);
+  const setParty = (v: boolean) => saved && upsertCharacter({ ...c, sessions: (c.sessions ?? []).map((s) => (s.id === saved.id ? { ...s, party: v } : s)) });
+
+  return (
+    <div className="run-result">
+      <div className="run-hero">
+        <div>
+          <div className="run-gain">+{fmt(r.expGained)} <span>EXP</span></div>
+          <div className="muted">in {minutes(r.activeSeconds / 60)} of hunting{r.kills ? ` · ${fmt(r.kills)} kills` : ''}</div>
+        </div>
+        <div className="run-rate">
+          <div className="run-rate-n">{fmt(rate)}</div>
+          <div className="muted">EXP / min</div>
+        </div>
+      </div>
+
+      {leveled ? (
+        <div className="run-levelup">🎉 Level up! Lv {r.first!.level} → Lv {r.last!.level}</div>
+      ) : from != null && to != null ? (
+        <div className="run-bar" title={`${fmt(from, 1)}% → ${fmt(to, 1)}%`}>
+          <div className="run-bar-old" style={{ width: `${from}%` }} />
+          <div className="run-bar-new" style={{ left: `${from}%`, width: `${Math.max(0.5, to - from)}%` }} />
+          <span className="run-bar-label">Lv {r.last!.level} · {fmt(from, 1)}% → <strong>{fmt(to, 1)}%</strong> <span className="muted">(+{fmt(to - from, 1)}%)</span></span>
+        </div>
+      ) : null}
+
+      <div className="run-verdict">
+        {verdict && <span className={`run-pill ${verdict.cls}`}>{verdict.cls === 'best' ? '🏆 ' : ''}{verdict.text}</span>}
+        {party && <span className="run-pill neutral">Party run: not counted as your solo rate</span>}
+        {toLevel && <span className="run-pill neutral">Next level in {toLevel}</span>}
+      </div>
+
+      <div className="small muted run-facts">{facts.join(' · ')}</div>
+
+      {saved && (
+        <div className="run-actions">
+          <span className="small">✓ Saved</span>
+          <span className="seg">
+            <button className={!party ? 'on' : ''} onClick={() => setParty(false)}>Solo</button>
+            <button className={party ? 'on' : ''} onClick={() => setParty(true)}>Party</button>
+          </span>
+        </div>
+      )}
     </div>
   );
 }
