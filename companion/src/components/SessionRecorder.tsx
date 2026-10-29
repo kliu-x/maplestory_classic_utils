@@ -247,6 +247,8 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
       castsPerKill: report.castsPerKill,
       mpPerMin: report.mpPerMin,
       potions: report.potions,
+      // Same as the last run: people tend to keep hunting the same way.
+      party: [...(c.sessions ?? [])].sort((a, b) => b.at.localeCompare(a.at))[0]?.party,
     };
     const lastSample = report.last;
     try {
@@ -382,11 +384,13 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
 export function PastSessions({ c }: { c: Character }) {
   const list = c.sessions ?? [];
   if (!list.length) return null;
-  const best = list.reduce((b, s) => (s.expPerActiveMin > b.expPerActiveMin ? s : b)).id;
+  const solo = list.filter((s) => !s.party);
+  const best = solo.length ? solo.reduce((b, s) => (s.expPerActiveMin > b.expPerActiveMin ? s : b)).id : null;
   const remove = (id: string) => {
     if (confirm('Delete this session?')) upsertCharacter({ ...c, sessions: list.filter((s) => s.id !== id) });
   };
-  const setMap = (id: string, mapId: number | null) => upsertCharacter({ ...c, sessions: list.map((s) => (s.id === id ? { ...s, mapId } : s)) });
+  const edit = (id: string, change: Partial<SavedSession>) => upsertCharacter({ ...c, sessions: list.map((s) => (s.id === id ? { ...s, ...change } : s)) });
+  const setMap = (id: string, mapId: number | null) => edit(id, { mapId });
   return (
     <div className="card">
       <div className="card-head">
@@ -394,7 +398,7 @@ export function PastSessions({ c }: { c: Character }) {
         <span className="small muted">{list.length} saved, newest first</span>
       </div>
       <ul className="session-list">
-        {[...list].reverse().map((s) => {
+        {[...list].sort((a, b) => b.at.localeCompare(a.at)).map((s) => {
           const facts = [
             s.activeMinutes ? `${fmt(s.kills / s.activeMinutes, 1)} kills/min` : null,
             s.expPerKill ? `${fmt(s.expPerKill)} EXP/kill` : null,
@@ -406,7 +410,12 @@ export function PastSessions({ c }: { c: Character }) {
             <li key={s.id} className="session-item">
               <div className="session-main">
                 <div>
-                  {s.id === best && list.length > 1 && <span className="pill verified" style={{ float: 'right' }}>Best</span>}
+                  <span style={{ float: 'right', display: 'flex', gap: 6 }}>
+                    {s.id === best && solo.length > 1 && <span className="pill verified">Best</span>}
+                    <button className={`pill ${s.party ? 'accent' : ''}`} onClick={() => edit(s.id, { party: !s.party })} title="Tap to switch. Party runs share EXP, so they don't count as your solo rate on Training.">
+                      {s.party ? 'Party' : 'Solo'}
+                    </button>
+                  </span>
                   <MapPicker
                     value={s.mapId}
                     onChange={(id) => setMap(s.id, id)}

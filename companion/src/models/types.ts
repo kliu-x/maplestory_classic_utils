@@ -267,4 +267,6 @@ export interface SavedSession {
   castsPerKill: number | null;
   mpPerMin: number;
   potions: number;
+  /** Hunted in a party: EXP and kills are shared, so it isn't a solo rate. */
+  party?: boolean;
 }

@@ -62,7 +62,7 @@ export default function Training({ params }: PageProps) {
         </div>
         <ol className="rank-list">
           {rows.slice(0, limit).map((r, i) => {
-            const mine = (c.sessions ?? []).filter((s) => s.mapId === r.map.id).map((s) => s.expPerActiveMin);
+            const mine = (c.sessions ?? []).filter((s) => s.mapId === r.map.id && !s.party).map((s) => s.expPerActiveMin);
             const isOpen = open === r.map.id;
             return (
               <li key={`${r.map.id}-${r.lane?.index ?? 'all'}`} className={`rank-item ${i === 0 ? 'top' : ''}`}>
@@ -85,7 +85,7 @@ export default function Training({ params }: PageProps) {
                   </span>
                   <span className="rank-rate">
                     <span className="value">{fmt(r.result.netExpPerMin)}<span className="small muted">/min</span></span>
-                    {mine.length > 0 && <span className="pill verified" title="Your best recorded session here">you: {fmt(Math.max(...mine))}</span>}
+                    {mine.length > 0 && <span className="pill verified" title="Your best solo session here (party runs left out)">you: {fmt(Math.max(...mine))}</span>}
                   </span>
                 </button>
                 {isOpen && (
