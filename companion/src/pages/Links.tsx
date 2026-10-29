@@ -1,7 +1,8 @@
 import type { PageProps } from './shared';
+import { href } from '../router';
 
 // Sites worth having one tap away. Only pages we have opened ourselves; MeowDB first
-// because it tracks Classic World most closely.
+// because it tracks Classic World most closely. Sources & caveats lives off the menu, linked here.
 
 interface LinkTile {
   url: string;
@@ -75,6 +76,7 @@ export default function Links(_: PageProps) {
           </div>
         </div>
       ))}
+      <p className="small muted">Where the app's own numbers come from: <a href={href('sources')}>Sources &amp; caveats</a>.</p>
     </>
   );
 }

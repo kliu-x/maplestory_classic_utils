@@ -34,7 +34,7 @@ const VIEWS = {
 function Nav({ page }: { page: string }) {
   return (
     <>
-      {PAGES.map((p) => (
+      {PAGES.filter((p) => p.id !== 'sources').map((p) => (
         <a key={p.id} href={href(p.id)} className={`nav-link ${page === p.id ? 'active' : ''}`}>
           <span className="ico" aria-hidden>{p.ico}</span>
           {p.label}
