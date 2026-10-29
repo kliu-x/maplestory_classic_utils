@@ -19,7 +19,7 @@ export default function SkillsPage({ params }: PageProps) {
       <div className="page-head">
         <div>
           <h1>Skills &amp; AP</h1>
-          <p>Caps and prerequisites are Classic World game data. Build <em>orders</em> are proposals.</p>
+          <p>Caps and prerequisites are Classic World game data. Builds marked MeowDB follow its guide; the rest are proposals.</p>
         </div>
         <div className="seg">
           <button className={tab === 'sp' ? 'on' : ''} onClick={() => setTab('sp')}>SP plan</button>
@@ -84,7 +84,7 @@ function BuildCard({ b, active, c }: { b: Build; active: boolean; c: Character }
       <div className="card-head">
         <h3>{b.name}</h3>
         <div className="row">
-          <StatusPill status="unverified" title="Proposed build: order is an opinion, not authoritative." />
+          {b.source ? <SourceBadge source={b.source} compact /> : <StatusPill status="unverified" title="Proposed build: order is an opinion, not authoritative." />}
           {active ? <span className="pill accent">active</span> : <button className="btn small" onClick={() => upsertCharacter({ ...c, buildId: b.id })}>Use</button>}
         </div>
       </div>
@@ -104,7 +104,7 @@ function LevelTable({ b, c }: { b: Build; c: Character }) {
     <div className="card">
       <div className="card-head">
         <h3>Level-by-level: {b.name}</h3>
-        <StatusPill status="unverified" title="Proposed build" />
+        {b.source ? <SourceBadge source={b.source} compact /> : <StatusPill status="unverified" title="Proposed build" />}
       </div>
       <div className="table-wrap" style={{ maxHeight: 420, overflowY: 'auto' }}>
         <table>

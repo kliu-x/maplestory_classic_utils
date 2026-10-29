@@ -1,8 +1,10 @@
-import type { JobId } from '../models/types';
+import type { JobId, SourceMeta } from '../models/types';
+import { SOURCES } from './sources';
 
-// SP build orders. ALL of these are PROPOSED builds written for this app from the
-// Classic World skill data (caps/prerequisites are verified game data, the ORDER is
-// opinion). Each step raises one skill to `to`. Tests check every build against caps,
+// SP build orders. Builds with a `source` copy a Classic World community guide; the rest
+// are PROPOSED builds written for this app from the Classic World skill data
+// (caps/prerequisites are verified game data, the ORDER is opinion). Sourced builds come
+// first, so they are the default. Each step raises one skill to `to`. Tests check every build against caps,
 // prerequisites and SP totals.
 
 export interface BuildStep {
@@ -16,19 +18,58 @@ export interface Build {
   name: string;
   jobs: JobId[]; // jobs this build applies to
   tier: 1 | 2;
-  status: 'proposed';
+  status: 'proposed' | 'community_reported';
+  /** The guide a community build is copied from. */
+  source?: SourceMeta;
   summary: string;
   steps: BuildStep[];
 }
 
 export const BUILDS: Build[] = [
   {
+    id: 'mage1-meow-claw',
+    name: 'MeowDB: Magic Claw, Magic Guard 3, Magic Armor',
+    jobs: ['magician', 'wizard_fp', 'wizard_il', 'cleric'],
+    tier: 1,
+    status: 'community_reported',
+    source: SOURCES.meowMage,
+    summary: "MeowDB's starting plan: Magic Claw to 20, MP Recovery to 15, Magic Guard only to 3, the rest into Magic Armor. Uses exactly 61 SP.",
+    steps: [
+      { skillId: 2001002, to: 1, why: 'Energy Bolt 1: needed for Magic Claw.' },
+      { skillId: 2001003, to: 2 },
+      { skillId: 2000000, to: 1 },
+      { skillId: 2001003, to: 20, why: 'Magic Claw: 2 hits per cast.' },
+      { skillId: 2000000, to: 12, why: 'Improved MP Recovery: fewer potions.' },
+      { skillId: 2001000, to: 1, why: 'Magic Guard 1 in time for King Slime in KPQ.' },
+      { skillId: 2000000, to: 15 },
+      { skillId: 2001000, to: 3, why: '"Magic Guard 3 is all you need."' },
+      { skillId: 2001001, to: 20, why: 'Magic Armor: Weapon and Magic DEF.' },
+      { skillId: 2000001, to: 2, why: 'Max MP Increase with the last points.' },
+    ],
+  },
+  {
+    id: 'mage1-meow-bolt',
+    name: 'MeowDB: Energy Bolt, Magic Guard 3, Magic Armor',
+    jobs: ['magician', 'wizard_fp', 'wizard_il', 'cleric'],
+    tier: 1,
+    status: 'community_reported',
+    source: SOURCES.meowMage,
+    summary: "MeowDB's Energy Bolt plan: Energy Bolt to 20, MP Recovery to 15, Magic Guard only to 3, the rest into Magic Armor. Uses exactly 61 SP.",
+    steps: [
+      { skillId: 2001002, to: 20, why: 'Energy Bolt: your main attack.' },
+      { skillId: 2000000, to: 15, why: 'Improved MP Recovery: fewer potions.' },
+      { skillId: 2001000, to: 3, why: '"Magic Guard 3 is all you need."' },
+      { skillId: 2001001, to: 20, why: 'Magic Armor: Weapon and Magic DEF.' },
+      { skillId: 2000001, to: 3, why: 'Max MP Increase with the last points.' },
+    ],
+  },
+  {
     id: 'mage1-claw-mp',
     name: 'Magic Claw first, then MP',
     jobs: ['magician', 'wizard_fp', 'wizard_il', 'cleric'],
     tier: 1,
     status: 'proposed',
-    summary: 'Max the 2-hit Magic Claw early, then Magic Guard for survival, then MP passives. Uses exactly 61 SP.',
+    summary: 'Max the 2-hit Magic Claw early, then Magic Guard for survival, then MP passives. Uses exactly 61 SP. MeowDB disagrees: it says Magic Guard 3 is all you need.',
     steps: [
       { skillId: 2001002, to: 1, why: 'Prerequisite for Magic Claw (Energy Bolt Lv 1).' },
       { skillId: 2001003, to: 20, why: 'Magic Claw: 2 hits per cast, best 1st-job damage per MP.' },
@@ -44,7 +85,7 @@ export const BUILDS: Build[] = [
     jobs: ['magician', 'wizard_fp', 'wizard_il', 'cleric'],
     tier: 1,
     status: 'proposed',
-    summary: 'For Energy Bolt users: max the single-target Energy Bolt, then Magic Guard, then MP passives, with 1 point in Magic Claw. Uses exactly 61 SP.',
+    summary: 'For Energy Bolt users: max the single-target Energy Bolt, then Magic Guard, then MP passives, with 1 point in Magic Claw. Uses exactly 61 SP. MeowDB disagrees: it says Magic Guard 3 is all you need.',
     steps: [
       { skillId: 2001002, to: 20, why: 'Energy Bolt: your main attack.' },
       { skillId: 2001000, to: 15, why: 'Magic Guard: up to 80% of damage taken from MP.' },
@@ -60,7 +101,7 @@ export const BUILDS: Build[] = [
     jobs: ['magician', 'wizard_fp', 'wizard_il', 'cleric'],
     tier: 1,
     status: 'proposed',
-    summary: 'Alternative: trades Max MP Increase for Magic Armor (+120 W/M DEF). Uses exactly 61 SP.',
+    summary: 'Alternative: trades Max MP Increase for Magic Armor (+120 W/M DEF). Uses exactly 61 SP. MeowDB disagrees: it says Magic Guard 3 is all you need.',
     steps: [
       { skillId: 2001002, to: 1 },
       { skillId: 2001003, to: 20 },

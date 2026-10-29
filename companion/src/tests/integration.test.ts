@@ -108,9 +108,9 @@ describe('profile defaults (EXP, stats, build)', () => {
 
   it('default SP build follows the attack the character levels', () => {
     const bolt = { ...newCharacter('magician', 'B'), level: 26, skills: { 2001002: 15, 2001003: 0 } };
-    expect(activeBuild(bolt, 1)?.id).toBe('mage1-bolt-mp');
+    expect(activeBuild(bolt, 1)?.id).toBe('mage1-meow-bolt');
     const claw = { ...bolt, skills: { 2001002: 1, 2001003: 12 } };
-    expect(activeBuild(claw, 1)?.id).toBe('mage1-claw-mp');
+    expect(activeBuild(claw, 1)?.id).toBe('mage1-meow-claw');
   });
 
   it('for every job, choosing a main attack picks a build that maxes it when one exists', () => {
