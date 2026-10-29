@@ -21,9 +21,24 @@ export interface Build {
   status: 'proposed' | 'community_reported';
   /** The guide a community build is copied from. */
   source?: SourceMeta;
+  /** A proposed build adapted from a guide (shown as "adapted from"; it is not that guide's plan). */
+  basedOn?: SourceMeta;
   summary: string;
+  /** How strongly to recommend it, and why. 0 = no Classic World guide to judge it by. */
+  rating: BuildRating;
   steps: BuildStep[];
 }
+
+export interface BuildRating {
+  stars: 0 | 1 | 2 | 3;
+  why: string;
+}
+
+export const RATING_LABEL: Record<BuildRating['stars'], string> = { 3: 'Recommended', 2: 'Good', 1: 'Not recommended', 0: 'Unrated' };
+
+const MEOW_PICK: BuildRating = { stars: 3, why: "MeowDB's own plan for Classic World." };
+const MG15: BuildRating = { stars: 1, why: 'Puts 15 into Magic Guard; MeowDB says Magic Guard 3 is all you need.' };
+const UNRATED: BuildRating = { stars: 0, why: 'No Classic World guide to compare it with yet.' };
 
 export const BUILDS: Build[] = [
   {
@@ -34,6 +49,7 @@ export const BUILDS: Build[] = [
     status: 'community_reported',
     source: SOURCES.meowMage,
     summary: "MeowDB's starting plan: Magic Claw to 20, MP Recovery to 15, Magic Guard only to 3, the rest into Magic Armor. Uses exactly 61 SP.",
+    rating: MEOW_PICK,
     steps: [
       { skillId: 2001002, to: 1, why: 'Energy Bolt 1: needed for Magic Claw.' },
       { skillId: 2001003, to: 2 },
@@ -55,6 +71,7 @@ export const BUILDS: Build[] = [
     status: 'community_reported',
     source: SOURCES.meowMage,
     summary: "MeowDB's Energy Bolt plan: Energy Bolt to 20, MP Recovery to 15, Magic Guard only to 3, the rest into Magic Armor. Uses exactly 61 SP.",
+    rating: MEOW_PICK,
     steps: [
       { skillId: 2001002, to: 20, why: 'Energy Bolt: your main attack.' },
       { skillId: 2000000, to: 15, why: 'Improved MP Recovery: fewer potions.' },
@@ -64,12 +81,48 @@ export const BUILDS: Build[] = [
     ],
   },
   {
+    id: 'mage1-maxmp-claw',
+    name: 'Max MP Increase, Magic Guard 3, Magic Armor (Claw)',
+    jobs: ['magician', 'wizard_fp', 'wizard_il', 'cleric'],
+    tier: 1,
+    status: 'proposed',
+    summary: "For players who already maxed Max MP Increase: keeps MeowDB's Magic Guard 3 and Magic Armor, with MP Recovery only at 3. Uses exactly 61 SP.",
+    basedOn: SOURCES.meowMage,
+    rating: { stars: 2, why: "Same Magic Guard 3 + Magic Armor idea as MeowDB, but Max MP Increase 15 instead of MP Recovery 15. Fine if you've already spent the points." },
+    steps: [
+      { skillId: 2001002, to: 1, why: 'Energy Bolt 1: needed for Magic Claw.' },
+      { skillId: 2001003, to: 20, why: 'Magic Claw: 2 hits per cast.' },
+      { skillId: 2000000, to: 3, why: 'Prerequisite for Max MP Increase.' },
+      { skillId: 2000001, to: 15, why: 'Max MP Increase: up to +25% Max MP.' },
+      { skillId: 2001000, to: 3, why: '"Magic Guard 3 is all you need" (MeowDB).' },
+      { skillId: 2001001, to: 19, why: 'Magic Armor with everything left.' },
+    ],
+  },
+  {
+    id: 'mage1-maxmp-bolt',
+    name: 'Max MP Increase, Magic Guard 3, Magic Armor (Bolt)',
+    jobs: ['magician', 'wizard_fp', 'wizard_il', 'cleric'],
+    tier: 1,
+    status: 'proposed',
+    summary: "For players who already maxed Max MP Increase: keeps MeowDB's Magic Guard 3 and Magic Armor, with MP Recovery only at 3. Uses exactly 61 SP.",
+    basedOn: SOURCES.meowMage,
+    rating: { stars: 2, why: "Same Magic Guard 3 + Magic Armor idea as MeowDB, but Max MP Increase 15 instead of MP Recovery 15. Fine if you've already spent the points." },
+    steps: [
+      { skillId: 2001002, to: 20, why: 'Energy Bolt: your main attack.' },
+      { skillId: 2000000, to: 3, why: 'Prerequisite for Max MP Increase.' },
+      { skillId: 2000001, to: 15, why: 'Max MP Increase: up to +25% Max MP.' },
+      { skillId: 2001000, to: 3, why: '"Magic Guard 3 is all you need" (MeowDB).' },
+      { skillId: 2001001, to: 20, why: 'Magic Armor with everything left.' },
+    ],
+  },
+  {
     id: 'mage1-claw-mp',
     name: 'Magic Claw first, then MP',
     jobs: ['magician', 'wizard_fp', 'wizard_il', 'cleric'],
     tier: 1,
     status: 'proposed',
     summary: 'Max the 2-hit Magic Claw early, then Magic Guard for survival, then MP passives. Uses exactly 61 SP. MeowDB disagrees: it says Magic Guard 3 is all you need.',
+    rating: MG15,
     steps: [
       { skillId: 2001002, to: 1, why: 'Prerequisite for Magic Claw (Energy Bolt Lv 1).' },
       { skillId: 2001003, to: 20, why: 'Magic Claw: 2 hits per cast, best 1st-job damage per MP.' },
@@ -86,6 +139,7 @@ export const BUILDS: Build[] = [
     tier: 1,
     status: 'proposed',
     summary: 'For Energy Bolt users: max the single-target Energy Bolt, then Magic Guard, then MP passives, with 1 point in Magic Claw. Uses exactly 61 SP. MeowDB disagrees: it says Magic Guard 3 is all you need.',
+    rating: MG15,
     steps: [
       { skillId: 2001002, to: 20, why: 'Energy Bolt: your main attack.' },
       { skillId: 2001000, to: 15, why: 'Magic Guard: up to 80% of damage taken from MP.' },
@@ -102,6 +156,7 @@ export const BUILDS: Build[] = [
     tier: 1,
     status: 'proposed',
     summary: 'Alternative: trades Max MP Increase for Magic Armor (+120 W/M DEF). Uses exactly 61 SP. MeowDB disagrees: it says Magic Guard 3 is all you need.',
+    rating: MG15,
     steps: [
       { skillId: 2001002, to: 1 },
       { skillId: 2001003, to: 20 },
@@ -117,6 +172,7 @@ export const BUILDS: Build[] = [
     tier: 1,
     status: 'proposed',
     summary: 'Max Lucky Seven (2 stars per cast, LUK-based), then Keen Eyes range and Nimble Body. Uses exactly 61 SP.',
+    rating: UNRATED,
     steps: [
       { skillId: 4001003, to: 20, why: 'Lucky Seven: main attack, 2 stars per cast, uses LUK.' },
       { skillId: 4000000, to: 3, why: 'Prerequisite for Keen Eyes.' },
@@ -133,6 +189,7 @@ export const BUILDS: Build[] = [
     tier: 1,
     status: 'proposed',
     summary: 'Alternative: maxes Dark Sight instead of Keen Eyes. Uses exactly 61 SP.',
+    rating: UNRATED,
     steps: [
       { skillId: 4001003, to: 20 },
       { skillId: 4000000, to: 15 },
@@ -148,6 +205,7 @@ export const BUILDS: Build[] = [
     tier: 1,
     status: 'proposed',
     summary: 'For dagger thieves heading to Bandit: max the melee Double Stab, then Nimble Body and Dark Sight. Uses exactly 61 SP.',
+    rating: UNRATED,
     steps: [
       { skillId: 4001002, to: 20, why: 'Double Stab: your main attack (2 dagger hits).' },
       { skillId: 4000000, to: 15, why: 'Nimble Body: +15 accuracy and evasion.' },
@@ -163,6 +221,7 @@ export const BUILDS: Build[] = [
     tier: 2,
     status: 'proposed',
     summary: 'Holy Arrow as the main single-target attack, then the Heal / Invincible / Bless line.',
+    rating: UNRATED,
     steps: [
       { skillId: 2301004, to: 30, why: 'Holy Arrow: main attack, strong vs undead.' },
       { skillId: 2301001, to: 5, why: 'Prerequisite for Invincible.' },
@@ -181,6 +240,7 @@ export const BUILDS: Build[] = [
     tier: 2,
     status: 'proposed',
     summary: 'Alternative for party play and undead maps: Heal first, then Holy Arrow.',
+    rating: UNRATED,
     steps: [
       { skillId: 2301001, to: 30, why: 'Heal: party healing; hits several undead at once.' },
       { skillId: 2301004, to: 30 },
@@ -198,6 +258,7 @@ export const BUILDS: Build[] = [
     tier: 2,
     status: 'proposed',
     summary: 'Claw Mastery and Critical Throw first for damage, then Claw Booster speed, then Drain and utility.',
+    rating: UNRATED,
     steps: [
       { skillId: 4100000, to: 20, why: 'Claw Mastery: mastery 10, +20 ATT, star recovery.' },
       { skillId: 4100001, to: 30, why: 'Critical Throw: +15% crit rate, +35% crit damage.' },
@@ -216,6 +277,7 @@ export const BUILDS: Build[] = [
     tier: 2,
     status: 'proposed',
     summary: 'Thunder Bolt hits up to 6 monsters, so it is maxed first for mobbing; Meditation next.',
+    rating: UNRATED,
     steps: [
       { skillId: 2201004, to: 30, why: 'Thunder Bolt: 6 targets.' },
       { skillId: 2200000, to: 3, why: 'Prerequisite for Meditation.' },
@@ -233,6 +295,7 @@ export const BUILDS: Build[] = [
     tier: 2,
     status: 'proposed',
     summary: 'Alternative for single-target maps (e.g. low spawn density): Cold Beam before Thunder Bolt.',
+    rating: UNRATED,
     steps: [
       { skillId: 2201003, to: 30 },
       { skillId: 2200000, to: 3 },
@@ -250,6 +313,7 @@ export const BUILDS: Build[] = [
     tier: 2,
     status: 'proposed',
     summary: 'Poison Breath explodes on up to 6 targets, so it is maxed first; Fire Arrow for single targets.',
+    rating: UNRATED,
     steps: [
       { skillId: 2101004, to: 30, why: 'Poison Breath: explosion hits 6 nearby targets.' },
       { skillId: 2100000, to: 3 },
@@ -267,6 +331,7 @@ export const BUILDS: Build[] = [
     tier: 2,
     status: 'proposed',
     summary: 'Alternative: single-target Fire Arrow first (good vs fire-weak monsters), then Poison Breath.',
+    rating: UNRATED,
     steps: [
       { skillId: 2101003, to: 30 },
       { skillId: 2100000, to: 3 },

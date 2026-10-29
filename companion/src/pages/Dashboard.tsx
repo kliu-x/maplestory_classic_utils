@@ -1,4 +1,4 @@
-import { expRemaining } from '../data/expTable';
+import { expForLevel, expRemaining } from '../data/expTable';
 import { useMemo } from 'react';
 import { IMG, skillById } from '../data';
 import { JOBS } from '../data/rules';
@@ -50,7 +50,7 @@ export default function Dashboard(_: PageProps) {
 
       <div className="grid grid-3" style={{ marginBottom: 16 }}>
         <Stat label="Best EXP / min (estimate)" value={best ? fmt(best.result.netExpPerMin) : '—'} sub={best ? best.map.name : 'no killable map'} />
-        <Stat label="Time to next level" value={best ? minutes(best.result.minutesToLevel) : '—'} sub={`${fmt(expRemaining(c.level, c.currentExp ?? 0))} EXP to go`} />
+        <Stat label="Time to next level" value={best ? minutes(best.result.minutesToLevel) : '—'} sub={<ExpToGo level={c.level} exp={c.currentExp ?? 0} />} />
         {advice.unspentAp > 0 && <Stat label="Unspent AP" value={fmt(advice.unspentAp)} sub="put it in using the advice below" />}
       </div>
 
@@ -154,5 +154,20 @@ export default function Dashboard(_: PageProps) {
         <StatusPill status="unverified" /> for Classic World. Adjust them on the <a href={href('training')}>Training</a> page.
       </p>
     </>
+  );
+}
+
+/** Like the in-game EXP bar: how far into this level, and the percent still to go. */
+function ExpToGo({ level, exp }: { level: number; exp: number }) {
+  const need = expForLevel(level);
+  if (!need) return null;
+  const done = Math.min(100, Math.max(0, (exp / need) * 100));
+  return (
+    <span title={`${fmt(expRemaining(level, exp))} EXP to go (${fmt(exp)} / ${fmt(need)})`}>
+      <span className="exp-bar" aria-hidden>
+        <span style={{ width: `${done}%` }} />
+      </span>
+      {fmt(100 - done, 1)}% to go
+    </span>
   );
 }

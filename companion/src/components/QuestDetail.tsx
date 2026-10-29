@@ -3,6 +3,7 @@ import { IMG, MAPS, MONSTERS, QUESTS, itemById, mapById, monsterById, npcById } 
 import { likelyDroppers } from '../calculators/drops';
 import { QUEST_NOTES } from '../data/questNotes';
 import { QUEST_LOG_TITLES } from '../data/questAliases';
+import { WORTH_LABEL, tipFor, tipSources } from '../data/questGuide';
 import { JOBS } from '../data/rules';
 import { useActive } from '../pages/shared';
 import { homeTown, routeFromTown } from '../calculators/route';
@@ -11,6 +12,9 @@ import { fmt, SourceBadge, StatusPill } from './ui';
 import { MapView, type Pin } from './MapView';
 
 const questById = new Map(QUESTS.map((q) => [q.id, q]));
+
+/** The client's quest text keeps escaped line breaks ("\r"); show them as spaces. */
+const gameText = (t: string) => t.replace(/\\[rn]/g, ' ').replace(/\s{2,}/g, ' ');
 
 // The client's class bitmask on class-specific rewards.
 const JOB_BITS: [number, string][] = [[1, 'Warrior'], [2, 'Magician'], [4, 'Bowman'], [8, 'Thief'], [16, 'Pirate']];
@@ -155,6 +159,7 @@ function NpcPlace({ npcId, role }: { npcId: number; role: string }) {
 
 export function QuestDetail({ quest: q }: { quest: Quest }) {
   const note = QUEST_NOTES[q.id];
+  const tip = tipFor(q.id);
   const noteMap = note?.mapId ? mapById.get(note.mapId) : undefined;
   const prev = q.prereqQuestIds.map((id) => questById.get(id)).filter((x): x is Quest => !!x);
   const next = nextOf(q.id);
@@ -174,8 +179,23 @@ export function QuestDetail({ quest: q }: { quest: Quest }) {
         Lv {q.minLevel || 1}+{q.exp ? ` · ${fmt(q.exp)} EXP` : ''}
         {q.availableUntil && <> · event, start before <strong>{q.availableUntil}</strong></>}
       </p>
-      {q.hint && <p className="callout info" style={{ marginTop: 0 }}>Objective from the game: <em>“{q.hint}”</em></p>}
-      {!q.hint && q.log && <p className="quest-log">{q.log}</p>}
+      {q.hint && <p className="callout info" style={{ marginTop: 0 }}>Objective from the game: <em>“{gameText(q.hint)}”</em></p>}
+      {!q.hint && q.log && <p className="quest-log">{gameText(q.log)}</p>}
+
+      {tip && (
+        <div className="callout guide-tip" style={{ marginBottom: 12 }}>
+          <div className="row" style={{ gap: 6 }}>
+            <strong>Guide tips</strong>
+            {tip.worth && <span className={`worth ${tip.worth}`}>{WORTH_LABEL[tip.worth]}</span>}
+            {tip.recommendedLevel != null && <span className="pill neutral">best at Lv {tip.recommendedLevel}</span>}
+            {tip.chain && <span className="pill neutral">{tip.chain}</span>}
+            {tipSources(tip).map((s) => <SourceBadge key={s.source_url} source={s} compact />)}
+          </div>
+          <p style={{ margin: '6px 0 0' }}>{tip.tip}</p>
+          {tip.worthReason && <p className="small muted" style={{ margin: '4px 0 0' }}>{tip.worthReason}</p>}
+          {tip.conflict && <p className="small" style={{ margin: '4px 0 0' }}><StatusPill status="conflicting" /> {tip.conflict}</p>}
+        </div>
+      )}
 
       {note && (
         <div className="callout" style={{ marginBottom: 12 }}>

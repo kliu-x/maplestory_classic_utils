@@ -6,7 +6,7 @@ import { buildById, buildsFor, type Build } from '../data/builds';
 import { attackSkillsForJob } from '../data';
 import { JOBS } from '../data/rules';
 import { spPools } from './sp';
-import { expandBuild } from './planner';
+import { expandBuild, offPlanPoints } from './planner';
 import { expectedBase } from './ap';
 
 export function activeBuild(c: Character, tier: 1 | 2): Build | null {
@@ -16,7 +16,15 @@ export function activeBuild(c: Character, tier: 1 | 2): Build | null {
   // Default to the build that maxes the attack this character actually uses.
   const builds = buildsFor(c.job, tier);
   const attack = defaultAttackSkill(c);
-  return builds.find((b) => b.steps.some((s) => s.skillId === attack && s.to >= 20)) ?? builds[0] ?? null;
+  const byAttack = builds.find((b) => b.steps.some((s) => s.skillId === attack && s.to >= 20)) ?? builds[0] ?? null;
+  // Skills entered by hand: the build that explains the most of them, so someone who
+  // spent SP their own way isn't told to put points where they no longer fit.
+  if (!c.followPlan && byAttack && offPlanPoints(byAttack, c.skills) > 0) {
+    const fits = builds.filter((b) => b.steps.some((s) => s.skillId === attack && s.to >= 20));
+    const best = [...(fits.length ? fits : builds)].sort((a, b) => offPlanPoints(a, c.skills) - offPlanPoints(b, c.skills))[0];
+    if (best && offPlanPoints(best, c.skills) < offPlanPoints(byAttack, c.skills)) return best;
+  }
+  return byAttack;
 }
 
 export function defaultAttackSkill(c: Character): number | null {

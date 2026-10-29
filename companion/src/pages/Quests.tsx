@@ -3,6 +3,7 @@ import { QUESTS, npcById, questSearchText } from '../data';
 import { QuestDetail } from '../components/QuestDetail';
 import { href } from '../router';
 import { SOURCES } from '../data/sources';
+import { QUEST_GENERAL, QUEST_SOURCES, WORTH_LABEL, tipFor } from '../data/questGuide';
 import { upsertCharacter } from '../storage/store';
 import { fmt, NumField, SourceBadge, StatusPill } from '../components/ui';
 import { useActive, type PageProps } from './shared';
@@ -19,17 +20,18 @@ export default function Quests({ params }: PageProps) {
   const [minExp, setMinExp] = useState(0);
   const [hideDone, setHideDone] = useState(true);
   const [repeatOnly, setRepeatOnly] = useState(false);
+  const [guideOnly, setGuideOnly] = useState(false);
   const [sort, setSort] = useState<'level' | 'exp'>('level');
   const done = new Set(c?.completedQuests ?? []);
 
   const list = useMemo(() => {
     const t = q.trim().toLowerCase();
     const r = QUESTS.filter(
-      (x) => (!t || questSearchText(x).includes(t)) && (!area || x.area === area) && x.minLevel <= maxLv && x.exp >= minExp && (!hideDone || !done.has(x.id)) && (!repeatOnly || x.repeatable),
+      (x) => (!t || questSearchText(x).includes(t)) && (!area || x.area === area) && x.minLevel <= maxLv && x.exp >= minExp && (!hideDone || !done.has(x.id)) && (!repeatOnly || x.repeatable) && (!guideOnly || ['must-do', 'good'].includes(tipFor(x.id)?.worth ?? '')),
     );
     return r.sort((a, b) => (sort === 'exp' ? b.exp - a.exp : a.minLevel - b.minLevel || b.exp - a.exp));
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [q, area, maxLv, minExp, hideDone, repeatOnly, sort, c?.completedQuests]);
+  }, [q, area, maxLv, minExp, hideDone, repeatOnly, guideOnly, sort, c?.completedQuests]);
 
   const toggle = (id: number) => {
     if (!c) return;
@@ -46,6 +48,23 @@ export default function Quests({ params }: PageProps) {
           <p>{QUESTS.length} quests from the Classic World files. Completion is tracked per character{c ? ` (${c.name}: ${done.size} done)` : ''}.</p>
         </div>
       </div>
+
+      {!focus && (
+      <details className="card">
+        <summary><strong>Quest basics</strong> <span className="small muted">Maple Island, job advancement, citizenship, what's worth doing: from Classic World guides</span></summary>
+        <div className="quest-basics">
+          {QUEST_GENERAL.map((g) => (
+            <div key={g.topic}>
+              <h3>{g.topic}</h3>
+              <p className="small" style={{ margin: 0 }}>
+                {g.text}{' '}
+                {g.sourceIds.map((id) => QUEST_SOURCES[id] && <SourceBadge key={id} source={/conflict/i.test(g.topic) ? { ...QUEST_SOURCES[id], verification_status: 'conflicting' } : QUEST_SOURCES[id]} compact />)}
+              </p>
+            </div>
+          ))}
+        </div>
+      </details>
+      )}
 
       {!focus && (
       <details className="card">
@@ -88,6 +107,7 @@ export default function Quests({ params }: PageProps) {
             <NumField label="Min EXP" value={minExp} min={0} width={90} onChange={setMinExp} />
             <label className="check"><input type="checkbox" checked={hideDone} onChange={(e) => setHideDone(e.target.checked)} /> Hide completed</label>
             <label className="check"><input type="checkbox" checked={repeatOnly} onChange={(e) => setRepeatOnly(e.target.checked)} /> Repeatable only</label>
+            <label className="check"><input type="checkbox" checked={guideOnly} onChange={(e) => setGuideOnly(e.target.checked)} /> Guide picks only</label>
             <div className="seg">
               <button className={sort === 'level' ? 'on' : ''} onClick={() => setSort('level')}>By level</button>
               <button className={sort === 'exp' ? 'on' : ''} onClick={() => setSort('exp')}>By EXP</button>
@@ -109,6 +129,8 @@ export default function Quests({ params }: PageProps) {
                 <td>
                   <a href={href('quests', { id: x.id })}><strong>{x.name}</strong></a>
                   {x.repeatable && <span className="pill accent"> repeatable</span>}
+                  {tipFor(x.id)?.worth && <span className={`worth ${tipFor(x.id)!.worth}`}>{WORTH_LABEL[tipFor(x.id)!.worth!]}</span>}
+                  {tipFor(x.id) && <div className="small quest-tip">{tipFor(x.id)!.tip}</div>}
                   <div className="small muted">
                     {x.npcId != null ? npcById.get(x.npcId)?.name : ''}
                     {x.prereqQuestIds.length > 0 && <> · after {x.prereqQuestIds.map((id) => questName.get(id) ?? id).join(', ')}</>}

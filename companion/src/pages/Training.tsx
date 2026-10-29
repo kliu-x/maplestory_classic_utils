@@ -2,11 +2,17 @@ import { PastSessions, SessionRecorder } from '../components/SessionRecorder';
 import { useMemo, useState } from 'react';
 import type { TrainingAssumptions } from '../models/types';
 import { IMG, attackSkillsForJob } from '../data';
+import { perExp } from '../calculators/session';
 import { rankMaps, mainProvenance, laneLabel, type MapRow } from '../calculators/rank';
 import { DEFAULT_ASSUMPTIONS, setAssumptions, upsertCharacter } from '../storage/store';
 import { fmt, fmt1, minutes, NumField, ProvenancePill, StatusPill } from '../components/ui';
 import { defaultAttackSkill, NeedCharacter, useActive, type PageProps } from './shared';
 import { href } from '../router';
+
+const perExpText = (perMin: number, expPerMin: number, digits: number) => {
+  const v = perExp(perMin, expPerMin);
+  return v == null ? '—' : fmt(v, digits);
+};
 
 export default function Training({ params }: PageProps) {
   const { character: c, assumptions: a } = useActive();
@@ -122,9 +128,15 @@ function MapDetail({ row }: { row: MapRow }) {
         <KV k="Attack-limited kills/min" v={fmt1(r.attackKillsPerMin)} />
         <KV k="Spawn-limited kills/min" v={fmt1(r.spawnKillsPerMin)} />
         <KV k="Casts/min (used)" v={fmt1(r.castsPerMin)} />
-        <KV k="MP/min" v={fmt(r.mpPerMin)} />
-        <KV k="Stars/min" v={fmt1(r.starsPerMin)} />
-        <KV k="Mesos/min: MP / HP / stars" v={`${fmt(r.costBreakdown.mp)} / ${fmt(r.costBreakdown.hp)} / ${fmt(r.costBreakdown.stars)}`} />
+        <KV k="MP per EXP" v={perExpText(r.mpPerMin, r.grossExpPerMin, 2)} />
+        {r.starsPerMin > 0 && <KV k="Stars per 100 EXP" v={perExpText(r.starsPerMin * 100, r.grossExpPerMin, 1)} />}
+        <KV k="Mesos per EXP" v={perExpText(r.mesoCostPerMin, r.grossExpPerMin, 2)} />
+        {Object.values(r.costBreakdown).filter((x) => x > 0).length > 1 && (
+          <KV
+            k="Mesos per EXP by cost"
+            v={(['mp', 'hp', 'stars'] as const).filter((k) => r.costBreakdown[k] > 0).map((k) => `${k === 'mp' ? 'MP' : k === 'hp' ? 'HP' : 'stars'} ${perExpText(r.costBreakdown[k], r.grossExpPerMin, 2)}`).join(' · ')}
+          />
+        )}
         <KV k="Travel factor" v={fmt(r.travelFactor * 100) + '%'} />
       </div>
       <div className="table-wrap">

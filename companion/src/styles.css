@@ -336,42 +336,42 @@ h1.char-pick select { font: inherit; font-weight: 700; color: var(--text); backg
    Warm parchment panels, a wooden sidebar, chunky rounded buttons. Overrides the
    neutral base above; everything still reads from the same tokens. */
 :root {
-  --bg: #fbf1dc;
-  --surface: #fffaf0;
-  --surface-2: #fbe9c8;
-  --border: #e9bf7a;
-  --text: #3b2405;
-  --muted: #7a5520;
+  --bg: #f7f3ec;
+  --surface: #fffdf9;
+  --surface-2: #f3ece0;
+  --border: #e4d9c6;
+  --text: #2f2618;
+  --muted: #7a6b55;
   --accent: #d85a30;
   --accent-soft: #fde1d2;
   --accent-dark: #993c1d;
   --wood: #5a3a12;
   --wood-2: #74501f;
-  --info: #b24a1a;
+  --info: #1f6fb2;
   --radius: 16px;
-  --shadow: 0 3px 0 rgba(120, 72, 10, 0.18);
+  --shadow: 0 1px 2px rgba(60, 40, 10, 0.06), 0 4px 14px rgba(60, 40, 10, 0.05);
   --font: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #1c1309;
-    --surface: #2a1c0c;
-    --surface-2: #3a2811;
-    --border: #6b4a1c;
-    --text: #fbeed6;
-    --muted: #d6b47c;
+    --bg: #17130e;
+    --surface: #221c15;
+    --surface-2: #2e261c;
+    --border: #45392a;
+    --text: #f3ebdd;
+    --muted: #b8a68a;
     --accent: #f0884f;
     --accent-soft: #4a2414;
     --accent-dark: #ffb38a;
     --wood: #140d05;
     --wood-2: #2a1c0c;
-    --info: #ffae73;
+    --info: #7db8f0;
     --shadow: 0 3px 0 rgba(0, 0, 0, 0.35);
   }
 }
 body { font-weight: 500; }
 h1, h2, h3, .brand, strong { font-weight: 800; }
-h1 { font-size: 1.75rem; color: var(--accent-dark); }
+h1 { font-size: 1.75rem; color: var(--text); letter-spacing: -0.01em; }
 h2 { font-size: 1.3rem; }
 a { color: var(--info); font-weight: 700; }
 
@@ -383,13 +383,13 @@ a { color: var(--info); font-weight: 700; }
 .nav-link.active { background: var(--accent); color: #fff; box-shadow: 0 3px 0 rgba(0,0,0,.25); }
 .sidebar-foot, .sidebar-foot a { color: #e9c58e; }
 .mobile-nav { background: var(--wood); }
-.topbar { background: color-mix(in srgb, var(--bg) 92%, transparent); border-bottom: 2px solid var(--border); }
+.topbar { background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); }
 
-.card { border: 2px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 18px; }
+.card { border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 18px; }
 .card-head h2 { display: inline-flex; align-items: center; gap: 8px; }
-.card-head h2::before { content: ''; width: 10px; height: 22px; border-radius: 4px; background: var(--accent); }
+.card-head h2::before { content: ''; width: 6px; height: 20px; border-radius: 3px; background: var(--border); }
 .stat { background: var(--surface); border: 2px solid var(--border); border-radius: 14px; }
-.stat .value, .big { color: var(--accent-dark); }
+.stat .value, .big { color: var(--text); }
 
 .btn { border: 2px solid var(--border); border-radius: 999px; padding: 6px 16px; font-weight: 800; background: var(--surface); box-shadow: 0 2px 0 var(--border); }
 .btn:hover { background: var(--surface-2); }
@@ -402,11 +402,11 @@ input[type='text'], input[type='number'], input[type='search'], select, textarea
 .pill { border-radius: 999px; }
 th { background: var(--surface-2); }
 
-.rank-item, .session-item { background: var(--surface); border: 2px solid var(--border); border-radius: 14px; box-shadow: var(--shadow); }
-.rank-item.top { outline: 0; border-color: var(--accent); box-shadow: 0 3px 0 var(--accent-dark); }
-.rank-n { background: var(--surface-2); color: var(--accent-dark); width: 36px; height: 36px; font-size: 1.1rem; }
+.rank-item, .session-item { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; box-shadow: var(--shadow); }
+.rank-item.top { outline: 0; border-color: var(--accent); }
+.rank-n { background: var(--surface-2); color: var(--muted); width: 36px; height: 36px; font-size: 1.1rem; }
 .rank-item.top .rank-n { background: var(--accent); color: #fff; }
-.rank-rate .value, .session-rate .value { color: var(--accent-dark); font-weight: 800; }
+.rank-rate .value, .session-rate .value { color: var(--text); font-weight: 800; }
 .mob-chip { background: #eaf3de; color: #27500a; font-weight: 700; }
 .mob-chip.off { background: var(--surface-2); color: var(--muted); }
 @media (prefers-color-scheme: dark) { .mob-chip { background: #27500a; color: #eaf3de; } }
@@ -439,7 +439,7 @@ th { z-index: 1; box-shadow: inset 0 -2px 0 var(--border); }
 .farm-mob img { width: 40px; height: 40px; object-fit: contain; image-rendering: pixelated; }
 .farm-map { display: flex; justify-content: space-between; gap: 8px; padding: 4px 8px; border-radius: 8px; color: var(--text); font-weight: 600; }
 .farm-map:hover { background: var(--surface-2); text-decoration: none; }
-.farm-map strong { color: var(--accent-dark); white-space: nowrap; }
+.farm-map strong { color: var(--text); white-space: nowrap; }
 /* Where to train, compact: one line per map */
 .rank-list { gap: 6px; }
 .rank-row { padding: 6px 10px; gap: 10px; }
@@ -464,7 +464,7 @@ button.pill { cursor: pointer; font: inherit; font-size: 13px; font-weight: 600;
 .run-gain { font-size: 2.4rem; font-weight: 800; line-height: 1; color: var(--good); font-variant-numeric: tabular-nums; }
 .run-gain span { font-size: 1.1rem; }
 .run-rate { text-align: right; }
-.run-rate-n { font-size: 2rem; font-weight: 800; line-height: 1; color: var(--accent); font-variant-numeric: tabular-nums; }
+.run-rate-n { font-size: 2rem; font-weight: 800; line-height: 1; color: var(--text); font-variant-numeric: tabular-nums; }
 .run-bar { position: relative; height: 30px; border-radius: 999px; background: var(--surface); border: 2px solid var(--border); overflow: hidden; }
 .run-bar-old { position: absolute; inset: 0 auto 0 0; background: color-mix(in srgb, var(--good) 25%, transparent); }
 .run-bar-new { position: absolute; top: 0; bottom: 0; background: var(--good); animation: run-grow .9s ease-out; transform-origin: left; }
@@ -488,8 +488,7 @@ button.pill { cursor: pointer; font: inherit; font-size: 13px; font-weight: 600;
 .link-ico { font-size: 28px; line-height: 1; }
 
 /* Your sessions: EXP/min bar chart */
-.sess-chart { --bar-solo: var(--accent); --bar-party: #8f8a80; margin: 0 0 12px; }
-@media (prefers-color-scheme: dark) { .sess-chart { --bar-party: #7d776c; } }
+.sess-chart { --bar-solo: var(--solo); --bar-party: var(--party); margin: 0 0 12px; }
 .sess-chart-tip { min-height: 1.5em; margin-bottom: 6px; }
 .sess-chart-tip strong { font-size: 1.15rem; font-variant-numeric: tabular-nums; }
 .sess-bars { display: flex; align-items: flex-end; justify-content: center; gap: 2px; height: 150px; padding-top: 22px; border-bottom: 1px solid var(--border); }
@@ -506,3 +505,41 @@ button.pill { cursor: pointer; font: inherit; font-size: 13px; font-weight: 600;
 .mob-icon.big { width: 56px; height: 56px; }
 .mob-name { display: inline-flex; align-items: center; white-space: nowrap; }
 .elem.tough { color: var(--warn); font-weight: 700; }
+
+/* ---------- solo (green) vs party (blue) runs, kept off the orange accent ---------- */
+:root { --solo: #2f9e6e; --solo-soft: #e2f5ec; --party: #3b7dd8; --party-soft: #e3eefc; }
+@media (prefers-color-scheme: dark) { :root { --solo: #5ccf98; --solo-soft: #15332a; --party: #6ea8f5; --party-soft: #182a44; } }
+.pill.party, .run-pill.party { background: var(--party-soft); color: var(--party); border-color: var(--party); }
+.seg button.on.party { background: var(--party-soft); color: var(--party); }
+.pill.solo { background: var(--solo-soft); color: var(--solo); border-color: var(--solo); }
+.seg button.on.solo { background: var(--solo-soft); color: var(--solo); }
+/* In-game style EXP bar */
+.exp-bar { display: block; height: 10px; margin: 6px 0 4px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--border); overflow: hidden; }
+.exp-bar > span { display: block; height: 100%; background: linear-gradient(#ffe066, #f2b705); border-radius: inherit; transition: width .4s ease-out; }
+/* Build ratings */
+.rating { display: inline-block; padding: 1px 8px; border-radius: 999px; font-weight: 700; font-size: 13px; background: var(--surface-2); color: var(--muted); white-space: nowrap; }
+.rating.r3 { background: var(--good-soft); color: var(--good); }
+.rating.r2 { background: var(--info-soft, var(--surface-2)); color: var(--info); }
+.rating.r1 { background: var(--bad-soft); color: var(--bad); }
+/* Gear by level */
+.gear-slots { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr)); }
+.gear-slot h3 { margin: 0 0 6px; font-size: 1rem; }
+.gear-pick { border: 1px solid var(--border); border-radius: 12px; padding: 8px 10px; margin-bottom: 6px; background: var(--surface); }
+.gear-pick-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; }
+.gear-tier { font-size: 12px; font-weight: 800; padding: 1px 8px; border-radius: 999px; background: var(--surface-2); color: var(--muted); white-space: nowrap; }
+.gear-tier.bis { background: #fff1c2; color: #8a5a00; }
+.gear-tier.affordable { background: var(--good-soft); color: var(--good); }
+.gear-tier.accessible { background: var(--info-soft); color: var(--info); }
+@media (prefers-color-scheme: dark) { .gear-tier.bis { background: #3d3010; color: #ffd66b; } }
+.gear-cost { font-weight: 800; white-space: nowrap; font-variant-numeric: tabular-nums; }
+/* Quest guide tips */
+.guide-tip { background: var(--surface-2); border-color: transparent; }
+.worth { display: inline-block; margin-left: 6px; padding: 0 8px; border-radius: 999px; font-size: 12px; font-weight: 800; white-space: nowrap; vertical-align: 1px; }
+.worth.must-do { background: #fff1c2; color: #8a5a00; }
+.worth.good { background: var(--good-soft); color: var(--good); }
+.worth.skip { background: var(--surface-2); color: var(--muted); }
+@media (prefers-color-scheme: dark) { .worth.must-do { background: #3d3010; color: #ffd66b; } }
+.guide-tip .worth { margin-left: 0; }
+.quest-basics { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); margin-top: 10px; }
+.quest-basics h3 { margin: 0 0 2px; font-size: 1rem; }
+.quest-tip { color: var(--text); opacity: .8; max-width: 70ch; }

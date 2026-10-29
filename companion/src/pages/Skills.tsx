@@ -2,8 +2,8 @@ import { useState } from 'react';
 import type { Character, JobId, Skill, StatKey } from '../models/types';
 import { JOBS, RULES, jobTierOfGameJob } from '../data/rules';
 import { skillById, skillsForJob } from '../data';
-import { buildsFor, type Build } from '../data/builds';
-import { finalAllocation, levelTable, nextSp } from '../calculators/planner';
+import { RATING_LABEL, buildsFor, type Build } from '../data/builds';
+import { finalAllocation, levelTable, nextSp, offPlan, offPlanPoints } from '../calculators/planner';
 import { spPools, spentByTier, validateAllocation } from '../calculators/sp';
 import { apNeeds, suggestAp, unspentAp } from '../calculators/ap';
 import { upsertCharacter } from '../storage/store';
@@ -37,8 +37,12 @@ function SpPlan({ c }: { c: Character }) {
   const [tier, setTier] = useState<1 | 2>(job.tier === 2 ? 2 : 1);
   if (job.tier === 0) return <div className="card">Beginners have no job skills. Advance at Lv {RULES.firstJobLevel.value}.</div>;
   if (!job.plannerSupported) return <div className="card">No proposed builds for {job.label} yet; the skill reference tab still shows caps and prerequisites.</div>;
-  const builds = buildsFor(c.job, tier);
+  // Best-rated first; ties keep the file order (MeowDB plans come first there).
+  const builds = buildsFor(c.job, tier).sort((a, b) => b.rating.stars - a.rating.stars);
   const build = activeBuild(c, tier);
+  const off = build && !c.followPlan ? offPlan(build, c.skills) : [];
+  const better = off.length ? builds.filter((b) => b.id !== build!.id).sort((a, b) => offPlanPoints(a, c.skills) - offPlanPoints(b, c.skills))[0] : undefined;
+  const betterFits = better && build && offPlanPoints(better, c.skills) < offPlanPoints(build, c.skills);
   const pools = spPools(c.level, job.tier);
   const spent = spentByTier(c.skills);
   const issues = validateAllocation(skillsForJob(c.job, true), c.skills, c.level, job.tier);
@@ -63,6 +67,17 @@ function SpPlan({ c }: { c: Character }) {
           </span>
         </div>
         {issues.length > 0 && <div className="callout bad" style={{ marginTop: 10 }}>{issues.map((i, k) => <div key={k}>{i.message}</div>)}</div>}
+        {off.length > 0 && build && (
+          <div className="callout warn" style={{ marginTop: 10 }}>
+            Your skills don't match <strong>{build.name}</strong>: {off.map((x) => `${skillById.get(x.skillId)?.name} ${x.have} (plan: ${x.plan})`).join(', ')}. Its next SP may not fit.
+            {betterFits && (
+              <div className="row" style={{ marginTop: 6 }}>
+                <span><strong>{better!.name}</strong> fits what you have.</span>
+                <button className="btn small primary" onClick={() => upsertCharacter({ ...c, buildId: better!.id })}>Use it</button>
+              </div>
+            )}
+          </div>
+        )}
       </div>
 
       <div className="grid grid-2">
@@ -88,7 +103,21 @@ function BuildCard({ b, active, c }: { b: Build; active: boolean; c: Character }
           {active ? <span className="pill accent">active</span> : <button className="btn small" onClick={() => upsertCharacter({ ...c, buildId: b.id })}>Use</button>}
         </div>
       </div>
+      <p className="small" style={{ margin: '0 0 6px' }}>
+        <span className={`rating r${b.rating.stars}`}>{b.rating.stars ? '★'.repeat(b.rating.stars) + '☆'.repeat(3 - b.rating.stars) : '—'} {RATING_LABEL[b.rating.stars]}</span>{' '}
+        <span className="muted">{b.rating.why}</span>
+      </p>
       <p className="small muted">{b.summary}</p>
+      <p className="small" style={{ margin: '0 0 6px' }}>
+        <span className="muted">From: </span>
+        {b.source ? (
+          <a href={b.source.source_url} target="_blank" rel="noreferrer">{b.source.source_title} ↗</a>
+        ) : b.basedOn ? (
+          <>written for this app, adapted from <a href={b.basedOn.source_url} target="_blank" rel="noreferrer">{b.basedOn.source_title} ↗</a></>
+        ) : (
+          'written for this app (no Classic World guide)'
+        )}
+      </p>
       <div className="small"><strong>Next 3 SP:</strong> {next.length ? next.map((s) => `${skillById.get(s.skillId)?.name} ${s.to}`).join(' → ') : 'complete'}</div>
       <div className="small muted" style={{ marginTop: 4 }}>
         Final: {Object.entries(final).map(([id, lv]) => `${skillById.get(Number(id))?.name} ${lv}`).join(', ')}

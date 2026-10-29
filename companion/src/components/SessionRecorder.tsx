@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { Character, SavedSession, TrainingAssumptions } from '../models/types';
 import { MAPS, MONSTERS, mapById, skillById } from '../data';
-import { monstersGiving, summarize, type Sample, type SessionReport } from '../calculators/session';
+import { monstersGiving, perExp, summarize, type Sample, type SessionReport } from '../calculators/session';
 import { createBarReader, locateBar, matchMapName, parseStatusBar, prepareBar, titleRegion } from '../integrations/statusBar';
 import { evaluateMapFor } from '../calculators/rank';
 import { expForLevel, expRemaining } from '../data/expTable';
@@ -10,6 +10,11 @@ import { fmt, minutes } from './ui';
 import { WindowPicker, type Picker } from './QuickFill';
 import { MapPicker } from './MapPicker';
 import { SessionChart } from './SessionChart';
+
+const perExpText = (perMin: number, expPerMin: number) => {
+  const v = perExp(perMin, expPerMin);
+  return v == null ? '—' : fmt(v, 2);
+};
 
 // "Record a session": share the MapleStory window, box the status bar once, and the app
 // reads LV / HP / MP / EXP about once a second on this device. Only the numbers are kept.
@@ -351,9 +356,9 @@ export function SessionRecorder({ c, a, skillId, defaultMapId }: { c: Character;
           {phase === 'recording' && report && (
             <div className="grid grid-3">
               <Big label="EXP / min (hunting)" value={fmt(report.expPerActiveMin)} sub={`${fmt(report.expPerMin)} counting breaks`} />
-              <Big label="Kills / min" value={report.activeSeconds ? fmt((report.kills * 60) / report.activeSeconds, 1) : '—'} sub={`${fmt(report.kills)} kills${report.expPerKill ? ` · ${fmt(report.expPerKill)} EXP each` : ''}`} />
+              <Big label="Kills / min (that gave you EXP)" value={report.activeSeconds ? fmt((report.kills * 60) / report.activeSeconds, 1) : '—'} sub={`${fmt(report.kills)} kills${report.expPerKill ? ` · ${fmt(report.expPerKill)} EXP each` : ''}`} />
               <Big label="Casts per kill" value={report.castsPerKill != null ? fmt(report.castsPerKill, 2) : '—'} sub={mpPerCast ? `from MP spent (${mpPerCast} MP per ${skill?.name})` : 'set your main attack'} />
-              <Big label="MP / min" value={fmt(report.mpPerMin)} sub={`${report.potions} potion${report.potions === 1 ? '' : 's'}`} />
+              <Big label="MP per EXP" value={perExpText(report.mpPerMin, report.expPerMin)} sub={`${fmt(report.mpUsed)} MP · ${report.potions} potion${report.potions === 1 ? '' : 's'}`} />
               <Big label="Time to level" value={report.expPerActiveMin > 0 && report.last?.level ? minutes(expRemaining(report.last.level, report.last.exp ?? 0) / report.expPerActiveMin) : '—'} sub="at this rate" />
               <Big label="App estimate here" value={estimate != null ? fmt(estimate) : '—'} sub={estimate == null ? 'pick the map' : report.expPerActiveMin ? `you: ×${fmt(report.expPerActiveMin / estimate, 2)}` : 'EXP/min for this map'} />
             </div>
@@ -408,10 +413,10 @@ export function PastSessions({ c }: { c: Character }) {
       <ul className="session-list">
         {[...list].sort((a, b) => b.at.localeCompare(a.at)).filter((s) => list.length < 2 || showAll || s.id === openId).map((s) => {
           const facts = [
-            s.activeMinutes ? `${fmt(s.kills / s.activeMinutes, 1)} kills/min` : null,
-            s.expPerKill ? `${fmt(s.expPerKill)} EXP/kill` : null,
-            s.castsPerKill != null ? `${fmt(s.castsPerKill, 2)} casts/kill` : null,
-            `${fmt(s.mpPerMin)} MP/min`,
+            s.activeMinutes ? `${fmt(s.kills / s.activeMinutes, 1)} ${s.party ? 'party kills' : 'kills'}/min` : null,
+            s.expPerKill ? `${fmt(s.expPerKill)} EXP/kill${s.party ? ' (your share)' : ''}` : null,
+            s.castsPerKill != null && !s.party ? `${fmt(s.castsPerKill, 2)} casts/kill` : null,
+            `${perExpText(s.mpPerMin, s.expPerMin)} MP/EXP`,
             s.potions ? `${s.potions} potions` : null,
           ].filter(Boolean);
           return (
@@ -420,7 +425,7 @@ export function PastSessions({ c }: { c: Character }) {
                 <div>
                   <span style={{ float: 'right', display: 'flex', gap: 6 }}>
                     {s.id === best && solo.length > 1 && <span className="pill verified">Best</span>}
-                    <button className={`pill ${s.party ? 'accent' : ''}`} onClick={() => edit(s.id, { party: !s.party })} title="Tap to switch. Party runs share EXP, so they don't count as your solo rate on Training.">
+                    <button className={`pill ${s.party ? 'party' : 'solo'}`} onClick={() => edit(s.id, { party: !s.party })} title="Tap to switch. Party runs share EXP, so they don't count as your solo rate on Training.">
                       {s.party ? 'Party' : 'Solo'}
                     </button>
                   </span>
@@ -474,10 +479,10 @@ function RunResult({ c, report: r, mapId, savedId, estimate, castsLabel }: { c: 
   }
   const toLevel = rate > 0 && r.last?.level ? minutes(expRemaining(r.last.level, r.last.exp ?? 0) / rate) : null;
   const facts = [
-    r.activeSeconds ? `${fmt((r.kills * 60) / r.activeSeconds, 1)} kills/min` : null,
-    r.expPerKill ? `${fmt(r.expPerKill)} EXP/kill` : null,
-    r.castsPerKill != null ? `${fmt(r.castsPerKill, 2)} ${castsLabel ?? 'casts'}/kill` : null,
-    `${fmt(r.mpPerMin)} MP/min`,
+    r.activeSeconds ? `${fmt((r.kills * 60) / r.activeSeconds, 1)} ${party ? 'party kills' : 'kills'}/min` : null,
+    r.expPerKill ? `${fmt(r.expPerKill)} EXP/kill${party ? ' (your share)' : ''}` : null,
+    r.castsPerKill != null && !party ? `${fmt(r.castsPerKill, 2)} ${castsLabel ?? 'casts'}/kill` : null,
+    `${perExpText(r.mpPerMin, r.expPerMin)} MP/EXP`,
     `${r.potions} potion${r.potions === 1 ? '' : 's'}`,
     Math.round(r.expPerMin) !== Math.round(rate) ? `${fmt(r.expPerMin)}/min with breaks` : null,
   ].filter(Boolean);
@@ -508,7 +513,7 @@ function RunResult({ c, report: r, mapId, savedId, estimate, castsLabel }: { c: 
 
       <div className="run-verdict">
         {verdict && <span className={`run-pill ${verdict.cls}`}>{verdict.cls === 'best' ? '🏆 ' : ''}{verdict.text}</span>}
-        {party && <span className="run-pill neutral">Party run: not counted as your solo rate</span>}
+        {party && <span className="run-pill party">Party run: not counted as your solo rate</span>}
         {toLevel && <span className="run-pill neutral">Next level in {toLevel}</span>}
       </div>
 
@@ -518,8 +523,8 @@ function RunResult({ c, report: r, mapId, savedId, estimate, castsLabel }: { c: 
         <div className="run-actions">
           <span className="small">✓ Saved</span>
           <span className="seg">
-            <button className={!party ? 'on' : ''} onClick={() => setParty(false)}>Solo</button>
-            <button className={party ? 'on' : ''} onClick={() => setParty(true)}>Party</button>
+            <button className={!party ? 'on solo' : ''} onClick={() => setParty(false)}>Solo</button>
+            <button className={party ? 'on party' : ''} onClick={() => setParty(true)}>Party</button>
           </span>
         </div>
       )}

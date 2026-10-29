@@ -115,3 +115,32 @@ describe('validateAllocation', () => {
     expect(validateAllocation(skills, { 4001003: 1 }, 30, 2)[0].kind).toBe('unknown_skill');
   });
 });
+
+describe('skills spent off the plan', () => {
+  // Energy Bolt 20, MP Recovery 3, Max MP Increase 15, Magic Guard 3: maxed Max MP instead of MP Recovery.
+  const skills = { 2001002: 20, 2000000: 3, 2000001: 15, 2001000: 3 };
+
+  it('lists points the plan never gives', async () => {
+    const { buildById } = await import('../data/builds');
+    const { offPlan } = await import('../calculators/planner');
+    expect(offPlan(buildById.get('mage1-meow-bolt')!, skills)).toEqual([{ skillId: 2000001, have: 15, plan: 3 }]);
+    expect(offPlan(buildById.get('mage1-maxmp-bolt')!, skills)).toEqual([]);
+  });
+
+  it('picks the build that matches hand-entered skills', async () => {
+    const { newCharacter } = await import('../storage/store');
+    const { activeBuild } = await import('../calculators/choose');
+    const c = { ...newCharacter('magician'), level: 26, skills, followPlan: false };
+    expect(activeBuild(c, 1)!.id).toBe('mage1-maxmp-bolt');
+    // ...and the next SP go to Magic Armor, not back into MP Recovery.
+    expect(nextSp(activeBuild(c, 1)!, skills, 1)[0].skillId).toBe(2001001);
+    // An explicit choice still wins.
+    expect(activeBuild({ ...c, buildId: 'mage1-meow-bolt' }, 1)!.id).toBe('mage1-meow-bolt');
+  });
+
+  it('rates every build, MeowDB plans highest', async () => {
+    const { BUILDS } = await import('../data/builds');
+    for (const b of BUILDS) expect(b.rating.why.length).toBeGreaterThan(0);
+    for (const b of BUILDS.filter((x) => x.source)) expect(b.rating.stars).toBe(3);
+  });
+});

@@ -165,3 +165,8 @@ export function monstersGiving<M extends { exp: number; isBoss: boolean; spawns:
   if (!expPerKill) return [];
   return monsters.filter((m) => !m.isBoss && m.spawns.length > 0 && m.exp === expPerKill);
 }
+
+/** A per-minute amount (MP, mesos, stars) per EXP gained over the same minutes. Null when no EXP was gained. */
+export function perExp(perMin: number, expPerMin: number): number | null {
+  return expPerMin > 0 ? perMin / expPerMin : null;
+}

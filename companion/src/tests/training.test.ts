@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { evaluateMap, evaluateMonster, type ResolvedAttack, type SpawnInput } from '../calculators/training';
 import { DEFAULT_ASSUMPTIONS } from '../storage/store';
+import { perExp } from '../calculators/session';
 import type { TrainingAssumptions } from '../models/types';
 
 const A: TrainingAssumptions = { ...DEFAULT_ASSUMPTIONS, castsPerSecond: 1, uptime: 1, respawnSeconds: 10, spawnShare: 1, travelMinutes: 0, packSize: 1 };
@@ -55,6 +56,8 @@ describe('evaluateMap: EXP/cast is not EXP/min', () => {
     expect(r.grossExpPerMin).toBe(300);
     expect(r.castsPerMin).toBe(60);
     expect(r.mpPerMin).toBe(600);
+    expect(perExp(r.mpPerMin, r.grossExpPerMin)).toBe(2);
+    expect(perExp(100, 0)).toBeNull();
   });
 
   it('applies uptime, travel and death penalty', () => {

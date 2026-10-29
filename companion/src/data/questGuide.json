@@ -1,0 +1,3293 @@
+{
+ "retrieved_at": "2026-10-28",
+ "sources": {
+  "meow-citizenship": {
+   "source_url": "https://meowdb.com/msclassic/citizenship",
+   "source_title": "MeowDB: MapleStory Classic Citizenship System",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "meow-beginner": {
+   "source_url": "https://meowdb.com/msclassic/guides/beginners-guide-first-steps-in-maple-world",
+   "source_title": "MeowDB: Beginner's Guide: MapleStory Classic World",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "meow-fh": {
+   "source_url": "https://meowdb.com/msclassic/guides/forgotten-hollow-the-new-endgame-area",
+   "source_title": "MeowDB: Forgotten Hollow Guide: Quests, Monsters and Maps (Lv 39-60)",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "meow-ledger": {
+   "source_url": "https://meowdb.com/msclassic/guides/caretakers-ledger-quest-guide",
+   "source_title": "MeowDB: Caretaker's Ledger Quest Guide: All Six Steps",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "meow-jq": {
+   "source_url": "https://meowdb.com/msclassic/guides/jump-quests",
+   "source_title": "MeowDB: Jump Quests in MapleStory Classic World",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "meow-beta": {
+   "source_url": "https://meowdb.com/msclassic/guides/mark-of-the-beta-event-guide",
+   "source_title": "MeowDB: Mark of the Beta Event Guide: All Six Page Locations",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "meow-warrior": {
+   "source_url": "https://meowdb.com/msclassic/guides/warrior-class-guide",
+   "source_title": "MeowDB: Warrior Build and Leveling Guide Lv 1-30",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "meow-thief": {
+   "source_url": "https://meowdb.com/msclassic/guides/thief-class-guide",
+   "source_title": "MeowDB: Thief Build and Leveling Guide Lv 1-30",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "meow-magician": {
+   "source_url": "https://meowdb.com/msclassic/guides/magician-class-guide",
+   "source_title": "MeowDB: Magician Build and Leveling Guide Lv 1-30",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "meow-bowman": {
+   "source_url": "https://meowdb.com/msclassic/guides/bowman-class-guide",
+   "source_title": "MeowDB: Bowman Build and Leveling Guide Lv 1-30",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "meow-qt-10500": {
+   "source_url": "https://meowdb.com/msclassic/quest-tracker/10500",
+   "source_title": "MeowDB Quest Tracker: A Clue to the Secret Book (incl. player comments)",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-optimizer": {
+   "source_url": "https://henesys.gg/quests/optimization",
+   "source_title": "henesys.gg Quest Optimizer",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-beginner": {
+   "source_url": "https://henesys.gg/guides/beginner",
+   "source_title": "henesys.gg Beginner Guide",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-rain": {
+   "source_url": "https://henesys.gg/quests/rain-s-maple-quiz",
+   "source_title": "henesys.gg: Rain's Maple Quiz",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-mai": {
+   "source_url": "https://henesys.gg/quests/mai-s-training",
+   "source_title": "henesys.gg: Mai's Training",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-pio": {
+   "source_url": "https://henesys.gg/quests/pio-s-collecting-recycled-goods",
+   "source_title": "henesys.gg: Pio's Collecting Recycled Goods",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-biggs": {
+   "source_url": "https://henesys.gg/quests/biggs-s-collection-of-items",
+   "source_title": "henesys.gg: Biggs's Collection of Items",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-olaf": {
+   "source_url": "https://henesys.gg/quests/olafs-first-training",
+   "source_title": "henesys.gg: Olaf's First Training",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-teo": {
+   "source_url": "https://henesys.gg/quests/teo-s-collection",
+   "source_title": "henesys.gg: Teo's Collection",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-phil": {
+   "source_url": "https://henesys.gg/quests/phil-s-call",
+   "source_title": "henesys.gg: Phil's Call",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-jane-mushroom": {
+   "source_url": "https://henesys.gg/quests/jane-mushroom",
+   "source_title": "henesys.gg: Jane and the Mushroom",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-jane-alch": {
+   "source_url": "https://henesys.gg/quests/jane-the-alchemist",
+   "source_title": "henesys.gg: Jane the Alchemist",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-john": {
+   "source_url": "https://henesys.gg/quests/john-s-present",
+   "source_title": "henesys.gg: John's Present",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-daughter": {
+   "source_url": "https://henesys.gg/quests/i-need-to-find-my-daughter",
+   "source_title": "henesys.gg: I Need to Find My Daughter",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-stump": {
+   "source_url": "https://henesys.gg/quests/the-stump-horror-story",
+   "source_title": "henesys.gg: The Stump Horror Story",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-blackbull1": {
+   "source_url": "https://henesys.gg/quests/fixing-blackbull-s-house",
+   "source_title": "henesys.gg: Fixing Blackbull's House",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-blackbull2": {
+   "source_url": "https://henesys.gg/quests/building-a-new-house-for-blackbull",
+   "source_title": "henesys.gg: Building a New House For Blackbull",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-imbored": {
+   "source_url": "https://henesys.gg/quests/i-m-bored",
+   "source_title": "henesys.gg: I'm Bored",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-nella1": {
+   "source_url": "https://henesys.gg/quests/nella-kerning-city-citizen-s-request",
+   "source_title": "henesys.gg: Nella & Kerning City Citizen's Request",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-nella2": {
+   "source_url": "https://henesys.gg/quests/nella-kerning-city-citizen-s-other-request",
+   "source_title": "henesys.gg: Nella & Kerning City Citizen's Other Request",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-fm": {
+   "source_url": "https://henesys.gg/quests/welcome-to-the-free-market",
+   "source_title": "henesys.gg: Welcome to the Free Market!",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-mingming": {
+   "source_url": "https://henesys.gg/quests/mrs-ming-ming-s-first-worry",
+   "source_title": "henesys.gg: Mrs. Ming Ming's First Worry",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-pia-blue": {
+   "source_url": "https://henesys.gg/quests/pia-blue-mushroom",
+   "source_title": "henesys.gg: Pia and the Blue Mushroom",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-fossil": {
+   "source_url": "https://henesys.gg/quests/winston-s-fossil-dig-up",
+   "source_title": "henesys.gg: Winston's Fossil Dig-up",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-betty": {
+   "source_url": "https://henesys.gg/quests/dr-betty-s-research-on-plants",
+   "source_title": "henesys.gg: Dr. Betty's Research on Plants",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-alex": {
+   "source_url": "https://henesys.gg/quests/alex-the-runaway-kid",
+   "source_title": "henesys.gg: Alex the Runaway Kid",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-luke1": {
+   "source_url": "https://henesys.gg/quests/luke-the-security-guy",
+   "source_title": "henesys.gg: Luke the Security Guy",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-luke2": {
+   "source_url": "https://henesys.gg/quests/luke-the-security-guy-s-wish-to-travel",
+   "source_title": "henesys.gg: Luke the Security Guy's Wish to Travel",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-snail": {
+   "source_url": "https://henesys.gg/quests/legend-of-the-snail",
+   "source_title": "henesys.gg: Legend of the Snail",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-maya-med": {
+   "source_url": "https://henesys.gg/quests/maya-medicine",
+   "source_title": "henesys.gg: Maya and the Weird Medicine",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-kpq": {
+   "source_url": "https://henesys.gg/quests/first-time-together",
+   "source_title": "henesys.gg: Proof of Companionship",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-niora": {
+   "source_url": "https://henesys.gg/quests/mystery-of-naora-hospital",
+   "source_title": "henesys.gg: Mystery of Niora Hospital",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-camila": {
+   "source_url": "https://henesys.gg/quests/camila-s-gem",
+   "source_title": "henesys.gg: Camila's Gem",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-sabitrama": {
+   "source_url": "https://henesys.gg/quests/sabitrama-diet",
+   "source_title": "henesys.gg: Sabitrama and the Diet Medicine",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-arwen": {
+   "source_url": "https://henesys.gg/quests/arwen-glass-shoe",
+   "source_title": "henesys.gg: Arwen and the Glass Shoe",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-maya-col1": {
+   "source_url": "https://henesys.gg/quests/collecting-for-maya",
+   "source_title": "henesys.gg: Collecting For Maya",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-maya-col2": {
+   "source_url": "https://henesys.gg/quests/maya-s-another-collection",
+   "source_title": "henesys.gg: Another of Maya's Collections",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-job-war": {
+   "source_url": "https://henesys.gg/quests/the-warrior-s-next-journey",
+   "source_title": "henesys.gg: The Warrior's Next Journey",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-job-mage": {
+   "source_url": "https://henesys.gg/quests/the-magician-s-next-journey",
+   "source_title": "henesys.gg: The Magician's Next Journey",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-job-bow": {
+   "source_url": "https://henesys.gg/quests/the-bowman-s-next-journey",
+   "source_title": "henesys.gg: The Bowman's Next Journey",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-job-thief": {
+   "source_url": "https://henesys.gg/quests/the-thief-s-next-journey",
+   "source_title": "henesys.gg: The Thief's Next Journey",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-icarus-dream": {
+   "source_url": "https://henesys.gg/quests/icarus-s-dream",
+   "source_title": "henesys.gg: Icarus's Dream",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-wetbottom": {
+   "source_url": "https://henesys.gg/quests/mr-wetbottom-s-secret-book",
+   "source_title": "henesys.gg: Mr. Wetbottom's Secret Book",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-oldtree": {
+   "source_url": "https://henesys.gg/quests/the-old-tree",
+   "source_title": "henesys.gg: The Old Tree",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-shumi": {
+   "source_url": "https://henesys.gg/quests/what-shumi-lost",
+   "source_title": "henesys.gg: What Shumi Lost",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-rowen": {
+   "source_url": "https://henesys.gg/quests/rowen-cursed-doll",
+   "source_title": "henesys.gg: Rowen the Fairy and the Cursed Doll",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-florina": {
+   "source_url": "https://henesys.gg/quests/special-taste-of-florina-beach",
+   "source_title": "henesys.gg: Special Taste of Florina Beach",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-ronnie": {
+   "source_url": "https://henesys.gg/quests/ronnie-the-fairies-building-a-new-house",
+   "source_title": "henesys.gg: Ronnie & the Fairies Building a New House",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-pia-present": {
+   "source_url": "https://henesys.gg/quests/pia-s-present-for-a-friend",
+   "source_title": "henesys.gg: Pia's Present For a Friend",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-icarus-med": {
+   "source_url": "https://henesys.gg/quests/icarus-and-the-flying-pill",
+   "source_title": "henesys.gg: Icarus and the Flying Medicine",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-alligators": {
+   "source_url": "https://henesys.gg/quests/the-alligators-at-the-swamp",
+   "source_title": "henesys.gg: The Alligators at the Swamp",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-gladius": {
+   "source_url": "https://henesys.gg/quests/manji-gladius",
+   "source_title": "henesys.gg: Manji's Old Gladius",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-mar": {
+   "source_url": "https://henesys.gg/quests/mar-the-fairy-and-the-water-of-life",
+   "source_title": "henesys.gg: \"Mar\" the Fairy and the Water of Life",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-family": {
+   "source_url": "https://henesys.gg/quests/a-family-reunited",
+   "source_title": "henesys.gg: A Family Reunited",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-jake": {
+   "source_url": "https://henesys.gg/quests/jakes-trauma",
+   "source_title": "henesys.gg: Jake's Trauma",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-home-hen": {
+   "source_url": "https://henesys.gg/quests/a-home-in-henesys",
+   "source_title": "henesys.gg: A Home in Henesys",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-festival": {
+   "source_url": "https://henesys.gg/quests/after-the-festival-ends",
+   "source_title": "henesys.gg: After the Festival Ends...",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-city": {
+   "source_url": "https://henesys.gg/quests/what-the-city-taught-me",
+   "source_title": "henesys.gg: What the City Taught Me",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-marble": {
+   "source_url": "https://henesys.gg/quests/a-marble-of-friendship",
+   "source_title": "henesys.gg: A Marble of Friendship",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-doctor": {
+   "source_url": "https://henesys.gg/quests/the-doctor-who-never-returned",
+   "source_title": "henesys.gg: The Doctor Who Never Returned",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-savior": {
+   "source_url": "https://henesys.gg/quests/maya-and-her-peculiar-savior",
+   "source_title": "henesys.gg: Maya and Her Peculiar Savior",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-grudge": {
+   "source_url": "https://henesys.gg/quests/a-grudge-that-wont-rest",
+   "source_title": "henesys.gg: A Grudge That Won't Rest",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-honor-hen": {
+   "source_url": "https://henesys.gg/quests/a-gift-for-a-citizen-of-honor-henesys",
+   "source_title": "henesys.gg: A Gift for a Citizen of Honor (Henesys)",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "hgg-honor-ker": {
+   "source_url": "https://henesys.gg/quests/a-task-for-a-citizen-of-honor-kerning-city",
+   "source_title": "henesys.gg: A Task for a Citizen of Honor (Kerning City)",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "mcc-leveling": {
+   "source_url": "https://maplestory-classic.com/guides/leveling-route-overview-1-to-60",
+   "source_title": "maplestory-classic.com: Classic World Leveling Route: Levels 1 to 60",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "mcc-money": {
+   "source_url": "https://maplestory-classic.com/guides/money-making-basics",
+   "source_title": "maplestory-classic.com: Making Mesos in Classic World",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "mcc-firstweek": {
+   "source_url": "https://maplestory-classic.com/guides/first-week-after-grand-launch",
+   "source_title": "maplestory-classic.com: Classic World First Week: A Plan After Grand Launch",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "sse-quests": {
+   "source_url": "https://www.ssegold.com/maplestory-classic-world-quests-guide",
+   "source_title": "SSEGold: MapleStory Classic World Quests Guide (mesos-seller site; community-grade)",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  }
+ },
+ "tips": {
+  "1000": {
+   "tip": "Talk-only: Heena sends you to Sera; no hunting needed. Grab it while you pass through Mushroom Town.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Maple Island starter quests",
+   "sourceIds": [
+    "hgg-optimizer",
+    "meow-beginner"
+   ],
+   "conflict": null
+  },
+  "1001": {
+   "tip": "Just carry Sera's mirror back to Heena.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Maple Island starter quests",
+   "sourceIds": [
+    "hgg-optimizer"
+   ],
+   "conflict": null
+  },
+  "1002": {
+   "tip": "Quick starter quest from Roger in Mushroom Town; do it while exploring.",
+   "worth": "good",
+   "worthReason": "SSEGold: do it while exploring; costs almost no time.",
+   "recommendedLevel": null,
+   "chain": "Maple Island starter quests",
+   "sourceIds": [
+    "sse-quests",
+    "hgg-optimizer"
+   ],
+   "conflict": null
+  },
+  "1003": {
+   "tip": "Talk-only: Nina sends you to Sen, then back to Nina.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Maple Island starter quests",
+   "sourceIds": [
+    "hgg-optimizer"
+   ],
+   "conflict": null
+  },
+  "1005": {
+   "tip": "Kill 3 Tutorial Jr. Sentinels and pick up 3 Jr. Sentinel Shellpieces at the East Entrance to Mushroom Town.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Maple Island starter quests",
+   "sourceIds": [
+    "hgg-optimizer"
+   ],
+   "conflict": null
+  },
+  "1006": {
+   "tip": "Snail Hunting Ground II covers this and Biggs's Blue Snail Shells at once. Must be turned in before Mai will give Mai's Training.",
+   "worth": "good",
+   "worthReason": "SSEGold: cheap early reward.",
+   "recommendedLevel": null,
+   "chain": "Maple Island starter quests",
+   "sourceIds": [
+    "hgg-optimizer",
+    "hgg-mai"
+   ],
+   "conflict": null
+  },
+  "1007": {
+   "tip": "Talk-only delivery from Maria to Lucas; the reply pays a random Skullcap or Headband, a free starter hat.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Maple Island starter quests",
+   "sourceIds": [
+    "hgg-optimizer",
+    "meow-beginner"
+   ],
+   "conflict": null
+  },
+  "1009": {
+   "tip": "Needs Sam's Suggestion done first. Kill 10 Blue Snails, 10 Shrooms and 5 Red Snails on one loop between Mushroom Town and Amherst.",
+   "worth": "good",
+   "worthReason": "SSEGold: helps with early supplies.",
+   "recommendedLevel": null,
+   "chain": "Mai's training",
+   "sourceIds": [
+    "hgg-mai"
+   ],
+   "conflict": null
+  },
+  "1010": {
+   "tip": "One Orange Mushroom kill, found west of Amherst (Field West of Amherst / Dangerous Forest). Afterwards Mai points you to the Southperry boat.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Mai's training",
+   "sourceIds": [
+    "hgg-mai"
+   ],
+   "conflict": null
+  },
+  "1011": {
+   "tip": "Biggs is on the left side of Southperry. Farm the 10 Blue Snail Shells together with Sam's snails, and the single Orange Mushroom Cap in Dangerous Forest. Dagger reward is a coin flip: Fruit Knife or Razor.",
+   "worth": "good",
+   "worthReason": "SSEGold: do it; random weapon reward.",
+   "recommendedLevel": null,
+   "chain": "Maple Island starter quests",
+   "sourceIds": [
+    "hgg-biggs",
+    "hgg-optimizer",
+    "meow-beginner"
+   ],
+   "conflict": null
+  },
+  "1012": {
+   "tip": "Rusty Screws and Old Wooden Boards come from breaking the wooden boxes around Amherst. The Green Relaxer chair is only obtainable here; if the boxes are camped, Mina in Lith Harbor sells a Sky-blue Wooden Chair for 1,000 mesos instead.",
+   "worth": "good",
+   "worthReason": "SSEGold: EXP and mesos; only source of The Green Relaxer (MeowDB).",
+   "recommendedLevel": null,
+   "chain": "Maple Island starter quests",
+   "sourceIds": [
+    "hgg-pio",
+    "meow-beginner"
+   ],
+   "conflict": null
+  },
+  "1013": {
+   "tip": "Rain is on the left side of Amherst. Answer: Up arrow key. All 7 together pay 490 EXP and 10 Oranges.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Rain's Maple Quiz",
+   "sourceIds": [
+    "hgg-rain",
+    "meow-beginner"
+   ],
+   "conflict": null
+  },
+  "1014": {
+   "tip": "Rain is on the left side of Amherst. Answer: Oh yes.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Rain's Maple Quiz",
+   "sourceIds": [
+    "hgg-rain",
+    "meow-beginner"
+   ],
+   "conflict": null
+  },
+  "1015": {
+   "tip": "Rain is on the left side of Amherst. Answer: Equipment inventory.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Rain's Maple Quiz",
+   "sourceIds": [
+    "hgg-rain",
+    "meow-beginner"
+   ],
+   "conflict": null
+  },
+  "1016": {
+   "tip": "Rain is on the left side of Amherst. Answer: Sleep.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Rain's Maple Quiz",
+   "sourceIds": [
+    "hgg-rain",
+    "meow-beginner"
+   ],
+   "conflict": null
+  },
+  "1017": {
+   "tip": "Rain is on the left side of Amherst. Answer: Level 10.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Rain's Maple Quiz",
+   "sourceIds": [
+    "hgg-rain",
+    "meow-beginner"
+   ],
+   "conflict": null
+  },
+  "1018": {
+   "tip": "Rain is on the left side of Amherst. Answer: 5 points.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Rain's Maple Quiz",
+   "sourceIds": [
+    "hgg-rain",
+    "meow-beginner"
+   ],
+   "conflict": null
+  },
+  "1019": {
+   "tip": "Rain is on the left side of Amherst. Answer: Southperry. Rain then sends you to Southperry to sail.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Rain's Maple Quiz",
+   "sourceIds": [
+    "hgg-rain",
+    "meow-beginner"
+   ],
+   "conflict": null
+  },
+  "10000": {
+   "tip": "Thicket Around the Beach I, right outside Lith Harbor, has both the Stumps and Slimes; turn in to Olaf in Lith Harbor.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Olaf's training",
+   "sourceIds": [
+    "hgg-olaf"
+   ],
+   "conflict": null
+  },
+  "10001": {
+   "tip": "Start at level 8, finish by returning to Phil (left side of Lith Harbor) once you hit 10. Job advancement can't be undone, so pick your class carefully.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": null,
+   "sourceIds": [
+    "hgg-phil"
+   ],
+   "conflict": null
+  },
+  "10002": {
+   "tip": "Jane is on the left side of Lith Harbor (not Jane Doe in Kerning). Blue Mushroom Caps: Blue Mushroom Forest; Horny Mushroom Caps: Ant Tunnel III/IV. The weapon attack scroll is random from 14 types.",
+   "worth": "good",
+   "worthReason": "MeowDB recommends it; SSEGold: early weapon-scroll upgrade.",
+   "recommendedLevel": null,
+   "chain": null,
+   "sourceIds": [
+    "hgg-jane-mushroom",
+    "meow-beginner",
+    "sse-quests"
+   ],
+   "conflict": null
+  },
+  "10003": {
+   "tip": "Needs Pure Water (shop, 1,120 mesos) plus Copper Drake/Wraith kills and Drake Skulls/Medicine With Weird Vibes; Wraiths are in the Kerning subway.",
+   "worth": "good",
+   "worthReason": "SSEGold calls the Jane the Alchemist chain one of the most valuable scroll quests.",
+   "recommendedLevel": null,
+   "chain": "Jane the Alchemist",
+   "sourceIds": [
+    "hgg-jane-alch"
+   ],
+   "conflict": null
+  },
+  "10004": {
+   "tip": "Mushmom Spore comes from Someone Else's House (hidden map off Pig Park II). Drake's Blood has no confirmed source yet, so start looking early.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Jane the Alchemist",
+   "sourceIds": [
+    "hgg-jane-alch"
+   ],
+   "conflict": null
+  },
+  "10005": {
+   "tip": "The Moon Rock is traded from Arwen in Ellinia (ingots plus 10,000 mesos). Dragon Skin and Sap of Ancient Tree sources were still unconfirmed in Classic. Reward is a random gloves scroll.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Jane the Alchemist",
+   "sourceIds": [
+    "hgg-jane-alch"
+   ],
+   "conflict": null
+  },
+  "10006": {
+   "tip": "Enter the jump quest through the Mysterious Statue in Sleepywood. No Haste/movement skills, summoning bags or Teleport Rock inside. Level was raised from 45 to 65 before launch.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "John's Present (Deep Forest of Patience)",
+   "sourceIds": [
+    "meow-jq",
+    "hgg-john"
+   ],
+   "conflict": null
+  },
+  "10007": {
+   "tip": "Re-enter via the statue for each stage and take from the matching flower pile; talk to John again after each turn-in. Pays class gloves.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "John's Present (Deep Forest of Patience)",
+   "sourceIds": [
+    "hgg-john",
+    "meow-jq"
+   ],
+   "conflict": null
+  },
+  "10008": {
+   "tip": "Final run pays the Pink-Flowered Earrings (Lv 60, 5 slots, crit damage), the headline reward of the chain.",
+   "worth": "good",
+   "worthReason": "SSEGold: large EXP (77,700 over the chain).",
+   "recommendedLevel": null,
+   "chain": "John's Present (Deep Forest of Patience)",
+   "sourceIds": [
+    "meow-jq",
+    "hgg-john"
+   ],
+   "conflict": null
+  },
+  "10009": {
+   "tip": "Unlocks after Olaf's First Training; talk to Olaf again in Lith Harbor.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Olaf's training",
+   "sourceIds": [
+    "hgg-olaf"
+   ],
+   "conflict": null
+  },
+  "10010": {
+   "tip": "The Slime Bubble is a drop, so keep killing Slimes (Thicket Around the Beach I) until it appears.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Teo's Collection",
+   "sourceIds": [
+    "hgg-teo"
+   ],
+   "conflict": null
+  },
+  "10011": {
+   "tip": "Talk to Teo again; Pigs for the Pig's Head are on Thicket Around the Beach II. Pays a Sniper Potion and 10 Lemons.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Teo's Collection",
+   "sourceIds": [
+    "hgg-teo"
+   ],
+   "conflict": null
+  },
+  "10100": {
+   "tip": "Slime Bubbles (The Tree That Grew II) and Pig's Ribbons (L Forest I) are in different towns, so plan the route. Pays 20 Lemons, handy MP pots for mages.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": null,
+   "sourceIds": [
+    "hgg-mingming",
+    "meow-magician"
+   ],
+   "conflict": null
+  },
+  "10103": {
+   "tip": "Pays 20 Lemons (MP potions), which the Magician guide points out. Also a prerequisite for the Henesys citizenship story After the Festival Ends.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": null,
+   "sourceIds": [
+    "meow-magician",
+    "hgg-festival"
+   ],
+   "conflict": null
+  },
+  "10104": {
+   "tip": "Pia is under the watchtower in Henesys Park. Green caps: West Rocky Mountain III; Blue caps: Blue Mushroom Forest. Pays a Hat Accuracy scroll.",
+   "worth": "good",
+   "worthReason": "SSEGold: do it if you're training on mushrooms anyway.",
+   "recommendedLevel": null,
+   "chain": null,
+   "sourceIds": [
+    "hgg-pia-blue"
+   ],
+   "conflict": null
+  },
+  "10105": {
+   "tip": "Just deliver the marble to Utah at Utah's Pig Farm (through The Forest East of Henesys). 30% chance of Pig Illustrated, otherwise 30 Cakes.",
+   "worth": "good",
+   "worthReason": "Recommended in MeowDB's Warrior guide.",
+   "recommendedLevel": null,
+   "chain": null,
+   "sourceIds": [
+    "hgg-camila",
+    "meow-warrior"
+   ],
+   "conflict": null
+  },
+  "10106": {
+   "tip": "Long fetch chain across Henesys, Lith Harbor and Perion; big total payout (12,529 EXP, Brown Bamboo Hat).",
+   "worth": "good",
+   "worthReason": "SSEGold: large EXP for the chain.",
+   "recommendedLevel": null,
+   "chain": "Maya and the Weird Medicine",
+   "sourceIds": [
+    "hgg-maya-med",
+    "sse-quests"
+   ],
+   "conflict": null
+  },
+  "10107": {
+   "tip": "Teo (Lith Harbor) will only swap Weird Medicine for a Sparkling Rock; Sophia at the Perion Department Store can make one.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Maya and the Weird Medicine",
+   "sourceIds": [
+    "hgg-maya-med"
+   ],
+   "conflict": null
+  },
+  "10110": {
+   "tip": "Manji wants the Zombie Mushroom kills first, then the Charms of the Undead; Ant Tunnel III is the best map.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Maya and the Weird Medicine",
+   "sourceIds": [
+    "hgg-maya-med"
+   ],
+   "conflict": null
+  },
+  "10111": {
+   "tip": "Leaf: Dark Stumps (West Domain of Perion). Octopus Leg: Damp Tree-Forest. Squishy Liquid's drop source wasn't confirmed.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Maya and the Weird Medicine",
+   "sourceIds": [
+    "hgg-maya-med"
+   ],
+   "conflict": null
+  },
+  "10112": {
+   "tip": "Trade the rock to Teo, deliver to Maya. Completing this unlocks Maya's Collection quests.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Maya and the Weird Medicine",
+   "sourceIds": [
+    "hgg-maya-med",
+    "hgg-maya-col1"
+   ],
+   "conflict": null
+  },
+  "10113": {
+   "tip": "Luke guards the Henesys Dungeon Entrance. Jr. Necki: Dangerous Croko I; Stirges: Transfer Area. Buy the Salad (220 mesos) and bring everything at once. Pays a random refined jewel.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": null,
+   "sourceIds": [
+    "hgg-luke1"
+   ],
+   "conflict": null
+  },
+  "10114": {
+   "tip": "Crafting-heavy: Black Feather from Arwen, Orihalcon Ingots (Smithing 5), Screws, Drake Skulls (Drake's Meal Table). Dragon Skin source unconfirmed. Pays Bronze Crusader Helm.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": null,
+   "sourceIds": [
+    "hgg-luke2"
+   ],
+   "conflict": null
+  },
+  "10115": {
+   "tip": "Requires Delivering the Weird Medicine. 20 each of Orange, Green, Blue and Horny Mushroom Caps.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Maya's Collections",
+   "sourceIds": [
+    "hgg-maya-col1",
+    "mcc-money"
+   ],
+   "conflict": null
+  },
+  "10116": {
+   "tip": "Pig's Ribbon (L Forest I), Bubbling's Huge Bubble (Line 1), Fire Boar's Tooth (Burnt Land V), Tablecloth (Line 2).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Maya's Collections",
+   "sourceIds": [
+    "hgg-maya-col1"
+   ],
+   "conflict": null
+  },
+  "10117": {
+   "tip": "Iron Hog (Pig Park II), Lupin (Monkey Swamp I), Cold Eye, Tortie (Hot Sand) drops; talk to Maya again after the first set.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Maya's Collections",
+   "sourceIds": [
+    "hgg-maya-col2"
+   ],
+   "conflict": null
+  },
+  "10118": {
+   "tip": "Stone Golem Rubble (Golem's Temple III), Dark Stone Golem Rubble (Sleepy Dungeon V) and a Diamond (Arcforge 6 from Diamond Ore). Pays the Green Napoleon cape.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Maya's Collections",
+   "sourceIds": [
+    "hgg-maya-col2"
+   ],
+   "conflict": null
+  },
+  "10119": {
+   "tip": "Silver Ingots via Smithing 4, Screws via crafting; Dragon Skin source still unconfirmed.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Pia's Present For a Friend",
+   "sourceIds": [
+    "hgg-pia-present"
+   ],
+   "conflict": null
+  },
+  "10121": {
+   "tip": "Rina wants Medicine With Weird Vibes (Wraiths, Line 2 <Area 3>), an Ancient Scroll (rare) and a Black Crystal.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Pia's Present For a Friend",
+   "sourceIds": [
+    "hgg-pia-present"
+   ],
+   "conflict": null
+  },
+  "10124": {
+   "tip": "Requires The Stump Horror Story and The Reason Behind the Mushroom Studies. Carry Ayan's Toy Sword from Bruce (Henesys) to Ayan (Perion).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Bruce and Ayan",
+   "sourceIds": [
+    "hgg-daughter"
+   ],
+   "conflict": null
+  },
+  "10125": {
+   "tip": "Take Ayan's letter back to Bruce. Prerequisite for Taking Out the Alligators and for the Henesys citizenship story Bruce's Dilemma.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Bruce and Ayan",
+   "sourceIds": [
+    "hgg-daughter",
+    "hgg-alligators",
+    "hgg-family"
+   ],
+   "conflict": null
+  },
+  "10126": {
+   "tip": "Starts with Pia in Henesys Park; then ask Jay and Mrs. Ming Ming in Henesys.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": 20,
+   "chain": "Legend of the Snail",
+   "sourceIds": [
+    "hgg-snail"
+   ],
+   "conflict": null
+  },
+  "10128": {
+   "tip": "Wing the Fairy (Ellinia) wants 20 each of Snail, Blue Snail and Red Snail Shells; Red ones from The Field West of Amherst on Victoria.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Legend of the Snail",
+   "sourceIds": [
+    "hgg-snail"
+   ],
+   "conflict": null
+  },
+  "10129": {
+   "tip": "Mano roams Thicket Around the Beach near Lith Harbor and spawns only about once an hour, so time your visit.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Legend of the Snail",
+   "sourceIds": [
+    "hgg-snail"
+   ],
+   "conflict": null
+  },
+  "10130": {
+   "tip": "Final hand-in to Pia pays nothing, and using the shell just turns you into a snail.",
+   "worth": "skip",
+   "worthReason": "henesys.gg: the last step gives no reward.",
+   "recommendedLevel": null,
+   "chain": "Legend of the Snail",
+   "sourceIds": [
+    "hgg-snail"
+   ],
+   "conflict": null
+  },
+  "10200": {
+   "tip": "Arwen is far left in Ellinia; the Glass Shoe drops from Fire Boars (Burnt Land III/V). 50% chance of Piece of Ice, which Manji's Gladius chain needs.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": null,
+   "sourceIds": [
+    "hgg-arwen",
+    "hgg-gladius",
+    "mcc-money"
+   ],
+   "conflict": "henesys.gg says this quest is repeatable with no timer; the app's data marks it non-repeatable."
+  },
+  "10201": {
+   "tip": "Requires Returned Secret Book. Zombie Lupins drop the dolls; Monkey Swamp III is the densest map. The five stages need 570 dolls in all.",
+   "worth": "good",
+   "worthReason": "SSEGold: do (EXP and scroll mid-game).",
+   "recommendedLevel": null,
+   "chain": "Rowen the Fairy and the Cursed Doll",
+   "sourceIds": [
+    "hgg-rowen"
+   ],
+   "conflict": null
+  },
+  "10204": {
+   "tip": "Pays an Intermediate Gloves ATT or M.ATT scroll (50/50).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Rowen the Fairy and the Cursed Doll",
+   "sourceIds": [
+    "hgg-rowen"
+   ],
+   "conflict": null
+  },
+  "10205": {
+   "tip": "Final stage pays a class hat.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Rowen the Fairy and the Cursed Doll",
+   "sourceIds": [
+    "hgg-rowen"
+   ],
+   "conflict": null
+  },
+  "10208": {
+   "tip": "Drake Skulls drop from Drakes at Drake's Meal Table (Sleepywood), not from Copper Drakes.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Ronnie & the Fairies Building a New House",
+   "sourceIds": [
+    "hgg-ronnie"
+   ],
+   "conflict": null
+  },
+  "10209": {
+   "tip": "Cold Eyes: The Tunnel That Lost Light I. Craft the Diamond at Arcforge 6. Chain pays a random Shoes Speed scroll.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Ronnie & the Fairies Building a New House",
+   "sourceIds": [
+    "hgg-ronnie"
+   ],
+   "conflict": null
+  },
+  "10213": {
+   "tip": "Lyn is in a hidden room above the Magic Library (exit via its top-left portal). Torn Ledger Pages come from Fairies in Tree Dungeon VI/VII or Someone Else's House, only 2 per map with slow respawn; Fairies have very high M.DEF, so mages should bring a weapon user.",
+   "worth": "good",
+   "worthReason": "MeowDB: free Lv 28 earrings with 5 slots; SSEGold: large EXP (24,540 total).",
+   "recommendedLevel": 28,
+   "chain": "Caretaker's Ledger",
+   "sourceIds": [
+    "meow-ledger"
+   ],
+   "conflict": null
+  },
+  "10214": {
+   "tip": "Stan hands you the ledger; Manji in Perion needs to be spoken to twice.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Caretaker's Ledger",
+   "sourceIds": [
+    "meow-ledger"
+   ],
+   "conflict": null
+  },
+  "10215": {
+   "tip": "Nothing to collect; just travel to Chrishrama in Sleepywood.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Caretaker's Ledger",
+   "sourceIds": [
+    "meow-ledger"
+   ],
+   "conflict": null
+  },
+  "10216": {
+   "tip": "Chrishrama is just left of the Sleepywood Hotel door; talk to him again for the Bound Ledger and take it to the Receptionist inside. Pays 10 Mana Elixirs.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Caretaker's Ledger",
+   "sourceIds": [
+    "meow-ledger",
+    "meow-magician"
+   ],
+   "conflict": null
+  },
+  "10217": {
+   "tip": "Dark Lord's hideout door is right of the Kerning Pharmacy; Alex is on the rooftop straight above the Pharmacy door.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Caretaker's Ledger",
+   "sourceIds": [
+    "meow-ledger"
+   ],
+   "conflict": null
+  },
+  "10218": {
+   "tip": "Grendel hands you the Amended Ledger; return to Lyn through the Magic Library's top-left portal. Pays Faded Maple Leaf Earrings and 2 fame.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Caretaker's Ledger",
+   "sourceIds": [
+    "meow-ledger"
+   ],
+   "conflict": null
+  },
+  "10300": {
+   "tip": "Alex is on the Kerning City rooftop, right side. 15 Green (West Rocky Mountain III) + 15 Blue Mushroom Caps (Blue Mushroom Forest).",
+   "worth": "good",
+   "worthReason": "Recommended by MeowDB's beginner guide (3,159 EXP + mesos for the chain).",
+   "recommendedLevel": null,
+   "chain": "Alex the Runaway Kid",
+   "sourceIds": [
+    "hgg-alex",
+    "meow-beginner"
+   ],
+   "conflict": null
+  },
+  "10301": {
+   "tip": "Chief Stan won't discuss Alex until you hand over the caps.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Alex the Runaway Kid",
+   "sourceIds": [
+    "hgg-alex"
+   ],
+   "conflict": null
+  },
+  "10302": {
+   "tip": "Bring the watch back to Alex; choose Weighted Earrings or Yellow Square (Weighted Earrings are needed later in the fossil chain).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Alex the Runaway Kid",
+   "sourceIds": [
+    "hgg-alex",
+    "hgg-betty"
+   ],
+   "conflict": null
+  },
+  "10303": {
+   "tip": "Nella (middle of Kerning City) charges 1,000 mesos before handing out jobs. Orange Mushroom Caps + Pig's Ribbons (Ribbon Pigs, L Forest I).",
+   "worth": "good",
+   "worthReason": "MeowDB's beginner guide lists the Nella chain as a recommended Lv 10+ quest (Work Gloves).",
+   "recommendedLevel": null,
+   "chain": "Nella & Kerning City Citizen's Request",
+   "sourceIds": [
+    "hgg-nella1",
+    "meow-beginner"
+   ],
+   "conflict": null
+  },
+  "10304": {
+   "tip": "Dark Stumps for Leaves, best at West Domain of Perion.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Nella & Kerning City Citizen's Request",
+   "sourceIds": [
+    "hgg-nella1"
+   ],
+   "conflict": null
+  },
+  "10305": {
+   "tip": "Octopus Legs from Octopuses (Damp Tree-Forest) plus 1 Pure Water bought for 1,120 mesos.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Nella & Kerning City Citizen's Request",
+   "sourceIds": [
+    "hgg-nella1"
+   ],
+   "conflict": null
+  },
+  "10306": {
+   "tip": "Jr. Necki and Horny Mushrooms both in Swamp of Despair II; pays 30 White Potions.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Nella & Kerning City Citizen's Other Request",
+   "sourceIds": [
+    "hgg-nella2"
+   ],
+   "conflict": null
+  },
+  "10307": {
+   "tip": "Leather from Pigs (Thicket Around the Beach II). henesys.gg had no Stiff Feather source, but MeowDB lists Pigs, Ribbon Pigs, Stirges and Wild Boars as droppers.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Nella & Kerning City Citizen's Other Request",
+   "sourceIds": [
+    "hgg-nella2",
+    "meow-bowman"
+   ],
+   "conflict": null
+  },
+  "10308": {
+   "tip": "Evil Eye Tails from Cave of Evil Eye II/III near Sleepywood; pays class boots.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Nella & Kerning City Citizen's Other Request",
+   "sourceIds": [
+    "hgg-nella2"
+   ],
+   "conflict": null
+  },
+  "10309": {
+   "tip": "Jane Doe is at Niora Hospital (right side of Kerning). Stirges for Broken Mirror Glass are in the subway Transfer Area.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Mystery of Niora Hospital",
+   "sourceIds": [
+    "hgg-niora"
+   ],
+   "conflict": null
+  },
+  "10310": {
+   "tip": "Zombie Mushrooms in Ant Tunnel II/III for Charms of the Undead. Pays the Old Raggedy Cape (Lv 25, +1 accuracy) usable by any class.",
+   "worth": "good",
+   "worthReason": "Recommended in MeowDB's Warrior, Thief and beginner guides for the cape.",
+   "recommendedLevel": null,
+   "chain": "Mystery of Niora Hospital",
+   "sourceIds": [
+    "hgg-niora",
+    "meow-warrior",
+    "meow-thief",
+    "meow-beginner"
+   ],
+   "conflict": null
+  },
+  "10311": {
+   "tip": "This is the Kerning City Party Quest: party of 4, all Lv 21+, leader talks to Lakelis. Kill King Slime at the end. Earring scroll reward is random.",
+   "worth": "good",
+   "worthReason": "SSEGold: random earring scroll is a gear upgrade.",
+   "recommendedLevel": null,
+   "chain": null,
+   "sourceIds": [
+    "hgg-kpq",
+    "meow-thief"
+   ],
+   "conflict": null
+  },
+  "10312": {
+   "tip": "Enter through The Ticket Gate with a ticket (one per floor). 99-minute timer; no movement skills, summoning bags, Mystic Door or Teleport Rock. The item only exists while the quest is active.",
+   "worth": "good",
+   "worthReason": "MeowDB beginner guide recommends it (20,160 EXP + 12,222 mesos for the chain); SSEGold: do.",
+   "recommendedLevel": null,
+   "chain": "What Shumi Lost",
+   "sourceIds": [
+    "meow-jq",
+    "hgg-shumi"
+   ],
+   "conflict": null
+  },
+  "10313": {
+   "tip": "Return to Shumi between floors; this one pays 30 Blue Potions.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "What Shumi Lost",
+   "sourceIds": [
+    "hgg-shumi"
+   ],
+   "conflict": null
+  },
+  "10314": {
+   "tip": "Pays 10,000 mesos and 30 Mana Elixirs.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "What Shumi Lost",
+   "sourceIds": [
+    "hgg-shumi",
+    "meow-jq"
+   ],
+   "conflict": null
+  },
+  "10315": {
+   "tip": "Icarus is on top of a building in Kerning City; answer his questions.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Icarus",
+   "sourceIds": [
+    "hgg-imbored"
+   ],
+   "conflict": null
+  },
+  "10316": {
+   "tip": "Tree Branches come from Stumps (The Tree That Grew II). The Squishy Liquid drop source wasn't confirmed on henesys.gg.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Icarus",
+   "sourceIds": [
+    "hgg-imbored"
+   ],
+   "conflict": null
+  },
+  "10317": {
+   "tip": "Stirge Wings from the Transfer Area; Processed Wood is crafted from 10 Tree Branches + 100 mesos; Stiff Feathers drop from Pigs, Ribbon Pigs, Stirges and Wild Boars (per MeowDB).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Icarus",
+   "sourceIds": [
+    "hgg-icarus-dream",
+    "meow-bowman"
+   ],
+   "conflict": null
+  },
+  "10318": {
+   "tip": "Tablecloths from Jr. Wraiths on Line 2 <Area 1>. henesys.gg had no source for Alligator Skin Pouch.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Icarus",
+   "sourceIds": [
+    "hgg-icarus-dream"
+   ],
+   "conflict": null
+  },
+  "10319": {
+   "tip": "Needs Icarus's Dream done and Lv 46; Wing the Fairy is on the right side of Ellinia.",
+   "worth": "good",
+   "worthReason": "SSEGold lists Icarus and the Flying Medicine as a do.",
+   "recommendedLevel": null,
+   "chain": "Icarus",
+   "sourceIds": [
+    "hgg-icarus-med"
+   ],
+   "conflict": null
+  },
+  "10320": {
+   "tip": "Medicine With Weird Vibes from Wraiths, best at Line 2 <Area 3>. Witchgrass Leaf source wasn't listed.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Icarus",
+   "sourceIds": [
+    "hgg-icarus-med"
+   ],
+   "conflict": null
+  },
+  "10321": {
+   "tip": "Talk to Wing twice, then bring the medicine to Icarus for a random Green/Yellow/Blue cape.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Icarus",
+   "sourceIds": [
+    "hgg-icarus-med"
+   ],
+   "conflict": null
+  },
+  "10400": {
+   "tip": "Stumps (Tree Branch) and Dark Stumps (Leaf) both spawn on The Field South of Ellinia and The Tree That Grew II. Shield is random: Wooden Buckler 90%, Steel Shield 10%.",
+   "worth": "good",
+   "worthReason": "Recommended in MeowDB's Warrior guide for the shield.",
+   "recommendedLevel": null,
+   "chain": null,
+   "sourceIds": [
+    "hgg-blackbull1",
+    "meow-warrior"
+   ],
+   "conflict": null
+  },
+  "10401": {
+   "tip": "Needs Fixing Blackbull's House done. 100 Stone Golem Rubble (Golem's Temple III), crafted Screws and Processed Wood, and the Deed from Curse Eyes in Deep Forest I/II. Pick a Greater attack scroll for your class.",
+   "worth": "good",
+   "worthReason": "SSEGold: do it for gearing (Greater attack scroll).",
+   "recommendedLevel": null,
+   "chain": null,
+   "sourceIds": [
+    "hgg-blackbull2"
+   ],
+   "conflict": null
+  },
+  "10402": {
+   "tip": "Carry the sword from Manji (left side of Perion) to Chrishrama in Sleepywood.",
+   "worth": "good",
+   "worthReason": "SSEGold: do (EXP and equipment).",
+   "recommendedLevel": null,
+   "chain": "Manji's Old Gladius",
+   "sourceIds": [
+    "hgg-gladius"
+   ],
+   "conflict": null
+  },
+  "10403": {
+   "tip": "Prepare early: Star Rock (Sabitrama's Anti-Aging Medicine or Arwen), Piece of Ice (50% from Arwen and the Glass Shoe), Ancient Scroll and Flaming Feather (drops unconfirmed in Classic).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Manji's Old Gladius",
+   "sourceIds": [
+    "hgg-gladius",
+    "meow-jq"
+   ],
+   "conflict": null
+  },
+  "10404": {
+   "tip": "Back to Manji; choose Hero's Gladius or Skull Earrings.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Manji's Old Gladius",
+   "sourceIds": [
+    "hgg-gladius"
+   ],
+   "conflict": null
+  },
+  "10405": {
+   "tip": "Winston is on East Rocky Mountain II. Green Mushrooms: West Rocky Mountain III; Axe Stumps also spawn on East Rocky Mountain II/III. Plant/Animal Fossil drop sources weren't listed.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Winston's fossils",
+   "sourceIds": [
+    "hgg-fossil"
+   ],
+   "conflict": null
+  },
+  "10406": {
+   "tip": "Talk to Winston a second time for the Fossil Box and letter, then take both to Betty on the left side of Ellinia.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Winston's fossils",
+   "sourceIds": [
+    "hgg-fossil"
+   ],
+   "conflict": null
+  },
+  "10407": {
+   "tip": "Betty wants 8 Plant Samples; their source wasn't confirmed in the game files.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Winston's fossils",
+   "sourceIds": [
+    "hgg-betty"
+   ],
+   "conflict": null
+  },
+  "10408": {
+   "tip": "Fetch the Stuffed Drake Skull from Anne on The Hill East of Henesys.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Winston's fossils",
+   "sourceIds": [
+    "hgg-betty"
+   ],
+   "conflict": null
+  },
+  "10410": {
+   "tip": "Winston also wants Leaves, Firewood, a rare Stump's Teardrop (Dark Axe Stump, East Rocky Mountain V) and Weighted Earrings (Serabi, Ellinia, 9,000 mesos). Tip: Alex the Runaway Kid offers Weighted Earrings as a reward choice. Pays Leaf Earrings.",
+   "worth": "good",
+   "worthReason": "SSEGold lists Dr. Betty's Research on Plants as a do.",
+   "recommendedLevel": null,
+   "chain": "Winston's fossils",
+   "sourceIds": [
+    "hgg-betty",
+    "hgg-alex"
+   ],
+   "conflict": null
+  },
+  "10411": {
+   "tip": "Ayan won't leave Perion, so turn in there. Stumps are right outside Perion (West Street Corner, West Rocky Mountain I). Pays 2 Return Scrolls to Perion. Needed for I Need to Find My Daughter.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": null,
+   "sourceIds": [
+    "hgg-stump",
+    "hgg-daughter"
+   ],
+   "conflict": null
+  },
+  "10412": {
+   "tip": "Needs I Need to Find My Daughter done. Jr. Necki: Dangerous Croko I; Ligators: Swamp of Despair I. Pick a Greater attack scroll for your class.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "The Alligators at the Swamp",
+   "sourceIds": [
+    "hgg-alligators"
+   ],
+   "conflict": null
+  },
+  "10413": {
+   "tip": "120 Crocos and 50 Croco Skins; Dangerous Croko II is best. Pays an Intermediate cape stat scroll of your choice.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "The Alligators at the Swamp",
+   "sourceIds": [
+    "hgg-alligators"
+   ],
+   "conflict": null
+  },
+  "10414": {
+   "tip": "Long talk relay: Winston -> Blackbull -> Ayan -> Manji -> Dances with Balrog -> Betty (Ellinia) -> Winston.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "The Old Tree",
+   "sourceIds": [
+    "hgg-oldtree"
+   ],
+   "conflict": null
+  },
+  "10420": {
+   "tip": "100 Very Dry Branches from stumps around Perion is the slow part; collect them while you train nearby.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "The Old Tree",
+   "sourceIds": [
+    "hgg-oldtree"
+   ],
+   "conflict": null
+  },
+  "10421": {
+   "tip": "Stumpy (Lv 35) appears on Parched Land in Perion about once an hour, one at a time. Reward is a Gloves Crit. Rate Scroll: Chaos.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "The Old Tree",
+   "sourceIds": [
+    "hgg-oldtree"
+   ],
+   "conflict": null
+  },
+  "10500": {
+   "tip": "Mr. Wetbottom is in the VIP Sauna in Sleepywood; look for it under the Available tab as Mr. Wetbottom's Secret Book. Ronnie hangs out in The Tree Tunnel At the Forest Up North, near Ellinia.",
+   "worth": "good",
+   "worthReason": "MeowDB class guides point to it for the Sauna Robe; SSEGold: large EXP (49,140 total).",
+   "recommendedLevel": null,
+   "chain": "Mr. Wetbottom's Secret Book",
+   "sourceIds": [
+    "hgg-wetbottom",
+    "meow-qt-10500"
+   ],
+   "conflict": null
+  },
+  "10501": {
+   "tip": "Lupins for bananas live in the Ellinia monkey forests or Monkey Swamp I near Kerning; they are Lv 37, above the quest level.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Mr. Wetbottom's Secret Book",
+   "sourceIds": [
+    "hgg-wetbottom"
+   ],
+   "conflict": null
+  },
+  "10503": {
+   "tip": "Rina is on the left side of Henesys. Curse Eye Tails: Sleepy Dungeon V; Pig's Heads: Thicket Around the Beach II.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Mr. Wetbottom's Secret Book",
+   "sourceIds": [
+    "hgg-wetbottom"
+   ],
+   "conflict": null
+  },
+  "10506": {
+   "tip": "Rowen (right side of Ellinia) wants a Diamond, which you can craft at Arcforge Lv 6 from one Diamond Ore.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Mr. Wetbottom's Secret Book",
+   "sourceIds": [
+    "hgg-wetbottom"
+   ],
+   "conflict": null
+  },
+  "10508": {
+   "tip": "Pays the Sauna Robe: Blue for male, Red for female characters (+1 all stats, 10 slots). Also unlocks the Cursed Doll and Ronnie house chains.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Mr. Wetbottom's Secret Book",
+   "sourceIds": [
+    "hgg-wetbottom",
+    "meow-thief",
+    "meow-bowman",
+    "meow-qt-10500"
+   ],
+   "conflict": null
+  },
+  "10509": {
+   "tip": "Sabitrama stands in front of the Sleepywood Hotel; the jump quest entrance is via Shane in Ellinia, who charges a fee until you finish this quest. Movement skills are blocked except on Step 3.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Sabitrama",
+   "sourceIds": [
+    "meow-jq",
+    "hgg-sabitrama"
+   ],
+   "conflict": null
+  },
+  "10510": {
+   "tip": "Pays a Star Rock, which Manji's Gladius chain needs; Arwen in Ellinia can also trade you one.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Sabitrama",
+   "sourceIds": [
+    "meow-jq",
+    "hgg-gladius"
+   ],
+   "conflict": null
+  },
+  "10617": {
+   "tip": "Nyroth's failed Arcforge gives you the Scorched Arcon Scroll; deliver it to Jaime in Decayed Tunnel III. Pays a Cape Accuracy scroll. Forgotten Hollow is closed until the November 18 update.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Forgotten Hollow",
+   "sourceIds": [
+    "meow-fh"
+   ],
+   "conflict": null
+  },
+  "10618": {
+   "tip": "50 Echopuses: Perilous Descent I and II have 11 each, so use both maps. Item rewards are just fruit. Forgotten Hollow is closed until the November 18 update.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Forgotten Hollow",
+   "sourceIds": [
+    "meow-fh"
+   ],
+   "conflict": null
+  },
+  "10619": {
+   "tip": "Daniel is at the Precipice of Darkness, where the Duskmanders spawn; Duskmanders resist poison. Richest quest in the area (Greater Bottomwear HP scroll, 15 Elixirs). Forgotten Hollow is closed until the November 18 update.",
+   "worth": "good",
+   "worthReason": "MeowDB: highest-value quest in the Forgotten Hollow chain.",
+   "recommendedLevel": null,
+   "chain": "Forgotten Hollow",
+   "sourceIds": [
+    "meow-fh"
+   ],
+   "conflict": null
+  },
+  "10620": {
+   "tip": "Ends with a trip back to Grendel in Ellinia; plan your return. Forgotten Hollow is closed until the November 18 update.",
+   "worth": "good",
+   "worthReason": "MeowDB: one of the two highest-value Forgotten Hollow quests.",
+   "recommendedLevel": null,
+   "chain": "Forgotten Hollow",
+   "sourceIds": [
+    "meow-fh"
+   ],
+   "conflict": null
+  },
+  "10700": {
+   "tip": "Riel is in the middle of Florina Beach. Over the 4 stages you need 65 Coconuts, 55 Lupin's Bananas, 100 Lorang Claws and 70 Clang Claws, so bank extras.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Special Taste of Florina Beach",
+   "sourceIds": [
+    "hgg-florina"
+   ],
+   "conflict": null
+  },
+  "10702": {
+   "tip": "Heaviest stage; Clangs (Lv 49) are well above the quest level.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Special Taste of Florina Beach",
+   "sourceIds": [
+    "hgg-florina"
+   ],
+   "conflict": null
+  },
+  "20000": {
+   "tip": "Start with Dances with Balrog (Warriors' Sanctuary, Perion) at Lv 30. Spend all 1st-job SP first: 2nd-job SP can't go into 1st-job skills.",
+   "worth": "must-do",
+   "worthReason": "SSEGold: do immediately; it's your 2nd job advancement.",
+   "recommendedLevel": null,
+   "chain": "Warrior 2nd job advancement",
+   "sourceIds": [
+    "hgg-job-war",
+    "sse-quests"
+   ],
+   "conflict": null
+  },
+  "20001": {
+   "tip": "Take the letter to the Warrior Job Instructor at West Rocky Mountain IV (right side).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Warrior 2nd job advancement",
+   "sourceIds": [
+    "hgg-job-war"
+   ],
+   "conflict": null
+  },
+  "20002": {
+   "tip": "The instructor warps you into the hidden Warrior's Rocky Mountain; hunt there until you have 30 Dark Marbles, then return to him.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Warrior 2nd job advancement",
+   "sourceIds": [
+    "hgg-job-war"
+   ],
+   "conflict": null
+  },
+  "20003": {
+   "tip": "Bring The Proof of a Hero back to your job NPC and pick Fighter, Page or Spearman.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Warrior 2nd job advancement",
+   "sourceIds": [
+    "hgg-job-war"
+   ],
+   "conflict": null
+  },
+  "20100": {
+   "tip": "Start with Grendel the Really Old (Magic Library, Ellinia) at Lv 30. Spend all 1st-job SP first: 2nd-job SP can't go into 1st-job skills.",
+   "worth": "must-do",
+   "worthReason": "SSEGold: do immediately; it's your 2nd job advancement.",
+   "recommendedLevel": null,
+   "chain": "Magician 2nd job advancement",
+   "sourceIds": [
+    "hgg-job-mage",
+    "sse-quests"
+   ],
+   "conflict": null
+  },
+  "20101": {
+   "tip": "Take the letter to the Magician Job Instructor at The Forest North of Ellinia.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Magician 2nd job advancement",
+   "sourceIds": [
+    "hgg-job-mage"
+   ],
+   "conflict": null
+  },
+  "20102": {
+   "tip": "The instructor warps you into the hidden Magician's Tree Dungeon; hunt there until you have 30 Dark Marbles, then return to him.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Magician 2nd job advancement",
+   "sourceIds": [
+    "hgg-job-mage"
+   ],
+   "conflict": null
+  },
+  "20103": {
+   "tip": "Bring The Proof of a Hero back to your job NPC and pick F/P Wizard, I/L Wizard or Cleric.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Magician 2nd job advancement",
+   "sourceIds": [
+    "hgg-job-mage"
+   ],
+   "conflict": null
+  },
+  "20200": {
+   "tip": "Start with Athena Pierce (Henesys) at Lv 30. Spend all 1st-job SP first: 2nd-job SP can't go into 1st-job skills.",
+   "worth": "must-do",
+   "worthReason": "SSEGold: do immediately; it's your 2nd job advancement.",
+   "recommendedLevel": null,
+   "chain": "Bowman 2nd job advancement",
+   "sourceIds": [
+    "hgg-job-bow",
+    "sse-quests",
+    "meow-bowman"
+   ],
+   "conflict": null
+  },
+  "20201": {
+   "tip": "Take the letter to the Bowman Job Instructor at The Road to the Dungeon (right side).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Bowman 2nd job advancement",
+   "sourceIds": [
+    "hgg-job-bow"
+   ],
+   "conflict": null
+  },
+  "20202": {
+   "tip": "The instructor warps you into the hidden Ant Tunnel For Bowman; hunt there until you have 30 Dark Marbles, then return to him.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Bowman 2nd job advancement",
+   "sourceIds": [
+    "hgg-job-bow",
+    "meow-bowman"
+   ],
+   "conflict": null
+  },
+  "20203": {
+   "tip": "Bring The Proof of a Hero back to your job NPC and pick Hunter or Crossbowman.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Bowman 2nd job advancement",
+   "sourceIds": [
+    "hgg-job-bow"
+   ],
+   "conflict": null
+  },
+  "20300": {
+   "tip": "Start with Dark Lord (Thieves' Hideout, Kerning City) at Lv 30. Spend all 1st-job SP first: 2nd-job SP can't go into 1st-job skills.",
+   "worth": "must-do",
+   "worthReason": "SSEGold: do immediately; it's your 2nd job advancement.",
+   "recommendedLevel": null,
+   "chain": "Thief 2nd job advancement",
+   "sourceIds": [
+    "hgg-job-thief",
+    "sse-quests",
+    "meow-thief"
+   ],
+   "conflict": null
+  },
+  "20301": {
+   "tip": "Take the letter to the Thief Job Instructor at Construction Site North of Kerning City (right side).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Thief 2nd job advancement",
+   "sourceIds": [
+    "hgg-job-thief"
+   ],
+   "conflict": null
+  },
+  "20302": {
+   "tip": "The instructor warps you into the hidden Thief's Construction Site; hunt there until you have 30 Dark Marbles, then return to him.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Thief 2nd job advancement",
+   "sourceIds": [
+    "hgg-job-thief"
+   ],
+   "conflict": null
+  },
+  "20303": {
+   "tip": "Bring The Proof of a Hero back to your job NPC and pick Assassin or Bandit.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Thief 2nd job advancement",
+   "sourceIds": [
+    "hgg-job-thief"
+   ],
+   "conflict": null
+  },
+  "80000": {
+   "tip": "Revives a pet that turned into a doll. Pass Trainer Bartos's test on Pet-Walking Road (Henesys) for the Water of Life and Life Scroll, then return to Mar in Marr's Forest near Ellinia.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": null,
+   "sourceIds": [
+    "hgg-mar"
+   ],
+   "conflict": null
+  },
+  "80017": {
+   "tip": "Vicious is in Henesys Market. Woodcrafting makes arrows with no crafting fee (1 Processed Wood + 1 Stiff Feather = 500 arrows at skill 1), very handy for Bowmen.",
+   "worth": "good",
+   "worthReason": "MeowDB Bowman guide: cheap arrow supply.",
+   "recommendedLevel": null,
+   "chain": null,
+   "sourceIds": [
+    "meow-bowman"
+   ],
+   "conflict": null
+  },
+  "80026": {
+   "tip": "Pure delivery chain: Lewis (Free Market Entrance, reachable from Henesys or Perion) -> Chief Stan -> back to Lewis.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Welcome to the Free Market!",
+   "sourceIds": [
+    "hgg-fm"
+   ],
+   "conflict": null
+  },
+  "80028": {
+   "tip": "Second letter goes to Dances with Balrog in Perion; bring his reply back to Lewis.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Welcome to the Free Market!",
+   "sourceIds": [
+    "hgg-fm"
+   ],
+   "conflict": null
+  },
+  "500000": {
+   "tip": "Closed-test event: finishing it in a test earned a Classic Beginnings Label Ring and Chat Ring, delivered to the mailbox at launch.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": null,
+   "sourceIds": [
+    "mcc-firstweek"
+   ],
+   "conflict": null
+  },
+  "500001": {
+   "tip": "Closed-test event: if you finished it in a test, check your mailbox for the reward rings.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": null,
+   "sourceIds": [
+    "mcc-firstweek"
+   ],
+   "conflict": null
+  },
+  "500010": {
+   "tip": "100 Halloween Candies from Lv 10+ monsters to Malady, then her hidden mission, for the Pumpkin Basket. Can be farmed during the same sessions as The Journey Begins (overlap not confirmed by Nexon).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": null,
+   "sourceIds": [
+    "mcc-firstweek"
+   ],
+   "conflict": null
+  },
+  "506000": {
+   "tip": "Citizenship sign-up for Henesys with Arthur at Henesys Town Hall from Lv 12. Citizenship is account-wide and switching towns later costs 100,000 mesos, so choose once.",
+   "worth": "good",
+   "worthReason": "MeowDB: probably worth it for regular players (shop/storage discounts, VIP dailies).",
+   "recommendedLevel": null,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship",
+    "sse-quests",
+    "meow-warrior"
+   ],
+   "conflict": null
+  },
+  "506001": {
+   "tip": "The Community Board posts one resident per day; First Greeting is once per resident, Asking After repeats. Rina pays Oranges, then Lemons on repeats.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": null
+  },
+  "506015": {
+   "tip": "VIP daily: about 17x the EXP of a normal resident greeting (5,850 vs 334). Only appears once your town grade is high enough.",
+   "worth": "good",
+   "worthReason": "MeowDB names VIP dailies a main reason citizenship is worth it; maplestory-classic.com lists the First Greetings among the best-paying early quests.",
+   "recommendedLevel": 32,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship",
+    "mcc-money"
+   ],
+   "conflict": "MeowDB: VIP dailies unlock at grade 5 (Town Resident) and Lv 32; maplestory-classic.com lists them as level 12 quests (the app's data also says L12)."
+  },
+  "506016": {
+   "tip": "Repeatable VIP daily (4,095 EXP vs 233 for a normal resident). Only appears once your town grade is high enough.",
+   "worth": "good",
+   "worthReason": "MeowDB names VIP dailies a main reason citizenship is worth it; maplestory-classic.com lists the First Greetings among the best-paying early quests.",
+   "recommendedLevel": 32,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship",
+    "mcc-money"
+   ],
+   "conflict": "MeowDB: VIP dailies unlock at grade 5 (Town Resident) and Lv 32; maplestory-classic.com lists them as level 12 quests (the app's data also says L12)."
+  },
+  "506017": {
+   "tip": "VIP daily: about 17x the EXP of a normal resident greeting (5,850 vs 334). Only appears once your town grade is high enough.",
+   "worth": "good",
+   "worthReason": "MeowDB names VIP dailies a main reason citizenship is worth it; maplestory-classic.com lists the First Greetings among the best-paying early quests.",
+   "recommendedLevel": 32,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship",
+    "mcc-money"
+   ],
+   "conflict": "MeowDB: VIP dailies unlock at grade 5 (Town Resident) and Lv 32; maplestory-classic.com lists them as level 12 quests (the app's data also says L12)."
+  },
+  "506018": {
+   "tip": "Repeatable VIP daily (4,095 EXP vs 233 for a normal resident). Only appears once your town grade is high enough.",
+   "worth": "good",
+   "worthReason": "MeowDB names VIP dailies a main reason citizenship is worth it; maplestory-classic.com lists the First Greetings among the best-paying early quests.",
+   "recommendedLevel": 32,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship",
+    "mcc-money"
+   ],
+   "conflict": "MeowDB: VIP dailies unlock at grade 5 (Town Resident) and Lv 32; maplestory-classic.com lists them as level 12 quests (the app's data also says L12)."
+  },
+  "506019": {
+   "tip": "Weekly board task: hand in 30 Blue Snail Shell. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": null
+  },
+  "506020": {
+   "tip": "Weekly board task: hand in 30 Mushroom Spore. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": null
+  },
+  "506021": {
+   "tip": "Weekly board task: hand in 30 Red Snail Shell. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": null
+  },
+  "506022": {
+   "tip": "Weekly board task: hand in 30 Squishy Liquid. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": null
+  },
+  "506023": {
+   "tip": "Weekly board task: hand in 30 Orange Mushroom Cap. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": null
+  },
+  "506024": {
+   "tip": "Weekly board task: hand in 30 Green Mushroom Cap. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": null
+  },
+  "506025": {
+   "tip": "Weekly board task: hand in 30 Blue Mushroom Cap. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": 17,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": "MeowDB lists this donation at Lv 17; the app's data says L12."
+  },
+  "506026": {
+   "tip": "Weekly board task: hand in 30 Horny Mushroom Cap. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": 22,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": "MeowDB lists this donation at Lv 22; the app's data says L12."
+  },
+  "506027": {
+   "tip": "Weekly board task: hand in 30 Charm of the Undead. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": 22,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": "MeowDB lists this donation at Lv 22; the app's data says L12."
+  },
+  "506028": {
+   "tip": "Weekly board task: hand in 30 Wild Boar Tooth. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": 22,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": "MeowDB lists this donation at Lv 22; the app's data says L12."
+  },
+  "506029": {
+   "tip": "Weekly board task: hand in 30 Evil Eye Tail. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": 27,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": "MeowDB lists this donation at Lv 27; the app's data says L12."
+  },
+  "506030": {
+   "tip": "Weekly board task: hand in 30 Ligator Skin. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": 32,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": "MeowDB lists this donation at Lv 32; the app's data says L12."
+  },
+  "506031": {
+   "tip": "Weekly board task: hand in 30 Curse Eye Tail. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": 32,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": "MeowDB lists this donation at Lv 32; the app's data says L12."
+  },
+  "506032": {
+   "tip": "Weekly board task: hand in 30 Lorang Claw. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": 37,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": "MeowDB lists this donation at Lv 37; the app's data says L12."
+  },
+  "506033": {
+   "tip": "Weekly board task: hand in 30 Cold Eye Tail. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": 42,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": "MeowDB lists this donation at Lv 42; the app's data says L12."
+  },
+  "506034": {
+   "tip": "Weekly board task: hand in 30 Tortie Shell. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": 47,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": "MeowDB lists this donation at Lv 47; the app's data says L12."
+  },
+  "506035": {
+   "tip": "Weekly board task: hand in 30 Drake Skull. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": 52,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": "MeowDB lists this donation at Lv 52; the app's data says L12."
+  },
+  "506036": {
+   "tip": "Needs Henesys grade 2+, I Need to Find My Daughter 2 and First Greeting with Bruce.",
+   "worth": "good",
+   "worthReason": "SSEGold: strong EXP plus a pet scroll.",
+   "recommendedLevel": null,
+   "chain": "A Family Reunited (Henesys citizenship story)",
+   "sourceIds": [
+    "hgg-family"
+   ],
+   "conflict": null
+  },
+  "506038": {
+   "tip": "Firewood from Axe Stumps (The Forest North of Ellinia); Eggs, Apples and Oranges can simply be bought from NPC shops.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "A Family Reunited (Henesys citizenship story)",
+   "sourceIds": [
+    "hgg-family"
+   ],
+   "conflict": null
+  },
+  "506039": {
+   "tip": "Deliver Bruce's Special Cake to Ayan in Perion.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "A Family Reunited (Henesys citizenship story)",
+   "sourceIds": [
+    "hgg-family"
+   ],
+   "conflict": null
+  },
+  "506040": {
+   "tip": "Return Ayan's message to Bruce; chain pays a random pet Speed/Jump scroll.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "A Family Reunited (Henesys citizenship story)",
+   "sourceIds": [
+    "hgg-family"
+   ],
+   "conflict": "henesys.gg gives 100 contribution for the last step in one place and 300 total in another; Blue Potions listed as 10 in steps vs 20 in rewards."
+  },
+  "506041": {
+   "tip": "Needs Henesys grade 4+, Estelle's Special Sauce and First Greeting with Mrs. Ming Ming.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "After the Festival Ends (Henesys citizenship story)",
+   "sourceIds": [
+    "hgg-festival"
+   ],
+   "conflict": null
+  },
+  "506043": {
+   "tip": "Hunt Evil Eyes in Ant Tunnel Park or Deep Ant Tunnel I for Old Chief Stan's Hammer.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "After the Festival Ends (Henesys citizenship story)",
+   "sourceIds": [
+    "hgg-festival",
+    "mcc-money"
+   ],
+   "conflict": null
+  },
+  "506045": {
+   "tip": "The chain doesn't end at Chief Stan: go back to Mrs. Ming Ming. Pick one Intermediate earring stat scroll.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "After the Festival Ends (Henesys citizenship story)",
+   "sourceIds": [
+    "hgg-festival"
+   ],
+   "conflict": null
+  },
+  "506046": {
+   "tip": "Needs Henesys grade 6+, Camila's Gem and First Greeting with Camila.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "A Marble of Friendship (Henesys citizenship story)",
+   "sourceIds": [
+    "hgg-marble"
+   ],
+   "conflict": null
+  },
+  "506048": {
+   "tip": "Jr. Boogies (Kerning subway depot, Deep Ant Tunnel I) are the likely Horn source, but the drop wasn't confirmed.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "A Marble of Friendship (Henesys citizenship story)",
+   "sourceIds": [
+    "hgg-marble"
+   ],
+   "conflict": null
+  },
+  "506050": {
+   "tip": "Finish with Camila and choose an Intermediate Overall Armor scroll (DEF/STR/DEX/INT/LUK).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "A Marble of Friendship (Henesys citizenship story)",
+   "sourceIds": [
+    "hgg-marble"
+   ],
+   "conflict": null
+  },
+  "506051": {
+   "tip": "Needs Henesys grade 8+, the Weird Medicine chain and First Greeting with Maya.",
+   "worth": "good",
+   "worthReason": "SSEGold: large EXP (57,000 for the chain).",
+   "recommendedLevel": null,
+   "chain": "Maya and Her Peculiar Savior (Henesys citizenship story)",
+   "sourceIds": [
+    "hgg-savior"
+   ],
+   "conflict": null
+  },
+  "506052": {
+   "tip": "Defeat Mushmom at Someone Else's House (hidden map off Pig Park II).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Maya and Her Peculiar Savior (Henesys citizenship story)",
+   "sourceIds": [
+    "hgg-savior"
+   ],
+   "conflict": null
+  },
+  "506053": {
+   "tip": "Chrishrama in Sleepywood won't talk without 50 Drake Skulls (Drake's Meal Table).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Maya and Her Peculiar Savior (Henesys citizenship story)",
+   "sourceIds": [
+    "hgg-savior"
+   ],
+   "conflict": null
+  },
+  "506056": {
+   "tip": "Henesys grade 10 at Lv 57 (32,000 contribution). Athena Pierce starts it.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Citizen of Honor",
+   "sourceIds": [
+    "hgg-honor-hen",
+    "meow-citizenship"
+   ],
+   "conflict": null
+  },
+  "506059": {
+   "tip": "Vicious (Henesys Market) needs 10 Dragon Skin and 10 Fragment of Magic; drop sources were inconsistent on henesys.gg.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Citizen of Honor",
+   "sourceIds": [
+    "hgg-honor-hen"
+   ],
+   "conflict": null
+  },
+  "506060": {
+   "tip": "Pays the untradeable Henesys Earrings (42 M.DEF, +2% crit damage, 5 slots).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Citizen of Honor",
+   "sourceIds": [
+    "meow-citizenship",
+    "hgg-honor-hen"
+   ],
+   "conflict": null
+  },
+  "506061": {
+   "tip": "Henesys grade 2 (Visitor) + Lv 17: Arthur at Town Hall sends you to Tommy (talk twice).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Home ownership",
+   "sourceIds": [
+    "hgg-home-hen",
+    "meow-citizenship"
+   ],
+   "conflict": null
+  },
+  "506062": {
+   "tip": "Tommy sends you to Bianca in east Henesys, who sells houses and gives starter furniture. One home per account, shared by all characters.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Home ownership",
+   "sourceIds": [
+    "hgg-home-hen",
+    "meow-citizenship"
+   ],
+   "conflict": null
+  },
+  "506100": {
+   "tip": "Kerning City sign-up (Roxy at the Kerning City Civic Center). MeowDB's Magician guide recommends Kerning for mages because Ben's scroll shop sells the Lesser Overall INT scroll at Distinguished Citizen.",
+   "worth": "good",
+   "worthReason": "MeowDB: probably worth it for regular players.",
+   "recommendedLevel": null,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship",
+    "meow-magician",
+    "sse-quests"
+   ],
+   "conflict": null
+  },
+  "506115": {
+   "tip": "VIP daily: about 17x the EXP of a normal resident greeting (5,850 vs 334). Only appears once your town grade is high enough.",
+   "worth": "good",
+   "worthReason": "MeowDB names VIP dailies a main reason citizenship is worth it; maplestory-classic.com lists the First Greetings among the best-paying early quests.",
+   "recommendedLevel": 32,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship",
+    "mcc-money"
+   ],
+   "conflict": "MeowDB: VIP dailies unlock at grade 5 (Town Resident) and Lv 32; maplestory-classic.com lists them as level 12 quests (the app's data also says L12)."
+  },
+  "506116": {
+   "tip": "Repeatable VIP daily (4,095 EXP vs 233 for a normal resident). Only appears once your town grade is high enough.",
+   "worth": "good",
+   "worthReason": "MeowDB names VIP dailies a main reason citizenship is worth it; maplestory-classic.com lists the First Greetings among the best-paying early quests.",
+   "recommendedLevel": 32,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship",
+    "mcc-money"
+   ],
+   "conflict": "MeowDB: VIP dailies unlock at grade 5 (Town Resident) and Lv 32; maplestory-classic.com lists them as level 12 quests (the app's data also says L12)."
+  },
+  "506117": {
+   "tip": "VIP daily: about 17x the EXP of a normal resident greeting (5,850 vs 334). Only appears once your town grade is high enough.",
+   "worth": "good",
+   "worthReason": "MeowDB names VIP dailies a main reason citizenship is worth it; maplestory-classic.com lists the First Greetings among the best-paying early quests.",
+   "recommendedLevel": 32,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship",
+    "mcc-money"
+   ],
+   "conflict": "MeowDB: VIP dailies unlock at grade 5 (Town Resident) and Lv 32; maplestory-classic.com lists them as level 12 quests (the app's data also says L12)."
+  },
+  "506118": {
+   "tip": "Repeatable VIP daily (4,095 EXP vs 233 for a normal resident). Only appears once your town grade is high enough.",
+   "worth": "good",
+   "worthReason": "MeowDB names VIP dailies a main reason citizenship is worth it; maplestory-classic.com lists the First Greetings among the best-paying early quests.",
+   "recommendedLevel": 32,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship",
+    "mcc-money"
+   ],
+   "conflict": "MeowDB: VIP dailies unlock at grade 5 (Town Resident) and Lv 32; maplestory-classic.com lists them as level 12 quests (the app's data also says L12)."
+  },
+  "506119": {
+   "tip": "Weekly board task: hand in 30 Red Snail Shell. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": null
+  },
+  "506120": {
+   "tip": "Weekly board task: hand in 30 Orange Mushroom Cap. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": null
+  },
+  "506121": {
+   "tip": "Weekly board task: hand in 30 Leaf. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": null
+  },
+  "506122": {
+   "tip": "Weekly board task: hand in 30 Pig's Ribbon. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": null
+  },
+  "506123": {
+   "tip": "Weekly board task: hand in 30 Octopus Leg. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": null
+  },
+  "506124": {
+   "tip": "Weekly board task: hand in 30 Bubbling's Huge Bubble. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": null
+  },
+  "506125": {
+   "tip": "Weekly board task: hand in 30 Firewood. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": 17,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": "MeowDB lists this donation at Lv 17; the app's data says L12."
+  },
+  "506126": {
+   "tip": "Weekly board task: hand in 30 Stirge Wing. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": 22,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": "MeowDB lists this donation at Lv 22; the app's data says L12."
+  },
+  "506127": {
+   "tip": "Weekly board task: hand in 30 Charm of the Undead. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": 22,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": "MeowDB lists this donation at Lv 22; the app's data says L12."
+  },
+  "506128": {
+   "tip": "Weekly board task: hand in 30 Wild Boar Tooth. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": 22,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": "MeowDB lists this donation at Lv 22; the app's data says L12."
+  },
+  "506129": {
+   "tip": "Weekly board task: hand in 30 Evil Eye Tail. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": 27,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": "MeowDB lists this donation at Lv 27; the app's data says L12."
+  },
+  "506130": {
+   "tip": "Weekly board task: hand in 30 Ligator Skin. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": 32,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": "MeowDB lists this donation at Lv 32; the app's data says L12."
+  },
+  "506131": {
+   "tip": "Weekly board task: hand in 30 Fire Boar's Tooth. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": 32,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": "MeowDB lists this donation at Lv 32; the app's data says L12."
+  },
+  "506132": {
+   "tip": "Weekly board task: hand in 30 Tablecloth. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": 32,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": "MeowDB lists this donation at Lv 32; the app's data says L12."
+  },
+  "506133": {
+   "tip": "Weekly board task: hand in 30 Lupin's Banana. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": 37,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": "MeowDB lists this donation at Lv 37; the app's data says L12."
+  },
+  "506134": {
+   "tip": "Weekly board task: hand in 30 Cold Eye Tail. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": 42,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": "MeowDB lists this donation at Lv 42; the app's data says L12."
+  },
+  "506135": {
+   "tip": "Weekly board task: hand in 30 Tortie Shell. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": 47,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": "MeowDB lists this donation at Lv 47; the app's data says L12."
+  },
+  "506136": {
+   "tip": "Weekly board task: hand in 30 Medicine With Weird Vibes. The items are the only cost; pays contribution plus 20 Blue Potions. Weekly reset reportedly Monday 00:00 UTC (unconfirmed).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": 52,
+   "chain": "Citizenship",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": "MeowDB lists this donation at Lv 52; the app's data says L12."
+  },
+  "506137": {
+   "tip": "Needs Kerning grade 2+ and First Greeting with Jake. Jake is at the Subway Ticketing Booth; Mong from Kong is on the right of Kerning.",
+   "worth": "good",
+   "worthReason": "SSEGold: strong EXP plus a pet scroll.",
+   "recommendedLevel": null,
+   "chain": "Jake's Trauma (Kerning citizenship story)",
+   "sourceIds": [
+    "hgg-jake"
+   ],
+   "conflict": null
+  },
+  "506138": {
+   "tip": "Bubbling bubbles on Line 1 <Area 1>; Stirge Wings in the Transfer Area.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Jake's Trauma (Kerning citizenship story)",
+   "sourceIds": [
+    "hgg-jake"
+   ],
+   "conflict": null
+  },
+  "506140": {
+   "tip": "Mr. Goldstein is in Lith Harbor, so this chain bounces between Kerning and Lith twice.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Jake's Trauma (Kerning citizenship story)",
+   "sourceIds": [
+    "hgg-jake"
+   ],
+   "conflict": null
+  },
+  "506142": {
+   "tip": "Needs Kerning grade 4+, Mother's Gold Watch and First Greeting with Alex. Hunt Ligators in Swamp of Despair I/II.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "What the City Taught Me (Kerning citizenship story)",
+   "sourceIds": [
+    "hgg-city"
+   ],
+   "conflict": null
+  },
+  "506144": {
+   "tip": "After Nella, report back to Alex to collect her Lemon payout.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "What the City Taught Me (Kerning citizenship story)",
+   "sourceIds": [
+    "hgg-city",
+    "mcc-money"
+   ],
+   "conflict": null
+  },
+  "506146": {
+   "tip": "JM From tha Streetz is on the left side of Kerning; pick one Intermediate earring stat scroll.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "What the City Taught Me (Kerning citizenship story)",
+   "sourceIds": [
+    "hgg-city"
+   ],
+   "conflict": null
+  },
+  "506147": {
+   "tip": "Needs Kerning grade 6+, Stranger's Identity and First Greeting with Jane Doe. Tablecloths from Jr. Wraiths on Line 2 <Area 1>.",
+   "worth": "good",
+   "worthReason": "SSEGold lists the Niora Hospital line as a do.",
+   "recommendedLevel": null,
+   "chain": "The Doctor Who Never Returned (Kerning citizenship story)",
+   "sourceIds": [
+    "hgg-doctor"
+   ],
+   "conflict": null
+  },
+  "506150": {
+   "tip": "Fairy's Tentacle drop source wasn't confirmed on henesys.gg.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "The Doctor Who Never Returned (Kerning citizenship story)",
+   "sourceIds": [
+    "hgg-doctor"
+   ],
+   "conflict": null
+  },
+  "506151": {
+   "tip": "Return to Jane Doe and pick an Intermediate Overall Armor scroll.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "The Doctor Who Never Returned (Kerning citizenship story)",
+   "sourceIds": [
+    "hgg-doctor"
+   ],
+   "conflict": null
+  },
+  "506152": {
+   "tip": "Needs Kerning grade 8+ and First Greeting with Chun Ji (Kerning City Construction Site). 50 Wraiths in the subway.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "A Grudge That Won't Rest (Kerning citizenship story)",
+   "sourceIds": [
+    "hgg-grudge"
+   ],
+   "conflict": null
+  },
+  "506155": {
+   "tip": "Reach Cabin of the Forsaken through The Murky Swamp and kill Shade (47,000 HP, weak to Holy).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "A Grudge That Won't Rest (Kerning citizenship story)",
+   "sourceIds": [
+    "hgg-grudge"
+   ],
+   "conflict": null
+  },
+  "506157": {
+   "tip": "Kerning grade 10 at Lv 57. Dark Lord starts it.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Citizen of Honor",
+   "sourceIds": [
+    "hgg-honor-ker",
+    "meow-citizenship"
+   ],
+   "conflict": null
+  },
+  "506158": {
+   "tip": "Encrypted Document drops from Crocos, best at Dangerous Croko II.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Citizen of Honor",
+   "sourceIds": [
+    "hgg-honor-ker"
+   ],
+   "conflict": null
+  },
+  "506160": {
+   "tip": "Slade is at The Hermit's Cabin; Ink of Truth drops from Maladies in Forest of Evil I/II.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Citizen of Honor",
+   "sourceIds": [
+    "hgg-honor-ker"
+   ],
+   "conflict": null
+  },
+  "506161": {
+   "tip": "Pays the untradeable Kerning City Earrings (42 M.DEF, +2% crit damage, 5 slots).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Citizen of Honor",
+   "sourceIds": [
+    "meow-citizenship",
+    "hgg-honor-ker"
+   ],
+   "conflict": null
+  },
+  "506162": {
+   "tip": "Kerning version: Roxy -> Jack, needs grade 2 and Lv 17.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Home ownership",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": null
+  },
+  "506163": {
+   "tip": "Jack sends you to Scarlett; one home per account.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Home ownership",
+   "sourceIds": [
+    "meow-citizenship"
+   ],
+   "conflict": null
+  },
+  "600002": {
+   "tip": "From Lv 10, Maple Leaves drop from Lv 10+ monsters; trade 30 to the Maple Administrator once a day. Missing a day only delays you. 14 daily rewards, runs to the end of Nov 18, 2026 (UTC).",
+   "worth": "good",
+   "worthReason": "maplestory-classic.com: worth doing daily from level 10.",
+   "recommendedLevel": null,
+   "chain": null,
+   "sourceIds": [
+    "mcc-firstweek"
+   ],
+   "conflict": null
+  },
+  "600004": {
+   "tip": "Talk to Jay in Henesys at Lv 25+. Once per account, and the event runs Oct 21 to Nov 18, 2026. Reward hat is untradeable but storage-transferable, and sells to NPCs for 1,500, so don't vendor it by mistake.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Mark of the Beta",
+   "sourceIds": [
+    "meow-beta",
+    "mcc-firstweek"
+   ],
+   "conflict": null
+  },
+  "600005": {
+   "tip": "Page location: The Pig Beach, off 3-Way Road-Split, on the low ground between trees right of the left cliff.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Mark of the Beta",
+   "sourceIds": [
+    "meow-beta"
+   ],
+   "conflict": null
+  },
+  "600006": {
+   "tip": "Page location: Someone Else's House, the hidden mushroom-house door behind Pig Park II (Mushmom and Iron Hogs live there).",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Mark of the Beta",
+   "sourceIds": [
+    "meow-beta"
+   ],
+   "conflict": null
+  },
+  "600007": {
+   "tip": "Page location: Marr's Forest off Ellinia, right end of the lowest platform.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Mark of the Beta",
+   "sourceIds": [
+    "meow-beta"
+   ],
+   "conflict": null
+  },
+  "600008": {
+   "tip": "Page location: Mong from Kong just right of the Kerning pharmacy; costs 10 mesos.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Mark of the Beta",
+   "sourceIds": [
+    "meow-beta"
+   ],
+   "conflict": null
+  },
+  "600009": {
+   "tip": "Page location: The Land of Wild Boar II, hidden portal top-right of East Domain of Perion; second stepping stone from the left before the rope.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Mark of the Beta",
+   "sourceIds": [
+    "meow-beta"
+   ],
+   "conflict": null
+  },
+  "600010": {
+   "tip": "Page location: Ant Tunnel Park past Deep Ant Tunnel II, upper right just below the portal to The Grave of Mushmom.",
+   "worth": null,
+   "worthReason": null,
+   "recommendedLevel": null,
+   "chain": "Mark of the Beta",
+   "sourceIds": [
+    "meow-beta"
+   ],
+   "conflict": null
+  }
+ },
+ "general": [
+  {
+   "topic": "Maple Island",
+   "text": "Talk to every NPC on Maple Island: most hand out a small quest. Turn everything in before boarding Shanks's boat in Southperry, because the trip to Victoria Island is one-way. The Green Relaxer chair from Pio cannot be obtained anywhere else.",
+   "sourceIds": [
+    "meow-beginner",
+    "hgg-beginner"
+   ]
+  },
+  {
+   "topic": "Maple Island efficient route",
+   "text": "henesys.gg's optimizer suggests accepting every quest in a round before hunting: Snail Hunting Ground II covers Sam's and Biggs's snails together, and the talk-only quests (Sera, Sen, Lucas, Rain) can be chained while walking through.",
+   "sourceIds": [
+    "hgg-optimizer"
+   ]
+  },
+  {
+   "topic": "First job",
+   "text": "Job instructors: Dances with Balrog (Perion), Grendel the Really Old (Ellinia Magic Library), Athena Pierce (Henesys), Dark Lord (Kerning City, Thieves' Hideout). Use taxis while still a Beginner, since they are 90% off.",
+   "sourceIds": [
+    "meow-beginner",
+    "hgg-beginner",
+    "meow-thief"
+   ]
+  },
+  {
+   "topic": "First job stat requirements (conflict)",
+   "text": "MeowDB's class guides and henesys.gg say Classic World removed the stat requirements for 1st job (all at Lv 10). maplestory-classic.com's first-week guide still lists stat gates (e.g. Warrior STR 35, Magician INT 20 at Lv 8, Bowman/Thief DEX 25). Shown as a conflict, not resolved.",
+   "sourceIds": [
+    "meow-thief",
+    "meow-bowman",
+    "hgg-beginner",
+    "mcc-firstweek"
+   ]
+  },
+  {
+   "topic": "Second job",
+   "text": "At Lv 30 your 1st-job NPC sends you to a Job Instructor, who warps you into a hidden test map to collect 30 Dark Marbles; trade them for The Proof of a Hero and return. Finish your 1st-job SP plan first: 2nd-job SP can't be spent on 1st-job skills. Test maps give about 1.7x normal EXP but you only pass through them.",
+   "sourceIds": [
+    "hgg-job-war",
+    "meow-bowman",
+    "meow-thief",
+    "mcc-leveling"
+   ]
+  },
+  {
+   "topic": "Recommended quests Lv 10-35 (MeowDB)",
+   "text": "MeowDB's beginner guide singles out: Nella's citizen requests (Lv 10, 1,000-meso fee), Alex the Runaway Kid (18), Jane and the Mushroom (20), Mystery of Niora Hospital (23, Old Raggedy Cape), What Shumi Lost (35). Don't sell quest items; check the Safe to Sell list first.",
+   "sourceIds": [
+    "meow-beginner"
+   ]
+  },
+  {
+   "topic": "Best-paying early quests (mesos/EXP)",
+   "text": "maplestory-classic.com ranks the VIP First Greetings, the Lv 27 citizenship quests (Chief Stan's Hammer, Nella's Old Memory), the Caretaker's Ledger chain (Lv 28), Arwen and the Glass Shoe (29) and Maya's Collections (30) as the best one-time payouts up to Lv 30. Quest mesos are one-time, so don't budget potions around them.",
+   "sourceIds": [
+    "mcc-money"
+   ]
+  },
+  {
+   "topic": "Citizenship overview",
+   "text": "Unlocks at Lv 12 with Arthur (Henesys Town Hall) or Roxy (Kerning Civic Center). Account-wide; switching towns costs 100,000 mesos. Contribution comes from daily greetings (one resident posted per day; First Greeting once, Asking After repeats), weekly donations (30 of one ETC item, plus 20 Blue Potions), home quests and five 10-quest story arcs per town (Lv 17-57). Ten grades give 5-25% shop and 5-50% storage discounts and unlock shop items. Promote yourself at your town NPC; excess contribution may be lost (unconfirmed).",
+   "sourceIds": [
+    "meow-citizenship"
+   ]
+  },
+  {
+   "topic": "Is citizenship worth it?",
+   "text": "MeowDB: probably yes if you play regularly, use buff potions/return scrolls/pet food, or want VIP dailies; less useful for casual players since grade 10 needs steady daily and weekly work. Story-arc quests also pay scrolls (earring, overall, gloves crit) and the grade-10 earrings.",
+   "sourceIds": [
+    "meow-citizenship"
+   ]
+  },
+  {
+   "topic": "Which town?",
+   "text": "MeowDB's Warrior guide suggests Henesys (Arthur); its Magician guide recommends Kerning City for the INT overall scroll in Ben's shop at Distinguished Citizen. Pick early because switching costs 100,000 mesos.",
+   "sourceIds": [
+    "meow-warrior",
+    "meow-magician",
+    "meow-citizenship"
+   ]
+  },
+  {
+   "topic": "VIP daily level (conflict)",
+   "text": "MeowDB says VIP dailies (Chief Stan, Athena Pierce, Chun Ji, Dark Lord) unlock at grade 5 and Lv 32; maplestory-classic.com lists them at Lv 12. The app's data says L12.",
+   "sourceIds": [
+    "meow-citizenship",
+    "mcc-money"
+   ]
+  },
+  {
+   "topic": "Donation level gates",
+   "text": "The game data shows all donations at L12, but MeowDB lists level gates by item (e.g. Blue Mushroom Cap/Firewood 17, Horny Mushroom Cap 22, Evil Eye Tail 27, Ligator Skin 32, Lorang Claw/Lupin's Banana 37, Cold Eye Tail 42, Tortie Shell 47, Drake Skull/Medicine With Weird Vibes 52). EXP rises with the gate, from 334 to 14,200.",
+   "sourceIds": [
+    "meow-citizenship"
+   ]
+  },
+  {
+   "topic": "Kerning City Party Quest",
+   "text": "Available from Lv 21 in a party of four (Proof of Companionship with Lakelis). King Slime drops Squishy Shoes; MeowDB's Magician guide suggests Magic Guard 1 at Lv 21 for the King Slime fight.",
+   "sourceIds": [
+    "meow-thief",
+    "meow-magician",
+    "hgg-kpq"
+   ]
+  },
+  {
+   "topic": "Jump quests",
+   "text": "Shumi's subway (Lv 35, ticket per floor, 99-minute timer), Sabitrama's Forest of Patience (Lv 25/50, enter via Shane in Ellinia), John's Deep Forest of Patience (Lv 65, enter via the Mysterious Statue in Sleepywood). All block movement skills and Teleport Rock.",
+   "sourceIds": [
+    "meow-jq"
+   ]
+  },
+  {
+   "topic": "Forgotten Hollow",
+   "text": "New Lv 39-60 area; closed at launch and opening with the November 18, 2026 update. The chain starts with Grendel in Ellinia at Lv 39; entrance is The Tree Tunnel At the Forest Up North. Return Scrolls to Forgotten Hollow cost 800 mesos from Luma. Quest targets are spread out, so combine them with your hunting route.",
+   "sourceIds": [
+    "meow-fh"
+   ]
+  },
+  {
+   "topic": "Cross-chain item tips",
+   "text": "Some later quests need rewards from earlier ones: Manji's Gladius needs a Star Rock (Sabitrama's Anti-Aging Medicine, or Arwen) and a Piece of Ice (Arwen and the Glass Shoe); the fossil chain needs Weighted Earrings (offered by Alex the Runaway Kid). Diamonds for several quests can be crafted at Arcforge Lv 6.",
+   "sourceIds": [
+    "hgg-gladius",
+    "meow-jq",
+    "hgg-betty",
+    "hgg-alex",
+    "hgg-wetbottom"
+   ]
+  },
+  {
+   "topic": "Unconfirmed drop sources",
+   "text": "As of launch week henesys.gg had no confirmed Classic World drop source for several quest items: Dragon Skin, Squishy Liquid, Drake's Blood, Sap of Ancient Tree, Ancient Scroll, Witchgrass Leaf, Alligator Skin Pouch, Fairy's Tentacle, Plant Samples. Expect extra searching for quests that need them.",
+   "sourceIds": [
+    "hgg-jane-alch",
+    "hgg-imbored",
+    "hgg-icarus-med",
+    "hgg-icarus-dream",
+    "hgg-doctor",
+    "hgg-betty",
+    "hgg-pia-present"
+   ]
+  },
+  {
+   "topic": "Random rewards",
+   "text": "Several reward picks are random rather than chosen (Jane and the Mushroom's weapon scroll, Proof of Companionship's earring scroll, Biggs's dagger, Blackbull's shield), so don't plan around a specific result.",
+   "sourceIds": [
+    "sse-quests",
+    "meow-warrior"
+   ]
+  }
+ ]
+}

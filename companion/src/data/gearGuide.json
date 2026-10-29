@@ -1,0 +1,2615 @@
+{
+ "retrieved_at": "2026-10-28",
+ "sources": {
+  "meow-warrior": {
+   "source_url": "https://meowdb.com/msclassic/guides/warrior-class-guide",
+   "source_title": "MeowDB: Warrior Build and Leveling Guide Lv 1-30 (Nia Meow, updated 2026-10-27; same content as /guides/warrior-leveling-guide-1-30)",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "meow-mage": {
+   "source_url": "https://meowdb.com/msclassic/guides/magician-class-guide",
+   "source_title": "MeowDB: Magician Build and Leveling Guide Lv 1-30 (Nia Meow, updated 2026-10-28)",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "meow-bow": {
+   "source_url": "https://meowdb.com/msclassic/guides/bowman-class-guide",
+   "source_title": "MeowDB: Bowman Build and Leveling Guide Lv 1-30 (Nia Meow, updated 2026-10-28)",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "meow-thief": {
+   "source_url": "https://meowdb.com/msclassic/guides/thief-class-guide",
+   "source_title": "MeowDB: Thief Build and Leveling Guide Lv 1-30 (Nia Meow, updated 2026-10-28)",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "meow-fighter": {
+   "source_url": "https://meowdb.com/msclassic/guides/fighter-class-guide",
+   "source_title": "MeowDB: Fighter Guide Lv 30-70 (Nia Meow, updated 2026-10-28)",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "meow-spear": {
+   "source_url": "https://meowdb.com/msclassic/guides/spearman-class-guide",
+   "source_title": "MeowDB: Spearman Guide Lv 30-70 (Nia Meow, updated 2026-10-28)",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "meow-assassin": {
+   "source_url": "https://meowdb.com/msclassic/guides/assassin-class-guide",
+   "source_title": "MeowDB: Assassin Guide Lv 30-70 (Nia Meow, updated 2026-10-27)",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "meow-bandit": {
+   "source_url": "https://meowdb.com/msclassic/guides/bandit-class-guide",
+   "source_title": "MeowDB: Bandit Guide Lv 30-70 (Nia Meow, updated 2026-10-28)",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "meow-hunter": {
+   "source_url": "https://meowdb.com/msclassic/guides/hunter-class-guide",
+   "source_title": "MeowDB: Hunter Guide Lv 30-70 (Nia Meow, updated 2026-10-28)",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "meow-fp": {
+   "source_url": "https://meowdb.com/msclassic/guides/fp-wizard-class-guide",
+   "source_title": "MeowDB: F/P Wizard Guide Lv 30-70 (Nia Meow, updated 2026-10-28)",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "npc-river": {
+   "source_url": "https://meowdb.com/msclassic/npcs/507",
+   "source_title": "MeowDB NPC shop: River (Perion weapons), launch prices from shop videos reviewed 2026-10-09",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "npc-harry": {
+   "source_url": "https://meowdb.com/msclassic/npcs/508",
+   "source_title": "MeowDB NPC shop: Harry (Perion armor), launch prices reviewed 2026-10-09",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "npc-flora": {
+   "source_url": "https://meowdb.com/msclassic/npcs/310",
+   "source_title": "MeowDB NPC shop: Flora the Fairy (Ellinia weapons), launch prices reviewed 2026-10-09",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "npc-serabi": {
+   "source_url": "https://meowdb.com/msclassic/npcs/311",
+   "source_title": "MeowDB NPC shop: Serabi the Fairy (Ellinia armor), launch prices reviewed 2026-10-09",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "npc-karl": {
+   "source_url": "https://meowdb.com/msclassic/npcs/210",
+   "source_title": "MeowDB NPC shop: Karl (Henesys weapons), launch prices reviewed 2026-10-09",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "npc-sam": {
+   "source_url": "https://meowdb.com/msclassic/npcs/211",
+   "source_title": "MeowDB NPC shop: Sam (Henesys armor), launch prices reviewed 2026-10-09",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "npc-manny": {
+   "source_url": "https://meowdb.com/msclassic/npcs/408",
+   "source_title": "MeowDB NPC shop: Cutthroat Manny (Kerning City weapons), launch prices reviewed 2026-10-09",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "npc-donhwang": {
+   "source_url": "https://meowdb.com/msclassic/npcs/409",
+   "source_title": "MeowDB NPC shop: Don Hwang (Kerning City armor), launch prices reviewed 2026-10-09",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "item-613": {
+   "source_url": "https://meowdb.com/msclassic/item-db/613",
+   "source_title": "MeowDB item: Scimitar (613)",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "item-653": {
+   "source_url": "https://meowdb.com/msclassic/item-db/653",
+   "source_title": "MeowDB item: Mithril Wand (653)",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "item-812": {
+   "source_url": "https://meowdb.com/msclassic/item-db/812",
+   "source_title": "MeowDB item: Jousting Helmet (812)",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "item-917": {
+   "source_url": "https://meowdb.com/msclassic/item-db/917",
+   "source_title": "MeowDB item: Pan Lid (917)",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "item-1105": {
+   "source_url": "https://meowdb.com/msclassic/item-db/1105",
+   "source_title": "MeowDB item: Blue Sauna Robe (1105)",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "item-691": {
+   "source_url": "https://meowdb.com/msclassic/item-db/691",
+   "source_title": "MeowDB item: Adamantium Guards (691)",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  },
+  "meow-fm": {
+   "source_url": "https://meowdb.com/msclassic/free-market",
+   "source_title": "MeowDB Free Market overview (player-reported prices; snapshot 2026-10-28)",
+   "retrieved_at": "2026-10-28",
+   "game_version_or_date": "Classic World launch (2026-10)",
+   "verification_status": "community_reported"
+  }
+ },
+ "picks": [
+  {
+   "family": "warrior",
+   "branch": null,
+   "level": 10,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Wooden Sword (2H) / Metal Axe (1H)",
+   "meowdbId": 608,
+   "reqLevel": 10,
+   "stats": "W.ATK 30, speed 5 (Metal Axe 617: same stats)",
+   "howToGet": "Shop: River (Perion); also Cutthroat Manny (Kerning City)",
+   "estCost": 5000,
+   "costKind": "npc_shop",
+   "costNote": "Launch shop price, reviewed 2026-10-09",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior",
+    "npc-river",
+    "npc-manny"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": null,
+   "level": 10,
+   "slot": "weapon",
+   "tier": "affordable",
+   "item": "Long Sword",
+   "meowdbId": 543,
+   "reqLevel": 10,
+   "stats": "W.ATK 27, speed 4 (faster, 1H)",
+   "howToGet": "Shop: River (Perion) or Cutthroat Manny (Kerning City)",
+   "estCost": 3000,
+   "costKind": "npc_shop",
+   "costNote": "Launch shop price, reviewed 2026-10-09",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior",
+    "npc-river"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": "spearman",
+   "level": 10,
+   "slot": "weapon",
+   "tier": "accessible",
+   "item": "Pole Arm",
+   "meowdbId": 640,
+   "reqLevel": 10,
+   "stats": "W.ATK 35",
+   "howToGet": "Shop: River (Perion) or Cutthroat Manny (Kerning City)",
+   "estCost": 5000,
+   "costKind": "npc_shop",
+   "costNote": "Launch shop price, reviewed 2026-10-09",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior",
+    "npc-river"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": null,
+   "level": 10,
+   "slot": "hat",
+   "tier": "affordable",
+   "item": "Metal Koif",
+   "meowdbId": 725,
+   "reqLevel": 10,
+   "stats": "DEX +1, ACC +2, HP +10",
+   "howToGet": "Craft: Smithing 1",
+   "estCost": null,
+   "costKind": null,
+   "costNote": "No price in guide",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": null,
+   "level": 10,
+   "slot": "gloves",
+   "tier": "accessible",
+   "item": "Juno",
+   "meowdbId": 1436,
+   "reqLevel": 10,
+   "stats": "ACC +1, Crit Rate +1%",
+   "howToGet": "Drop: Stump; or Craft: Smithing 2",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": null,
+   "level": 10,
+   "slot": "shield",
+   "tier": "accessible",
+   "item": "Wooden Buckler (90%) or Steel Shield (10%)",
+   "meowdbId": 916,
+   "reqLevel": null,
+   "stats": null,
+   "howToGet": "Quest: Fixing Blackbull's House (Lv 11, Perion); Wooden Buckler also River shop",
+   "estCost": 4000,
+   "costKind": "npc_shop",
+   "costNote": "River shop: Wooden Buckler 4,000 / Steel Shield (918) 6,000",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior",
+    "npc-river"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": null,
+   "level": 15,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Sabre (1H) / Battle Axe (1H)",
+   "meowdbId": 545,
+   "reqLevel": 15,
+   "stats": "W.ATK 32, speed 4 (Battle Axe 578 same)",
+   "howToGet": "Shop: River (Perion)",
+   "estCost": 5000,
+   "costKind": "npc_shop",
+   "costNote": "Launch shop price, reviewed 2026-10-09",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior",
+    "npc-river"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": "spearman",
+   "level": 15,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Iron Ball (polearm)",
+   "meowdbId": 641,
+   "reqLevel": 15,
+   "stats": "W.ATK 40, needs 15 DEX",
+   "howToGet": "Shop: River (Perion)",
+   "estCost": 7000,
+   "costKind": "npc_shop",
+   "costNote": "Fork on a Stick (634, spear, W.ATK 37) also 7,000",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior",
+    "npc-river"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": null,
+   "level": 15,
+   "slot": "overall",
+   "tier": "accessible",
+   "item": "Steel Fitted Mail (female)",
+   "meowdbId": 1094,
+   "reqLevel": 15,
+   "stats": "STR +2, DEX +1",
+   "howToGet": "Shop: Harry (Perion)",
+   "estCost": 5400,
+   "costKind": "npc_shop",
+   "costNote": "Launch shop price, reviewed 2026-10-09",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior",
+    "npc-harry"
+   ],
+   "conflict": "Leveling guide says River or Harry sells it; River's shop list has no armor, Harry's does."
+  },
+  {
+   "family": "warrior",
+   "branch": null,
+   "level": 15,
+   "slot": "gloves",
+   "tier": "accessible",
+   "item": "Steel Fingerless Gloves",
+   "meowdbId": 1437,
+   "reqLevel": 15,
+   "stats": "ACC +1, Crit Rate +1%",
+   "howToGet": "Craft: Smithing 3; Drop: Horny Mushroom, Zombie Mushroom",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior",
+    "npc-harry"
+   ],
+   "conflict": "One guide fetch said River/Harry also sell it; Harry's launch shop list (50 items) contains no gloves."
+  },
+  {
+   "family": "warrior",
+   "branch": null,
+   "level": 20,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Two-Handed Sword",
+   "meowdbId": 610,
+   "reqLevel": 20,
+   "stats": "W.ATK 40, speed 5",
+   "howToGet": "Shop: River (Perion); Free Market",
+   "estCost": 13500,
+   "costKind": "npc_shop",
+   "costNote": "NPC 13,500 (launch). Free Market ~7,000, seen 131 times (MeowDB FM, 2026-10-28) - cheaper from players",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior",
+    "npc-river",
+    "meow-fm"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": null,
+   "level": 20,
+   "slot": "weapon",
+   "tier": "affordable",
+   "item": "Two-Handed Sword (Free Market)",
+   "meowdbId": 610,
+   "reqLevel": 20,
+   "stats": "W.ATK 40, speed 5",
+   "howToGet": "Free Market (player shops)",
+   "estCost": 7000,
+   "costKind": "market_estimate",
+   "costNote": "~7,000 mesos, MeowDB Free Market snapshot 2026-10-28",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-fm"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": null,
+   "level": 20,
+   "slot": "weapon",
+   "tier": "accessible",
+   "item": "Viking Sword (1H)",
+   "meowdbId": 547,
+   "reqLevel": 20,
+   "stats": "W.ATK 37, speed 4",
+   "howToGet": "Shop: River (Perion)",
+   "estCost": 10500,
+   "costKind": "npc_shop",
+   "costNote": "Launch shop price",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior",
+    "npc-river"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": "spearman",
+   "level": 20,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Studded Polearm",
+   "meowdbId": 642,
+   "reqLevel": 20,
+   "stats": "W.ATK 42, needs 20 DEX",
+   "howToGet": "Shop: River (Perion)",
+   "estCost": 13500,
+   "costKind": "npc_shop",
+   "costNote": "Launch shop price",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior",
+    "npc-river"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": null,
+   "level": 20,
+   "slot": "overall",
+   "tier": "bis",
+   "item": "Red Kendo Robe (male)",
+   "meowdbId": 1096,
+   "reqLevel": 20,
+   "stats": "STR +4",
+   "howToGet": "Shop: Harry (Perion)",
+   "estCost": 10800,
+   "costKind": "npc_shop",
+   "costNote": "Launch shop price",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior",
+    "npc-harry"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": null,
+   "level": 20,
+   "slot": "hat",
+   "tier": "bis",
+   "item": "Iron Viking Helm",
+   "meowdbId": 766,
+   "reqLevel": 20,
+   "stats": "DEX +2, ACC +3",
+   "howToGet": "Craft: Smithing 4",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": null,
+   "level": 25,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Broadsword (2H) / Two-Handed Axe",
+   "meowdbId": 611,
+   "reqLevel": 25,
+   "stats": "W.ATK 45, needs 25 DEX (Two-Handed Axe 620 same)",
+   "howToGet": "Shop: River (Perion)",
+   "estCost": 16500,
+   "costKind": "npc_shop",
+   "costNote": "Launch shop price",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior",
+    "npc-river"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": null,
+   "level": 25,
+   "slot": "weapon",
+   "tier": "affordable",
+   "item": "Mithril Axe (1H)",
+   "meowdbId": 580,
+   "reqLevel": 25,
+   "stats": "W.ATK 45, needs 20 DEX; 1H so a shield can be used",
+   "howToGet": "Shop: River (Perion)",
+   "estCost": 13500,
+   "costKind": "npc_shop",
+   "costNote": "Launch shop price",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior",
+    "npc-river"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": "spearman",
+   "level": 25,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Janitor's Mop (polearm)",
+   "meowdbId": 643,
+   "reqLevel": 25,
+   "stats": "W.ATK 50, no DEX requirement",
+   "howToGet": "Craft: Weaponcrafting 5",
+   "estCost": null,
+   "costKind": null,
+   "costNote": "Not sold by NPC",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": "spearman",
+   "level": 25,
+   "slot": "weapon",
+   "tier": "accessible",
+   "item": "Studded Polearm",
+   "meowdbId": 642,
+   "reqLevel": 20,
+   "stats": "W.ATK 42",
+   "howToGet": "Shop: River (Perion)",
+   "estCost": 13500,
+   "costKind": "npc_shop",
+   "costNote": "No Lv 25 spear/polearm in River's shop",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior",
+    "npc-river"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": null,
+   "level": 25,
+   "slot": "gloves",
+   "tier": "bis",
+   "item": "White Fingerless Gloves",
+   "meowdbId": 1453,
+   "reqLevel": 25,
+   "stats": "ACC +2, Crit Rate +1%",
+   "howToGet": "Craft: Smithing 5",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": null,
+   "level": 25,
+   "slot": "cape",
+   "tier": "accessible",
+   "item": "Old Raggedy Cape",
+   "meowdbId": 889,
+   "reqLevel": 25,
+   "stats": "ACC +1",
+   "howToGet": "Quest: Stranger's Identity (Lv 23, Kerning City); any class",
+   "estCost": 0,
+   "costKind": null,
+   "costNote": "Quest reward",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": null,
+   "level": 25,
+   "slot": "shield",
+   "tier": "accessible",
+   "item": "Red Triangular Shield / Mithril Buckler",
+   "meowdbId": 924,
+   "reqLevel": null,
+   "stats": null,
+   "howToGet": "Shop: River (Perion)",
+   "estCost": 15000,
+   "costKind": "npc_shop",
+   "costNote": "Mithril Buckler (919) 12,000. Guides give no stats for these.",
+   "guidePick": true,
+   "sourceIds": [
+    "npc-river"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": "fighter",
+   "level": 30,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Scimitar (2H sword)",
+   "meowdbId": 613,
+   "reqLevel": 30,
+   "stats": "W.ATK 53, speed 6 (Average), 65 STR / 30 DEX, 7 slots",
+   "howToGet": "No shop in current release (Orbis/El Nath closed); Free Market; Classic drops unconfirmed; no recipe listed",
+   "estCost": null,
+   "costKind": null,
+   "costNote": "Last NPC price 26,000 (COT2, closed shops). No FM price found.",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior",
+    "meow-fighter",
+    "item-613"
+   ],
+   "conflict": "Warrior 1-30 guide lists River (Perion) as source; item page says River no longer sells it and no current shop does."
+  },
+  {
+   "family": "warrior",
+   "branch": "fighter",
+   "level": 30,
+   "slot": "weapon",
+   "tier": "affordable",
+   "item": "Blue Axe (2H axe)",
+   "meowdbId": 621,
+   "reqLevel": 30,
+   "stats": "W.ATK 50, speed 5, needs 30 DEX",
+   "howToGet": "Guide's L30 example weapon; source not stated in 2nd-job guide; not on River's launch list",
+   "estCost": null,
+   "costKind": null,
+   "costNote": "Fighter guide: 2H axes had highest 1-minute damage in its L30 comparison",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior",
+    "meow-fighter",
+    "npc-river"
+   ],
+   "conflict": "1-30 guide says River sells it; River's launch shop list does not include it."
+  },
+  {
+   "family": "warrior",
+   "branch": null,
+   "level": 30,
+   "slot": "weapon",
+   "tier": "accessible",
+   "item": "Broadsword / Two-Handed Axe (keep Lv 25 shop weapon)",
+   "meowdbId": 611,
+   "reqLevel": 25,
+   "stats": "W.ATK 45",
+   "howToGet": "Shop: River (Perion)",
+   "estCost": 16500,
+   "costKind": "npc_shop",
+   "costNote": "Lv 30 warrior weapons are not sold by any open NPC at launch",
+   "guidePick": true,
+   "sourceIds": [
+    "npc-river",
+    "item-613"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": "fighter",
+   "level": 30,
+   "slot": "weapon",
+   "tier": "affordable",
+   "item": "Gladius (1H sword) / Fireman's Axe (1H axe)",
+   "meowdbId": 551,
+   "reqLevel": 30,
+   "stats": "W.ATK 47, speed 4 (Fireman's Axe 581 same)",
+   "howToGet": "Source not stated; not on River's launch list",
+   "estCost": null,
+   "costKind": null,
+   "costNote": "Fighter guide calls them budget 1H options that allow a shield",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-fighter",
+    "npc-river"
+   ],
+   "conflict": "Leveling guide lists River (Perion); River's launch shop list doesn't have them."
+  },
+  {
+   "family": "warrior",
+   "branch": "spearman",
+   "level": 30,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Mithril Pole Arm",
+   "meowdbId": 644,
+   "reqLevel": 30,
+   "stats": "W.ATK 55, speed 8",
+   "howToGet": "Free Market (see item page)",
+   "estCost": null,
+   "costKind": null,
+   "costNote": "Guide estimates ~11% more damage/min than Forked Spear",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-spear"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": "spearman",
+   "level": 30,
+   "slot": "weapon",
+   "tier": "affordable",
+   "item": "Forked Spear",
+   "meowdbId": 636,
+   "reqLevel": 30,
+   "stats": "W.ATK 52, speed 7",
+   "howToGet": "Free Market (see item page)",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-spear"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": null,
+   "level": 30,
+   "slot": "hat",
+   "tier": "bis",
+   "item": "Jousting Helmet",
+   "meowdbId": 812,
+   "reqLevel": 30,
+   "stats": "DEX +3, ACC +3, W.DEF 38, 7 slots; 50 STR / 20 DEX",
+   "howToGet": "No current shop (Harry removed it; Orbis/El Nath shops closed); Free Market",
+   "estCost": null,
+   "costKind": null,
+   "costNote": "Last NPC price 7,200 (COT2)",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior",
+    "item-812"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": null,
+   "level": 30,
+   "slot": "gloves",
+   "tier": "bis",
+   "item": "Steel Missel",
+   "meowdbId": 1464,
+   "reqLevel": 30,
+   "stats": "STR +3, ACC +1, Crit Rate +2%",
+   "howToGet": "Craft: Smithing 6",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior",
+    "meow-fighter"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": null,
+   "level": 30,
+   "slot": "shoes",
+   "tier": "bis",
+   "item": "Emerald Battle Grieves",
+   "meowdbId": 1369,
+   "reqLevel": 30,
+   "stats": "DEX +3, Avoid +3",
+   "howToGet": "Craft: Smithing 6",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": null,
+   "level": 30,
+   "slot": "shoes",
+   "tier": "accessible",
+   "item": "Blue High Boots (or Brown/Orange)",
+   "meowdbId": 1336,
+   "reqLevel": null,
+   "stats": null,
+   "howToGet": "Shop: Harry (Perion)",
+   "estCost": 3600,
+   "costKind": "npc_shop",
+   "costNote": "Not a guide recommendation; highest-tier shoe on Harry's list. Stats not in guides.",
+   "guidePick": false,
+   "sourceIds": [
+    "npc-harry"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": "fighter",
+   "level": 30,
+   "slot": "shield",
+   "tier": "bis",
+   "item": "Red Cross Shield",
+   "meowdbId": 925,
+   "reqLevel": 30,
+   "stats": "W.DEF 110, Guard 18.0%, 7 slots",
+   "howToGet": "Source not stated",
+   "estCost": null,
+   "costKind": null,
+   "costNote": "Spearmen don't use shields",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior",
+    "meow-fighter"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "all",
+   "branch": null,
+   "level": 30,
+   "slot": "overall",
+   "tier": "accessible",
+   "item": "Blue Sauna Robe (male) / Red Sauna Robe (female)",
+   "meowdbId": 1105,
+   "reqLevel": 30,
+   "stats": "STR/DEX/INT/LUK +1, W.DEF 75, HP +10, MP +10, 10 slots",
+   "howToGet": "Quest: Mr. Wetbottom's chain in Sleepywood (from Lv 32), reward of 'Returned Secret Book' (quest 10508)",
+   "estCost": 0,
+   "costKind": null,
+   "costNote": "Quest reward; 10 slots make it a stat-scroll target",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-warrior",
+    "meow-bow",
+    "meow-thief",
+    "item-1105"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": "fighter",
+   "level": 35,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Niam (2H axe)",
+   "meowdbId": 622,
+   "reqLevel": 35,
+   "stats": "W.ATK 55, needs 35 DEX",
+   "howToGet": "Craft: Weaponcrafting 7; Drop: Zombie Lupin",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-fighter"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": "spearman",
+   "level": 35,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Axe Pole Arm",
+   "meowdbId": 645,
+   "reqLevel": 35,
+   "stats": "W.ATK 60, speed 8",
+   "howToGet": "Craft: Weaponcrafting 7",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-spear"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "warrior",
+   "branch": "spearman",
+   "level": 35,
+   "slot": "weapon",
+   "tier": "affordable",
+   "item": "Nakamaki (spear)",
+   "meowdbId": 637,
+   "reqLevel": 35,
+   "stats": "W.ATK 57, speed 7",
+   "howToGet": "Source not stated",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-spear"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "magician",
+   "branch": null,
+   "level": 10,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Wooden Wand",
+   "meowdbId": 648,
+   "reqLevel": 10,
+   "stats": "M.ATT 27, speed 6",
+   "howToGet": "Shop: Flora the Fairy (Ellinia)",
+   "estCost": 3000,
+   "costKind": "npc_shop",
+   "costNote": "Launch price",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-mage",
+    "npc-flora"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "magician",
+   "branch": null,
+   "level": 10,
+   "slot": "weapon",
+   "tier": "accessible",
+   "item": "Beginner's Wooden Wand",
+   "meowdbId": null,
+   "reqLevel": null,
+   "stats": "M.ATT 26",
+   "howToGet": "Free on job advance to Magician",
+   "estCost": 0,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-mage"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "magician",
+   "branch": null,
+   "level": 10,
+   "slot": "hat",
+   "tier": "bis",
+   "item": "White Bandana",
+   "meowdbId": 719,
+   "reqLevel": null,
+   "stats": "W.DEF 15",
+   "howToGet": "Shop: Natasha (Lith Harbor) or Don Hwang (Kerning City)",
+   "estCost": 1200,
+   "costKind": "npc_shop",
+   "costNote": "Don Hwang launch price",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-mage",
+    "npc-donhwang"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "magician",
+   "branch": null,
+   "level": 10,
+   "slot": "shield",
+   "tier": "affordable",
+   "item": "Stolen Fence",
+   "meowdbId": 915,
+   "reqLevel": 5,
+   "stats": "W.DEF 40, Guard 7.4%",
+   "howToGet": "Shop: Silver (Lith Harbor)",
+   "estCost": 2000,
+   "costKind": "npc_shop",
+   "costNote": "Price stated in Magician guide",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-mage"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "magician",
+   "branch": null,
+   "level": 10,
+   "slot": "shield",
+   "tier": "bis",
+   "item": "Pan Lid",
+   "meowdbId": 917,
+   "reqLevel": 10,
+   "stats": "W.DEF 44, Guard 8.1%, 7 slots",
+   "howToGet": "Drop: Green Mushroom (per guide; Classic drop table not yet confirmed on item page); Free Market",
+   "estCost": 95000,
+   "costKind": "market_estimate",
+   "costNote": "Clean Pan Lid listed at 95,000 on MeowDB FM (2026-10-28, single recent listing)",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-mage",
+    "item-917",
+    "meow-fm"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "magician",
+   "branch": null,
+   "level": 15,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Hardwood Wand",
+   "meowdbId": 650,
+   "reqLevel": 15,
+   "stats": "M.ATT 34, speed 6, 30 INT",
+   "howToGet": "Shop: Flora the Fairy (Ellinia)",
+   "estCost": 5000,
+   "costKind": "npc_shop",
+   "costNote": "Launch price",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-mage",
+    "npc-flora"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "magician",
+   "branch": null,
+   "level": 15,
+   "slot": "weapon",
+   "tier": "affordable",
+   "item": "Sapphire Staff / Emerald Staff",
+   "meowdbId": 658,
+   "reqLevel": 15,
+   "stats": "M.ATT 31, speed 7, 10 LUK, Crit DMG +1%",
+   "howToGet": "Shop: Flora the Fairy (Ellinia)",
+   "estCost": 5000,
+   "costKind": "npc_shop",
+   "costNote": "Guide prefers wand at this level",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-mage",
+    "npc-flora"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "magician",
+   "branch": null,
+   "level": 15,
+   "slot": "overall",
+   "tier": "bis",
+   "item": "Blue Plain Robe (male)",
+   "meowdbId": 1092,
+   "reqLevel": 15,
+   "stats": "INT +3",
+   "howToGet": "Shop: Serabi the Fairy (Ellinia)",
+   "estCost": 5400,
+   "costKind": "npc_shop",
+   "costNote": "Female: Yellow Arianne top (973, 3,000) + skirt (1189, 2,400), INT +1 each",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-mage",
+    "npc-serabi"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "magician",
+   "branch": null,
+   "level": 20,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Metal Wand",
+   "meowdbId": 651,
+   "reqLevel": 20,
+   "stats": "M.ATT 41, speed 6, 40 INT / 10 LUK",
+   "howToGet": "Shop: Flora the Fairy (Ellinia)",
+   "estCost": 10500,
+   "costKind": "npc_shop",
+   "costNote": "Launch price",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-mage",
+    "npc-flora"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "magician",
+   "branch": null,
+   "level": 20,
+   "slot": "weapon",
+   "tier": "affordable",
+   "item": "Old Wooden Staff",
+   "meowdbId": 660,
+   "reqLevel": 20,
+   "stats": "M.ATT 38, speed 7, 15 LUK, Crit DMG +2%",
+   "howToGet": "Shop: Flora the Fairy (Ellinia)",
+   "estCost": 10500,
+   "costKind": "npc_shop",
+   "costNote": "Same price as Metal Wand; wand has more M.ATT",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-mage",
+    "npc-flora"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "magician",
+   "branch": null,
+   "level": 20,
+   "slot": "gloves",
+   "tier": "bis",
+   "item": "Blue Morrican",
+   "meowdbId": 1444,
+   "reqLevel": 20,
+   "stats": "INT +2, Crit +1%",
+   "howToGet": "Craft: Tailoring 4",
+   "estCost": null,
+   "costKind": null,
+   "costNote": "Scroll target: Gloves Magic Attack",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-mage"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "magician",
+   "branch": null,
+   "level": 20,
+   "slot": "hat",
+   "tier": "accessible",
+   "item": "Blue/Red/Green Wizardry Hat",
+   "meowdbId": 768,
+   "reqLevel": null,
+   "stats": null,
+   "howToGet": "Shop: Serabi the Fairy (Ellinia)",
+   "estCost": 3600,
+   "costKind": "npc_shop",
+   "costNote": "Not a guide recommendation; highest-tier mage hat on Serabi's list. Stats not in guides.",
+   "guidePick": false,
+   "sourceIds": [
+    "npc-serabi"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "magician",
+   "branch": null,
+   "level": 20,
+   "slot": "earrings",
+   "tier": "accessible",
+   "item": "Weighted Earrings / Yellow Square / Gold Earrings",
+   "meowdbId": 901,
+   "reqLevel": null,
+   "stats": null,
+   "howToGet": "Shop: Serabi the Fairy (Ellinia); Sam (Henesys) sells Single Earring (899) / Amethyst Earrings (900) at 4,500",
+   "estCost": 9000,
+   "costKind": "npc_shop",
+   "costNote": "Gold Earrings (903) 11,250. Guides give no stats/levels for these.",
+   "guidePick": true,
+   "sourceIds": [
+    "npc-serabi",
+    "npc-sam"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "magician",
+   "branch": null,
+   "level": 25,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Ice Wand",
+   "meowdbId": 652,
+   "reqLevel": 25,
+   "stats": "M.ATT 48, speed 6, 50 INT / 15 LUK",
+   "howToGet": "Shop: Flora the Fairy (Ellinia)",
+   "estCost": 13500,
+   "costKind": "npc_shop",
+   "costNote": "Launch price",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-mage",
+    "npc-flora"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "magician",
+   "branch": null,
+   "level": 25,
+   "slot": "weapon",
+   "tier": "affordable",
+   "item": "Wizard Staff",
+   "meowdbId": 661,
+   "reqLevel": 25,
+   "stats": "M.ATT 45, speed 7, 20 LUK, Crit DMG +2%",
+   "howToGet": "Shop: Flora the Fairy (Ellinia)",
+   "estCost": 13500,
+   "costKind": "npc_shop",
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-mage",
+    "npc-flora"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "magician",
+   "branch": null,
+   "level": 25,
+   "slot": "overall",
+   "tier": "bis",
+   "item": "Blue Doros Robe (male) / Brown Doroness Robe (female)",
+   "meowdbId": 1099,
+   "reqLevel": 25,
+   "stats": "INT +5",
+   "howToGet": "Shop: Serabi the Fairy (Ellinia)",
+   "estCost": 13500,
+   "costKind": "npc_shop",
+   "costNote": "Launch price",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-mage",
+    "npc-serabi"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "magician",
+   "branch": null,
+   "level": 30,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Mithril Wand",
+   "meowdbId": 653,
+   "reqLevel": 30,
+   "stats": "M.ATT 55, W.ATK 27, 60 INT / 20 LUK, 7 slots",
+   "howToGet": "Craft: Arcforge 6 (6 Mithril Ingot, 4 Aquamarine, 18 Screw); no shop in current release",
+   "estCost": 7900,
+   "costKind": "craft_fee",
+   "costNote": "7,900 craft fee plus materials; Flora sold it for 22,000 in COT2 but it was removed",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-mage",
+    "meow-fp",
+    "item-653"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "magician",
+   "branch": null,
+   "level": 30,
+   "slot": "weapon",
+   "tier": "accessible",
+   "item": "Ice Wand (keep Lv 25 shop wand)",
+   "meowdbId": 652,
+   "reqLevel": 25,
+   "stats": "M.ATT 48",
+   "howToGet": "Shop: Flora the Fairy (Ellinia)",
+   "estCost": 13500,
+   "costKind": "npc_shop",
+   "costNote": "No Lv 30 wand sold by an open NPC",
+   "guidePick": true,
+   "sourceIds": [
+    "npc-flora",
+    "item-653"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "magician",
+   "branch": null,
+   "level": 30,
+   "slot": "overall",
+   "tier": "bis",
+   "item": "Blue Wizard Robe (male)",
+   "meowdbId": 1107,
+   "reqLevel": 30,
+   "stats": null,
+   "howToGet": "Not stated",
+   "estCost": null,
+   "costKind": null,
+   "costNote": "Female option Blue Fairy Top (1031) + Skirt (1246), INT +3 each, has no known source",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-mage",
+    "meow-fp"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "magician",
+   "branch": null,
+   "level": 30,
+   "slot": "hat",
+   "tier": "bis",
+   "item": "Brown Jester",
+   "meowdbId": 814,
+   "reqLevel": 30,
+   "stats": null,
+   "howToGet": "Not stated",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-mage",
+    "meow-fp"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "magician",
+   "branch": null,
+   "level": 30,
+   "slot": "shield",
+   "tier": "affordable",
+   "item": "Mystic Shield",
+   "meowdbId": 920,
+   "reqLevel": 22,
+   "stats": "W.DEF 20, M.DEF 42, Guard 5.0%; 34 INT / 12 LUK",
+   "howToGet": "Not stated",
+   "estCost": null,
+   "costKind": null,
+   "costNote": "Guide says Pan Lid blocks physical hits more often",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-mage"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "magician",
+   "branch": null,
+   "level": 35,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Wizard Wand",
+   "meowdbId": 654,
+   "reqLevel": 35,
+   "stats": "M.ATT 62, 70 INT / 25 LUK",
+   "howToGet": "Craft: Arcforge 7",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-fp"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": "bow",
+   "level": 10,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "War Bow",
+   "meowdbId": 663,
+   "reqLevel": 10,
+   "stats": "W.ATK 30",
+   "howToGet": "Shop: Karl (Henesys)",
+   "estCost": 5000,
+   "costKind": "npc_shop",
+   "costNote": "Launch price",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bow",
+    "npc-karl"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": "crossbow",
+   "level": 10,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Crossbow",
+   "meowdbId": 672,
+   "reqLevel": 10,
+   "stats": "W.ATK 32",
+   "howToGet": "Shop: Karl (Henesys)",
+   "estCost": 5000,
+   "costKind": "npc_shop",
+   "costNote": "Launch price",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bow",
+    "npc-karl"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": null,
+   "level": 10,
+   "slot": "hat",
+   "tier": "accessible",
+   "item": "Green Winter Hat",
+   "meowdbId": 731,
+   "reqLevel": 10,
+   "stats": null,
+   "howToGet": "Shop: Sam (Henesys)",
+   "estCost": 1200,
+   "costKind": "npc_shop",
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bow",
+    "npc-sam"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": null,
+   "level": 10,
+   "slot": "top",
+   "tier": "accessible",
+   "item": "Green Archer Top (male)",
+   "meowdbId": 946,
+   "reqLevel": 10,
+   "stats": null,
+   "howToGet": "Shop: Sam (Henesys)",
+   "estCost": 2000,
+   "costKind": "npc_shop",
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bow",
+    "npc-sam"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": "bow",
+   "level": 15,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Composite Bow",
+   "meowdbId": 665,
+   "reqLevel": 15,
+   "stats": "W.ATK 35, 15 STR / 35 DEX",
+   "howToGet": "Shop: Karl (Henesys)",
+   "estCost": 7000,
+   "costKind": "npc_shop",
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bow",
+    "npc-karl"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": "crossbow",
+   "level": 15,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Battle Crossbow",
+   "meowdbId": 673,
+   "reqLevel": 15,
+   "stats": "W.ATK 37, 35 DEX, no STR; speed 7",
+   "howToGet": "Shop: Karl (Henesys)",
+   "estCost": 7000,
+   "costKind": "npc_shop",
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bow",
+    "npc-karl"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": null,
+   "level": 15,
+   "slot": "hat",
+   "tier": "accessible",
+   "item": "Green Feather Hat",
+   "meowdbId": 751,
+   "reqLevel": 15,
+   "stats": null,
+   "howToGet": "Shop: Sam (Henesys)",
+   "estCost": 1800,
+   "costKind": "npc_shop",
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bow",
+    "npc-sam"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": null,
+   "level": 15,
+   "slot": "gloves",
+   "tier": "bis",
+   "item": "Basic Archer Gloves",
+   "meowdbId": 1439,
+   "reqLevel": 15,
+   "stats": null,
+   "howToGet": "Craft: Leatherworking 3-6",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bow"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": "bow",
+   "level": 20,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Hunter's Bow",
+   "meowdbId": 666,
+   "reqLevel": 20,
+   "stats": "W.ATK 42, 20 STR / 45 DEX",
+   "howToGet": "Shop: Karl (Henesys)",
+   "estCost": 13500,
+   "costKind": "npc_shop",
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bow",
+    "npc-karl"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": "crossbow",
+   "level": 20,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Balanche",
+   "meowdbId": 674,
+   "reqLevel": 20,
+   "stats": "W.ATK 39, speed 6, 10 STR / 45 DEX",
+   "howToGet": "Shop: Karl (Henesys)",
+   "estCost": 13500,
+   "costKind": "npc_shop",
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bow",
+    "npc-karl"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": null,
+   "level": 20,
+   "slot": "hat",
+   "tier": "accessible",
+   "item": "Green Robin Hat",
+   "meowdbId": 771,
+   "reqLevel": 20,
+   "stats": null,
+   "howToGet": "Shop: Sam (Henesys)",
+   "estCost": 3600,
+   "costKind": "npc_shop",
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bow",
+    "npc-sam"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": null,
+   "level": 20,
+   "slot": "gloves",
+   "tier": "bis",
+   "item": "Blue Diros",
+   "meowdbId": 1447,
+   "reqLevel": 20,
+   "stats": null,
+   "howToGet": "Not stated (likely Leatherworking)",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bow"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": "bow",
+   "level": 25,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Battle Bow",
+   "meowdbId": 667,
+   "reqLevel": 25,
+   "stats": "W.ATK 44, Fast 5, 25 STR / 55 DEX",
+   "howToGet": "Shop: Karl (Henesys)",
+   "estCost": 16500,
+   "costKind": "npc_shop",
+   "costNote": "Guide: shop gear is enough through Lv 25",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bow",
+    "npc-karl"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": "crossbow",
+   "level": 25,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Mountain Crossbow",
+   "meowdbId": 675,
+   "reqLevel": 25,
+   "stats": "W.ATK 47, 15 STR / 55 DEX",
+   "howToGet": "Shop: Karl (Henesys)",
+   "estCost": 16500,
+   "costKind": "npc_shop",
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bow",
+    "npc-karl"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": null,
+   "level": 25,
+   "slot": "hat",
+   "tier": "accessible",
+   "item": "Green Hunter",
+   "meowdbId": 798,
+   "reqLevel": 25,
+   "stats": null,
+   "howToGet": "Shop: Sam (Henesys)",
+   "estCost": 4500,
+   "costKind": "npc_shop",
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bow",
+    "npc-sam"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": null,
+   "level": 25,
+   "slot": "gloves",
+   "tier": "bis",
+   "item": "Blue Savata",
+   "meowdbId": 1457,
+   "reqLevel": 25,
+   "stats": null,
+   "howToGet": "Not stated",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bow"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": null,
+   "level": 25,
+   "slot": "ammo",
+   "tier": "affordable",
+   "item": "Bronze Arrows for Bows / for Crossbows",
+   "meowdbId": 210,
+   "reqLevel": null,
+   "stats": "W.ATK +1 over basic arrows; stack 800",
+   "howToGet": "Shop: Raymond (Henesys); or Woodcrafting 4 (500 per craft)",
+   "estCost": 2,
+   "costKind": "npc_shop",
+   "costNote": "2 mesos each (crossbow version ID 214)",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bow"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": "bow",
+   "level": 30,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Ryden",
+   "meowdbId": 668,
+   "reqLevel": 30,
+   "stats": "W.ATK 50, STR +1, 30 STR / 65 DEX",
+   "howToGet": "Craft: Woodcrafting 6 (8 Processed Wood, Gold Ingot, Emerald, Topaz, 18 Screw); Karl no longer sells it",
+   "estCost": 6500,
+   "costKind": "craft_fee",
+   "costNote": "6,500 craft fee plus materials",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bow",
+    "meow-hunter"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": "crossbow",
+   "level": 30,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Eagle Crow",
+   "meowdbId": 676,
+   "reqLevel": 30,
+   "stats": "W.ATK 52, DEX +1, 20 STR / 65 DEX",
+   "howToGet": "Craft: Woodcrafting 6",
+   "estCost": null,
+   "costKind": null,
+   "costNote": "Guide: Ryden ~3.8% more DPS, Eagle Crow ~4.9% more damage per MP",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bow"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": null,
+   "level": 30,
+   "slot": "weapon",
+   "tier": "accessible",
+   "item": "Battle Bow / Mountain Crossbow (keep Lv 25 shop weapon)",
+   "meowdbId": 667,
+   "reqLevel": 25,
+   "stats": "W.ATK 44 / 47",
+   "howToGet": "Shop: Karl (Henesys)",
+   "estCost": 16500,
+   "costKind": "npc_shop",
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "npc-karl",
+    "meow-hunter"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": null,
+   "level": 30,
+   "slot": "hat",
+   "tier": "bis",
+   "item": "Green Hawkeye",
+   "meowdbId": 818,
+   "reqLevel": 30,
+   "stats": null,
+   "howToGet": "Not stated",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bow",
+    "meow-hunter"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": null,
+   "level": 30,
+   "slot": "gloves",
+   "tier": "bis",
+   "item": "Green Marker",
+   "meowdbId": 1470,
+   "reqLevel": 30,
+   "stats": "5 slots",
+   "howToGet": "Not stated",
+   "estCost": null,
+   "costKind": null,
+   "costNote": "Scroll target: Gloves Attack Scroll: Lesser (ID 118) x5 = +5 W.ATK",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bow"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": null,
+   "level": 30,
+   "slot": "shoes",
+   "tier": "bis",
+   "item": "Black Hunter Boots",
+   "meowdbId": 1380,
+   "reqLevel": 30,
+   "stats": "STR +2",
+   "howToGet": "Not stated",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bow",
+    "meow-hunter"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": null,
+   "level": 30,
+   "slot": "bottom",
+   "tier": "affordable",
+   "item": "Green Hunter's Pants",
+   "meowdbId": 1238,
+   "reqLevel": 30,
+   "stats": null,
+   "howToGet": "Free Market",
+   "estCost": null,
+   "costKind": null,
+   "costNote": "Matching top Green Hunter's Armor (1023) has no known source; Blue Hunter's Armor (1024, MP +30) has a confirmed drop",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bow",
+    "meow-hunter"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "bowman",
+   "branch": "bow",
+   "level": 35,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Red Viper",
+   "meowdbId": 669,
+   "reqLevel": 35,
+   "stats": "35 STR / 75 DEX (W.ATK not given)",
+   "howToGet": "Craft: Woodcrafting 7; no shop at launch; Free Market",
+   "estCost": 80000,
+   "costKind": "market_estimate",
+   "costNote": "Clean Red Viper listed at 80,000 (MeowDB FM, 2026-10-28, single listing). Craft fee 9,000 plus materials.",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-hunter",
+    "meow-fm"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": "claw",
+   "level": 10,
+   "slot": "weapon",
+   "tier": "accessible",
+   "item": "Beginner's Garnier",
+   "meowdbId": 2545,
+   "reqLevel": 10,
+   "stats": "W.ATK 10",
+   "howToGet": "Free on job advance to Thief",
+   "estCost": 0,
+   "costKind": null,
+   "costNote": "Garnier (680) sold by Cutthroat Manny for 5,000",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-thief",
+    "npc-manny"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": "claw",
+   "level": 10,
+   "slot": "ammo",
+   "tier": "accessible",
+   "item": "Subi Throwing-Stars",
+   "meowdbId": 294,
+   "reqLevel": 10,
+   "stats": "W.ATK +15, stack 500",
+   "howToGet": "Shop: Dr. Faymus (Kerning City) and other town grocers",
+   "estCost": null,
+   "costKind": null,
+   "costNote": "Price not given",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-thief",
+    "meow-assassin"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": "dagger",
+   "level": 10,
+   "slot": "weapon",
+   "tier": "accessible",
+   "item": "Triangular Zamadar",
+   "meowdbId": 560,
+   "reqLevel": 10,
+   "stats": "STR/LUK dagger",
+   "howToGet": "Shop: Cutthroat Manny (Kerning City)",
+   "estCost": 3000,
+   "costKind": "npc_shop",
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-thief",
+    "npc-manny"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": null,
+   "level": 10,
+   "slot": "hat",
+   "tier": "accessible",
+   "item": "Black Ghetto Beanie",
+   "meowdbId": 735,
+   "reqLevel": 10,
+   "stats": "LUK +1",
+   "howToGet": "Shop: Don Hwang (Kerning City)",
+   "estCost": 1200,
+   "costKind": "npc_shop",
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-thief",
+    "npc-donhwang"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": null,
+   "level": 10,
+   "slot": "top",
+   "tier": "accessible",
+   "item": "Black Cloth Vest + Black Cloth Pants, Blue Gidder Shoes",
+   "meowdbId": 959,
+   "reqLevel": 10,
+   "stats": null,
+   "howToGet": "Shop: Don Hwang (Kerning City)",
+   "estCost": 2000,
+   "costKind": "npc_shop",
+   "costNote": "Vest 2,000; pants (1179) 1,600; shoes (1315) 1,200",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-thief",
+    "npc-donhwang"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": "claw",
+   "level": 15,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Steel Titans",
+   "meowdbId": 682,
+   "reqLevel": 15,
+   "stats": "W.ATK 13, 15 DEX / 35 LUK",
+   "howToGet": "Shop: Cutthroat Manny (Kerning City)",
+   "estCost": 7000,
+   "costKind": "npc_shop",
+   "costNote": "Guide and shop page agree on 7,000",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-thief",
+    "npc-manny"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": "dagger",
+   "level": 17,
+   "slot": "weapon",
+   "tier": "accessible",
+   "item": "Triple-Tipped Zamadar",
+   "meowdbId": 563,
+   "reqLevel": 17,
+   "stats": null,
+   "howToGet": "Shop: Cutthroat Manny (Kerning City)",
+   "estCost": 5800,
+   "costKind": "npc_shop",
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-thief",
+    "npc-manny"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": null,
+   "level": 15,
+   "slot": "gloves",
+   "tier": "bis",
+   "item": "Black Duo",
+   "meowdbId": 1442,
+   "reqLevel": 15,
+   "stats": "LUK +1, Crit Rate +1%",
+   "howToGet": "Not stated",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-thief",
+    "meow-bandit"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": "claw",
+   "level": 20,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Steel Igor",
+   "meowdbId": 686,
+   "reqLevel": 20,
+   "stats": "W.ATK 17, Crit Rate +1%, 20 DEX / 45 LUK",
+   "howToGet": "Shop: Cutthroat Manny (Kerning City)",
+   "estCost": 14100,
+   "costKind": "npc_shop",
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-thief",
+    "npc-manny"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": null,
+   "level": 20,
+   "slot": "hat",
+   "tier": "bis",
+   "item": "Black Loosecap",
+   "meowdbId": 777,
+   "reqLevel": 20,
+   "stats": "LUK +2",
+   "howToGet": "Shop: Don Hwang (Kerning City)",
+   "estCost": 3600,
+   "costKind": "npc_shop",
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-thief",
+    "npc-donhwang"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": "dagger",
+   "level": 22,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Stinger",
+   "meowdbId": 565,
+   "reqLevel": 22,
+   "stats": "17 STR / 44 LUK (STR plan)",
+   "howToGet": "Shop: Cutthroat Manny (Kerning City)",
+   "estCost": 11700,
+   "costKind": "npc_shop",
+   "costNote": "Bandit guide: carries STR-plan Bandits to Lv 39",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-thief",
+    "meow-bandit",
+    "npc-manny"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": "claw",
+   "level": 25,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Meba",
+   "meowdbId": 688,
+   "reqLevel": 25,
+   "stats": "W.ATK 19, speed 3 (only Speed 3 claw Lv 10-30), 25 DEX / 55 LUK",
+   "howToGet": "Shop: Cutthroat Manny (Kerning City)",
+   "estCost": 16500,
+   "costKind": "npc_shop",
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-thief",
+    "npc-manny"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": "claw",
+   "level": 25,
+   "slot": "ammo",
+   "tier": "affordable",
+   "item": "Wolbi Throwing-Stars",
+   "meowdbId": 295,
+   "reqLevel": null,
+   "stats": "W.ATK +17, stack 500",
+   "howToGet": "Shop: Max (Kerning City) after Helpful Stranger citizenship",
+   "estCost": 1000,
+   "costKind": "npc_shop",
+   "costNote": "1,000 per 500; recharge 0.4 meso/star",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-thief",
+    "meow-assassin"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": null,
+   "level": 25,
+   "slot": "gloves",
+   "tier": "bis",
+   "item": "Dark Wolfskin",
+   "meowdbId": 1462,
+   "reqLevel": 25,
+   "stats": "LUK +2, Crit Rate +1%",
+   "howToGet": "Not stated",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-thief"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": null,
+   "level": 25,
+   "slot": "hat",
+   "tier": "accessible",
+   "item": "Tiberian (any colour)",
+   "meowdbId": 804,
+   "reqLevel": null,
+   "stats": null,
+   "howToGet": "Shop: Don Hwang (Kerning City)",
+   "estCost": 4500,
+   "costKind": "npc_shop",
+   "costNote": "Not a guide recommendation; highest-tier hat on Don Hwang's list. Stats not in guides.",
+   "guidePick": false,
+   "sourceIds": [
+    "npc-donhwang"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": "dagger",
+   "level": 25,
+   "slot": "shield",
+   "tier": "affordable",
+   "item": "Stolen Fence",
+   "meowdbId": 915,
+   "reqLevel": 5,
+   "stats": "W.DEF 40, Guard 7.4%",
+   "howToGet": "Shop: Silver (Lith Harbor)",
+   "estCost": 2000,
+   "costKind": "npc_shop",
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-thief",
+    "meow-bandit",
+    "meow-mage"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": "dagger",
+   "level": 25,
+   "slot": "shield",
+   "tier": "bis",
+   "item": "Pan Lid",
+   "meowdbId": 917,
+   "reqLevel": 10,
+   "stats": "W.DEF 44, Guard 8.1% (58 W.DEF / 10.4% with 7 Lesser scrolls)",
+   "howToGet": "Drop: Green Mushroom (per guide); Free Market",
+   "estCost": 95000,
+   "costKind": "market_estimate",
+   "costNote": "Clean, MeowDB FM 2026-10-28, single listing",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bandit",
+    "item-917",
+    "meow-fm"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": "claw",
+   "level": 30,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Adamantium Guards",
+   "meowdbId": 691,
+   "reqLevel": 30,
+   "stats": "W.ATK 23, Crit DMG +1%, Fast, 30 DEX / 65 LUK, 7 slots",
+   "howToGet": "Craft: Weaponcrafting 6 (Steel Guards + 3 Adamantium Ingot); removed from Cutthroat Manny",
+   "estCost": 2000,
+   "costKind": "craft_fee",
+   "costNote": "2,000 fee; ~14,400 from raw materials (item page). Last NPC price 27,600 in COT2.",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-thief",
+    "meow-assassin",
+    "meow-bandit",
+    "item-691"
+   ],
+   "conflict": "Assassin guide lists it under 'Budget' and Wolbi/overalls under 'Best'; Bandit guide calls it the best claw for Lucky Seven."
+  },
+  {
+   "family": "thief",
+   "branch": "claw",
+   "level": 30,
+   "slot": "weapon",
+   "tier": "accessible",
+   "item": "Meba",
+   "meowdbId": 688,
+   "reqLevel": 25,
+   "stats": "W.ATK 19, speed 3",
+   "howToGet": "Shop: Cutthroat Manny (Kerning City)",
+   "estCost": 16500,
+   "costKind": "npc_shop",
+   "costNote": "Guides: close in DPS to Adamantium Guards, less per hit/per MP",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-thief",
+    "meow-bandit",
+    "npc-manny"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": "dagger",
+   "level": 30,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Cass (STR dagger)",
+   "meowdbId": 568,
+   "reqLevel": 30,
+   "stats": "W.ATK 47, very fast 3, 25 STR / 60 LUK",
+   "howToGet": "Drop: Zombie Lupin",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-thief",
+    "meow-bandit"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": "dagger",
+   "level": 30,
+   "slot": "weapon",
+   "tier": "affordable",
+   "item": "Reef Claw (DEX dagger)",
+   "meowdbId": 569,
+   "reqLevel": 30,
+   "stats": "W.ATK 48, fast 4, 25 DEX / 60 LUK",
+   "howToGet": "Not stated",
+   "estCost": null,
+   "costKind": null,
+   "costNote": "For the DEX (no-reset) path",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-thief",
+    "meow-bandit"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": "dagger",
+   "level": 30,
+   "slot": "weapon",
+   "tier": "accessible",
+   "item": "Stinger",
+   "meowdbId": 565,
+   "reqLevel": 22,
+   "stats": "STR/LUK dagger",
+   "howToGet": "Shop: Cutthroat Manny (Kerning City)",
+   "estCost": 11700,
+   "costKind": "npc_shop",
+   "costNote": "Iron Dagger (566, 13,500) and Forked Dagger (567, 14,700) also sold; no guide stats for them",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bandit",
+    "npc-manny"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": null,
+   "level": 30,
+   "slot": "hat",
+   "tier": "bis",
+   "item": "Dark Guise",
+   "meowdbId": 824,
+   "reqLevel": 30,
+   "stats": "LUK +3",
+   "howToGet": "Not stated",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-thief"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": null,
+   "level": 30,
+   "slot": "gloves",
+   "tier": "bis",
+   "item": "Steel Sylvia",
+   "meowdbId": 1472,
+   "reqLevel": 30,
+   "stats": "LUK +3, Crit Rate +2%",
+   "howToGet": "Not stated",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-thief"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": "claw",
+   "level": 35,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Dark Guardian",
+   "meowdbId": 694,
+   "reqLevel": 35,
+   "stats": "W.ATK 26, Crit DMG +1%, 35 DEX / 75 LUK",
+   "howToGet": "Craft: Weaponcrafting 7",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-assassin"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": "dagger",
+   "level": 35,
+   "slot": "weapon",
+   "tier": "bis",
+   "item": "Halfmoon Zamadar",
+   "meowdbId": 570,
+   "reqLevel": 35,
+   "stats": "30 DEX / 70 LUK, reach 86 px (W.ATK not given)",
+   "howToGet": "Craft: Weaponcrafting 7",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-bandit"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": null,
+   "level": 35,
+   "slot": "overall",
+   "tier": "bis",
+   "item": "Dark Avenger (female)",
+   "meowdbId": 1130,
+   "reqLevel": 35,
+   "stats": "LUK +6, HP +5, W.DEF 83, 10 slots; 25 DEX / 60 LUK",
+   "howToGet": "No known source (no recipe/NPC/quest/confirmed drop)",
+   "estCost": null,
+   "costKind": null,
+   "costNote": "Red Avenger (1127, STR +6) and Blue Avenger (1128, DEX +6) do sell on the FM",
+   "guidePick": true,
+   "sourceIds": [
+    "meow-thief",
+    "meow-assassin",
+    "meow-bandit"
+   ],
+   "conflict": null
+  },
+  {
+   "family": "thief",
+   "branch": "claw",
+   "level": 35,
+   "slot": "ammo",
+   "tier": "bis",
+   "item": "Mokbi Throwing-Stars",
+   "meowdbId": 296,
+   "reqLevel": null,
+   "stats": "W.ATK +19, stack 700",
+   "howToGet": "Drop: Jr. Wraith (no shop)",
+   "estCost": null,
+   "costKind": null,
+   "costNote": null,
+   "guidePick": true,
+   "sourceIds": [
+    "meow-assassin"
+   ],
+   "conflict": null
+  }
+ ],
+ "notes": [
+  {
+   "topic": "Lv 30 weapons not in shops at launch",
+   "text": "MeowDB item pages say Lv 30 weapons (Scimitar, Mithril Wand, Adamantium Guards, Ryden, Jousting Helmet) were removed from Perion/Ellinia/Henesys/Kerning shops; the only listed NPCs are in Orbis/El Nath, which aren't open yet. At Lv 30, get them by crafting or the Free Market, or keep the Lv 25 shop item.",
+   "sourceIds": [
+    "item-613",
+    "item-653",
+    "item-691",
+    "item-812",
+    "meow-hunter"
+   ]
+  },
+  {
+   "topic": "No NPC gloves",
+   "text": "None of the launch weapon/armor shop lists include gloves; early gloves come from crafting (Smithing/Tailoring/Leatherworking) or drops.",
+   "sourceIds": [
+    "npc-harry",
+    "npc-serabi",
+    "npc-sam",
+    "npc-donhwang"
+   ]
+  },
+  {
+   "topic": "Shop price provenance",
+   "text": "NPC prices are MeowDB 'launch prices' taken from community shop videos reviewed 2026-10-09; the pages don't say outright whether they were recorded on live or test servers.",
+   "sourceIds": [
+    "npc-river",
+    "npc-flora",
+    "npc-karl",
+    "npc-manny"
+   ]
+  },
+  {
+   "topic": "Free Market prices",
+   "text": "MeowDB Free Market snapshot (2026-10-28): Two-Handed Sword ~7,000 (below NPC 13,500), clean Pan Lid 95,000, clean Red Viper 80,000, Overall Armor STR Scroll: Lesser ~87,888, Staff Magic Attack Scroll: Intermediate 75,000, Blue Arten gloves 39,999 (falling). Per-item FM prices on item pages were still loading, so most items have no market estimate.",
+   "sourceIds": [
+    "meow-fm"
+   ]
+  },
+  {
+   "topic": "Glove scroll targets",
+   "text": "Bowman and Thief guides favour Gloves Attack Scroll: Lesser (ID 118) over Crit Rate (ID 119); Magicians should use Gloves Magic Attack, since W.ATK scrolls do nothing for spells. The Lv 36 quest 'Collecting 150 Cursed Dolls' gives an Intermediate Gloves Attack or Gloves Magic Attack scroll (50/50).",
+   "sourceIds": [
+    "meow-bow",
+    "meow-thief",
+    "meow-mage",
+    "meow-assassin"
+   ]
+  },
+  {
+   "topic": "Other scroll targets",
+   "text": "Overall stat scrolls: Lesser is +1 at 100%, Intermediate +2 at 60%. Wand/Staff M.ATK Lesser costs 60,000 from El Moth; Overall INT Lesser costs 40,000 from Ben (Kerning, Distinguished Citizen); Shield DEF Lesser costs 20,000 from Tulcus. Sauna Robes (10 slots) are the main overall target.",
+   "sourceIds": [
+    "meow-mage",
+    "meow-bow",
+    "meow-thief"
+   ]
+  },
+  {
+   "topic": "Lv 36 quest gear",
+   "text": "Rowen's 'Collecting 200 Cursed Dolls' (Lv 36) gives a Lv 40 hat by class: Steel Nordic Helm (warrior), Dark Guiltian (mage), Dark Distinction (bowman), Dark Pilfer (thief).",
+   "sourceIds": [
+    "meow-fighter",
+    "meow-fp",
+    "meow-hunter",
+    "meow-bandit"
+   ]
+  },
+  {
+   "topic": "Guide gives no BIS labels",
+   "text": "The MeowDB 1-30 guides list weapons and armor by level but rarely call anything 'best' or 'budget'. Tiers here are inferred: bis = highest stats the guide lists for that level, affordable = cheaper or alternative option the guide mentions, accessible = NPC shop or quest item. Picks marked 'Not a guide recommendation' come only from shop lists.",
+   "sourceIds": [
+    "meow-warrior",
+    "meow-mage",
+    "meow-bow",
+    "meow-thief"
+   ]
+  }
+ ]
+}

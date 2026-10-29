@@ -1,7 +1,7 @@
 // Turn a build order into per-SP suggestions and a level-by-level table.
 
 import type { Build } from '../data/builds';
-import { RULES } from '../data/rules';
+import { RULES, jobTierOfGameJob, skillJobId } from '../data/rules';
 import { spGainedAt } from './sp';
 
 /** One entry per skill point, in build order, with the step it came from. */
@@ -84,3 +84,20 @@ export function levelTable(build: Build, toLevel: number): LevelRow[] {
   }
   return rows;
 }
+
+export interface OffPlan {
+  skillId: number;
+  have: number;
+  plan: number;
+}
+
+/** Skills of the build's job tier with more points than the build ever gives them. */
+export function offPlan(build: Build, alloc: Record<number, number>): OffPlan[] {
+  const final = finalAllocation(build);
+  return Object.entries(alloc)
+    .map(([id, have]) => ({ skillId: Number(id), have, plan: final[Number(id)] ?? 0 }))
+    .filter((x) => x.have > x.plan && jobTierOfGameJob(skillJobId(x.skillId)) === build.tier);
+}
+
+/** How many SP the character has spent where the build wouldn't. */
+export const offPlanPoints = (build: Build, alloc: Record<number, number>) => offPlan(build, alloc).reduce((t, x) => t + x.have - x.plan, 0);

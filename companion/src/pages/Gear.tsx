@@ -6,6 +6,7 @@ import { formulaEstimate } from '../calculators/attack';
 import { rankMaps } from '../calculators/rank';
 import { fmt, fmt1, NumField, StatusPill } from '../components/ui';
 import { setAssumptions } from '../storage/store';
+import { GearByLevel } from '../components/GearByLevel';
 import { defaultAttackSkill, NeedCharacter, useActive, type PageProps } from './shared';
 
 const STATS: StatKey[] = ['str', 'dex', 'int', 'luk'];
@@ -63,9 +64,11 @@ export default function Gear(_: PageProps) {
       <div className="page-head">
         <div>
           <h1>Gear &amp; economy</h1>
-          <p>Is an upgrade worth its price? Enter the stat difference versus what you wear now.</p>
+          <p>What to wear at each level, and whether an upgrade is worth its price.</p>
         </div>
       </div>
+      <GearByLevel c={c} />
+      <h2 style={{ marginTop: 20 }}>Is an upgrade worth it?</h2>
       <div className="grid grid-2">
         <div className="card">
           <h3>Candidate upgrade</h3>
