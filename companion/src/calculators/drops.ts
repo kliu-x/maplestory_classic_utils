@@ -3,7 +3,7 @@ import type { Item, Monster } from '../models/types';
 // Drop tables are server-side and not in the client files, so we only guess who drops a
 // quest item from names the game files do contain. Every guess says how it was made.
 
-export type DropClue = 'item-name' | 'item-text';
+export type DropClue = 'reported' | 'item-name' | 'item-text';
 
 export interface LikelyDropper {
   mob: Monster;
@@ -17,9 +17,16 @@ const norm = (s: string) => ` ${s.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim
  * Only monsters that spawn somewhere count. Strongest clue first; longest name wins a tie
  * so "Horny Mushroom Cap" picks Horny Mushroom, not Mushroom.
  */
-export function likelyDroppers(item: Item | undefined, mobs: Monster[]): LikelyDropper[] {
+export function likelyDroppers(item: Item | undefined, mobs: Monster[], reports: { itemId: number; mobName: string }[] = []): LikelyDropper[] {
   if (!item) return [];
   const live = mobs.filter((m) => m.spawns.length > 0);
+  const seen = reports.filter((r) => r.itemId === item.id).map((r) => r.mobName);
+  const reported = live.filter((m) => seen.includes(m.name)).map((mob) => ({ mob, clue: 'reported' as const }));
+  const guessed = guessDroppers(item, live).filter((d) => !seen.includes(d.mob.name));
+  return [...reported, ...guessed];
+}
+
+function guessDroppers(item: Item, live: Monster[]): LikelyDropper[] {
   const name = norm(item.name);
   const text = norm(item.description ?? '');
   const byLength = [...live].sort((a, b) => b.name.length - a.name.length);

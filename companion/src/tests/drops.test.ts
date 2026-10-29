@@ -21,3 +21,15 @@ describe('likely quest item droppers', () => {
     expect(likelyDroppers(undefined, MONSTERS)).toEqual([]);
   });
 });
+
+describe('drops seen in game', () => {
+  it('adds reported droppers first, then the name guesses', async () => {
+    const { DROP_REPORTS } = await import('../data/dropReports');
+    const { itemById } = await import('../data');
+    const found = likelyDroppers(itemById.get(4000015), MONSTERS, DROP_REPORTS);
+    const names = [...new Set(found.map((d) => d.mob.name))];
+    expect(names[0]).toBe('Dark Axe Stump');
+    expect(names).toContain('Axe Stump');
+    expect(found.find((d) => d.mob.name === 'Dark Axe Stump')!.clue).toBe('reported');
+  });
+});

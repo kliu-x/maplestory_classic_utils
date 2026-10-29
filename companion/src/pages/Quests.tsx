@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { QUESTS, npcById, questSearchText } from '../data';
-import { QuestDetail } from '../components/QuestDetail';
+import { QUEST_STEPS, QuestDetail } from '../components/QuestDetail';
 import { href } from '../router';
 import { SOURCES } from '../data/sources';
 import { QUEST_GENERAL, QUEST_SOURCES, WORTH_LABEL, tipFor } from '../data/questGuide';
@@ -127,6 +127,7 @@ export default function Quests({ params }: PageProps) {
               <tr key={x.id}>
                 <td><input type="checkbox" disabled={!c} checked={done.has(x.id)} onChange={() => toggle(x.id)} aria-label={`Completed ${x.name}`} /></td>
                 <td>
+                  {QUEST_STEPS.get(x.id) && <span className="step-pill">{QUEST_STEPS.get(x.id)!.step}/{QUEST_STEPS.get(x.id)!.of}</span>}
                   <a href={href('quests', { id: x.id })}><strong>{x.name}</strong></a>
                   {x.repeatable && <span className="pill accent"> repeatable</span>}
                   {tipFor(x.id)?.worth && <span className={`worth ${tipFor(x.id)!.worth}`}>{WORTH_LABEL[tipFor(x.id)!.worth!]}</span>}

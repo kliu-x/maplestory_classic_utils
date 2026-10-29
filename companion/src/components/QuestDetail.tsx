@@ -1,17 +1,20 @@
 import type { GameMap, Monster, Quest } from '../models/types';
 import { IMG, MAPS, MONSTERS, QUESTS, itemById, mapById, monsterById, npcById } from '../data';
 import { likelyDroppers } from '../calculators/drops';
+import { DROP_REPORTS } from '../data/dropReports';
 import { QUEST_NOTES } from '../data/questNotes';
 import { QUEST_LOG_TITLES } from '../data/questAliases';
 import { WORTH_LABEL, tipFor, tipSources } from '../data/questGuide';
 import { JOBS } from '../data/rules';
 import { useActive } from '../pages/shared';
 import { homeTown, routeFromTown } from '../calculators/route';
+import { questSteps } from '../calculators/questChain';
 import { href } from '../router';
 import { fmt, SourceBadge, StatusPill } from './ui';
 import { MapView, type Pin } from './MapView';
 
 const questById = new Map(QUESTS.map((q) => [q.id, q]));
+export const QUEST_STEPS = questSteps(QUESTS);
 
 /** The client's quest text keeps escaped line breaks ("\r"); show them as spaces. */
 const gameText = (t: string) => t.replace(/\\[rn]/g, ' ').replace(/\s{2,}/g, ' ');
@@ -69,11 +72,12 @@ function Where({ mobs }: { mobs: Monster[] }) {
 
 /** Who drops a collect item, as far as the game files' names tell, with where they live. */
 function Droppers({ itemId }: { itemId: number }) {
-  const found = likelyDroppers(itemById.get(itemId), MONSTERS);
+  const found = likelyDroppers(itemById.get(itemId), MONSTERS, DROP_REPORTS);
   const byName = new Map<string, Monster[]>();
   for (const d of found) byName.set(d.mob.name, [...(byName.get(d.mob.name) ?? []), d.mob]);
   if (!byName.size) return <div className="small muted">Not a monster drop we can match. Usually from an NPC or made from other items.</div>;
-  const clue = found[0].clue === 'item-name' ? 'The item is named after this monster' : "The item's description names this monster";
+  const clueOf = (name: string) => found.find((d) => d.mob.name === name)!.clue;
+  const CLUE: Record<string, string> = { 'item-name': 'The item is named after this monster', 'item-text': "The item's description names this monster" };
   return (
     <div className="droppers">
       {[...byName].map(([name, mobs]) => (
@@ -81,7 +85,14 @@ function Droppers({ itemId }: { itemId: number }) {
           <div className="icon-row">
             <img src={IMG.mob(mobs[0].id)} alt="" loading="lazy" onError={(e) => (e.currentTarget.style.visibility = 'hidden')} />
             <span>
-              <span className="muted" title={clue}>Likely from</span> <a href={href('monsters', { id: mobs[0].id })}><strong>{name}</strong></a>
+              {clueOf(name) === 'reported' ? (
+                <span className="muted" title={DROP_REPORTS.find((r) => r.itemId === itemId && r.mobName === name)?.source.notes}>
+                  Seen dropping <span className="pill community_reported">player report</span>
+                </span>
+              ) : (
+                <span className="muted" title={CLUE[clueOf(name)]}>Likely from</span>
+              )}{' '}
+              <a href={href('monsters', { id: mobs[0].id })}><strong>{name}</strong></a>
               <span className="small muted"> Lv {mobs[0].level}</span>{' '}
               <a className="small" href={`https://meowdb.com/msclassic/monsters/${mobs[0].id}`} target="_blank" rel="noreferrer">drop list ↗</a>
             </span>
@@ -160,6 +171,9 @@ function NpcPlace({ npcId, role }: { npcId: number; role: string }) {
 export function QuestDetail({ quest: q }: { quest: Quest }) {
   const note = QUEST_NOTES[q.id];
   const tip = tipFor(q.id);
+  const steps = QUEST_STEPS.get(q.id);
+  const { character } = useActive();
+  const done = new Set(character?.completedQuests ?? []);
   const noteMap = note?.mapId ? mapById.get(note.mapId) : undefined;
   const prev = q.prereqQuestIds.map((id) => questById.get(id)).filter((x): x is Quest => !!x);
   const next = nextOf(q.id);
@@ -176,6 +190,7 @@ export function QuestDetail({ quest: q }: { quest: Quest }) {
       </div>
       {QUEST_LOG_TITLES[q.id] && <p className="small muted" style={{ margin: '-6px 0 6px' }}>In your quest log under <strong>{QUEST_LOG_TITLES[q.id]}</strong></p>}
       <p className="small" style={{ marginTop: 0 }}>
+        {steps && <span className="step-pill">Step {steps.step} of {steps.of}</span>}
         Lv {q.minLevel || 1}+{q.exp ? ` · ${fmt(q.exp)} EXP` : ''}
         {q.availableUntil && <> · event, start before <strong>{q.availableUntil}</strong></>}
       </p>
@@ -285,7 +300,23 @@ export function QuestDetail({ quest: q }: { quest: Quest }) {
         <Rewards q={q} />
       </div>
 
-      {(prev.length > 0 || next.length > 0) && (
+      {steps ? (
+        <div style={{ marginTop: 12 }}>
+          <h3>All steps{tip?.chain ? `: ${tip.chain}` : QUEST_LOG_TITLES[q.id] ? `: ${QUEST_LOG_TITLES[q.id]}` : ''}</h3>
+          <ol className="step-list">
+            {steps.chain.map((id) => {
+              const s = questById.get(id)!;
+              return (
+                <li key={id} className={`${id === q.id ? 'here' : ''} ${done.has(id) ? 'done' : ''}`}>
+                  <span className="step-n">{QUEST_STEPS.get(id)!.step}</span>
+                  {id === q.id ? <strong>{s.name}</strong> : <a href={href('quests', { id })}>{s.name}</a>}
+                  <span className="muted small"> Lv {s.minLevel || 1}{s.exp ? ` · ${fmt(s.exp)} EXP` : ''}{done.has(id) ? ' · done ✓' : ''}</span>
+                </li>
+              );
+            })}
+          </ol>
+        </div>
+      ) : (prev.length > 0 || next.length > 0) && (
         <p className="small" style={{ marginBottom: 0 }}>
           {prev.length > 0 && <>Before: {prev.map((p) => <a key={p.id} href={href('quests', { id: p.id })} style={{ marginRight: 8 }}>{p.name}</a>)} </>}
           {next.length > 0 && <>Next: {next.map((n) => <a key={n.id} href={href('quests', { id: n.id })} style={{ marginRight: 8 }}>{n.name}</a>)}</>}
