@@ -25,6 +25,13 @@ const GROUPS: { name: string; links: LinkTile[] }[] = [
     ],
   },
   {
+    name: 'Market & prices',
+    links: [
+      { ico: '💹', url: 'https://meso.watch', title: 'MesoWatch', what: 'What items really sell for in player shops, with price history' },
+      { ico: '🏪', url: 'https://maplestory.watch', title: 'maplestory.watch', what: 'Prices while you set up your store, and live EXP rates' },
+    ],
+  },
+  {
     name: 'Guides',
     links: [
       { ico: '🌱', url: `${MEOW}/guides/beginners-guide-first-steps-in-maple-world`, title: 'Beginner guide', what: 'First steps on Maple Island' },
