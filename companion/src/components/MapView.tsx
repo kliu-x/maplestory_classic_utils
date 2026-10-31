@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import type { GameMap } from '../models/types';
 import { IMG } from '../data';
-import { minimapPoint } from '../calculators/route';
+import { minimapPoint, pathfinderUrl } from '../calculators/route';
 import { href } from '../router';
 
 export interface Pin {
@@ -33,6 +33,7 @@ export function MapView({ map, pins = [], caption }: { map: GameMap; pins?: Pin[
       <figcaption>
         <a href={href('maps', { id: map.id })}><strong>{map.name}</strong></a> <span className="muted small">{map.street}</span>
         {frame && <button className="btn small ghost" style={{ marginLeft: 8 }} onClick={toggle}>{full ? 'Small map' : 'Whole map'}</button>}
+        <a className="small" style={{ marginLeft: 8 }} href={pathfinderUrl(map.id)} target="_blank" rel="noreferrer">Find path ↗</a>
         {caption && <div className="small muted">{caption}</div>}
       </figcaption>
       {frame && !failed ? (

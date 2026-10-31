@@ -1,9 +1,14 @@
 import { describe, expect, it } from 'vitest';
 import { MAPS, QUESTS, mapById, npcById } from '../data';
-import { homeTown, minimapPoint, routeFromTown, whereOnMap } from '../calculators/route';
+import { homeTown, minimapPoint, pathfinderUrl, routeFromTown, whereOnMap } from '../calculators/route';
 import { QUEST_NOTES } from '../data/questNotes';
 
 describe('getting around', () => {
+  it('links to the route finder with a 9-digit map id', () => {
+    expect(pathfinderUrl(10002081)).toBe('https://meowdb.com/msclassic/pathfinder?to=010002081&taxi=1');
+    expect(pathfinderUrl(40)).toBe('https://meowdb.com/msclassic/pathfinder?to=000000040&taxi=1');
+  });
+
   it('says where a spot is on the map', () => {
     const forest = mapById.get(10002070)!;
     const npc = forest.npcs.find((n) => n.id === 319)!;

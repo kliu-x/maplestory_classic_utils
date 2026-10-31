@@ -52,6 +52,11 @@ export function routeFromTown(maps: GameMap[], target: number): number[] | null 
   return null;
 }
 
+/** MeowDB's route finder to a map. Its map ids are always 9 digits (010002081). */
+export function pathfinderUrl(mapId: number): string {
+  return `https://meowdb.com/msclassic/pathfinder?to=${String(mapId).padStart(9, '0')}&taxi=1`;
+}
+
 /** Plain words for where a spot is on a map, for maps where it is easy to miss. */
 export function whereOnMap(map: GameMap, x: number, y: number): string | null {
   const mm = map.miniMap;

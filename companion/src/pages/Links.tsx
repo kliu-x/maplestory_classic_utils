@@ -17,6 +17,7 @@ const GROUPS: { name: string; links: LinkTile[] }[] = [
   {
     name: 'Look things up',
     links: [
+      { ico: '🧭', url: `${MEOW}/pathfinder`, title: 'MeowDB pathfinder', what: 'The route to any map' },
       { ico: '🐌', url: `${MEOW}/monsters`, title: 'MeowDB monsters', what: 'Stats and what players have seen drop' },
       { ico: '🎒', url: `${MEOW}/item-db`, title: 'MeowDB items', what: 'Every item, by type' },
       { ico: '💰', url: `${MEOW}/item-db/safe-to-sell`, title: 'Safe to sell?', what: 'Which drops you can vendor' },
