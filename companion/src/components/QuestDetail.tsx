@@ -7,7 +7,7 @@ import { QUEST_LOG_TITLES } from '../data/questAliases';
 import { WORTH_LABEL, tipFor, tipSources } from '../data/questGuide';
 import { JOBS } from '../data/rules';
 import { useActive } from '../pages/shared';
-import { homeTown, routeFromTown } from '../calculators/route';
+import { homeTown, routeFromTown, whereOnMap } from '../calculators/route';
 import { questSteps } from '../calculators/questChain';
 import { href } from '../router';
 import { fmt, SourceBadge, StatusPill } from './ui';
@@ -161,7 +161,7 @@ function NpcPlace({ npcId, role }: { npcId: number; role: string }) {
       {maps.length === 0 && <p className="small muted">Not placed on any map in the game files (may appear only during an event or via a quest).</p>}
       {maps.slice(0, 2).map((m) => {
         const spot = m.npcs.find((n) => n.id === npcId)!;
-        return <Place key={m.id} map={m} pins={[{ x: spot.x, y: spot.y, label: npc?.name ?? 'NPC', kind: 'npc' }]} />;
+        return <Place key={m.id} map={m} pins={[{ x: spot.x, y: spot.y, label: npc?.name ?? 'NPC', kind: 'npc' }]} caption={whereOnMap(m, spot.x, spot.y) ?? undefined} />;
       })}
       {maps.length > 2 && <p className="small muted">Also in {maps.length - 2} more map(s).</p>}
     </div>

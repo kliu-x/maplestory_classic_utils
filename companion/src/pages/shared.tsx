@@ -69,7 +69,6 @@ export function adviceFor(c: Character, a: TrainingAssumptions): Advice {
     }
   }
   if (pools.pendingSecond > 0) warnings.push(`You have ${pools.pendingSecond} SP waiting for 2nd job (Lv ${RULES.secondJobLevel.value}+).`);
-  if (c.level >= RULES.secondJobLevel.value && tier === 1 && job.family !== 'Beginner') warnings.push('You can make your 2nd job advancement.');
   if (c.level >= RULES.firstJobLevel.value && tier === 0) warnings.push('You can make your 1st job advancement.');
 
   const issues = tier > 0 ? validateAllocation(skillsForJob(c.job, true), c.skills, c.level, tier) : [];

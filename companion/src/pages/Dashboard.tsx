@@ -7,6 +7,8 @@ import { fmt, minutes, ProvenancePill, Stat, StatusPill } from '../components/ui
 import { adviceFor, NeedCharacter, useActive, type PageProps } from './shared';
 import { setActive, useAppState } from '../storage/store';
 import { laneLabel, mainProvenance } from '../calculators/rank';
+import { SecondJobGuide } from '../components/SecondJobGuide';
+import { RULES } from '../data/rules';
 
 export default function Dashboard(_: PageProps) {
   const { character: c, assumptions } = useActive();
@@ -134,6 +136,8 @@ export default function Dashboard(_: PageProps) {
           </section>
         </div>
       </div>
+
+      {c.level >= RULES.secondJobLevel.value && job.tier === 1 && <SecondJobGuide family={job.family} />}
 
       {(advice.warnings.length > 0 || advice.issues.length > 0) && (
         <div className="card">

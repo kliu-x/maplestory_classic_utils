@@ -1,9 +1,15 @@
 import { describe, expect, it } from 'vitest';
 import { MAPS, QUESTS, mapById, npcById } from '../data';
-import { homeTown, minimapPoint, routeFromTown } from '../calculators/route';
+import { homeTown, minimapPoint, routeFromTown, whereOnMap } from '../calculators/route';
 import { QUEST_NOTES } from '../data/questNotes';
 
 describe('getting around', () => {
+  it('says where a spot is on the map', () => {
+    const forest = mapById.get(10002070)!;
+    const npc = forest.npcs.find((n) => n.id === 319)!;
+    expect(whereOnMap(forest, npc.x, npc.y)).toBe('At the very top of the map, centre. This map is tall, so keep climbing.');
+    expect(whereOnMap({ ...forest, miniMap: undefined }, 0, 0)).toBeNull();
+  });
   it('routes from the nearest town through portals', () => {
     const henesys = MAPS.find((m) => m.name === 'Henesys')!;
     expect(routeFromTown(MAPS, henesys.id)).toEqual([henesys.id]);

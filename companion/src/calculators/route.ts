@@ -52,6 +52,18 @@ export function routeFromTown(maps: GameMap[], target: number): number[] | null 
   return null;
 }
 
+/** Plain words for where a spot is on a map, for maps where it is easy to miss. */
+export function whereOnMap(map: GameMap, x: number, y: number): string | null {
+  const mm = map.miniMap;
+  if (!mm) return null;
+  const fy = (y + mm.centerY) / mm.height;
+  const fx = (x + mm.centerX) / mm.width;
+  const up = fy < 0.15 ? 'the very top' : fy < 0.4 ? 'the upper part' : fy < 0.6 ? 'the middle' : fy < 0.85 ? 'the lower part' : 'the very bottom';
+  const side = fx < 0.33 ? 'left side' : fx > 0.67 ? 'right side' : 'centre';
+  const climb = mm.height >= 3000 && fy < 0.4 ? ' This map is tall, so keep climbing.' : '';
+  return `At ${up} of the map, ${side}.${climb}`;
+}
+
 /** World coordinates -> minimap image pixels (the image is the map shrunk by 2^magnification). */
 export function minimapPoint(map: GameMap, x: number, y: number): { left: number; top: number; width: number; height: number } | null {
   const mm = map.miniMap;
