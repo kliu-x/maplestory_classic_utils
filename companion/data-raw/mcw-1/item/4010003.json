@@ -1,5 +1,15 @@
 {
  "id": 4010003,
  "name": "Adamantium Ore",
- "description": "A heavy and strong adamantium ore."
+ "description": "A heavy and strong adamantium ore.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Crafting",
+  "subCategory": "Mineral Ore",
+  "lowItemId": 4010000,
+  "highItemId": 4011000
+ },
+ "meta": {
+  "price": 60
+ }
 }

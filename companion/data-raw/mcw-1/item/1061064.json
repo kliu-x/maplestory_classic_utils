@@ -1,0 +1,23 @@
+{
+ "id": 1061064,
+ "name": "Dark Piettra Skirt",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "reqLevel": 40,
+  "price": 5600,
+  "reqSTR": 30,
+  "reqDEX": 70,
+  "reqJob": 4,
+  "tuc": 7,
+  "incSTR": 4,
+  "incPDD": 35
+ }
+}

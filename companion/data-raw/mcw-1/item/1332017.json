@@ -1,0 +1,22 @@
+{
+ "id": 1332017,
+ "name": "Beginner's Triangular Zamadar",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "Dagger",
+  "lowItemId": 1330000,
+  "highItemId": 1340000
+ },
+ "meta": {
+  "reqLevel": 10,
+  "reqLUK": 20,
+  "reqJob": 8,
+  "tuc": 7,
+  "incWAT": 27,
+  "tradeBlock": true,
+  "attackSpeed": 4
+ }
+}

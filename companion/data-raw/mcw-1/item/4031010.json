@@ -1,5 +1,13 @@
 {
  "id": 4031010,
  "name": "Arcon's Blood",
- "description": "A bottle full of Arcon's blood."
+ "description": "A bottle full of Arcon's blood.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {}
 }

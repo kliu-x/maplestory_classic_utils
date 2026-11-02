@@ -1,0 +1,16 @@
+{
+ "id": 2040317,
+ "name": "Earring Crit. Damage Scroll: Intermediate",
+ "description": "Improves Crit. Damage on earrings.\\nSuccess rate: 60%, Crit. Damage +2",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Earrings",
+  "lowItemId": 2040300,
+  "highItemId": 2040400
+ },
+ "meta": {
+  "price": 1,
+  "incCRD": 2
+ }
+}

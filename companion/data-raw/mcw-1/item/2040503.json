@@ -1,0 +1,17 @@
+{
+ "id": 2040503,
+ "name": "Overall Armor DEF Scroll: Chaos",
+ "description": "Improves Defense on overalls.\\nSuccess rate: 10%, Weapon Def. +8, Magic Def. +6\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Overall",
+  "lowItemId": 2040500,
+  "highItemId": 2040600
+ },
+ "meta": {
+  "price": 1,
+  "incPDD": 8,
+  "incMDD": 6
+ }
+}

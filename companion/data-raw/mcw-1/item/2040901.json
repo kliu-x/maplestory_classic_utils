@@ -1,0 +1,17 @@
+{
+ "id": 2040901,
+ "name": "Shield DEF Scroll: Intermediate",
+ "description": "Improves Defense on shields.\\nSuccess rate: 60%, Weapon Def. +4, Magic Def. +2",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Shield",
+  "lowItemId": 2040900,
+  "highItemId": 2041000
+ },
+ "meta": {
+  "price": 1,
+  "incPDD": 4,
+  "incMDD": 2
+ }
+}

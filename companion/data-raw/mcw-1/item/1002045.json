@@ -1,0 +1,22 @@
+{
+ "id": 1002045,
+ "name": "Blue Feather Hat",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 15,
+  "price": 900,
+  "reqDEX": 20,
+  "reqJob": 4,
+  "tuc": 7,
+  "incMMP": 15,
+  "incPDD": 18
+ }
+}

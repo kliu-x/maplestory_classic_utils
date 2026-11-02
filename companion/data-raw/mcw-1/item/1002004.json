@@ -1,5 +1,20 @@
 {
  "id": 1002004,
  "name": "Black Headband",
- "description": ""
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 5,
+  "price": 300,
+  "tuc": 7,
+  "incPDD": 6,
+  "incACC": 1
+ }
 }

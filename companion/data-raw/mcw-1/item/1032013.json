@@ -1,5 +1,20 @@
 {
  "id": 1032013,
  "name": "Skull Earrings",
- "description": ""
+ "description": "",
+ "equipGroup": "Accessory",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Accessory",
+  "subCategory": "Earrings",
+  "lowItemId": 1030000,
+  "highItemId": 1040000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 16500,
+  "tuc": 5,
+  "incMDD": 38,
+  "incEVA": 4
+ }
 }

@@ -1,0 +1,25 @@
+{
+ "id": 1060042,
+ "name": "White Martial Arts Shorts",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 4000,
+  "reqSTR": 60,
+  "reqDEX": 25,
+  "reqJob": 1,
+  "tuc": 7,
+  "incSTR": 2,
+  "incDEX": 1,
+  "incMHP": 5,
+  "incPDD": 45
+ }
+}

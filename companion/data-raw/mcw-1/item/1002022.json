@@ -1,0 +1,22 @@
+{
+ "id": 1002022,
+ "name": "Brown Winter Hat",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 10,
+  "price": 600,
+  "reqDEX": 10,
+  "reqJob": 4,
+  "tuc": 7,
+  "incSTR": 1,
+  "incPDD": 15
+ }
+}

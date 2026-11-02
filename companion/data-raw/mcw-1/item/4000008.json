@@ -1,5 +1,16 @@
 {
  "id": 4000008,
  "name": "Pig's Head",
- "description": "A head of a pig."
+ "description": "A head of a pig.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "slotMax": 200,
+  "price": 7
+ }
 }

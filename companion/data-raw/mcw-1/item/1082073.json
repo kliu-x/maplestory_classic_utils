@@ -1,0 +1,24 @@
+{
+ "id": 1082073,
+ "name": "Red Moon Gloves",
+ "description": "",
+ "equipGroup": "Glove",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Glove",
+  "lowItemId": 1080000,
+  "highItemId": 1090000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 13200,
+  "reqDEX": 40,
+  "reqLUK": 90,
+  "reqJob": 8,
+  "tuc": 5,
+  "incSTR": 5,
+  "incCRT": 3,
+  "incPDD": 22
+ }
+}

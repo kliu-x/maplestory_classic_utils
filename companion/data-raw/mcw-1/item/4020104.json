@@ -1,5 +1,15 @@
 {
  "id": 4020104,
  "name": "Opal",
- "description": "A jewel with many colors."
+ "description": "A jewel with many colors.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Crafting",
+  "subCategory": "Gem",
+  "lowItemId": 4020100,
+  "highItemId": 4021000
+ },
+ "meta": {
+  "price": 800
+ }
 }

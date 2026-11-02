@@ -1,0 +1,23 @@
+{
+ "id": 1002051,
+ "name": "Yellow Thief Hood",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 15,
+  "price": 900,
+  "reqLUK": 20,
+  "reqJob": 8,
+  "tuc": 7,
+  "incSTR": 1,
+  "incMHP": 5,
+  "incPDD": 18
+ }
+}

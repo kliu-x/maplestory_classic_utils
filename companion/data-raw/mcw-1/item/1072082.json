@@ -1,0 +1,22 @@
+{
+ "id": 1072082,
+ "name": "Black Snowshoes",
+ "description": "",
+ "equipGroup": "Shoes",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shoes",
+  "lowItemId": 1070000,
+  "highItemId": 1080000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 1800,
+  "reqJob": 8,
+  "tuc": 5,
+  "incLUK": 1,
+  "incPDD": 18,
+  "incEVA": 3
+ }
+}

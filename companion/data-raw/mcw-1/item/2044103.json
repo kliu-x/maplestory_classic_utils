@@ -1,0 +1,16 @@
+{
+ "id": 2044103,
+ "name": "Two-handed Axe Attack Scroll: Chaos",
+ "description": "Improves Weapon Attack on two-handed axes.\\nSuccess rate: 10%, Weapon Attack +5\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Two-Handed Axe",
+  "lowItemId": 2044100,
+  "highItemId": 2044200
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 5
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "id": 2040812,
+ "name": "Gloves Crit. Rate Scroll: Lesser",
+ "description": "Improves Crit. Rate on gloves.\\nSuccess rate: 100%, Crit. Rate +1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Gloves",
+  "lowItemId": 2040800,
+  "highItemId": 2040900
+ },
+ "meta": {
+  "price": 1,
+  "incCRT": 1
+ }
+}

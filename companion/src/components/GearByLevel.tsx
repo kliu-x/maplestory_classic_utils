@@ -2,6 +2,9 @@ import { useState } from 'react';
 import type { Character } from '../models/types';
 import { BRANCHES, CHECKPOINTS, COST_LABEL, GEAR_NOTES, GEAR_SOURCES, TIER_LABEL, checkpointOf, defaultBranch, gearFamily, picksAt, type GearPick } from '../data/gearGuide';
 import { fmt, SourceBadge, StatusPill } from './ui';
+import { ITEMS } from '../data';
+import { itemsForPick, statLine } from '../data/itemInfo';
+import { href } from '../router';
 
 /** Best / affordable / easy-to-get gear at each level checkpoint, from Classic World guides. */
 export function GearByLevel({ c }: { c: Character }) {
@@ -66,7 +69,10 @@ function PickRow({ p }: { p: GearPick }) {
     <div className={`gear-pick ${p.tier}`}>
       <div className="gear-pick-head">
         <span className={`gear-tier ${p.tier}`}>{TIER_LABEL[p.tier]}</span>
-        <strong>{p.item}</strong>
+        {(() => {
+          const found = itemsForPick(p, ITEMS);
+          return found.length ? <a href={href('items', { id: found[0].id })}><strong>{p.item}</strong></a> : <strong>{p.item}</strong>;
+        })()}
         {p.reqLevel != null && <span className="muted small">Lv {p.reqLevel}</span>}
         <span className="spacer" />
         <span className="gear-cost" title={p.costNote ?? undefined}>
@@ -75,7 +81,7 @@ function PickRow({ p }: { p: GearPick }) {
         </span>
       </div>
       <div className="small">
-        {[p.stats, p.howToGet && p.howToGet !== 'Not stated' ? p.howToGet : 'where to get it: not in the guides', !p.guidePick && 'from a shop list, not a guide pick'].filter(Boolean).join(' · ')}{' '}
+        {[p.stats ?? (itemsForPick(p, ITEMS)[0] ? statLine(itemsForPick(p, ITEMS)[0]) : null), p.howToGet && p.howToGet !== 'Not stated' ? p.howToGet : 'where to get it: not in the guides', !p.guidePick && 'from a shop list, not a guide pick'].filter(Boolean).join(' · ')}{' '}
         {p.sourceIds.map((id) => GEAR_SOURCES[id] && <SourceBadge key={id} source={p.conflict ? { ...GEAR_SOURCES[id], verification_status: 'conflicting' } : GEAR_SOURCES[id]} compact />)}
       </div>
       {p.conflict && <div className="small" style={{ marginTop: 2 }}><StatusPill status="conflicting" /> {p.conflict}</div>}

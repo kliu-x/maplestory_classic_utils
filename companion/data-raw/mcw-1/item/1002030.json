@@ -1,0 +1,25 @@
+{
+ "id": 1002030,
+ "name": "Steel Helmet",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 12,
+  "price": 750,
+  "reqSTR": 15,
+  "reqJob": 1,
+  "tuc": 7,
+  "incDEX": 1,
+  "incMHP": 12,
+  "incPDD": 25,
+  "incMDD": 5,
+  "incACC": 2
+ }
+}

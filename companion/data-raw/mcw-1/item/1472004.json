@@ -1,0 +1,23 @@
+{
+ "id": 1472004,
+ "name": "Bronze Igor",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Claw",
+  "lowItemId": 1470000,
+  "highItemId": 1480000
+ },
+ "meta": {
+  "reqLevel": 20,
+  "price": 4500,
+  "reqDEX": 20,
+  "reqLUK": 45,
+  "reqJob": 8,
+  "tuc": 7,
+  "incWAT": 16,
+  "attackSpeed": 4
+ }
+}

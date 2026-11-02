@@ -1,0 +1,16 @@
+{
+ "id": 2100004,
+ "name": "GM Black Sack: Zombie Mushmom Level 50",
+ "description": "Use to summon Zombie Mushmom for the Monster Invasion GM event.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Other",
+  "subCategory": "Summoning Sack",
+  "lowItemId": 2100000,
+  "highItemId": 2110000
+ },
+ "meta": {
+  "slotMax": 100,
+  "price": 1
+ }
+}

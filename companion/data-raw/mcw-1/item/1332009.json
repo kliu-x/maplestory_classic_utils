@@ -1,0 +1,23 @@
+{
+ "id": 1332009,
+ "name": "Cass",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "Dagger",
+  "lowItemId": 1330000,
+  "highItemId": 1340000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 5500,
+  "reqSTR": 25,
+  "reqLUK": 60,
+  "reqJob": 9,
+  "tuc": 7,
+  "incWAT": 47,
+  "attackSpeed": 3
+ }
+}

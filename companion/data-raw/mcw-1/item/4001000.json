@@ -1,5 +1,15 @@
 {
  "id": 4001000,
  "name": "Arwen's Glass Shoe",
- "description": "A shiny glass shoe, for women only."
+ "description": "A shiny glass shoe, for women only.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "price": 250
+ }
 }

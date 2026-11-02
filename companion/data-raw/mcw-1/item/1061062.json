@@ -1,0 +1,24 @@
+{
+ "id": 1061062,
+ "name": "Black Jangoon Skirt",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "reqLevel": 40,
+  "price": 5600,
+  "reqSTR": 70,
+  "reqDEX": 30,
+  "reqJob": 1,
+  "tuc": 7,
+  "incSTR": 2,
+  "incDEX": 2,
+  "incPDD": 49
+ }
+}

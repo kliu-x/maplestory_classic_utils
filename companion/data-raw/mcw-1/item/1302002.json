@@ -1,0 +1,23 @@
+{
+ "id": 1302002,
+ "name": "Sabre",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "One-Handed Sword",
+  "lowItemId": 1300000,
+  "highItemId": 1310000
+ },
+ "meta": {
+  "reqLevel": 15,
+  "price": 2500,
+  "reqSTR": 30,
+  "reqDEX": 10,
+  "reqJob": 1,
+  "tuc": 7,
+  "incWAT": 32,
+  "attackSpeed": 4
+ }
+}

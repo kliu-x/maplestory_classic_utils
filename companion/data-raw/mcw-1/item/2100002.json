@@ -1,0 +1,16 @@
+{
+ "id": 2100002,
+ "name": "GM Black Sack: King Slime Level 32",
+ "description": "Use to summon King Slime for the Monster Invasion GM event.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Other",
+  "subCategory": "Summoning Sack",
+  "lowItemId": 2100000,
+  "highItemId": 2110000
+ },
+ "meta": {
+  "slotMax": 100,
+  "price": 1
+ }
+}

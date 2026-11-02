@@ -1,5 +1,23 @@
 {
  "id": 1002994,
  "name": "Mark of the Beta",
- "description": ""
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 25,
+  "price": 1500,
+  "tuc": 7,
+  "incSTR": 1,
+  "incDEX": 1,
+  "incINT": 1,
+  "incLUK": 1,
+  "incPDD": 24
+ }
 }

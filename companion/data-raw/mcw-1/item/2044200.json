@@ -1,0 +1,16 @@
+{
+ "id": 2044200,
+ "name": "Two-handed Blunt Weapon Attack Scroll: Lesser",
+ "description": "Improves Weapon Attack on two-handed blunt weapons.\\nSuccess rate: 100%, Weapon Attack +1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Two-Handed BW",
+  "lowItemId": 2044200,
+  "highItemId": 2044300
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 1
+ }
+}

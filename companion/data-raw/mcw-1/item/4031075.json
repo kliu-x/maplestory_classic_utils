@@ -1,5 +1,15 @@
 {
  "id": 4031075,
  "name": "Stump's Teardrop",
- "description": "Very rarely found from a Dark Axe Stump. A Stump's hardened liquid."
+ "description": "Very rarely found from a Dark Axe Stump. A Stump's hardened liquid.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "price": 1
+ }
 }

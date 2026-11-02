@@ -1,0 +1,23 @@
+{
+ "id": 1040049,
+ "name": "Silver Black Stealer",
+ "description": "",
+ "equipGroup": "Coat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Top",
+  "lowItemId": 1040000,
+  "highItemId": 1050000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 3000,
+  "reqDEX": 20,
+  "reqLUK": 50,
+  "reqJob": 8,
+  "tuc": 7,
+  "incLUK": 3,
+  "incPDD": 40
+ }
+}

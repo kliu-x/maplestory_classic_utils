@@ -1,0 +1,16 @@
+{
+ "id": 2040009,
+ "name": "Hat MP Scroll: Intermediate",
+ "description": "Improves Max MP on hats.\\nSuccess rate: 60%, Max MP +15",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Helmet",
+  "lowItemId": 2040000,
+  "highItemId": 2040100
+ },
+ "meta": {
+  "price": 1,
+  "incMMP": 15
+ }
+}

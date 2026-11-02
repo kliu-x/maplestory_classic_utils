@@ -1,5 +1,15 @@
 {
  "id": 3000000,
  "name": "Oak Window",
- "description": "An oak window with cute curtains. Can be placed in your home."
+ "description": "An oak window with cute curtains. Can be placed in your home.",
+ "typeInfo": {
+  "overallCategory": "Setup",
+  "category": "Housing",
+  "subCategory": "Furniture",
+  "lowItemId": 3000000,
+  "highItemId": 3010000
+ },
+ "meta": {
+  "price": 10
+ }
 }

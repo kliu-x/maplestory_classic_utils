@@ -1,0 +1,21 @@
+{
+ "id": 1002032,
+ "name": "Metal Gear",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 15,
+  "price": 900,
+  "tuc": 7,
+  "incSTR": 1,
+  "incMHP": 5,
+  "incPDD": 18
+ }
+}

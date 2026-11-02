@@ -1,5 +1,16 @@
 {
  "id": 4000017,
  "name": "Stirge Wing",
- "description": "A wing cut off of a Stirge."
+ "description": "A wing cut off of a Stirge.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "slotMax": 200,
+  "price": 20
+ }
 }

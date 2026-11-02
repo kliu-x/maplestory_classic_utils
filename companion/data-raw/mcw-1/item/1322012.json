@@ -1,0 +1,25 @@
+{
+ "id": 1322012,
+ "name": "Lollipop",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "One-Handed Blunt Weapon",
+  "lowItemId": 1320000,
+  "highItemId": 1330000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 5500,
+  "reqSTR": 10,
+  "reqDEX": 10,
+  "reqINT": 10,
+  "reqLUK": 10,
+  "tuc": 7,
+  "incMAD": 15,
+  "incWAT": 29,
+  "attackSpeed": 4
+ }
+}

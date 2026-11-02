@@ -1,0 +1,20 @@
+{
+ "id": 1060011,
+ "name": "Grey Thick Sweat Pants",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "reqLevel": 12,
+  "price": 960,
+  "tuc": 7,
+  "incMHP": 12,
+  "incPDD": 18
+ }
+}

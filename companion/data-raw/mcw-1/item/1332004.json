@@ -1,0 +1,23 @@
+{
+ "id": 1332004,
+ "name": "Triple-Tipped Zamadar",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "Dagger",
+  "lowItemId": 1330000,
+  "highItemId": 1340000
+ },
+ "meta": {
+  "reqLevel": 17,
+  "price": 2900,
+  "reqSTR": 11,
+  "reqLUK": 31,
+  "reqJob": 9,
+  "tuc": 7,
+  "incWAT": 34,
+  "attackSpeed": 3
+ }
+}

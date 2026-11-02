@@ -1,0 +1,23 @@
+{
+ "id": 1302012,
+ "name": "Traus",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "One-Handed Sword",
+  "lowItemId": 1300000,
+  "highItemId": 1310000
+ },
+ "meta": {
+  "reqLevel": 40,
+  "price": 9500,
+  "reqSTR": 80,
+  "reqDEX": 35,
+  "reqJob": 1,
+  "tuc": 7,
+  "incWAT": 60,
+  "attackSpeed": 5
+ }
+}

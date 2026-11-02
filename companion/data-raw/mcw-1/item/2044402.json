@@ -1,5 +1,16 @@
 {
  "id": 2044402,
  "name": "Polearm Attack Scroll: Greater",
- "description": "Improves Weapon Attack on polearms.\\nSuccess rate: 10%, Weapon Attack +4"
+ "description": "Improves Weapon Attack on polearms.\\nSuccess rate: 10%, Weapon Attack +4",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Polearm",
+  "lowItemId": 2044400,
+  "highItemId": 2044500
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 4
+ }
 }

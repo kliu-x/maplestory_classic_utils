@@ -1,0 +1,16 @@
+{
+ "id": 2040707,
+ "name": "Shoes Speed Scroll: Chaos",
+ "description": "Improves Speed on shoes.\\nSuccess rate: 10%, Speed +4\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Shoes",
+  "lowItemId": 2040700,
+  "highItemId": 2040800
+ },
+ "meta": {
+  "price": 1,
+  "incSpeed": 4
+ }
+}

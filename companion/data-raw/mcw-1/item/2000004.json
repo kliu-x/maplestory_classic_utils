@@ -1,5 +1,15 @@
 {
  "id": 2000004,
  "name": "Elixir",
- "description": "A legendary potion.\\nRestores 35% of your HP and MP, but due to its powerful effect, there is a cooldown before it can be used again."
+ "description": "A legendary potion.\\nRestores 35% of your HP and MP, but due to its powerful effect, there is a cooldown before it can be used again.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Potion",
+  "lowItemId": 2000000,
+  "highItemId": 2010000
+ },
+ "meta": {
+  "price": 500
+ }
 }

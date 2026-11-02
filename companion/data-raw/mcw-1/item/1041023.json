@@ -1,0 +1,23 @@
+{
+ "id": 1041023,
+ "name": "Red Nightshift",
+ "description": "",
+ "equipGroup": "Coat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Top",
+  "lowItemId": 1040000,
+  "highItemId": 1050000
+ },
+ "meta": {
+  "reqLevel": 15,
+  "price": 1500,
+  "reqLUK": 20,
+  "reqJob": 8,
+  "tuc": 7,
+  "incSTR": 1,
+  "incMHP": 5,
+  "incPDD": 28
+ }
+}

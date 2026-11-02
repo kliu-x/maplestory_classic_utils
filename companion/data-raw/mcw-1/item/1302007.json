@@ -1,0 +1,21 @@
+{
+ "id": 1302007,
+ "name": "Sky Blue Umbrella",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "One-Handed Sword",
+  "lowItemId": 1300000,
+  "highItemId": 1310000
+ },
+ "meta": {
+  "reqLevel": 27,
+  "price": 4900,
+  "tuc": 7,
+  "incMAD": 12,
+  "incWAT": 33,
+  "attackSpeed": 4
+ }
+}

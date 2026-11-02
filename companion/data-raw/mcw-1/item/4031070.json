@@ -1,5 +1,15 @@
 {
  "id": 4031070,
  "name": "Winston's Recommendation",
- "description": "A letter of recommendation from Winston the Archeologist. Need to deliver this to Dr. Betty of Ellinia."
+ "description": "A letter of recommendation from Winston the Archeologist. Need to deliver this to Dr. Betty of Ellinia.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "price": 1
+ }
 }

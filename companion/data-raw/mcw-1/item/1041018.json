@@ -1,0 +1,23 @@
+{
+ "id": 1041018,
+ "name": "Pink Arianne",
+ "description": "",
+ "equipGroup": "Coat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Top",
+  "lowItemId": 1040000,
+  "highItemId": 1050000
+ },
+ "meta": {
+  "reqLevel": 15,
+  "price": 1500,
+  "reqINT": 20,
+  "reqJob": 2,
+  "tuc": 7,
+  "incMHP": 15,
+  "incPDD": 16,
+  "incMDD": 21
+ }
+}

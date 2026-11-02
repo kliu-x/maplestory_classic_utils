@@ -1,5 +1,15 @@
 {
  "id": 4080005,
  "name": "Pig & Octopus Omok Set",
- "description": "A set that allows you to play Omok. Uses pig and octopus-shaped figures for the game."
+ "description": "A set that allows you to play Omok. Uses pig and octopus-shaped figures for the game.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Minigame",
+  "lowItemId": 4080000,
+  "highItemId": 4080200
+ },
+ "meta": {
+  "price": 1
+ }
 }

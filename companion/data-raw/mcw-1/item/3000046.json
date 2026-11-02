@@ -1,5 +1,15 @@
 {
  "id": 3000046,
  "name": "Metal Trash Can",
- "description": "A tough yet reliable metal trash can. Can be placed in your home."
+ "description": "A tough yet reliable metal trash can. Can be placed in your home.",
+ "typeInfo": {
+  "overallCategory": "Setup",
+  "category": "Housing",
+  "subCategory": "Furniture",
+  "lowItemId": 3000000,
+  "highItemId": 3010000
+ },
+ "meta": {
+  "price": 10
+ }
 }

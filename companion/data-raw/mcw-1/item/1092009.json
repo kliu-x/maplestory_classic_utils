@@ -1,0 +1,22 @@
+{
+ "id": 1092009,
+ "name": "Red Triangular Shield",
+ "description": "Gives a chance to block enemy attacks entirely.",
+ "equipGroup": "Shield",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shield",
+  "lowItemId": 1090000,
+  "highItemId": 1100000
+ },
+ "meta": {
+  "reqLevel": 25,
+  "price": 5000,
+  "reqSTR": 40,
+  "reqDEX": 15,
+  "reqJob": 1,
+  "tuc": 7,
+  "incPDD": 100
+ }
+}

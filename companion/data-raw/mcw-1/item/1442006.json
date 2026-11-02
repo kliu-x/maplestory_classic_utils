@@ -1,0 +1,23 @@
+{
+ "id": 1442006,
+ "name": "Crescent Polearm",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Pole Arm",
+  "lowItemId": 1440000,
+  "highItemId": 1450000
+ },
+ "meta": {
+  "reqLevel": 40,
+  "price": 11500,
+  "reqSTR": 85,
+  "reqDEX": 40,
+  "reqJob": 1,
+  "tuc": 7,
+  "incWAT": 65,
+  "attackSpeed": 8
+ }
+}

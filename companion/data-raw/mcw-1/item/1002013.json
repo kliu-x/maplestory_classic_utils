@@ -1,0 +1,20 @@
+{
+ "id": 1002013,
+ "name": "Blue Bandana",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 10,
+  "price": 600,
+  "tuc": 7,
+  "incMMP": 10,
+  "incPDD": 15
+ }
+}

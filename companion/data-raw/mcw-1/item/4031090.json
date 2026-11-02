@@ -1,5 +1,13 @@
 {
  "id": 4031090,
  "name": "Dances with Balrog's Letter",
- "description": "A letter from Dances with Balrog in Perion. Deliver it to Lewis in the Free Market."
+ "description": "A letter from Dances with Balrog in Perion. Deliver it to Lewis in the Free Market.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {}
 }

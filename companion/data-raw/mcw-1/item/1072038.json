@@ -1,0 +1,24 @@
+{
+ "id": 1072038,
+ "name": "Red Enamel Boots",
+ "description": "",
+ "equipGroup": "Shoes",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shoes",
+  "lowItemId": 1070000,
+  "highItemId": 1080000
+ },
+ "meta": {
+  "reqLevel": 20,
+  "price": 1200,
+  "reqDEX": 10,
+  "reqLUK": 30,
+  "reqJob": 8,
+  "tuc": 5,
+  "incDEX": 2,
+  "incPDD": 14,
+  "incEVA": 2
+ }
+}

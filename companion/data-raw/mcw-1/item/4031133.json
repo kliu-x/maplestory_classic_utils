@@ -1,5 +1,15 @@
 {
  "id": 4031133,
  "name": "Ink of Truth",
- "description": "An ink infused with magical power. It can reveal the hidden truth within an encoded document."
+ "description": "An ink infused with magical power. It can reveal the hidden truth within an encoded document.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "price": 1
+ }
 }

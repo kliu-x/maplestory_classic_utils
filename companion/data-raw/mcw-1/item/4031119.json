@@ -1,5 +1,16 @@
 {
  "id": 4031119,
  "name": "Incomplete Ledger",
- "description": "A registry of adventurers, stamped on the cover by the chief of Henesys. The pages inside are soaked through and mostly unreadable. One word on the top page survived: Warrior."
+ "description": "A registry of adventurers, stamped on the cover by the chief of Henesys. The pages inside are soaked through and mostly unreadable. One word on the top page survived: Warrior.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "slotMax": 1,
+  "price": 1
+ }
 }

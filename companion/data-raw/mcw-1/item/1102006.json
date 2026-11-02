@@ -1,0 +1,21 @@
+{
+ "id": 1102006,
+ "name": "Red Napoleon",
+ "description": "",
+ "equipGroup": "Cape",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Cape",
+  "lowItemId": 1100000,
+  "highItemId": 1110000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 13200,
+  "tuc": 5,
+  "incSTR": 3,
+  "incPDD": 22,
+  "incACC": 4
+ }
+}

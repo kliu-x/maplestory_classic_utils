@@ -1,0 +1,13 @@
+{
+ "id": 2028000,
+ "name": "Mysterious Meso Pouch",
+ "description": "How many Mesos are in this pouch, anyway?",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Equipment Box",
+  "lowItemId": 2028000,
+  "highItemId": 2029000
+ },
+ "meta": {}
+}

@@ -1,5 +1,16 @@
 {
  "id": 2041009,
  "name": "Cape STR Scroll: Intermediate",
- "description": "Improves Strength on capes.\\nSuccess rate: 60%, STR +2"
+ "description": "Improves Strength on capes.\\nSuccess rate: 60%, STR +2",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Cape",
+  "lowItemId": 2041000,
+  "highItemId": 2041100
+ },
+ "meta": {
+  "price": 1,
+  "incSTR": 2
+ }
 }

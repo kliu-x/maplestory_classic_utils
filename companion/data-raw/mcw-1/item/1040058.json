@@ -1,0 +1,24 @@
+{
+ "id": 1040058,
+ "name": "Black Knucklevest",
+ "description": "",
+ "equipGroup": "Coat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Top",
+  "lowItemId": 1040000,
+  "highItemId": 1050000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 5000,
+  "reqDEX": 25,
+  "reqLUK": 60,
+  "reqJob": 8,
+  "tuc": 7,
+  "incLUK": 3,
+  "incMHP": 5,
+  "incPDD": 44
+ }
+}

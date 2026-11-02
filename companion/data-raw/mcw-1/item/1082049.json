@@ -1,0 +1,25 @@
+{
+ "id": 1082049,
+ "name": "Gold Arbion",
+ "description": "",
+ "equipGroup": "Glove",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Glove",
+  "lowItemId": 1080000,
+  "highItemId": 1090000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 6000,
+  "reqDEX": 25,
+  "reqLUK": 60,
+  "reqJob": 8,
+  "tuc": 5,
+  "incLUK": 3,
+  "incMHP": 5,
+  "incCRT": 2,
+  "incPDD": 16
+ }
+}

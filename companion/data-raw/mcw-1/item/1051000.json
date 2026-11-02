@@ -1,0 +1,23 @@
+{
+ "id": 1051000,
+ "name": "Steel Fitted Mail",
+ "description": "",
+ "equipGroup": "Longcoat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Overall",
+  "lowItemId": 1050000,
+  "highItemId": 1060000
+ },
+ "meta": {
+  "reqLevel": 15,
+  "price": 2700,
+  "reqSTR": 20,
+  "reqJob": 1,
+  "tuc": 10,
+  "incSTR": 2,
+  "incDEX": 1,
+  "incPDD": 75
+ }
+}

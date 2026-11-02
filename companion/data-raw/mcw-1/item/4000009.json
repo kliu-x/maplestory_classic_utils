@@ -1,5 +1,16 @@
 {
  "id": 4000009,
  "name": "Orange Mushroom Cap",
- "description": "A cap removed from an Orange Mushroom."
+ "description": "A cap removed from an Orange Mushroom.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "slotMax": 200,
+  "price": 8
+ }
 }

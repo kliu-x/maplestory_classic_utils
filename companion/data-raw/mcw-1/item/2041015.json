@@ -1,0 +1,16 @@
+{
+ "id": 2041015,
+ "name": "Cape DEX Scroll: Chaos",
+ "description": "Improves Dexterity on capes.\\nSuccess rate: 10%, DEX +4\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Cape",
+  "lowItemId": 2041000,
+  "highItemId": 2041100
+ },
+ "meta": {
+  "price": 1,
+  "incDEX": 4
+ }
+}

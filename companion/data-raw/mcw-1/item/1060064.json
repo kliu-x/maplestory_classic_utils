@@ -1,0 +1,24 @@
+{
+ "id": 1060064,
+ "name": "Blue China Pants",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 8800,
+  "reqDEX": 40,
+  "reqLUK": 90,
+  "reqJob": 8,
+  "tuc": 7,
+  "incLUK": 3,
+  "incMMP": 20,
+  "incPDD": 41
+ }
+}

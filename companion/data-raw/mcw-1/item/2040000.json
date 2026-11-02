@@ -1,5 +1,16 @@
 {
  "id": 2040000,
  "name": "Hat Accuracy Scroll: Lesser",
- "description": "Improves Accuracy on hats.\\nSuccess rate: 100%, Accuracy +1"
+ "description": "Improves Accuracy on hats.\\nSuccess rate: 100%, Accuracy +1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Helmet",
+  "lowItemId": 2040000,
+  "highItemId": 2040100
+ },
+ "meta": {
+  "price": 1,
+  "incACC": 1
+ }
 }

@@ -1,5 +1,16 @@
 {
  "id": 4031142,
  "name": "Elda's Last Message",
- "description": "Elda's name-charm, wrapped in Daniel the Scholar's written copy of the message on its back."
+ "description": "Elda's name-charm, wrapped in Daniel the Scholar's written copy of the message on its back.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "slotMax": 1,
+  "price": 1
+ }
 }

@@ -1,5 +1,16 @@
 {
  "id": 4000023,
  "name": "Iron Hog's Metal Hoof",
- "description": "A metal hoof that covered the legs of an Iron Hog. "
+ "description": "A metal hoof that covered the legs of an Iron Hog. ",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "slotMax": 200,
+  "price": 28
+ }
 }

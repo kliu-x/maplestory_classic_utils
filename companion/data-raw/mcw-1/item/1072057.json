@@ -1,0 +1,25 @@
+{
+ "id": 1072057,
+ "name": "Black Lappy Boots",
+ "description": "",
+ "equipGroup": "Shoes",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shoes",
+  "lowItemId": 1070000,
+  "highItemId": 1080000
+ },
+ "meta": {
+  "reqLevel": 25,
+  "price": 1500,
+  "reqDEX": 15,
+  "reqLUK": 40,
+  "reqJob": 8,
+  "tuc": 5,
+  "incSTR": 2,
+  "incMHP": 5,
+  "incPDD": 16,
+  "incEVA": 2
+ }
+}

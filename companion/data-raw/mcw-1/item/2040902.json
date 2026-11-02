@@ -1,0 +1,17 @@
+{
+ "id": 2040902,
+ "name": "Shield DEF Scroll: Greater",
+ "description": "Improves Defense on shields.\\nSuccess rate:10%, Weapon Def. +6, Magic Def. +4",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Shield",
+  "lowItemId": 2040900,
+  "highItemId": 2041000
+ },
+ "meta": {
+  "price": 1,
+  "incPDD": 6,
+  "incMDD": 4
+ }
+}

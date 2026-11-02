@@ -1,0 +1,16 @@
+{
+ "id": 2040702,
+ "name": "Shoes Jump Scroll: Greater",
+ "description": "Improves Jump on shoes.\\nSuccess rate: 10%, Jump +3",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Shoes",
+  "lowItemId": 2040700,
+  "highItemId": 2040800
+ },
+ "meta": {
+  "price": 1,
+  "incJump": 3
+ }
+}

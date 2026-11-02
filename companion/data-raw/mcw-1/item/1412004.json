@@ -1,0 +1,23 @@
+{
+ "id": 1412004,
+ "name": "Blue Axe",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Two-Handed Axe",
+  "lowItemId": 1410000,
+  "highItemId": 1420000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 6500,
+  "reqSTR": 65,
+  "reqDEX": 30,
+  "reqJob": 1,
+  "tuc": 7,
+  "incWAT": 50,
+  "attackSpeed": 5
+ }
+}

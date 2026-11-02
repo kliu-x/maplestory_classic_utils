@@ -1,0 +1,16 @@
+{
+ "id": 2043303,
+ "name": "Dagger Attack Scroll: Chaos",
+ "description": "Improves Weapon Attack on daggers.\\nSuccess rate: 10%, Weapon Attack +5\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Dagger",
+  "lowItemId": 2043300,
+  "highItemId": 2043400
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 5
+ }
+}

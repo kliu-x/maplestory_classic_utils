@@ -1,0 +1,23 @@
+{
+ "id": 1332012,
+ "name": "Gephart",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "Dagger",
+  "lowItemId": 1330000,
+  "highItemId": 1340000
+ },
+ "meta": {
+  "reqLevel": 40,
+  "price": 9500,
+  "reqDEX": 35,
+  "reqLUK": 80,
+  "reqJob": 8,
+  "tuc": 7,
+  "incWAT": 58,
+  "attackSpeed": 4
+ }
+}

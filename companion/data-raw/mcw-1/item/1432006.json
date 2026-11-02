@@ -1,0 +1,23 @@
+{
+ "id": 1432006,
+ "name": "Serpent's Tongue",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Spear",
+  "lowItemId": 1430000,
+  "highItemId": 1440000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 16500,
+  "reqSTR": 105,
+  "reqDEX": 50,
+  "reqJob": 1,
+  "tuc": 7,
+  "incWAT": 69,
+  "attackSpeed": 6
+ }
+}

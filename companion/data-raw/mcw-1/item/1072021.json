@@ -1,0 +1,24 @@
+{
+ "id": 1072021,
+ "name": "Red Ninja Sandals",
+ "description": "",
+ "equipGroup": "Shoes",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shoes",
+  "lowItemId": 1070000,
+  "highItemId": 1080000
+ },
+ "meta": {
+  "reqLevel": 15,
+  "price": 900,
+  "reqLUK": 20,
+  "reqJob": 8,
+  "tuc": 5,
+  "incSTR": 1,
+  "incMHP": 5,
+  "incPDD": 12,
+  "incEVA": 1
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "id": 2430015,
+ "name": "MapleStory Fest 2026 Special Hat Exchange Box (Silver)",
+ "description": "#cDouble-click# to choose #ctwo# of the items below:\\n\\n- Octopus Hat (Transferable within world, Permanent) x1\\n- Orange Mushroom Hat (Transferable within world, Permanent) x1\\n- Slime Hat (Transferable within world, Permanent) x1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Other",
+  "lowItemId": 2430000,
+  "highItemId": 2440000
+ },
+ "meta": {
+  "price": 1
+ }
+}

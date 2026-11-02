@@ -1,0 +1,22 @@
+{
+ "id": 1442000,
+ "name": "Pole Arm",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Pole Arm",
+  "lowItemId": 1440000,
+  "highItemId": 1450000
+ },
+ "meta": {
+  "reqLevel": 10,
+  "price": 2500,
+  "reqSTR": 15,
+  "reqJob": 13,
+  "tuc": 7,
+  "incWAT": 35,
+  "attackSpeed": 8
+ }
+}

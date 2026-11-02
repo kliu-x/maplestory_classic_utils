@@ -1,0 +1,16 @@
+{
+ "id": 2040604,
+ "name": "Bottomwear HP Scroll: Lesser",
+ "description": "Improves Max HP on bottomwear.\\nSuccess rate: 100%, Max HP +10",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Bottomwear",
+  "lowItemId": 2040600,
+  "highItemId": 2040700
+ },
+ "meta": {
+  "price": 1,
+  "incMHP": 10
+ }
+}

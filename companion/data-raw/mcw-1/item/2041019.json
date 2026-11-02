@@ -1,0 +1,16 @@
+{
+ "id": 2041019,
+ "name": "Cape INT Scroll: Chaos",
+ "description": "Improves Intelligence on capes.\\nSuccess rate: 10%, INT +4\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Cape",
+  "lowItemId": 2041000,
+  "highItemId": 2041100
+ },
+ "meta": {
+  "price": 1,
+  "incINT": 4
+ }
+}

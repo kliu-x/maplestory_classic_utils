@@ -1,0 +1,17 @@
+{
+ "id": 2430035,
+ "name": "Stark's Clothes Selector Coupon",
+ "description": "#cDouble-click# to choose either #cStark's Clothes# or #cStark's Winter Clothes#. ",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Other",
+  "lowItemId": 2430000,
+  "highItemId": 2440000
+ },
+ "meta": {
+  "slotMax": 1,
+  "price": 1,
+  "tradeBlock": true
+ }
+}

@@ -1,5 +1,22 @@
 {
  "id": 1002084,
  "name": "Red Starry Bandana",
- "description": ""
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 25,
+  "price": 1500,
+  "reqSTR": 10,
+  "tuc": 7,
+  "incSTR": 2,
+  "incMHP": 5,
+  "incPDD": 24
+ }
 }

@@ -1,0 +1,18 @@
+{
+ "id": 2070002,
+ "name": "Mokbi Throwing Stars",
+ "description": "Throwing stars made out of steel. Once they run out, they need to be recharged.\\r\\nLevel Required: 10, Weapon Attack +19",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Projectile",
+  "subCategory": "Thrown",
+  "lowItemId": 2070000,
+  "highItemId": 2070100
+ },
+ "meta": {
+  "reqLevel": 10,
+  "slotMax": 700,
+  "price": 1000,
+  "incWAT": 19
+ }
+}

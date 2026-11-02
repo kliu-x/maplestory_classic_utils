@@ -1,0 +1,17 @@
+{
+ "id": 2210007,
+ "name": "Jr. Balrog Invasion",
+ "description": "I sense an overwhelming power!\\n\\n#cRight-click on the buff icon to cancel the transformation.#",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Transformation",
+  "lowItemId": 2210000,
+  "highItemId": 2230000
+ },
+ "meta": {
+  "slotMax": 200,
+  "price": 1,
+  "tradeBlock": true
+ }
+}

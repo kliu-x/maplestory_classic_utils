@@ -1,0 +1,21 @@
+{
+ "id": 1402004,
+ "name": "Aluminum Baseball Bat",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Two-Handed Sword",
+  "lowItemId": 1400000,
+  "highItemId": 1410000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 6500,
+  "reqSTR": 55,
+  "tuc": 7,
+  "incWAT": 50,
+  "attackSpeed": 5
+ }
+}

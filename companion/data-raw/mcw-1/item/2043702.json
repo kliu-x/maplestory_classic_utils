@@ -1,5 +1,16 @@
 {
  "id": 2043702,
  "name": "Wand Magic Attack Scroll: Greater",
- "description": "Improves Magic Attack on wands.\\nSuccess rate: 10%, Magic Attack +8"
+ "description": "Improves Magic Attack on wands.\\nSuccess rate: 10%, Magic Attack +8",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Wand",
+  "lowItemId": 2043700,
+  "highItemId": 2043800
+ },
+ "meta": {
+  "price": 1,
+  "incMAD": 8
+ }
 }

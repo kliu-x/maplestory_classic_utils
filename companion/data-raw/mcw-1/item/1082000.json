@@ -1,5 +1,20 @@
 {
  "id": 1082000,
  "name": "Work Gloves",
- "description": ""
+ "description": "",
+ "equipGroup": "Glove",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Glove",
+  "lowItemId": 1080000,
+  "highItemId": 1090000
+ },
+ "meta": {
+  "reqLevel": 10,
+  "price": 1200,
+  "tuc": 5,
+  "incCRT": 1,
+  "incPDD": 6
+ }
 }

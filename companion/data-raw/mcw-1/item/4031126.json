@@ -1,5 +1,15 @@
 {
  "id": 4031126,
  "name": "Alex's Gift Sack",
- "description": "A sack containing presents Alex has prepared for the people of Kerning City."
+ "description": "A sack containing presents Alex has prepared for the people of Kerning City.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "price": 1
+ }
 }

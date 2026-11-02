@@ -1,5 +1,16 @@
 {
  "id": 4000027,
  "name": "Curse Eye Tail",
- "description": "A tail removed from a Curse Eye."
+ "description": "A tail removed from a Curse Eye.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "slotMax": 200,
+  "price": 33
+ }
 }

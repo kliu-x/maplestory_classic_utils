@@ -1,0 +1,16 @@
+{
+ "id": 2044600,
+ "name": "Crossbow Attack Scroll: Lesser",
+ "description": "Improves Weapon Attack on crossbows.\\nSuccess rate: 100%, Weapon Attack +1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Crossbow",
+  "lowItemId": 2044600,
+  "highItemId": 2044700
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 1
+ }
+}

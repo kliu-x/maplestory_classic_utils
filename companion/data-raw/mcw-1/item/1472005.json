@@ -1,0 +1,24 @@
+{
+ "id": 1472005,
+ "name": "Steel Igor",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Claw",
+  "lowItemId": 1470000,
+  "highItemId": 1480000
+ },
+ "meta": {
+  "reqLevel": 20,
+  "price": 4700,
+  "reqDEX": 20,
+  "reqLUK": 45,
+  "reqJob": 8,
+  "tuc": 7,
+  "incWAT": 17,
+  "incCRT": 1,
+  "attackSpeed": 4
+ }
+}

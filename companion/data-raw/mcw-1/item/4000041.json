@@ -1,5 +1,16 @@
 {
  "id": 4000041,
  "name": "Croco Skin",
- "description": "A very solid and tough piece of skin from a Croco."
+ "description": "A very solid and tough piece of skin from a Croco.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "slotMax": 200,
+  "price": 52
+ }
 }

@@ -1,0 +1,25 @@
+{
+ "id": 1061052,
+ "name": "Red Amoria Skirt",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 4000,
+  "reqINT": 60,
+  "reqLUK": 25,
+  "reqJob": 2,
+  "tuc": 7,
+  "incINT": 3,
+  "incMHP": 5,
+  "incPDD": 19,
+  "incMDD": 22
+ }
+}

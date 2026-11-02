@@ -1,5 +1,16 @@
 {
  "id": 4000039,
  "name": "Medicine With Weird Vibes",
- "description": "A medicine with weird vibes left by a Wraith."
+ "description": "A medicine with weird vibes left by a Wraith.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "slotMax": 200,
+  "price": 48
+ }
 }

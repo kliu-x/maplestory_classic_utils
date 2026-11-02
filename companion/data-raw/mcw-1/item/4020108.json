@@ -1,5 +1,15 @@
 {
  "id": 4020108,
  "name": "Black Crystal",
- "description": "A very rare crystal imbued with dark powers."
+ "description": "A very rare crystal imbued with dark powers.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Crafting",
+  "subCategory": "Gem",
+  "lowItemId": 4020100,
+  "highItemId": 4021000
+ },
+ "meta": {
+  "price": 2500
+ }
 }

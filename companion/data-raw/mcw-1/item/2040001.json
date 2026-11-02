@@ -1,5 +1,16 @@
 {
  "id": 2040001,
  "name": "Hat Accuracy Scroll: Intermediate",
- "description": "Improves Accuracy on hats.\\nSuccess rate: 60%, Accuracy +2"
+ "description": "Improves Accuracy on hats.\\nSuccess rate: 60%, Accuracy +2",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Helmet",
+  "lowItemId": 2040000,
+  "highItemId": 2040100
+ },
+ "meta": {
+  "price": 1,
+  "incACC": 2
+ }
 }

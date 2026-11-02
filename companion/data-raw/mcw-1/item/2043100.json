@@ -1,0 +1,16 @@
+{
+ "id": 2043100,
+ "name": "One-Handed Axe Attack Scroll: Lesser",
+ "description": "Improves Weapon Attack on one-handed axes.\\nSuccess rate: 100%, Weapon Attack +1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "One-Handed Axe",
+  "lowItemId": 2043100,
+  "highItemId": 2043200
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 1
+ }
+}

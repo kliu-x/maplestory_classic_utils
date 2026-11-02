@@ -1,5 +1,16 @@
 {
  "id": 4000059,
  "name": "Decayed Charm",
- "description": "An old and putrid charm taken from a rotting undead monster."
+ "description": "An old and putrid charm taken from a rotting undead monster.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "slotMax": 200,
+  "price": 52
+ }
 }

@@ -1,5 +1,13 @@
 {
  "id": 4031091,
  "name": "Lewis's Letter",
- "description": "A letter from Lewis in the Free Market. Deliver it to Chief Stan in Henesys."
+ "description": "A letter from Lewis in the Free Market. Deliver it to Chief Stan in Henesys.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {}
 }

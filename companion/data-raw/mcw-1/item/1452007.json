@@ -1,0 +1,23 @@
+{
+ "id": 1452007,
+ "name": "Olympus",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Bow",
+  "lowItemId": 1450000,
+  "highItemId": 1460000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 16500,
+  "reqSTR": 50,
+  "reqDEX": 105,
+  "reqJob": 4,
+  "tuc": 7,
+  "incWAT": 70,
+  "attackSpeed": 6
+ }
+}

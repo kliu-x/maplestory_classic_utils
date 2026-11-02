@@ -1,0 +1,24 @@
+{
+ "id": 1061034,
+ "name": "Purple Qi Pao Skirt",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "reqLevel": 22,
+  "price": 1760,
+  "reqDEX": 12,
+  "reqLUK": 34,
+  "reqJob": 8,
+  "tuc": 7,
+  "incLUK": 1,
+  "incMHP": 12,
+  "incPDD": 24
+ }
+}

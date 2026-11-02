@@ -1,0 +1,16 @@
+{
+ "id": 2040609,
+ "name": "Bottomwear MP Scroll: Intermediate",
+ "description": "Improves Max MP on bottomwear.\\nSuccess rate: 60%, Max MP +15",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Bottomwear",
+  "lowItemId": 2040600,
+  "highItemId": 2040700
+ },
+ "meta": {
+  "price": 1,
+  "incMMP": 15
+ }
+}

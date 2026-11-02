@@ -1,0 +1,16 @@
+{
+ "id": 2040905,
+ "name": "Shield Accuracy Scroll: Intermediate",
+ "description": "Improves Accuracy on shields.\\nSuccess rate: 60%, Accuracy +2",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Shield",
+  "lowItemId": 2040900,
+  "highItemId": 2041000
+ },
+ "meta": {
+  "price": 1,
+  "incACC": 2
+ }
+}

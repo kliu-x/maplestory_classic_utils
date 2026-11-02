@@ -1,0 +1,22 @@
+{
+ "id": 1041009,
+ "name": "Green Avelin",
+ "description": "",
+ "equipGroup": "Coat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Top",
+  "lowItemId": 1040000,
+  "highItemId": 1050000
+ },
+ "meta": {
+  "reqLevel": 10,
+  "price": 1000,
+  "reqDEX": 10,
+  "reqJob": 4,
+  "tuc": 7,
+  "incDEX": 1,
+  "incPDD": 24
+ }
+}

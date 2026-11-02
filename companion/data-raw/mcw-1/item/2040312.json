@@ -1,0 +1,16 @@
+{
+ "id": 2040312,
+ "name": "Earring LUK Scroll: Lesser",
+ "description": "Improves Luck on earrings.\\nSuccess rate: 100%, LUK +1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Earrings",
+  "lowItemId": 2040300,
+  "highItemId": 2040400
+ },
+ "meta": {
+  "price": 1,
+  "incLUK": 1
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "id": 2043300,
+ "name": "Dagger Attack Scroll: Lesser",
+ "description": "Improves Weapon Attack on daggers.\\nSuccess rate: 100%, Weapon Attack +1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Dagger",
+  "lowItemId": 2043300,
+  "highItemId": 2043400
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 1
+ }
+}

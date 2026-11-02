@@ -1,0 +1,24 @@
+{
+ "id": 1072097,
+ "name": "Maroon Jangoon Shoes",
+ "description": "",
+ "equipGroup": "Shoes",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shoes",
+  "lowItemId": 1070000,
+  "highItemId": 1080000
+ },
+ "meta": {
+  "reqLevel": 40,
+  "price": 4200,
+  "reqSTR": 70,
+  "reqDEX": 30,
+  "reqJob": 1,
+  "tuc": 5,
+  "incDEX": 4,
+  "incPDD": 33,
+  "incEVA": 4
+ }
+}

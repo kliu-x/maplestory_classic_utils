@@ -1,0 +1,23 @@
+{
+ "id": 1092008,
+ "name": "Jurgen Wristguard",
+ "description": "Gives a chance to block enemy attacks entirely.",
+ "equipGroup": "Shield",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shield",
+  "lowItemId": 1090000,
+  "highItemId": 1100000
+ },
+ "meta": {
+  "reqLevel": 22,
+  "price": 4400,
+  "reqDEX": 12,
+  "reqLUK": 34,
+  "reqJob": 8,
+  "tuc": 7,
+  "incDEX": 1,
+  "incPDD": 54
+ }
+}

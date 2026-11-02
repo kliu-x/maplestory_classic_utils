@@ -1,5 +1,20 @@
 {
  "id": 1002007,
  "name": "Blue Headband",
- "description": ""
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 5,
+  "price": 300,
+  "tuc": 7,
+  "incMMP": 5,
+  "incPDD": 6
+ }
 }

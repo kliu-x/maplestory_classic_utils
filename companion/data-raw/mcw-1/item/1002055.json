@@ -1,0 +1,26 @@
+{
+ "id": 1002055,
+ "name": "Steel Football Helmet",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 20,
+  "price": 1250,
+  "reqSTR": 30,
+  "reqDEX": 10,
+  "reqJob": 1,
+  "tuc": 7,
+  "incSTR": 2,
+  "incMHP": 10,
+  "incPDD": 31,
+  "incMDD": 9,
+  "incACC": 3
+ }
+}

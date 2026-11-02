@@ -1,0 +1,25 @@
+{
+ "id": 1082046,
+ "name": "Bronze Scaler",
+ "description": "",
+ "equipGroup": "Glove",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Glove",
+  "lowItemId": 1080000,
+  "highItemId": 1090000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 6000,
+  "reqSTR": 25,
+  "reqDEX": 60,
+  "reqJob": 4,
+  "tuc": 5,
+  "incSTR": 3,
+  "incMHP": 5,
+  "incCRT": 2,
+  "incPDD": 16
+ }
+}

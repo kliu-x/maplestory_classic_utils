@@ -1,5 +1,15 @@
 {
  "id": 3000036,
  "name": "Small Potted Vine",
- "description": "A short vine that's been lovingly cared for. Can be placed in your home."
+ "description": "A short vine that's been lovingly cared for. Can be placed in your home.",
+ "typeInfo": {
+  "overallCategory": "Setup",
+  "category": "Housing",
+  "subCategory": "Furniture",
+  "lowItemId": 3000000,
+  "highItemId": 3010000
+ },
+ "meta": {
+  "price": 10
+ }
 }

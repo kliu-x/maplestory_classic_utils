@@ -1,0 +1,16 @@
+{
+ "id": 2040319,
+ "name": "Earring Crit. Damage Scroll: Chaos",
+ "description": "Improves Crit. Damage on earrings.\\nSuccess rate: 10%, Crit. Damage +4\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Earrings",
+  "lowItemId": 2040300,
+  "highItemId": 2040400
+ },
+ "meta": {
+  "price": 1,
+  "incCRD": 4
+ }
+}

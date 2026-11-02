@@ -1,0 +1,17 @@
+{
+ "id": 2041005,
+ "name": "Cape Magic Def. Scroll: Intermediate",
+ "description": "Improves Magic Def. on capes.\\nSuccess rate: 60%, Magic Def. +4, Weapon Def. +2",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Cape",
+  "lowItemId": 2041000,
+  "highItemId": 2041100
+ },
+ "meta": {
+  "price": 1,
+  "incPDD": 2,
+  "incMDD": 4
+ }
+}

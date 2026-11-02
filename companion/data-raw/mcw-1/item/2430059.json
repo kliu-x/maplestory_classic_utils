@@ -1,0 +1,17 @@
+{
+ "id": 2430059,
+ "name": "Thief's Note",
+ "description": "A small note belonging to someone, found tucked between the pages of the Adventurer's Journal.\\n#cDouble-click# to see what is written inside",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Other",
+  "lowItemId": 2430000,
+  "highItemId": 2440000
+ },
+ "meta": {
+  "only": true,
+  "slotMax": 1,
+  "tradeBlock": true
+ }
+}

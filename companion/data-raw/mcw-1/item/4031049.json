@@ -1,5 +1,15 @@
 {
  "id": 4031049,
  "name": "Omok Table",
- "description": "A wooden table that allows you to play Omok."
+ "description": "A wooden table that allows you to play Omok.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "price": 1
+ }
 }

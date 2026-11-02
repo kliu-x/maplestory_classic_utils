@@ -1,0 +1,16 @@
+{
+ "id": 2040308,
+ "name": "Earring INT Scroll: Lesser",
+ "description": "Improves Intelligence on earrings.\\nSuccess rate: 100%, INT +1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Earrings",
+  "lowItemId": 2040300,
+  "highItemId": 2040400
+ },
+ "meta": {
+  "price": 1,
+  "incINT": 1
+ }
+}

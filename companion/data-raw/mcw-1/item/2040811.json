@@ -1,0 +1,16 @@
+{
+ "id": 2040811,
+ "name": "Gloves Accuracy Scroll: Chaos",
+ "description": "Improves Accuracy on gloves.\\nSuccess rate: 10%, Accuracy +4\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Gloves",
+  "lowItemId": 2040800,
+  "highItemId": 2040900
+ },
+ "meta": {
+  "price": 1,
+  "incACC": 4
+ }
+}

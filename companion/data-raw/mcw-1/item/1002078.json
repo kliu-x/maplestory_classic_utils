@@ -1,0 +1,25 @@
+{
+ "id": 1002078,
+ "name": "Steel Sharp Helm",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 22,
+  "price": 1300,
+  "reqSTR": 34,
+  "reqDEX": 12,
+  "reqJob": 1,
+  "tuc": 7,
+  "incDEX": 2,
+  "incMHP": 2,
+  "incPDD": 32,
+  "incACC": 2
+ }
+}

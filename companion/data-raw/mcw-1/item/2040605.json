@@ -1,0 +1,16 @@
+{
+ "id": 2040605,
+ "name": "Bottomwear HP Scroll: Intermediate",
+ "description": "Improves Max HP on bottomwear.\\nSuccess rate: 60%, Max HP +15",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Bottomwear",
+  "lowItemId": 2040600,
+  "highItemId": 2040700
+ },
+ "meta": {
+  "price": 1,
+  "incMHP": 15
+ }
+}

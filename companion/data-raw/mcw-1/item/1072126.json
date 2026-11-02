@@ -1,0 +1,24 @@
+{
+ "id": 1072126,
+ "name": "Purple Goni Shoes",
+ "description": "",
+ "equipGroup": "Shoes",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shoes",
+  "lowItemId": 1070000,
+  "highItemId": 1080000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 6600,
+  "reqDEX": 40,
+  "reqLUK": 90,
+  "reqJob": 8,
+  "tuc": 5,
+  "incSTR": 5,
+  "incPDD": 26,
+  "incEVA": 5
+ }
+}

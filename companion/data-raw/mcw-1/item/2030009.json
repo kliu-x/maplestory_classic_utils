@@ -1,0 +1,15 @@
+{
+ "id": 2030009,
+ "name": "Return Scroll to El Nath",
+ "description": "Returns you to El Nath.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Teleport Item",
+  "lowItemId": 2030000,
+  "highItemId": 2040000
+ },
+ "meta": {
+  "price": 500
+ }
+}

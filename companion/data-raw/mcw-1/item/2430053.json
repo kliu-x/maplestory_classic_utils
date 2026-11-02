@@ -1,0 +1,16 @@
+{
+ "id": 2430053,
+ "name": "Compensation Box",
+ "description": "#cDouble-click# to get various gifts. The box will disappear when it expires.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Other",
+  "lowItemId": 2430000,
+  "highItemId": 2440000
+ },
+ "meta": {
+  "slotMax": 1,
+  "price": 1
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "id": 1442002,
+ "name": "Studded Polearm",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Pole Arm",
+  "lowItemId": 1440000,
+  "highItemId": 1450000
+ },
+ "meta": {
+  "reqLevel": 20,
+  "price": 4500,
+  "reqSTR": 45,
+  "reqDEX": 20,
+  "reqJob": 1,
+  "tuc": 7,
+  "incWAT": 42,
+  "attackSpeed": 7
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "id": 1002070,
+ "name": "Blue Loosecap",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 20,
+  "price": 1200,
+  "reqDEX": 10,
+  "reqLUK": 30,
+  "reqJob": 8,
+  "tuc": 7,
+  "incMMP": 20,
+  "incPDD": 21
+ }
+}

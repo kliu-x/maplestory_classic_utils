@@ -1,0 +1,24 @@
+{
+ "id": 1082034,
+ "name": "Brown Marker",
+ "description": "",
+ "equipGroup": "Glove",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Glove",
+  "lowItemId": 1080000,
+  "highItemId": 1090000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 3600,
+  "reqSTR": 20,
+  "reqDEX": 50,
+  "reqJob": 4,
+  "tuc": 5,
+  "incSTR": 3,
+  "incCRT": 2,
+  "incPDD": 14
+ }
+}

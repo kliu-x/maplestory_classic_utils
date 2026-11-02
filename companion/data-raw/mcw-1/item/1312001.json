@@ -1,0 +1,21 @@
+{
+ "id": 1312001,
+ "name": "Double Axe",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "One-Handed Axe",
+  "lowItemId": 1310000,
+  "highItemId": 1320000
+ },
+ "meta": {
+  "reqLevel": 10,
+  "price": 1500,
+  "reqSTR": 20,
+  "tuc": 7,
+  "incWAT": 27,
+  "attackSpeed": 4
+ }
+}

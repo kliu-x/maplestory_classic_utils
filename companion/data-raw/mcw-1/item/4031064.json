@@ -1,5 +1,15 @@
 {
  "id": 4031064,
  "name": "Red Cape",
- "description": "A red cape, for women only. It looks very warm."
+ "description": "A red cape, for women only. It looks very warm.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "price": 1
+ }
 }

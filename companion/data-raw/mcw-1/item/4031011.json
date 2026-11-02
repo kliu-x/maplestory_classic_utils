@@ -1,5 +1,13 @@
 {
  "id": 4031011,
  "name": "Sparkling Rock",
- "description": "A sparking rock that shines by itself."
+ "description": "A sparking rock that shines by itself.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {}
 }

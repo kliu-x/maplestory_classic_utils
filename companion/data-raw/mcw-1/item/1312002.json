@@ -1,0 +1,23 @@
+{
+ "id": 1312002,
+ "name": "Battle Axe",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "One-Handed Axe",
+  "lowItemId": 1310000,
+  "highItemId": 1320000
+ },
+ "meta": {
+  "reqLevel": 15,
+  "price": 2500,
+  "reqSTR": 30,
+  "reqDEX": 10,
+  "reqJob": 1,
+  "tuc": 7,
+  "incWAT": 32,
+  "attackSpeed": 4
+ }
+}

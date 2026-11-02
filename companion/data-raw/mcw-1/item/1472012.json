@@ -1,0 +1,24 @@
+{
+ "id": 1472012,
+ "name": "Silver Guardian",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Claw",
+  "lowItemId": 1470000,
+  "highItemId": 1480000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 9500,
+  "reqDEX": 35,
+  "reqLUK": 75,
+  "reqJob": 8,
+  "tuc": 7,
+  "incWAT": 26,
+  "incCRT": 1,
+  "attackSpeed": 4
+ }
+}

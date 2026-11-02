@@ -1,0 +1,22 @@
+{
+ "id": 1322011,
+ "name": "Fusion Mace",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "One-Handed Blunt Weapon",
+  "lowItemId": 1320000,
+  "highItemId": 1330000
+ },
+ "meta": {
+  "reqLevel": 25,
+  "price": 4500,
+  "reqSTR": 40,
+  "reqJob": 3,
+  "tuc": 7,
+  "incWAT": 41,
+  "attackSpeed": 4
+ }
+}

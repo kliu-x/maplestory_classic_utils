@@ -1,0 +1,16 @@
+{
+ "id": 2040703,
+ "name": "Shoes Jump Scroll: Chaos",
+ "description": "Improves Jump on shoes.\\nSuccess rate: 10%, Jump +4\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Shoes",
+  "lowItemId": 2040700,
+  "highItemId": 2040800
+ },
+ "meta": {
+  "price": 1,
+  "incJump": 4
+ }
+}

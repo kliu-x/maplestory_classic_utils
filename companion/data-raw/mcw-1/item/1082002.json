@@ -1,0 +1,24 @@
+{
+ "id": 1082002,
+ "name": "Steel Fingerless Gloves",
+ "description": "",
+ "equipGroup": "Glove",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Glove",
+  "lowItemId": 1080000,
+  "highItemId": 1090000
+ },
+ "meta": {
+  "reqLevel": 15,
+  "price": 1800,
+  "reqSTR": 20,
+  "reqJob": 1,
+  "tuc": 5,
+  "incMHP": 5,
+  "incCRT": 1,
+  "incPDD": 12,
+  "incACC": 1
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "id": 1462005,
+ "name": "Heckler",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Crossbow",
+  "lowItemId": 1460000,
+  "highItemId": 1470000
+ },
+ "meta": {
+  "reqLevel": 40,
+  "price": 11500,
+  "reqSTR": 30,
+  "reqDEX": 85,
+  "reqJob": 4,
+  "tuc": 7,
+  "incWAT": 59,
+  "attackSpeed": 6
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "id": 1382000,
+ "name": "Wooden Staff",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "Staff",
+  "lowItemId": 1380000,
+  "highItemId": 1390000
+ },
+ "meta": {
+  "reqLevel": 10,
+  "price": 1500,
+  "reqINT": 20,
+  "reqJob": 2,
+  "tuc": 7,
+  "incMAD": 24,
+  "incWAT": 20,
+  "incCRD": 1,
+  "attackSpeed": 7
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "id": 1072012,
+ "name": "Black Gomushin",
+ "description": "",
+ "equipGroup": "Shoes",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shoes",
+  "lowItemId": 1070000,
+  "highItemId": 1080000
+ },
+ "meta": {
+  "reqLevel": 11,
+  "price": 660,
+  "tuc": 5,
+  "incPDD": 11,
+  "incJump": 1
+ }
+}

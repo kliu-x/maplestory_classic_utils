@@ -1,5 +1,16 @@
 {
  "id": 4000049,
  "name": "Leather",
- "description": "A monster's skin that's been cut away."
+ "description": "A monster's skin that's been cut away.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "slotMax": 200,
+  "price": 10
+ }
 }

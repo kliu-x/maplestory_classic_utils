@@ -1,0 +1,15 @@
+{
+ "id": 2430023,
+ "name": "Well-Loved Avatar Set",
+ "description": "#cDouble-click# to obtain the items below:\\n\\n- Well-Loved Brown Bamboo Hat (Transferable within world, Permanent) x1\\n- Well-Loved Blue Sauna Robe (Transferable within world, Permanent) x1\\n- Well-Loved Pan Lid (Transferable within world, Permanent) x1\\n- Well-Loved White & Blue Sandals (Transferable within world, Permanent) x1\\n- Well-Loved Work Gloves (Transferable within world, Permanent) x1\\n- Well-Loved Frozen Tuna (Transferable within world, Permanent) x1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Other",
+  "lowItemId": 2430000,
+  "highItemId": 2440000
+ },
+ "meta": {
+  "price": 1
+ }
+}

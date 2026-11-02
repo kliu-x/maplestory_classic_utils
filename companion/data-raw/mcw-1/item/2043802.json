@@ -1,5 +1,16 @@
 {
  "id": 2043802,
  "name": "Staff Magic Attack Scroll: Greater",
- "description": "Improves Magic Attack on staves.\\nSuccess rate: 10%, Magic Attack +8"
+ "description": "Improves Magic Attack on staves.\\nSuccess rate: 10%, Magic Attack +8",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Staff",
+  "lowItemId": 2043800,
+  "highItemId": 2043900
+ },
+ "meta": {
+  "price": 1,
+  "incMAD": 8
+ }
 }

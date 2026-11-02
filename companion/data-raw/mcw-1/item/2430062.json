@@ -1,0 +1,15 @@
+{
+ "id": 2430062,
+ "name": "Avatar Gift Box",
+ "description": "#cDouble-click# to choose one avatar from a variety of options.\\n\\n#cObtained items are all untradable and has a duration of 10 days.#\\n",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Other",
+  "lowItemId": 2430000,
+  "highItemId": 2440000
+ },
+ "meta": {
+  "price": 1
+ }
+}

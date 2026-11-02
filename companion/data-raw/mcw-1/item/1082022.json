@@ -1,0 +1,25 @@
+{
+ "id": 1082022,
+ "name": "Blue Savata",
+ "description": "",
+ "equipGroup": "Glove",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Glove",
+  "lowItemId": 1080000,
+  "highItemId": 1090000
+ },
+ "meta": {
+  "reqLevel": 25,
+  "price": 3000,
+  "reqSTR": 15,
+  "reqDEX": 40,
+  "reqJob": 4,
+  "tuc": 5,
+  "incDEX": 2,
+  "incMHP": 5,
+  "incCRT": 1,
+  "incPDD": 12
+ }
+}

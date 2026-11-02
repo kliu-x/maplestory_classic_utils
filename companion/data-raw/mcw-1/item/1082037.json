@@ -1,0 +1,24 @@
+{
+ "id": 1082037,
+ "name": "Steel Sylvia",
+ "description": "",
+ "equipGroup": "Glove",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Glove",
+  "lowItemId": 1080000,
+  "highItemId": 1090000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 3600,
+  "reqDEX": 20,
+  "reqLUK": 50,
+  "reqJob": 8,
+  "tuc": 5,
+  "incLUK": 3,
+  "incCRT": 2,
+  "incPDD": 14
+ }
+}

@@ -1,5 +1,22 @@
 {
  "id": 1102003,
  "name": "Blue Icarus Cape",
- "description": ""
+ "description": "",
+ "equipGroup": "Cape",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Cape",
+  "lowItemId": 1100000,
+  "highItemId": 1110000
+ },
+ "meta": {
+  "reqLevel": 46,
+  "price": 11280,
+  "tuc": 5,
+  "incINT": 2,
+  "incPDD": 21,
+  "incMDD": 9,
+  "incACC": 3
+ }
 }

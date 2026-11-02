@@ -1,5 +1,15 @@
 {
  "id": 4031044,
  "name": "White Viola",
- "description": "A white flower with a huge flower bud."
+ "description": "A white flower with a huge flower bud.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "price": 1000
+ }
 }

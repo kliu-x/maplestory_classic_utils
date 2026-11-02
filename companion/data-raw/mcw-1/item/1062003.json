@@ -1,0 +1,24 @@
+{
+ "id": 1062003,
+ "name": "Brown Hard Leather Pants",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "reqLevel": 20,
+  "price": 1600,
+  "reqSTR": 10,
+  "reqDEX": 30,
+  "reqJob": 4,
+  "tuc": 7,
+  "incSTR": 1,
+  "incDEX": 1,
+  "incPDD": 23
+ }
+}

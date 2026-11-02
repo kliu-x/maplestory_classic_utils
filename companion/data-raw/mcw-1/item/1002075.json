@@ -1,0 +1,21 @@
+{
+ "id": 1002075,
+ "name": "Yellow Baseball Cap",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 22,
+  "price": 1300,
+  "tuc": 7,
+  "incLUK": 2,
+  "incMHP": 2,
+  "incPDD": 22
+ }
+}

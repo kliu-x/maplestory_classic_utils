@@ -1,0 +1,16 @@
+{
+ "id": 2430043,
+ "name": "Atmospheric Effect Box",
+ "description": "#cDouble-click# to open it and receive #cone random atmospheric effect item#.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Other",
+  "lowItemId": 2430000,
+  "highItemId": 2440000
+ },
+ "meta": {
+  "price": 1,
+  "tradeBlock": true
+ }
+}

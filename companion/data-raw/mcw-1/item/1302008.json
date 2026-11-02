@@ -1,0 +1,23 @@
+{
+ "id": 1302008,
+ "name": "Gladius",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "One-Handed Sword",
+  "lowItemId": 1300000,
+  "highItemId": 1310000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 5500,
+  "reqSTR": 65,
+  "reqDEX": 30,
+  "reqJob": 1,
+  "tuc": 7,
+  "incWAT": 47,
+  "attackSpeed": 4
+ }
+}

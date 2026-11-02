@@ -1,0 +1,22 @@
+{
+ "id": 1002082,
+ "name": "Green Bamboo Hat",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 25,
+  "price": 1500,
+  "reqSTR": 10,
+  "tuc": 7,
+  "incDEX": 2,
+  "incMHP": 5,
+  "incPDD": 24
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "id": 1322000,
+ "name": "Wooden Club",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "One-Handed Blunt Weapon",
+  "lowItemId": 1320000,
+  "highItemId": 1330000
+ },
+ "meta": {
+  "tuc": 7,
+  "incWAT": 19,
+  "attackSpeed": 5
+ }
+}

@@ -1,5 +1,15 @@
 {
  "id": 4001008,
  "name": "Flaming Feather",
- "description": "A flame in the shape of a feather. It never stops burning."
+ "description": "A flame in the shape of a feather. It never stops burning.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "price": 1
+ }
 }

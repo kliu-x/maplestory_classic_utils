@@ -1,0 +1,15 @@
+{
+ "id": 2028001,
+ "name": "10,000 Meso Pouch",
+ "description": "A Meso Pouch containing 10,000 Mesos.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Equipment Box",
+  "lowItemId": 2028000,
+  "highItemId": 2029000
+ },
+ "meta": {
+  "tradeBlock": true
+ }
+}

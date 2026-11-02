@@ -1,5 +1,13 @@
 {
  "id": 4031008,
  "name": "Sparkling Glass Marble",
- "description": "A huge, transparent glass marble that radiates multiple colors. It reads, 'To My Friend Utah.'"
+ "description": "A huge, transparent glass marble that radiates multiple colors. It reads, 'To My Friend Utah.'",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {}
 }

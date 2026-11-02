@@ -1,0 +1,23 @@
+{
+ "id": 1092015,
+ "name": "Adamantium Tower Shield",
+ "description": "Gives a chance to block enemy attacks entirely.",
+ "equipGroup": "Shield",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shield",
+  "lowItemId": 1090000,
+  "highItemId": 1100000
+ },
+ "meta": {
+  "reqLevel": 40,
+  "price": 14000,
+  "reqSTR": 70,
+  "reqDEX": 30,
+  "reqJob": 1,
+  "tuc": 7,
+  "incMHP": 20,
+  "incPDD": 132
+ }
+}

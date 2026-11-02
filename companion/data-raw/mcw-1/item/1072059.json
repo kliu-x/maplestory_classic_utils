@@ -1,0 +1,21 @@
+{
+ "id": 1072059,
+ "name": "Orange Whitebottom Boots",
+ "description": "",
+ "equipGroup": "Shoes",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shoes",
+  "lowItemId": 1070000,
+  "highItemId": 1080000
+ },
+ "meta": {
+  "reqLevel": 26,
+  "price": 1560,
+  "tuc": 5,
+  "incMHP": 6,
+  "incPDD": 17,
+  "incSpeed": 2
+ }
+}

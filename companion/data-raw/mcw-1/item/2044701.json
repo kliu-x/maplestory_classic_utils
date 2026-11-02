@@ -1,5 +1,16 @@
 {
  "id": 2044701,
  "name": "Claw Attack Scroll: Intermediate",
- "description": "Improves Weapon Attack on claws.\\nSuccess rate: 60%, Weapon Attack +2"
+ "description": "Improves Weapon Attack on claws.\\nSuccess rate: 60%, Weapon Attack +2",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Claw",
+  "lowItemId": 2044700,
+  "highItemId": 2044800
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 2
+ }
 }

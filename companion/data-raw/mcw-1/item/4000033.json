@@ -1,5 +1,16 @@
 {
  "id": 4000033,
  "name": "Cursed Doll",
- "description": "A cursed doll possessed by a Zombie Lupin."
+ "description": "A cursed doll possessed by a Zombie Lupin.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "slotMax": 200,
+  "price": 40
+ }
 }

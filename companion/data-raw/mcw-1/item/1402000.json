@@ -1,0 +1,22 @@
+{
+ "id": 1402000,
+ "name": "Wooden Sword",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Two-Handed Sword",
+  "lowItemId": 1400000,
+  "highItemId": 1410000
+ },
+ "meta": {
+  "reqLevel": 10,
+  "price": 2500,
+  "reqSTR": 25,
+  "reqJob": 13,
+  "tuc": 7,
+  "incWAT": 30,
+  "attackSpeed": 5
+ }
+}

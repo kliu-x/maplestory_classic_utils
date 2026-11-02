@@ -1,0 +1,16 @@
+{
+ "id": 2040311,
+ "name": "Earring INT Scroll: Chaos",
+ "description": "Improves Intelligence on earrings.\\nSuccess rate: 10%, INT +4\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Earrings",
+  "lowItemId": 2040300,
+  "highItemId": 2040400
+ },
+ "meta": {
+  "price": 1,
+  "incINT": 4
+ }
+}

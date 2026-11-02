@@ -1,0 +1,25 @@
+{
+ "id": 1082029,
+ "name": "Steel Missel",
+ "description": "",
+ "equipGroup": "Glove",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Glove",
+  "lowItemId": 1080000,
+  "highItemId": 1090000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 3600,
+  "reqSTR": 50,
+  "reqDEX": 20,
+  "reqJob": 1,
+  "tuc": 5,
+  "incSTR": 3,
+  "incCRT": 2,
+  "incPDD": 21,
+  "incACC": 1
+ }
+}

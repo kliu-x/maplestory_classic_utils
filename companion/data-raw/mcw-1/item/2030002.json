@@ -1,5 +1,15 @@
 {
  "id": 2030002,
  "name": "Return Scroll to Ellinia",
- "description": "Returns you to Ellinia."
+ "description": "Returns you to Ellinia.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Teleport Item",
+  "lowItemId": 2030000,
+  "highItemId": 2040000
+ },
+ "meta": {
+  "price": 250
+ }
 }

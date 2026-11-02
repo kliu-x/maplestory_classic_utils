@@ -1,0 +1,25 @@
+{
+ "id": 1040050,
+ "name": "Blue Sky",
+ "description": "",
+ "equipGroup": "Coat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Top",
+  "lowItemId": 1040000,
+  "highItemId": 1050000
+ },
+ "meta": {
+  "reqLevel": 32,
+  "price": 5000,
+  "reqSTR": 60,
+  "reqDEX": 25,
+  "reqJob": 1,
+  "tuc": 7,
+  "incSTR": 2,
+  "incDEX": 1,
+  "incMHP": 5,
+  "incPDD": 60
+ }
+}

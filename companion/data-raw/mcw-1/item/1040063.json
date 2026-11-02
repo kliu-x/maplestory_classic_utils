@@ -1,0 +1,23 @@
+{
+ "id": 1040063,
+ "name": "Dark Piette",
+ "description": "",
+ "equipGroup": "Coat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Top",
+  "lowItemId": 1040000,
+  "highItemId": 1050000
+ },
+ "meta": {
+  "reqLevel": 40,
+  "price": 7000,
+  "reqSTR": 30,
+  "reqDEX": 70,
+  "reqJob": 4,
+  "tuc": 7,
+  "incSTR": 4,
+  "incPDD": 48
+ }
+}

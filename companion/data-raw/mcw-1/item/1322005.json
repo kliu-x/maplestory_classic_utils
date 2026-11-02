@@ -1,0 +1,21 @@
+{
+ "id": 1322005,
+ "name": "Hammer",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "One-Handed Blunt Weapon",
+  "lowItemId": 1320000,
+  "highItemId": 1330000
+ },
+ "meta": {
+  "reqLevel": 17,
+  "price": 2900,
+  "reqSTR": 22,
+  "tuc": 7,
+  "incWAT": 33,
+  "attackSpeed": 4
+ }
+}

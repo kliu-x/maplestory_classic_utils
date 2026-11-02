@@ -1,0 +1,17 @@
+{
+ "id": 2060003,
+ "name": "Adamantium Arrows for Bows",
+ "description": "A quiver full of adamantium arrows. Only usable with bows.\\nWeapon Attack +3",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Projectile",
+  "subCategory": "Arrow",
+  "lowItemId": 2060000,
+  "highItemId": 2060005
+ },
+ "meta": {
+  "slotMax": 800,
+  "price": 3,
+  "incWAT": 3
+ }
+}

@@ -1,5 +1,19 @@
 {
  "id": 1002001,
  "name": "Green Skullcap",
- "description": ""
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 5,
+  "price": 300,
+  "tuc": 7,
+  "incPDD": 6
+ }
 }

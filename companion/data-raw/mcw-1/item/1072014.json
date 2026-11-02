@@ -1,0 +1,24 @@
+{
+ "id": 1072014,
+ "name": "Bronze Grieves",
+ "description": "",
+ "equipGroup": "Shoes",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shoes",
+  "lowItemId": 1070000,
+  "highItemId": 1080000
+ },
+ "meta": {
+  "reqLevel": 15,
+  "price": 900,
+  "reqSTR": 20,
+  "reqJob": 1,
+  "tuc": 5,
+  "incMHP": 5,
+  "incPDD": 18,
+  "incEVA": 1,
+  "incJump": 1
+ }
+}

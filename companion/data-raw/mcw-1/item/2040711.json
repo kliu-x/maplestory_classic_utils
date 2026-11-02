@@ -1,0 +1,16 @@
+{
+ "id": 2040711,
+ "name": "Shoes Evasion Scroll: Chaos",
+ "description": "Improves Evasion on shoes.\\nSuccess rate: 10%, Evasion +4\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Shoes",
+  "lowItemId": 2040700,
+  "highItemId": 2040800
+ },
+ "meta": {
+  "price": 1,
+  "incEVA": 4
+ }
+}

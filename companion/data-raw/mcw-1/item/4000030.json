@@ -1,5 +1,16 @@
 {
  "id": 4000030,
  "name": "Lupin Doll",
- "description": "A miniature figure of a Lupin."
+ "description": "A miniature figure of a Lupin.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "slotMax": 200,
+  "price": 100
+ }
 }

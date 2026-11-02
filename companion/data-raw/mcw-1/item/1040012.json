@@ -1,0 +1,22 @@
+{
+ "id": 1040012,
+ "name": "Black Cloth Vest",
+ "description": "",
+ "equipGroup": "Coat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Top",
+  "lowItemId": 1040000,
+  "highItemId": 1050000
+ },
+ "meta": {
+  "reqLevel": 10,
+  "price": 1000,
+  "reqLUK": 10,
+  "reqJob": 8,
+  "tuc": 7,
+  "incLUK": 1,
+  "incPDD": 24
+ }
+}

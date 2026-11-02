@@ -1,0 +1,16 @@
+{
+ "id": 2041020,
+ "name": "Cape LUK Scroll: Lesser",
+ "description": "Improves Luck on capes.\\nSuccess rate: 100%, LUK +1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Cape",
+  "lowItemId": 2041000,
+  "highItemId": 2041100
+ },
+ "meta": {
+  "price": 1,
+  "incLUK": 1
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "id": 2044403,
+ "name": "Polearm Attack Scroll: Chaos",
+ "description": "Improves Weapon Attack on polearms.\\nSuccess rate: 10%, Weapon Attack +5\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Polearm",
+  "lowItemId": 2044400,
+  "highItemId": 2044500
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 5
+ }
+}

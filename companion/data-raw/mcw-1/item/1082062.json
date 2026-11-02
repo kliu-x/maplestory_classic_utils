@@ -1,0 +1,24 @@
+{
+ "id": 1082062,
+ "name": "Gold Cleave",
+ "description": "",
+ "equipGroup": "Glove",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Glove",
+  "lowItemId": 1080000,
+  "highItemId": 1090000
+ },
+ "meta": {
+  "reqLevel": 40,
+  "price": 8400,
+  "reqDEX": 30,
+  "reqLUK": 70,
+  "reqJob": 8,
+  "tuc": 5,
+  "incSTR": 4,
+  "incCRT": 2,
+  "incPDD": 18
+ }
+}

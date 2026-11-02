@@ -1,0 +1,23 @@
+{
+ "id": 1050003,
+ "name": "Blue Kendo Robe",
+ "description": "",
+ "equipGroup": "Longcoat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Overall",
+  "lowItemId": 1050000,
+  "highItemId": 1060000
+ },
+ "meta": {
+  "reqLevel": 20,
+  "price": 3600,
+  "reqSTR": 30,
+  "reqDEX": 10,
+  "reqJob": 1,
+  "tuc": 10,
+  "incDEX": 4,
+  "incPDD": 85
+ }
+}

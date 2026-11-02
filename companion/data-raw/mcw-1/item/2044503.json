@@ -1,0 +1,16 @@
+{
+ "id": 2044503,
+ "name": "Bow Attack Scroll: Chaos",
+ "description": "Improves Weapon Attack on bows.\\nSuccess rate: 10%, Weapon Attack +5\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Bow",
+  "lowItemId": 2044500,
+  "highItemId": 2044600
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 5
+ }
+}

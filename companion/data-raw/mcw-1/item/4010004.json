@@ -1,5 +1,15 @@
 {
  "id": 4010004,
  "name": "Silver Ore",
- "description": "A shiny silver ore."
+ "description": "A shiny silver ore.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Crafting",
+  "subCategory": "Mineral Ore",
+  "lowItemId": 4010000,
+  "highItemId": 4011000
+ },
+ "meta": {
+  "price": 80
+ }
 }

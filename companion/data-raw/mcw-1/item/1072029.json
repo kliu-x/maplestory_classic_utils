@@ -1,0 +1,24 @@
+{
+ "id": 1072029,
+ "name": "Orange High Boots",
+ "description": "",
+ "equipGroup": "Shoes",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shoes",
+  "lowItemId": 1070000,
+  "highItemId": 1080000
+ },
+ "meta": {
+  "reqLevel": 20,
+  "price": 1200,
+  "reqSTR": 30,
+  "reqDEX": 10,
+  "reqJob": 1,
+  "tuc": 5,
+  "incDEX": 2,
+  "incPDD": 21,
+  "incEVA": 2
+ }
+}

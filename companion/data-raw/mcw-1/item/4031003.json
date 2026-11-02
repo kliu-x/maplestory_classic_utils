@@ -1,5 +1,13 @@
 {
  "id": 4031003,
  "name": "Rusty Screw",
- "description": "A rusty screw from an old, unusable box that was broken down. Can this be recycled?"
+ "description": "A rusty screw from an old, unusable box that was broken down. Can this be recycled?",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {}
 }

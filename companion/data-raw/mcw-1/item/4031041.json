@@ -1,5 +1,15 @@
 {
  "id": 4031041,
  "name": "Shumi's Sack of Cash",
- "description": "The sack of cash that Shumi lost."
+ "description": "The sack of cash that Shumi lost.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "price": 1000
+ }
 }

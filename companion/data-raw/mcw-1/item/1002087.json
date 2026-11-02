@@ -1,0 +1,25 @@
+{
+ "id": 1002087,
+ "name": "Iron Burgonet Helm",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 25,
+  "price": 1500,
+  "reqSTR": 40,
+  "reqDEX": 15,
+  "reqJob": 1,
+  "tuc": 7,
+  "incDEX": 2,
+  "incMHP": 5,
+  "incPDD": 34,
+  "incACC": 2
+ }
+}

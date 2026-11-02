@@ -1,0 +1,23 @@
+{
+ "id": 1061074,
+ "name": "Maroon Moon Pants",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 8800,
+  "reqDEX": 40,
+  "reqLUK": 90,
+  "reqJob": 8,
+  "tuc": 7,
+  "incDEX": 5,
+  "incPDD": 41
+ }
+}

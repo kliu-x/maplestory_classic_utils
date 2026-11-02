@@ -1,0 +1,23 @@
+{
+ "id": 1422004,
+ "name": "Mithril Maul",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Two-Handed Blunt",
+  "lowItemId": 1420000,
+  "highItemId": 1430000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 6500,
+  "reqSTR": 65,
+  "reqDEX": 30,
+  "reqJob": 1,
+  "tuc": 7,
+  "incWAT": 52,
+  "attackSpeed": 6
+ }
+}

@@ -1,5 +1,15 @@
 {
  "id": 4010000,
  "name": "Bronze Ore",
- "description": "A light and weak bronze ore."
+ "description": "A light and weak bronze ore.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Crafting",
+  "subCategory": "Mineral Ore",
+  "lowItemId": 4010000,
+  "highItemId": 4011000
+ },
+ "meta": {
+  "price": 20
+ }
 }

@@ -1,0 +1,16 @@
+{
+ "id": 2040500,
+ "name": "Overall Armor DEF Scroll: Lesser",
+ "description": "Improves Defense on overalls.\\nSuccess rate: 100%, Weapon Def. +2",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Overall",
+  "lowItemId": 2040500,
+  "highItemId": 2040600
+ },
+ "meta": {
+  "price": 1,
+  "incPDD": 2
+ }
+}

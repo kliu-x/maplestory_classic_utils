@@ -1,5 +1,25 @@
 {
  "id": 1002144,
  "name": "Dark Guiltian",
- "description": ""
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 40,
+  "price": 4200,
+  "reqINT": 70,
+  "reqLUK": 30,
+  "reqJob": 2,
+  "tuc": 7,
+  "incMHP": 20,
+  "incMMP": 20,
+  "incPDD": 20,
+  "incMDD": 22
+ }
 }

@@ -1,5 +1,17 @@
 {
  "id": 3994010,
  "name": "Pale Maple Leaf",
- "description": "Keep the Pale Maple Leaf for #c60 minutes# and it will become a Reddened Maple Leaf.\\n#cThis item disappears upon logging out.#"
+ "description": "Keep the Pale Maple Leaf for #c60 minutes# and it will become a Reddened Maple Leaf.\\n#cThis item disappears upon logging out.#",
+ "typeInfo": {
+  "overallCategory": "Setup",
+  "category": "Other",
+  "subCategory": "Event Item",
+  "lowItemId": 3993000,
+  "highItemId": 3995000
+ },
+ "meta": {
+  "slotMax": 1,
+  "price": 1,
+  "tradeBlock": true
+ }
 }

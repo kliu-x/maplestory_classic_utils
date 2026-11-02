@@ -1,5 +1,15 @@
 {
  "id": 3000027,
  "name": "Metal Window",
- "description": "A metal window. Can be placed in your home."
+ "description": "A metal window. Can be placed in your home.",
+ "typeInfo": {
+  "overallCategory": "Setup",
+  "category": "Housing",
+  "subCategory": "Furniture",
+  "lowItemId": 3000000,
+  "highItemId": 3010000
+ },
+ "meta": {
+  "price": 10
+ }
 }

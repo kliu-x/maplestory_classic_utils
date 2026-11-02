@@ -1,0 +1,16 @@
+{
+ "id": 1072999,
+ "name": "Wizet Plain Shoes",
+ "description": "",
+ "equipGroup": "Shoes",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shoes",
+  "lowItemId": 1070000,
+  "highItemId": 1080000
+ },
+ "meta": {
+  "price": 1
+ }
+}

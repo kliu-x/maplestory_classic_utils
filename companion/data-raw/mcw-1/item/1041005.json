@@ -1,0 +1,22 @@
+{
+ "id": 1041005,
+ "name": "Orange Lolica Armor",
+ "description": "",
+ "equipGroup": "Coat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Top",
+  "lowItemId": 1040000,
+  "highItemId": 1050000
+ },
+ "meta": {
+  "reqLevel": 10,
+  "price": 1000,
+  "reqSTR": 10,
+  "reqJob": 1,
+  "tuc": 7,
+  "incSTR": 1,
+  "incPDD": 35
+ }
+}

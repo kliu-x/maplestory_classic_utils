@@ -1,0 +1,22 @@
+{
+ "id": 1322019,
+ "name": "Red Flowery Tube",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "One-Handed Blunt Weapon",
+  "lowItemId": 1320000,
+  "highItemId": 1330000
+ },
+ "meta": {
+  "reqLevel": 25,
+  "price": 1,
+  "reqSTR": 40,
+  "tuc": 7,
+  "incMHP": 30,
+  "incWAT": 41,
+  "attackSpeed": 5
+ }
+}

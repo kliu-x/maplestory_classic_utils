@@ -1,0 +1,25 @@
+{
+ "id": 1051021,
+ "name": "Dark Moonlight",
+ "description": "",
+ "equipGroup": "Longcoat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Overall",
+  "lowItemId": 1050000,
+  "highItemId": 1060000
+ },
+ "meta": {
+  "reqLevel": 40,
+  "price": 12600,
+  "reqINT": 70,
+  "reqLUK": 30,
+  "reqJob": 2,
+  "tuc": 10,
+  "incINT": 4,
+  "incLUK": 4,
+  "incPDD": 57,
+  "incMDD": 66
+ }
+}

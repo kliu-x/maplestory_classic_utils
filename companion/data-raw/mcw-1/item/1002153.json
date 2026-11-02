@@ -1,0 +1,23 @@
+{
+ "id": 1002153,
+ "name": "Blue Pilfer",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 40,
+  "price": 4200,
+  "reqDEX": 25,
+  "reqLUK": 60,
+  "reqJob": 8,
+  "tuc": 7,
+  "incMMP": 40,
+  "incPDD": 33
+ }
+}

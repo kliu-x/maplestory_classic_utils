@@ -1,0 +1,19 @@
+{
+ "id": 1092000,
+ "name": "Stolen Fence",
+ "description": "Gives a chance to block enemy attacks entirely.",
+ "equipGroup": "Shield",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shield",
+  "lowItemId": 1090000,
+  "highItemId": 1100000
+ },
+ "meta": {
+  "reqLevel": 5,
+  "price": 1000,
+  "tuc": 7,
+  "incPDD": 40
+ }
+}

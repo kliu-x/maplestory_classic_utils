@@ -1,0 +1,16 @@
+{
+ "id": 2044303,
+ "name": "Spear Attack Scroll: Chaos",
+ "description": "Improves Weapon Attack on spears.\\nSuccess rate: 10%, Weapon Attack +5\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Spear",
+  "lowItemId": 2044300,
+  "highItemId": 2044400
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 5
+ }
+}

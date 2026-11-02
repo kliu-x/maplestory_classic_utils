@@ -1,0 +1,17 @@
+{
+ "id": 2040601,
+ "name": "Bottomwear DEF Scroll: Intermediate",
+ "description": "Improves Defense on bottomwear.\\nSuccess rate: 60%, Weapon Def. +4, Magic Def. +2",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Bottomwear",
+  "lowItemId": 2040600,
+  "highItemId": 2040700
+ },
+ "meta": {
+  "price": 1,
+  "incPDD": 4,
+  "incMDD": 2
+ }
+}

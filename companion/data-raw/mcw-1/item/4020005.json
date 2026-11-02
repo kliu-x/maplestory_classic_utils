@@ -1,5 +1,15 @@
 {
  "id": 4020005,
  "name": "Sapphire Ore",
- "description": "The ore of a blue, transparent jewel."
+ "description": "The ore of a blue, transparent jewel.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Crafting",
+  "subCategory": "Rare Ore",
+  "lowItemId": 4020000,
+  "highItemId": 4020100
+ },
+ "meta": {
+  "price": 120
+ }
 }

@@ -1,5 +1,25 @@
 {
  "id": 1051004,
  "name": "Red Sauna Robe",
- "description": "If worn inside the hotel sauna, HP and MP recovery rates are increased by 1.5x."
+ "description": "If worn inside the hotel sauna, HP and MP recovery rates are increased by 1.5x.",
+ "equipGroup": "Longcoat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Overall",
+  "lowItemId": 1050000,
+  "highItemId": 1060000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 5400,
+  "tuc": 10,
+  "incSTR": 1,
+  "incDEX": 1,
+  "incINT": 1,
+  "incLUK": 1,
+  "incMHP": 10,
+  "incMMP": 10,
+  "incPDD": 75
+ }
 }

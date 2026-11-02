@@ -1,0 +1,16 @@
+{
+ "id": 2040810,
+ "name": "Gloves Accuracy Scroll: Greater",
+ "description": "Improves Accuracy on gloves.\\nSuccess rate: 10%, Accuracy +3",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Gloves",
+  "lowItemId": 2040800,
+  "highItemId": 2040900
+ },
+ "meta": {
+  "price": 1,
+  "incACC": 3
+ }
+}

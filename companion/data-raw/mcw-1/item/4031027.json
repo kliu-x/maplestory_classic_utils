@@ -1,5 +1,13 @@
 {
  "id": 4031027,
  "name": "Hero's Gladius",
- "description": "A fully reawakened Gladius, once wielded by a hero."
+ "description": "A fully reawakened Gladius, once wielded by a hero.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {}
 }

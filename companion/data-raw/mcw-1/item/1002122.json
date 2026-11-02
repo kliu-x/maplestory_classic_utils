@@ -1,0 +1,27 @@
+{
+ "id": 1002122,
+ "name": "Great Blue Helmet",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 3000,
+  "reqSTR": 60,
+  "reqDEX": 25,
+  "reqJob": 1,
+  "tuc": 7,
+  "incDEX": 3,
+  "incMHP": 5,
+  "incMMP": 10,
+  "incPDD": 43,
+  "incMDD": 17,
+  "incACC": 4
+ }
+}

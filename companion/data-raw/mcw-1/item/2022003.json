@@ -1,0 +1,15 @@
+{
+ "id": 2022003,
+ "name": "Unagi",
+ "description": "Well-seasoned eel.\\nRestores 1,000 HP.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Consumable",
+  "lowItemId": 2022000,
+  "highItemId": 2024000
+ },
+ "meta": {
+  "price": 100
+ }
+}

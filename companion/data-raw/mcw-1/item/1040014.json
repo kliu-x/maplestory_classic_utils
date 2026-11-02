@@ -1,0 +1,20 @@
+{
+ "id": 1040014,
+ "name": "Orange Sporty T-Shirt",
+ "description": "",
+ "equipGroup": "Coat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Top",
+  "lowItemId": 1040000,
+  "highItemId": 1050000
+ },
+ "meta": {
+  "reqLevel": 12,
+  "price": 1200,
+  "tuc": 7,
+  "incMMP": 12,
+  "incPDD": 26
+ }
+}

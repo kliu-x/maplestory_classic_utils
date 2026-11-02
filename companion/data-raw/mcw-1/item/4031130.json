@@ -1,5 +1,16 @@
 {
  "id": 4031130,
  "name": "Stamped Ledger",
- "description": "The long entry names Kerning City and the Dark Lord, though half of it is gone. Whoever kept this book wrote the same person down over and over for years without ever finishing."
+ "description": "The long entry names Kerning City and the Dark Lord, though half of it is gone. Whoever kept this book wrote the same person down over and over for years without ever finishing.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "slotMax": 1,
+  "price": 1
+ }
 }

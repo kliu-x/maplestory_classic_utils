@@ -1,0 +1,24 @@
+{
+ "id": 1040025,
+ "name": "Black Split Piece",
+ "description": "",
+ "equipGroup": "Coat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Top",
+  "lowItemId": 1040000,
+  "highItemId": 1050000
+ },
+ "meta": {
+  "reqLevel": 20,
+  "price": 2000,
+  "reqINT": 30,
+  "reqLUK": 10,
+  "reqJob": 2,
+  "tuc": 7,
+  "incLUK": 2,
+  "incPDD": 19,
+  "incMDD": 24
+ }
+}

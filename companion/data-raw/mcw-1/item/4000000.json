@@ -1,5 +1,15 @@
 {
  "id": 4000000,
  "name": "Jr. Sentinel Shellpiece",
- "description": "A hard piece of rock that forms the body of a Jr. Sentinel."
+ "description": "A hard piece of rock that forms the body of a Jr. Sentinel.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "slotMax": 200
+ }
 }

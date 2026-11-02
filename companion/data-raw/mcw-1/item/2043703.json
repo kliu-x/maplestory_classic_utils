@@ -1,0 +1,16 @@
+{
+ "id": 2043703,
+ "name": "Wand Magic Attack Scroll: Chaos",
+ "description": "Improves Magic Attack on wands.\\nSuccess rate: 10%, Magic Attack +10\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Wand",
+  "lowItemId": 2043700,
+  "highItemId": 2043800
+ },
+ "meta": {
+  "price": 1,
+  "incMAD": 10
+ }
+}

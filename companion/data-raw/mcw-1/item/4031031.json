@@ -1,5 +1,15 @@
 {
  "id": 4031031,
  "name": "Fresh Milk",
- "description": "A fresh milk from the fairies. Needs to be delivered to Ronnie."
+ "description": "A fresh milk from the fairies. Needs to be delivered to Ronnie.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "price": 500
+ }
 }

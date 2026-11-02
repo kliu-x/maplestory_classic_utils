@@ -1,0 +1,16 @@
+{
+ "id": 2040803,
+ "name": "Gloves Attack Scroll: Chaos",
+ "description": "Improves Weapon Attack on gloves.\\nSuccess rate: 10%, Weapon Attack +4\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Gloves",
+  "lowItemId": 2040800,
+  "highItemId": 2040900
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 4
+ }
+}

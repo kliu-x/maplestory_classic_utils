@@ -1,5 +1,15 @@
 {
  "id": 4010001,
  "name": "Iron Ore",
- "description": "A tough iron ore."
+ "description": "A tough iron ore.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Crafting",
+  "subCategory": "Mineral Ore",
+  "lowItemId": 4010000,
+  "highItemId": 4011000
+ },
+ "meta": {
+  "price": 20
+ }
 }

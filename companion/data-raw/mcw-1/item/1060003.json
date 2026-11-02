@@ -1,0 +1,20 @@
+{
+ "id": 1060003,
+ "name": "Jean Capris",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "reqLevel": 5,
+  "price": 400,
+  "tuc": 7,
+  "incMHP": 5,
+  "incPDD": 7
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "id": 1002014,
+ "name": "Yellow Bandana",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 10,
+  "price": 600,
+  "tuc": 7,
+  "incSTR": 1,
+  "incPDD": 15
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "id": 2430007,
+ "name": "Leaf Points (50,000) Exchange Coupon",
+ "description": "#cDouble-click# to get #c50,000 Leaf Points#.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Other",
+  "lowItemId": 2430000,
+  "highItemId": 2440000
+ },
+ "meta": {
+  "slotMax": 1,
+  "price": 1,
+  "tradeBlock": true
+ }
+}

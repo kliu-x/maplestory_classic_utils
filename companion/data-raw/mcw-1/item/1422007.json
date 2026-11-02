@@ -1,0 +1,23 @@
+{
+ "id": 1422007,
+ "name": "Golden Mole",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Two-Handed Blunt",
+  "lowItemId": 1420000,
+  "highItemId": 1430000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 16500,
+  "reqSTR": 105,
+  "reqDEX": 50,
+  "reqJob": 1,
+  "tuc": 7,
+  "incWAT": 75,
+  "attackSpeed": 7
+ }
+}

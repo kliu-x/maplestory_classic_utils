@@ -1,0 +1,26 @@
+{
+ "id": 1072094,
+ "name": "Red White-Lined Boots",
+ "description": "",
+ "equipGroup": "Shoes",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shoes",
+  "lowItemId": 1070000,
+  "highItemId": 1080000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 3000,
+  "reqDEX": 25,
+  "reqLUK": 60,
+  "reqJob": 8,
+  "tuc": 5,
+  "incDEX": 1,
+  "incMHP": 5,
+  "incPDD": 20,
+  "incEVA": 3,
+  "incJump": 2
+ }
+}

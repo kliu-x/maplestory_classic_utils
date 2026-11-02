@@ -1,0 +1,24 @@
+{
+ "id": 1452004,
+ "name": "Ryden",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Bow",
+  "lowItemId": 1450000,
+  "highItemId": 1460000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 6500,
+  "reqSTR": 30,
+  "reqDEX": 65,
+  "reqJob": 4,
+  "tuc": 7,
+  "incSTR": 1,
+  "incWAT": 50,
+  "attackSpeed": 6
+ }
+}

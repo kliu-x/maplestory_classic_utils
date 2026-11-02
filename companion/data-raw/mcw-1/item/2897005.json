@@ -1,0 +1,17 @@
+{
+ "id": 2897005,
+ "name": "Aura Face Coupon",
+ "description": "#cDouble-click# to change your face to #cAura Face#.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Character Modification",
+  "subCategory": "Face Coupon",
+  "lowItemId": 2897000,
+  "highItemId": 2898000
+ },
+ "meta": {
+  "slotMax": 1,
+  "price": 1,
+  "tradeBlock": true
+ }
+}

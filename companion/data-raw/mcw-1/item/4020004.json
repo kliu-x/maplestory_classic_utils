@@ -1,5 +1,15 @@
 {
  "id": 4020004,
  "name": "Opal Ore",
- "description": "The ore of a jewel with many colors."
+ "description": "The ore of a jewel with many colors.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Crafting",
+  "subCategory": "Rare Ore",
+  "lowItemId": 4020000,
+  "highItemId": 4020100
+ },
+ "meta": {
+  "price": 160
+ }
 }

@@ -1,0 +1,23 @@
+{
+ "id": 1061035,
+ "name": "Blue Shark Skirt",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "reqLevel": 25,
+  "price": 2000,
+  "reqSTR": 40,
+  "reqDEX": 15,
+  "reqJob": 1,
+  "tuc": 7,
+  "incMMP": 25,
+  "incPDD": 37
+ }
+}

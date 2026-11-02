@@ -1,0 +1,16 @@
+{
+ "id": 2044603,
+ "name": "Crossbow Attack Scroll: Chaos",
+ "description": "Improves Weapon Attack on crossbows.\\nSuccess rate: 10%, Weapon Attack +5\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Crossbow",
+  "lowItemId": 2044600,
+  "highItemId": 2044700
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 5
+ }
+}

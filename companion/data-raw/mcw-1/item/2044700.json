@@ -1,0 +1,16 @@
+{
+ "id": 2044700,
+ "name": "Claw Attack Scroll: Lesser",
+ "description": "Improves Weapon Attack on claws.\\nSuccess rate: 100%, Weapon Attack +1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Claw",
+  "lowItemId": 2044700,
+  "highItemId": 2044800
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 1
+ }
+}

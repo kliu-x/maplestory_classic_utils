@@ -1,0 +1,22 @@
+{
+ "id": 1452008,
+ "name": "Beginner's War Bow",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Bow",
+  "lowItemId": 1450000,
+  "highItemId": 1460000
+ },
+ "meta": {
+  "reqLevel": 10,
+  "reqDEX": 25,
+  "reqJob": 4,
+  "tuc": 7,
+  "incWAT": 29,
+  "tradeBlock": true,
+  "attackSpeed": 6
+ }
+}

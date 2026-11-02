@@ -1,0 +1,17 @@
+{
+ "id": 2430032,
+ "name": "Fern Outfit Set",
+ "description": "#cDouble-click# to obtain the Fern Outfit Set.\\nThe obtained item can be equipped regardless of the character's gender.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Other",
+  "lowItemId": 2430000,
+  "highItemId": 2440000
+ },
+ "meta": {
+  "slotMax": 1,
+  "price": 1,
+  "tradeBlock": true
+ }
+}

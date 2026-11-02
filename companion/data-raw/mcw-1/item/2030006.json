@@ -1,5 +1,15 @@
 {
  "id": 2030006,
  "name": "Return Scroll to Sleepywood",
- "description": "Returns you to Sleepywood, a quiet and dark forest town."
+ "description": "Returns you to Sleepywood, a quiet and dark forest town.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Teleport Item",
+  "lowItemId": 2030000,
+  "highItemId": 2040000
+ },
+ "meta": {
+  "price": 300
+ }
 }

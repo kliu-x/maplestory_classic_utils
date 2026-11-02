@@ -1,0 +1,23 @@
+{
+ "id": 1061068,
+ "name": "Dark Shadow Pants",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "reqLevel": 40,
+  "price": 5600,
+  "reqDEX": 30,
+  "reqLUK": 70,
+  "reqJob": 8,
+  "tuc": 7,
+  "incLUK": 4,
+  "incPDD": 35
+ }
+}

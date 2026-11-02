@@ -1,0 +1,26 @@
+{
+ "id": 1002080,
+ "name": "Gold Sharp Helm",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 22,
+  "price": 1400,
+  "reqSTR": 34,
+  "reqDEX": 12,
+  "reqJob": 1,
+  "tuc": 7,
+  "incDEX": 2,
+  "incMHP": 12,
+  "incPDD": 33,
+  "incMDD": 11,
+  "incACC": 3
+ }
+}

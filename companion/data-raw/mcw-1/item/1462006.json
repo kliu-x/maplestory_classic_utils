@@ -1,0 +1,23 @@
+{
+ "id": 1462006,
+ "name": "Silver Crow",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Crossbow",
+  "lowItemId": 1460000,
+  "highItemId": 1470000
+ },
+ "meta": {
+  "reqLevel": 45,
+  "price": 14000,
+  "reqSTR": 35,
+  "reqDEX": 95,
+  "reqJob": 4,
+  "tuc": 7,
+  "incWAT": 67,
+  "attackSpeed": 7
+ }
+}

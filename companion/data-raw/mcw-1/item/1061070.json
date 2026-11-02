@@ -1,0 +1,23 @@
+{
+ "id": 1061070,
+ "name": "Ivory Shouldermail Pants",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 8800,
+  "reqSTR": 90,
+  "reqDEX": 40,
+  "reqJob": 1,
+  "tuc": 7,
+  "incDEX": 5,
+  "incPDD": 57
+ }
+}

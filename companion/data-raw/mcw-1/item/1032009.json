@@ -1,0 +1,21 @@
+{
+ "id": 1032009,
+ "name": "Sapphire Earrings",
+ "description": "",
+ "equipGroup": "Accessory",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Accessory",
+  "subCategory": "Earrings",
+  "lowItemId": 1030000,
+  "highItemId": 1040000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 7500,
+  "tuc": 5,
+  "incMMP": 5,
+  "incMDD": 30,
+  "incEVA": 2
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "id": 1082058,
+ "name": "Aqua Brace",
+ "description": "",
+ "equipGroup": "Glove",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Glove",
+  "lowItemId": 1080000,
+  "highItemId": 1090000
+ },
+ "meta": {
+  "reqLevel": 40,
+  "price": 8400,
+  "reqSTR": 30,
+  "reqDEX": 70,
+  "reqJob": 4,
+  "tuc": 5,
+  "incDEX": 4,
+  "incCRT": 2,
+  "incPDD": 18
+ }
+}

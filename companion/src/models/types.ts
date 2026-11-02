@@ -137,6 +137,22 @@ export interface Item {
   id: number;
   name: string;
   description?: string;
+  /** e.g. "One-Handed Weapon" / "Wand", "Armor" / "Overall". */
+  category?: string;
+  subCategory?: string;
+  reqLevel?: number;
+  req?: Partial<Record<StatKey, number>>;
+  /** Class bitmask: 1 warrior, 2 magician, 4 bowman, 8 thief, 16 pirate (0/absent = anyone). */
+  reqJob?: number;
+  /** Upgrade slots. */
+  slots?: number;
+  /** What an NPC pays you for it (not the shop's selling price). */
+  sellPrice?: number;
+  attackSpeed?: number;
+  /** Bonuses keyed by the game's names: WAT weapon ATT, MAD magic ATT, PDD/MDD defense, STR/DEX/INT/LUK, ACC, EVA, MHP, MMP, CRT/CRD crit rate/damage, Speed, Jump. */
+  stats?: Record<string, number>;
+  questItem?: boolean;
+  untradeable?: boolean;
 }
 
 // ---------- Jobs ----------

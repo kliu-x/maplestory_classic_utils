@@ -1,0 +1,21 @@
+{
+ "id": 1002034,
+ "name": "Blue Metal Gear",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 15,
+  "price": 950,
+  "tuc": 7,
+  "incSTR": 1,
+  "incMMP": 10,
+  "incPDD": 19
+ }
+}

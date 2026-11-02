@@ -1,0 +1,23 @@
+{
+ "id": 1060045,
+ "name": "Red Legolier Pants",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 4000,
+  "reqSTR": 25,
+  "reqDEX": 60,
+  "reqJob": 4,
+  "tuc": 7,
+  "incMHP": 35,
+  "incPDD": 32
+ }
+}

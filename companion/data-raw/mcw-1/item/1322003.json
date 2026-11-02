@@ -1,0 +1,22 @@
+{
+ "id": 1322003,
+ "name": "Mace",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "One-Handed Blunt Weapon",
+  "lowItemId": 1320000,
+  "highItemId": 1330000
+ },
+ "meta": {
+  "reqLevel": 15,
+  "price": 2500,
+  "reqSTR": 20,
+  "reqJob": 3,
+  "tuc": 7,
+  "incWAT": 34,
+  "attackSpeed": 5
+ }
+}

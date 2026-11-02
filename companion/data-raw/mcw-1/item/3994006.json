@@ -1,5 +1,16 @@
 {
  "id": 3994006,
  "name": "Letter I",
- "description": "The letter I made of leaves. If gathered with other letters to make a specific word...?"
+ "description": "The letter I made of leaves. If gathered with other letters to make a specific word...?",
+ "typeInfo": {
+  "overallCategory": "Setup",
+  "category": "Other",
+  "subCategory": "Event Item",
+  "lowItemId": 3993000,
+  "highItemId": 3995000
+ },
+ "meta": {
+  "slotMax": 100,
+  "price": 1
+ }
 }

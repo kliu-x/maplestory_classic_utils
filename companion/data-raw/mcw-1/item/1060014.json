@@ -1,0 +1,23 @@
+{
+ "id": 1060014,
+ "name": "Blue Nightshift Pants",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "reqLevel": 15,
+  "price": 1200,
+  "reqLUK": 20,
+  "reqJob": 8,
+  "tuc": 7,
+  "incDEX": 1,
+  "incMHP": 5,
+  "incPDD": 20
+ }
+}

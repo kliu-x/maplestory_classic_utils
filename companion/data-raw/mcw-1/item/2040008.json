@@ -1,0 +1,16 @@
+{
+ "id": 2040008,
+ "name": "Hat MP Scroll: Lesser",
+ "description": "Improves Max MP on hats.\\nSuccess rate: 100%, Max MP +10",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Helmet",
+  "lowItemId": 2040000,
+  "highItemId": 2040100
+ },
+ "meta": {
+  "price": 1,
+  "incMMP": 10
+ }
+}

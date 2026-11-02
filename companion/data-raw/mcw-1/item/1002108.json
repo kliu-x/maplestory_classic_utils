@@ -1,0 +1,25 @@
+{
+ "id": 1002108,
+ "name": "Black Jester",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 1800,
+  "reqINT": 50,
+  "reqLUK": 20,
+  "reqJob": 2,
+  "tuc": 7,
+  "incMHP": 15,
+  "incMMP": 15,
+  "incPDD": 16,
+  "incMDD": 18
+ }
+}

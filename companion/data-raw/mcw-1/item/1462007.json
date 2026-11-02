@@ -1,0 +1,23 @@
+{
+ "id": 1462007,
+ "name": "Rower",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Crossbow",
+  "lowItemId": 1460000,
+  "highItemId": 1470000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 16500,
+  "reqSTR": 40,
+  "reqDEX": 105,
+  "reqJob": 4,
+  "tuc": 7,
+  "incWAT": 72,
+  "attackSpeed": 7
+ }
+}

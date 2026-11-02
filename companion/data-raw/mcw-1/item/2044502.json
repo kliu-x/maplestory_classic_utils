@@ -1,5 +1,16 @@
 {
  "id": 2044502,
  "name": "Bow Attack Scroll: Greater",
- "description": "Improves Weapon Attack on bows.\\nSuccess rate: 10%, Weapon Attack +4"
+ "description": "Improves Weapon Attack on bows.\\nSuccess rate: 10%, Weapon Attack +4",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Bow",
+  "lowItemId": 2044500,
+  "highItemId": 2044600
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 4
+ }
 }

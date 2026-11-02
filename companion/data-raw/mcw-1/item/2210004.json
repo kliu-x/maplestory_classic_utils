@@ -1,0 +1,16 @@
+{
+ "id": 2210004,
+ "name": "Red Snail Daydream",
+ "description": "What would life be like as a Red Snail...?\\n\\n#cRight-click on the buff icon to cancel the transformation.#",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Transformation",
+  "lowItemId": 2210000,
+  "highItemId": 2230000
+ },
+ "meta": {
+  "slotMax": 200,
+  "tradeBlock": true
+ }
+}

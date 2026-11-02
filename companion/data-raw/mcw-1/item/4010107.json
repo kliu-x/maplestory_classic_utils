@@ -1,5 +1,15 @@
 {
  "id": 4010107,
  "name": "Moon Rock",
- "description": "A glittering mineral that possesses the mysterious power of the moon."
+ "description": "A glittering mineral that possesses the mysterious power of the moon.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Crafting",
+  "subCategory": "Mineral Ore",
+  "lowItemId": 4010000,
+  "highItemId": 4011000
+ },
+ "meta": {
+  "price": 2000
+ }
 }

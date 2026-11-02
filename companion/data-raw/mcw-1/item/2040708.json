@@ -1,0 +1,16 @@
+{
+ "id": 2040708,
+ "name": "Shoes Evasion Scroll: Lesser",
+ "description": "Improves Evasion on shoes.\\nSuccess rate: 100%, Evasion +1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Shoes",
+  "lowItemId": 2040700,
+  "highItemId": 2040800
+ },
+ "meta": {
+  "price": 1,
+  "incEVA": 1
+ }
+}

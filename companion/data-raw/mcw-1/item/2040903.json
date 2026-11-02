@@ -1,0 +1,17 @@
+{
+ "id": 2040903,
+ "name": "Shield DEF Scroll: Chaos",
+ "description": "Improves Defense on shields.\\nSuccess rate: 10%, Weapon Def. +8, Magic Def. +6\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Shield",
+  "lowItemId": 2040900,
+  "highItemId": 2041000
+ },
+ "meta": {
+  "price": 1,
+  "incPDD": 8,
+  "incMDD": 6
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "id": 2040318,
+ "name": "Earring Crit. Damage Scroll: Greater",
+ "description": "Improves Crit. Damage on earrings.\\nSuccess rate: 10%, Crit. Damage +3",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Earrings",
+  "lowItemId": 2040300,
+  "highItemId": 2040400
+ },
+ "meta": {
+  "price": 1,
+  "incCRD": 3
+ }
+}

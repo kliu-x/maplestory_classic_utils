@@ -1,0 +1,16 @@
+{
+ "id": 2022002,
+ "name": "Cider",
+ "description": "A cold and refreshing drink.\\nAttack Power +15 for 5 min.\\nAccuracy -5 for 5 min.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Consumable",
+  "lowItemId": 2022000,
+  "highItemId": 2024000
+ },
+ "meta": {
+  "slotMax": 1,
+  "price": 1
+ }
+}

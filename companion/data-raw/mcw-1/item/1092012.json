@@ -1,0 +1,22 @@
+{
+ "id": 1092012,
+ "name": "Battle Shield",
+ "description": "Gives a chance to block enemy attacks entirely.",
+ "equipGroup": "Shield",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shield",
+  "lowItemId": 1090000,
+  "highItemId": 1100000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 10000,
+  "reqSTR": 60,
+  "reqDEX": 25,
+  "reqJob": 1,
+  "tuc": 7,
+  "incPDD": 120
+ }
+}

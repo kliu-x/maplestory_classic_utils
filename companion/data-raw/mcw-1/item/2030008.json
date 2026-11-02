@@ -1,0 +1,15 @@
+{
+ "id": 2030008,
+ "name": "Return Scroll to Orbis",
+ "description": "Returns you to Orbis.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Teleport Item",
+  "lowItemId": 2030000,
+  "highItemId": 2040000
+ },
+ "meta": {
+  "price": 500
+ }
+}

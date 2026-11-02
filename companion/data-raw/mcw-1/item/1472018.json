@@ -1,0 +1,23 @@
+{
+ "id": 1472018,
+ "name": "Steel Slain",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Claw",
+  "lowItemId": 1470000,
+  "highItemId": 1480000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 16500,
+  "reqDEX": 50,
+  "reqLUK": 105,
+  "reqJob": 8,
+  "tuc": 7,
+  "incWAT": 34,
+  "attackSpeed": 4
+ }
+}

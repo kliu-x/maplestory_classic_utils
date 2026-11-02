@@ -7,6 +7,7 @@ export const PAGES = [
   { id: 'monsters', label: 'Monsters', ico: '✿' },
   { id: 'skills', label: 'Skills & AP', ico: '✦' },
   { id: 'gear', label: 'Gear', ico: '⛨' },
+  { id: 'items', label: 'Items', ico: '◆' },
   { id: 'quests', label: 'Quests', ico: '✎' },
   { id: 'maps', label: 'Maps', ico: '⌖' },
   { id: 'pastas', label: 'Copy Pastas', ico: '✉' },

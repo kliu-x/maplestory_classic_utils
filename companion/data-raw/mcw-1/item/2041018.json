@@ -1,5 +1,16 @@
 {
  "id": 2041018,
  "name": "Cape INT Scroll: Greater",
- "description": "Improves Intelligence on capes.\\nSuccess rate: 10%, INT +3"
+ "description": "Improves Intelligence on capes.\\nSuccess rate: 10%, INT +3",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Cape",
+  "lowItemId": 2041000,
+  "highItemId": 2041100
+ },
+ "meta": {
+  "price": 1,
+  "incINT": 3
+ }
 }

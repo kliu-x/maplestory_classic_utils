@@ -1,0 +1,16 @@
+{
+ "id": 2041024,
+ "name": "Cape Accuracy Scroll: Lesser ",
+ "description": "Improves Accuracy on capes.\\nSuccess rate: 100%, Accuracy +1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Cape",
+  "lowItemId": 2041000,
+  "highItemId": 2041100
+ },
+ "meta": {
+  "price": 1,
+  "incACC": 1
+ }
+}

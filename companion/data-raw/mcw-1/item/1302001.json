@@ -1,0 +1,21 @@
+{
+ "id": 1302001,
+ "name": "Long Sword",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "One-Handed Sword",
+  "lowItemId": 1300000,
+  "highItemId": 1310000
+ },
+ "meta": {
+  "reqLevel": 10,
+  "price": 1500,
+  "reqSTR": 20,
+  "tuc": 7,
+  "incWAT": 27,
+  "attackSpeed": 4
+ }
+}

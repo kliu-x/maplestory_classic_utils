@@ -1,0 +1,26 @@
+{
+ "id": 1050021,
+ "name": "Dark Chaos Robe",
+ "description": "",
+ "equipGroup": "Longcoat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Overall",
+  "lowItemId": 1050000,
+  "highItemId": 1060000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 9000,
+  "reqINT": 60,
+  "reqLUK": 25,
+  "reqJob": 2,
+  "tuc": 10,
+  "incINT": 3,
+  "incLUK": 3,
+  "incMMP": 5,
+  "incPDD": 51,
+  "incMDD": 60
+ }
+}

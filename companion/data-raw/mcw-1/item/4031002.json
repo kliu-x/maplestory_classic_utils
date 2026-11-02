@@ -1,5 +1,13 @@
 {
  "id": 4031002,
  "name": "Lucas's Letter",
- "description": "A letter written by Lucas. Needs to be delivered to Maria of Mushroom Town."
+ "description": "A letter written by Lucas. Needs to be delivered to Maria of Mushroom Town.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {}
 }

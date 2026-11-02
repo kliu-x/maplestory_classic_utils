@@ -1,0 +1,15 @@
+{
+ "id": 2030010,
+ "name": "Return Scroll to My Home",
+ "description": "Returns you to your warm and cozy home.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Teleport Item",
+  "lowItemId": 2030000,
+  "highItemId": 2040000
+ },
+ "meta": {
+  "price": 150
+ }
+}

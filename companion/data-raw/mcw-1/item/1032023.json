@@ -1,5 +1,21 @@
 {
  "id": 1032023,
  "name": "Faded Maple Leaf Earrings",
- "description": "A maple leaf-shaped earring believed to have been used by an adventurer long ago. It has faded with the passage of time."
+ "description": "A maple leaf-shaped earring believed to have been used by an adventurer long ago. It has faded with the passage of time.",
+ "equipGroup": "Accessory",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Accessory",
+  "subCategory": "Earrings",
+  "lowItemId": 1030000,
+  "highItemId": 1040000
+ },
+ "meta": {
+  "reqLevel": 28,
+  "price": 4200,
+  "tuc": 5,
+  "incMMP": 8,
+  "incCRD": 1,
+  "incMDD": 26
+ }
 }

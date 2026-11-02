@@ -1,0 +1,15 @@
+{
+ "id": 2000007,
+ "name": "Red Potion",
+ "description": "A potion made out of red herbs.\\nRestores 100 HP.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Potion",
+  "lowItemId": 2000000,
+  "highItemId": 2010000
+ },
+ "meta": {
+  "price": 5
+ }
+}

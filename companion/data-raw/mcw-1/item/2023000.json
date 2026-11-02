@@ -1,0 +1,13 @@
+{
+ "id": 2023000,
+ "name": "GM's Blessing of Wind",
+ "description": "A special blessing from the GM that makes you feel as light as a feather.\\n\\n#cSpeed +30\\nJump +10#\\n\\n#cStacks with other boost effects.#\\n#cEffects disappear upon relogin.#",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Consumable",
+  "lowItemId": 2022000,
+  "highItemId": 2024000
+ },
+ "meta": {}
+}

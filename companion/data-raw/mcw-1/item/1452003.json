@@ -1,0 +1,23 @@
+{
+ "id": 1452003,
+ "name": "Battle Bow",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Bow",
+  "lowItemId": 1450000,
+  "highItemId": 1460000
+ },
+ "meta": {
+  "reqLevel": 25,
+  "price": 5500,
+  "reqSTR": 25,
+  "reqDEX": 55,
+  "reqJob": 4,
+  "tuc": 7,
+  "incWAT": 44,
+  "attackSpeed": 5
+ }
+}

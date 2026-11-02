@@ -1,5 +1,16 @@
 {
  "id": 2044301,
  "name": "Spear Attack Scroll: Intermediate",
- "description": "Improves Weapon Attack on spears.\\nSuccess rate: 60%, Weapon Attack +2"
+ "description": "Improves Weapon Attack on spears.\\nSuccess rate: 60%, Weapon Attack +2",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Spear",
+  "lowItemId": 2044300,
+  "highItemId": 2044400
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 2
+ }
 }

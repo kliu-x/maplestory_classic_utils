@@ -7,7 +7,7 @@
 //
 // Polite by design: one request at a time, >=300 ms apart, retries with backoff.
 // Raw responses are trimmed (sprites/footholds dropped) before saving. Kinds: mobs, maps,
-// skillbooks, quests, items (names of items quests ask for), npcs.
+// skillbooks, quests, items (quest items, usable items, equipment up to Lv 50, with stats), npcs.
 import { mkdir, readFile, writeFile, access } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -78,7 +78,15 @@ const trimMap = (m) => ({
   portals: (m.portals || []).filter((p) => p && p.toMap && p.toMap !== 999999999).map((p) => ({ toMap: p.toMap, portalName: p.portalName, x: p.x, y: p.y })),
 });
 const trimNpc = (n) => ({ id: n.id, name: n.name, isShop: !!n.isShop });
-const trimItem = (i) => ({ id: i.id, name: i.description?.name, description: i.description?.description });
+// Stats come from metaInfo: requirements, slots (tuc), NPC sell price, and every inc* bonus.
+const ITEM_META = ['reqLevel', 'reqSTR', 'reqDEX', 'reqINT', 'reqLUK', 'reqJob', 'tuc', 'price', 'attackSpeed', 'cash', 'only', 'quest', 'tradeBlock', 'slotMax'];
+const trimItem = (i) => ({
+  id: i.id, name: i.description?.name, description: i.description?.description, equipGroup: i.equipGroup, typeInfo: i.typeInfo,
+  meta: i.metaInfo && Object.fromEntries(Object.entries(i.metaInfo).filter(([k, v]) => (ITEM_META.includes(k) || k.startsWith('inc')) && v !== 0 && v !== false && v != null)),
+});
+const trimItemList = (l) => (Array.isArray(l) ? l : []).map((x) => ({ id: x.id, name: x.name, reqLevel: x.requiredLevel, jobs: x.requiredJobs, cash: x.isCash, type: x.typeInfo && [x.typeInfo.overallCategory, x.typeInfo.category, x.typeInfo.subCategory] }));
+// Equipment fetched in full (stats): everything wearable up to this level, not cash, not hair/faces.
+const EQUIP_MAX_LEVEL = 50;
 const trimSkillbook = (b) => ({
   id: b.id, description: b.description,
   skills: (b.skills || []).map((s) => ({
@@ -125,6 +133,11 @@ async function main() {
     // ...and items the quest texts mention (#t4000016#)
     for (const m of d.messages || []) for (const t of String(m).matchAll(/#[tz]0*(\d+)/g)) itemIds.add(Number(t[1]));
   }
+  // ...and wearable equipment up to EQUIP_MAX_LEVEL (one list request, then one per item).
+  const itemList = await cached('item-list.json', '/item/list', trimItemList);
+  for (const x of Array.isArray(itemList) ? itemList : []) if (x.type?.[0] === 'Equip' && x.type[1] !== 'Character' && !x.cash && (x.reqLevel ?? 0) <= EQUIP_MAX_LEVEL) itemIds.add(x.id);
+  // ...and everything usable that isn't cash shop (potions, food, scrolls, stars, arrows).
+  for (const x of Array.isArray(itemList) ? itemList : []) if (x.type?.[0] === 'Use' && !x.cash) itemIds.add(x.id);
   console.log(`  items: ${itemIds.size}`);
   for (const id of itemIds) await cached(`item/${id}.json`, `/item/${id}`, trimItem);
 

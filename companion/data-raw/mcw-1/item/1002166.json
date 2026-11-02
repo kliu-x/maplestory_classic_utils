@@ -1,0 +1,26 @@
+{
+ "id": 1002166,
+ "name": "Silver Crusader Helm",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 6840,
+  "reqSTR": 90,
+  "reqDEX": 40,
+  "reqJob": 1,
+  "tuc": 7,
+  "incDEX": 5,
+  "incMHP": 10,
+  "incPDD": 55,
+  "incMDD": 23,
+  "incACC": 6
+ }
+}

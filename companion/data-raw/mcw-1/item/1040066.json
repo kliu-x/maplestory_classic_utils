@@ -1,0 +1,23 @@
+{
+ "id": 1040066,
+ "name": "Marine Shadow",
+ "description": "",
+ "equipGroup": "Coat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Top",
+  "lowItemId": 1040000,
+  "highItemId": 1050000
+ },
+ "meta": {
+  "reqLevel": 40,
+  "price": 7000,
+  "reqDEX": 30,
+  "reqLUK": 70,
+  "reqJob": 8,
+  "tuc": 7,
+  "incDEX": 4,
+  "incPDD": 48
+ }
+}

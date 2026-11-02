@@ -1,5 +1,16 @@
 {
  "id": 4000022,
  "name": "Evil Eye Tail",
- "description": "A tail removed from an Evil Eye."
+ "description": "A tail removed from an Evil Eye.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "slotMax": 200,
+  "price": 27
+ }
 }

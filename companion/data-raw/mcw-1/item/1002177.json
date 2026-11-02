@@ -1,0 +1,23 @@
+{
+ "id": 1002177,
+ "name": "Blue Sonata",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 6600,
+  "reqDEX": 40,
+  "reqLUK": 90,
+  "reqJob": 8,
+  "tuc": 7,
+  "incMMP": 50,
+  "incPDD": 39
+ }
+}

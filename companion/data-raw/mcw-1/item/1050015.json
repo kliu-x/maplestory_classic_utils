@@ -1,0 +1,25 @@
+{
+ "id": 1050015,
+ "name": "Green Wizard Robe",
+ "description": "",
+ "equipGroup": "Longcoat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Overall",
+  "lowItemId": 1050000,
+  "highItemId": 1060000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 5400,
+  "reqINT": 50,
+  "reqLUK": 20,
+  "reqJob": 2,
+  "tuc": 10,
+  "incINT": 3,
+  "incMMP": 30,
+  "incPDD": 46,
+  "incMDD": 55
+ }
+}

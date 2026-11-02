@@ -1,0 +1,24 @@
+{
+ "id": 1372006,
+ "name": "Fairy Wand",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "Wand",
+  "lowItemId": 1370000,
+  "highItemId": 1380000
+ },
+ "meta": {
+  "reqLevel": 40,
+  "price": 9500,
+  "reqINT": 80,
+  "reqLUK": 30,
+  "reqJob": 2,
+  "tuc": 7,
+  "incMAD": 69,
+  "incWAT": 48,
+  "attackSpeed": 6
+ }
+}

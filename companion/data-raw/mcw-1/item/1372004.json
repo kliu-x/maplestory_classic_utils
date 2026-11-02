@@ -1,0 +1,24 @@
+{
+ "id": 1372004,
+ "name": "Mithril Wand",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "Wand",
+  "lowItemId": 1370000,
+  "highItemId": 1380000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 5500,
+  "reqINT": 60,
+  "reqLUK": 20,
+  "reqJob": 2,
+  "tuc": 7,
+  "incMAD": 55,
+  "incWAT": 27,
+  "attackSpeed": 6
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "id": 1002169,
+ "name": "Aqua Golden Circlet",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 6600,
+  "reqINT": 90,
+  "reqLUK": 40,
+  "reqJob": 2,
+  "tuc": 7,
+  "incINT": 5,
+  "incPDD": 24,
+  "incMDD": 26
+ }
+}

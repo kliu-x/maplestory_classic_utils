@@ -1,0 +1,23 @@
+{
+ "id": 1040006,
+ "name": "Blue Training Shirt",
+ "description": "",
+ "equipGroup": "Coat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Top",
+  "lowItemId": 1040000,
+  "highItemId": 1050000
+ },
+ "meta": {
+  "reqLevel": 10,
+  "price": 1000,
+  "reqINT": 10,
+  "reqJob": 2,
+  "tuc": 7,
+  "incINT": 1,
+  "incPDD": 13,
+  "incMDD": 18
+ }
+}

@@ -1,5 +1,15 @@
 {
  "id": 4010106,
  "name": "Gold Ingot",
- "description": "A very rare refined gold ingot."
+ "description": "A very rare refined gold ingot.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Crafting",
+  "subCategory": "Mineral Ore",
+  "lowItemId": 4010000,
+  "highItemId": 4011000
+ },
+ "meta": {
+  "price": 300
+ }
 }

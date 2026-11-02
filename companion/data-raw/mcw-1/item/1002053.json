@@ -1,5 +1,20 @@
 {
  "id": 1002053,
  "name": "Old Wisconsin",
- "description": ""
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 17,
+  "price": 1000,
+  "tuc": 7,
+  "incMHP": 17,
+  "incPDD": 19
+ }
 }

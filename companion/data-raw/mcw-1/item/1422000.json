@@ -1,0 +1,22 @@
+{
+ "id": 1422000,
+ "name": "Wooden Mallet",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Two-Handed Blunt",
+  "lowItemId": 1420000,
+  "highItemId": 1430000
+ },
+ "meta": {
+  "reqLevel": 10,
+  "price": 2500,
+  "reqSTR": 25,
+  "reqJob": 13,
+  "tuc": 7,
+  "incWAT": 32,
+  "attackSpeed": 6
+ }
+}

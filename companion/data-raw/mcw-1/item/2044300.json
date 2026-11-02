@@ -1,0 +1,16 @@
+{
+ "id": 2044300,
+ "name": "Spear Attack Scroll: Lesser",
+ "description": "Improves Weapon Attack on spears.\\nSuccess rate: 100%, Weapon Attack +1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Spear",
+  "lowItemId": 2044300,
+  "highItemId": 2044400
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 1
+ }
+}

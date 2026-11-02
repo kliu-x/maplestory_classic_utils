@@ -1,0 +1,19 @@
+{
+ "id": 1322999,
+ "name": "Wizet Secret Agent Suitcase",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "One-Handed Blunt Weapon",
+  "lowItemId": 1320000,
+  "highItemId": 1330000
+ },
+ "meta": {
+  "price": 1,
+  "tuc": 7,
+  "incWAT": 200,
+  "attackSpeed": 2
+ }
+}

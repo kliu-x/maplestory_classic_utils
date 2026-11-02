@@ -1,0 +1,16 @@
+{
+ "id": 2120000,
+ "name": "Pet Food",
+ "description": "Small pets love them. Restores 30 Fullness. Can be purchased at the #cGeneral Stores# in towns or from the #cPet Food Merchants# in some towns. NOT for human consumption!",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Pet Food",
+  "lowItemId": 2120000,
+  "highItemId": 2120100
+ },
+ "meta": {
+  "slotMax": 200,
+  "price": 15
+ }
+}

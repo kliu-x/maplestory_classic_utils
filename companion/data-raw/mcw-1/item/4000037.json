@@ -1,5 +1,16 @@
 {
  "id": 4000037,
  "name": "Tortie Shell",
- "description": "A shell cut off of a Tortie's back."
+ "description": "A shell cut off of a Tortie's back.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "slotMax": 200,
+  "price": 46
+ }
 }

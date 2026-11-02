@@ -1,0 +1,16 @@
+{
+ "id": 2040007,
+ "name": "Hat HP Scroll: Chaos",
+ "description": "Improves Max HP on hats.\\nSuccess rate: 10%, Max HP +25\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Helmet",
+  "lowItemId": 2040000,
+  "highItemId": 2040100
+ },
+ "meta": {
+  "price": 1,
+  "incMHP": 25
+ }
+}

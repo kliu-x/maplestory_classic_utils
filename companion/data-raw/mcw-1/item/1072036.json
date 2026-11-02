@@ -1,0 +1,24 @@
+{
+ "id": 1072036,
+ "name": "Bear Huntertop",
+ "description": "",
+ "equipGroup": "Shoes",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shoes",
+  "lowItemId": 1070000,
+  "highItemId": 1080000
+ },
+ "meta": {
+  "reqLevel": 20,
+  "price": 1200,
+  "reqSTR": 10,
+  "reqDEX": 30,
+  "reqJob": 4,
+  "tuc": 5,
+  "incSTR": 2,
+  "incPDD": 14,
+  "incEVA": 2
+ }
+}

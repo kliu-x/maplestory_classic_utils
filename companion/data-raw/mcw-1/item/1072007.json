@@ -1,0 +1,23 @@
+{
+ "id": 1072007,
+ "name": "Green Hard Leather Boots",
+ "description": "",
+ "equipGroup": "Shoes",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shoes",
+  "lowItemId": 1070000,
+  "highItemId": 1080000
+ },
+ "meta": {
+  "reqLevel": 10,
+  "price": 600,
+  "reqDEX": 10,
+  "reqJob": 4,
+  "tuc": 5,
+  "incPDD": 10,
+  "incEVA": 1,
+  "incJump": 1
+ }
+}

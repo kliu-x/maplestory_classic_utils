@@ -1,5 +1,15 @@
 {
  "id": 4010104,
  "name": "Silver Ingot",
- "description": "A shiny and refined silver ingot."
+ "description": "A shiny and refined silver ingot.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Crafting",
+  "subCategory": "Mineral Ore",
+  "lowItemId": 4010000,
+  "highItemId": 4011000
+ },
+ "meta": {
+  "price": 400
+ }
 }

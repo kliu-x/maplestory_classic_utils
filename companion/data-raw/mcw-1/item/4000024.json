@@ -1,5 +1,16 @@
 {
  "id": 4000024,
  "name": "Fairy's Tentacle",
- "description": "A tentacle removed from a Fairy. Very small and delicate, so it should be handled with care."
+ "description": "A tentacle removed from a Fairy. Very small and delicate, so it should be handled with care.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "slotMax": 200,
+  "price": 29
+ }
 }

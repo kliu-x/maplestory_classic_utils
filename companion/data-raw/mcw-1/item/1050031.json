@@ -1,0 +1,25 @@
+{
+ "id": 1050031,
+ "name": "White Calas",
+ "description": "",
+ "equipGroup": "Longcoat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Overall",
+  "lowItemId": 1050000,
+  "highItemId": 1060000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 19800,
+  "reqINT": 90,
+  "reqLUK": 40,
+  "reqJob": 2,
+  "tuc": 10,
+  "incINT": 5,
+  "incMMP": 50,
+  "incPDD": 68,
+  "incMDD": 77
+ }
+}

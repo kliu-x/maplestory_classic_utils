@@ -1,0 +1,15 @@
+{
+ "id": 2430044,
+ "name": "Aurora Stamp",
+ "description": "An Aurora Stamp obtained by reusing items from the Mystery Fashion Crate. Aurora Stamps can be exchanged for items that can be traded before being equipped.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Other",
+  "lowItemId": 2430000,
+  "highItemId": 2440000
+ },
+ "meta": {
+  "slotMax": 1000
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "id": 1040009,
+ "name": "Brown Archer Top",
+ "description": "",
+ "equipGroup": "Coat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Top",
+  "lowItemId": 1040000,
+  "highItemId": 1050000
+ },
+ "meta": {
+  "reqLevel": 10,
+  "price": 1000,
+  "reqJob": 4,
+  "tuc": 7,
+  "incSTR": 1,
+  "incPDD": 24
+ }
+}

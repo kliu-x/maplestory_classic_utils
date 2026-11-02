@@ -1,0 +1,17 @@
+{
+ "id": 2041003,
+ "name": "Cape Weapon Def. Scroll: Chaos",
+ "description": "Improves Weapon Def. on capes.\\nSuccess rate: 10%, Weapon Def. +8, Magic Def. +6\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Cape",
+  "lowItemId": 2041000,
+  "highItemId": 2041100
+ },
+ "meta": {
+  "price": 1,
+  "incPDD": 8,
+  "incMDD": 6
+ }
+}

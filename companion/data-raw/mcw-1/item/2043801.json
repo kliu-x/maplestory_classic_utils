@@ -1,5 +1,16 @@
 {
  "id": 2043801,
  "name": "Staff Magic Attack Scroll: Intermediate",
- "description": "Improves Magic Attack on staves.\\nSuccess rate: 60%, Magic Attack +4"
+ "description": "Improves Magic Attack on staves.\\nSuccess rate: 60%, Magic Attack +4",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Staff",
+  "lowItemId": 2043800,
+  "highItemId": 2043900
+ },
+ "meta": {
+  "price": 1,
+  "incMAD": 4
+ }
 }

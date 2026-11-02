@@ -1,0 +1,20 @@
+{
+ "id": 1032006,
+ "name": "Lightning Earrings",
+ "description": "",
+ "equipGroup": "Accessory",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Accessory",
+  "subCategory": "Earrings",
+  "lowItemId": 1030000,
+  "highItemId": 1040000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 4500,
+  "tuc": 5,
+  "incMDD": 27,
+  "incEVA": 2
+ }
+}

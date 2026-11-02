@@ -1,0 +1,25 @@
+{
+ "id": 1051010,
+ "name": "Sapphire Fitted Mail",
+ "description": "",
+ "equipGroup": "Longcoat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Overall",
+  "lowItemId": 1050000,
+  "highItemId": 1060000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 9000,
+  "reqSTR": 60,
+  "reqDEX": 25,
+  "reqJob": 1,
+  "tuc": 10,
+  "incSTR": 6,
+  "incMMP": 5,
+  "incPDD": 115,
+  "incMDD": 10
+ }
+}

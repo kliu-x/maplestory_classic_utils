@@ -1,0 +1,21 @@
+{
+ "id": 1322007,
+ "name": "Hard Briefcase",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "One-Handed Blunt Weapon",
+  "lowItemId": 1320000,
+  "highItemId": 1330000
+ },
+ "meta": {
+  "reqLevel": 20,
+  "price": 3500,
+  "reqSTR": 30,
+  "tuc": 7,
+  "incWAT": 39,
+  "attackSpeed": 5
+ }
+}

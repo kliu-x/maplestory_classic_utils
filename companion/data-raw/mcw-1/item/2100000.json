@@ -1,0 +1,16 @@
+{
+ "id": 2100000,
+ "name": "Black Sack",
+ "description": "If you think your level's too low, don't bother opening it.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Other",
+  "subCategory": "Summoning Sack",
+  "lowItemId": 2100000,
+  "highItemId": 2110000
+ },
+ "meta": {
+  "slotMax": 100,
+  "price": 1
+ }
+}

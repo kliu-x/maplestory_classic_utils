@@ -1,0 +1,25 @@
+{
+ "id": 1061059,
+ "name": "Dark Legolia Pants",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 4000,
+  "reqSTR": 25,
+  "reqDEX": 60,
+  "reqJob": 4,
+  "tuc": 7,
+  "incSTR": 2,
+  "incDEX": 1,
+  "incMHP": 5,
+  "incPDD": 32
+ }
+}

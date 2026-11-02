@@ -1,0 +1,25 @@
+{
+ "id": 1072077,
+ "name": "Silver Chain Boots",
+ "description": "",
+ "equipGroup": "Shoes",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shoes",
+  "lowItemId": 1070000,
+  "highItemId": 1080000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 1800,
+  "reqDEX": 20,
+  "reqLUK": 50,
+  "reqJob": 8,
+  "tuc": 5,
+  "incDEX": 1,
+  "incPDD": 18,
+  "incEVA": 3,
+  "incJump": 2
+ }
+}

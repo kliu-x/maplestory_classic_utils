@@ -1,0 +1,16 @@
+{
+ "id": 2048003,
+ "name": "Pet Equip Speed Scroll: Chaos",
+ "description": "Improves Speed on pet equip.\\nSuccess rate: 10%, Speed +4\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Pet",
+  "lowItemId": 2048000,
+  "highItemId": 2048100
+ },
+ "meta": {
+  "price": 1,
+  "incSpeed": 4
+ }
+}

@@ -1,5 +1,17 @@
 {
  "id": 4031134,
  "name": "Maple Leaf",
- "description": "A bright red leaf that drifts down all over Maple World. They say the whole world is named after the tree these fall from."
+ "description": "A bright red leaf that drifts down all over Maple World. They say the whole world is named after the tree these fall from.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "slotMax": 100,
+  "price": 1,
+  "tradeBlock": true
+ }
 }

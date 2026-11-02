@@ -1,5 +1,15 @@
 {
  "id": 4031030,
  "name": "Rina's Unagi Special",
- "description": "A special Unagi, made of the tails of Curse Eyes... and a pig's head. Needs to be delivered to Ronnie."
+ "description": "A special Unagi, made of the tails of Curse Eyes... and a pig's head. Needs to be delivered to Ronnie.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "price": 550
+ }
 }

@@ -1,0 +1,23 @@
+{
+ "id": 1002016,
+ "name": "Bronze Koif",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 10,
+  "price": 600,
+  "reqSTR": 10,
+  "reqJob": 1,
+  "tuc": 7,
+  "incDEX": 1,
+  "incPDD": 22,
+  "incACC": 1
+ }
+}

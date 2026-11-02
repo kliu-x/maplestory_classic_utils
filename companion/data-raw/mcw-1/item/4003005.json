@@ -1,5 +1,15 @@
 {
  "id": 4003005,
  "name": "Fairy Wing",
- "description": "A piece of wing from a fairy. It's soft and brittle, so it should be handled with care."
+ "description": "A piece of wing from a fairy. It's soft and brittle, so it should be handled with care.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "price": 5000
+ }
 }

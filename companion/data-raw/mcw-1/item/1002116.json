@@ -1,0 +1,23 @@
+{
+ "id": 1002116,
+ "name": "Dark Guise",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 1800,
+  "reqDEX": 20,
+  "reqLUK": 50,
+  "reqJob": 8,
+  "tuc": 7,
+  "incLUK": 3,
+  "incPDD": 27
+ }
+}

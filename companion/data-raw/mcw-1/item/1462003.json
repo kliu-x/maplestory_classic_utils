@@ -1,0 +1,23 @@
+{
+ "id": 1462003,
+ "name": "Mountain Crossbow",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Crossbow",
+  "lowItemId": 1460000,
+  "highItemId": 1470000
+ },
+ "meta": {
+  "reqLevel": 25,
+  "price": 5500,
+  "reqSTR": 15,
+  "reqDEX": 55,
+  "reqJob": 4,
+  "tuc": 7,
+  "incWAT": 47,
+  "attackSpeed": 7
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "id": 1002138,
+ "name": "Chief Stan Hat",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 3500,
+  "tuc": 7,
+  "incMHP": 35,
+  "incPDD": 30,
+  "incMDD": 13
+ }
+}

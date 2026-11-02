@@ -1,0 +1,15 @@
+{
+ "id": 2430063,
+ "name": "MapleStory Community VIP Label Ring Exchange Coupon",
+ "description": "#cDouble-click# to obtain the below item.\\n\\n- MapleStory Community VIP Label Ring (Transferable within world, 30 days) x1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Other",
+  "lowItemId": 2430000,
+  "highItemId": 2440000
+ },
+ "meta": {
+  "price": 1
+ }
+}

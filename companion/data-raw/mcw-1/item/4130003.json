@@ -1,5 +1,16 @@
 {
  "id": 4130003,
  "name": "Scroll Crafting Catalyst",
- "description": "When used while crafting scrolls, there is a chance to produce an Intermediate, Greater, or Chaos scroll of the same category."
+ "description": "When used while crafting scrolls, there is a chance to produce an Intermediate, Greater, or Chaos scroll of the same category.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Crafting",
+  "subCategory": "Maker",
+  "lowItemId": 4130000,
+  "highItemId": 4140000
+ },
+ "meta": {
+  "slotMax": 100,
+  "price": 1000
+ }
 }

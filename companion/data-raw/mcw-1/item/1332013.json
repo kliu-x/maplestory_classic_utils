@@ -1,0 +1,23 @@
+{
+ "id": 1332013,
+ "name": "Korean Fan",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "Dagger",
+  "lowItemId": 1330000,
+  "highItemId": 1340000
+ },
+ "meta": {
+  "reqLevel": 40,
+  "price": 9500,
+  "reqLUK": 70,
+  "tuc": 7,
+  "incWAT": 55,
+  "incACC": 1,
+  "incEVA": 1,
+  "attackSpeed": 3
+ }
+}

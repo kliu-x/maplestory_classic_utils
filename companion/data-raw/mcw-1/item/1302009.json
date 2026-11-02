@@ -1,5 +1,18 @@
 {
  "id": 1302009,
  "name": "Old Gladius",
- "description": ""
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "One-Handed Sword",
+  "lowItemId": 1300000,
+  "highItemId": 1310000
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 10,
+  "attackSpeed": 4
+ }
 }

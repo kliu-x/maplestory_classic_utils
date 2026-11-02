@@ -1,0 +1,16 @@
+{
+ "id": 2040507,
+ "name": "Overall Armor STR Scroll: Chaos",
+ "description": "Improves Strength on overalls.\\nSuccess rate: 10%, STR +4\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Overall",
+  "lowItemId": 2040500,
+  "highItemId": 2040600
+ },
+ "meta": {
+  "price": 1,
+  "incSTR": 4
+ }
+}

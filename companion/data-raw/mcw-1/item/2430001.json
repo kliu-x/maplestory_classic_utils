@@ -1,0 +1,17 @@
+{
+ "id": 2430001,
+ "name": "Natalie's Fashion Box (M)",
+ "description": "A box with a variety of outfits recommended by Natalia.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Other",
+  "lowItemId": 2430000,
+  "highItemId": 2440000
+ },
+ "meta": {
+  "slotMax": 1,
+  "price": 1,
+  "tradeBlock": true
+ }
+}

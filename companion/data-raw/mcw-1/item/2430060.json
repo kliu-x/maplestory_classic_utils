@@ -1,0 +1,15 @@
+{
+ "id": 2430060,
+ "name": "MapleStory Community VIP Exchange Gift Box",
+ "description": "#cDouble-click# to obtain the below items.\\n\\n- Lemon (Transferable within world, 30 days) x20\\n- Megaphone (Transferable within world, 30 days) x3\\n- Regular Store Permit (Transferable within world, 30 days) x1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Other",
+  "lowItemId": 2430000,
+  "highItemId": 2440000
+ },
+ "meta": {
+  "price": 1
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "id": 1092010,
+ "name": "Red Cross Shield",
+ "description": "Gives a chance to block enemy attacks entirely.",
+ "equipGroup": "Shield",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shield",
+  "lowItemId": 1090000,
+  "highItemId": 1100000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 6000,
+  "reqSTR": 50,
+  "reqDEX": 20,
+  "reqJob": 1,
+  "tuc": 7,
+  "incPDD": 110
+ }
+}

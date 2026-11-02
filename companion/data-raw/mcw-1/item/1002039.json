@@ -1,0 +1,23 @@
+{
+ "id": 1002039,
+ "name": "Pink Moon Conehat",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 15,
+  "price": 900,
+  "reqINT": 20,
+  "reqJob": 2,
+  "tuc": 7,
+  "incMHP": 15,
+  "incPDD": 10,
+  "incMDD": 12
+ }
+}

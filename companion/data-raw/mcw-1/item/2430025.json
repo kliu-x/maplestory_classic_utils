@@ -1,0 +1,15 @@
+{
+ "id": 2430025,
+ "name": "Manji Avatar Set",
+ "description": "#cDouble-click# to obtain the items below:\\n\\n- Manji's Bamboo Hat (Transferable within world, Permanent) x1\\n- Manji's Clothes (Transferable within world, Permanent) x1\\n- Silent Sea of Clouds  (Transferable within world, Permanent) x1\\n- Reticent Steps (Transferable within world, Permanent) x1\\n- Manji's Blade (Transferable within world, Permanent) x1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Other",
+  "lowItemId": 2430000,
+  "highItemId": 2440000
+ },
+ "meta": {
+  "price": 1
+ }
+}

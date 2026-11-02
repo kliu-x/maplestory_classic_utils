@@ -1,0 +1,23 @@
+{
+ "id": 1332008,
+ "name": "Forked Dagger",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "Dagger",
+  "lowItemId": 1330000,
+  "highItemId": 1340000
+ },
+ "meta": {
+  "reqLevel": 27,
+  "price": 4900,
+  "reqDEX": 22,
+  "reqLUK": 54,
+  "reqJob": 8,
+  "tuc": 7,
+  "incWAT": 45,
+  "attackSpeed": 4
+ }
+}

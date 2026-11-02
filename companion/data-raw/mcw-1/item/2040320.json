@@ -1,0 +1,16 @@
+{
+ "id": 2040320,
+ "name": "Earring Evasion Scroll: Lesser",
+ "description": "Improves Evasion on earrings.\\nSuccess rate: 100%, Evasion +1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Earrings",
+  "lowItemId": 2040300,
+  "highItemId": 2040400
+ },
+ "meta": {
+  "price": 1,
+  "incEVA": 1
+ }
+}

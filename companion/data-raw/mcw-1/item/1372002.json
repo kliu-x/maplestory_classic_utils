@@ -1,0 +1,23 @@
+{
+ "id": 1372002,
+ "name": "Metal Wand",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "Wand",
+  "lowItemId": 1370000,
+  "highItemId": 1380000
+ },
+ "meta": {
+  "reqLevel": 20,
+  "price": 3500,
+  "reqINT": 40,
+  "reqLUK": 10,
+  "tuc": 7,
+  "incMAD": 41,
+  "incWAT": 21,
+  "attackSpeed": 6
+ }
+}

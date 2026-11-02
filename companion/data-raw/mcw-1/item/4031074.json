@@ -1,5 +1,15 @@
 {
  "id": 4031074,
  "name": "Fossil Report",
- "description": "Dr. Betty's final report on her study of fossils."
+ "description": "Dr. Betty's final report on her study of fossils.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "price": 1
+ }
 }

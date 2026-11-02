@@ -1,0 +1,16 @@
+{
+ "id": 2043800,
+ "name": "Staff Magic Attack Scroll: Lesser",
+ "description": "Improves Magic Attack on staves.\\nSuccess rate: 100%, Magic Attack +2",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Staff",
+  "lowItemId": 2043800,
+  "highItemId": 2043900
+ },
+ "meta": {
+  "price": 1,
+  "incMAD": 2
+ }
+}

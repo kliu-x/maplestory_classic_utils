@@ -1,0 +1,15 @@
+{
+ "id": 2430009,
+ "name": "MapleStory Fest 2026 Gift Box (Bronze)",
+ "description": "#cDouble-click# to obtain the below items.\\n\\n- Maple Snail (30 days) x1\\n- Mystery Hair Coupon x1\\n- Mystery Face Coupon x1\\n- MapleStory Fest 2026 Staff Chair\\n- MapleStory Fest 2026 Label Ring Exchange Coupon x1\\n- MapleStory Fest 2026 Chat Ring Exchange Coupon x1\\n- MapleStory Fest 2026 Special Hat Exchange Box (Bronze) x1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Other",
+  "lowItemId": 2430000,
+  "highItemId": 2440000
+ },
+ "meta": {
+  "price": 1
+ }
+}

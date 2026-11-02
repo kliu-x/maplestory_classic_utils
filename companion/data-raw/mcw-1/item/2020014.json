@@ -1,0 +1,15 @@
+{
+ "id": 2020014,
+ "name": "Melting Cheese",
+ "description": "A mouth-watering cheese made with fresh milk.\\nRestores 2000 HP.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Food and Drink",
+  "lowItemId": 2010000,
+  "highItemId": 2022000
+ },
+ "meta": {
+  "price": 200
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "id": 1002140,
+ "name": "Mithril Nordic Helm",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 40,
+  "price": 4200,
+  "reqSTR": 70,
+  "reqDEX": 30,
+  "reqJob": 1,
+  "tuc": 7,
+  "incDEX": 4,
+  "incMMP": 10,
+  "incPDD": 47,
+  "incMDD": 19,
+  "incACC": 5
+ }
+}

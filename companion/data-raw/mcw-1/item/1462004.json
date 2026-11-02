@@ -1,0 +1,24 @@
+{
+ "id": 1462004,
+ "name": "Eagle Crow",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Crossbow",
+  "lowItemId": 1460000,
+  "highItemId": 1470000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 6500,
+  "reqSTR": 20,
+  "reqDEX": 65,
+  "reqJob": 4,
+  "tuc": 7,
+  "incDEX": 1,
+  "incWAT": 52,
+  "attackSpeed": 7
+ }
+}

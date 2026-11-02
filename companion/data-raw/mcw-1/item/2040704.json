@@ -1,0 +1,16 @@
+{
+ "id": 2040704,
+ "name": "Shoes Speed Scroll: Lesser",
+ "description": "Improves Speed on shoes.\\nSuccess rate: 100%, Speed +1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Shoes",
+  "lowItemId": 2040700,
+  "highItemId": 2040800
+ },
+ "meta": {
+  "price": 1,
+  "incSpeed": 1
+ }
+}

@@ -1,5 +1,15 @@
 {
  "id": 4020109,
  "name": "Star Rock",
- "description": "A glittering jewel that possesses the mysterious power of a star."
+ "description": "A glittering jewel that possesses the mysterious power of a star.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Crafting",
+  "subCategory": "Gem",
+  "lowItemId": 4020100,
+  "highItemId": 4021000
+ },
+ "meta": {
+  "price": 4000
+ }
 }

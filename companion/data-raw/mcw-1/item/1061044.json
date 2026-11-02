@@ -1,0 +1,24 @@
+{
+ "id": 1061044,
+ "name": "Purple Fairy Skirt",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 2400,
+  "reqINT": 50,
+  "reqLUK": 20,
+  "reqJob": 2,
+  "tuc": 7,
+  "incMHP": 30,
+  "incPDD": 17,
+  "incMDD": 20
+ }
+}

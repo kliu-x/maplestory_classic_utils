@@ -1,0 +1,16 @@
+{
+ "id": 2040808,
+ "name": "Gloves Accuracy Scroll: Lesser",
+ "description": "Improves Accuracy on gloves.\\nSuccess rate: 100%, Accuracy +1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Gloves",
+  "lowItemId": 2040800,
+  "highItemId": 2040900
+ },
+ "meta": {
+  "price": 1,
+  "incACC": 1
+ }
+}

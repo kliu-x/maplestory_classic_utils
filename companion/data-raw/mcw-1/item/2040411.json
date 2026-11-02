@@ -1,0 +1,16 @@
+{
+ "id": 2040411,
+ "name": "Topwear MP Scroll: Chaos",
+ "description": "Improves Max MP on topwear.\\nSuccess rate: 10%, Max MP +25\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Topwear",
+  "lowItemId": 2040400,
+  "highItemId": 2040500
+ },
+ "meta": {
+  "price": 1,
+  "incMMP": 25
+ }
+}

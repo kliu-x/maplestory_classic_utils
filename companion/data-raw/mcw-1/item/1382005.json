@@ -1,0 +1,25 @@
+{
+ "id": 1382005,
+ "name": "Arc Staff",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "Staff",
+  "lowItemId": 1380000,
+  "highItemId": 1390000
+ },
+ "meta": {
+  "reqLevel": 45,
+  "price": 11500,
+  "reqINT": 90,
+  "reqLUK": 40,
+  "reqJob": 2,
+  "tuc": 7,
+  "incMAD": 73,
+  "incWAT": 55,
+  "incCRD": 4,
+  "attackSpeed": 7
+ }
+}

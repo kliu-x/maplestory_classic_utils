@@ -1,5 +1,25 @@
 {
  "id": 1082084,
  "name": "Dark Garner",
- "description": ""
+ "description": "",
+ "equipGroup": "Glove",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Glove",
+  "lowItemId": 1080000,
+  "highItemId": 1090000
+ },
+ "meta": {
+  "reqLevel": 60,
+  "price": 18000,
+  "reqSTR": 50,
+  "reqDEX": 110,
+  "reqJob": 4,
+  "tuc": 5,
+  "incSTR": 3,
+  "incDEX": 3,
+  "incCRT": 3,
+  "incPDD": 26
+ }
 }

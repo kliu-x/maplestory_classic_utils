@@ -1,0 +1,23 @@
+{
+ "id": 1002179,
+ "name": "Brown Sonata",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 6600,
+  "reqDEX": 40,
+  "reqLUK": 90,
+  "reqJob": 8,
+  "tuc": 7,
+  "incLUK": 5,
+  "incPDD": 39
+ }
+}

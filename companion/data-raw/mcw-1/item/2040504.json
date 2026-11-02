@@ -1,0 +1,16 @@
+{
+ "id": 2040504,
+ "name": "Overall Armor STR Scroll: Lesser",
+ "description": "Improves Strength on overalls.\\nSuccess rate: 100%, STR +1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Overall",
+  "lowItemId": 2040500,
+  "highItemId": 2040600
+ },
+ "meta": {
+  "price": 1,
+  "incSTR": 1
+ }
+}

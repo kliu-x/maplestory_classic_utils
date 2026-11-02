@@ -1,5 +1,16 @@
 {
  "id": 4130002,
  "name": "Armor Crafting Catalyst",
- "description": "When used while crafting a armor, there is a chance the item's bonus stats will change."
+ "description": "When used while crafting a armor, there is a chance the item's bonus stats will change.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Crafting",
+  "subCategory": "Maker",
+  "lowItemId": 4130000,
+  "highItemId": 4140000
+ },
+ "meta": {
+  "slotMax": 100,
+  "price": 1000
+ }
 }

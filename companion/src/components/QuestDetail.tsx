@@ -42,7 +42,7 @@ function Rewards({ q }: { q: Quest }) {
           <div key={`${it.itemId}-${i}`} className={`icon-row${it.jobMask && family && !mine ? ' dim' : ''}`} style={{ marginBottom: 4 }} title={item?.description}>
             <img src={IMG.item(it.itemId)} alt="" loading="lazy" onError={(e) => (e.currentTarget.style.visibility = 'hidden')} />
             <span>
-              {item?.name ?? `Item ${it.itemId}`}{it.count > 1 ? ` × ${it.count}` : ''}
+              <a href={href('items', { id: it.itemId })}>{item?.name ?? `Item ${it.itemId}`}</a>{it.count > 1 ? ` × ${it.count}` : ''}
               {jobs.length > 0 && <span className="small muted"> · {jobs.join('/')}</span>}
               {mine && <span className="pill accent" style={{ marginLeft: 6 }}>yours</span>}
             </span>
@@ -71,7 +71,7 @@ function Where({ mobs }: { mobs: Monster[] }) {
 }
 
 /** Who drops a collect item, as far as the game files' names tell, with where they live. */
-function Droppers({ itemId }: { itemId: number }) {
+export function Droppers({ itemId }: { itemId: number }) {
   const found = likelyDroppers(itemById.get(itemId), MONSTERS, DROP_REPORTS);
   const byName = new Map<string, Monster[]>();
   for (const d of found) byName.set(d.mob.name, [...(byName.get(d.mob.name) ?? []), d.mob]);
@@ -282,7 +282,7 @@ export function QuestDetail({ quest: q }: { quest: Quest }) {
                   <div className="icon-row" style={{ alignItems: 'flex-start' }}>
                     <img src={IMG.item(it.itemId)} alt="" loading="lazy" onError={(e) => (e.currentTarget.style.visibility = 'hidden')} />
                     <span>
-                      <strong>{item?.name ?? `Item ${it.itemId}`} × {it.count}</strong>
+                      <strong><a href={href('items', { id: it.itemId })}>{item?.name ?? `Item ${it.itemId}`}</a> × {it.count}</strong>
                       {item?.description && <span className="small muted" style={{ display: 'block' }}>{item.description}</span>}
                     </span>
                   </div>

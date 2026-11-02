@@ -1,5 +1,15 @@
 {
  "id": 4031078,
  "name": "Alligator Skin Pouch",
- "description": "A pouch made out of alligator skin. Looks sturdy enough to hold on to most anything."
+ "description": "A pouch made out of alligator skin. Looks sturdy enough to hold on to most anything.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "price": 1
+ }
 }

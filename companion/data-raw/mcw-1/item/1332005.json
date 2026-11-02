@@ -1,0 +1,23 @@
+{
+ "id": 1332005,
+ "name": "Coconut Knife",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "Dagger",
+  "lowItemId": 1330000,
+  "highItemId": 1340000
+ },
+ "meta": {
+  "reqLevel": 20,
+  "price": 3500,
+  "reqDEX": 15,
+  "reqLUK": 30,
+  "reqJob": 8,
+  "tuc": 7,
+  "incWAT": 38,
+  "attackSpeed": 4
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "id": 1060017,
+ "name": "Red Sergeant Kilt",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "reqLevel": 20,
+  "price": 1600,
+  "reqSTR": 30,
+  "reqDEX": 10,
+  "reqJob": 1,
+  "tuc": 7,
+  "incSTR": 2,
+  "incPDD": 33
+ }
+}

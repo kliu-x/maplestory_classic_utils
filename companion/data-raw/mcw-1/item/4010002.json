@@ -1,5 +1,15 @@
 {
  "id": 4010002,
  "name": "Mithril Ore",
- "description": "A light and solid mithril ore."
+ "description": "A light and solid mithril ore.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Crafting",
+  "subCategory": "Mineral Ore",
+  "lowItemId": 4010000,
+  "highItemId": 4011000
+ },
+ "meta": {
+  "price": 40
+ }
 }

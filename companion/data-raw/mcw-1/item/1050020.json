@@ -1,0 +1,25 @@
+{
+ "id": 1050020,
+ "name": "Blue Chaos Robe",
+ "description": "",
+ "equipGroup": "Longcoat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Overall",
+  "lowItemId": 1050000,
+  "highItemId": 1060000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 9000,
+  "reqINT": 60,
+  "reqLUK": 25,
+  "reqJob": 2,
+  "tuc": 10,
+  "incINT": 6,
+  "incMMP": 5,
+  "incPDD": 51,
+  "incMDD": 60
+ }
+}

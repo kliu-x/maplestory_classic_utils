@@ -1,5 +1,16 @@
 {
  "id": 4031129,
  "name": "Halloween Candies",
- "description": "Halloween candies acquired from the monsters."
+ "description": "Halloween candies acquired from the monsters.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "slotMax": 100,
+  "price": 1
+ }
 }

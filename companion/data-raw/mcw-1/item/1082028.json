@@ -1,0 +1,25 @@
+{
+ "id": 1082028,
+ "name": "Bronze Missel",
+ "description": "",
+ "equipGroup": "Glove",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Glove",
+  "lowItemId": 1080000,
+  "highItemId": 1090000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 3600,
+  "reqSTR": 50,
+  "reqDEX": 20,
+  "reqJob": 1,
+  "tuc": 5,
+  "incDEX": 3,
+  "incCRT": 2,
+  "incPDD": 21,
+  "incACC": 1
+ }
+}

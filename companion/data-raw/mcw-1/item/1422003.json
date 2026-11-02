@@ -1,5 +1,22 @@
 {
  "id": 1422003,
  "name": "Monkey Wrench",
- "description": ""
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Two-Handed Blunt",
+  "lowItemId": 1420000,
+  "highItemId": 1430000
+ },
+ "meta": {
+  "reqLevel": 25,
+  "price": 5500,
+  "reqSTR": 45,
+  "reqJob": 13,
+  "tuc": 7,
+  "incWAT": 50,
+  "attackSpeed": 7
+ }
 }

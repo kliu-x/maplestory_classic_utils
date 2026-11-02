@@ -1,0 +1,17 @@
+{
+ "id": 2041002,
+ "name": "Cape Weapon Def. Scroll: Greater",
+ "description": "Improves Weapon Def. on capes.\\nSuccess rate: 10%, Weapon Def. +6, Magic Def. +4",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Cape",
+  "lowItemId": 2041000,
+  "highItemId": 2041100
+ },
+ "meta": {
+  "price": 1,
+  "incPDD": 6,
+  "incMDD": 4
+ }
+}

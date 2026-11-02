@@ -1,0 +1,27 @@
+{
+ "id": 1002180,
+ "name": "Zakum Helmet",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "only": true,
+  "reqLevel": 50,
+  "price": 10000,
+  "tuc": 7,
+  "incSTR": 5,
+  "incDEX": 5,
+  "incINT": 5,
+  "incLUK": 5,
+  "incPDD": 55,
+  "incMDD": 30,
+  "incACC": 3,
+  "incEVA": 3
+ }
+}

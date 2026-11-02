@@ -1,5 +1,16 @@
 {
  "id": 4000031,
  "name": "Lupin's Banana",
- "description": "It's a Lupin's favorite: a tasty banana."
+ "description": "It's a Lupin's favorite: a tasty banana.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "slotMax": 200,
+  "price": 37
+ }
 }

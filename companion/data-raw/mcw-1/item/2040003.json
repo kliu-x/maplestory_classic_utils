@@ -1,0 +1,16 @@
+{
+ "id": 2040003,
+ "name": "Hat Accuracy Scroll: Chaos",
+ "description": "Improves Accuracy on hats.\\nSuccess rate: 10%, Accuracy +4\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Helmet",
+  "lowItemId": 2040000,
+  "highItemId": 2040100
+ },
+ "meta": {
+  "price": 1,
+  "incACC": 4
+ }
+}

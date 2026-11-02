@@ -1,5 +1,15 @@
 {
  "id": 4080100,
  "name": "Set of Match Cards",
- "description": "A set that allows you to play Match Cards."
+ "description": "A set that allows you to play Match Cards.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Minigame",
+  "lowItemId": 4080000,
+  "highItemId": 4080200
+ },
+ "meta": {
+  "price": 1
+ }
 }

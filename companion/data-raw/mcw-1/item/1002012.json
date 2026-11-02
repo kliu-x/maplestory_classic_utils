@@ -1,0 +1,20 @@
+{
+ "id": 1002012,
+ "name": "Red Bandana",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 10,
+  "price": 600,
+  "tuc": 7,
+  "incMHP": 10,
+  "incPDD": 15
+ }
+}

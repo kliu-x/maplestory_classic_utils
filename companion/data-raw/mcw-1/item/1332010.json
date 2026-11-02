@@ -1,0 +1,23 @@
+{
+ "id": 1332010,
+ "name": "Reef Claw",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "Dagger",
+  "lowItemId": 1330000,
+  "highItemId": 1340000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 5500,
+  "reqDEX": 25,
+  "reqLUK": 60,
+  "reqJob": 8,
+  "tuc": 7,
+  "incWAT": 48,
+  "attackSpeed": 4
+ }
+}

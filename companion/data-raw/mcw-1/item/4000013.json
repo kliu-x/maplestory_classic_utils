@@ -1,5 +1,16 @@
 {
  "id": 4000013,
  "name": "Green Mushroom Cap",
- "description": "A cap removed from a Green Mushroom."
+ "description": "A cap removed from a Green Mushroom.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "slotMax": 200,
+  "price": 14
+ }
 }

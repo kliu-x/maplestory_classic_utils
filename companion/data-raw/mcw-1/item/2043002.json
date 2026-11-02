@@ -1,5 +1,16 @@
 {
  "id": 2043002,
  "name": "One-Handed Sword Attack Scroll: Greater",
- "description": "Improves Weapon Attack on one-handed swords.\\nSuccess rate: 10%, Weapon Attack +4"
+ "description": "Improves Weapon Attack on one-handed swords.\\nSuccess rate: 10%, Weapon Attack +4",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "One-Handed Sword",
+  "lowItemId": 2043000,
+  "highItemId": 2043100
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 4
+ }
 }

@@ -1,5 +1,16 @@
 {
  "id": 2040802,
  "name": "Gloves Attack Scroll: Greater",
- "description": "Improves Weapon Attack on gloves.\\nSuccess rate: 10%, Weapon Attack +3"
+ "description": "Improves Weapon Attack on gloves.\\nSuccess rate: 10%, Weapon Attack +3",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Gloves",
+  "lowItemId": 2040800,
+  "highItemId": 2040900
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 3
+ }
 }

@@ -1,0 +1,21 @@
+{
+ "id": 1002008,
+ "name": "Black Swimming Cap",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 8,
+  "price": 450,
+  "tuc": 7,
+  "incMHP": 4,
+  "incMMP": 4,
+  "incPDD": 8
+ }
+}

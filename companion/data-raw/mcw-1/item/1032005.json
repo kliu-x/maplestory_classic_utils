@@ -1,0 +1,21 @@
+{
+ "id": 1032005,
+ "name": "Red Cross Earrings",
+ "description": "",
+ "equipGroup": "Accessory",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Accessory",
+  "subCategory": "Earrings",
+  "lowItemId": 1030000,
+  "highItemId": 1040000
+ },
+ "meta": {
+  "reqLevel": 25,
+  "price": 3750,
+  "tuc": 5,
+  "incMMP": 5,
+  "incCRD": 1,
+  "incMDD": 24
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "id": 2190001,
+ "name": "Lie Detector Test",
+ "description": "Can be used on suspected botters. Usable only when a suspect is hunting. Cannot be used again on the same player within 2 minutes.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Other",
+  "subCategory": "Lie Detector",
+  "lowItemId": 2190000,
+  "highItemId": 2190100
+ },
+ "meta": {
+  "reqLevel": 10,
+  "tradeBlock": true
+ }
+}

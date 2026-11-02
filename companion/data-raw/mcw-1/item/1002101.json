@@ -1,0 +1,23 @@
+{
+ "id": 1002101,
+ "name": "Bronze Pride",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 1800,
+  "reqINT": 40,
+  "tuc": 7,
+  "incINT": 2,
+  "incMMP": 10,
+  "incPDD": 16,
+  "incMDD": 18
+ }
+}

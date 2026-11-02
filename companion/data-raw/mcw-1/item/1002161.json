@@ -1,0 +1,26 @@
+{
+ "id": 1002161,
+ "name": "Blue Bone Helm",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 45,
+  "price": 4680,
+  "reqSTR": 80,
+  "reqDEX": 35,
+  "reqJob": 1,
+  "tuc": 7,
+  "incSTR": 4,
+  "incMHP": 15,
+  "incPDD": 51,
+  "incMDD": 21,
+  "incACC": 4
+ }
+}

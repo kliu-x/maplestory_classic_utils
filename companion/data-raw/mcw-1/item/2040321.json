@@ -1,0 +1,16 @@
+{
+ "id": 2040321,
+ "name": "Earring Evasion Scroll: Intermediate",
+ "description": "Improves Evasion on earrings.\\nSuccess rate: 60%, Evasion +2",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Earrings",
+  "lowItemId": 2040300,
+  "highItemId": 2040400
+ },
+ "meta": {
+  "price": 1,
+  "incEVA": 2
+ }
+}

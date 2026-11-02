@@ -1,5 +1,15 @@
 {
  "id": 4031123,
  "name": "Athena Pierce's Box",
- "description": "A box containing a small wooden bow that Athena Pierce used a very long time ago."
+ "description": "A box containing a small wooden bow that Athena Pierce used a very long time ago.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "price": 1
+ }
 }

@@ -1,5 +1,15 @@
 {
  "id": 4001007,
  "name": "Ancient Scroll",
- "description": "A scroll from long ago that contains powerful, mysterious magic."
+ "description": "A scroll from long ago that contains powerful, mysterious magic.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "price": 1
+ }
 }

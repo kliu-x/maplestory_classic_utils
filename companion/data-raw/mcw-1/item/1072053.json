@@ -1,0 +1,26 @@
+{
+ "id": 1072053,
+ "name": "Red Jack Boots",
+ "description": "",
+ "equipGroup": "Shoes",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shoes",
+  "lowItemId": 1070000,
+  "highItemId": 1080000
+ },
+ "meta": {
+  "reqLevel": 25,
+  "price": 1500,
+  "reqSTR": 15,
+  "reqDEX": 40,
+  "reqJob": 4,
+  "tuc": 5,
+  "incSTR": 1,
+  "incMHP": 5,
+  "incPDD": 16,
+  "incEVA": 2,
+  "incJump": 1
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "id": 1051013,
+ "name": "Red Avenger",
+ "description": "",
+ "equipGroup": "Longcoat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Overall",
+  "lowItemId": 1050000,
+  "highItemId": 1060000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 9000,
+  "reqDEX": 25,
+  "reqLUK": 60,
+  "reqJob": 8,
+  "tuc": 10,
+  "incSTR": 6,
+  "incMHP": 5,
+  "incPDD": 83
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "id": 1002096,
+ "name": "Dark Tiberian",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 25,
+  "price": 1500,
+  "reqDEX": 15,
+  "reqLUK": 40,
+  "reqJob": 8,
+  "tuc": 7,
+  "incLUK": 2,
+  "incMHP": 5,
+  "incPDD": 24
+ }
+}

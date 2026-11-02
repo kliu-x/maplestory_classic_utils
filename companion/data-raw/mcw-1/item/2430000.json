@@ -1,0 +1,17 @@
+{
+ "id": 2430000,
+ "name": "Companion's Magic Box",
+ "description": "A box locked away with a powerful magical lock. Apparently there are jewels inside.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Other",
+  "lowItemId": 2430000,
+  "highItemId": 2440000
+ },
+ "meta": {
+  "slotMax": 100,
+  "price": 1,
+  "tradeBlock": true
+ }
+}

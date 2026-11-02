@@ -1,0 +1,17 @@
+{
+ "id": 2040402,
+ "name": "Topwear DEF Scroll: Greater",
+ "description": "Improves Defense on topwear.\\nSuccess rate: 10%, Weapon Def. +6, Magic Def. +4",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Topwear",
+  "lowItemId": 2040400,
+  "highItemId": 2040500
+ },
+ "meta": {
+  "price": 1,
+  "incPDD": 6,
+  "incMDD": 4
+ }
+}

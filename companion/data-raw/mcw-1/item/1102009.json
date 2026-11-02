@@ -1,0 +1,22 @@
+{
+ "id": 1102009,
+ "name": "Blue Justice Cape",
+ "description": "",
+ "equipGroup": "Cape",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Cape",
+  "lowItemId": 1100000,
+  "highItemId": 1110000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 6000,
+  "tuc": 5,
+  "incINT": 1,
+  "incPDD": 16,
+  "incMDD": 7,
+  "incACC": 2
+ }
+}

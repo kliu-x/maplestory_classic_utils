@@ -1,0 +1,25 @@
+{
+ "id": 1002163,
+ "name": "Emerald Dome",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 47,
+  "price": 5880,
+  "reqSTR": 84,
+  "reqDEX": 37,
+  "reqJob": 1,
+  "tuc": 7,
+  "incDEX": 4,
+  "incMHP": 7,
+  "incPDD": 52,
+  "incACC": 4
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "id": 2430046,
+ "name": "Palette Cleanser Exchange Coupon",
+ "description": "#cDouble-click# to receive #cPalette Cleanser x1#.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Other",
+  "lowItemId": 2430000,
+  "highItemId": 2440000
+ },
+ "meta": {
+  "slotMax": 1,
+  "price": 1
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "id": 2040906,
+ "name": "Shield Accuracy Scroll: Greater",
+ "description": "Improves Accuracy on shields.\\nSuccess rate: 10%, Accuracy +3",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Shield",
+  "lowItemId": 2040900,
+  "highItemId": 2041000
+ },
+ "meta": {
+  "price": 1,
+  "incACC": 3
+ }
+}

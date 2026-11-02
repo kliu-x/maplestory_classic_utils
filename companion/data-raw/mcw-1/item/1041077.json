@@ -1,0 +1,23 @@
+{
+ "id": 1041077,
+ "name": "Red Moon",
+ "description": "",
+ "equipGroup": "Coat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Top",
+  "lowItemId": 1040000,
+  "highItemId": 1050000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 11000,
+  "reqDEX": 40,
+  "reqLUK": 90,
+  "reqJob": 8,
+  "tuc": 7,
+  "incSTR": 5,
+  "incPDD": 56
+ }
+}

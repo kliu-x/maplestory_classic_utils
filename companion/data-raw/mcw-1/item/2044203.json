@@ -1,0 +1,16 @@
+{
+ "id": 2044203,
+ "name": "Two-handed Blunt Weapon Attack Scroll: Chaos",
+ "description": "Improves Weapon Attack on two-handed blunt weapons.\\nSuccess rate: 10%, Weapon Attack +5\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Two-Handed BW",
+  "lowItemId": 2044200,
+  "highItemId": 2044300
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 5
+ }
+}

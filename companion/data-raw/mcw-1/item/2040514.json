@@ -1,0 +1,16 @@
+{
+ "id": 2040514,
+ "name": "Overall Armor INT Scroll: Greater",
+ "description": "Improves Intelligence on overalls.\\nSuccess rate: 10%, INT +3",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Overall",
+  "lowItemId": 2040500,
+  "highItemId": 2040600
+ },
+ "meta": {
+  "price": 1,
+  "incINT": 3
+ }
+}

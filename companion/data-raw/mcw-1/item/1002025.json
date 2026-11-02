@@ -1,0 +1,22 @@
+{
+ "id": 1002025,
+ "name": "Blue Ghetto Beanie",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 10,
+  "price": 600,
+  "reqLUK": 10,
+  "reqJob": 8,
+  "tuc": 7,
+  "incMMP": 10,
+  "incPDD": 15
+ }
+}

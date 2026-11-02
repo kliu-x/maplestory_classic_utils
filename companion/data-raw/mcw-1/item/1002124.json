@@ -1,0 +1,24 @@
+{
+ "id": 1002124,
+ "name": "Brown Pole-Feather Hat",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 3000,
+  "reqSTR": 25,
+  "reqDEX": 60,
+  "reqJob": 4,
+  "tuc": 7,
+  "incSTR": 3,
+  "incMHP": 5,
+  "incPDD": 30
+ }
+}

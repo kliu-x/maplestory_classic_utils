@@ -1,0 +1,24 @@
+{
+ "id": 1002146,
+ "name": "Brown Guiltian",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 40,
+  "price": 4200,
+  "reqINT": 70,
+  "reqLUK": 30,
+  "reqJob": 2,
+  "tuc": 7,
+  "incINT": 4,
+  "incPDD": 20,
+  "incMDD": 22
+ }
+}

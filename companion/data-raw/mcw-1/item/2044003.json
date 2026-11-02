@@ -1,0 +1,16 @@
+{
+ "id": 2044003,
+ "name": "Two-handed Sword Attack Scroll: Chaos",
+ "description": "Improves Weapon Attack on two-handed swords.\\nSuccess rate: 10%, Weapon Attack +5\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Two-Handed Sword",
+  "lowItemId": 2044000,
+  "highItemId": 2044100
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 5
+ }
+}

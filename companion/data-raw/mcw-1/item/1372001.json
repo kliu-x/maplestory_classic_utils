@@ -1,0 +1,22 @@
+{
+ "id": 1372001,
+ "name": "Hardwood Wand",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "Wand",
+  "lowItemId": 1370000,
+  "highItemId": 1380000
+ },
+ "meta": {
+  "reqLevel": 15,
+  "price": 2500,
+  "reqINT": 30,
+  "tuc": 7,
+  "incMAD": 34,
+  "incWAT": 23,
+  "attackSpeed": 6
+ }
+}

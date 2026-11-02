@@ -1,5 +1,16 @@
 {
  "id": 2041013,
  "name": "Cape DEX Scroll: Intermediate",
- "description": "Improves Dexterity on capes.\\nSuccess rate: 60%, DEX +2"
+ "description": "Improves Dexterity on capes.\\nSuccess rate: 60%, DEX +2",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Cape",
+  "lowItemId": 2041000,
+  "highItemId": 2041100
+ },
+ "meta": {
+  "price": 1,
+  "incDEX": 2
+ }
 }

@@ -1,0 +1,24 @@
+{
+ "id": 1072018,
+ "name": "Green Woodsman Boots",
+ "description": "",
+ "equipGroup": "Shoes",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shoes",
+  "lowItemId": 1070000,
+  "highItemId": 1080000
+ },
+ "meta": {
+  "reqLevel": 15,
+  "price": 900,
+  "reqDEX": 20,
+  "reqJob": 4,
+  "tuc": 5,
+  "incMHP": 5,
+  "incPDD": 12,
+  "incEVA": 1,
+  "incJump": 1
+ }
+}

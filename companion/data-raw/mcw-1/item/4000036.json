@@ -1,5 +1,16 @@
 {
  "id": 4000036,
  "name": "Drake Skull",
- "description": "It's the skull of a Drake."
+ "description": "It's the skull of a Drake.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "slotMax": 200,
+  "price": 45
+ }
 }

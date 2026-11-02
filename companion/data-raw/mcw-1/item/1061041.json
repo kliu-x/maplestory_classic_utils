@@ -1,0 +1,24 @@
+{
+ "id": 1061041,
+ "name": "Dark Sneak Pants",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "reqLevel": 25,
+  "price": 2000,
+  "reqDEX": 15,
+  "reqLUK": 40,
+  "reqJob": 8,
+  "tuc": 7,
+  "incLUK": 2,
+  "incMHP": 5,
+  "incPDD": 26
+ }
+}

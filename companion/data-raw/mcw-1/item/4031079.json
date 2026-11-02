@@ -1,5 +1,15 @@
 {
  "id": 4031079,
  "name": "Flying Medicine",
- "description": "A fairy medicine that was made with a collection of rare, hard-to-find ingredients. There's a legend, passed from generation to generation, that anyone who takes the medicine can fly, but it's never been confirmed."
+ "description": "A fairy medicine that was made with a collection of rare, hard-to-find ingredients. There's a legend, passed from generation to generation, that anyone who takes the medicine can fly, but it's never been confirmed.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "price": 1
+ }
 }

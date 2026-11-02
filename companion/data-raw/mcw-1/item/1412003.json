@@ -1,0 +1,23 @@
+{
+ "id": 1412003,
+ "name": "Two-Handed Axe",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Two-Handed Axe",
+  "lowItemId": 1410000,
+  "highItemId": 1420000
+ },
+ "meta": {
+  "reqLevel": 25,
+  "price": 5500,
+  "reqSTR": 55,
+  "reqDEX": 25,
+  "reqJob": 1,
+  "tuc": 7,
+  "incWAT": 45,
+  "attackSpeed": 5
+ }
+}

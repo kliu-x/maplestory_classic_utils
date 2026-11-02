@@ -1,0 +1,23 @@
+{
+ "id": 1472008,
+ "name": "Steel Guards",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Claw",
+  "lowItemId": 1470000,
+  "highItemId": 1480000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 6500,
+  "reqDEX": 30,
+  "reqLUK": 65,
+  "reqJob": 8,
+  "tuc": 7,
+  "incWAT": 22,
+  "attackSpeed": 4
+ }
+}

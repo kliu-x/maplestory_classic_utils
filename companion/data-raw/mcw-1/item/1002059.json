@@ -1,0 +1,26 @@
+{
+ "id": 1002059,
+ "name": "Mithril Viking Helm",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 20,
+  "price": 1300,
+  "reqSTR": 30,
+  "reqDEX": 10,
+  "reqJob": 1,
+  "tuc": 7,
+  "incDEX": 2,
+  "incMMP": 10,
+  "incPDD": 31,
+  "incMDD": 9,
+  "incACC": 3
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "id": 2022001,
+ "name": "Red Bean Porridge",
+ "description": "Hot, steamy porridge made out of red beans. In HP-reducing maps, protects 10 HP whenever such damage is dealt.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Consumable",
+  "lowItemId": 2022000,
+  "highItemId": 2024000
+ },
+ "meta": {
+  "price": 40
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "id": 1002993,
+ "name": "Maplestory Patrol Hat",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "price": 1,
+  "tradeBlock": true
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "id": 2430026,
+ "name": "Founder's Label Ring Exchange Coupon",
+ "description": "#cDouble-click# to obtain the item below:\\n\\n- Founder's Label Ring (Transferable within world, Permanent) x1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Other",
+  "lowItemId": 2430000,
+  "highItemId": 2440000
+ },
+ "meta": {
+  "price": 1
+ }
+}

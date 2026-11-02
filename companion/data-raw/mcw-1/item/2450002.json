@@ -1,0 +1,16 @@
+{
+ "id": 2450002,
+ "name": "3x EXP Coupon (15 min)",
+ "description": "#cDouble-click# to receive a #c3x EXP# buff for #c15 minutes.\\r\\n\\r\\nEffect does not stack with similar event buffs.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "EXP Buff",
+  "lowItemId": 2450000,
+  "highItemId": 2450100
+ },
+ "meta": {
+  "slotMax": 100,
+  "price": 1
+ }
+}

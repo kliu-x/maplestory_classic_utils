@@ -1,0 +1,16 @@
+{
+ "id": 2040709,
+ "name": "Shoes Evasion Scroll: Intermediate",
+ "description": "Improves Evasion on shoes.\\nSuccess rate: 60%, Evasion +2",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Shoes",
+  "lowItemId": 2040700,
+  "highItemId": 2040800
+ },
+ "meta": {
+  "price": 1,
+  "incEVA": 2
+ }
+}

@@ -1,5 +1,16 @@
 {
  "id": 2044101,
  "name": "Two-handed Axe Attack Scroll: Intermediate",
- "description": "Improves Weapon Attack on two-handed axes.\\nSuccess rate: 60%, Weapon Attack +2"
+ "description": "Improves Weapon Attack on two-handed axes.\\nSuccess rate: 60%, Weapon Attack +2",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Two-Handed Axe",
+  "lowItemId": 2044100,
+  "highItemId": 2044200
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 2
+ }
 }

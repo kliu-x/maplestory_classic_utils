@@ -1,0 +1,17 @@
+{
+ "id": 2430037,
+ "name": "Stark's Gloves Selector Coupon",
+ "description": "#cDouble-click# to choose either #cStark's Gloves# or #cStark's Winter Gloves#.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Other",
+  "lowItemId": 2430000,
+  "highItemId": 2440000
+ },
+ "meta": {
+  "slotMax": 1,
+  "price": 1,
+  "tradeBlock": true
+ }
+}

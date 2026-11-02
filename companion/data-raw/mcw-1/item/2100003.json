@@ -1,0 +1,16 @@
+{
+ "id": 2100003,
+ "name": "GM Black Sack: Mushmom Level 40",
+ "description": "Use to summon Mushmom for the Monster Invasion GM event.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Other",
+  "subCategory": "Summoning Sack",
+  "lowItemId": 2100000,
+  "highItemId": 2110000
+ },
+ "meta": {
+  "slotMax": 100,
+  "price": 1
+ }
+}

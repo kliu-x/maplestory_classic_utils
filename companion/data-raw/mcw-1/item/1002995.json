@@ -1,0 +1,27 @@
+{
+ "id": 1002995,
+ "name": "MapleStory Invincible Hat",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "price": 1,
+  "tuc": 7,
+  "incSTR": 999,
+  "incDEX": 999,
+  "incINT": 999,
+  "incLUK": 999,
+  "incPDD": 200,
+  "incMDD": 200,
+  "incACC": 200,
+  "incEVA": 200,
+  "incSpeed": 30,
+  "incJump": 20
+ }
+}

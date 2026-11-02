@@ -1,0 +1,23 @@
+{
+ "id": 1472007,
+ "name": "Meba",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Claw",
+  "lowItemId": 1470000,
+  "highItemId": 1480000
+ },
+ "meta": {
+  "reqLevel": 25,
+  "price": 5500,
+  "reqDEX": 25,
+  "reqLUK": 55,
+  "reqJob": 8,
+  "tuc": 7,
+  "incWAT": 19,
+  "attackSpeed": 3
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "id": 2375000,
+ "name": "The Songs of Solomon",
+ "description": "An ancient collection of poems and life lessons from various elders, sages, and warriors in Maple World. Reading this allows one to gain their collective experience (EXP) in a single instant. This edition provides 500 EXP.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Other",
+  "subCategory": "Book",
+  "lowItemId": 2375000,
+  "highItemId": 2376000
+ },
+ "meta": {
+  "price": 1
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "id": 1082067,
+ "name": "Red Penance",
+ "description": "",
+ "equipGroup": "Glove",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Glove",
+  "lowItemId": 1080000,
+  "highItemId": 1090000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 13200,
+  "reqINT": 90,
+  "reqLUK": 40,
+  "reqJob": 2,
+  "tuc": 5,
+  "incLUK": 5,
+  "incCRT": 3,
+  "incPDD": 10,
+  "incMDD": 12
+ }
+}

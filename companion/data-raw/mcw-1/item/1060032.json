@@ -1,0 +1,24 @@
+{
+ "id": 1060032,
+ "name": "Black Martial Arts Pants",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 2400,
+  "reqSTR": 50,
+  "reqDEX": 20,
+  "reqJob": 1,
+  "tuc": 7,
+  "incSTR": 2,
+  "incDEX": 1,
+  "incPDD": 41
+ }
+}

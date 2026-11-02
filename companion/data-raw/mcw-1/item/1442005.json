@@ -1,0 +1,23 @@
+{
+ "id": 1442005,
+ "name": "Axe Pole Arm",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Pole Arm",
+  "lowItemId": 1440000,
+  "highItemId": 1450000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 9000,
+  "reqSTR": 75,
+  "reqDEX": 35,
+  "reqJob": 1,
+  "tuc": 7,
+  "incWAT": 60,
+  "attackSpeed": 8
+ }
+}

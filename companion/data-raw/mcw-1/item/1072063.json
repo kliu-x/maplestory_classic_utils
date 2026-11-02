@@ -1,0 +1,25 @@
+{
+ "id": 1072063,
+ "name": "Mithril Battle Grieves",
+ "description": "",
+ "equipGroup": "Shoes",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shoes",
+  "lowItemId": 1070000,
+  "highItemId": 1080000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 1800,
+  "reqSTR": 50,
+  "reqDEX": 20,
+  "reqJob": 1,
+  "tuc": 5,
+  "incDEX": 1,
+  "incPDD": 27,
+  "incEVA": 3,
+  "incSpeed": 2
+ }
+}

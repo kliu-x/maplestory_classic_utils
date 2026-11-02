@@ -1,0 +1,17 @@
+{
+ "id": 1041004,
+ "name": "Red Striped Top",
+ "description": "",
+ "equipGroup": "Coat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Top",
+  "lowItemId": 1040000,
+  "highItemId": 1050000
+ },
+ "meta": {
+  "tuc": 7,
+  "incPDD": 6
+ }
+}

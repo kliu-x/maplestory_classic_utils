@@ -1,0 +1,17 @@
+{
+ "id": 2542000,
+ "name": "Frieren Hair Coupon",
+ "description": "#cDouble-click# to change your hairstyle to #cFrieren Hair#.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Appearance",
+  "lowItemId": 2540000,
+  "highItemId": 2545100
+ },
+ "meta": {
+  "slotMax": 1,
+  "price": 1,
+  "tradeBlock": true
+ }
+}

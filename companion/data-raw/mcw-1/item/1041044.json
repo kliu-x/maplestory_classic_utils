@@ -1,0 +1,23 @@
+{
+ "id": 1041044,
+ "name": "Blood Sneak",
+ "description": "",
+ "equipGroup": "Coat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Top",
+  "lowItemId": 1040000,
+  "highItemId": 1050000
+ },
+ "meta": {
+  "reqLevel": 25,
+  "price": 2500,
+  "reqDEX": 15,
+  "reqLUK": 40,
+  "reqJob": 8,
+  "tuc": 7,
+  "incMHP": 25,
+  "incPDD": 36
+ }
+}

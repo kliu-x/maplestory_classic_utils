@@ -1,0 +1,23 @@
+{
+ "id": 1002103,
+ "name": "Golden Pride",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 1900,
+  "reqINT": 40,
+  "tuc": 7,
+  "incINT": 3,
+  "incMHP": 10,
+  "incPDD": 17,
+  "incMDD": 19
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "id": 1040051,
+ "name": "Green Legolier",
+ "description": "",
+ "equipGroup": "Coat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Top",
+  "lowItemId": 1040000,
+  "highItemId": 1050000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 5000,
+  "reqSTR": 25,
+  "reqDEX": 60,
+  "reqJob": 4,
+  "tuc": 7,
+  "incDEX": 3,
+  "incMHP": 5,
+  "incPDD": 44
+ }
+}

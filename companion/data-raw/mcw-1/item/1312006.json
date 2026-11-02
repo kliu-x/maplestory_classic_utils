@@ -1,0 +1,23 @@
+{
+ "id": 1312006,
+ "name": "Dankke",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "One-Handed Axe",
+  "lowItemId": 1310000,
+  "highItemId": 1320000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 7500,
+  "reqSTR": 70,
+  "reqDEX": 30,
+  "reqJob": 1,
+  "tuc": 7,
+  "incWAT": 55,
+  "attackSpeed": 5
+ }
+}

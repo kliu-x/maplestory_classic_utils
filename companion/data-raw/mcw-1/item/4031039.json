@@ -1,5 +1,15 @@
 {
  "id": 4031039,
  "name": "Shumi's Coin",
- "description": "The coin that Shumi lost."
+ "description": "The coin that Shumi lost.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "price": 50
+ }
 }

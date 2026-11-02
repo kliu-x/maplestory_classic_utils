@@ -1,0 +1,23 @@
+{
+ "id": 1050034,
+ "name": "Blue-Lined Kismet",
+ "description": "",
+ "equipGroup": "Longcoat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Overall",
+  "lowItemId": 1050000,
+  "highItemId": 1060000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 19800,
+  "reqSTR": 40,
+  "reqDEX": 90,
+  "reqJob": 4,
+  "tuc": 10,
+  "incDEX": 10,
+  "incPDD": 106
+ }
+}

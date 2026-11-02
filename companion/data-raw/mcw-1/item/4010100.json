@@ -1,5 +1,15 @@
 {
  "id": 4010100,
  "name": "Bronze Ingot",
- "description": "A light and weak refined bronze ingot."
+ "description": "A light and weak refined bronze ingot.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Crafting",
+  "subCategory": "Mineral Ore",
+  "lowItemId": 4010000,
+  "highItemId": 4011000
+ },
+ "meta": {
+  "price": 100
+ }
 }

@@ -1,0 +1,23 @@
+{
+ "id": 1402005,
+ "name": "Scimitar",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Two-Handed Sword",
+  "lowItemId": 1400000,
+  "highItemId": 1410000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 6500,
+  "reqSTR": 65,
+  "reqDEX": 30,
+  "reqJob": 1,
+  "tuc": 7,
+  "incWAT": 53,
+  "attackSpeed": 6
+ }
+}

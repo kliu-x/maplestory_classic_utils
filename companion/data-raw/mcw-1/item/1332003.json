@@ -1,0 +1,23 @@
+{
+ "id": 1332003,
+ "name": "Field Dagger",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "Dagger",
+  "lowItemId": 1330000,
+  "highItemId": 1340000
+ },
+ "meta": {
+  "reqLevel": 15,
+  "price": 2500,
+  "reqDEX": 10,
+  "reqLUK": 20,
+  "reqJob": 9,
+  "tuc": 7,
+  "incWAT": 30,
+  "attackSpeed": 3
+ }
+}

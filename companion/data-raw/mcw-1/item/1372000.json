@@ -1,0 +1,22 @@
+{
+ "id": 1372000,
+ "name": "Wooden Wand",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "Wand",
+  "lowItemId": 1370000,
+  "highItemId": 1380000
+ },
+ "meta": {
+  "reqLevel": 10,
+  "price": 1500,
+  "reqINT": 20,
+  "tuc": 7,
+  "incMAD": 27,
+  "incWAT": 18,
+  "attackSpeed": 6
+ }
+}

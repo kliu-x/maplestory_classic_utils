@@ -1,0 +1,22 @@
+{
+ "id": 1462001,
+ "name": "Battle Crossbow",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Crossbow",
+  "lowItemId": 1460000,
+  "highItemId": 1470000
+ },
+ "meta": {
+  "reqLevel": 15,
+  "price": 3500,
+  "reqDEX": 35,
+  "reqJob": 4,
+  "tuc": 7,
+  "incWAT": 37,
+  "attackSpeed": 7
+ }
+}

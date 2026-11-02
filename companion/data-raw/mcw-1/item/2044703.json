@@ -1,0 +1,16 @@
+{
+ "id": 2044703,
+ "name": "Claw Attack Scroll: Chaos",
+ "description": "Improves Weapon Attack on claws.\\nSuccess rate: 10%, Weapon Attack +5\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Claw",
+  "lowItemId": 2044700,
+  "highItemId": 2044800
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 5
+ }
+}

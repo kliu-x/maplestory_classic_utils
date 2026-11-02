@@ -1,5 +1,13 @@
 {
  "id": 4031006,
  "name": "Old Gold Watch",
- "description": "An old gold watch, left by Alex's late mother."
+ "description": "An old gold watch, left by Alex's late mother.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {}
 }

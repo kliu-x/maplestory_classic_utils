@@ -1,0 +1,18 @@
+{
+ "id": 1302000,
+ "name": "Sword",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "One-Handed Sword",
+  "lowItemId": 1300000,
+  "highItemId": 1310000
+ },
+ "meta": {
+  "tuc": 7,
+  "incWAT": 17,
+  "attackSpeed": 4
+ }
+}

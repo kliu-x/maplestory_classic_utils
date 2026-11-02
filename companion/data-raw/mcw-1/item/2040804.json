@@ -1,0 +1,16 @@
+{
+ "id": 2040804,
+ "name": "Gloves Magic Attack Scroll: Lesser",
+ "description": "Improves Magic Attack on gloves.\\nSuccess rate: 100%, Magic Attack +2",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Gloves",
+  "lowItemId": 2040800,
+  "highItemId": 2040900
+ },
+ "meta": {
+  "price": 1,
+  "incMAD": 2
+ }
+}

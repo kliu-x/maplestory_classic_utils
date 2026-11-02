@@ -1,0 +1,16 @@
+{
+ "id": 2040900,
+ "name": "Shield DEF Scroll: Lesser",
+ "description": "Improves Defense on shields.\\nSuccess rate: 100%, Weapon Def. +2",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Shield",
+  "lowItemId": 2040900,
+  "highItemId": 2041000
+ },
+ "meta": {
+  "price": 1,
+  "incPDD": 2
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "id": 1060001,
+ "name": "Blue Jean Shorts",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "tuc": 7,
+  "incPDD": 4
+ }
+}

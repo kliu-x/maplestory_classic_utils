@@ -1,0 +1,24 @@
+{
+ "id": 1051028,
+ "name": "Blue Lumati",
+ "description": "",
+ "equipGroup": "Longcoat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Overall",
+  "lowItemId": 1050000,
+  "highItemId": 1060000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 19800,
+  "reqSTR": 40,
+  "reqDEX": 90,
+  "reqJob": 4,
+  "tuc": 10,
+  "incSTR": 5,
+  "incDEX": 5,
+  "incPDD": 106
+ }
+}

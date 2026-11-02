@@ -1,5 +1,15 @@
 {
  "id": 4020001,
  "name": "Amethyst Ore",
- "description": "The ore of a purple jewel."
+ "description": "The ore of a purple jewel.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Crafting",
+  "subCategory": "Rare Ore",
+  "lowItemId": 4020000,
+  "highItemId": 4020100
+ },
+ "meta": {
+  "price": 200
+ }
 }

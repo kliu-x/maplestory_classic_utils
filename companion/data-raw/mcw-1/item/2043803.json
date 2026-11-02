@@ -1,0 +1,16 @@
+{
+ "id": 2043803,
+ "name": "Staff Magic Attack Scroll: Chaos",
+ "description": "Improves Magic Attack on staves.\\nSuccess rate: 10%, Magic Attack +10\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Staff",
+  "lowItemId": 2043800,
+  "highItemId": 2043900
+ },
+ "meta": {
+  "price": 1,
+  "incMAD": 10
+ }
+}

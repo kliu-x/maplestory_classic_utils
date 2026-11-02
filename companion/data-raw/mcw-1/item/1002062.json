@@ -1,0 +1,24 @@
+{
+ "id": 1002062,
+ "name": "Green Wizardry Hat",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 20,
+  "price": 1200,
+  "reqINT": 30,
+  "reqLUK": 10,
+  "reqJob": 2,
+  "tuc": 7,
+  "incLUK": 2,
+  "incPDD": 12,
+  "incMDD": 14
+ }
+}

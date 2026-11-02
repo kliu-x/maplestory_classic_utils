@@ -1,0 +1,23 @@
+{
+ "id": 1332006,
+ "name": "Stinger",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "Dagger",
+  "lowItemId": 1330000,
+  "highItemId": 1340000
+ },
+ "meta": {
+  "reqLevel": 22,
+  "price": 3900,
+  "reqSTR": 17,
+  "reqLUK": 44,
+  "reqJob": 9,
+  "tuc": 7,
+  "incWAT": 39,
+  "attackSpeed": 3
+ }
+}

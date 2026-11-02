@@ -1,0 +1,15 @@
+{
+ "id": 2430061,
+ "name": "MapleStory Fest 2026 Surprise Gift Box",
+ "description": "#cDouble-click# to obtain the below items.\\n\\n- 1.5x EXP Coupon (15 min) x6\\n- Return Scroll - Nearest Town x5\\n- Atmospheric Effect Box x5\\n Avatar Gift Box x1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Other",
+  "lowItemId": 2430000,
+  "highItemId": 2440000
+ },
+ "meta": {
+  "price": 1
+ }
+}

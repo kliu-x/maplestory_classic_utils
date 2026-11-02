@@ -1,0 +1,17 @@
+{
+ "id": 2040403,
+ "name": "Topwear DEF Scroll: Chaos",
+ "description": "Improves Defense on topwear.\\nSuccess rate: 10%, Weapon Def. +8, Magic Def. +6\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Topwear",
+  "lowItemId": 2040400,
+  "highItemId": 2040500
+ },
+ "meta": {
+  "price": 1,
+  "incPDD": 8,
+  "incMDD": 6
+ }
+}

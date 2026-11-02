@@ -1,0 +1,24 @@
+{
+ "id": 1372005,
+ "name": "Wizard Wand",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "Wand",
+  "lowItemId": 1370000,
+  "highItemId": 1380000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 7500,
+  "reqINT": 70,
+  "reqLUK": 25,
+  "reqJob": 2,
+  "tuc": 7,
+  "incMAD": 62,
+  "incWAT": 43,
+  "attackSpeed": 6
+ }
+}

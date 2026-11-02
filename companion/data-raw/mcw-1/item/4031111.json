@@ -1,5 +1,15 @@
 {
  "id": 4031111,
  "name": "Mrs. Ming Ming's Cooking Recipe",
- "description": "A recipe that details how to bake Mrs. Ming Ming's special cake."
+ "description": "A recipe that details how to bake Mrs. Ming Ming's special cake.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "price": 1
+ }
 }

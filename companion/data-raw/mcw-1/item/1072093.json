@@ -1,0 +1,26 @@
+{
+ "id": 1072093,
+ "name": "Blue Silky Boots",
+ "description": "",
+ "equipGroup": "Shoes",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shoes",
+  "lowItemId": 1070000,
+  "highItemId": 1080000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 3000,
+  "reqSTR": 25,
+  "reqDEX": 60,
+  "reqJob": 4,
+  "tuc": 5,
+  "incSTR": 1,
+  "incMMP": 5,
+  "incPDD": 20,
+  "incEVA": 3,
+  "incSpeed": 2
+ }
+}

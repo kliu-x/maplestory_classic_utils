@@ -1,0 +1,23 @@
+{
+ "id": 1040026,
+ "name": "Brown Hard Leather Top",
+ "description": "",
+ "equipGroup": "Coat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Top",
+  "lowItemId": 1040000,
+  "highItemId": 1050000
+ },
+ "meta": {
+  "reqLevel": 20,
+  "price": 2000,
+  "reqSTR": 10,
+  "reqDEX": 30,
+  "reqJob": 4,
+  "tuc": 7,
+  "incDEX": 2,
+  "incPDD": 32
+ }
+}

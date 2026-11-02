@@ -1,0 +1,20 @@
+{
+ "id": 1072042,
+ "name": "Red Ankle-strap Sandals",
+ "description": "",
+ "equipGroup": "Shoes",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shoes",
+  "lowItemId": 1070000,
+  "highItemId": 1080000
+ },
+ "meta": {
+  "reqLevel": 21,
+  "price": 1260,
+  "tuc": 5,
+  "incPDD": 15,
+  "incJump": 2
+ }
+}

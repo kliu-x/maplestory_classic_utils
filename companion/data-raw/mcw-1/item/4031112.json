@@ -1,5 +1,15 @@
 {
  "id": 4031112,
  "name": "Bruce's Special Cake",
- "description": "A special cake that Bruce made for his daughter, Ayan. It looks a bit clumsy, but it gives off a sweet aroma."
+ "description": "A special cake that Bruce made for his daughter, Ayan. It looks a bit clumsy, but it gives off a sweet aroma.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "price": 1
+ }
 }

@@ -1,5 +1,16 @@
 {
  "id": 4000042,
  "name": "Malady's Experimental Frog",
- "description": "A bottle containing frogs that a Malady had for various experiments."
+ "description": "A bottle containing frogs that a Malady had for various experiments.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "slotMax": 200,
+  "price": 55
+ }
 }

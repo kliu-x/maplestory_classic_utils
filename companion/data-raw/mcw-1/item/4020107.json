@@ -1,5 +1,15 @@
 {
  "id": 4020107,
  "name": "Diamond",
- "description": "A transparent jewel."
+ "description": "A transparent jewel.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Crafting",
+  "subCategory": "Gem",
+  "lowItemId": 4020100,
+  "highItemId": 4021000
+ },
+ "meta": {
+  "price": 1200
+ }
 }

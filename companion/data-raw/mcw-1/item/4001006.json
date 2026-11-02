@@ -1,5 +1,15 @@
 {
  "id": 4001006,
  "name": "Blackbull's Deed to the Land",
- "description": "Blackbull's lost deed for his land in Perion."
+ "description": "Blackbull's lost deed for his land in Perion.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "price": 1
+ }
 }

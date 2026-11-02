@@ -1,5 +1,25 @@
 {
  "id": 1072044,
  "name": "Mithril War Boots",
- "description": ""
+ "description": "",
+ "equipGroup": "Shoes",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shoes",
+  "lowItemId": 1070000,
+  "highItemId": 1080000
+ },
+ "meta": {
+  "reqLevel": 25,
+  "price": 1500,
+  "reqSTR": 40,
+  "reqDEX": 15,
+  "reqJob": 1,
+  "tuc": 5,
+  "incDEX": 2,
+  "incMMP": 5,
+  "incPDD": 24,
+  "incEVA": 2
+ }
 }

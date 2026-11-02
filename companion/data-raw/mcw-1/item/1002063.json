@@ -1,0 +1,23 @@
+{
+ "id": 1002063,
+ "name": "Green Robin Hat",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 20,
+  "price": 1200,
+  "reqSTR": 10,
+  "reqDEX": 30,
+  "reqJob": 4,
+  "tuc": 7,
+  "incDEX": 2,
+  "incPDD": 21
+ }
+}

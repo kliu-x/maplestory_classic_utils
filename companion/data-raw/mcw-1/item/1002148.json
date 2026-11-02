@@ -1,0 +1,23 @@
+{
+ "id": 1002148,
+ "name": "Brown Distinction",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 40,
+  "price": 4200,
+  "reqSTR": 30,
+  "reqDEX": 70,
+  "reqJob": 4,
+  "tuc": 7,
+  "incSTR": 4,
+  "incPDD": 33
+ }
+}

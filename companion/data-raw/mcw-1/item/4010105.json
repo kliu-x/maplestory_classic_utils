@@ -1,5 +1,15 @@
 {
  "id": 4010105,
  "name": "Orihalcon Ingot",
- "description": "A very rare refined orihalcon ingot."
+ "description": "A very rare refined orihalcon ingot.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Crafting",
+  "subCategory": "Mineral Ore",
+  "lowItemId": 4010000,
+  "highItemId": 4011000
+ },
+ "meta": {
+  "price": 500
+ }
 }

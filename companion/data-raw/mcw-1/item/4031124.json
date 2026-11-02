@@ -1,5 +1,15 @@
 {
  "id": 4031124,
  "name": "Broken Wooden Bow",
- "description": "A small wooden bow that Athena Pierce used a very long time ago. The bowstring is broken, making it look difficult to use properly."
+ "description": "A small wooden bow that Athena Pierce used a very long time ago. The bowstring is broken, making it look difficult to use properly.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "price": 1
+ }
 }

@@ -1,0 +1,23 @@
+{
+ "id": 1061050,
+ "name": "Purple Steal Pants",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 2400,
+  "reqDEX": 20,
+  "reqLUK": 50,
+  "reqJob": 8,
+  "tuc": 7,
+  "incMHP": 30,
+  "incPDD": 29
+ }
+}

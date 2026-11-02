@@ -1,0 +1,23 @@
+{
+ "id": 1452005,
+ "name": "Red Viper",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Bow",
+  "lowItemId": 1450000,
+  "highItemId": 1460000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 9000,
+  "reqSTR": 35,
+  "reqDEX": 75,
+  "reqJob": 4,
+  "tuc": 7,
+  "incWAT": 52,
+  "attackSpeed": 5
+ }
+}

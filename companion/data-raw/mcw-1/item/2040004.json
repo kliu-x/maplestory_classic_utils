@@ -1,0 +1,16 @@
+{
+ "id": 2040004,
+ "name": "Hat HP Scroll: Lesser",
+ "description": "Improves Max HP on hats.\\nSuccess rate: 100%, Max HP +10",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Helmet",
+  "lowItemId": 2040000,
+  "highItemId": 2040100
+ },
+ "meta": {
+  "price": 1,
+  "incMHP": 10
+ }
+}

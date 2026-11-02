@@ -1,5 +1,16 @@
 {
  "id": 2041025,
  "name": "Cape Accuracy Scroll: Intermediate",
- "description": "Improves Accuracy on capes.\\nSuccess rate: 60%, Accuracy +2"
+ "description": "Improves Accuracy on capes.\\nSuccess rate: 60%, Accuracy +2",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Cape",
+  "lowItemId": 2041000,
+  "highItemId": 2041100
+ },
+ "meta": {
+  "price": 1,
+  "incACC": 2
+ }
 }

@@ -1,5 +1,15 @@
 {
  "id": 4020000,
  "name": "Garnet Ore",
- "description": "The ore of a red jewel."
+ "description": "The ore of a red jewel.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Crafting",
+  "subCategory": "Rare Ore",
+  "lowItemId": 4020000,
+  "highItemId": 4020100
+ },
+ "meta": {
+  "price": 40
+ }
 }

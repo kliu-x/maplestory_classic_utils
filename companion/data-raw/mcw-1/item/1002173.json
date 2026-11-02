@@ -1,0 +1,23 @@
+{
+ "id": 1002173,
+ "name": "Red Maro",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 6600,
+  "reqSTR": 40,
+  "reqDEX": 90,
+  "reqJob": 4,
+  "tuc": 7,
+  "incMHP": 50,
+  "incPDD": 39
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "id": 1472021,
+ "name": "Dark Slain",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Claw",
+  "lowItemId": 1470000,
+  "highItemId": 1480000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 17500,
+  "reqDEX": 50,
+  "reqLUK": 105,
+  "reqJob": 8,
+  "tuc": 7,
+  "incWAT": 34,
+  "incCRT": 1,
+  "attackSpeed": 4
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "id": 1051007,
+ "name": "Blue Engrit",
+ "description": "",
+ "equipGroup": "Longcoat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Overall",
+  "lowItemId": 1050000,
+  "highItemId": 1060000
+ },
+ "meta": {
+  "reqLevel": 30,
+  "price": 5400,
+  "reqSTR": 50,
+  "reqDEX": 20,
+  "reqJob": 1,
+  "tuc": 10,
+  "incDEX": 6,
+  "incPDD": 105
+ }
+}

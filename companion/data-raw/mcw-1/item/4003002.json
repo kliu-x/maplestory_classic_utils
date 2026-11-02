@@ -1,5 +1,15 @@
 {
  "id": 4003002,
  "name": "Stiff Feather",
- "description": "A feather that's stiff and rough. Used as a material for crafting various items."
+ "description": "A feather that's stiff and rough. Used as a material for crafting various items.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "price": 10
+ }
 }

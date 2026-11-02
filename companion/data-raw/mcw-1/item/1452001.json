@@ -1,0 +1,23 @@
+{
+ "id": 1452001,
+ "name": "Composite Bow",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Bow",
+  "lowItemId": 1450000,
+  "highItemId": 1460000
+ },
+ "meta": {
+  "reqLevel": 15,
+  "price": 3500,
+  "reqSTR": 15,
+  "reqDEX": 35,
+  "reqJob": 4,
+  "tuc": 7,
+  "incWAT": 35,
+  "attackSpeed": 6
+ }
+}

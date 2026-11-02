@@ -1,5 +1,16 @@
 {
  "id": 2040805,
  "name": "Gloves Magic Attack Scroll: Intermediate",
- "description": "Improves Magic Attack on gloves.\\nSuccess rate: 60%, Magic Attack +4"
+ "description": "Improves Magic Attack on gloves.\\nSuccess rate: 60%, Magic Attack +4",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Gloves",
+  "lowItemId": 2040800,
+  "highItemId": 2040900
+ },
+ "meta": {
+  "price": 1,
+  "incMAD": 4
+ }
 }

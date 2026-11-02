@@ -1,0 +1,25 @@
+{
+ "id": 1002017,
+ "name": "Metal Koif",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 10,
+  "price": 650,
+  "reqSTR": 10,
+  "reqJob": 1,
+  "tuc": 7,
+  "incDEX": 1,
+  "incMHP": 10,
+  "incPDD": 24,
+  "incMDD": 3,
+  "incACC": 2
+ }
+}

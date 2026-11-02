@@ -1,5 +1,15 @@
 {
  "id": 4031117,
  "name": "Chief Stan's Hammer",
- "description": "Chief Stan's hammer. Traces of time remain, but it shines brightly, having been wiped clean."
+ "description": "Chief Stan's hammer. Traces of time remain, but it shines brightly, having been wiped clean.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "price": 1
+ }
 }

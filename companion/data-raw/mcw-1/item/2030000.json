@@ -1,5 +1,15 @@
 {
  "id": 2030000,
  "name": "Return Scroll - Nearest Town",
- "description": "Returns you to the nearest town."
+ "description": "Returns you to the nearest town.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Teleport Item",
+  "lowItemId": 2030000,
+  "highItemId": 2040000
+ },
+ "meta": {
+  "price": 200
+ }
 }

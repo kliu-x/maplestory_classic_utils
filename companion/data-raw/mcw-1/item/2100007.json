@@ -1,0 +1,16 @@
+{
+ "id": 2100007,
+ "name": "Summoning New-Type Balrog",
+ "description": "The moment you summon it... you're already dead.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Other",
+  "subCategory": "Summoning Sack",
+  "lowItemId": 2100000,
+  "highItemId": 2110000
+ },
+ "meta": {
+  "slotMax": 10,
+  "price": 1
+ }
+}

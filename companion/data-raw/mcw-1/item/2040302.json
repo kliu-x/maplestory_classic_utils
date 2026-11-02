@@ -1,5 +1,16 @@
 {
  "id": 2040302,
  "name": "Earring STR Scroll: Greater",
- "description": "Improves Strength on earrings.\\nSuccess rate: 10%, STR +3"
+ "description": "Improves Strength on earrings.\\nSuccess rate: 10%, STR +3",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Earrings",
+  "lowItemId": 2040300,
+  "highItemId": 2040400
+ },
+ "meta": {
+  "price": 1,
+  "incSTR": 3
+ }
 }

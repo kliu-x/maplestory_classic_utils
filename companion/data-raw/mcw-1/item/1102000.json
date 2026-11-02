@@ -1,5 +1,21 @@
 {
  "id": 1102000,
  "name": "Old Raggedy Cape",
- "description": ""
+ "description": "",
+ "equipGroup": "Cape",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Cape",
+  "lowItemId": 1100000,
+  "highItemId": 1110000
+ },
+ "meta": {
+  "reqLevel": 25,
+  "price": 3750,
+  "tuc": 5,
+  "incPDD": 12,
+  "incMDD": 5,
+  "incACC": 1
+ }
 }

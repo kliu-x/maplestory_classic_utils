@@ -1,5 +1,16 @@
 {
  "id": 4000043,
  "name": "Stone Golem Rubble",
- "description": "Mystic rubble that was a part of a Stone Golem."
+ "description": "Mystic rubble that was a part of a Stone Golem.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "slotMax": 200,
+  "price": 56
+ }
 }

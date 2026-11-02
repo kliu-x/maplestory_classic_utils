@@ -1,0 +1,23 @@
+{
+ "id": 1040029,
+ "name": "Black Pao",
+ "description": "",
+ "equipGroup": "Coat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Top",
+  "lowItemId": 1040000,
+  "highItemId": 1050000
+ },
+ "meta": {
+  "reqLevel": 20,
+  "price": 2000,
+  "reqDEX": 10,
+  "reqLUK": 30,
+  "reqJob": 8,
+  "tuc": 7,
+  "incLUK": 2,
+  "incPDD": 32
+ }
+}

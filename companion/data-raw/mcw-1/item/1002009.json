@@ -1,0 +1,20 @@
+{
+ "id": 1002009,
+ "name": "Blue Swimming Cap",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 8,
+  "price": 450,
+  "tuc": 7,
+  "incMMP": 8,
+  "incPDD": 8
+ }
+}

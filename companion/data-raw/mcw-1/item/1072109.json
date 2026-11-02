@@ -1,0 +1,25 @@
+{
+ "id": 1072109,
+ "name": "Black Blue-Lined Shoes",
+ "description": "",
+ "equipGroup": "Shoes",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shoes",
+  "lowItemId": 1070000,
+  "highItemId": 1080000
+ },
+ "meta": {
+  "reqLevel": 40,
+  "price": 4200,
+  "reqDEX": 30,
+  "reqLUK": 70,
+  "reqJob": 8,
+  "tuc": 5,
+  "incDEX": 2,
+  "incPDD": 22,
+  "incEVA": 4,
+  "incSpeed": 2
+ }
+}

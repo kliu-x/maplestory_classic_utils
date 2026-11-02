@@ -39,7 +39,25 @@ for (const f of await readDir('npc')) {
 const items = [];
 for (const f of await readDir('item')) {
   const it = await readJson(join(RAW, 'item', f));
-  if (ok(it) && it.name) items.push({ id: it.id, name: it.name, ...(it.description ? { description: it.description.replace(/\\n|\n/g, ' ').replace(/#\w?/g, '').trim() } : {}) });
+  if (!ok(it) || !it.name) continue;
+  const m = it.meta ?? {};
+  const stats = Object.fromEntries(Object.entries(m).filter(([k, v]) => k.startsWith('inc') && typeof v === 'number' && v !== 0).map(([k, v]) => [k.slice(3), v]));
+  const req = Object.fromEntries(['STR', 'DEX', 'INT', 'LUK'].filter((k) => m['req' + k]).map((k) => [k.toLowerCase(), m['req' + k]]));
+  items.push({
+    id: it.id,
+    name: it.name,
+    ...(it.description ? { description: it.description.replace(/\\n|\n/g, ' ').replace(/#\w?/g, '').trim() } : {}),
+    ...(it.typeInfo ? { category: it.typeInfo.category, subCategory: it.typeInfo.subCategory } : {}),
+    ...(m.reqLevel ? { reqLevel: m.reqLevel } : {}),
+    ...(Object.keys(req).length ? { req } : {}),
+    ...(m.reqJob ? { reqJob: m.reqJob } : {}),
+    ...(m.tuc ? { slots: m.tuc } : {}),
+    ...(m.price ? { sellPrice: m.price } : {}),
+    ...(m.attackSpeed ? { attackSpeed: m.attackSpeed } : {}),
+    ...(Object.keys(stats).length ? { stats } : {}),
+    ...(m.quest ? { questItem: true } : {}),
+    ...(m.tradeBlock || m.only ? { untradeable: true } : {}),
+  });
 }
 items.sort((a, b) => a.id - b.id);
 

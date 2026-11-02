@@ -1,5 +1,17 @@
 {
  "id": 2430047,
  "name": "Adventurer's Journal",
- "description": "A weathered, leather-bound journal carried by an early Victoria Island pioneer. Most of the inner pages have been torn away, leaving behind faint traces of ink and forgotten memories.\n\\n#cDouble-click# to see what is written inside"
+ "description": "A weathered, leather-bound journal carried by an early Victoria Island pioneer. Most of the inner pages have been torn away, leaving behind faint traces of ink and forgotten memories.\n\\n#cDouble-click# to see what is written inside",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Other",
+  "lowItemId": 2430000,
+  "highItemId": 2440000
+ },
+ "meta": {
+  "only": true,
+  "slotMax": 1,
+  "tradeBlock": true
+ }
 }

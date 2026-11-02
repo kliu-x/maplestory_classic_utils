@@ -1,5 +1,16 @@
 {
  "id": 2048002,
  "name": "Pet Equip Speed Scroll: Greater ",
- "description": "Improves Speed on pet equip.\\nSuccess rate: 10%, Speed +3"
+ "description": "Improves Speed on pet equip.\\nSuccess rate: 10%, Speed +3",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Pet",
+  "lowItemId": 2048000,
+  "highItemId": 2048100
+ },
+ "meta": {
+  "price": 1,
+  "incSpeed": 3
+ }
 }

@@ -1,0 +1,16 @@
+{
+ "id": 1062999,
+ "name": "Wizet Plain Suit Pants",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "price": 1
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "id": 1312003,
+ "name": "Scythe",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "One-Handed Axe",
+  "lowItemId": 1310000,
+  "highItemId": 1320000
+ },
+ "meta": {
+  "reqLevel": 15,
+  "price": 2500,
+  "reqSTR": 20,
+  "tuc": 7,
+  "incWAT": 32,
+  "attackSpeed": 4
+ }
+}

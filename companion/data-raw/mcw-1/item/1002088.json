@@ -1,0 +1,26 @@
+{
+ "id": 1002088,
+ "name": "Gold Burgonet Helm",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 25,
+  "price": 1550,
+  "reqSTR": 40,
+  "reqDEX": 15,
+  "reqJob": 1,
+  "tuc": 7,
+  "incDEX": 2,
+  "incMHP": 15,
+  "incPDD": 35,
+  "incMDD": 13,
+  "incACC": 3
+ }
+}

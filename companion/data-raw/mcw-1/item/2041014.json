@@ -1,5 +1,16 @@
 {
  "id": 2041014,
  "name": "Cape DEX Scroll: Greater",
- "description": "Improves Dexterity on capes.\\nSuccess rate: 10%, DEX +3"
+ "description": "Improves Dexterity on capes.\\nSuccess rate: 10%, DEX +3",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Cape",
+  "lowItemId": 2041000,
+  "highItemId": 2041100
+ },
+ "meta": {
+  "price": 1,
+  "incDEX": 3
+ }
 }

@@ -1,0 +1,15 @@
+{
+ "id": 2430018,
+ "name": "Orange Mushroom Package",
+ "description": "#cDouble-click# to obtain the items below:\\n\\n- Mark of the Founder (Brown) (Transferable within world, Permanent) x1\\n- Glow of the Founder (Transferable within world, Permanent) x1\\n- Founder's Thief Avatar Set (Transferable within world, 30 Days) x1\\n- Mark of the Founder (Tan) (Transferable within world, Permanent) x1\\n- Glimmer of the Founder (Transferable within world, Permanent) x1\\n- Jr. Balrog Invasion (Untradable, 90 Days) x1\\n- Well-Loved Avatar Set (Transferable within world, 30 Days) x1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Other",
+  "lowItemId": 2430000,
+  "highItemId": 2440000
+ },
+ "meta": {
+  "price": 1
+ }
+}

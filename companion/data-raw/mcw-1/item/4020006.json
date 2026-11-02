@@ -1,5 +1,15 @@
 {
  "id": 4020006,
  "name": "Topaz Ore",
- "description": "The ore of a yellow jewel."
+ "description": "The ore of a yellow jewel.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Crafting",
+  "subCategory": "Rare Ore",
+  "lowItemId": 4020000,
+  "highItemId": 4020100
+ },
+ "meta": {
+  "price": 80
+ }
 }

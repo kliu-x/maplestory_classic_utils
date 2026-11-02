@@ -1,0 +1,25 @@
+{
+ "id": 1050009,
+ "name": "White Doros Robe",
+ "description": "",
+ "equipGroup": "Longcoat",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Overall",
+  "lowItemId": 1050000,
+  "highItemId": 1060000
+ },
+ "meta": {
+  "reqLevel": 25,
+  "price": 4500,
+  "reqINT": 40,
+  "reqLUK": 15,
+  "reqJob": 2,
+  "tuc": 10,
+  "incINT": 3,
+  "incLUK": 2,
+  "incPDD": 40,
+  "incMDD": 49
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "id": 1002066,
+ "name": "Blue Robin Hat",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 20,
+  "price": 1200,
+  "reqSTR": 10,
+  "reqDEX": 30,
+  "reqJob": 4,
+  "tuc": 7,
+  "incMMP": 20,
+  "incPDD": 21
+ }
+}

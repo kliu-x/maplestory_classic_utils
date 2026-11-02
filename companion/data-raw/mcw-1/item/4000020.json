@@ -1,5 +1,16 @@
 {
  "id": 4000020,
  "name": "Charm of the Undead",
- "description": "A charm taken from an undead monster."
+ "description": "A charm taken from an undead monster.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Monster Drop",
+  "lowItemId": 4000000,
+  "highItemId": 4010000
+ },
+ "meta": {
+  "slotMax": 200,
+  "price": 24
+ }
 }

@@ -1,0 +1,23 @@
+{
+ "id": 1452006,
+ "name": "Vaulter 2000",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Bow",
+  "lowItemId": 1450000,
+  "highItemId": 1460000
+ },
+ "meta": {
+  "reqLevel": 40,
+  "price": 11500,
+  "reqSTR": 40,
+  "reqDEX": 85,
+  "reqJob": 4,
+  "tuc": 7,
+  "incWAT": 60,
+  "attackSpeed": 6
+ }
+}

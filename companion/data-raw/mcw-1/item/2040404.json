@@ -1,0 +1,16 @@
+{
+ "id": 2040404,
+ "name": "Topwear HP Scroll: Lesser",
+ "description": "Improves Max HP on topwear.\\nSuccess rate: 100%, Max HP +10",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Topwear",
+  "lowItemId": 2040400,
+  "highItemId": 2040500
+ },
+ "meta": {
+  "price": 1,
+  "incMHP": 10
+ }
+}

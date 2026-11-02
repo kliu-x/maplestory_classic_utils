@@ -1,5 +1,16 @@
 {
  "id": 2044001,
  "name": "Two-handed Sword Attack Scroll: Intermediate",
- "description": "Improves Weapon Attack on two-handed swords.\\nSuccess rate: 60%, Weapon Attack +2"
+ "description": "Improves Weapon Attack on two-handed swords.\\nSuccess rate: 60%, Weapon Attack +2",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "Two-Handed Sword",
+  "lowItemId": 2044000,
+  "highItemId": 2044100
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 2
+ }
 }

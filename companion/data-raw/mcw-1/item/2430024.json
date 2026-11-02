@@ -1,0 +1,15 @@
+{
+ "id": 2430024,
+ "name": "Founder's Thief Avatar Set",
+ "description": "#cDouble-click# to obtain the items below:\\n\\n- Founder's Thief Hat (Transferable within world, Permanent) x1\\n- Founder's Thief Outfit (Transferable within world, Permanent) x1\\n- Founder's Thief Boots (Transferable within world, Permanent) x1\\n- Founder's Thief Gloves (Transferable within world, Permanent) x1\\n- Founder's Thief Dagger (Transferable within world, Permanent) x1\\n- Founder's Thief Face (Transferable within world, Permanent) x1\\n",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Other",
+  "lowItemId": 2430000,
+  "highItemId": 2440000
+ },
+ "meta": {
+  "price": 1
+ }
+}

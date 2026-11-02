@@ -1,0 +1,16 @@
+{
+ "id": 2040407,
+ "name": "Topwear HP Scroll: Chaos",
+ "description": "Improves Max HP on topwear.\\nSuccess rate: 10%, Max HP +25\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Topwear",
+  "lowItemId": 2040400,
+  "highItemId": 2040500
+ },
+ "meta": {
+  "price": 1,
+  "incMHP": 25
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "id": 2210006,
+ "name": "Ribbon Pig Daydream",
+ "description": "What would life be like as a Ribbon Pig...?\\n\\n#cRight-click on the buff icon to cancel the transformation.#",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Transformation",
+  "lowItemId": 2210000,
+  "highItemId": 2230000
+ },
+ "meta": {
+  "slotMax": 200,
+  "tradeBlock": true
+ }
+}

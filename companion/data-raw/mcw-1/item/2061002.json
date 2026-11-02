@@ -1,0 +1,17 @@
+{
+ "id": 2061002,
+ "name": "Iron Arrows for Crossbows",
+ "description": "A quiver full of iron arrows. Only usable with crossbows.\\nWeapon Attack +2",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Projectile",
+  "subCategory": "Crossbow Bolt",
+  "lowItemId": 2061000,
+  "highItemId": 2061100
+ },
+ "meta": {
+  "slotMax": 800,
+  "price": 2,
+  "incWAT": 2
+ }
+}

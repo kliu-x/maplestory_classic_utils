@@ -1,0 +1,24 @@
+{
+ "id": 1072120,
+ "name": "Brown Steel-Tip Boots",
+ "description": "",
+ "equipGroup": "Shoes",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shoes",
+  "lowItemId": 1070000,
+  "highItemId": 1080000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 6600,
+  "reqSTR": 40,
+  "reqDEX": 90,
+  "reqJob": 4,
+  "tuc": 5,
+  "incSTR": 5,
+  "incPDD": 26,
+  "incEVA": 5
+ }
+}

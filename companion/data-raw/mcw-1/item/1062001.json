@@ -1,0 +1,20 @@
+{
+ "id": 1062001,
+ "name": "Ice Jeans",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "reqLevel": 17,
+  "price": 1360,
+  "tuc": 7,
+  "incMMP": 17,
+  "incPDD": 21
+ }
+}

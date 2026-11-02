@@ -1,5 +1,15 @@
 {
  "id": 2002009,
  "name": "Tailoring Kit",
- "description": "A set of tools that make tailoring more convenient. Using it increases the amount of crafting skill EXP gained from tailoring by 10% for 15 minutes."
+ "description": "A set of tools that make tailoring more convenient. Using it increases the amount of crafting skill EXP gained from tailoring by 10% for 15 minutes.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Potion",
+  "lowItemId": 2000000,
+  "highItemId": 2010000
+ },
+ "meta": {
+  "price": 100
+ }
 }

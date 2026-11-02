@@ -1,0 +1,16 @@
+{
+ "id": 2043200,
+ "name": "One-Handed Blunt Weapon Attack Scroll: Lesser",
+ "description": "Improves Weapon Attack on one-handed blunt weapons.\\nSuccess rate: 100%, Weapon Attack +1",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "One-Handed BW",
+  "lowItemId": 2043200,
+  "highItemId": 2043300
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 1
+ }
+}

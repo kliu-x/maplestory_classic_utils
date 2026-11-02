@@ -9,6 +9,7 @@ import Training from './pages/Training';
 import Monsters from './pages/Monsters';
 import SkillsPage from './pages/Skills';
 import Gear from './pages/Gear';
+import Items from './pages/Items';
 import Quests from './pages/Quests';
 import Maps from './pages/Maps';
 import NameChecker from './pages/NameChecker';
@@ -23,6 +24,7 @@ const VIEWS = {
   monsters: Monsters,
   skills: SkillsPage,
   gear: Gear,
+  items: Items,
   quests: Quests,
   maps: Maps,
   pastas: Pastas,

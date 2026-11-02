@@ -1,0 +1,26 @@
+{
+ "id": 1002164,
+ "name": "Dark Dome",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 47,
+  "price": 5880,
+  "reqSTR": 84,
+  "reqDEX": 37,
+  "reqJob": 1,
+  "tuc": 7,
+  "incSTR": 2,
+  "incDEX": 2,
+  "incMHP": 7,
+  "incPDD": 52,
+  "incACC": 4
+ }
+}

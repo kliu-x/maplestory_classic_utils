@@ -1,0 +1,23 @@
+{
+ "id": 1472001,
+ "name": "Steel Titans",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Two-Handed Weapon",
+  "subCategory": "Claw",
+  "lowItemId": 1470000,
+  "highItemId": 1480000
+ },
+ "meta": {
+  "reqLevel": 15,
+  "price": 3500,
+  "reqDEX": 15,
+  "reqLUK": 35,
+  "reqJob": 8,
+  "tuc": 7,
+  "incWAT": 13,
+  "attackSpeed": 4
+ }
+}

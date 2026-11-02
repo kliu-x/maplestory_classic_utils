@@ -1,0 +1,23 @@
+{
+ "id": 1332015,
+ "name": "Shinkita",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "Dagger",
+  "lowItemId": 1330000,
+  "highItemId": 1340000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 13500,
+  "reqDEX": 45,
+  "reqLUK": 100,
+  "reqJob": 8,
+  "tuc": 7,
+  "incWAT": 68,
+  "attackSpeed": 4
+ }
+}

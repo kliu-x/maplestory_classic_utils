@@ -1,0 +1,23 @@
+{
+ "id": 1092011,
+ "name": "Esther Shield",
+ "description": "Gives a chance to block enemy attacks entirely.",
+ "equipGroup": "Shield",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Shield",
+  "lowItemId": 1090000,
+  "highItemId": 1100000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 10000,
+  "reqINT": 60,
+  "reqLUK": 25,
+  "reqJob": 2,
+  "tuc": 7,
+  "incPDD": 28,
+  "incMDD": 55
+ }
+}

@@ -1,5 +1,15 @@
 {
  "id": 4010102,
  "name": "Mithril Ingot",
- "description": "A solid and light refined mithril ingot."
+ "description": "A solid and light refined mithril ingot.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Crafting",
+  "subCategory": "Mineral Ore",
+  "lowItemId": 4010000,
+  "highItemId": 4011000
+ },
+ "meta": {
+  "price": 200
+ }
 }

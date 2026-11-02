@@ -1,0 +1,21 @@
+{
+ "id": 1322002,
+ "name": "Leather Purse",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "One-Handed Blunt Weapon",
+  "lowItemId": 1320000,
+  "highItemId": 1330000
+ },
+ "meta": {
+  "reqLevel": 12,
+  "price": 1900,
+  "reqSTR": 15,
+  "tuc": 7,
+  "incWAT": 31,
+  "attackSpeed": 5
+ }
+}

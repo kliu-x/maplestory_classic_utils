@@ -1,0 +1,16 @@
+{
+ "id": 2043203,
+ "name": "One-Handed Blunt Weapon Attack Scroll: Chaos",
+ "description": "Improves Weapon Attack on one-handed blunt weapons.\\nSuccess rate: 10%, Weapon Attack +5\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "One-Handed BW",
+  "lowItemId": 2043200,
+  "highItemId": 2043300
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 5
+ }
+}

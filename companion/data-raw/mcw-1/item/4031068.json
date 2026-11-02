@@ -1,5 +1,15 @@
 {
  "id": 4031068,
  "name": "Animal Fossil",
- "description": "The fossil of an animal from thousands of years ago."
+ "description": "The fossil of an animal from thousands of years ago.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Other",
+  "subCategory": "Quest Item",
+  "lowItemId": 4030000,
+  "highItemId": 4040000
+ },
+ "meta": {
+  "price": 1
+ }
 }

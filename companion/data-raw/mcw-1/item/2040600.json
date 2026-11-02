@@ -1,0 +1,16 @@
+{
+ "id": 2040600,
+ "name": "Bottomwear DEF Scroll: Lesser",
+ "description": "Improves Defense on bottomwear.\\nSuccess rate: 100%, Weapon Def. +2",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Bottomwear",
+  "lowItemId": 2040600,
+  "highItemId": 2040700
+ },
+ "meta": {
+  "price": 1,
+  "incPDD": 2
+ }
+}

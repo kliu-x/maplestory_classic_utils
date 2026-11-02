@@ -1,0 +1,24 @@
+{
+ "id": 1372007,
+ "name": "Cromi",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "Wand",
+  "lowItemId": 1370000,
+  "highItemId": 1380000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 13500,
+  "reqINT": 100,
+  "reqLUK": 40,
+  "reqJob": 2,
+  "tuc": 7,
+  "incMAD": 83,
+  "incWAT": 58,
+  "attackSpeed": 6
+ }
+}

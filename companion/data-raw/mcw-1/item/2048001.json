@@ -1,5 +1,16 @@
 {
  "id": 2048001,
  "name": "Pet Equip Speed Scroll: Intermediate",
- "description": "Improves Speed on pet equip.\\nSuccess rate: 60%, Speed +2"
+ "description": "Improves Speed on pet equip.\\nSuccess rate: 60%, Speed +2",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Armor Scroll",
+  "subCategory": "Pet",
+  "lowItemId": 2048000,
+  "highItemId": 2048100
+ },
+ "meta": {
+  "price": 1,
+  "incSpeed": 2
+ }
 }

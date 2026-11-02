@@ -1,5 +1,23 @@
 {
  "id": 1032021,
  "name": "Henesys Earrings",
- "description": "An honorable earring awarded to the Citizen of Honor of Henesys."
+ "description": "An honorable earring awarded to the Citizen of Honor of Henesys.",
+ "equipGroup": "Accessory",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Accessory",
+  "subCategory": "Earrings",
+  "lowItemId": 1030000,
+  "highItemId": 1040000
+ },
+ "meta": {
+  "reqLevel": 57,
+  "price": 20700,
+  "tuc": 5,
+  "incMMP": 7,
+  "incCRD": 2,
+  "incMDD": 42,
+  "incEVA": 2,
+  "tradeBlock": true
+ }
 }

@@ -1,5 +1,24 @@
 {
  "id": 1082086,
  "name": "Steel Pow",
- "description": ""
+ "description": "",
+ "equipGroup": "Glove",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Glove",
+  "lowItemId": 1080000,
+  "highItemId": 1090000
+ },
+ "meta": {
+  "reqLevel": 60,
+  "price": 18000,
+  "reqDEX": 50,
+  "reqLUK": 110,
+  "reqJob": 8,
+  "tuc": 5,
+  "incDEX": 6,
+  "incCRT": 3,
+  "incPDD": 26
+ }
 }

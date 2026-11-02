@@ -1,0 +1,27 @@
+{
+ "id": 1002162,
+ "name": "Red Bone Helm",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 45,
+  "price": 4680,
+  "reqSTR": 80,
+  "reqDEX": 35,
+  "reqJob": 1,
+  "tuc": 7,
+  "incSTR": 4,
+  "incMHP": 5,
+  "incMMP": 10,
+  "incPDD": 51,
+  "incMDD": 21,
+  "incACC": 4
+ }
+}

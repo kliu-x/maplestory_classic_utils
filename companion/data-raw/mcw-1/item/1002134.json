@@ -1,0 +1,23 @@
+{
+ "id": 1002134,
+ "name": "Red Burgler",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 3000,
+  "reqDEX": 25,
+  "reqLUK": 60,
+  "reqJob": 8,
+  "tuc": 7,
+  "incMHP": 35,
+  "incPDD": 30
+ }
+}

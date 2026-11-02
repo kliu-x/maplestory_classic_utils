@@ -1,0 +1,16 @@
+{
+ "id": 2210003,
+ "name": "Ribbon Pig Invasion",
+ "description": "Someone's wish has turned you into a Ribbon Pig.\\n\\n#cRight-click on the buff icon to cancel the transformation.#",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Transformation",
+  "lowItemId": 2210000,
+  "highItemId": 2230000
+ },
+ "meta": {
+  "slotMax": 200,
+  "tradeBlock": true
+ }
+}

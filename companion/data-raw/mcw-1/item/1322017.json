@@ -1,0 +1,23 @@
+{
+ "id": 1322017,
+ "name": "Knuckle Mace",
+ "description": "",
+ "equipGroup": "Weapon",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "One-Handed Weapon",
+  "subCategory": "One-Handed Blunt Weapon",
+  "lowItemId": 1320000,
+  "highItemId": 1330000
+ },
+ "meta": {
+  "reqLevel": 50,
+  "price": 13500,
+  "reqSTR": 100,
+  "reqDEX": 45,
+  "reqJob": 1,
+  "tuc": 7,
+  "incWAT": 69,
+  "attackSpeed": 5
+ }
+}

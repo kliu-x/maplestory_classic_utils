@@ -1,0 +1,16 @@
+{
+ "id": 2043103,
+ "name": "One-Handed Axe Attack Scroll: Chaos",
+ "description": "Improves Weapon Attack on one-handed axes.\\nSuccess rate: 10%, Weapon Attack +5\\nUpon failure, the item has a 50% chance to be destroyed.",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Weapon Scroll",
+  "subCategory": "One-Handed Axe",
+  "lowItemId": 2043100,
+  "highItemId": 2043200
+ },
+ "meta": {
+  "price": 1,
+  "incWAT": 5
+ }
+}

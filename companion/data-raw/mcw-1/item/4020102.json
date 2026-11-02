@@ -1,5 +1,15 @@
 {
  "id": 4020102,
  "name": "Aquamarine",
- "description": "A blue jewel."
+ "description": "A blue jewel.",
+ "typeInfo": {
+  "overallCategory": "Etc",
+  "category": "Crafting",
+  "subCategory": "Gem",
+  "lowItemId": 4020100,
+  "highItemId": 4021000
+ },
+ "meta": {
+  "price": 200
+ }
 }

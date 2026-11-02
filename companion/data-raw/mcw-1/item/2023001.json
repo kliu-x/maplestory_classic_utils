@@ -1,0 +1,13 @@
+{
+ "id": 2023001,
+ "name": "GM's Blessing of the Keen Eye",
+ "description": "A special blessing from the GM that hones your instincts for a lethal strike.\\n\\n#cCritical Rate +10%#\\n\\n#cStacks with other boost effects.#\\n#cEffects disappear upon relogin.#",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Consumable",
+  "lowItemId": 2022000,
+  "highItemId": 2024000
+ },
+ "meta": {}
+}

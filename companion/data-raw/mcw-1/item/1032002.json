@@ -1,5 +1,20 @@
 {
  "id": 1032002,
  "name": "Weighted Earrings",
- "description": ""
+ "description": "",
+ "equipGroup": "Accessory",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Accessory",
+  "subCategory": "Earrings",
+  "lowItemId": 1030000,
+  "highItemId": 1040000
+ },
+ "meta": {
+  "reqLevel": 20,
+  "price": 3000,
+  "tuc": 5,
+  "incMDD": 22,
+  "incEVA": 1
+ }
 }

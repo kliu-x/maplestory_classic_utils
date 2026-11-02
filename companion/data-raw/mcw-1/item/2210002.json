@@ -1,0 +1,16 @@
+{
+ "id": 2210002,
+ "name": "Orange Mushroom Invasion",
+ "description": "Someone's wish has turned you into an Orange Mushroom.\\n\\n#cRight-click on the buff icon to cancel the transformation.#",
+ "typeInfo": {
+  "overallCategory": "Use",
+  "category": "Consumable",
+  "subCategory": "Transformation",
+  "lowItemId": 2210000,
+  "highItemId": 2230000
+ },
+ "meta": {
+  "slotMax": 200,
+  "tradeBlock": true
+ }
+}

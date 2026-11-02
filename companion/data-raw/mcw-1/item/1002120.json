@@ -1,0 +1,25 @@
+{
+ "id": 1002120,
+ "name": "Great Brown Helmet",
+ "description": "",
+ "equipGroup": "Cap",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Hat",
+  "lowItemId": 1000000,
+  "highItemId": 1010000
+ },
+ "meta": {
+  "reqLevel": 35,
+  "price": 3000,
+  "reqSTR": 60,
+  "reqDEX": 25,
+  "reqJob": 1,
+  "tuc": 7,
+  "incDEX": 3,
+  "incMHP": 5,
+  "incPDD": 42,
+  "incACC": 3
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "id": 1061009,
+ "name": "Red Cloth Pants",
+ "description": "",
+ "equipGroup": "Pants",
+ "typeInfo": {
+  "overallCategory": "Equip",
+  "category": "Armor",
+  "subCategory": "Bottom",
+  "lowItemId": 1060000,
+  "highItemId": 1070000
+ },
+ "meta": {
+  "reqLevel": 10,
+  "price": 800,
+  "reqLUK": 10,
+  "reqJob": 8,
+  "tuc": 7,
+  "incSTR": 1,
+  "incPDD": 17
+ }
+}
