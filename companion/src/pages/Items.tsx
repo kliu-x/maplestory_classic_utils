@@ -3,7 +3,7 @@ import type { Item } from '../models/types';
 import { IMG, ITEMS, QUESTS, itemById } from '../data';
 import { JOBS } from '../data/rules';
 import { COST_LABEL, GEAR_SOURCES, TIER_LABEL } from '../data/gearGuide';
-import { BASE_STATS, STAT_LABEL, gearPicksFor, jobsOf, questsFor, sortedStats, statLine, usableBy } from '../data/itemInfo';
+import { BASE_STATS, STAT_LABEL, gearPicksFor, jobsOf, marketLink, questsFor, sortedStats, statLine, usableBy } from '../data/itemInfo';
 import { DROP_REPORTS } from '../data/dropReports';
 import { SHOP_PRICE_SOURCE, shopPriceFor } from '../data/shopPrices';
 import { Droppers } from '../components/QuestDetail';
@@ -69,7 +69,7 @@ export default function Items({ params }: PageProps) {
       <div className="table-wrap" style={{ marginTop: 12 }}>
         <table>
           <thead>
-            <tr><th>Item</th><th className="num">Lv</th><th>Stats / effect</th><th className="num">Shop price</th><th className="num">NPC buys for</th></tr>
+            <tr><th>Item</th><th className="num">Lv</th><th>Stats / effect</th><th className="num">Shop price</th><th className="num">Market</th><th className="num">NPC buys for</th></tr>
           </thead>
           <tbody>
             {list.slice(0, 300).map((i) => (
@@ -86,7 +86,8 @@ export default function Items({ params }: PageProps) {
                 </td>
                 <td className="num">{i.reqLevel ?? '—'}</td>
                 <td className="small">{statLine(i) || <span className="muted">{i.description?.slice(0, 80)}</span>}</td>
-                <td className="num">{shopPriceFor(i) ? fmt(shopPriceFor(i)!.price) : '—'}</td>
+                <td className={`num ${shopPriceFor(i)?.notOpen ? 'muted' : ''}`} title={shopPriceFor(i)?.notOpen ? 'Its sellers are not open in this release' : undefined}>{shopPriceFor(i) ? fmt(shopPriceFor(i)!.price) : '—'}</td>
+                <td className="num"><MarketLink item={i} /></td>
                 <td className="num">{i.sellPrice ? fmt(i.sellPrice) : '—'}</td>
               </tr>
             ))}
@@ -95,7 +96,7 @@ export default function Items({ params }: PageProps) {
         {list.length === 0 && <div className="empty">No items match.</div>}
       </div>
       <p className="small muted" style={{ marginTop: 8 }}>
-        Equipment up to Lv 50, usable items and every quest item. "Shop price" is what a shop charges (potions, food, ammo and scrolls, from MeowDB; — means we don't have it, not that no shop sells it). "NPC buys for" is what a shop pays you.
+        Equipment up to Lv 50, usable items and every quest item. "Shop price" is what a shop charges (from MeowDB; grey means its sellers aren't open yet, and — means we don't have it, not that no shop sells it). "Market" opens MeowDB's Free Market price; if it opens the price search, the name is already copied, so just paste it. "NPC buys for" is what a shop pays you.
       </p>
     </>
   );
@@ -132,6 +133,7 @@ function ItemDetail({ item: i }: { item: Item }) {
             {sortedStats(i.stats).map(([k, v]) => <div key={k} className="kv"><div className="k">{STAT_LABEL[k] ?? k}</div><div className="v">{v > 0 && !BASE_STATS.includes(k) ? '+' : ''}{v}</div></div>)}
             {i.attackSpeed != null && <div className="kv"><div className="k">Attack speed</div><div className="v">{i.attackSpeed}</div></div>}
             {i.slots != null && <div className="kv"><div className="k">Upgrade slots</div><div className="v">{i.slots}</div></div>}
+            <div className="kv"><div className="k">Market price</div><div className="v"><MarketLink item={i} label="See on MeowDB" /></div></div>
             <div className="kv"><div className="k">NPC buys it for</div><div className="v">{i.sellPrice ? `${fmt(i.sellPrice)} mesos` : '—'}</div></div>
           </div>
           {!isEquip && !i.stats && <p className="small muted">No stats: not equipment.</p>}
@@ -186,5 +188,32 @@ function ItemDetail({ item: i }: { item: Item }) {
         </div>
       </div>
     </div>
+  );
+}
+
+/** Opens MeowDB's market price. Without a direct page, copies the name for its search box. */
+function MarketLink({ item, label = 'Check' }: { item: Item; label?: string }) {
+  const { url, direct } = marketLink(item);
+  const copy = () => {
+    if (direct) return;
+    try {
+      void navigator.clipboard?.writeText(item.name.trim());
+    } catch {
+      // Clipboard blocked: the search still opens, the user types the name.
+    }
+  };
+  return (
+    <a
+      href={url}
+      target="_blank"
+      rel="noreferrer"
+      title={direct ? `${item.name} on MeowDB` : `Copies "${item.name.trim()}" and opens MeowDB's price search: paste it there`}
+      onClick={(e) => {
+        e.stopPropagation();
+        copy();
+      }}
+    >
+      {label} ↗
+    </a>
   );
 }

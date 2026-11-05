@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { Item } from '../models/types';
 import { GEAR_PICKS } from '../data/gearGuide';
-import { gearPicksFor, itemsForPick, jobsOf, pickNames, statLine, usableBy } from '../data/itemInfo';
+import { gearPicksFor, itemsForPick, jobsOf, marketLink, pickNames, statLine, usableBy } from '../data/itemInfo';
 import { ITEMS } from '../data';
 import { SHOP_PRICES, shopPriceFor } from '../data/shopPrices';
 
@@ -12,11 +12,18 @@ describe('item details', () => {
     const unagi = ITEMS.find((i) => i.name === 'Unagi')!;
     expect(unagi.description).toContain('Restores 1,000 HP');
     expect(shopPriceFor(unagi)?.price).toBe(1000);
+    expect(shopPriceFor({ name: 'Triple-Tipped Zamadar' })?.soldBy).toEqual(['Cutthroat Manny']);
+    expect(shopPriceFor({ name: 'Mithril Wand' })?.notOpen).toBe(true);
   });
 
   it('has an item in the game data for every shop price', () => {
     const priced = new Set(ITEMS.map((i) => shopPriceFor(i)?.name));
     expect(SHOP_PRICES.filter((p) => !priced.has(p.name)).map((p) => p.name)).toEqual([]);
+  });
+
+  it('links to MeowDB market prices, directly when we know its page', () => {
+    expect(marketLink(wand)).toEqual({ url: `https://meowdb.com/msclassic/item-db/${GEAR_PICKS.find((p) => p.item === 'Ice Wand')!.meowdbId}`, direct: true });
+    expect(marketLink({ id: 2022003, name: 'Unagi' })).toEqual({ url: 'https://meowdb.com/msclassic/price-check', direct: false });
   });
 
   it('summarises stats like the tooltip', () => {

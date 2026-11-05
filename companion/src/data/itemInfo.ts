@@ -53,3 +53,14 @@ export function questsFor(itemId: number, quests: Quest[]) {
 }
 
 export type { StatKey };
+
+/**
+ * Where to check an item's Free Market price on MeowDB. Its item pages use MeowDB's own
+ * numbers, which we only know for gear-guide items; anything else goes to its price search.
+ */
+export function marketLink(item: Item): { url: string; direct: boolean } {
+  const id = gearPicksFor(item).find((p) => p.meowdbId != null)?.meowdbId;
+  return id != null
+    ? { url: `https://meowdb.com/msclassic/item-db/${id}`, direct: true }
+    : { url: 'https://meowdb.com/msclassic/price-check', direct: false };
+}

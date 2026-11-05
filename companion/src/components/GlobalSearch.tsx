@@ -1,9 +1,10 @@
 import { useMemo, useRef, useState } from 'react';
-import { MAPS, MONSTERS, NPCS, QUESTS, SKILLS, mapById, questSearchText } from '../data';
+import { ITEMS, MAPS, MONSTERS, NPCS, QUESTS, SKILLS, mapById, questSearchText } from '../data';
+import { shopPriceFor } from '../data/shopPrices';
 import { go, type PageId } from '../router';
 
 interface Hit {
-  kind: 'Monster' | 'Map' | 'Skill' | 'Quest' | 'NPC';
+  kind: 'Monster' | 'Item' | 'Map' | 'Skill' | 'Quest' | 'NPC';
   label: string;
   sub: string;
   page: PageId;
@@ -13,6 +14,11 @@ interface Hit {
 // Prebuilt lower-case index: instant, no network.
 const INDEX: (Hit & { key: string })[] = [
   ...MONSTERS.map((m) => ({ kind: 'Monster' as const, label: m.name, sub: `Lv ${m.level} · ${m.hp.toLocaleString()} HP · ${m.exp} EXP`, page: 'monsters' as const, params: { id: m.id }, key: m.name.toLowerCase() })),
+  ...ITEMS.map((i) => {
+    const shop = shopPriceFor(i);
+    const sub = [i.subCategory ?? i.category, i.reqLevel ? `Lv ${i.reqLevel}` : '', shop ? `shop ${shop.price.toLocaleString()}` : '', i.sellPrice ? `NPC buys ${i.sellPrice.toLocaleString()}` : ''];
+    return { kind: 'Item' as const, label: i.name.trim(), sub: sub.filter(Boolean).join(' · '), page: 'items' as const, params: { id: i.id }, key: i.name.trim().toLowerCase() };
+  }),
   ...MAPS.map((m) => ({ kind: 'Map' as const, label: m.name, sub: `${m.street}${m.region ? ' · ' + m.region : ''}`, page: 'maps' as const, params: { id: m.id }, key: `${m.name} ${m.street}`.toLowerCase() })),
   ...SKILLS.filter((s) => !s.hidden).map((s) => ({ kind: 'Skill' as const, label: s.name, sub: `Max Lv ${s.masterLevel} · job ${s.jobId}`, page: 'skills' as const, params: { skill: s.id }, key: s.name.toLowerCase() })),
   // One hit per map an NPC stands on; opens that map with the NPC pinned.
@@ -52,7 +58,7 @@ export function GlobalSearch() {
       <input
         ref={box}
         type="search"
-        placeholder="Search NPCs, monsters, maps, quests…"
+        placeholder="Search items, NPCs, monsters, maps, quests…"
         value={q}
         onChange={(e) => {
           setQ(e.target.value);
