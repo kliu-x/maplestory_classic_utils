@@ -48,6 +48,12 @@ export const SOURCES = {
     retrieved_at: R,
     verification_status: 'community_reported',
   },
+  meowFp: {
+    source_url: 'https://meowdb.com/msclassic/guides/fp-wizard-class-guide',
+    source_title: 'MeowDB: F/P Wizard build and leveling guide, Lv 30-70 (updated 2026-11-01)',
+    retrieved_at: '2026-11-04',
+    verification_status: 'community_reported',
+  },
   meowDamage: {
     source_url: 'https://meowdb.com/msclassic/guides/explaining-the-damage-formula',
     source_title: 'MeowDB: Explaining the damage formula',
