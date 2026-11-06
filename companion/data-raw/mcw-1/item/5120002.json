@@ -1,0 +1,15 @@
+{
+ "id": 5120002,
+ "name": "Soap Bubbles",
+ "description": "Rains bubbles on the map where your character is and displays a message of your choosing for 30 seconds.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Messenger and Social",
+  "subCategory": "Weather Effect",
+  "lowItemId": 5120000,
+  "highItemId": 5130000
+ },
+ "meta": {
+  "cash": true
+ }
+}

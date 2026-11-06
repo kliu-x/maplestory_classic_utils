@@ -1,0 +1,15 @@
+{
+ "id": 5150000,
+ "name": "Mystery Hair Coupon",
+ "description": "Take this to the #cHair Salon in Town# to change your hair style #crandomly#. (One-Time Use)",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Appearance",
+  "subCategory": "Hair Coupon",
+  "lowItemId": 5150000,
+  "highItemId": 5151000
+ },
+ "meta": {
+  "cash": true
+ }
+}

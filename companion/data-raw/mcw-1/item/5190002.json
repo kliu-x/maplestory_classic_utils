@@ -1,0 +1,15 @@
+{
+ "id": 5190002,
+ "name": "Auto Move Skill",
+ "description": "Adds a skill that allows your pet to automatically pick up nearby items and mesos without you having to move.\\n#cCan be used on pets with Meso Magnet or Item Pouch.#",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Pet",
+  "subCategory": "Pet Use",
+  "lowItemId": 5170000,
+  "highItemId": 5200000
+ },
+ "meta": {
+  "cash": true
+ }
+}

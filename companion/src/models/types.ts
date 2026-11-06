@@ -153,6 +153,8 @@ export interface Item {
   stats?: Record<string, number>;
   questItem?: boolean;
   untradeable?: boolean;
+  /** Sold in the Cash Shop (shown on the Cash Shop page, not Items). */
+  cash?: boolean;
 }
 
 // ---------- Jobs ----------

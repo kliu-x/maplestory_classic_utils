@@ -1,0 +1,15 @@
+{
+ "id": 5222200,
+ "name": "Signature Style Collection",
+ "description": "A collection of special outfit items. #cDouble-click# to obtain #c1 item# according to set probability rates.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Random Reward",
+  "subCategory": "Surprise Box",
+  "lowItemId": 5222000,
+  "highItemId": 5223000
+ },
+ "meta": {
+  "cash": true
+ }
+}

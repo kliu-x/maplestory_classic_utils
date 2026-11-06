@@ -1,0 +1,15 @@
+{
+ "id": 5152000,
+ "name": "Mystery Face Coupon",
+ "description": "Take this to #cPlastic Surgery in Town# to change your face #crandomly#. (One-Time Use)",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Appearance",
+  "subCategory": "Face Coupon",
+  "lowItemId": 5152000,
+  "highItemId": 5152100
+ },
+ "meta": {
+  "cash": true
+ }
+}

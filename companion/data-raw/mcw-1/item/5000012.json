@@ -1,0 +1,15 @@
+{
+ "id": 5000012,
+ "name": "Monkey",
+ "description": "Very charming and very intuitive, but not as obedient as some of the others.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Free Market",
+  "subCategory": "Pet",
+  "lowItemId": 5000000,
+  "highItemId": 5010000
+ },
+ "meta": {
+  "cash": true
+ }
+}

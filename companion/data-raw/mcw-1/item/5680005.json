@@ -1,0 +1,15 @@
+{
+ "id": 5680005,
+ "name": "Fern Outfit Set Coupon",
+ "description": "#cDouble-click# to receive a #cFern Outfit Set Coupon#.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Miscellaneous",
+  "subCategory": "Other",
+  "lowItemId": 5680000,
+  "highItemId": 5700000
+ },
+ "meta": {
+  "cash": true
+ }
+}

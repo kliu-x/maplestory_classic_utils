@@ -1,0 +1,15 @@
+{
+ "id": 5222100,
+ "name": "Aurora Mystery Fashion Crate",
+ "description": "This box grants one random Deco item. The box contains only permanent items and can be traded to other players.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Random Reward",
+  "subCategory": "Surprise Box",
+  "lowItemId": 5222000,
+  "highItemId": 5223000
+ },
+ "meta": {
+  "cash": true
+ }
+}

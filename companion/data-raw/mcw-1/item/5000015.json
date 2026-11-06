@@ -1,0 +1,15 @@
+{
+ "id": 5000015,
+ "name": "Dasher",
+ "description": "They are smart and obedient by nature, picking up commands faster than other pets, but they also can get hungry in a hurry.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Free Market",
+  "subCategory": "Pet",
+  "lowItemId": 5000000,
+  "highItemId": 5010000
+ },
+ "meta": {
+  "cash": true
+ }
+}

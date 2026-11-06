@@ -1,0 +1,15 @@
+{
+ "id": 5120007,
+ "name": "Sprinkled Candy",
+ "description": "Rains a sweet shower of candy sprinkles all over the map and displays a message of your choosing for 30 seconds.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Messenger and Social",
+  "subCategory": "Weather Effect",
+  "lowItemId": 5120000,
+  "highItemId": 5130000
+ },
+ "meta": {
+  "cash": true
+ }
+}

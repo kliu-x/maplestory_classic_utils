@@ -1,0 +1,15 @@
+{
+ "id": 5190000,
+ "name": "Auto HP Potion Skill",
+ "description": "Allows your pet to use your HP potions on you when your HP falls below the threshold that you set. \\n#cCan be used on all pets that do not have this skill.#",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Pet",
+  "subCategory": "Pet Use",
+  "lowItemId": 5170000,
+  "highItemId": 5200000
+ },
+ "meta": {
+  "cash": true
+ }
+}

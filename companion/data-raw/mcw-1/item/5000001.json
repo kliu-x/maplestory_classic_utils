@@ -1,0 +1,15 @@
+{
+ "id": 5000001,
+ "name": "Brown Puppy",
+ "description": "They are outgoing and active in nature, so they can't sit still for a period of time and get hungry often. They are very obedient to their owners.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Free Market",
+  "subCategory": "Pet",
+  "lowItemId": 5000000,
+  "highItemId": 5010000
+ },
+ "meta": {
+  "cash": true
+ }
+}

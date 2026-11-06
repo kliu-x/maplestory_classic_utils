@@ -1,0 +1,15 @@
+{
+ "id": 5152100,
+ "name": "Signature Eye Color Coupon",
+ "description": "Take this to #cPlastic Surgery in Town# to change your eyes to a color of #cyour choice#. (One-Time Use)\\nUsing this coupon will change your eye color to #cBlack, Blue, Red, Hazel, Sapphire, Violet, or Amethyst#.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Appearance",
+  "subCategory": "Cosmetic Lens",
+  "lowItemId": 5152100,
+  "highItemId": 5152200
+ },
+ "meta": {
+  "cash": true
+ }
+}

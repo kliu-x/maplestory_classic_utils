@@ -1,0 +1,15 @@
+{
+ "id": 5000004,
+ "name": "Black Kitty",
+ "description": "They are quiet and gentle in nature, so they don't get hungry easily. They don't seem to be too obedient to their owners.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Free Market",
+  "subCategory": "Pet",
+  "lowItemId": 5000000,
+  "highItemId": 5010000
+ },
+ "meta": {
+  "cash": true
+ }
+}

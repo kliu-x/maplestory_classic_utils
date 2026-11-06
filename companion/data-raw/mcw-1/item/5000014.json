@@ -1,0 +1,15 @@
+{
+ "id": 5000014,
+ "name": "Elephant",
+ "description": "Very outgoing and mature; doesn't need to be fed all the time. An intelligent pet that easily understands the commands from the master.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Free Market",
+  "subCategory": "Pet",
+  "lowItemId": 5000000,
+  "highItemId": 5010000
+ },
+ "meta": {
+  "cash": true
+ }
+}

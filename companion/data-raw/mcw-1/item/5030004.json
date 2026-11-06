@@ -1,0 +1,15 @@
+{
+ "id": 5030004,
+ "name": "Granny's Food Stand",
+ "description": "Set up this special store in the Free Market, and a Granny, working as a Hired Merchant, will sell items for you, even when you're not logged in to the game. You can list up to 12 items at once, and the store will automatically shut down 24 hours after opening, requiring you to reopen it.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Free Market",
+  "subCategory": "Hired Merchant",
+  "lowItemId": 5030000,
+  "highItemId": 5040000
+ },
+ "meta": {
+  "cash": true
+ }
+}

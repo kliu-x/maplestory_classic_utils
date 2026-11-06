@@ -1,10 +1,11 @@
 import { useMemo, useRef, useState } from 'react';
 import { ITEMS, MAPS, MONSTERS, NPCS, QUESTS, SKILLS, mapById, questSearchText } from '../data';
 import { shopPriceFor } from '../data/shopPrices';
+import { CRATES, cashPriceFor, saleState, todayIso } from '../data/cashShop';
 import { go, type PageId } from '../router';
 
 interface Hit {
-  kind: 'Monster' | 'Item' | 'Map' | 'Skill' | 'Quest' | 'NPC';
+  kind: 'Monster' | 'Item' | 'Cash' | 'Map' | 'Skill' | 'Quest' | 'NPC';
   label: string;
   sub: string;
   page: PageId;
@@ -14,7 +15,21 @@ interface Hit {
 // Prebuilt lower-case index: instant, no network.
 const INDEX: (Hit & { key: string })[] = [
   ...MONSTERS.map((m) => ({ kind: 'Monster' as const, label: m.name, sub: `Lv ${m.level} · ${m.hp.toLocaleString()} HP · ${m.exp} EXP`, page: 'monsters' as const, params: { id: m.id }, key: m.name.toLowerCase() })),
-  ...ITEMS.map((i) => {
+  ...ITEMS.filter((i) => i.cash).map((i) => {
+    const price = cashPriceFor(i);
+    const sub = [i.subCategory ?? i.category, price ? `${price.nx.toLocaleString()} NX` : ''];
+    return { kind: 'Cash' as const, label: i.name.trim(), sub: sub.filter(Boolean).join(' · '), page: 'cash' as const, params: { id: i.id }, key: i.name.trim().toLowerCase() };
+  }),
+  // Mystery Fashion Crate pieces: one hit per piece, pointing at the crate it's in now (or was last).
+  ...[...new Map(CRATES.flatMap((c) => c.rewards.map((r) => [r.name.toLowerCase(), { c, r }] as const)).reverse()).values()].map(({ c, r }) => ({
+    kind: 'Cash' as const,
+    label: r.name,
+    sub: `${c.label} · ${r.rate}%${saleState(c, todayIso()) === 'on sale' ? ' · on sale' : ''}`,
+    page: 'cash' as const,
+    params: { crate: c.key, piece: r.name },
+    key: r.name.toLowerCase(),
+  })),
+  ...ITEMS.filter((i) => !i.cash).map((i) => {
     const shop = shopPriceFor(i);
     const sub = [i.subCategory ?? i.category, i.reqLevel ? `Lv ${i.reqLevel}` : '', shop ? `shop ${shop.price.toLocaleString()}` : '', i.sellPrice ? `NPC buys ${i.sellPrice.toLocaleString()}` : ''];
     return { kind: 'Item' as const, label: i.name.trim(), sub: sub.filter(Boolean).join(' · '), page: 'items' as const, params: { id: i.id }, key: i.name.trim().toLowerCase() };

@@ -1,0 +1,16 @@
+{
+ "id": 5170000,
+ "name": "Pet Name Tag",
+ "description": "Use this item to name your pet. If you say its name before giving it a command, your pet will respond much better to your orders. \\nExample: Lucky, sit! \\r\\nOnly #cletters and numbers# can be used in names, and #conly 1 blank space is allowed in the text of the name.#",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Pet",
+  "subCategory": "Pet Use",
+  "lowItemId": 5170000,
+  "highItemId": 5200000
+ },
+ "meta": {
+  "cash": true,
+  "slotMax": 1
+ }
+}

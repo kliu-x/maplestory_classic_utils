@@ -1,0 +1,15 @@
+{
+ "id": 5151000,
+ "name": "Mystery Hair Color Coupon",
+ "description": "Take this to the #cHair Salon in Town# to change your hair color #crandomly#. (One-Time Use)",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Appearance",
+  "subCategory": "Hair Color Coupon",
+  "lowItemId": 5151000,
+  "highItemId": 5152000
+ },
+ "meta": {
+  "cash": true
+ }
+}

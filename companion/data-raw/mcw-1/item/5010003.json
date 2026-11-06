@@ -1,0 +1,15 @@
+{
+ "id": 5010003,
+ "name": "Little Devil",
+ "description": "A special effect that shows Lilly the cute little devil floating next to you. Double-click on the icon or designate a Hotkey via KeyConfig to toggle the effect on/off.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Appearance",
+  "subCategory": "Effect",
+  "lowItemId": 5010000,
+  "highItemId": 5020000
+ },
+ "meta": {
+  "cash": true
+ }
+}

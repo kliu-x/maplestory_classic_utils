@@ -1,0 +1,15 @@
+{
+ "id": 5151201,
+ "name": "Mystery Mix Dye Coupon",
+ "description": "Double-click and use to get a hair color mixed from #c2 random colors# out of 8. #cThese items are used in the order that they are stored in your Cash tab.#",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Appearance",
+  "subCategory": "Hair Color Coupon",
+  "lowItemId": 5151000,
+  "highItemId": 5152000
+ },
+ "meta": {
+  "cash": true
+ }
+}

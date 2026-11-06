@@ -1,0 +1,15 @@
+{
+ "id": 5130000,
+ "name": "Safety Charm",
+ "description": "#cIt does not let the user lose EXP points after death#, as long as it's in possession. 100% of your HP and MP will be recovered when you are revived. This item is consumed upon use.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Character Modification",
+  "subCategory": "Protection",
+  "lowItemId": 5130000,
+  "highItemId": 5140000
+ },
+ "meta": {
+  "cash": true
+ }
+}

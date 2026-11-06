@@ -1,0 +1,15 @@
+{
+ "id": 5782004,
+ "name": "Weapon Effect Prism",
+ "description": "Double-click to #cdye a decoration weapon item's effect# once.\\n\\nThe #cweapon's dyes# will be maintained upon use; only #cnormal and special effects# will be dyed.\\n\\nSelect #cone color from the provided color series# to adjust its #chue, chroma, and brightness#. If it is used multiple times, the item is dyed based on the #coriginal color# of the target effect.\\n\\nCan only be used on #cuntradable items that are not time-restricted.# Can't be used on #citems that can't use Prisms#.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Pet",
+  "subCategory": "Pet Appearance",
+  "lowItemId": 5780000,
+  "highItemId": 5790000
+ },
+ "meta": {
+  "cash": true
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "id": 5000020,
+ "name": "Black Bunny",
+ "description": "They are well-behaved and quiet, so they don't need to be fed more than the usual amount. They are smart and obedient, but also stubborn.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Free Market",
+  "subCategory": "Pet",
+  "lowItemId": 5000000,
+  "highItemId": 5010000
+ },
+ "meta": {
+  "cash": true
+ }
+}

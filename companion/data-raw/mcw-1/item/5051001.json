@@ -1,0 +1,15 @@
+{
+ "id": 5051001,
+ "name": "SP Reset Scroll",
+ "description": "When used, #cresets all skills except for beginner skills#.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Character Modification",
+  "subCategory": "SP/AP Modification",
+  "lowItemId": 5050000,
+  "highItemId": 5060000
+ },
+ "meta": {
+  "cash": true
+ }
+}

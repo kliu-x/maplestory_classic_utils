@@ -1,0 +1,15 @@
+{
+ "id": 5000030,
+ "name": "Toucan",
+ "description": "A trustworthy pet who is equally quick-witted. Unlike its masculine appearance, it is prone to insecurity and shyness.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Free Market",
+  "subCategory": "Pet",
+  "lowItemId": 5000000,
+  "highItemId": 5010000
+ },
+ "meta": {
+  "cash": true
+ }
+}

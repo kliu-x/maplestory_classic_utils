@@ -1,0 +1,15 @@
+{
+ "id": 5152301,
+ "name": "Mystery Colorblend Eye Color Coupon",
+ "description": "Double-click to get an eye color mixed from 2 random colors out of 8.#c Caution: Applied\\nimmediately upon use.#",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Appearance",
+  "subCategory": "Cosmetic Lens",
+  "lowItemId": 5152300,
+  "highItemId": 5152400
+ },
+ "meta": {
+  "cash": true
+ }
+}

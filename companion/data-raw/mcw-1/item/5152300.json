@@ -1,0 +1,15 @@
+{
+ "id": 5152300,
+ "name": "Custom Eye Color Coupon",
+ "description": "Use this special coupon to change your eye color. Choose a base color and an additional color to mix in any ratio you want to create a truly unique look!\\n\\nTake this to the #cPlastic Surgery in Town# to use.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Appearance",
+  "subCategory": "Cosmetic Lens",
+  "lowItemId": 5152300,
+  "highItemId": 5152400
+ },
+ "meta": {
+  "cash": true
+ }
+}

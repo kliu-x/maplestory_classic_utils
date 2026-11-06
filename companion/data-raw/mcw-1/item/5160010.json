@@ -1,0 +1,15 @@
+{
+ "id": 5160010,
+ "name": "Whoa Whoa",
+ "description": "In the Keyboard Shortcuts window, assign this expression to the key of your choice. Press the button and watch your character display the look of being flustered.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Appearance",
+  "subCategory": "Facial Expression",
+  "lowItemId": 5160000,
+  "highItemId": 5170000
+ },
+ "meta": {
+  "cash": true
+ }
+}

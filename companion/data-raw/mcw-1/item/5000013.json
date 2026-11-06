@@ -1,0 +1,15 @@
+{
+ "id": 5000013,
+ "name": "White Tiger",
+ "description": "They are very gentle and obedient in nature, easily becoming friendly with their owner, which in turn speeds up the level-up process.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Free Market",
+  "subCategory": "Pet",
+  "lowItemId": 5000000,
+  "highItemId": 5010000
+ },
+ "meta": {
+  "cash": true
+ }
+}

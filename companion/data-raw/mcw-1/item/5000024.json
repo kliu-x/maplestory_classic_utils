@@ -1,0 +1,15 @@
+{
+ "id": 5000024,
+ "name": "Snowman",
+ "description": "An adorable Snowman that is also very active. May seem a little rude at times, but the more it is loved, the more affable it becomes.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Free Market",
+  "subCategory": "Pet",
+  "lowItemId": 5000000,
+  "highItemId": 5010000
+ },
+ "meta": {
+  "cash": true
+ }
+}

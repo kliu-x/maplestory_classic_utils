@@ -1,0 +1,16 @@
+{
+ "id": 5070030,
+ "name": "Megaphone",
+ "description": "This megaphone allows you to shout to everyone in the channel your character is on. Only available for characters that are over Level 15.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Messenger and Social",
+  "subCategory": "Messenger",
+  "lowItemId": 5070000,
+  "highItemId": 5080000
+ },
+ "meta": {
+  "cash": true,
+  "reqLevel": 15
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "id": 5190003,
+ "name": "Expanded Auto Move Skill",
+ "description": "Triples your pet's auto move distance.\\n#cCan only be used on pets with the Auto Move Skill. Cannot be stacked.#",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Pet",
+  "subCategory": "Pet Use",
+  "lowItemId": 5170000,
+  "highItemId": 5200000
+ },
+ "meta": {
+  "cash": true
+ }
+}

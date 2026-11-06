@@ -1,0 +1,15 @@
+{
+ "id": 5151200,
+ "name": "Custom Hair Dye Coupon",
+ "description": "A special dye coupon that allows you to mix one of the 8 base colors with one of 8 mix colors in any ratio you want, and dye your hair a beautiful, unique hue. The new mixed dye color will remain even if you acquire a new hairstyle.\\n\\nTake this to the #cHair Salon in Town# to use.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Appearance",
+  "subCategory": "Hair Color Coupon",
+  "lowItemId": 5151000,
+  "highItemId": 5152000
+ },
+ "meta": {
+  "cash": true
+ }
+}

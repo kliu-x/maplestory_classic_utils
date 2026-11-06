@@ -1,0 +1,15 @@
+{
+ "id": 5782001,
+ "name": "Palette Cleanser",
+ "description": "Absorbs the color of the item changed with a Coloring Palette.\\n\\nDouble-click to #crevert the color \\nof the item changed with a \\nColoring Palette to the original \\ncolor# once.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Pet",
+  "subCategory": "Pet Appearance",
+  "lowItemId": 5780000,
+  "highItemId": 5790000
+ },
+ "meta": {
+  "cash": true
+ }
+}

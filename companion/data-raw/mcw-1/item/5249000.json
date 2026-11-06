@@ -1,0 +1,16 @@
+{
+ "id": 5249000,
+ "name": "Premium Pet Food",
+ "description": "Use this on a pet to restore its Fullness and increase its Closeness by 100.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Pet",
+  "subCategory": "Pet Food",
+  "lowItemId": 5240000,
+  "highItemId": 5250000
+ },
+ "meta": {
+  "cash": true,
+  "slotMax": 200
+ }
+}

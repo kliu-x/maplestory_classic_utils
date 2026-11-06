@@ -8,6 +8,7 @@ export const PAGES = [
   { id: 'skills', label: 'Skills & AP', ico: '✦' },
   { id: 'gear', label: 'Gear', ico: '⛨' },
   { id: 'items', label: 'Items', ico: '◆' },
+  { id: 'cash', label: 'Cash Shop', ico: '✧' },
   { id: 'quests', label: 'Quests', ico: '✎' },
   { id: 'maps', label: 'Maps', ico: '⌖' },
   { id: 'pastas', label: 'Copy Pastas', ico: '✉' },

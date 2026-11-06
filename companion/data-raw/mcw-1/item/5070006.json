@@ -1,0 +1,16 @@
+{
+ "id": 5070006,
+ "name": "Item Megaphone",
+ "description": "Use this megaphone to broadcast to everyone in your World about an item that may be for sale. Only available for characters that are over Level 10.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Messenger and Social",
+  "subCategory": "Messenger",
+  "lowItemId": 5070000,
+  "highItemId": 5080000
+ },
+ "meta": {
+  "cash": true,
+  "reqLevel": 10
+ }
+}

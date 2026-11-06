@@ -1,0 +1,16 @@
+{
+ "id": 5450000,
+ "name": "Portable Storage",
+ "description": "Access the #Storage Keeper# from almost anywhere! Drop off that precious loot without having to leave the field.\\n#Unlimited use# for 30 days.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Time Saver",
+  "subCategory": "Item Store",
+  "lowItemId": 5450000,
+  "highItemId": 5451000
+ },
+ "meta": {
+  "cash": true,
+  "reqLevel": 10
+ }
+}

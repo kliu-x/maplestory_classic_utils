@@ -3,10 +3,11 @@ import type { Item } from '../models/types';
 import { IMG, ITEMS, QUESTS, itemById } from '../data';
 import { JOBS } from '../data/rules';
 import { COST_LABEL, GEAR_SOURCES, TIER_LABEL } from '../data/gearGuide';
-import { BASE_STATS, STAT_LABEL, gearPicksFor, jobsOf, marketLink, questsFor, sortedStats, statLine, usableBy } from '../data/itemInfo';
+import { BASE_STATS, STAT_LABEL, gearPicksFor, jobsOf, questsFor, sortedStats, statLine, usableBy } from '../data/itemInfo';
 import { DROP_REPORTS } from '../data/dropReports';
 import { SHOP_PRICE_SOURCE, shopPriceFor } from '../data/shopPrices';
 import { Droppers } from '../components/QuestDetail';
+import { MarketLink } from '../components/MarketLink';
 import { fmt, NumField, SourceBadge, StatusPill } from '../components/ui';
 import { href } from '../router';
 import { useActive, type PageProps } from './shared';
@@ -27,7 +28,7 @@ export default function Items({ params }: PageProps) {
   const list = useMemo(() => {
     const t = q.trim().toLowerCase();
     return ITEMS.filter(
-      (i) => (t ? i.name.toLowerCase().includes(t) : kindOf(i) === kind && (!family || usableBy(i, family)) && (i.reqLevel ?? 0) <= maxLv),
+      (i) => !i.cash && (t ? i.name.toLowerCase().includes(t) : kindOf(i) === kind && (!family || usableBy(i, family)) && (i.reqLevel ?? 0) <= maxLv),
     ).sort((a, b) => (b.reqLevel ?? 0) - (a.reqLevel ?? 0) || a.name.localeCompare(b.name));
   }, [q, kind, family, maxLv]);
 
@@ -188,32 +189,5 @@ function ItemDetail({ item: i }: { item: Item }) {
         </div>
       </div>
     </div>
-  );
-}
-
-/** Opens MeowDB's market price. Without a direct page, copies the name for its search box. */
-function MarketLink({ item, label = 'Check' }: { item: Item; label?: string }) {
-  const { url, direct } = marketLink(item);
-  const copy = () => {
-    if (direct) return;
-    try {
-      void navigator.clipboard?.writeText(item.name.trim());
-    } catch {
-      // Clipboard blocked: the search still opens, the user types the name.
-    }
-  };
-  return (
-    <a
-      href={url}
-      target="_blank"
-      rel="noreferrer"
-      title={direct ? `${item.name} on MeowDB` : `Copies "${item.name.trim()}" and opens MeowDB's price search: paste it there`}
-      onClick={(e) => {
-        e.stopPropagation();
-        copy();
-      }}
-    >
-      {label} ↗
-    </a>
   );
 }

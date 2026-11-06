@@ -1,0 +1,16 @@
+{
+ "id": 5050100,
+ "name": "AP Reset Scroll",
+ "description": "#cResets all stats#, including AP invested in HP/MP.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Character Modification",
+  "subCategory": "SP/AP Modification",
+  "lowItemId": 5050000,
+  "highItemId": 5060000
+ },
+ "meta": {
+  "cash": true,
+  "reqLevel": 10
+ }
+}

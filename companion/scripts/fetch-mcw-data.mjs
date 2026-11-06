@@ -7,7 +7,7 @@
 //
 // Polite by design: one request at a time, >=300 ms apart, retries with backoff.
 // Raw responses are trimmed (sprites/footholds dropped) before saving. Kinds: mobs, maps,
-// skillbooks, quests, items (quest items, usable items, equipment up to Lv 50, with stats), npcs.
+// skillbooks, quests, items (quest items, usable items, Cash Shop items, equipment up to Lv 50, with stats), npcs.
 import { mkdir, readFile, writeFile, access } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -138,6 +138,8 @@ async function main() {
   for (const x of Array.isArray(itemList) ? itemList : []) if (x.type?.[0] === 'Equip' && x.type[1] !== 'Character' && !x.cash && (x.reqLevel ?? 0) <= EQUIP_MAX_LEVEL) itemIds.add(x.id);
   // ...and everything usable that isn't cash shop (potions, food, scrolls, stars, arrows).
   for (const x of Array.isArray(itemList) ? itemList : []) if (x.type?.[0] === 'Use' && !x.cash) itemIds.add(x.id);
+  // ...and the Cash Shop's own items (coupons, megaphones, pets, crates), not the cosmetic equips.
+  for (const x of Array.isArray(itemList) ? itemList : []) if (x.type?.[0] === 'Cash') itemIds.add(x.id);
   console.log(`  items: ${itemIds.size}`);
   for (const id of itemIds) await cached(`item/${id}.json`, `/item/${id}`, trimItem);
 

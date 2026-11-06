@@ -1,0 +1,15 @@
+{
+ "id": 5222000,
+ "name": "Mystery Fashion Crate",
+ "description": "This box grants one random Equip item. The box contains only permanent items and can be traded to other players. \\n\\n#cIf you get something you don't want, you can sell it to other players or right-click to exchange it for Aurora Stamps.\\nCollect Aurora Stamps to exchange them for special items.#",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Random Reward",
+  "subCategory": "Surprise Box",
+  "lowItemId": 5222000,
+  "highItemId": 5223000
+ },
+ "meta": {
+  "cash": true
+ }
+}

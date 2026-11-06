@@ -1,0 +1,15 @@
+{
+ "id": 5782002,
+ "name": "Mystery Palette",
+ "description": "A #cMysterious Palette # imbued with a mysterious color-changing magic.\\nDouble-click to #crandomly \\nchange the color of the\\ndecoration item# once.\\n\\nThe Palette can only be used on certain items that\\n#ccan be dyed#, and #cuntradable\\nitems that are not\\ntime-restricted#. Some special effects will retain their original color even if the Palette is used.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Pet",
+  "subCategory": "Pet Appearance",
+  "lowItemId": 5780000,
+  "highItemId": 5790000
+ },
+ "meta": {
+  "cash": true
+ }
+}

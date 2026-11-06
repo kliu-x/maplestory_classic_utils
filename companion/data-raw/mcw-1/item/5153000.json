@@ -1,0 +1,15 @@
+{
+ "id": 5153000,
+ "name": "Signature Skin Color Coupon",
+ "description": "Take this to #cHenesys Skin-Care# to change your skin to a color of #cyour choice#. (One-Time Use)",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Appearance",
+  "subCategory": "Skin Coupon",
+  "lowItemId": 5153000,
+  "highItemId": 5154000
+ },
+ "meta": {
+  "cash": true
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "id": 5140001,
+ "name": "Summer Store Permit",
+ "description": "This special-edition coupon allows you to open a sky-blue tree store in which you can list up to 18 items at once. Can be used in fields or the Free Market. Available for a limited time only.\\r\\nIf you are attacked or killed by a monster, the store will close.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Free Market",
+  "subCategory": "Store Permit",
+  "lowItemId": 5140000,
+  "highItemId": 5150000
+ },
+ "meta": {
+  "cash": true
+ }
+}

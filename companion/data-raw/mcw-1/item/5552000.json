@@ -1,0 +1,15 @@
+{
+ "id": 5552000,
+ "name": "Beauty Album Face Slot Film",
+ "description": "Using this coupon will unlock 1 face slot in the Beauty Album. You can have a maximum of 24 slots (currently: %d slots).\\r\\nYou must double-click and use the coupon to expand. Any unused coupons are not included in the number of currently expanded slots.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Accessory",
+  "subCategory": "Pendant",
+  "lowItemId": 5550000,
+  "highItemId": 5560000
+ },
+ "meta": {
+  "cash": true
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "id": 5680001,
+ "name": "Selective 5-slot Coupon",
+ "description": "#cDouble-click# to expand one of your tabs #c(Equip, Use, Set-up, Etc)# by #c5 slots#.\\n#cEach tab can be expanded up to a total of 150 slots.#",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Miscellaneous",
+  "subCategory": "Other",
+  "lowItemId": 5680000,
+  "highItemId": 5700000
+ },
+ "meta": {
+  "cash": true
+ }
+}

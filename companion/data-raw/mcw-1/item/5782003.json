@@ -1,0 +1,15 @@
+{
+ "id": 5782003,
+ "name": "Coloring Prism Pro",
+ "description": "Double-click to #cdye a decoration item# once.\\n\\nSelect #cone color from the provided color series# to adjust its #chue, chroma, and brightness#. If it is used multiple times, the item is dyed based on the #coriginal color# of the target item.\\n\\nCan only be used on #cuntradable items that are not time-restricted.# Can't be used on #cRings, Pet Equipment, or items that can't use Prisms#.\\n\\n#cSpecial effects# will not be dyed.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Pet",
+  "subCategory": "Pet Appearance",
+  "lowItemId": 5780000,
+  "highItemId": 5790000
+ },
+ "meta": {
+  "cash": true
+ }
+}

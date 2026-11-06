@@ -1,0 +1,1079 @@
+[
+ {
+  "key": "mystery-nov4",
+  "name": "Mystery Fashion Crate",
+  "itemId": 5222000,
+  "label": "Mystery Fashion Crate (from Nov 4)",
+  "price": {
+   "currency": "NX",
+   "one": 3500,
+   "bundle": {
+    "count": 11,
+    "price": 35000
+   }
+  },
+  "sale": {
+   "from": "2026-11-04",
+   "until": "2026-11-18",
+   "untilNote": "the Nov 18 maintenance"
+  },
+  "rewards": [
+   {
+    "name": "Bandage Strip",
+    "rate": 1.0
+   },
+   {
+    "name": "Bunny Slippers",
+    "rate": 1.0
+   },
+   {
+    "name": "Cuddle Bear",
+    "rate": 1.0
+   },
+   {
+    "name": "Green Sports Goggles",
+    "rate": 1.0
+   },
+   {
+    "name": "Medical Eye Patch",
+    "rate": 1.0
+   },
+   {
+    "name": "Old School Blazer",
+    "rate": 1.0
+   },
+   {
+    "name": "Old School Uniform Pants",
+    "rate": 1.0
+   },
+   {
+    "name": "Pillow",
+    "rate": 1.0
+   },
+   {
+    "name": "Pink Rabbit Puppet",
+    "rate": 1.0
+   },
+   {
+    "name": "Superstar Headphones",
+    "rate": 1.0
+   },
+   {
+    "name": "Teddy Bear",
+    "rate": 1.0
+   },
+   {
+    "name": "Teddy Bear Chat Ring",
+    "rate": 1.0
+   },
+   {
+    "name": "White Rabbit's Foot",
+    "rate": 1.0
+   },
+   {
+    "name": "Amorian Pink Skirt",
+    "rate": 2.0
+   },
+   {
+    "name": "Big Rabbit Feet",
+    "rate": 2.0
+   },
+   {
+    "name": "Black Fur Wrap Coat",
+    "rate": 2.0
+   },
+   {
+    "name": "Blue Kitty Hood",
+    "rate": 2.0
+   },
+   {
+    "name": "Blue Pajama Hat",
+    "rate": 2.0
+   },
+   {
+    "name": "Blue Snow Flower Wear",
+    "rate": 2.0
+   },
+   {
+    "name": "Bomber Jacket",
+    "rate": 2.0
+   },
+   {
+    "name": "Bunny Costume",
+    "rate": 2.0
+   },
+   {
+    "name": "Bunny Hat",
+    "rate": 2.0
+   },
+   {
+    "name": "Bunny-Padded Snowboard Pants",
+    "rate": 2.0
+   },
+   {
+    "name": "Grey Visor Beanie",
+    "rate": 2.0
+   },
+   {
+    "name": "Ice Cold Red",
+    "rate": 2.0
+   },
+   {
+    "name": "Kitty Hoodie",
+    "rate": 2.0
+   },
+   {
+    "name": "My Buddy Rex",
+    "rate": 2.0
+   },
+   {
+    "name": "Old School Uniform Top",
+    "rate": 2.0
+   },
+   {
+    "name": "Olive Beanie",
+    "rate": 2.0
+   },
+   {
+    "name": "Patched Denim Jeans",
+    "rate": 2.0
+   },
+   {
+    "name": "Pelvis Hoodie",
+    "rate": 2.0
+   },
+   {
+    "name": "Pink Down Parka",
+    "rate": 2.0
+   },
+   {
+    "name": "Pink Snowboard Pants",
+    "rate": 2.0
+   },
+   {
+    "name": "Pink Snowboard Top",
+    "rate": 2.0
+   },
+   {
+    "name": "Red Hooded Coat",
+    "rate": 2.0
+   },
+   {
+    "name": "Teddy Bear Costume",
+    "rate": 2.0
+   },
+   {
+    "name": "Teddy Bear Headgear",
+    "rate": 2.0
+   },
+   {
+    "name": "Blue Marble Slippers",
+    "rate": 3.0
+   },
+   {
+    "name": "Blue Polka-Dot Pajama Pants",
+    "rate": 3.0
+   },
+   {
+    "name": "Blue Polka-Dot Pajama Top",
+    "rate": 3.0
+   },
+   {
+    "name": "Mix-n-Match Sneakers",
+    "rate": 3.0
+   },
+   {
+    "name": "Old School Uniform Hat",
+    "rate": 3.0
+   },
+   {
+    "name": "Old School Uniform Skirt",
+    "rate": 3.0
+   },
+   {
+    "name": "Pink Galoshes",
+    "rate": 3.0
+   },
+   {
+    "name": "Pink Knitted Gumball",
+    "rate": 3.0
+   },
+   {
+    "name": "Starry Sky Blue Beanie",
+    "rate": 3.0
+   },
+   {
+    "name": "Teddy Bear Gloves",
+    "rate": 3.0
+   },
+   {
+    "name": "Teddy Bear Shoes",
+    "rate": 3.0
+   },
+   {
+    "name": "White High Top",
+    "rate": 3.0
+   },
+   {
+    "name": "Woodsman Hat",
+    "rate": 3.0
+   }
+  ],
+  "source": {
+   "source_url": "https://www.nexon.com/maplestory/general-post/46331",
+   "source_title": "Nexon: Mystery Fashion Crate rates",
+   "retrieved_at": "2026-11-06",
+   "game_version_or_date": "Classic World, Nov 2026",
+   "verification_status": "verified"
+  },
+  "saleSource": {
+   "source_url": "https://www.nexon.com/maplestory/news/sale/47031/classic-world-cash-shop-update-nov-4",
+   "source_title": "Nexon: Classic World Cash Shop update, Nov 4",
+   "retrieved_at": "2026-11-06",
+   "game_version_or_date": "Classic World, Nov 2026",
+   "verification_status": "verified"
+  }
+ },
+ {
+  "key": "aurora",
+  "name": "Aurora Mystery Fashion Crate",
+  "itemId": 5222100,
+  "label": "Aurora Mystery Fashion Crate",
+  "price": {
+   "currency": "Aurora Stamps",
+   "one": 20,
+   "bundle": {
+    "count": 10,
+    "price": 200
+   }
+  },
+  "sale": {
+   "from": "2026-10-06",
+   "until": "2027-01-13",
+   "untilNote": "Jan 13 (Aurora Stamp Shop)"
+  },
+  "rewards": [
+   {
+    "name": "Soft Chocolate Fondue Scepter",
+    "rate": 1.5
+   },
+   {
+    "name": "White Choco Bunny",
+    "rate": 1.5
+   },
+   {
+    "name": "Blank Eye Patch",
+    "rate": 2.0
+   },
+   {
+    "name": "Choco Candy Cookie",
+    "rate": 2.0
+   },
+   {
+    "name": "Detective Glass",
+    "rate": 2.0
+   },
+   {
+    "name": "Heartbreaker Lips",
+    "rate": 2.0
+   },
+   {
+    "name": "Starlight Heart Scepter",
+    "rate": 2.0
+   },
+   {
+    "name": "Cacao Bear Shoes",
+    "rate": 2.5
+   },
+   {
+    "name": "Chocolate Ribbon",
+    "rate": 2.5
+   },
+   {
+    "name": "Splash Choco Boy",
+    "rate": 2.5
+   },
+   {
+    "name": "Splash Choco Girl",
+    "rate": 2.5
+   },
+   {
+    "name": "Loose Fit Sweater",
+    "rate": 4.5
+   },
+   {
+    "name": "Stocking Shorts",
+    "rate": 4.5
+   },
+   {
+    "name": "Black Cat Beanie",
+    "rate": 5.0
+   },
+   {
+    "name": "Heart Sunglasses",
+    "rate": 5.0
+   },
+   {
+    "name": "Hearts Tights",
+    "rate": 5.0
+   },
+   {
+    "name": "Orange Cat Beanie",
+    "rate": 5.0
+   },
+   {
+    "name": "Pink Bunny Sweater",
+    "rate": 5.0
+   },
+   {
+    "name": "Pink Elephant Slippers",
+    "rate": 5.0
+   },
+   {
+    "name": "Red Check Rider",
+    "rate": 5.0
+   },
+   {
+    "name": "Sky Blue Cat Beanie",
+    "rate": 5.0
+   },
+   {
+    "name": "Violet Dot Jeans",
+    "rate": 5.0
+   },
+   {
+    "name": "Chocolate Chat Ring",
+    "rate": 5.75
+   },
+   {
+    "name": "Chocolate Label Ring",
+    "rate": 5.75
+   },
+   {
+    "name": "Ink-and-Wash Painting Name Tag Ring",
+    "rate": 5.75
+   },
+   {
+    "name": "Ink-and-Wash Thought Bubble Ring",
+    "rate": 5.75
+   }
+  ],
+  "source": {
+   "source_url": "https://www.nexon.com/maplestory/general-post/45659",
+   "source_title": "Nexon: Aurora Mystery Fashion Crate rates",
+   "retrieved_at": "2026-11-06",
+   "game_version_or_date": "Classic World, Nov 2026",
+   "verification_status": "verified"
+  },
+  "saleSource": {
+   "source_url": "https://www.nexon.com/maplestory/news/sale/47031/classic-world-cash-shop-update-nov-4",
+   "source_title": "Nexon: Classic World Cash Shop update, Nov 4",
+   "retrieved_at": "2026-11-06",
+   "game_version_or_date": "Classic World, Nov 2026",
+   "verification_status": "verified"
+  }
+ },
+ {
+  "key": "halloween",
+  "name": "Halloween Mystery Fashion Crate",
+  "itemId": 5222002,
+  "label": "Halloween Mystery Fashion Crate",
+  "price": {
+   "currency": "NX",
+   "one": 4900,
+   "bundle": {
+    "count": 11,
+    "price": 49000
+   }
+  },
+  "sale": {
+   "from": "2026-10-28",
+   "until": "2026-11-04"
+  },
+  "rewards": [
+   {
+    "name": "Battle Scar",
+    "rate": 1.0
+   },
+   {
+    "name": "Cat Soul",
+    "rate": 1.0
+   },
+   {
+    "name": "Count Dracula Cape",
+    "rate": 1.0
+   },
+   {
+    "name": "Demon Goblin",
+    "rate": 1.0
+   },
+   {
+    "name": "Devil Wings",
+    "rate": 1.0
+   },
+   {
+    "name": "Evil Skull",
+    "rate": 1.0
+   },
+   {
+    "name": "Gargoyle Wings",
+    "rate": 1.0
+   },
+   {
+    "name": "Skull Patch",
+    "rate": 1.0
+   },
+   {
+    "name": "Witch's Broomstick",
+    "rate": 1.0
+   },
+   {
+    "name": "Black Bandage",
+    "rate": 2.0
+   },
+   {
+    "name": "Black Coat of Death",
+    "rate": 2.0
+   },
+   {
+    "name": "Blue Chinese Undead Costume",
+    "rate": 2.0
+   },
+   {
+    "name": "Blue Chinese Undead Hat",
+    "rate": 2.0
+   },
+   {
+    "name": "Brown Bandage",
+    "rate": 2.0
+   },
+   {
+    "name": "Coffin of Gloom",
+    "rate": 2.0
+   },
+   {
+    "name": "Dark Devil Hat",
+    "rate": 2.0
+   },
+   {
+    "name": "Devil Horns",
+    "rate": 2.0
+   },
+   {
+    "name": "Devilish Horns",
+    "rate": 2.0
+   },
+   {
+    "name": "Ghost Suit",
+    "rate": 2.0
+   },
+   {
+    "name": "Glowing Pumpkin Basket",
+    "rate": 2.0
+   },
+   {
+    "name": "Hat of Death",
+    "rate": 2.0
+   },
+   {
+    "name": "Iljimae Mask",
+    "rate": 2.0
+   },
+   {
+    "name": "Maple-Stein Face",
+    "rate": 2.0
+   },
+   {
+    "name": "Maple-Stein Head",
+    "rate": 2.0
+   },
+   {
+    "name": "Mummy Hat",
+    "rate": 2.0
+   },
+   {
+    "name": "Mummy Mask",
+    "rate": 2.0
+   },
+   {
+    "name": "Mummy Suit",
+    "rate": 2.0
+   },
+   {
+    "name": "Prisoner Pants",
+    "rate": 2.0
+   },
+   {
+    "name": "Prisoner Top",
+    "rate": 2.0
+   },
+   {
+    "name": "Pumpkin Hat",
+    "rate": 2.0
+   },
+   {
+    "name": "Pumpkin Headgear",
+    "rate": 2.0
+   },
+   {
+    "name": "Pumpkin Suit",
+    "rate": 2.0
+   },
+   {
+    "name": "Ragged Gomushin",
+    "rate": 2.0
+   },
+   {
+    "name": "Skull Gloves",
+    "rate": 2.0
+   },
+   {
+    "name": "Skull T-Shirt",
+    "rate": 2.0
+   },
+   {
+    "name": "Stealth Suit",
+    "rate": 2.0
+   },
+   {
+    "name": "Tiger Mask",
+    "rate": 2.0
+   },
+   {
+    "name": "White Bandage",
+    "rate": 2.0
+   },
+   {
+    "name": "Witch Clothes",
+    "rate": 2.0
+   },
+   {
+    "name": "Witch Hat",
+    "rate": 2.0
+   },
+   {
+    "name": "Grey Skull Overall",
+    "rate": 2.5
+   },
+   {
+    "name": "Red Skull Overall",
+    "rate": 2.5
+   },
+   {
+    "name": "Black Leather Boots",
+    "rate": 3.0
+   },
+   {
+    "name": "Black Shoes of Death",
+    "rate": 3.0
+   },
+   {
+    "name": "Bone Buckled Slacks",
+    "rate": 3.0
+   },
+   {
+    "name": "Dark Enamel Suit",
+    "rate": 3.0
+   },
+   {
+    "name": "Dark Suit",
+    "rate": 3.0
+   },
+   {
+    "name": "Ghost Costume",
+    "rate": 3.0
+   },
+   {
+    "name": "Scream Mask",
+    "rate": 3.0
+   },
+   {
+    "name": "Skull Beanie",
+    "rate": 3.0
+   }
+  ],
+  "source": {
+   "source_url": "https://www.nexon.com/maplestory/general-post/46524",
+   "source_title": "Nexon: Halloween Mystery Fashion Crate rates",
+   "retrieved_at": "2026-11-06",
+   "game_version_or_date": "Classic World, Nov 2026",
+   "verification_status": "verified"
+  },
+  "saleSource": {
+   "source_url": "https://meowdb.com/msclassic/news/october-28-cash-shop-halloween-crate",
+   "source_title": "MeowDB: October 28 Cash Shop, Halloween crate",
+   "retrieved_at": "2026-11-06",
+   "game_version_or_date": "Classic World, Nov 2026",
+   "verification_status": "community"
+  }
+ },
+ {
+  "key": "mystery-oct21",
+  "name": "Mystery Fashion Crate",
+  "itemId": 5222000,
+  "label": "Mystery Fashion Crate (Oct 21 to Nov 4)",
+  "price": {
+   "currency": "NX",
+   "one": 3500,
+   "bundle": {
+    "count": 11,
+    "price": 35000
+   }
+  },
+  "sale": {
+   "from": "2026-10-21",
+   "until": "2026-11-04"
+  },
+  "rewards": [
+   {
+    "name": "Black Blazer",
+    "rate": 1.0
+   },
+   {
+    "name": "Black Suit Pants",
+    "rate": 1.0
+   },
+   {
+    "name": "Cute Mouse Ears",
+    "rate": 1.0
+   },
+   {
+    "name": "Frameless Glasses",
+    "rate": 1.0
+   },
+   {
+    "name": "Gentleman's Mustache",
+    "rate": 1.0
+   },
+   {
+    "name": "Heart Balloon",
+    "rate": 1.0
+   },
+   {
+    "name": "Michael Wings",
+    "rate": 1.0
+   },
+   {
+    "name": "Orange Hard-Rimmed Glasses",
+    "rate": 1.0
+   },
+   {
+    "name": "Race Ace Cap",
+    "rate": 1.0
+   },
+   {
+    "name": "Ragged Top",
+    "rate": 1.0
+   },
+   {
+    "name": "Silver Earrings",
+    "rate": 1.0
+   },
+   {
+    "name": "Stylish Pink Cotton Cap",
+    "rate": 1.0
+   },
+   {
+    "name": "Superstar Hoodie",
+    "rate": 1.0
+   },
+   {
+    "name": "Torn-up Jeans",
+    "rate": 1.0
+   },
+   {
+    "name": "Toy Rifle",
+    "rate": 1.0
+   },
+   {
+    "name": "Black \"Hit Me\" Shirt",
+    "rate": 1.5
+   },
+   {
+    "name": "Blue Bell Dress",
+    "rate": 2.0
+   },
+   {
+    "name": "Blue Frill Blouse",
+    "rate": 2.0
+   },
+   {
+    "name": "Buddy Overall Jeans (Blue)",
+    "rate": 2.0
+   },
+   {
+    "name": "Buddy Overall Jeans (Red)",
+    "rate": 2.0
+   },
+   {
+    "name": "Green Overall",
+    "rate": 2.0
+   },
+   {
+    "name": "Plastic Slingshot",
+    "rate": 2.0
+   },
+   {
+    "name": "Starred Hunting Hat",
+    "rate": 2.0
+   },
+   {
+    "name": "Beige Checkered Hat",
+    "rate": 2.5
+   },
+   {
+    "name": "Black Cardigan Set",
+    "rate": 2.5
+   },
+   {
+    "name": "Black Classic Sneakers",
+    "rate": 2.5
+   },
+   {
+    "name": "Black Dress Shoes",
+    "rate": 2.5
+   },
+   {
+    "name": "Brown Casual Look",
+    "rate": 2.5
+   },
+   {
+    "name": "Brown Dress Shoes",
+    "rate": 2.5
+   },
+   {
+    "name": "Cherry Layered T",
+    "rate": 2.5
+   },
+   {
+    "name": "Crusader T-Shirt",
+    "rate": 2.5
+   },
+   {
+    "name": "Denim Wrinkled Skirt",
+    "rate": 2.5
+   },
+   {
+    "name": "Detective Hat",
+    "rate": 2.5
+   },
+   {
+    "name": "Faded Bell-Bottom Jeans",
+    "rate": 2.5
+   },
+   {
+    "name": "Kitty Camping Hat",
+    "rate": 2.5
+   },
+   {
+    "name": "Orange Hooded Vest",
+    "rate": 2.5
+   },
+   {
+    "name": "Premium Trenchcoat",
+    "rate": 2.5
+   },
+   {
+    "name": "Puffy Brown Hat",
+    "rate": 2.5
+   },
+   {
+    "name": "Race Ace Suit",
+    "rate": 2.5
+   },
+   {
+    "name": "Race Queen Boots",
+    "rate": 2.5
+   },
+   {
+    "name": "Race Queen Uniform",
+    "rate": 2.5
+   },
+   {
+    "name": "Velcro High Tops",
+    "rate": 2.5
+   },
+   {
+    "name": "Washed Jeans",
+    "rate": 2.5
+   },
+   {
+    "name": "White Beanie",
+    "rate": 2.5
+   },
+   {
+    "name": "White Casual Suit",
+    "rate": 2.5
+   },
+   {
+    "name": "Wild Pants",
+    "rate": 2.5
+   },
+   {
+    "name": "Camping Boots",
+    "rate": 3.0
+   },
+   {
+    "name": "Green Camping Hat",
+    "rate": 3.0
+   },
+   {
+    "name": "Green Camping Shirt",
+    "rate": 3.0
+   },
+   {
+    "name": "Green Camping Shorts",
+    "rate": 3.0
+   }
+  ],
+  "source": {
+   "source_url": "https://meowdb.com/msclassic/fashion-crate-sim?crate=mystery-oct21",
+   "source_title": "MeowDB crate simulator: Mystery Fashion Crate (Oct 21)",
+   "retrieved_at": "2026-11-06",
+   "game_version_or_date": "Classic World, Nov 2026",
+   "verification_status": "community",
+   "notes": "MeowDB's copy of Nexon's rates post, which now shows the Nov 4 list. The pieces match Nexon's Grand Launch Cash Shop post."
+  },
+  "saleSource": {
+   "source_url": "https://www.nexon.com/maplestory/news/sale/46362/grand-launch-cash-shop-update",
+   "source_title": "Nexon: Grand Launch Cash Shop update",
+   "retrieved_at": "2026-11-06",
+   "game_version_or_date": "Classic World, Nov 2026",
+   "verification_status": "verified"
+  }
+ },
+ {
+  "key": "founders",
+  "name": "Founder's Mystery Fashion Crate",
+  "itemId": 5222001,
+  "label": "Founder's Mystery Fashion Crate",
+  "price": {
+   "currency": "NX",
+   "one": 3500,
+   "bundle": {
+    "count": 11,
+    "price": 35000
+   }
+  },
+  "sale": {
+   "from": "2026-10-06",
+   "until": "2026-10-28"
+  },
+  "rewards": [
+   {
+    "name": "Angel Halo",
+    "rate": 1.0
+   },
+   {
+    "name": "Angel Wand",
+    "rate": 1.0
+   },
+   {
+    "name": "Baby Angel Wings",
+    "rate": 1.0
+   },
+   {
+    "name": "Black Sunglasses",
+    "rate": 1.0
+   },
+   {
+    "name": "Bunny Earmuffs",
+    "rate": 1.0
+   },
+   {
+    "name": "Bunny Ears",
+    "rate": 1.0
+   },
+   {
+    "name": "Cherub's Bow",
+    "rate": 1.0
+   },
+   {
+    "name": "Dollish Pink",
+    "rate": 1.0
+   },
+   {
+    "name": "Orange Mushroom Balloon",
+    "rate": 1.0
+   },
+   {
+    "name": "Orange Toy Hammer",
+    "rate": 1.0
+   },
+   {
+    "name": "Slime Earrings",
+    "rate": 1.0
+   },
+   {
+    "name": "Slime Slippers",
+    "rate": 1.0
+   },
+   {
+    "name": "Slime T-Shirt",
+    "rate": 1.0
+   },
+   {
+    "name": "Toga",
+    "rate": 1.0
+   },
+   {
+    "name": "White Label Ring",
+    "rate": 1.0
+   },
+   {
+    "name": "Yellow Spatula",
+    "rate": 1.0
+   },
+   {
+    "name": "Blue Cap",
+    "rate": 2.0
+   },
+   {
+    "name": "Sailor Hat",
+    "rate": 2.0
+   },
+   {
+    "name": "Sailor Outfit",
+    "rate": 2.0
+   },
+   {
+    "name": "White Ribboned Sailor Dress",
+    "rate": 2.0
+   },
+   {
+    "name": "Beetle Long Sleeve",
+    "rate": 2.5
+   },
+   {
+    "name": "Beret",
+    "rate": 2.5
+   },
+   {
+    "name": "Black Enamel Shoes",
+    "rate": 2.5
+   },
+   {
+    "name": "Blue Bucket Hat",
+    "rate": 2.5
+   },
+   {
+    "name": "Blue Watch",
+    "rate": 2.5
+   },
+   {
+    "name": "Butterfly Skirt",
+    "rate": 2.5
+   },
+   {
+    "name": "Cat Hat",
+    "rate": 2.5
+   },
+   {
+    "name": "Cat Suit",
+    "rate": 2.5
+   },
+   {
+    "name": "Gold Kitty Slippers",
+    "rate": 2.5
+   },
+   {
+    "name": "Jean Shorts",
+    "rate": 2.5
+   },
+   {
+    "name": "Kitty Chat Ring",
+    "rate": 2.5
+   },
+   {
+    "name": "Lined Hip-Hop Pants",
+    "rate": 2.5
+   },
+   {
+    "name": "Meshcap",
+    "rate": 2.5
+   },
+   {
+    "name": "Orange Baseball Jacket",
+    "rate": 2.5
+   },
+   {
+    "name": "Orange Hooded Shirt",
+    "rate": 2.5
+   },
+   {
+    "name": "Pink Allstar",
+    "rate": 2.5
+   },
+   {
+    "name": "Purple Dorothy Dress",
+    "rate": 2.5
+   },
+   {
+    "name": "Rainbow Knit",
+    "rate": 2.5
+   },
+   {
+    "name": "Red Sailor Shirt",
+    "rate": 2.5
+   },
+   {
+    "name": "Red Sailor Skirt",
+    "rate": 2.5
+   },
+   {
+    "name": "Red Trainer Jacket",
+    "rate": 2.5
+   },
+   {
+    "name": "Red Trainer Pants",
+    "rate": 2.5
+   },
+   {
+    "name": "Reggae Hat",
+    "rate": 2.5
+   },
+   {
+    "name": "Ripped Jeans",
+    "rate": 2.5
+   },
+   {
+    "name": "Tourist T",
+    "rate": 2.5
+   },
+   {
+    "name": "White Hooded Vest",
+    "rate": 2.5
+   },
+   {
+    "name": "White Jeans",
+    "rate": 2.5
+   },
+   {
+    "name": "Yellow Rainbow Sneaks",
+    "rate": 2.5
+   },
+   {
+    "name": "Patissier Hat",
+    "rate": 3.0
+   },
+   {
+    "name": "Patissier Uniform",
+    "rate": 3.0
+   }
+  ],
+  "source": {
+   "source_url": "https://www.nexon.com/maplestory/general-post/45538",
+   "source_title": "Nexon: Founder's Mystery Fashion Crate rates",
+   "retrieved_at": "2026-11-06",
+   "game_version_or_date": "Classic World, Nov 2026",
+   "verification_status": "verified"
+  },
+  "saleSource": {
+   "source_url": "https://www.nexon.com/maplestory/news/sale/45819/founder-s-access-cash-shop",
+   "source_title": "Nexon: Founder's Access Cash Shop",
+   "retrieved_at": "2026-11-06",
+   "game_version_or_date": "Classic World, Nov 2026",
+   "verification_status": "verified"
+  }
+ }
+]

@@ -1,0 +1,15 @@
+{
+ "id": 5121002,
+ "name": "Red Snail Invasion",
+ "description": "Red Snail Invasion on the map where your character is for 30 sec. Enter a message of your choice.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Messenger and Social",
+  "subCategory": "Weather Effect",
+  "lowItemId": 5120000,
+  "highItemId": 5130000
+ },
+ "meta": {
+  "cash": true
+ }
+}

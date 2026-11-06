@@ -1,0 +1,15 @@
+{
+ "id": 5000031,
+ "name": "White Duck",
+ "description": "Silly and foolish, but hard working and easy-going by nature, White Duck is easy to please, and enjoys good food and a swim.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Free Market",
+  "subCategory": "Pet",
+  "lowItemId": 5000000,
+  "highItemId": 5010000
+ },
+ "meta": {
+  "cash": true
+ }
+}

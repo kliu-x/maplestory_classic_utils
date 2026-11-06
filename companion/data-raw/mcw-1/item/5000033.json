@@ -1,0 +1,15 @@
+{
+ "id": 5000033,
+ "name": "Snail",
+ "description": "A snail that is really hard to figure out. The pet's skills will disappear once its magic runs out.\\r\\nIf you double-click the Snail after its magic duration ends, it will disappear.\\n\\n#cCaution! This pet cannot have its magic duration extended after it ends.#",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Free Market",
+  "subCategory": "Pet",
+  "lowItemId": 5000000,
+  "highItemId": 5010000
+ },
+ "meta": {
+  "cash": true
+ }
+}

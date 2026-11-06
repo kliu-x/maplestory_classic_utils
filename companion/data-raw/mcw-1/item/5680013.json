@@ -1,0 +1,15 @@
+{
+ "id": 5680013,
+ "name": "10 Super Megaphone Exchange Coupon",
+ "description": "#cDouble-click# to receive #cSuper Megaphone x10#.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Miscellaneous",
+  "subCategory": "Other",
+  "lowItemId": 5680000,
+  "highItemId": 5700000
+ },
+ "meta": {
+  "cash": true
+ }
+}

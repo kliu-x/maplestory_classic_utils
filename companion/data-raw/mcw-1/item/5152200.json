@@ -1,0 +1,15 @@
+{
+ "id": 5152200,
+ "name": "Signature Face Coupon",
+ "description": "Take this to #cPlastic Surgery in Town# to change your face to a style of #cyour choice#. (One-Time Use)",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Appearance",
+  "subCategory": "Face Coupon",
+  "lowItemId": 5152200,
+  "highItemId": 5152300
+ },
+ "meta": {
+  "cash": true
+ }
+}

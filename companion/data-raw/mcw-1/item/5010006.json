@@ -1,0 +1,15 @@
+{
+ "id": 5010006,
+ "name": "Glimmer of the Founder",
+ "description": "A faint light for those newly arrived in the Classic World. Double-click on the icon or designate a Hotkey via KeyConfig to toggle the effect on/off.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Appearance",
+  "subCategory": "Effect",
+  "lowItemId": 5010000,
+  "highItemId": 5020000
+ },
+ "meta": {
+  "cash": true
+ }
+}

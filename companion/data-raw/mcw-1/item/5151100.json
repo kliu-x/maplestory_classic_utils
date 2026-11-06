@@ -1,0 +1,15 @@
+{
+ "id": 5151100,
+ "name": "Signature Hair Color Coupon",
+ "description": "Take this to the #cHair Salon in Town# to change your hair to a color of #cyour choice#. (One-Time Use)",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Appearance",
+  "subCategory": "Hair Color Coupon",
+  "lowItemId": 5151000,
+  "highItemId": 5152000
+ },
+ "meta": {
+  "cash": true
+ }
+}

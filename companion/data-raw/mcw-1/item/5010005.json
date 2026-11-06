@@ -1,0 +1,15 @@
+{
+ "id": 5010005,
+ "name": "Shadow Style",
+ "description": "Traces of the character remain when the character moves, creating multiple images of the character in the process. Double-click on the icon or designate a Hotkey via KeyConfig to toggle the effect on/off.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Appearance",
+  "subCategory": "Effect",
+  "lowItemId": 5010000,
+  "highItemId": 5020000
+ },
+ "meta": {
+  "cash": true
+ }
+}

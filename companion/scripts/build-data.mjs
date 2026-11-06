@@ -57,9 +57,20 @@ for (const f of await readDir('item')) {
     ...(Object.keys(stats).length ? { stats } : {}),
     ...(m.quest ? { questItem: true } : {}),
     ...(m.tradeBlock || m.only ? { untradeable: true } : {}),
+    ...(it.typeInfo?.overallCategory === 'Cash' ? { cash: true } : {}),
   });
 }
 items.sort((a, b) => a.id - b.id);
+
+// Cosmetic Cash Shop equips named in the crate lists (src/data/cashCrates.json): id and slot from
+// the item list, so the crate tables can show icons. Keyed by lower-case name (Nexon's rates posts
+// and the game files differ in case); one name can be several ids (male/female).
+const crateNames = new Set((await readJson(join(ROOT, 'src', 'data', 'cashCrates.json'))).flatMap((c) => c.rewards.map((r) => r.name.toLowerCase())));
+const cashEquips = {};
+for (const x of await readJson(join(RAW, 'item-list.json'))) {
+  if (x.type?.[0] !== 'Equip' || !x.cash || !crateNames.has(x.name?.toLowerCase())) continue;
+  (cashEquips[x.name.toLowerCase()] ??= []).push({ id: x.id, slot: x.type[2] ?? x.type[1] });
+}
 
 // Bosses, known before the monster section so maps can record their spawn points.
 const bossSet = new Set((await readJson(join(RAW, 'mob-list.json'))).filter((m) => m.isBoss).map((m) => m.id));
@@ -283,6 +294,8 @@ const npcMaps = new Map();
 for (const m of maps) for (const n of m.npcs) (npcMaps.get(n.id) ?? npcMaps.set(n.id, []).get(n.id)).push(m.id);
 await write('npcs.json', [...npcName].map(([id, name]) => ({ id, name, isShop: npcShop.has(id), mapIds: npcMaps.get(id) ?? [] })).sort((a, b) => a.id - b.id));
 await write('items.json', items);
+await write('cashEquips.json', cashEquips);
+console.log(`crate pieces matched to game ids: ${Object.keys(cashEquips).length} of ${crateNames.size}${crateNames.size > Object.keys(cashEquips).length ? ' (missing: ' + [...crateNames].filter((n) => !cashEquips[n]).join(', ') + ')' : ''}`);
 await write('meta.json', {
   source: API,
   retrieved_at: meta.retrieved_at,

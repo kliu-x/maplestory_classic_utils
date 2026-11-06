@@ -1,0 +1,15 @@
+{
+ "id": 5140000,
+ "name": "Regular Store Permit",
+ "description": "Allows you to open a regular store in which you can list up to 12 items at once. Can be used in fields or the Free Market.\\r\\nIf you are attacked or killed by a monster, the store will close.",
+ "typeInfo": {
+  "overallCategory": "Cash",
+  "category": "Free Market",
+  "subCategory": "Store Permit",
+  "lowItemId": 5140000,
+  "highItemId": 5150000
+ },
+ "meta": {
+  "cash": true
+ }
+}
