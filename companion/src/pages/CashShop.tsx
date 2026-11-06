@@ -126,7 +126,7 @@ function CrateCard({ crate, today, highlight, onPick }: { crate: Crate; today: s
                   <td className="num">{fmt(chanceInOpens(r.rate, opens) * 100)}%</td>
                   <td className="num" title={money(costOfOpens(half, crate.price), cur)}>{fmt(half)} <span className="small muted">({money(costOfOpens(half, crate.price), cur)})</span></td>
                   <td className="num">{fmt(averageOpens(r.rate))}</td>
-                  <td className="num"><MarketLink item={{ id: it?.id ?? 0, name: r.name }} /></td>
+                  <td className="num"><MarketLink item={{ id: it?.id ?? 0, name: r.name, cash: true }} /></td>
                 </tr>
               );
             })}
@@ -217,7 +217,7 @@ function CashItemDetail({ item: i, today }: { item: Item; today: string }) {
         {p?.bundles && <div className="kv"><div className="k">Multi-buy</div><div className="v">{p.bundles.map((b) => `${b.count} for ${fmt(b.nx)} NX`).join(' · ')}</div></div>}
         {p && <div className="kv"><div className="k">Lasts</div><div className="v">{p.duration}</div></div>}
         {p?.until && <div className="kv"><div className="k">On sale until</div><div className="v">{dateLabel(p.until)}</div></div>}
-        <div className="kv"><div className="k">Market price</div><div className="v">{i.untradeable ? 'untradable' : <MarketLink item={i} label="See on MeowDB" />}</div></div>
+        <div className="kv"><div className="k">Market price</div><div className="v">{i.untradeable ? 'untradable' : <MarketLink item={i} />}</div></div>
       </div>
       {p && <p className="small">{p.note} <SourceBadge source={p.source} compact /></p>}
       {c && <p className="small">This is a random box: its rates are in the crate table below. <SaleTag crate={c} today={today} /></p>}

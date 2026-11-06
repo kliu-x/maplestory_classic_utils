@@ -1,8 +1,8 @@
 import type { Item } from '../models/types';
-import { marketLink } from '../data/itemInfo';
+import { marketLink, mesoWatchLink } from '../data/itemInfo';
 
-/** Opens MeowDB's Free Market price. Without a direct page, copies the name for its search box. */
-export function MarketLink({ item, label = 'Check' }: { item: Pick<Item, 'id' | 'name'>; label?: string }) {
+/** Free Market price links: MesoWatch (opens the item) and MeowDB (its page, or its search with the name copied). */
+export function MarketLink({ item, label = 'MeowDB' }: { item: Pick<Item, 'id' | 'name' | 'cash'>; label?: string }) {
   const { url, direct } = marketLink(item as Item);
   const copy = () => {
     if (direct) return;
@@ -13,17 +13,22 @@ export function MarketLink({ item, label = 'Check' }: { item: Pick<Item, 'id' | 
     }
   };
   return (
-    <a
-      href={url}
-      target="_blank"
-      rel="noreferrer"
-      title={direct ? `${item.name} on MeowDB` : `Copies "${item.name.trim()}" and opens MeowDB's price search: paste it there`}
-      onClick={(e) => {
-        e.stopPropagation();
-        copy();
-      }}
-    >
-      {label} ↗
-    </a>
+    <span className="market-links">
+      <a href={mesoWatchLink(item)} target="_blank" rel="noreferrer" title={`${item.name} on MesoWatch: recent sales and listings`} onClick={(e) => e.stopPropagation()}>
+        MesoWatch ↗
+      </a>
+      <a
+        href={url}
+        target="_blank"
+        rel="noreferrer"
+        title={direct ? `${item.name} on MeowDB` : `Copies "${item.name.trim()}" and opens MeowDB's price search: paste it there`}
+        onClick={(e) => {
+          e.stopPropagation();
+          copy();
+        }}
+      >
+        {label} ↗
+      </a>
+    </span>
   );
 }

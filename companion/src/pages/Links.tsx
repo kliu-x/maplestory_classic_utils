@@ -28,7 +28,7 @@ const GROUPS: { name: string; links: LinkTile[] }[] = [
   {
     name: 'Market & prices',
     links: [
-      { ico: '💹', url: 'https://meso.watch', title: 'MesoWatch', what: 'What items really sell for in player shops, with price history' },
+      { ico: '💹', url: 'https://meso.watch', title: 'MesoWatch', what: 'What items really sell for in player shops, with price history. Every item in the app links to its page here.' },
       { ico: '🏪', url: 'https://maplestory.watch', title: 'maplestory.watch', what: 'Prices while you set up your store, and live EXP rates' },
     ],
   },

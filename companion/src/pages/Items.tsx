@@ -134,7 +134,7 @@ function ItemDetail({ item: i }: { item: Item }) {
             {sortedStats(i.stats).map(([k, v]) => <div key={k} className="kv"><div className="k">{STAT_LABEL[k] ?? k}</div><div className="v">{v > 0 && !BASE_STATS.includes(k) ? '+' : ''}{v}</div></div>)}
             {i.attackSpeed != null && <div className="kv"><div className="k">Attack speed</div><div className="v">{i.attackSpeed}</div></div>}
             {i.slots != null && <div className="kv"><div className="k">Upgrade slots</div><div className="v">{i.slots}</div></div>}
-            <div className="kv"><div className="k">Market price</div><div className="v"><MarketLink item={i} label="See on MeowDB" /></div></div>
+            <div className="kv"><div className="k">Market price</div><div className="v"><MarketLink item={i} /></div></div>
             <div className="kv"><div className="k">NPC buys it for</div><div className="v">{i.sellPrice ? `${fmt(i.sellPrice)} mesos` : '—'}</div></div>
           </div>
           {!isEquip && !i.stats && <p className="small muted">No stats: not equipment.</p>}

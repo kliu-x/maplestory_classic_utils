@@ -64,3 +64,13 @@ export function marketLink(item: Item): { url: string; direct: boolean } {
     ? { url: `https://meowdb.com/msclassic/item-db/${id}`, direct: true }
     : { url: 'https://meowdb.com/msclassic/price-check', direct: false };
 }
+
+/**
+ * The item's page on MesoWatch (meso.watch), the price tracker most players use. Linking is all
+ * its terms allow: no script may read or store its prices. Its share links name an item by the
+ * game id padded to 8 digits, "cash:" in front for Cash Shop items; without an id, its search.
+ */
+export function mesoWatchLink(item: Pick<Item, 'id' | 'name' | 'cash'>): string {
+  if (!item.id) return `https://meso.watch/?q=${encodeURIComponent(item.name.trim())}`;
+  return `https://meso.watch/?item=${item.cash ? 'cash:' : ''}${String(item.id).padStart(8, '0')}`;
+}

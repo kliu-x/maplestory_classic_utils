@@ -45,3 +45,12 @@ describe('item details', () => {
     expect(itemsForPick(pick, [wand]).map((i) => i.id)).toEqual([1372003]);
   });
 });
+
+describe('MesoWatch links', () => {
+  it('opens the item by its 8-digit game id', async () => {
+    const { mesoWatchLink } = await import('../data/itemInfo');
+    expect(mesoWatchLink({ id: 1372003, name: 'Ice Wand' })).toBe('https://meso.watch/?item=01372003');
+    expect(mesoWatchLink({ id: 1112223, name: 'Name Tag Ring', cash: true })).toBe('https://meso.watch/?item=cash:01112223');
+    expect(mesoWatchLink({ id: 0, name: 'Cat Soul ' })).toBe('https://meso.watch/?q=Cat%20Soul');
+  });
+});
