@@ -5,6 +5,10 @@ import { fmt, SourceBadge, StatusPill } from './ui';
 import { ITEMS } from '../data';
 import { itemsForPick, statLine } from '../data/itemInfo';
 import { href } from '../router';
+import { PageFilter } from './PageFilter';
+import { matchesQuery } from '../calculators/textMatch';
+
+const pickMatches = (q: string, p: GearPick) => matchesQuery(q, p.item, p.slot, p.stats, p.howToGet, TIER_LABEL[p.tier]);
 
 /** Best / affordable / easy-to-get gear at each level checkpoint, from Classic World guides. */
 export function GearByLevel({ c }: { c: Character }) {
@@ -13,19 +17,25 @@ export function GearByLevel({ c }: { c: Character }) {
   const [cp, setCp] = useState(now);
   const branches = family ? BRANCHES[family] : [];
   const [branch, setBranch] = useState<string | null>(defaultBranch(c.job));
+  const [q, setQ] = useState('');
   if (!family) return null;
-  const slots = picksAt(family, branch, cp);
+  const filtered = (x: number) => picksAt(family, branch, x).map((s) => ({ ...s, picks: s.picks.filter((p) => pickMatches(q, p)) })).filter((s) => s.picks.length);
+  const hitsAt = (x: number) => filtered(x).reduce((n, s) => n + s.picks.length, 0);
+  const slots = filtered(cp);
+  const filtering = !!q.trim();
   return (
     <div className="card">
       <div className="card-head">
         <h2>Gear by level</h2>
         <span className="small muted">From Classic World guides, mostly MeowDB · prices are estimates</span>
       </div>
+      <PageFilter value={q} onChange={setQ} placeholder="Filter gear: an item, slot or shop (e.g. wand, gloves, Ellinia)" shown={`${hitsAt(cp)} at Lv ${cp}`} />
       <div className="row" style={{ marginBottom: 10 }}>
         <div className="seg">
           {CHECKPOINTS.map((x) => (
             <button key={x} className={cp === x ? 'on' : ''} onClick={() => setCp(x)}>
               Lv {x}{x === now ? ' ·you' : ''}
+              {filtering && <span className="step-pill" style={{ marginLeft: 6, marginRight: 0 }}>{hitsAt(x)}</span>}
             </button>
           ))}
         </div>
@@ -41,7 +51,7 @@ export function GearByLevel({ c }: { c: Character }) {
           Lv 30 weapons aren't sold in any open shop at launch (only Orbis / El Nath, not open yet): craft them, buy on the Free Market, or keep your Lv 25 shop weapon.
         </p>
       )}
-      {slots.length === 0 && <div className="empty">No guide picks at this level.</div>}
+      {slots.length === 0 && <div className="empty">{filtering ? `Nothing at Lv ${cp} matches "${q.trim()}". The numbers on the level buttons show where it is.` : 'No guide picks at this level.'}</div>}
       <div className="gear-slots">
         {slots.map(({ slot, picks }) => (
           <div key={slot} className="gear-slot">

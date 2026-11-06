@@ -4,6 +4,8 @@ import { IMG, ITEMS, itemById } from '../data';
 import { CASH_PACKAGES, CASH_SOURCES, CRATES, type Crate, cashPriceFor, crateFor, crateItem, cratesWith, saleState, todayIso } from '../data/cashShop';
 import { averageOpens, chanceInOpens, costOfOpens, opensForChance } from '../calculators/crate';
 import { MarketLink } from '../components/MarketLink';
+import { PageFilter } from '../components/PageFilter';
+import { matchesQuery } from '../calculators/textMatch';
 import { fmt, NumField, SourceBadge, StatusPill } from '../components/ui';
 import { href } from '../router';
 import type { PageProps } from './shared';
@@ -12,6 +14,9 @@ const CASH_ITEMS = ITEMS.filter((i) => i.cash);
 const icon = (id?: number) =>
   id ? <img className="mob-icon" src={IMG.item(id)} alt="" loading="lazy" onError={(e) => (e.currentTarget.style.visibility = 'hidden')} /> : <span className="mob-icon" />;
 const money = (n: number, currency = 'NX') => (Number.isFinite(n) ? `${fmt(n)} ${currency}` : '—');
+const pieceMatches = (q: string, name: string) => matchesQuery(q, name, crateItem(name)?.slot);
+const packageMatches = (q: string, p: (typeof CASH_PACKAGES)[number]) => matchesQuery(q, p.name, ...p.contains);
+const itemMatches = (q: string, i: Item) => matchesQuery(q, i.name, i.category, i.subCategory, cashPriceFor(i)?.note, i.description);
 const dateLabel = (iso: string) => new Date(iso + 'T12:00:00Z').toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: iso.startsWith('2026') ? undefined : 'numeric' });
 
 export default function CashShop({ params }: PageProps) {
@@ -21,6 +26,9 @@ export default function CashShop({ params }: PageProps) {
   const defaultCrate = (params.get('crate') && CRATES.find((c) => c.key === params.get('crate'))) || (selected && crateFor(selected.id, today)) || CRATES.find((c) => saleState(c, today) === 'on sale') || CRATES[0];
   const [crateKey, setCrateKey] = useState(defaultCrate.key);
   const crate = CRATES.find((c) => c.key === (params.get('crate') ?? crateKey)) ?? defaultCrate;
+  const [q, setQ] = useState('');
+  const packages = CASH_PACKAGES.filter((p) => packageMatches(q, p));
+  const matched = q.trim() ? CRATES.reduce((n, c) => n + c.rewards.filter((r) => pieceMatches(q, r.name)).length, 0) + packages.length + CASH_ITEMS.filter((i) => itemMatches(q, i)).length : 0;
 
   return (
     <>
@@ -31,14 +39,17 @@ export default function CashShop({ params }: PageProps) {
         </div>
       </div>
 
+      <PageFilter value={q} onChange={setQ} placeholder="Filter this page: a piece, package or item (e.g. bear, megaphone)" shown={`${matched} match${matched === 1 ? '' : 'es'}`} />
+
       {selected?.cash && <CashItemDetail item={selected} today={today} />}
 
-      <CrateCard crate={crate} today={today} highlight={piece} onPick={(k) => { setCrateKey(k); if (params.get('crate')) window.location.hash = href('cash', { crate: k }); }} />
+      <CrateCard crate={crate} today={today} highlight={piece} filter={q} onPick={(k) => { setCrateKey(k); if (params.get('crate')) window.location.hash = href('cash', { crate: k }); }} />
 
+      {packages.length > 0 && (
       <div className="card">
         <div className="card-head"><h2>Packages</h2><SourceBadge source={CASH_SOURCES.founders} compact /></div>
         <div className="grid grid-2">
-          {CASH_PACKAGES.map((p) => (
+          {packages.map((p) => (
             <div key={p.name} className="gear-pick">
               <div className="gear-pick-head">
                 <strong>{p.name}</strong>
@@ -51,8 +62,9 @@ export default function CashShop({ params }: PageProps) {
           ))}
         </div>
       </div>
+      )}
 
-      <CashItems selectedId={selected?.id} today={today} />
+      <CashItems selectedId={selected?.id} today={today} q={q} />
     </>
   );
 }
@@ -64,11 +76,13 @@ function SaleTag({ crate, today }: { crate: Crate; today: string }) {
   return <span className="gear-tier">ended {dateLabel(crate.sale.until)}</span>;
 }
 
-function CrateCard({ crate, today, highlight, onPick }: { crate: Crate; today: string; highlight: string; onPick: (key: string) => void }) {
+function CrateCard({ crate, today, highlight, onPick, filter }: { crate: Crate; today: string; highlight: string; onPick: (key: string) => void; filter: string }) {
   const [opens, setOpens] = useState(crate.price.bundle?.count ?? 10);
   const cur = crate.price.currency;
-  const rows = [...crate.rewards].sort((a, b) => a.rate - b.rate || a.name.localeCompare(b.name));
-  const rarest = rows[0];
+  const sorted = [...crate.rewards].sort((a, b) => a.rate - b.rate || a.name.localeCompare(b.name));
+  const rarest = sorted[0];
+  const rows = sorted.filter((r) => pieceMatches(filter, r.name));
+  const hitsIn = (c: Crate) => c.rewards.filter((r) => pieceMatches(filter, r.name)).length;
   const total = crate.rewards.reduce((s, r) => s + r.rate, 0);
   return (
     <div className="card">
@@ -79,6 +93,7 @@ function CrateCard({ crate, today, highlight, onPick }: { crate: Crate; today: s
         {CRATES.map((c) => (
           <button key={c.key} className={c.key === crate.key ? 'on' : ''} onClick={() => onPick(c.key)}>
             {c.label}{saleState(c, today) === 'on sale' ? ' ●' : ''}
+            {filter.trim() && <span className={`step-pill ${hitsIn(c) ? '' : 'muted'}`} style={{ marginLeft: 6, marginRight: 0 }}>{hitsIn(c)}</span>}
           </button>
         ))}
       </div>
@@ -132,6 +147,7 @@ function CrateCard({ crate, today, highlight, onPick }: { crate: Crate; today: s
             })}
           </tbody>
         </table>
+        {rows.length === 0 && <div className="empty">No piece in {crate.label} matches "{filter.trim()}".{CRATES.some((c) => hitsIn(c)) ? ' The numbers on the crate buttons show where it is.' : ''}</div>}
       </div>
       <p className="small muted" style={{ marginTop: 8 }}>
         "50% chance" is how many crates give a coin-flip chance of that piece (cost in brackets, buying {crate.price.bundle ? `${crate.price.bundle.count}-packs where cheaper` : 'singles'}). "Average" is 1 ÷ rate. Each crate is a fresh roll: opening more doesn't raise the rate.
@@ -141,24 +157,21 @@ function CrateCard({ crate, today, highlight, onPick }: { crate: Crate; today: s
   );
 }
 
-function CashItems({ selectedId, today }: { selectedId?: number; today: string }) {
-  const [q, setQ] = useState('');
+function CashItems({ selectedId, today, q }: { selectedId?: number; today: string; q: string }) {
   const [all, setAll] = useState(false);
   const list = useMemo(() => {
     const t = q.trim().toLowerCase();
-    return CASH_ITEMS.filter((i) => (t ? i.name.toLowerCase().includes(t) : all || cashPriceFor(i) || crateFor(i.id, today)))
+    return CASH_ITEMS.filter((i) => (t ? itemMatches(q, i) : all || cashPriceFor(i) || crateFor(i.id, today)))
       .sort((a, b) => (a.category ?? '').localeCompare(b.category ?? '') || a.name.localeCompare(b.name));
   }, [q, all, today]);
   return (
     <div className="card">
       <div className="card-head"><h2>Cash Shop items</h2><SourceBadge source={CASH_SOURCES.founders} compact /></div>
-      <div className="row" style={{ alignItems: 'end' }}>
-        <label className="field" style={{ flex: '1 1 200px' }}>
-          Search
-          <input type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="e.g. Safety Charm, Megaphone, SP Reset" />
-        </label>
-        {!q && <label className="small"><input type="checkbox" checked={all} onChange={(e) => setAll(e.target.checked)} /> Show items without a price ({CASH_ITEMS.length} in the game files)</label>}
-      </div>
+      {q.trim() ? (
+        <p className="small muted" style={{ margin: 0 }}>Searching all {CASH_ITEMS.length} Cash Shop items in the game files.</p>
+      ) : (
+        <label className="small"><input type="checkbox" checked={all} onChange={(e) => setAll(e.target.checked)} /> Show items without a price ({CASH_ITEMS.length} in the game files)</label>
+      )}
       <div className="table-wrap" style={{ marginTop: 12 }}>
         <table>
           <thead>

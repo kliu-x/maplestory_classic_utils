@@ -8,6 +8,8 @@ import { spPools, spentByTier, validateAllocation } from '../calculators/sp';
 import { apNeeds, suggestAp, unspentAp } from '../calculators/ap';
 import { upsertCharacter } from '../storage/store';
 import { href } from '../router';
+import { PageFilter } from '../components/PageFilter';
+import { matchesQuery } from '../calculators/textMatch';
 import { NumField, SourceBadge, StatusPill } from '../components/ui';
 import { NeedCharacter, activeBuild, useActive, type PageProps } from './shared';
 
@@ -35,10 +37,12 @@ export default function SkillsPage({ params }: PageProps) {
 function SpPlan({ c }: { c: Character }) {
   const job = JOBS[c.job];
   const [tier, setTier] = useState<1 | 2>(job.tier === 2 ? 2 : 1);
+  const [q, setQ] = useState('');
   if (job.tier === 0) return <div className="card">Beginners have no job skills. Advance at Lv {RULES.firstJobLevel.value}.</div>;
   if (!job.plannerSupported) return <div className="card">No proposed builds for {job.label} yet; the skill reference tab still shows caps and prerequisites.</div>;
   // Best-rated first; ties keep the file order (MeowDB plans come first there).
   const builds = buildsFor(c.job, tier).sort((a, b) => b.rating.stars - a.rating.stars);
+  const shownBuilds = builds.filter((b) => matchesQuery(q, b.name, b.summary, b.rating.why, b.source?.source_title, b.basedOn?.source_title, ...b.steps.map((st) => skillById.get(st.skillId)?.name)));
   const build = activeBuild(c, tier);
   const off = build && !c.followPlan ? offPlan(build, c.skills) : [];
   const better = off.length ? builds.filter((b) => b.id !== build!.id).sort((a, b) => offPlanPoints(a, c.skills) - offPlanPoints(b, c.skills))[0] : undefined;
@@ -80,11 +84,13 @@ function SpPlan({ c }: { c: Character }) {
         )}
       </div>
 
+      <PageFilter value={q} onChange={setQ} placeholder="Filter plans: a skill or idea (e.g. Magic Armor, Energy Bolt, MeowDB)" shown={`${shownBuilds.length} of ${builds.length} plans`} />
       <div className="grid grid-2">
-        {builds.map((b) => (
+        {shownBuilds.map((b) => (
           <BuildCard key={b.id} b={b} active={build?.id === b.id} c={c} />
         ))}
       </div>
+      {shownBuilds.length === 0 && <div className="empty">No plan matches "{q.trim()}".</div>}
 
       {build && <LevelTable b={build} c={c} />}
     </div>
@@ -233,9 +239,12 @@ function Reference({ job: initial, highlight }: { job: JobId; highlight: number 
   const hJob = highlight ? (Object.keys(JOBS) as JobId[]).find((j) => JOBS[j].gameJobIds.includes(Math.floor(highlight / 10000))) : undefined;
   const [job, setJob] = useState<JobId>(hJob ?? initial);
   const [open, setOpen] = useState<number | null>(highlight);
-  const skills = skillsForJob(job, true);
+  const [q, setQ] = useState('');
+  const all = skillsForJob(job, true);
+  const skills = all.filter((s) => matchesQuery(q, s.name, s.description));
   return (
     <div className="card">
+      <PageFilter value={q} onChange={setQ} placeholder="Filter skills: a name or effect (e.g. claw, MP, defense)" shown={`${skills.length} of ${all.length}`} />
       <div className="row" style={{ marginBottom: 10 }}>
         <label className="field">
           Job
@@ -255,6 +264,7 @@ function Reference({ job: initial, highlight }: { job: JobId; highlight: number 
             ))}
           </tbody>
         </table>
+        {skills.length === 0 && <div className="empty">No {JOBS[job].label} skill matches "{q.trim()}".</div>}
       </div>
       <p className="small muted" style={{ marginTop: 8 }}>3rd-job skillbooks are not in the Classic World launch data (the API returns errors for them).</p>
     </div>

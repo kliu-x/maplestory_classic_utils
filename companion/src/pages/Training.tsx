@@ -8,6 +8,8 @@ import { DEFAULT_ASSUMPTIONS, setAssumptions, upsertCharacter } from '../storage
 import { fmt, fmt1, minutes, NumField, ProvenancePill, StatusPill } from '../components/ui';
 import { defaultAttackSkill, NeedCharacter, useActive, type PageProps } from './shared';
 import { href } from '../router';
+import { PageFilter } from '../components/PageFilter';
+import { matchesQuery } from '../calculators/textMatch';
 
 const perExpText = (perMin: number, expPerMin: number, digits: number) => {
   const v = perExp(perMin, expPerMin);
@@ -20,10 +22,14 @@ export default function Training({ params }: PageProps) {
   const [levelWindow, setLevelWindow] = useState(15);
   const [limit, setLimit] = useState(5);
   const [open, setOpen] = useState<number | null>(params.get('map') ? Number(params.get('map')) : null);
+  const [q, setQ] = useState('');
 
   const sid = skillId ?? (c ? defaultAttackSkill(c) : null);
   const rows = useMemo(() => (c ? rankMaps(c, sid, a, { maxLevelAbove: levelWindow }) : []), [c, sid, a, levelWindow]);
   if (!c) return <NeedCharacter />;
+  // Filtering shows every matching map, each keeping its real rank.
+  const ranked = rows.map((r, rank) => ({ r, rank })).filter(({ r }) => matchesQuery(q, r.map.name, r.map.street, ...r.spawns.map((sp) => sp.name)));
+  const shown = q.trim() ? ranked : ranked.slice(0, limit);
   const attacks = attackSkillsForJob(c.job);
   return (
     <>
@@ -64,10 +70,10 @@ export default function Training({ params }: PageProps) {
       <div className="card" style={{ marginTop: 16 }}>
         <div className="card-head">
           <h2>Where to train</h2>
-
         </div>
+        <PageFilter value={q} onChange={setQ} placeholder="Filter maps: a map, area or monster (e.g. ant, mushroom)" shown={`${ranked.length} of ${rows.length} maps`} />
         <ol className="rank-list">
-          {rows.slice(0, limit).map((r, i) => {
+          {shown.map(({ r, rank: i }) => {
             const mine = (c.sessions ?? []).filter((s) => s.mapId === r.map.id && !s.party).map((s) => s.expPerActiveMin);
             const isOpen = open === r.map.id;
             return (
@@ -104,7 +110,8 @@ export default function Training({ params }: PageProps) {
           })}
         </ol>
         {rows.length === 0 && <div className="empty">No killable maps in range. Check your attack skill and its level.</div>}
-        {rows.length > limit && (
+        {q.trim() && ranked.length === 0 && rows.length > 0 && <div className="empty">No map in range matches "{q.trim()}".</div>}
+        {!q.trim() && rows.length > limit && (
           <div style={{ textAlign: 'center' }}>
             <button className="btn" onClick={() => setLimit((l) => l + 5)}>Show more maps</button>
           </div>

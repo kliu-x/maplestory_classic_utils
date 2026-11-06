@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import type { PageProps } from './shared';
+import { PageFilter } from '../components/PageFilter';
+import { matchesQuery } from '../calculators/textMatch';
 
 const KEY = 'mcw-companion:pastas';
 
@@ -68,6 +70,7 @@ export default function Pastas(_: PageProps) {
   const [editing, setEditing] = useState<string | null>(null);
   const [copied, setCopied] = useState<string | null>(null);
   const [next, setNext] = useState(0);
+  const [q, setQ] = useState('');
 
   const update = (l: Pasta[]) => {
     setList(l);
@@ -134,8 +137,9 @@ export default function Pastas(_: PageProps) {
             </button>
           </div>
           <p className="small muted" style={{ marginTop: 0 }}>Keys: <kbd>1</kbd>–<kbd>9</kbd> copy that message, <kbd>Space</kbd> copies the next one in turn.</p>
+          {list.length > 3 && <PageFilter value={q} onChange={setQ} placeholder="Filter messages (e.g. scroll, B>, claw)" shown={`${list.filter((p) => matchesQuery(q, p.text)).length} of ${list.length}`} />}
           <div className="pasta-list">
-            {list.map((p, i) =>
+            {list.map((p, i) => !matchesQuery(q, p.text) ? null :
               editing === p.id ? (
                 <div key={p.id} className="pasta-item editing">
                   <textarea

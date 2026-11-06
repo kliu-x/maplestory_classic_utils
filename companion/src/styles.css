@@ -558,3 +558,10 @@ button.pill { cursor: pointer; font: inherit; font-size: 13px; font-weight: 600;
 .job-mobs img { width: 28px; height: 28px; object-fit: contain; vertical-align: middle; margin: 0 2px; }
 .market-links { display: inline-flex; flex-wrap: wrap; justify-content: flex-end; gap: 2px 10px; white-space: nowrap; }
 .kv .market-links { justify-content: flex-start; }
+/* In-page filter box: filters this page only */
+.page-filter { display: flex; align-items: center; gap: 8px; margin: 0 0 16px; padding: 6px 10px; background: var(--surface); border: 1px solid var(--border); border-radius: 999px; box-shadow: var(--shadow); }
+.page-filter input { flex: 1; min-width: 0; border: 0 !important; background: transparent !important; font-size: 16px; padding: 4px 0; outline: none; }
+.page-filter-ico { color: var(--muted); font-size: 18px; }
+.page-filter-count { white-space: nowrap; }
+.page-filter:focus-within { border-color: var(--accent); }
+.page-filter input::-webkit-search-cancel-button { display: none; }

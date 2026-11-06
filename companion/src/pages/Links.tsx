@@ -1,5 +1,8 @@
 import type { PageProps } from './shared';
+import { useState } from 'react';
 import { href } from '../router';
+import { PageFilter } from '../components/PageFilter';
+import { matchesQuery } from '../calculators/textMatch';
 
 // Sites worth having one tap away. Only pages we have opened ourselves; MeowDB first
 // because it tracks Classic World most closely. Sources & caveats lives off the menu, linked here.
@@ -60,6 +63,9 @@ const GROUPS: { name: string; links: LinkTile[] }[] = [
 ];
 
 export default function Links(_: PageProps) {
+  const [q, setQ] = useState('');
+  const groups = GROUPS.map((g) => ({ ...g, links: g.links.filter((l) => matchesQuery(q, l.title, l.what, g.name, l.url)) })).filter((g) => g.links.length);
+  const count = groups.reduce((n, g) => n + g.links.length, 0);
   return (
     <>
       <div className="page-head">
@@ -68,7 +74,9 @@ export default function Links(_: PageProps) {
           <p>The sites worth keeping handy. They open in a new tab.</p>
         </div>
       </div>
-      {GROUPS.map((g) => (
+      <PageFilter value={q} onChange={setQ} placeholder="Filter links (e.g. price, guide, map)" shown={`${count} link${count === 1 ? '' : 's'}`} />
+      {groups.length === 0 && <div className="empty">No link matches "{q.trim()}".</div>}
+      {groups.map((g) => (
         <div key={g.name} className="card">
           <h2>{g.name}</h2>
           <div className="link-grid">
