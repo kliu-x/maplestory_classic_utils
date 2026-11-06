@@ -6,6 +6,7 @@ import { ITEMS } from '../data';
 import { itemsForPick, statLine } from '../data/itemInfo';
 import { href } from '../router';
 import { PageFilter } from './PageFilter';
+import { ItemHover } from './ItemHover';
 import { matchesQuery } from '../calculators/textMatch';
 
 const pickMatches = (q: string, p: GearPick) => matchesQuery(q, p.item, p.slot, p.stats, p.howToGet, TIER_LABEL[p.tier]);
@@ -81,7 +82,7 @@ function PickRow({ p }: { p: GearPick }) {
         <span className={`gear-tier ${p.tier}`}>{TIER_LABEL[p.tier]}</span>
         {(() => {
           const found = itemsForPick(p, ITEMS);
-          return found.length ? <a href={href('items', { id: found[0].id })}><strong>{p.item}</strong></a> : <strong>{p.item}</strong>;
+          return found.length ? <ItemHover item={found[0]}><a href={href('items', { id: found[0].id })}><strong>{p.item}</strong></a></ItemHover> : <strong>{p.item}</strong>;
         })()}
         {p.reqLevel != null && <span className="muted small">Lv {p.reqLevel}</span>}
         <span className="spacer" />

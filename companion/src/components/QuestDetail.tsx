@@ -12,6 +12,7 @@ import { questSteps } from '../calculators/questChain';
 import { href } from '../router';
 import { fmt, SourceBadge, StatusPill } from './ui';
 import { MapView, type Pin } from './MapView';
+import { ItemHover } from './ItemHover';
 
 const questById = new Map(QUESTS.map((q) => [q.id, q]));
 export const QUEST_STEPS = questSteps(QUESTS);
@@ -42,7 +43,7 @@ function Rewards({ q }: { q: Quest }) {
           <div key={`${it.itemId}-${i}`} className={`icon-row${it.jobMask && family && !mine ? ' dim' : ''}`} style={{ marginBottom: 4 }} title={item?.description}>
             <img src={IMG.item(it.itemId)} alt="" loading="lazy" onError={(e) => (e.currentTarget.style.visibility = 'hidden')} />
             <span>
-              <a href={href('items', { id: it.itemId })}>{item?.name ?? `Item ${it.itemId}`}</a>{it.count > 1 ? ` × ${it.count}` : ''}
+              <ItemHover item={item}><a href={href('items', { id: it.itemId })}>{item?.name ?? `Item ${it.itemId}`}</a></ItemHover>{it.count > 1 ? ` × ${it.count}` : ''}
               {jobs.length > 0 && <span className="small muted"> · {jobs.join('/')}</span>}
               {mine && <span className="pill accent" style={{ marginLeft: 6 }}>yours</span>}
             </span>
@@ -282,7 +283,7 @@ export function QuestDetail({ quest: q }: { quest: Quest }) {
                   <div className="icon-row" style={{ alignItems: 'flex-start' }}>
                     <img src={IMG.item(it.itemId)} alt="" loading="lazy" onError={(e) => (e.currentTarget.style.visibility = 'hidden')} />
                     <span>
-                      <strong><a href={href('items', { id: it.itemId })}>{item?.name ?? `Item ${it.itemId}`}</a> × {it.count}</strong>
+                      <strong><ItemHover item={item}><a href={href('items', { id: it.itemId })}>{item?.name ?? `Item ${it.itemId}`}</a></ItemHover> × {it.count}</strong>
                       {item?.description && <span className="small muted" style={{ display: 'block' }}>{item.description}</span>}
                     </span>
                   </div>

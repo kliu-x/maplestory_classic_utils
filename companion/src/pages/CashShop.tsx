@@ -2,9 +2,10 @@ import { useMemo, useState } from 'react';
 import type { Item } from '../models/types';
 import { IMG, ITEMS, itemById } from '../data';
 import { CASH_PACKAGES, CASH_SOURCES, CRATES, type Crate, cashPriceFor, crateFor, crateItem, cratesWith, saleState, todayIso } from '../data/cashShop';
-import { averageOpens, chanceInOpens, costOfOpens, opensForChance } from '../calculators/crate';
+import { chanceInOpens } from '../calculators/crate';
 import { MarketLink } from '../components/MarketLink';
 import { PageFilter } from '../components/PageFilter';
+import { ItemHover } from '../components/ItemHover';
 import { matchesQuery } from '../calculators/textMatch';
 import { fmt, NumField, SourceBadge, StatusPill } from '../components/ui';
 import { href } from '../router';
@@ -113,44 +114,35 @@ function CrateCard({ crate, today, highlight, onPick, filter }: { crate: Crate; 
       </div>
 
       <p className="small" style={{ margin: '10px 0' }}>
-        Rarest pieces are {rarest.rate}%: on average {fmt(averageOpens(rarest.rate))} crates (≈ {money(costOfOpens(averageOpens(rarest.rate), crate.price), cur)}), and a 50% chance takes {fmt(opensForChance(rarest.rate, 0.5))}.
+        The rarest pieces are {rarest.rate}% each.
         A duplicate or unwanted piece swaps for 1 Aurora Stamp before you equip it (20 stamps buy an Aurora crate).
       </p>
 
-      <div className="table-wrap">
-        <table>
-          <thead>
-            <tr><th>Piece</th><th className="num">Rate</th><th className="num">Chance in {fmt(opens)}</th><th className="num">50% chance</th><th className="num">Average</th><th className="num">Market</th></tr>
-          </thead>
-          <tbody>
-            {rows.map((r) => {
-              const it = crateItem(r.name);
-              const half = opensForChance(r.rate, 0.5);
-              return (
-                <tr key={r.name} className={highlight.toLowerCase() === r.name.toLowerCase() ? 'selected' : ''}>
-                  <td>
-                    <span className="mob-name">
-                      {icon(it?.id)}
-                      <span>
-                        <strong>{r.name}</strong>
-                        {it && <div className="small muted">{it.slot}</div>}
-                      </span>
-                    </span>
-                  </td>
-                  <td className="num">{r.rate}%</td>
-                  <td className="num">{fmt(chanceInOpens(r.rate, opens) * 100)}%</td>
-                  <td className="num" title={money(costOfOpens(half, crate.price), cur)}>{fmt(half)} <span className="small muted">({money(costOfOpens(half, crate.price), cur)})</span></td>
-                  <td className="num">{fmt(averageOpens(r.rate))}</td>
-                  <td className="num"><MarketLink item={{ id: it?.id ?? 0, name: r.name, cash: true }} /></td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+      <p className="small muted" style={{ margin: '0 0 6px' }}>Each piece: drop rate · chance in {fmt(opens)} crates · market prices. Hover a piece to see it.</p>
+      <div className="piece-grid">
+        {rows.map((r) => {
+          const it = crateItem(r.name);
+          const item: Item | undefined = it && (itemById.get(it.id) ?? { id: it.id, name: r.name, subCategory: it.slot, cash: true });
+          return (
+            <div key={r.name} className={`piece-row ${highlight.toLowerCase() === r.name.toLowerCase() ? 'selected' : ''}`}>
+              <ItemHover item={item}>
+                <span className="mob-name piece-name">
+                  {icon(it?.id)}
+                  <strong>{r.name}</strong>
+                </span>
+              </ItemHover>
+              <span className="num">{r.rate}%</span>
+              <span className="num muted" title={`Chance of at least one in ${fmt(opens)} crates`}>{fmt(chanceInOpens(r.rate, opens) * 100)}%</span>
+              <span className="num small"><MarketLink item={{ id: it?.id ?? 0, name: r.name, cash: true }} /></span>
+            </div>
+          );
+        })}
+      </div>
+      <div>
         {rows.length === 0 && <div className="empty">No piece in {crate.label} matches "{filter.trim()}".{CRATES.some((c) => hitsIn(c)) ? ' The numbers on the crate buttons show where it is.' : ''}</div>}
       </div>
       <p className="small muted" style={{ marginTop: 8 }}>
-        "50% chance" is how many crates give a coin-flip chance of that piece (cost in brackets, buying {crate.price.bundle ? `${crate.price.bundle.count}-packs where cheaper` : 'singles'}). "Average" is 1 ÷ rate. Each crate is a fresh roll: opening more doesn't raise the rate.
+        The second number is the chance of getting that piece at least once in {fmt(opens)} crates. Each crate is a fresh roll: opening more doesn't raise the rate.
         Sale dates: <SourceBadge source={crate.saleSource} compact /> {crate.saleSource.source_title}.
       </p>
     </div>
@@ -184,10 +176,12 @@ function CashItems({ selectedId, today, q }: { selectedId?: number; today: strin
               return (
                 <tr key={i.id} className={`clickable ${selectedId === i.id ? 'selected' : ''}`} onClick={() => (window.location.hash = href('cash', { id: i.id }))}>
                   <td>
-                    <span className="mob-name">
-                      {icon(i.id)}
-                      <span><strong>{i.name}</strong><div className="small muted">{i.subCategory ?? i.category}</div></span>
-                    </span>
+                    <ItemHover item={i}>
+                      <span className="mob-name">
+                        {icon(i.id)}
+                        <span><strong>{i.name}</strong><div className="small muted">{i.subCategory ?? i.category}</div></span>
+                      </span>
+                    </ItemHover>
                   </td>
                   <td className="num">
                     {p ? money(p.nx) : c ? money(c.price.one, c.price.currency) : '—'}

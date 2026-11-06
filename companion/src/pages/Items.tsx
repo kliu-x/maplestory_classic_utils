@@ -8,6 +8,7 @@ import { DROP_REPORTS } from '../data/dropReports';
 import { SHOP_PRICE_SOURCE, shopPriceFor } from '../data/shopPrices';
 import { Droppers } from '../components/QuestDetail';
 import { MarketLink } from '../components/MarketLink';
+import { ItemHover } from '../components/ItemHover';
 import { fmt, NumField, SourceBadge, StatusPill } from '../components/ui';
 import { href } from '../router';
 import { useActive, type PageProps } from './shared';
@@ -76,13 +77,15 @@ export default function Items({ params }: PageProps) {
             {list.slice(0, 300).map((i) => (
               <tr key={i.id} className={`clickable ${selected?.id === i.id ? 'selected' : ''}`} onClick={() => (window.location.hash = href('items', { id: i.id }))}>
                 <td>
-                  <span className="mob-name">
-                    <img className="mob-icon" src={IMG.item(i.id)} alt="" loading="lazy" onError={(e) => (e.currentTarget.style.visibility = 'hidden')} />
-                    <span>
-                      <strong>{i.name}</strong>
-                      <div className="small muted">{[i.subCategory ?? i.category, jobsOf(i.reqJob).join('/')].filter(Boolean).join(' · ')}</div>
+                  <ItemHover item={i}>
+                    <span className="mob-name">
+                      <img className="mob-icon" src={IMG.item(i.id)} alt="" loading="lazy" onError={(e) => (e.currentTarget.style.visibility = 'hidden')} />
+                      <span>
+                        <strong>{i.name}</strong>
+                        <div className="small muted">{[i.subCategory ?? i.category, jobsOf(i.reqJob).join('/')].filter(Boolean).join(' · ')}</div>
+                      </span>
                     </span>
-                  </span>
+                  </ItemHover>
                   {gearPicksFor(i).length > 0 && <span className="gear-tier bis">guide pick</span>}
                 </td>
                 <td className="num">{i.reqLevel ?? '—'}</td>
