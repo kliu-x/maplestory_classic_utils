@@ -53,8 +53,22 @@ function SpPlan({ c }: { c: Character }) {
   const available = tier === 1 ? pools.first : pools.second;
   const used = tier === 1 ? spent.first : spent.second;
 
+  // Still saved as a 1st job past the 2nd job level: one click to say which 2nd job it is.
+  const secondJobs = job.tier === 1 && c.level >= RULES.secondJobLevel.value ? (Object.keys(JOBS) as JobId[]).filter((j) => JOBS[j].family === job.family && JOBS[j].tier === 2) : [];
+
   return (
     <div className="stack" style={{ gap: 16 }}>
+      {secondJobs.length > 0 && (
+        <div className="card">
+          <strong>Lv {c.level}: which 2nd job did you take?</strong>
+          <p className="small muted" style={{ margin: '4px 0 8px' }}>{c.name} is saved as {job.label}. Pick the 2nd job to get its skill plans; your 1st job skills stay as they are.</p>
+          <div className="row" style={{ gap: 8, flexWrap: 'wrap' }}>
+            {secondJobs.map((j) => (
+              <button key={j} className="btn" onClick={() => { upsertCharacter({ ...c, job: j }); setTier(2); }}>{JOBS[j].label}</button>
+            ))}
+          </div>
+        </div>
+      )}
       <div className="card">
         <div className="row">
           {job.tier === 2 && (
