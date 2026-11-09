@@ -6,6 +6,7 @@ import { DATA_META } from './data';
 import Dashboard from './pages/Dashboard';
 import Characters from './pages/Characters';
 import Training from './pages/Training';
+import ExpCurve from './pages/ExpCurve';
 import Monsters from './pages/Monsters';
 import SkillsPage from './pages/Skills';
 import Gear from './pages/Gear';
@@ -22,6 +23,7 @@ const VIEWS = {
   dashboard: Dashboard,
   characters: Characters,
   training: Training,
+  exp: ExpCurve,
   monsters: Monsters,
   skills: SkillsPage,
   gear: Gear,

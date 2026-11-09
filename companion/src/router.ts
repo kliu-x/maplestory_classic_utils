@@ -4,6 +4,7 @@ export const PAGES = [
   { id: 'dashboard', label: 'Dashboard', ico: '◎' },
   { id: 'characters', label: 'Characters', ico: '☺' },
   { id: 'training', label: 'Training', ico: '⚔' },
+  { id: 'exp', label: 'EXP Curve', ico: '∿' },
   { id: 'monsters', label: 'Monsters', ico: '✿' },
   { id: 'skills', label: 'Skills & AP', ico: '✦' },
   { id: 'gear', label: 'Gear', ico: '⛨' },
