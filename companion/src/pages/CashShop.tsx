@@ -4,6 +4,7 @@ import { IMG, ITEMS, itemById } from '../data';
 import { CASH_GROUPS, CASH_PACKAGES, CASH_SOURCES, CRATES, cashGroupOf, type Crate, cashPriceFor, crateFor, crateItem, cratesWith, saleState, todayIso } from '../data/cashShop';
 import { chanceInOpens } from '../calculators/crate';
 import { MarketLink } from '../components/MarketLink';
+import { ChatAsks } from '../components/ChatAsks';
 import { PageFilter } from '../components/PageFilter';
 import { ItemHover } from '../components/ItemHover';
 import { matchesQuery } from '../calculators/textMatch';
@@ -276,7 +277,7 @@ function CashItemDetail({ item: i, today }: { item: Item; today: string }) {
         {p?.bundles && <div className="kv"><div className="k">Multi-buy</div><div className="v">{p.bundles.map((b) => `${b.count} for ${fmt(b.nx)} NX`).join(' · ')}</div></div>}
         {p && <div className="kv"><div className="k">Lasts</div><div className="v">{p.duration}</div></div>}
         {p?.until && <div className="kv"><div className="k">On sale until</div><div className="v">{dateLabel(p.until)}</div></div>}
-        <div className="kv"><div className="k">Market price</div><div className="v">{i.untradeable ? 'untradable' : <MarketLink item={i} />}</div></div>
+        <div className="kv"><div className="k">Market price</div><div className="v">{i.untradeable ? 'untradable' : <><MarketLink item={i} /><ChatAsks itemId={i.id} name={i.name} /></>}</div></div>
       </div>
       {p && <p className="small">{p.note} <SourceBadge source={p.source} compact /></p>}
       {c && <p className="small">This is a random box: its rates are in the crate table below. <SaleTag crate={c} today={today} /></p>}

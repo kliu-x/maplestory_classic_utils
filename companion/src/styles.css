@@ -610,3 +610,11 @@ button.pill { cursor: pointer; font: inherit; font-size: 13px; font-weight: 600;
 .exp-table td:first-child, .exp-table th:first-child { text-align: left; }
 .exp-table tr { cursor: pointer; }
 .exp-table tr.on td { background: var(--accent-soft); font-weight: 700; }
+
+/* Maple EXP Tracker import and chat asking prices */
+.tracker-import { border: 2px dashed transparent; border-radius: 12px; }
+.tracker-import.over { border-color: var(--accent); background: var(--accent-soft); }
+.tracker-import label.btn { cursor: pointer; }
+.tracker-import-msg { white-space: pre-wrap; font-family: inherit; margin: 8px 0 0; }
+.chat-asks { margin-top: 4px; }
+tr.sub-row td { background: var(--surface-2); }

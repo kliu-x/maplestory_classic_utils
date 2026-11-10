@@ -12,6 +12,7 @@ import SkillsPage from './pages/Skills';
 import Gear from './pages/Gear';
 import Items from './pages/Items';
 import CashShop from './pages/CashShop';
+import ChatMarket from './pages/ChatMarket';
 import Quests from './pages/Quests';
 import Maps from './pages/Maps';
 import NameChecker from './pages/NameChecker';
@@ -29,6 +30,7 @@ const VIEWS = {
   gear: Gear,
   items: Items,
   cash: CashShop,
+  chat: ChatMarket,
   quests: Quests,
   maps: Maps,
   pastas: Pastas,

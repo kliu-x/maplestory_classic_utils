@@ -1,4 +1,5 @@
 import { PastSessions, SessionRecorder } from '../components/SessionRecorder';
+import { TrackerImport } from '../components/TrackerImport';
 import { useMemo, useState } from 'react';
 import type { TrainingAssumptions } from '../models/types';
 import { IMG, attackSkillsForJob } from '../data';
@@ -64,6 +65,10 @@ export default function Training({ params }: PageProps) {
       <SessionRecorder c={c} a={a} skillId={sid} defaultMapId={rows[0]?.map.id ?? null} />
 
       <PastSessions c={c} />
+
+      <div className="card">
+        <TrackerImport compact />
+      </div>
 
       <Assumptions a={a} />
 

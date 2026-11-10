@@ -287,4 +287,10 @@ export interface SavedSession {
   potions: number;
   /** Hunted in a party: EXP and kills are shared, so it isn't a solo rate. */
   party?: boolean;
+  /** Where it came from when not recorded here ('maple-exp-tracker': imported from that overlay's log; it doesn't count kills, MP or potions). */
+  source?: 'maple-exp-tracker';
+  /** The map name as the other tool wrote it. */
+  mapName?: string;
+  mesosGained?: number | null;
+  mesosPerHour?: number | null;
 }

@@ -412,7 +412,14 @@ export function PastSessions({ c }: { c: Character }) {
       <SessionChart sessions={list} best={solo.length > 1 ? best : null} selected={openId} onSelect={(id) => setOpenId(openId === id ? null : id)} />
       <ul className="session-list">
         {[...list].sort((a, b) => b.at.localeCompare(a.at)).filter((s) => list.length < 2 || showAll || s.id === openId).map((s) => {
-          const facts = [
+          // The Maple EXP Tracker doesn't count kills, MP or potions: show what it does measure instead.
+          const imported = s.source === 'maple-exp-tracker';
+          const facts = imported ? [
+            'From Maple EXP Tracker',
+            s.mesosPerHour != null ? `${fmt(s.mesosPerHour)} mesos/hr` : null,
+            s.mesosGained != null ? `${fmt(s.mesosGained)} mesos gained` : null,
+            s.mapId == null && s.mapName ? `map "${s.mapName}"` : null,
+          ].filter(Boolean) : [
             s.activeMinutes ? `${fmt(s.kills / s.activeMinutes, 1)} ${s.party ? 'party kills' : 'kills'}/min` : null,
             s.expPerKill ? `${fmt(s.expPerKill)} EXP/kill${s.party ? ' (your share)' : ''}` : null,
             s.castsPerKill != null && !s.party ? `${fmt(s.castsPerKill, 2)} casts/kill` : null,
@@ -436,7 +443,7 @@ export function PastSessions({ c }: { c: Character }) {
                   />
                 </div>
                 <div className="small muted">
-                  Lv {s.level} · {new Date(s.at).toLocaleString([], { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })} · {fmt(s.activeMinutes, 1)} of {fmt(s.minutes, 1)} min hunting
+                  Lv {s.level} · {new Date(s.at).toLocaleString([], { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })} · {imported ? `${fmt(s.minutes, 1)} min tracked` : `${fmt(s.activeMinutes, 1)} of ${fmt(s.minutes, 1)} min hunting`}
                 </div>
                 <div className="small session-facts">{facts.join(' · ')}</div>
               </div>
