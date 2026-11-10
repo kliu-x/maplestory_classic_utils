@@ -586,6 +586,7 @@ button.pill { cursor: pointer; font: inherit; font-size: 13px; font-weight: 600;
 .piece-name strong { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .piece-row .mob-icon { width: 26px; height: 26px; margin-right: 6px; }
 .piece-row .market-links { gap: 0 8px; }
+.group-row td { background: var(--surface-2); font-weight: 800; font-size: 14px; color: var(--muted); padding: 5px 10px; }
 
 /* EXP curve page */
 .exp-slider { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }

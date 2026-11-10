@@ -1,7 +1,7 @@
-import { useMemo, useState } from 'react';
+import { Fragment, useMemo, useState } from 'react';
 import type { Item } from '../models/types';
 import { IMG, ITEMS, itemById } from '../data';
-import { CASH_PACKAGES, CASH_SOURCES, CRATES, type Crate, cashPriceFor, crateFor, crateItem, cratesWith, saleState, todayIso } from '../data/cashShop';
+import { CASH_GROUPS, CASH_PACKAGES, CASH_SOURCES, CRATES, cashGroupOf, type Crate, cashPriceFor, crateFor, crateItem, cratesWith, saleState, todayIso } from '../data/cashShop';
 import { chanceInOpens } from '../calculators/crate';
 import { MarketLink } from '../components/MarketLink';
 import { PageFilter } from '../components/PageFilter';
@@ -26,10 +26,16 @@ export default function CashShop({ params }: PageProps) {
   const piece = params.get('piece') ?? '';
   const defaultCrate = (params.get('crate') && CRATES.find((c) => c.key === params.get('crate'))) || (selected && crateFor(selected.id, today)) || CRATES.find((c) => saleState(c, today) === 'on sale') || CRATES[0];
   const [crateKey, setCrateKey] = useState(defaultCrate.key);
-  const crate = CRATES.find((c) => c.key === (params.get('crate') ?? crateKey)) ?? defaultCrate;
+  const picked = CRATES.find((c) => c.key === (params.get('crate') ?? crateKey)) ?? defaultCrate;
   const [q, setQ] = useState('');
+  // Filtering for a piece that isn't in the picked crate shows the crate it's in (current sales first).
+  const hits = (c: Crate) => c.rewards.some((r) => pieceMatches(q, r.name));
+  const saleRank = (c: Crate) => ({ 'on sale': 0, upcoming: 1, ended: 2 })[saleState(c, today)];
+  // A crate button clicked for this same filter wins.
+  const [pickedFor, setPickedFor] = useState<string | null>(null);
+  const crate = q.trim() && pickedFor !== q && !hits(picked) ? [...CRATES].sort((a, b) => saleRank(a) - saleRank(b)).find(hits) ?? picked : picked;
   const packages = CASH_PACKAGES.filter((p) => packageMatches(q, p));
-  const matched = q.trim() ? CRATES.reduce((n, c) => n + c.rewards.filter((r) => pieceMatches(q, r.name)).length, 0) + packages.length + CASH_ITEMS.filter((i) => itemMatches(q, i)).length : 0;
+  const matched = q.trim() ? PIECES.filter((x) => pieceMatches(q, x.name)).length + packages.length + CASH_ITEMS.filter((i) => itemMatches(q, i)).length : 0;
 
   return (
     <>
@@ -44,7 +50,7 @@ export default function CashShop({ params }: PageProps) {
 
       {selected?.cash && <CashItemDetail item={selected} today={today} />}
 
-      <CrateCard crate={crate} today={today} highlight={piece} filter={q} onPick={(k) => { setCrateKey(k); if (params.get('crate')) window.location.hash = href('cash', { crate: k }); }} />
+      <CrateCard crate={crate} today={today} highlight={piece} filter={q} onPick={(k) => { setCrateKey(k); setPickedFor(q); if (params.get('crate')) window.location.hash = href('cash', { crate: k }); }} />
 
       {packages.length > 0 && (
       <div className="card">
@@ -149,20 +155,31 @@ function CrateCard({ crate, today, highlight, onPick, filter }: { crate: Crate; 
   );
 }
 
+/** Every crate piece once (a piece can be in several crates), as an item for the table. */
+const PIECES = [...new Map(CRATES.flatMap((c) => c.rewards).map((r) => [r.name.toLowerCase(), r.name])).values()].map((name) => {
+  const it = crateItem(name);
+  const item: Item = (it && itemById.get(it.id)) || { id: it?.id ?? 0, name, subCategory: it?.slot, cash: true };
+  return { name, item };
+});
+const PIECE_GROUP = 'Fashion: Mystery Fashion Crate pieces';
+
+const groupRank = (i: Item) => { const n = CASH_GROUPS.findIndex((g) => g.name === cashGroupOf(i)); return n < 0 ? CASH_GROUPS.length : n; };
+
 function CashItems({ selectedId, today, q }: { selectedId?: number; today: string; q: string }) {
   const [all, setAll] = useState(false);
   const list = useMemo(() => {
     const t = q.trim().toLowerCase();
     return CASH_ITEMS.filter((i) => (t ? itemMatches(q, i) : all || cashPriceFor(i) || crateFor(i.id, today)))
-      .sort((a, b) => (a.category ?? '').localeCompare(b.category ?? '') || a.name.localeCompare(b.name));
+      .sort((a, b) => groupRank(a) - groupRank(b) || a.name.localeCompare(b.name));
   }, [q, all, today]);
+  const pieces = useMemo(() => (q.trim() || all ? PIECES.filter((x) => pieceMatches(q, x.name)).sort((a, b) => a.name.localeCompare(b.name)) : []), [q, all]);
   return (
     <div className="card">
       <div className="card-head"><h2>Cash Shop items</h2><SourceBadge source={CASH_SOURCES.founders} compact /></div>
       {q.trim() ? (
-        <p className="small muted" style={{ margin: 0 }}>Searching all {CASH_ITEMS.length} Cash Shop items in the game files.</p>
+        <p className="small muted" style={{ margin: 0 }}>Searching all {CASH_ITEMS.length} Cash Shop items in the game files and all {PIECES.length} crate pieces.</p>
       ) : (
-        <label className="small"><input type="checkbox" checked={all} onChange={(e) => setAll(e.target.checked)} /> Show items without a price ({CASH_ITEMS.length} in the game files)</label>
+        <label className="small"><input type="checkbox" checked={all} onChange={(e) => setAll(e.target.checked)} /> Show everything: items without a price ({CASH_ITEMS.length} in the game files) and all {PIECES.length} crate pieces</label>
       )}
       <div className="table-wrap" style={{ marginTop: 12 }}>
         <table>
@@ -170,11 +187,16 @@ function CashItems({ selectedId, today, q }: { selectedId?: number; today: strin
             <tr><th>Item</th><th className="num">Price</th><th>Lasts</th><th>What it does</th><th className="num">Market</th></tr>
           </thead>
           <tbody>
-            {list.map((i) => {
+            {list.map((i, k) => {
               const p = cashPriceFor(i);
               const c = crateFor(i.id, today);
+              const group = cashGroupOf(i);
               return (
-                <tr key={i.id} className={`clickable ${selectedId === i.id ? 'selected' : ''}`} onClick={() => (window.location.hash = href('cash', { id: i.id }))}>
+                <Fragment key={i.id}>
+                {(k === 0 || cashGroupOf(list[k - 1]) !== group) && (
+                  <tr className="group-row"><td colSpan={5}>{group}</td></tr>
+                )}
+                <tr className={`clickable ${selectedId === i.id ? 'selected' : ''}`} onClick={() => (window.location.hash = href('cash', { id: i.id }))}>
                   <td>
                     <ItemHover item={i}>
                       <span className="mob-name">
@@ -192,11 +214,41 @@ function CashItems({ selectedId, today, q }: { selectedId?: number; today: strin
                   <td className="small">{p?.note ?? <span className="muted">{i.description?.slice(0, 90)}</span>}</td>
                   <td className="num">{i.untradeable ? <span className="muted small">untradable</span> : <MarketLink item={i} />}</td>
                 </tr>
+                </Fragment>
+              );
+            })}
+            {pieces.length > 0 && <tr className="group-row"><td colSpan={5}>{PIECE_GROUP}</td></tr>}
+            {pieces.map(({ name, item }) => {
+              const where = cratesWith(name, today);
+              const first = where[0];
+              return (
+                <tr
+                  key={'piece:' + name}
+                  className="clickable"
+                  onClick={() => first && (window.location.hash = href('cash', { crate: first.crate.key, piece: name }))}
+                >
+                  <td>
+                    <ItemHover item={item.id ? item : undefined}>
+                      <span className="mob-name">
+                        {icon(item.id || undefined)}
+                        <span><strong>{name}</strong><div className="small muted">{crateItem(name)?.slot ?? 'Fashion'}</div></span>
+                      </span>
+                    </ItemHover>
+                  </td>
+                  <td className="num small">{first ? <>random from a crate<div className="muted">{money(first.crate.price.one, first.crate.price.currency)} a crate</div></> : '—'}</td>
+                  <td className="small">—</td>
+                  <td className="small">
+                    {where.map((x) => (
+                      <div key={x.crate.key}>{x.rate}% in {x.crate.label}{saleState(x.crate, today) === 'on sale' ? ' (on sale)' : ''}</div>
+                    ))}
+                  </td>
+                  <td className="num"><MarketLink item={{ id: item.id, name, cash: true }} /></td>
+                </tr>
               );
             })}
           </tbody>
         </table>
-        {list.length === 0 && <div className="empty">No Cash Shop items match.</div>}
+        {list.length === 0 && pieces.length === 0 && <div className="empty">No Cash Shop items or crate pieces match.</div>}
       </div>
       <p className="small muted" style={{ marginTop: 8 }}>
         Prices from Nexon's Cash Shop posts (Founder's Access, Grand Launch and Nov 4). — means Nexon's posts don't list it right now, not that it's free. Items bought with NX are often untradable; the crates and their pieces are tradable.

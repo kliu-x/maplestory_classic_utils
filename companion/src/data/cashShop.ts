@@ -147,3 +147,17 @@ export function crateFor(itemId: number, today: string): Crate | undefined {
 }
 
 export const todayIso = () => new Date().toISOString().slice(0, 10);
+
+/** Cash Shop items grouped by what they're for; the order is how the list shows them. */
+export const CASH_GROUPS: { name: string; test: (i: Item) => boolean }[] = [
+  { name: 'Character: AP / SP reset', test: (i) => i.subCategory === 'SP/AP Modification' },
+  { name: 'Inventory & storage', test: (i) => /slot coupon|portable storage/i.test(i.name) || i.subCategory === 'Item Store' },
+  { name: 'Safety', test: (i) => i.subCategory === 'Protection' || /safety charm/i.test(i.name) },
+  { name: 'Megaphones & messages', test: (i) => i.subCategory === 'Messenger' || i.subCategory === 'Weather Effect' || /megaphone/i.test(i.name) },
+  { name: 'Your shop', test: (i) => i.subCategory === 'Store Permit' || i.subCategory === 'Hired Merchant' },
+  { name: 'Pets', test: (i) => ['Pet', 'Pet Use', 'Pet Food', 'Pet Appearance'].includes(i.subCategory ?? '') },
+  { name: 'Crates & boxes', test: (i) => i.subCategory === 'Surprise Box' },
+  { name: 'Looks', test: (i) => i.category === 'Appearance' || /beauty album|outfit set/i.test(i.name) },
+];
+
+export const cashGroupOf = (i: Item) => CASH_GROUPS.find((g) => g.test(i))?.name ?? 'Other';
