@@ -4,6 +4,7 @@ import { parseTrackerFile, mergeSessions } from '../integrations/expTrackerImpor
 import { addChatOffers } from '../storage/chatOffers';
 import { getState, upsertCharacter } from '../storage/store';
 import { fmt } from './ui';
+import { href } from '../router';
 
 /**
  * Import from the Maple EXP Tracker (a separate Windows overlay): its data folder's session_log.json and
@@ -63,7 +64,7 @@ export function TrackerImport({ compact }: { compact?: boolean }) {
           <input type="file" accept=".json,.csv,application/json,text/csv" multiple hidden onChange={(e) => { void read(e.target.files); e.target.value = ''; }} />
         </label>
         <span className="small muted">
-          Pick or drop <code>session_log.json</code> and <code>market_log.json</code> from the tracker's <code>data</code> folder (or its CSV exports). Read here, never uploaded.
+          Pick or drop <code>session_log.json</code> and <code>market_log.json</code> from the tracker's <code>data</code> folder (or its CSV exports). Read here, never uploaded. Don't have it? <a href={href('tracker')}>Get the tracker</a>.
         </span>
       </div>
       {msg && <pre className="small tracker-import-msg">{msg}</pre>}

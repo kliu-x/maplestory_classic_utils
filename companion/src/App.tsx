@@ -13,6 +13,7 @@ import Gear from './pages/Gear';
 import Items from './pages/Items';
 import CashShop from './pages/CashShop';
 import ChatMarket from './pages/ChatMarket';
+import TrackerGuide from './pages/TrackerGuide';
 import Quests from './pages/Quests';
 import Maps from './pages/Maps';
 import NameChecker from './pages/NameChecker';
@@ -31,6 +32,7 @@ const VIEWS = {
   items: Items,
   cash: CashShop,
   chat: ChatMarket,
+  tracker: TrackerGuide,
   quests: Quests,
   maps: Maps,
   pastas: Pastas,
