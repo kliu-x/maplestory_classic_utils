@@ -1,0 +1,108 @@
+MAPLE EXP TRACKER - CODE AUDIT
+Version audited: the finished package after the "Mesos only" layout (about 3,000 lines of program code in 7 files).
+Result: 11 findings, all fixed, each with a regression test. 272 automated checks pass (was 227 before the audit).
+This file lists what was checked, what was found, what was changed, and what could NOT be checked here.
+
+
+WHAT WAS CHECKED, AND HOW
+  Correctness      Random-input ("fuzz") testing of the EXP and mesos trackers: 80,000 steps of normal play mixed with
+                   impossible readings; invariants checked at every step (no negative counters, rates or times, time never
+                   running backwards). Accuracy of EXP/hr checked against a known true rate.
+  Robustness       987 windows drawn from hostile text (empty, 400 characters, emoji, Korean/Japanese/Cyrillic, newlines,
+                   NaN and out-of-range bars) plus a full matrix of every text field x hostile value x layout x design.
+                   A stress run of 1,500 random events (readings, clicks, theme and layout changes, bad typed values) against
+                   the whole running app, failing on any logged error.
+  Compatibility    Every file parses under Python 3.9/3.10 grammar; no Python-3.12-only f-strings; no newer-only syntax.
+  Performance      First-draw and steady-state draw times at 100%-300% display scaling; memory over 900 worst-case redraws.
+  Code hygiene     Unused imports, functions and constants; undefined names; leftovers from earlier refactors.
+  Documentation    README claims compared with what the code really does.
+  Security         (done in the previous round and repeated on the final code) no network, no process launching, no
+                   keyboard/mouse hooks, no memory access, no hidden or encoded code, data files are plain numbers; a monitor
+                   run of the whole program recorded no network, process or native-code events from the program's own code.
+
+
+FINDINGS (all fixed)
+  #   Severity  Finding                                                                          Fix
+  1   Medium    "Time tracked" jumped back about 15 s at every auto-pause (1,434 backwards steps    The clock now runs on for one typical gap
+                in 100 simulated sessions); EXP/hr nudged up at the same moment.                    between kills after the last EXP and stops
+                                                                                                   there: same number for display and pause,
+                                                                                                   so no jump. 0 backwards steps. EXP/hr
+                                                                                                   stays within ~1-2% of the true rate.
+  2   Low       "Time to level" could go negative if the reader ever claimed a level whose EXP      "EXP left" is clamped at 0. (Not reachable
+                total was smaller than the EXP shown.                                                with real readings; defensive.)
+  3   Low       The Wide layout crashed if the level label was 60+ characters (bar width went        Label shortened; bar never narrower than its
+                negative). Real labels are "LV 47".                                                  height.
+  4   Low       A window title in Korean, Japanese, Chinese, Arabic, Thai or Hebrew showed as       Titles the font can't draw are replaced by
+                grey boxes in the status chip (the font covers Latin, Greek and Cyrillic).          "The picked window isn't open".
+  5   Medium    Errors inside button handlers were not logged. Under run.bat (no console) they      Handler errors are now written to
+                vanished, which would make problems very hard to diagnose.                          data/errors.log.
+  6   Low       The "View capture" window could open wider than the screen for very wide windows.   Large pictures are shrunk to fit.
+  7   Low       Pressing Refresh while a screen read was running could show a false "game is        The worker reads the window handle once per
+                minimized" for one frame (a thread race).                                           read.
+  8   Low       The CSV export could carry a spreadsheet formula from a typed map name (a name      Cells starting with = + - @ are saved as
+                like =SUM(...)), and a hand-edited or damaged log file could break the Log window.   text. Damaged log lines are skipped.
+  9   Low       In "Select area" mode mesos cannot be read, but the Mesos layout only said "open     It now says mesos can't be read in Select-area
+                your inventory".                                                                    mode and how to switch back.
+  10  Medium    Every time the picture cache filled (a few minutes into a session) it was emptied    Least-recently-used eviction (nothing in use
+                completely, so the next draw rebuilt everything: a 0.4-1 s freeze at 150%-200%      is thrown away), a smaller limit, and 2x
+                display scaling, repeating; memory peaked at 143 MB.                                smoothing on 150%+ screens (same look, 2x
+                                                                                                   faster; difference from 3x under 2/255).
+                                                                                                   Median draw 85 -> 52 ms, slowest 502 -> 288 ms,
+                                                                                                   emptied 10 -> 0 times, peak memory 143 -> 79 MB.
+  11  Cosmetic  Dead code: 2 unused imports, 4 uncalled functions, 2 unused constants.               Removed.
+  Also corrected in the README: mesos "picked up" is really "any increase in the mesos shown" (selling items and quest
+  rewards count; spending is not subtracted).
+
+
+LIMITS - WHAT THIS AUDIT COULD NOT CHECK
+  1  The Windows-only code (winapi.py: window list, hotkeys, one-copy lock, display scaling) cannot run on the machine used
+     for testing. It was read line by line and its 18 Windows functions are fixed by an automatic test, but it has not been
+     executed. First-run checklist on Windows: (a) Settings > Window lists your open windows; (b) with the game open, the
+     status chip says "Tracking"/"Ready" and the EXP number matches the game; (c) Shift+1 starts/pauses while the game is in
+     front; (d) the window corners look rounded (if you see small dark corners, that is harmless); (e) text is sharp at your
+     display scaling; (f) in Task Manager > Details, the tracker's priority reads "Below normal".
+  2  Mesos reading was tested only on pictures built from the shipped digit data, not on real inventory screenshots. EXP
+     reading was tested on one real screenshot of the EXP bar (at several sizes) and on synthetic variants.
+  3  Library versions: tested with Python 3.12, numpy 2.4, OpenCV 4.13, Pillow 12.1. The oldest versions that
+     requirements.txt allows (numpy 1.24, OpenCV 4.8, Pillow 10) and Python 3.10/3.11 were not run.
+  4  The four packages install.bat downloads from the Python package index (mss, numpy, opencv-python-headless, pillow)
+     were not audited; they are widely used libraries.
+  5  Licence: the exact copyright line of the community project whose digit pictures are included could not be fetched.
+     NOTICE.txt gives the MIT text and the project's address; add its LICENSE file if you share this folder.
+  6  No audit can prove software is free of every defect; the checks above are what was done.
+
+FOOTPRINT (added after the audit, because it was asked about)
+  Measured on a single-core test machine: reading the EXP bar takes 18 ms (720p) to 51 ms (4K) every 1.5 s; the mesos scan
+  10 ms to 92 ms every 4 s; a redraw about 10 ms a second. About 4-5% of one core at 1080p, 80-150 MB of memory, no GPU.
+  Safeguards: OpenCV and numpy are held to one thread (no all-core bursts); the program asks Windows for "below normal"
+  priority for itself, so the game wins if the PC is ever fully busy. The priority request was not run on Windows here.
+
+ADDED LATER: MARKET WATCH (reading the chat). New files: chat_reader.py, market.py, assets/chat_glyphs.npz, tools/build_chat_glyphs.py,
+tests/test_chat.py, tests/synth_chat.py, tests/samples/chat_sample.png. New data files (data folder only): market_log.json, watchlist.txt,
+chat_glyphs_user.npz. It uses no new Windows functions, no network and no new packages. It only reads a picture of the chat box that the
+screen worker already captures. What was checked: 105 tests of the chat side, including reading new messages at 1x-4x on four backgrounds,
+odd crop offsets, dimmed and recoloured pictures, random garbage (no crashes), and teaching from nothing in an invented alphabet.
+Bugs found and fixed while building it (each now has a test): a fixed edge margin cut the first letter of names; a tag detector could
+mistake wide white letters for tags; a stray mark could wipe out a whole line; very small shapes were allowed a one-pixel error so
+mouse-pointer fragments could read as ":" or "l"; teaching could be fooled by a typo of the same length, by extra typed text hidden as
+"touching letters", and by junk marks at the end of a line (now refused: the same letter must have the same shape, touching letters count
+as doubt, and unreadable marks are ignored).
+LIMITS: reading was verified on one real screenshot (5 lines) plus synthetic pictures, not on live game captures. The starter library has
+about 50 characters; digits 2 3 4 8 9 and many capitals need the one-time Teach step. Mouse-pointer artifacts in the sample screenshot
+(a hand over "Attack Scroll") limited what could be learned from it. Offers are what players wrote; nothing checks they are genuine.
+
+ADDED AFTER THAT: the "Market feed" layout (the 5 newest watch-list offers, newest first, a repeat moves to the top, only the watch list)
+and the "Open the history log" button. No new files, functions or packages. 36 more checks: at most five rows, order, replacement, a
+repeat bumping to the top, other items kept out of the feed, the empty / off / no-area / window-changed messages, hostile and missing text
+(long, empty, non-Latin, None) at three sizes, and the layout cycle. Found and fixed: the feed layout crashed if handed None instead of a list.
+
+ADDED: a compact MARKET card on the main (Square) layout (same newest-five feed, one line each, click = history), on by default, with a
+Settings switch; the window is taller by 172 px while it is shown. 24 more checks: the exact height added (and none when off), five rows
+newest first, the status line, the empty state, the click area, hover, hostile / missing / non-Latin text at three sizes, saving the choice.
+
+ADDED: the map on every session. Found while doing it: the map was stamped on a session when its line was SAVED, so changing maps in the middle
+of a session relabelled all of it (including the time on the old map). Now a session belongs to one map: changing the map saves the session so
+far under the old map and starts a new one. New: a MAP line on the main layout (click to change), a picker with recent maps, a reminder when a
+session starts with no map, a Map filter and per-map totals in the Log window. 56 more checks (a session is saved under the old map when the map
+changes mid-way and each session keeps only its own EXP; short sessions aren't split; the recent list; damaged settings; the Log totals; the MAP
+line at three sizes with empty / huge / non-Latin names).
