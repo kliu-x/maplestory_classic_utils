@@ -1,7 +1,8 @@
 import type { Item } from '../models/types';
 import { marketLink, mesoWatchLink } from '../data/itemInfo';
+import { PriceTag } from './PriceTag';
 
-/** Free Market price links: MesoWatch (opens the item) and MeowDB (its page, or its search with the name copied). */
+/** Free Market price: the usual price collected on this PC (when there is one), then links to MesoWatch (opens the item) and MeowDB (its page, or its search with the name copied). */
 export function MarketLink({ item, label = 'MeowDB' }: { item: Pick<Item, 'id' | 'name' | 'cash'>; label?: string }) {
   const { url, direct } = marketLink(item as Item);
   const copy = () => {
@@ -14,6 +15,7 @@ export function MarketLink({ item, label = 'MeowDB' }: { item: Pick<Item, 'id' |
   };
   return (
     <span className="market-links">
+      {item.id > 0 && <PriceTag gameId={item.id} />}
       <a href={mesoWatchLink(item)} target="_blank" rel="noreferrer" title={`${item.name} on MesoWatch: recent sales and listings`} onClick={(e) => e.stopPropagation()}>
         MesoWatch ↗
       </a>

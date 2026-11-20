@@ -12,7 +12,8 @@
     "test:watch": "vitest",
     "typecheck": "tsc -b",
     "data:fetch": "node scripts/fetch-mcw-data.mjs",
-    "data:build": "node scripts/build-data.mjs"
+    "data:build": "node scripts/build-data.mjs",
+    "prices:fetch": "node scripts/fetch-meowdb.mjs"
   },
   "dependencies": {
     "react": "18.3.1",

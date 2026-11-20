@@ -40,5 +40,5 @@ Pushing to `main` runs `.github/workflows/pages.yml`: tests, build, deploy to ht
 - Keep **EXP/cast** and **EXP/min** distinct.
 - Damage provenance order: measured → projected → estimated.
 - Calculators in `companion/src/calculators/` stay pure and unit-tested.
-- No aggressive scraping: respect robots.txt and rate limits (ClassicRank: 20 names/req, 30 req/min, 300 lookups/day without a key). No automation of game login, character creation, CAPTCHAs or anti-bot evasion.
+- No aggressive scraping: robots.txt is not binding, but fetch at a polite pace and respect rate limits (ClassicRank: 20 names/req, 30 req/min, 300 lookups/day without a key). No automation of game login, character creation, CAPTCHAs or anti-bot evasion.
 - Ask before adding a paid API, accounts or a backend. Never ship keys to the browser (`CLASSICRANK_READ_KEY` is CLI-only, env var).

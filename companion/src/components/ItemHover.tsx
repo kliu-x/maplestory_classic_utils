@@ -1,4 +1,4 @@
-import { useRef, useState, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { createPortal } from 'react-dom';
 import type { Item } from '../models/types';
 import { IMG } from '../data';
@@ -6,6 +6,8 @@ import { jobsOf, statLine } from '../data/itemInfo';
 import { shopPriceFor } from '../data/shopPrices';
 import { cashPriceFor, cratesWith, todayIso } from '../data/cashShop';
 import { fmt } from './ui';
+import { isStale, localPriceFor } from '../data/localPrices';
+import { Sparkline } from './PriceTag';
 
 /**
  * Hovering (or focusing) the wrapped name shows the item's details in a small floating card,
@@ -16,6 +18,13 @@ export function ItemHover({ item, children }: { item: Item | undefined; children
   const ref = useRef<HTMLSpanElement>(null);
   const timer = useRef<number>();
   const [at, setAt] = useState<{ x: number; y: number; below: boolean } | null>(null);
+  // The card is pinned to the window, so any scroll would leave it behind: hide it.
+  useEffect(() => {
+    if (!at) return;
+    const off = () => setAt(null);
+    window.addEventListener('scroll', off, true);
+    return () => window.removeEventListener('scroll', off, true);
+  }, [at]);
   if (!item) return <>{children}</>;
   const show = () => {
     window.clearTimeout(timer.current);
@@ -53,6 +62,7 @@ function ItemCard({ item: i }: { item: Item }) {
   const cash = i.cash ? cashPriceFor(i) : undefined;
   const crates = i.cash ? cratesWith(i.name, todayIso()) : [];
   const stats = statLine(i);
+  const market = localPriceFor(i.id);
   const needs = [
     i.reqLevel ? `Lv ${i.reqLevel}` : '',
     jobsOf(i.reqJob).join('/'),
@@ -76,6 +86,15 @@ function ItemCard({ item: i }: { item: Item }) {
         {crates.slice(0, 2).map((c) => <span key={c.crate.key}>{c.rate}% in {c.crate.label}</span>)}
         {i.sellPrice ? <span className="muted">NPC buys for {fmt(i.sellPrice)}</span> : null}
       </div>
+      {market?.price && (
+        <div className="small item-tip-market">
+          <Sparkline points={market.trend?.map(([, v]) => v) ?? []} width={80} height={22} />
+          <span>
+            <strong>~{fmt(market.price)} mesos</strong> usual
+            <span className="muted"> · NiaDB, {market.sales} sales to {market.asOf}{isStale(market) ? ' (old)' : ''}</span>
+          </span>
+        </div>
+      )}
     </>
   );
 }

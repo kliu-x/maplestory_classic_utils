@@ -7,3 +7,8 @@ __pycache__/
 pokemon_name_checker/cache/
 *.tsbuildinfo
 companion/public/_test_*
+
+# MeowDB pages saved by `npm run prices:fetch` (theirs, not ours to republish)
+companion/data-raw/meowdb/
+# Prices from `npm run prices:fetch`: this PC only, never in the Pages build
+companion/data-local/
